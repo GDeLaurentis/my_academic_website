@@ -56,9 +56,12 @@ QCD Meets EW
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large; margin-bottom: 20mm;"> Color Ordered Amplitudes </b>
+<b style="font-variant: small-caps; font-size: xxx-large; margin-bottom: 20mm;"> Color Ordered Amplitude Coefficients </b>
 
 
+<div style="text-align: left; font-size: x-large; margin-top: 0mm;">
+$\circ\,$ Partonic cross sections
+</div>
 <div style="font-size: 17pt; float: center; margin-top: 0mm; margin-bottom: 0mm;">
 $$
 \require{color}
@@ -67,6 +70,35 @@ $$
 $$
 </div>
 
+<div style="text-align: left; font-size: x-large; margin-top: 0mm;">
+$\circ\,$ Color decomposition
+</div>
+
+<div style="font-size: 17pt; float: center; margin-top: 0mm; margin-bottom: 0mm;">
+$$
+\mathcal{A}(p_i,h_i,a_i,μ_F, μ_R) = \sum_{\sigma} \mathcal{C}(\sigma \circ a_i) A(\sigma )
+$$
+</div>
+
+<div style="text-align: left; font-size: x-large; margin-top: 0mm;">
+$\circ\,$ Color ordered amplitudes
+</div>
+
+<div style="font-size: 17pt; float: center; margin-top: 0mm; margin-bottom: 0mm;">
+$$
+\mathcal{A}(\lambda_i^\alpha, \tilde \lambda_i^{\,\dot\alpha}) = \frac{ \sum_{k=0}^{\text{finite}} \, {\color{red}c^{(k)}_{\,\Gamma, i}}(\lambda, \tilde\lambda) \, \epsilon^k}{\prod_j (\epsilon - a_{ij})} \, I\left( (\lambda\tilde\lambda)^{\alpha\dot\alpha}_i, \epsilon\right)  \;, \;\;\text{with} \quad a_{ij} \in \mathbb{Q}
+$$
+</div>
+
+<div style="text-align: left; font-size: x-large; margin-top: 0mm;">
+$\circ\,$ Finite remainder
+</div>
+
+<div style="font-size: x-large; margin-top: 5mm; margin-bottom: 5mm">
+$$ 
+\mathcal{R}^{(\ell-loop)} = \mathcal{A}^{(\ell)}_R - \sum_{i=1}^{\ell} I^{(\ell-i)} \mathcal{A}^{(i-1)} + \mathcal{O}(\epsilon) = \sum_i {\color{red}{r_{i}(\lambda,\tilde\lambda)}} \, h_i(\lambda\tilde\lambda)
+$$
+</div>
 
 ---
 
@@ -88,7 +120,8 @@ $$
 </div>
 
 <div style="text-align: left; font-size: x-large; margin-top: 0mm;">
-$\circ\,$ The three mass Grams, $\Delta_{12|34|p_V}, \Delta_{14|23|p_V}$, behave analogously to one-loop amplitudes, e.g.:
+$\circ\,$ For example, consider this 2-loop $Vjj$ integral coefficient <br> 
+$\phantom{\circ}\,$ $s_{56}=p^2_V$ is a zero, $⟨3|1+4|2]^{5}Δ_{23|14|p_V}^{4}$ are poles:
 </div>
 <div style="text-align: left; font-size: large; margin-top: 2mm; margin-bottom: 1mm;">
 $$ 
@@ -120,12 +153,44 @@ $$
 
 <br><br><br><br>
 
-based on: <br>
-[GDL, Page (JHEP 12 (2022) 140)](https://arxiv.org/abs/2203.04269) <br>
-GDL, Ita, Page, Sotnikov (to appear)
+mainly based on: <br>
+[GDL, Page (JHEP 12 (2022) 140)](https://arxiv.org/abs/2203.04269) 
 
 ---
 
+<b style="font-variant: small-caps; font-size: 35pt;"> Polynomials ''Modulo Equivalence Relations''  </b>
+
+<div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;">
+     $\circ$ The most obvious equivalence relation is momentum conservation
+</div>
+<br>
+<div style="font-size: x-large; margin-top: 0mm; margin-bottom: 0mm">
+$$
+q \sim r \quad \text{if} \quad q - r \propto \sum_i p_i = 0
+$$
+</div>
+
+<div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;">
+     $\circ$ Then we have Schouten identities, e.g.
+</div>
+<br>
+<div style="font-size: x-large; margin-top: 0mm; margin-bottom: 0mm">
+$$
+\langle j|k\rangle \langle l|i\rangle + \langle k|i\rangle \langle l|j\rangle + \langle i|j \rangle \langle l|k\rangle = 0
+$$
+</div>
+
+<div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;">
+     $\circ$ Note that this happens whenever we have vectors in the game!
+</div>
+<br>
+<div style="font-size: x-large; margin-top: 0mm; margin-bottom: 0mm">
+$$
+\text{tr}_5(2345)p^µ_1 - \text{tr}_5(1345)p^µ_2 + \text{tr}_5(1245) p^µ_3 - \text{tr}_5(1235)p^µ_4 + \text{tr}_5(1234)p^µ_5 = 0
+$$
+</div>
+
+---
 
 <b style="font-variant: small-caps; font-size: xxx-large;"> Polynomial Quotient Rings  </b>
 
@@ -177,8 +242,6 @@ GDL, Ita, Page, Sotnikov (to appear)
      $\;\kern-4mm\phantom{x}^\dagger$ The field of fractions of $R_3$ does not exist.
 </div>
 
-
-
 ---
 
 <b style="font-variant: small-caps; font-size: xxx-large"> Prime Ideals \& Irreducible Varieties  </b>
@@ -226,6 +289,43 @@ GDL, Ita, Page, Sotnikov (to appear)
 <div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 5mm;">
     Poles & Zeros $\;\Leftrightarrow\;$ Irreducible Varieties $\;\Leftrightarrow\;$ Prime Ideals <br>
     <i style="font-size: 12pt; border-top: -8mm; border-bottom: -2mm;"> Physics $\kern38mm$ Geometry $\kern38mm$ Algebra </i>
+</div>
+
+---
+
+<b style="font-variant: small-caps; font-size: xxx-large"> Least Common Denominator </b>
+
+<div style="text-align: left; font-size: x-large; margin-top: 1mm; margin-bottom: 7mm;">
+$\circ\,$ Can't draw pictures in high (complex) dimensions, so let's consider the simplified case $\mathbb{R}[x, y, z]$.
+</div>
+
+<div style="text-align: left; font-size: x-large">
+$\circ\,$ Denominator factors $W_j$ correspond to <i> singular surfaces </i>.
+</div>
+
+<div style="display:block; width:100%; margin-top: 5mm; font-size: x-large;">
+	<div style="width:50%; float: left; display: inline-block;">
+	     <img src="V1.png"; style="max-width:250px; float:center; border:none; margin-top: 5px;"> <br>
+	     ${\color{orange}W_1 = (xy^2 + y^3 - z^2)}$
+	</div>
+	<div style="width:50%; float: right; text-align: left; display: inline-block; margin-bottom: 5mm;">
+	     Say we have:
+	</div>
+	<div style="width:50%; float: right; text-align: center; display: inline-block; margin-bottom: 5mm;">
+	     $W_1 = xy^2 + y^3 - z^2$ <br>
+	</div>
+	<div style="width:50%; float: right; text-align: left; display: inline-block; margin-bottom: 5mm;">
+	     A function $c_i(x,y,z)$ may or may not have $W_1$ as a pole, depending on what happens on the orange surface
+	</div>
+	<div style="width:50%; float: right; text-align: center; display: inline-block; margin-bottom: 5mm;">
+	     $\displaystyle \lim_{W_j \rightarrow \epsilon} c_i(x,y,z) \sim \frac{1}{\epsilon^{q_{ij}}} $
+	</div>
+</div>
+
+<br><br><br><br><br><br><br><br>
+
+<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 5mm;">
+    The LCD tells us about what happens on surfaces with one less dimension than the full space.
 </div>
 
 ---
@@ -284,7 +384,7 @@ GDL, Ita, Page, Sotnikov (to appear)
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> Least Common Denominator </b>
+<b style="font-variant: small-caps; font-size: xxx-large"> Codimension-One Slices </b>
 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
      $\circ\,$ The exponents $q_{ij}$ are given by
@@ -326,6 +426,158 @@ GDL, Ita, Page, Sotnikov (to appear)
 
 ---
 
+<b style="font-variant: small-caps; font-size: xxx-large"> Multivariate Partial Fractions </b>
+
+<div style="text-align: left; font-size: x-large; margin-top: 5mm;">
+$\circ\,$ To distinguish $\displaystyle \frac{1}{W_1W_2}$ from $\displaystyle \frac{1}{W_1} + \frac{1}{W_2}$, look at $W_1 \sim W_2 \rightarrow \epsilon \ll 1$. Geometrically:
+</div>
+
+<div style="display:block; width:100%; margin-top: 5mm; font-size: x-large;">
+	<div style="width:33%; float: left; display: inline-block;">
+	     <img src="V1.png"; style="max-width:230px; float:center; border:none; margin-top: 5px;"> <br>
+	     ${\color{orange}W_1 = (xy^2 + y^3 - z^2)}$
+	</div>
+	<div style="width:33%; float: center; display: inline-block;  font-size: x-large;">
+	     <img src="V2.png"; style="max-width:230px; float:center; border:none; margin-top: 5px;"> <br>
+	     ${\color{blue}W_2 = (x^3 + y^3 - z^2)}$
+	</div>
+	<div style="width:33%; float: right; display: inline-block;">
+	     <img src="V3.png"; style="max-width:230px; float:center; border:none; margin-top: 5px;"> <br>
+	     $V(W_1) \cap V(W_2)$
+	</div>
+</div>
+
+<div style="text-align: left; font-size: x-large; margin-top: 5mm;">
+$\circ\,$ <i> Primary decompositions </i> of sets of polynomials (<i> ideals </i>), anogous to integers:
+</div>
+
+<div style="display:block; width:100%; margin-top: 5mm; font-size: x-large;">
+	<div style="width:30%; float: left; display: inline-block;">
+	     $60 = 5 \times 3 \times 2^2$
+	</div>
+	<div style="width:70%; float: right; display: inline-block;">
+	     $({\color{orange}xy^2 + y^3 - z^2}, {\color{blue}x^3 + y^3 - z^2}) = \\
+	     {\color{magenta}(z^2,x+y)} \cup {\color{green}(y^3-z^2,x)} \cup {\color{red}(2y^3-z^2,x-y)}$
+	</div>
+</div>
+
+<br><br>
+
+<div style="text-align: left; font-size: x-large; margin-top: 5mm;">
+$\circ\,$ Whether a partial fraction decomposition is possible depends on the behavior on the 3 lines.
+</div>
+
+---
+
+<b style="font-variant: small-caps; font-size: xxx-large"> Beyond Partial Fractions </b>
+
+<div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
+     $\circ$ $\color{red}\text{Case 0}$: the ideal does $\color{green}\text{not involve denominator factors}$.
+</div>
+<div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
+     E.g. a 6-point function $c_i$ has a pole at $⟨1|2+3|4]$ but not at $⟨4|2+3|1]$,
+</div>
+<div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
+     yet it is regular on the irreducible surface $V(\big\langle ⟨1|2+3|4], ⟨4|2+3|1] \big\rangle)$. Then
+</div>
+<br><br>
+<div style="font-size: x-large; float: center; margin-top: 5mm; margin-bottom: 0mm;">
+     $\displaystyle c_i \sim \frac{⟨4|2+3|1]}{⟨1|2+3|4]} + \mathcal{O}(⟨1|2+3|4]^0) \; \text{ instead of } \; c_i \sim \frac{1}{⟨1|2+3|4]}  + \mathcal{O}(⟨1|2+3|4]^0)$
+</div>
+
+<div style="font-size: x-large; float: left; margin-top: 8mm; margin-bottom: 0mm;">
+     $\circ$ $\color{red}\text{Case 1}$: the $\color{green}\text{degree of vanishing is non-uniform}$ across branches, for example:
+</div>
+<br>
+<div style="font-size: x-large; float: center; margin-top: 0mm; margin-bottom: 0mm;">
+     $\displaystyle \frac{s_{14}-s_{23}}{⟨1|3+4|2]⟨3|1+2|4]}$
+</div>
+<div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;">
+     has a double pole on the first branch, and a simple pole on the second branch of
+</div>
+<br>
+<div style="font-size: x-large; float: center; margin-top: 3mm; margin-bottom: 0mm;">
+     $\big\langle⟨1|3+4|2], ⟨3|1+2|4]\big\rangle_{R_6} = \big\langle ⟨13⟩, [24] \big\rangle_{R_6} \cap \big\langle ⟨1|3+4|2], ⟨3|1+2|4], (s_{14}-s_{23})\big\rangle_{R_6}$
+</div>
+
+<div style="font-size: x-large; float: left; margin-top: 10mm; margin-bottom: 0mm;">
+     $\circ$ $\color{red}\text{Case 2}$: ideal is $\color{green}\text{non-radical}$ (example on last slide)
+</div>
+<br><br>
+<div style="font-size: x-large; float: center; margin-top: -3mm; margin-bottom: 0mm;">
+     $\displaystyle \small \kern0mm \sqrt{\big\langle {\color{black}⟨3|1+4|2]}, {\color{black}Δ_{23|14|56}} \big\rangle_{R_6}} = \big\langle {\color{black}⟨3|1+4|2]}, {\color{black}s_{124}-s_{134}} \big\rangle_{R_6} $
+</div>
+
+</section>
+
+---
+
+<section>
+
+{{< slide background-image="MexicanHat.jpg" >}}
+
+<h1 style="margin-top: -8mm;"> Functions with masses </h1>
+
+
+---
+
+<b style="font-variant: small-caps; font-size: xxx-large"> External Field Propagators </b>
+
+<div style="text-align: left; font-size: x-large; margin-top: 0mm;">
+$\circ\,$ Color decomposition
+</div>
+
+<div style="font-size: 17pt; float: center; margin-top: 0mm; margin-bottom: 0mm;">
+$$
+\mathcal{A}(p_i,h_i,a_i,μ_F, μ_R) = \sum_{\sigma} \mathcal{C}(\sigma \circ a_i) A(\sigma )
+$$
+</div>
+
+
+---
+
+<b style="font-variant: small-caps; font-size: xxx-large"> Modifying the Quotient Ring  </b>
+
+
+<div style="text-align: left; font-size: x-large; margin-top: 0mm;">
+$\circ\,$ $pp\rightarrow hhj$ with exact $m_{top}$ dependence, subject to $p_{h_1}^2 = p_{h_2}^2$. <br>
+$\phantom{\circ}\,$ We work in the modified version of the $R_7$ q-ring, namely:
+</div>
+
+<div style="font-size: 17pt; float: center; margin-top: 0mm; margin-bottom: 0mm;">
+$$
+\tilde{R}_7 = \mathbb{Q}_p\Big[ |1\rangle, [1|, \dots, |7\rangle, [7| \Big] \big/ \Big\langle \sum_{i=1}^7 |i\rangle[i|, s_{45} - s_{67} \Big\rangle
+$$
+</div>
+
+---
+
+<b style="font-variant: small-caps; font-size: xxx-large"> Internal Fields - The Easy Case </b>
+
+
+
+---
+
+<b style="font-variant: small-caps; font-size: xxx-large"> Internal Fields - The Tough Case </b>
+
+
+</section>
+
+---
+
+<section>
+
+{{< slide background-image="Feynman-Diagrams-transparent.png" >}}
+
+<h1 style="margin-top: 62mm; "> Vector Spaces <br> of Rational Functions </h1>
+
+<div style="text-align: center; font-size: x-large; margin-top: 66mm; margin-bottom: 0mm;">
+     GDL, Ita, Page, Sotnikov - to appear; $\quad$
+     GDL, Ita, Klinkert, Sotnikov <a href="https://arxiv.org/abs/2311.10086">arXiv:2311.10086</a>
+</div>
+
+---
+
 <b style="font-variant: small-caps; font-size: xxx-large"> Complexity of the Reconstruction </b>
 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
@@ -336,18 +588,7 @@ GDL, Ita, Page, Sotnikov (to appear)
 <img src="ComplexityOfReconstruction-transparent.png"; style="max-width:650px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;">
 </div>
 
-</section>
-
 ---
-
-<section>
-
-{{< slide background-image="Feynman-Diagrams-transparent.png" >}}
-
-<h1 style="margin-top: -8mm;"> Vector Spaces <br> of Rational Functions </h1>
-
----
-
 
 <b style="font-variant: small-caps; font-size: xxx-large"> Picking a Basis </b>
 
@@ -884,47 +1125,6 @@ Comparison of $p\bar p \rightarrow jjj$ (in full color) to $pp \rightarrow Wjj$ 
 
 <div style="font-size: large; float: center; margin-top: 5mm; margin-bottom: 5mm;">
      $\kern-4mm\phantom{x}^\dagger$ $\langle W_a, W_b\rangle$ needs to be radical.
-</div>
-
----
-
-<b style="font-variant: small-caps; font-size: xxx-large"> Beyond Partial Fractions </b>
-
-<div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     $\circ$ $\color{red}\text{Case 0}$: the ideal does $\color{green}\text{not involve denominator factors}$.
-</div>
-<div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
-     E.g. a 6-point function $c_i$ has a pole at $⟨1|2+3|4]$ but not at $⟨4|2+3|1]$,
-</div>
-<div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     yet it is regular on the irreducible surface $V(\big\langle ⟨1|2+3|4], ⟨4|2+3|1] \big\rangle)$. Then
-</div>
-<br><br>
-<div style="font-size: x-large; float: center; margin-top: 5mm; margin-bottom: 0mm;">
-     $\displaystyle c_i \sim \frac{⟨4|2+3|1]}{⟨1|2+3|4]} + \mathcal{O}(⟨1|2+3|4]^0) \; \text{ instead of } \; c_i \sim \frac{1}{⟨1|2+3|4]}  + \mathcal{O}(⟨1|2+3|4]^0)$
-</div>
-
-<div style="font-size: x-large; float: left; margin-top: 8mm; margin-bottom: 0mm;">
-     $\circ$ $\color{red}\text{Case 1}$: the $\color{green}\text{degree of vanishing is non-uniform}$ across branches, for example:
-</div>
-<br>
-<div style="font-size: x-large; float: center; margin-top: 0mm; margin-bottom: 0mm;">
-     $\displaystyle \frac{s_{14}-s_{23}}{⟨1|3+4|2]⟨3|1+2|4]}$
-</div>
-<div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;">
-     has a double pole on the first branch, and a simple pole on the second branch of
-</div>
-<br>
-<div style="font-size: x-large; float: center; margin-top: 3mm; margin-bottom: 0mm;">
-     $\big\langle⟨1|3+4|2], ⟨3|1+2|4]\big\rangle_{R_6} = \big\langle ⟨13⟩, [24] \big\rangle_{R_6} \cap \big\langle ⟨1|3+4|2], ⟨3|1+2|4], (s_{14}-s_{23})\big\rangle_{R_6}$
-</div>
-
-<div style="font-size: x-large; float: left; margin-top: 10mm; margin-bottom: 0mm;">
-     $\circ$ $\color{red}\text{Case 2}$: ideal is $\color{green}\text{non-radical}$ (example on last slide)
-</div>
-<br><br>
-<div style="font-size: x-large; float: center; margin-top: -3mm; margin-bottom: 0mm;">
-     $\displaystyle \small \kern0mm \sqrt{\big\langle {\color{black}⟨3|1+4|2]}, {\color{black}Δ_{23|14|56}} \big\rangle_{R_6}} = \big\langle {\color{black}⟨3|1+4|2]}, {\color{black}s_{124}-s_{134}} \big\rangle_{R_6} $
 </div>
 
 </section>
