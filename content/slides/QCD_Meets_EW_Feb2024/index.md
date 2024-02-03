@@ -31,7 +31,6 @@ Giuseppe De Laurentis
 <div style="font-size: large;"> University of Edinburgh </div>
 <br>
 <br>
-<br>
 
 <!--- 
 <a href="https://arxiv.org/abs/2311.10086">arXiv:2311.10086</a> <div style="font-size: large; margin-bottom: 10pt;"> (GDL, H. Ita, M. Klinkert, V. Sotnikov) </div>
@@ -40,6 +39,7 @@ Giuseppe De Laurentis
 
 <!--- Amplitudes Meeting --->
 QCD Meets EW
+<div style="font-size: x-large; margin-top: -5mm;"> CERN </div>
 <br>
 <p style="line-height: 0.05;"> <img src="UniEdinburghLogo-transparent.png"; style="max-width:120px;float:center;border:none;"> <img src="cern-logo-transparent.png"; style="max-width:120px;float:center;border:none;margin-left:20mm;">
 <br><br>
@@ -60,7 +60,7 @@ QCD Meets EW
 
 
 <div style="text-align: left; font-size: x-large; margin-top: 0mm;">
-$\circ\,$ Partonic cross sections
+$\circ\,$ As a one-line introduction, to obtain partonic cross sections we need amplitudes
 </div>
 <div style="font-size: 17pt; float: center; margin-top: 0mm; margin-bottom: 0mm;">
 $$
@@ -71,27 +71,27 @@ $$
 </div>
 
 <div style="text-align: left; font-size: x-large; margin-top: 0mm;">
-$\circ\,$ Color decomposition
+$\circ\,$ The gauge group dependence is fairly well understood, through color decompositions
 </div>
 
 <div style="font-size: 17pt; float: center; margin-top: 0mm; margin-bottom: 0mm;">
 $$
-\mathcal{A}(p_i,h_i,a_i,μ_F, μ_R) = \sum_{\sigma} \mathcal{C}(\sigma \circ a_i) A(\sigma )
+\mathcal{A}(p_i,h_i,a_i,μ_F, μ_R) = \sum_{\sigma} \mathcal{C}(\sigma \circ a_i) \times A(\sigma \circ \{p_i, h_i\}, \mu_F, \mu_R)
 $$
 </div>
 
 <div style="text-align: left; font-size: x-large; margin-top: 0mm;">
-$\circ\,$ Color ordered amplitudes
+$\circ\,$ So we can deal with either color-ordered amplitudes
 </div>
 
 <div style="font-size: 17pt; float: center; margin-top: 0mm; margin-bottom: 0mm;">
 $$
-\mathcal{A}(\lambda_i^\alpha, \tilde \lambda_i^{\,\dot\alpha}) = \frac{ \sum_{k=0}^{\text{finite}} \, {\color{red}c^{(k)}_{\,\Gamma, i}}(\lambda, \tilde\lambda) \, \epsilon^k}{\prod_j (\epsilon - a_{ij})} \, I\left( (\lambda\tilde\lambda)^{\alpha\dot\alpha}_i, \epsilon\right)  \;, \;\;\text{with} \quad a_{ij} \in \mathbb{Q}
+\mathcal{A}(\lambda^\alpha, \tilde \lambda^{\,\dot\alpha}) = \sum_{\substack{\Gamma,\\ i \in M_\Gamma}} \frac{ \sum_{k=0}^{\text{finite}} \, {\color{red}c^{(k)}_{\,\Gamma, i}}(\lambda^\alpha, \tilde \lambda^{\,\dot\alpha}) \, \epsilon^k}{\prod_j (\epsilon - a_{ij})} \, I_{\Gamma,i}\left( (\lambda\tilde\lambda)^{\alpha\dot\alpha}, \epsilon\right)  \;, \;\;\text{with} \quad a_{ij} \in \mathbb{Q}
 $$
 </div>
 
 <div style="text-align: left; font-size: x-large; margin-top: 0mm;">
-$\circ\,$ Finite remainder
+$\phantom{\circ}\,$ or finite remainders (arguably better since they retain all the physical info)
 </div>
 
 <div style="font-size: x-large; margin-top: 5mm; margin-bottom: 5mm">
@@ -107,21 +107,28 @@ $$
 </b>
 
 <div style="display:block; width:100%; font-size: 16pt; margin-top: 5mm; margin-bottom: 0mm;">
-     <div style="width:50%; float: left; display: inline-block; font-size: x-large; margin-top: 5mm;">
-          $\circ$ The  Ansatz size grows quickly with <br> multiplicity (m) and mass dimension (d): <br><br>
-          $\displaystyle \small \left(\mkern -9mu \begin{pmatrix}\, m(m-3)/2 \, \\ \, d/2 \, \end{pmatrix} \mkern -9mu \right)$ <br><br>
-          is a lower bound. <!--- <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-left: -28mm; margin-top: 1mm; margin-bottom: 5mm;" href=https://arxiv.org/abs/2010.14525>
-               GDL, Maître ('20)
-          </a> --->
+     <div style="width:50%; float: left; display: inline-block; font-size: x-large; margin-top: 6mm;">
+          <div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
+               $\circ\,$ The rational coefficients take the form
+          </div>
+          <br>
+          <div style="text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 5mm;">
+          $$
+          \displaystyle r(|i\rangle,[i|) = \frac{\mathcal{N}(|i\rangle,[i|)}{\prod_j \mathcal{D}_j^{q_{ij}}(|i\rangle,[i|)}
+          $$
+          </div>
+          <div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
+               $\phantom{\circ}\,$ with $\mathcal{N}$ and $\mathcal{D}$ polynomials of spinor brackets.
+          </div>
      </div>
      <div style="width:50%; float: center; display: inline-block;">
           <img src="AnsatzSizes.png"; style="max-width:400px;float:center;border:none;margin-top:0px;margin-bottom: 5mm;">
      </div>
 </div>
 
-<div style="text-align: left; font-size: x-large; margin-top: 0mm;">
-$\circ\,$ For example, consider this 2-loop $Vjj$ integral coefficient <br> 
-$\phantom{\circ}\,$ $s_{56}=p^2_V$ is a zero, $⟨3|1+4|2]^{5}Δ_{23|14|p_V}^{4}$ are poles:
+<div style="text-align: left; font-size: x-large; margin-top: -5mm;">
+$\circ\,$ For example, consider this 2-loop $Vjj$ coefficient <span style="font-size: large">
+($s_{56}=p^2_V$ is a zero, $⟨3|1+4|2]^{5}Δ_{23|14|p_V}^{4}$ are poles): </span>
 </div>
 <div style="text-align: left; font-size: large; margin-top: 2mm; margin-bottom: 1mm;">
 $$ 
@@ -135,7 +142,7 @@ $\circ\,$ The first fraction has Ansatz(mass dimension: 16, phase weights: [-1, 
 </div>
 <div style="text-align: left; font-size: x-large; margin-top: 2mm; margin-bottom: 1mm;">
 $$ 
-16488 \text{ (six-point massless) } \rightarrow 4200 \text{ (five-point one-mass) } \rightarrow 2429 \; (Δ_{23|14|56}-\text{residue})
+16488 {\small\text{ (six-point massless) }} \rightarrow 4200 {\small \text{ (five-point one-mass) }} \rightarrow 2429 {\small \; (Δ_{23|14|56}-\text{residue})} \rightarrow 1 \; \small{(??)}
 $$
 </div>
 
@@ -161,16 +168,16 @@ mainly based on: <br>
 <b style="font-variant: small-caps; font-size: 35pt;"> Polynomials ''Modulo Equivalence Relations''  </b>
 
 <div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;">
-     $\circ$ The most obvious equivalence relation is momentum conservation
+     $\circ$ The most obvious equivalence relation we need to deal with is momentum conservation
 </div>
 <br>
 <div style="font-size: x-large; margin-top: 0mm; margin-bottom: 0mm">
 $$
-q \sim r \quad \text{if} \quad q - r \propto \sum_i p_i = 0
+q, r: \text{ polynomials }, \qquad q \sim r \quad \text{if} \quad q - r \propto \sum_i p_i = \sum_i |i⟩[i| = 0
 $$
 </div>
 
-<div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;">
+<div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
      $\circ$ Then we have Schouten identities, e.g.
 </div>
 <br>
@@ -190,12 +197,16 @@ $$
 $$
 </div>
 
+<div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;">
+     $\circ$ One more distinct example later ... with masses!
+</div>
+
 ---
 
 <b style="font-variant: small-caps; font-size: xxx-large;"> Polynomial Quotient Rings  </b>
 
 <div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;">
-     $\circ$ Let us start from the polynomial ring of spinor components
+     $\circ$ Without equivalences, we would have a polynomial ring
 </div>
 <br>
 <div style="font-size: x-large; margin-top: 0mm; margin-bottom: 0mm">
@@ -209,7 +220,7 @@ $$
 <br>
 
 <div style="font-size: x-large; float: left; margin-top: -16mm; margin-bottom: 0mm;">
-     $\circ$ Define the momentum-conservation ideal as
+     $\circ$ Equivalence relations define ideals, e.g.
 </div>
 <div style="font-size: x-large; width:75%; float: left; text-align: center; display: inline-block; margin-top: -8mm;">
      $$
@@ -225,13 +236,13 @@ $$
 </div>
 <br>
 <div style="font-size: x-large; float: left; margin-top: -4mm; margin-bottom: 9mm;">
-     $\phantom{\circ}$ physically, two polynomials $p$ and $q$ are equivalent if $p-q\in J_{\Lambda_n}$
+     $\phantom{\circ}$ Wwo polynomials $q$ and $r$ are equivalent if $q-r\in J_{\Lambda_n}$
 </div>
 
 <br>
 
 <div style="font-size: x-large; float: left; margin-top: -4mm; margin-bottom: 1mm;">
-     $\circ$ This defines the needed polynomial <b>quotient</b> ring$\kern-4mm\phantom{x}^{\star}$: $\;R_n = S_n / J_{\Lambda_n} $
+     $\circ$ What we need is a polynomial <b>quotient</b> ring$\kern-4mm\phantom{x}^{\star}$: $\;R_n = S_n / J_{\Lambda_n} $
 </div>
 <div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 4mm;">
     $r_i(\lambda, \tilde\lambda)$ at $n$-point belong to the Field of Fractions$\kern-4mm\phantom{x}^{\dagger}$ of $R_n$
@@ -244,7 +255,7 @@ $$
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> Prime Ideals \& Irreducible Varieties  </b>
+<b style="font-variant: small-caps; font-size: xxx-large"> Singularities of Amplitudes  </b>
 
 <div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
      $\circ$ Let us consider a very simple example (at 4-point)
@@ -269,16 +280,16 @@ $$
 
 <br>
 
-<div style="font-size: x-large; float: left; margin-top: -14mm; margin-bottom: 1mm;">
-     $\circ$ The question is ill posed!
+<div style="font-size: x-large; float: left; margin-top: -8mm; margin-bottom: 1mm;">
+     $\circ$ The question is ill posed! Let's consider it geometrically.
 </div>
-<div style="font-size: x-large; float: left; margin-top: -5mm; margin-bottom: 1mm;">
+<div style="font-size: x-large; float: left; margin-top: 1mm; margin-bottom: 1mm;">
      $\phantom{\circ} \langle 23 \rangle$ does not identify an irreducible variety in $R_4$.
 </div>
 <div style="font-size: x-large; float: left; margin-top: -1mm; margin-bottom: 1mm;">
-     $\phantom{\circ}$ Compute $\color{green}\text{primary decompositions}$, such as
+     $\phantom{\circ}$ Algebraically, we can compute <i> primary decompositions </i>, e.g.
 </div>
-<div style="font-size: x-large; float: center; margin-top: 22mm; margin-bottom: 0mm;">
+<div style="font-size: x-large; float: center; margin-top: 26mm; margin-bottom: 0mm;">
      $\displaystyle \big\langle \langle 23\rangle \big\rangle_{R_4} = {\color{orange} \big\langle \langle 23\rangle, [14] \big\rangle_{R_4}} \cap {\color{blue} \big\langle \langle 12\rangle, \langle 13 \rangle, \langle 14\rangle, \langle 23\rangle, \langle 24 \rangle, \langle 34 \rangle \big\rangle_{R_4}} $
 </div>
 <br>
@@ -304,83 +315,86 @@ $\circ\,$ Denominator factors $W_j$ correspond to <i> singular surfaces </i>.
 </div>
 
 <div style="display:block; width:100%; margin-top: 5mm; font-size: x-large;">
-	<div style="width:50%; float: left; display: inline-block;">
+	<div style="width:48%; float: left; display: inline-block;">
 	     <img src="V1.png"; style="max-width:250px; float:center; border:none; margin-top: 5px;"> <br>
 	     ${\color{orange}W_1 = (xy^2 + y^3 - z^2)}$
 	</div>
-	<div style="width:50%; float: right; text-align: left; display: inline-block; margin-bottom: 5mm;">
+	<div style="width:52%; float: right; text-align: left; display: inline-block; margin-bottom: 5mm; margin-top: 5mm;">
 	     Say we have:
 	</div>
-	<div style="width:50%; float: right; text-align: center; display: inline-block; margin-bottom: 5mm;">
+	<div style="width:52%; float: right; text-align: center; display: inline-block; margin-bottom: 5mm;">
 	     $W_1 = xy^2 + y^3 - z^2$ <br>
 	</div>
-	<div style="width:50%; float: right; text-align: left; display: inline-block; margin-bottom: 5mm;">
-	     A function $c_i(x,y,z)$ may or may not have $W_1$ as a pole, depending on what happens on the orange surface
+	<div style="width:52%; float: right; text-align: left; display: inline-block; margin-bottom: 5mm;">
+	     A function $f_i(x,y,z)$ may or may not have $W_1$ as a pole, depending on what happens on the $\color{orange}\text{surface}$
 	</div>
-	<div style="width:50%; float: right; text-align: center; display: inline-block; margin-bottom: 5mm;">
-	     $\displaystyle \lim_{W_j \rightarrow \epsilon} c_i(x,y,z) \sim \frac{1}{\epsilon^{q_{ij}}} $
+	<div style="width:52%; float: right; text-align: center; display: inline-block; margin-bottom: 5mm;">
+	     $\displaystyle \lim_{W_j \rightarrow \epsilon} f_i(x,y,z) \sim \frac{1}{\epsilon^{q_{ij}}} $
+	</div>
+	<div style="width:52%; float: right; text-align: left; display: inline-block; margin-bottom: 5mm;">
+	     $q_{ij}$ is the order of the pole ($\mathbb{Z}^+$) or zero ($\mathbb{Z}^-$).
 	</div>
 </div>
 
 <br><br><br><br><br><br><br><br>
 
-<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 5mm;">
-    The LCD tells us about what happens on surfaces with one less dimension than the full space.
+<div style="font-size: x-large; padding: 10px; display: inline-block; margin-top: 5mm;">  <!--- border: 2px solid black;  --->
+    <u> The LCD tells us about what happens on surfaces with one less dimension than the full space. </u>
 </div>
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> Five-Point Kinematics </b>
+<b style="font-variant: small-caps; font-size: xxx-large"> Spinor Alphabets </b>
 
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     $\circ\,$ The rational coefficients take the form
-</div>
-<br>
-<div style="text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 5mm;">
-     $$
-     \displaystyle r_i(|i\rangle,[i|) = \frac{\text{Num. poly}(|i\rangle,[i|)}{\text{Denom. poly}(|i\rangle,[i|)} = \frac{\mathcal{N}(|i\rangle,[i|)}{\prod_j D_j^{q_{ij}}(|i\rangle,[i|)}
-     $$
+<div style="font-size: x-large; text-align: center; float: center; display: inline-block; margin-top: 0mm; margin-bottom: 2mm;">
+     $1.$ little group covariant LCD (less spurious poles); $\;\;2.$ avoiding parity even/odd split. <br>
+     $\Rightarrow\;$ fewer and simpler functions to reconstruct compared to Mandelstams or Twistors.
 </div>
 
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
      $\circ\,$ The denominator factors $\mathcal{D}_j$ are conjectured to be restricted to the letters of the symbol alphabet
 </div>
+
+<br> 
+
 <a style="font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1812.04586>
    Abreu, Dormans, Febres Cordero, Ita, Page ('18)
 </a>
+
 <br>
+
 <div style="text-align: center; float: center; font-size: x-large; margin-top: -10mm; margin-bottom: 5mm;">
      $$
      \displaystyle \{\mathcal{D}_{\{1,\dots,35\}}\} = \bigcup_{\sigma \; \in \; \text{Aut}(R_5)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1] \big\} \, , \qquad \text{Aut}(R_5) = \mathcal{P} \times \mathcal{S}_5
      $$
 </div>
-<div style="text-align: center; font-size: x-large; float: center; margin-top: -10mm; margin-bottom: 0mm;">
-     $\qquad\color{green}\text{Identical to 1-loop!}$
+
+<div style="text-align: center; font-size: x-large; float: center; margin-top: -14mm; margin-bottom: 0mm;">
+     $\small\qquad\color{green}\text{Identical to 1-loop!}$
 </div>
+
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;">
+     $\circ\,$ Beyond 5-point things get tough
+</div>
+
+<br>
+
+<div style="text-align: center; float: center; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;">
+     $\displaystyle \kern-10mm \{\mathcal{D}_j\} = \bigcup_{\sigma \; \in \; \text{Aut}(R_6)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1], \langle 1|2+3|4], s_{123}, \Delta_{12|34|56}, ⟨3|2|5+6|4|3]-⟨2|1|5+6|4|2] \big\} $
+</div>
+
+<div style="text-align: right; font-size: x-large; float: center; margin-top: -14mm; margin-bottom: 0mm;">
+     $\small\qquad\color{red}\text{New @ 2-loop planar!}\qquad$
+</div>
+
+<div style="text-align: center; float: center; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;">
+     $\displaystyle \kern-10mm \{\mathcal{D}_j\} = \bigcup_{\sigma \; \in \; \text{Aut}(R_7)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1], \langle 1|2+3|4], s_{123}, \Delta_{123|45|67}, \langle1|2+3|4+5|1\rangle, \langle1|3+4|5+6|2\rangle , \dots(?)\big\} $
+</div>
+
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
-     $\phantom{\circ}$ Non-trivial statement (not proven!): all irreducible polynomials generate prime ideals, @ 5-pt.
+     $\phantom{\circ}$ Non-trivial statement (not proven!): all irreducible polynomials generate prime ideals in $R_{m>4}$.
 </div>
-
-<br>
-
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 2mm;">
-     $\circ\,$ Advantage of spinor variables:
-</div>
-<br>
-<div style="font-size: x-large; text-align: center; float: center; display: inline-block; margin-top: 0mm; margin-bottom: 2mm;">
-     $1.$ little group covariant LCD (no spurious poles); $\;\;2.$ avoiding parity even/odd split. <br>
-     $\Rightarrow\;$ fewer and simpler functions to reconstruct compared to Mandelstams or Twistors.
-</div>
-
-<div style="text-align: center; font-size: x-large; float: center; margin-bottom: 2mm; margin-top: 5mm;">
-     Next we obtain the denomiantor exponents $q_{ij}$.
-</div>
-
-
----
-
-<b style="font-variant: small-caps; font-size: xxx-large"> Higher-Point Kinematics & Ext. Masses</b>
-
 
 ---
 
@@ -429,7 +443,7 @@ $\circ\,$ Denominator factors $W_j$ correspond to <i> singular surfaces </i>.
 <b style="font-variant: small-caps; font-size: xxx-large"> Multivariate Partial Fractions </b>
 
 <div style="text-align: left; font-size: x-large; margin-top: 5mm;">
-$\circ\,$ To distinguish $\displaystyle \frac{1}{W_1W_2}$ from $\displaystyle \frac{1}{W_1} + \frac{1}{W_2}$, look at $W_1 \sim W_2 \rightarrow \epsilon \ll 1$. Geometrically:
+$\circ\,$ To distinguish $\displaystyle \frac{\mathcal{N}_{12}}{W_1W_2}$ from $\displaystyle \frac{\mathcal{N}_1}{W_1} + \frac{\mathcal{N}_2}{W_2}$, look at $W_1 \sim W_2 \rightarrow \epsilon \ll 1$. Geometrically:
 </div>
 
 <div style="display:block; width:100%; margin-top: 5mm; font-size: x-large;">
@@ -554,12 +568,18 @@ $$
 
 <b style="font-variant: small-caps; font-size: xxx-large"> Internal Fields - The Easy Case </b>
 
+<div style="text-align: left; font-size: x-large; margin-top: 0mm;">
+$\circ\,$ The only dependence is in the numerator, do a Laurent expansion.
+</div>
 
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> Internal Fields - The Tough Case </b>
+<b style="font-variant: small-caps; font-size: xxx-large"> Internal Fields - The Hard Case </b>
 
+<div style="text-align: left; font-size: x-large; margin-top: 0mm;">
+$\circ\,$ The poles have mixed dependence
+</div>
 
 </section>
 
