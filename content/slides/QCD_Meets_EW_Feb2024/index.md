@@ -60,7 +60,7 @@ QCD Meets EW
 
 
 <div style="text-align: left; font-size: x-large; margin-top: 0mm;">
-$\circ\,$ As a one-line introduction, to obtain partonic cross sections we need amplitudes
+$\circ\,$ To obtain cross sections we have to compute amplitudes
 </div>
 <div style="font-size: 17pt; float: center; margin-top: 0mm; margin-bottom: 0mm;">
 $$
@@ -94,10 +94,23 @@ $$
 $\phantom{\circ}\,$ or finite remainders (arguably better since they retain all the physical info)
 </div>
 
-<div style="font-size: x-large; margin-top: 5mm; margin-bottom: 5mm">
+<div style="font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm;">
+   <a href=https://arxiv.org/abs/hep-ph/9802439> Catani ('98), </a> <a href=https://arxiv.org/abs/0901.0722> Becher, Neubert ('09), </a> <a href=https://arxiv.org/abs/0901.1091> Gardi, Magnea ('09) </a>
+</div>
+
+<br>
+
+<div style="font-size: x-large; margin-top: -13mm; margin-bottom: 5mm">
 $$ 
 \mathcal{R}^{(\ell-loop)} = \mathcal{A}^{(\ell)}_R - \sum_{i=1}^{\ell} I^{(\ell-i)} \mathcal{A}^{(i-1)} + \mathcal{O}(\epsilon) = \sum_i {\color{red}{r_{i}(\lambda,\tilde\lambda)}} \, h_i(\lambda\tilde\lambda)
 $$
+</div>
+
+---
+
+<b style="font-variant: small-caps; font-size: xxx-large; margin-bottom: -10mm;"> Number of Indep. Functions w/o Subtraction </b>
+<div>
+<img src="DimRegJunkSizes-transparent.png"; style="max-width:650px; float:center; border:none; margin-top: -5mm; margin-bottom: 0mm;">
 </div>
 
 ---
@@ -304,47 +317,7 @@ $$
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> Least Common Denominator </b>
-
-<div style="text-align: left; font-size: x-large; margin-top: 1mm; margin-bottom: 7mm;">
-$\circ\,$ Can't draw pictures in high (complex) dimensions, so let's consider the simplified case $\mathbb{R}[x, y, z]$.
-</div>
-
-<div style="text-align: left; font-size: x-large">
-$\circ\,$ Denominator factors $W_j$ correspond to <i> singular surfaces </i>.
-</div>
-
-<div style="display:block; width:100%; margin-top: 5mm; font-size: x-large;">
-	<div style="width:48%; float: left; display: inline-block;">
-	     <img src="V1.png"; style="max-width:250px; float:center; border:none; margin-top: 5px;"> <br>
-	     ${\color{orange}W_1 = (xy^2 + y^3 - z^2)}$
-	</div>
-	<div style="width:52%; float: right; text-align: left; display: inline-block; margin-bottom: 5mm; margin-top: 5mm;">
-	     Say we have:
-	</div>
-	<div style="width:52%; float: right; text-align: center; display: inline-block; margin-bottom: 5mm;">
-	     $W_1 = xy^2 + y^3 - z^2$ <br>
-	</div>
-	<div style="width:52%; float: right; text-align: left; display: inline-block; margin-bottom: 5mm;">
-	     A function $f_i(x,y,z)$ may or may not have $W_1$ as a pole, depending on what happens on the $\color{orange}\text{surface}$
-	</div>
-	<div style="width:52%; float: right; text-align: center; display: inline-block; margin-bottom: 5mm;">
-	     $\displaystyle \lim_{W_j \rightarrow \epsilon} f_i(x,y,z) \sim \frac{1}{\epsilon^{q_{ij}}} $
-	</div>
-	<div style="width:52%; float: right; text-align: left; display: inline-block; margin-bottom: 5mm;">
-	     $q_{ij}$ is the order of the pole ($\mathbb{Z}^+$) or zero ($\mathbb{Z}^-$).
-	</div>
-</div>
-
-<br><br><br><br><br><br><br><br>
-
-<div style="font-size: x-large; padding: 10px; display: inline-block; margin-top: 5mm;">  <!--- border: 2px solid black;  --->
-    <u> The LCD tells us about what happens on surfaces with one less dimension than the full space. </u>
-</div>
-
----
-
-<b style="font-variant: small-caps; font-size: xxx-large"> Spinor Alphabets </b>
+<b style="font-variant: small-caps; font-size: xxx-large; margin-top:-10mm;"> Spinor Alphabets </b>
 
 <div style="font-size: x-large; text-align: center; float: center; display: inline-block; margin-top: 0mm; margin-bottom: 2mm;">
      $1.$ little group covariant LCD (less spurious poles); $\;\;2.$ avoiding parity even/odd split. <br>
@@ -388,8 +361,15 @@ $\circ\,$ Denominator factors $W_j$ correspond to <i> singular surfaces </i>.
      $\small\qquad\color{red}\text{New @ 2-loop planar!}\qquad$
 </div>
 
-<div style="text-align: center; float: center; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;">
-     $\displaystyle \kern-10mm \{\mathcal{D}_j\} = \bigcup_{\sigma \; \in \; \text{Aut}(R_7)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1], \langle 1|2+3|4], s_{123}, \Delta_{123|45|67}, \langle1|2+3|4+5|1\rangle, \langle1|3+4|5+6|2\rangle , \dots(?)\big\} $
+<div style="text-align: center; float: center; font-size: x-large; margin-top: 5mm; margin-bottom: -10mm;">
+     $$
+     \displaystyle \kern-10mm \{\mathcal{D}_j\} = \bigcup_{\sigma \; \in \; \text{Aut}(R_7)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1], \langle 1|2+3|4], s_{123}, \Delta_{123|45|67},
+     $$
+</div>
+<div style="text-align: center; float: center; font-size: x-large; margin-top: -10mm; ">
+     $$
+     \kern130mm\langle1|2+3|4+5|1\rangle, \langle1|3+4|5+6|2\rangle , \dots(?)\big\}
+     $$
 </div>
 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
@@ -398,24 +378,63 @@ $\circ\,$ Denominator factors $W_j$ correspond to <i> singular surfaces </i>.
 
 ---
 
+<b style="font-variant: small-caps; font-size: xxx-large"> Least Common Denominator </b>
+
+<div style="text-align: left; font-size: x-large; margin-top: 1mm; margin-bottom: 7mm;">
+$\circ\,$ Can't draw pictures in high (complex) dimensions, so let's consider the simplified case $\mathbb{R}[x, y, z]$.
+</div>
+
+<div style="text-align: left; font-size: x-large">
+$\circ\,$ Say we have a potential denominator factor $\mathcal{D} = xy^2 + y^3 - z^2$
+</div>
+
+<div style="display:block; width:100%; margin-top: 5mm; font-size: x-large;">
+	<div style="width:48%; float: left; display: inline-block;">
+	     <img src="V1.png"; style="max-width:250px; float:center; border:none; margin-top: 5px;"> <br>
+	     ${\color{orange}\mathcal{D} = (xy^2 + y^3 - z^2)}$
+	</div>
+	<div style="width:52%; float: right; text-align: left; display: inline-block; margin-top:10mm; margin-bottom: 5mm;">
+	     A function $f_i(x,y,z)$ may or may not have $\mathcal{D}$ as a pole, depending on what happens on $V(\langle\mathcal{D}\rangle)$
+	</div>
+	<div style="width:52%; float: right; text-align: center; display: inline-block; margin-bottom: 5mm;">
+	     $\displaystyle \lim_{\mathcal{D}_j \rightarrow \epsilon} f_i(x,y,z) \sim \frac{1}{\epsilon^{q_{ij}}} $
+	</div>
+	<div style="width:52%; float: right; text-align: left; display: inline-block; margin-bottom: 5mm;">
+	     $q_{ij}$ is the order of the pole ($\mathbb{Z}^+$) or zero ($\mathbb{Z}^-$).
+	</div>
+</div>
+
+<br><br><br><br><br><br><br><br>
+
+<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 5mm;">
+    The LCD tells us about what happens on surfaces with one less dimension than the full space.
+</div>
+
+---
+
 <b style="font-variant: small-caps; font-size: xxx-large"> Codimension-One Slices </b>
 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     $\circ\,$ The exponents $q_{ij}$ are given by
+     $\circ\,$ What we have reliably available at 2-loop are $\mathbb{F}_p$ evaluations.
 </div>
-<br>
-<div style="text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 5mm;">
-     $$
-     \displaystyle \lim_{\mathcal{D}_j \rightarrow 0} r_i = (\mathcal{O}(1) \text{ const.}) \times \mathcal{D}_j^{-q_{ij}}
-     $$
+
+<div style="font-size: large; text-align: right; float: right; margin-top: 2mm; margin-bottom: 0mm;">
+   <a href=https://arxiv.org/abs/1406.4513> von Manteuffel, Schabinger ('14), </a> 
+   <a href=https://arxiv.org/abs/1608.01902> Peraro ('16) </a>
 </div>
 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     $\circ\,$ Issue: this can be done for $\mathbb{R}$, $\mathbb{C}$, $\mathbb{Q}_p$ but <u>not</u> $\mathbb{F}_p$ .
+     $\phantom{\circ}\,$ ($\mathbb{Q}_p$ is doable, but potentially very slow / unstable - dependening on the point.)
+</div>
+
+<br>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
+     $\circ\,$ Issue: the limit can be taken in $\mathbb{R}$, $\mathbb{C}$, $\mathbb{Q}_p$ but ${\color{red}\text{not}}$ in $\mathbb{F}_p$ .
 </div>
 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;">
-     $\circ\,$ Solution: univariate Thiele rational interpolation on a line going through $V(\langle \mathcal{D}_j \rangle)$
+     $\circ\,$ Solution: univariate Thiele rational interpolation on a line going through each $V(\langle \mathcal{D}_j \rangle)$
 </div>
 <br>
 <div style="text-align: center; float: center; font-size: x-large; margin-top: 15mm; margin-bottom: 5mm;">
@@ -431,12 +450,20 @@ $\circ\,$ Denominator factors $W_j$ correspond to <i> singular surfaces </i>.
 <br>
 <div style="text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 5mm;">
      $$
-     \displaystyle r_i(t) = \frac{\text{Poly. }(t)}{\prod_j (t-t_{\mathcal{D}_j})^{q_{ij}}}
+     \displaystyle r_i(t) = \frac{\mathcal{N}(t)}{\prod_j (t-t_{\mathcal{D}_j})^{q_{ij}}}
      $$
 </div>
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     where $t_{\mathcal{D}_j}$ is simply the solution to $D_j(t) = 0$. We read off the $q_{ij}$.
+     $\phantom{\circ}\,$ where $t_{\mathcal{D}_j}$ is simply the solution to $\mathcal{D}_j(t) = 0$. We read off the $q_{ij}$.
 </div>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 2mm;">
+     $\circ\,$ However, in LCD form the Ansatz has too many free parameters, e.g. $\bar{u}^+g^+g^+d^-(V\rightarrow \ell^+ \ell^-)$
+</div>
+<br>
+<div style="text-align: centre; font-size: x-large; centre: left; margin-top: 4mm; margin-bottom: 0mm;">
+     size(Ansatz(54, [0, 0, 2, 2, -1, 1])) = $1\,209\,546$
+</div>    
 
 ---
 
@@ -535,27 +562,38 @@ $\circ\,$ Whether a partial fraction decomposition is possible depends on the be
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> External Field Propagators </b>
+<b style="font-variant: small-caps; font-size: xxx-large"> External Masses </b>
 
 <div style="text-align: left; font-size: x-large; margin-top: 0mm;">
-$\circ\,$ Color decomposition
+$\circ\,$ Rescale propagators to make them look massless, e.g.
 </div>
 
 <div style="font-size: 17pt; float: center; margin-top: 0mm; margin-bottom: 0mm;">
 $$
-\mathcal{A}(p_i,h_i,a_i,μ_F, μ_R) = \sum_{\sigma} \mathcal{C}(\sigma \circ a_i) A(\sigma )
+\mathcal{A}(pp \rightarrow Vjj) = \frac{p_V^2}{p_V^2-m_V^2}\mathcal{A}(pp \rightarrow Vjj)\Big|_{m_V=0} 
 $$
 </div>
 
+<div style="text-align: left; font-size: x-large; margin-top: 0mm;">
+$\circ\,$ Say $p_V^2 = \langle56\rangle[65]$, we observe $\mathcal{N}_i \in \Big\langle \langle56\rangle , [56] \Big\rangle$ for all 2-loop functions in $pp\rightarrow Vjj$.
+</div>
 
----
+<div style="font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm;">
+   <a>  GDL, Ita, Page, Sotnikov (work in progress) </a>
+</div>
 
-<b style="font-variant: small-caps; font-size: xxx-large"> Modifying the Quotient Ring  </b>
+<div style="text-align: left; font-size: x-large; margin-top: 10mm;">
+$\circ\,$ In general, the singularities of amplitudes with massess look like those in the decay kinematics.
+</div>
 
+<b style="font-variant: small-caps; font-size: xx-large"> Modifying the Quotient Ring  </b>    
 
 <div style="text-align: left; font-size: x-large; margin-top: 0mm;">
-$\circ\,$ $pp\rightarrow hhj$ with exact $m_{top}$ dependence, subject to $p_{h_1}^2 = p_{h_2}^2$. <br>
+$\circ\,$ $pp\rightarrow hhj$ with exact $m_{top}$ dependence at LO/1-loop, subject to $p_{h_1}^2 = p_{h_2}^2$. <br>
 $\phantom{\circ}\,$ We work in the modified version of the $R_7$ q-ring, namely:
+</div>
+<div style="font-size: large; text-align: right; float: right; margin-top: -6mm; margin-bottom: 0mm;">
+   <a>  Campbell, GDL, Ellis (work in progress) </a>
 </div>
 
 <div style="font-size: 17pt; float: center; margin-top: 0mm; margin-bottom: 0mm;">
@@ -566,7 +604,7 @@ $$
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> Internal Fields - The Easy Case </b>
+<b style="font-variant: small-caps; font-size: xxx-large"> Internal Masses - The Easy Case </b>
 
 <div style="text-align: left; font-size: x-large; margin-top: 0mm;">
 $\circ\,$ The only dependence is in the numerator, do a Laurent expansion.
@@ -575,11 +613,15 @@ $\circ\,$ The only dependence is in the numerator, do a Laurent expansion.
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> Internal Fields - The Hard Case </b>
+<b style="font-variant: small-caps; font-size: xxx-large"> Internal Masses - The Hard Case </b>
 
 <div style="text-align: left; font-size: x-large; margin-top: 0mm;">
 $\circ\,$ The poles have mixed dependence
 </div>
+
+$(-s_{12}⟨1|\boldsymbol{5}|\boldsymbol{4}|3⟩[32]⟨23⟩[3|\boldsymbol{4}|\boldsymbol{5}|1]+m_t^2([1|2|3|\boldsymbol{4}|1⟩-⟨1|2|3|\boldsymbol{4}|1])^2)$
+
+$(-s_{13}⟨1|\boldsymbol{4}|2]⟨2|\boldsymbol{4}|1]⟨2|\boldsymbol{5}|3]⟨3|\boldsymbol{5}|2]+m_t^2([1|2|3|\boldsymbol{4}|1⟩-⟨1|2|3|\boldsymbol{4}|1])^2)$
 
 </section>
 
@@ -589,9 +631,9 @@ $\circ\,$ The poles have mixed dependence
 
 {{< slide background-image="Feynman-Diagrams-transparent.png" >}}
 
-<h1 style="margin-top: 62mm; "> Vector Spaces <br> of Rational Functions </h1>
+<h1 style="margin-top: 55mm; "> Vector Spaces <br> of Rational Functions </h1>
 
-<div style="text-align: center; font-size: x-large; margin-top: 66mm; margin-bottom: 0mm;">
+<div style="text-align: center; font-size: x-large; margin-top: 55mm; margin-bottom: 0mm;">
      GDL, Ita, Page, Sotnikov - to appear; $\quad$
      GDL, Ita, Klinkert, Sotnikov <a href="https://arxiv.org/abs/2311.10086">arXiv:2311.10086</a>
 </div>
@@ -613,7 +655,7 @@ $\circ\,$ The poles have mixed dependence
 <b style="font-variant: small-caps; font-size: xxx-large"> Picking a Basis </b>
 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     $\circ\,$ We currently have:
+     $\circ\,$ We start from something of the form:
 </div>
 <br>
 <div style="text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 0mm;">
@@ -761,10 +803,13 @@ $\circ\,$ The poles have mixed dependence
      $\circ\,$ Can we think of this as defining an inner product on the space of rational functions?
 </div>
 <br><br><br>
-<div style="text-align: center; float: center; font-size: x-large; margin-top: -8mm; margin-bottom: 0mm;">
+<div style="text-align: center; float: center; font-size: x-large; margin-top: -7mm; margin-bottom: 0mm;">
      $$
      O_{ij} \sim \langle r_i | r_j \rangle \qquad \text{(very schematically)}
      $$
+</div>
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
+     Is there a connection to intersection theory?
 </div>
 
 </section>
@@ -1015,7 +1060,8 @@ Comparison of $p\bar p \rightarrow jjj$ (in full color) to $pp \rightarrow Wjj$ 
 --->
 
 <div style="margin-top: 50mm; margin-bottom: 30mm;">
-<b style="font-variant: small-caps; font-size: xxx-large;"> Thank you <br> for your attention! </b>
+<b style="font-variant: small-caps; font-size: xxx-large;"> Thank you! </b>
+<br>
 <br>
 <br>
 <!---
@@ -1046,6 +1092,8 @@ Comparison of $p\bar p \rightarrow jjj$ (in full color) to $pp \rightarrow Wjj$ 
 
 </section>
 
+
+<!---
 ---
 
 <section>
@@ -1148,6 +1196,8 @@ Comparison of $p\bar p \rightarrow jjj$ (in full color) to $pp \rightarrow Wjj$ 
 </div>
 
 </section>
+
+--->
 
 <!-- REVEAL.JS CUSTOMIZATION -->
 
