@@ -143,7 +143,13 @@ $$
 $\circ\,$ For example, consider this 2-loop $Vjj$ coefficient <span style="font-size: large">
 ($s_{56}=p^2_V$ is a zero, $⟨3|1+4|2]^{5}Δ_{23|14|p_V}^{4}$ are poles): </span>
 </div>
-<div style="text-align: left; font-size: large; margin-top: 2mm; margin-bottom: 1mm;">
+<a style="font-size: 10pt; text-align: right; float: right; margin-top: 0mm; margin-bottom: 4mm;">
+   GDL, Ita, Page, Sotnikov (W.I.P.)
+</a>
+<a style="font-size: 10pt; text-align: right; float: right; margin-top: 0mm; margin-bottom: 4mm;" href=https://arxiv.org/abs/2110.07541>
+   Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov ('21),$\quad$
+</a>
+<div style="text-align: left; font-size: large; margin-top: 5mm; margin-bottom: 1mm;">
 $$ 
 r^{(73 \text{ of } 120)}_{\bar{u}^+g^-g^+d^-(V\rightarrow \ell^+ \ell^-)} = \frac{105}{128}\frac{⟨2|1+4|3]⟨4|2+3|1]⟨6|1+4|5]s_{14}s_{23}s_{56}(s_{124}-s_{134})(s_{123}-s_{234})(s_{25}+s_{26}+s_{35}+s_{36})}{\color{orange}{⟨3|1+4|2]}\color{red}{Δ_{23|14|56}^4}} + \\
 \Bigg[6\frac{[12]^2⟨13⟩[25]⟨34⟩⟨36⟩s_{56}(s_{124}-s_{134})}{\color{orange}{⟨3|1+4|2]^5}}\Bigg] + \Bigg[ \; \Bigg]_{1234\rightarrow \overline{4321}}+ \mathcal{O}\left(\frac{1}{⟨3|1+4|2]^{4}Δ_{23|14|56}^{3}}\right)
@@ -157,6 +163,28 @@ $\circ\,$ The first fraction has Ansatz(mass dimension: 16, phase weights: [-1, 
 $$ 
 16488 {\small\text{ (six-point massless) }} \rightarrow 4200 {\small \text{ (five-point one-mass) }} \rightarrow 2429 {\small \; (Δ_{23|14|56}-\text{residue})} \rightarrow 1 \; \small{(??)}
 $$
+</div>
+
+---
+
+<b style="font-variant: small-caps; font-size: xxx-large; margin-bottom: 10mm;">
+   Plan for this session
+</b>
+
+<div style="text-align: center; font-size: xx-large; margin-top: 10mm;">
+$1.\,$ Rational Functions w/ Constraints: Algebra and Geometry
+</div>
+
+<div style="text-align: center; font-size: xx-large; margin-top: 10mm;">
+$2.\,$ External and Internal Masses
+</div>
+
+<div style="text-align: center; font-size: xx-large; margin-top: 10mm;">
+$3.\,$ Vector Spaces over Fields of Fractions
+</div>
+
+<div style="text-align: center; font-size: xx-large; margin-top: 10mm;">
+$4.\,$ Analytic Reconstruction
 </div>
 
 </section>
@@ -201,7 +229,7 @@ $$
 </div>
 
 <div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;">
-     $\circ$ Note that this happens whenever we have vectors in the game!
+     $\circ$ Note that this happens whenever we have (enough) vectors in the game!
 </div>
 <br>
 <div style="font-size: x-large; margin-top: 0mm; margin-bottom: 0mm">
@@ -443,6 +471,10 @@ $\circ\,$ Say we have a potential denominator factor $\mathcal{D} = xy^2 + y^3 -
      \text{s.t.} \quad \sum_i c_i |i] = 0
      $$
 </div>
+<div style="font-size: large; text-align: right; float: right; margin-top: -8mm; margin-bottom: 2mm;">
+   <a href=https://indico.desy.de/event/28075/> Page ('21), </a> 
+   <a href=https://arxiv.org/abs/2305.17056> Abreu, GDL, Ita, Klinkert, Page, Sotnikov ('23) </a>
+</div>
 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
      $\circ\,$ After interpolation on the (anti-)holomorphic slice, the rational functions read
@@ -458,7 +490,7 @@ $\circ\,$ Say we have a potential denominator factor $\mathcal{D} = xy^2 + y^3 -
 </div>
 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 2mm;">
-     $\circ\,$ However, in LCD form the Ansatz has too many free parameters, e.g. $\bar{u}^+g^+g^+d^-(V\rightarrow \ell^+ \ell^-)$
+     $\circ\,$ Issue: in $\color{red}\text{LCD}$ form the Ansatz has $\color{red}\text{too many free parameters}$, e.g. $\bar{u}^+g^+g^+d^-(V\rightarrow \ell^+ \ell^-)$
 </div>
 <br>
 <div style="text-align: centre; font-size: x-large; centre: left; margin-top: 4mm; margin-bottom: 0mm;">
@@ -476,11 +508,11 @@ $\circ\,$ To distinguish $\displaystyle \frac{\mathcal{N}_{12}}{W_1W_2}$ from $\
 <div style="display:block; width:100%; margin-top: 5mm; font-size: x-large;">
 	<div style="width:33%; float: left; display: inline-block;">
 	     <img src="V1.png"; style="max-width:230px; float:center; border:none; margin-top: 5px;"> <br>
-	     ${\color{orange}W_1 = (xy^2 + y^3 - z^2)}$
+	     ${\color{orange}V(W_1) = V(\langle xy^2 + y^3 - z^2 \rangle)}$
 	</div>
 	<div style="width:33%; float: center; display: inline-block;  font-size: x-large;">
 	     <img src="V2.png"; style="max-width:230px; float:center; border:none; margin-top: 5px;"> <br>
-	     ${\color{blue}W_2 = (x^3 + y^3 - z^2)}$
+	     ${\color{blue}V(W_2) = V(\langle x^3 + y^3 - z^2\rangle )}$
 	</div>
 	<div style="width:33%; float: right; display: inline-block;">
 	     <img src="V3.png"; style="max-width:230px; float:center; border:none; margin-top: 5px;"> <br>
@@ -497,8 +529,8 @@ $\circ\,$ <i> Primary decompositions </i> of sets of polynomials (<i> ideals </i
 	     $60 = 5 \times 3 \times 2^2$
 	</div>
 	<div style="width:70%; float: right; display: inline-block;">
-	     $({\color{orange}xy^2 + y^3 - z^2}, {\color{blue}x^3 + y^3 - z^2}) = \\
-	     {\color{magenta}(z^2,x+y)} \cup {\color{green}(y^3-z^2,x)} \cup {\color{red}(2y^3-z^2,x-y)}$
+	     $\langle{\color{orange}xy^2 + y^3 - z^2}, {\color{blue}x^3 + y^3 - z^2}\rangle = \\
+	     {\color{magenta}\langle z^2,x+y\rangle} \cup {\color{green}\langle y^3-z^2,x\rangle} \cup {\color{red}\langle2y^3-z^2,x-y\rangle}$
 	</div>
 </div>
 
@@ -530,7 +562,7 @@ $\circ\,$ Whether a partial fraction decomposition is possible depends on the be
      $\circ$ $\color{red}\text{Case 1}$: the $\color{green}\text{degree of vanishing is non-uniform}$ across branches, for example:
 </div>
 <br>
-<div style="font-size: x-large; float: center; margin-top: 0mm; margin-bottom: 0mm;">
+<div style="font-size: x-large; float: center; margin-top: 4mm; margin-bottom: 0mm;">
      $\displaystyle \frac{s_{14}-s_{23}}{⟨1|3+4|2]⟨3|1+2|4]}$
 </div>
 <div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;">
@@ -541,11 +573,14 @@ $\circ\,$ Whether a partial fraction decomposition is possible depends on the be
      $\big\langle⟨1|3+4|2], ⟨3|1+2|4]\big\rangle_{R_6} = \big\langle ⟨13⟩, [24] \big\rangle_{R_6} \cap \big\langle ⟨1|3+4|2], ⟨3|1+2|4], (s_{14}-s_{23})\big\rangle_{R_6}$
 </div>
 
-<div style="font-size: x-large; float: left; margin-top: 10mm; margin-bottom: 0mm;">
-     $\circ$ $\color{red}\text{Case 2}$: ideal is $\color{green}\text{non-radical}$ (example on last slide)
+<div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;">
+     $\circ$ $\color{red}\text{Case 2}$: ideal is $\color{green}\text{non-radical}$
 </div>
-<br><br>
-<div style="font-size: x-large; float: center; margin-top: -3mm; margin-bottom: 0mm;">
+<div style="font-size: large; text-align: right; float: right; margin-top: 4mm; margin-bottom: 0mm;">
+   <a href=https://arxiv.org/abs/2203.17170> Campbell, GDL, Ellis ('22) </a>
+</div>
+<br>
+<div style="font-size: x-large; float: center; margin-top: 2mm; margin-bottom: 0mm;">
      $\displaystyle \small \kern0mm \sqrt{\big\langle {\color{black}⟨3|1+4|2]}, {\color{black}Δ_{23|14|56}} \big\rangle_{R_6}} = \big\langle {\color{black}⟨3|1+4|2]}, {\color{black}s_{124}-s_{134}} \big\rangle_{R_6} $
 </div>
 
@@ -575,7 +610,7 @@ $$
 </div>
 
 <div style="text-align: left; font-size: x-large; margin-top: 0mm;">
-$\circ\,$ Say $p_V^2 = \langle56\rangle[65]$, we observe $\mathcal{N}_i \in \Big\langle \langle56\rangle , [56] \Big\rangle$ for all 2-loop functions in $pp\rightarrow Vjj$.
+$\circ\,$ Say $p_V^2 = \langle56\rangle[65]$, we observe $\mathcal{N}_i \in \Big\langle \langle56\rangle , [56] \Big\rangle$ for all 2-loop coeffs. in $pp\rightarrow Vjj$.
 </div>
 
 <div style="font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm;">
@@ -583,7 +618,12 @@ $\circ\,$ Say $p_V^2 = \langle56\rangle[65]$, we observe $\mathcal{N}_i \in \Big
 </div>
 
 <div style="text-align: left; font-size: x-large; margin-top: 10mm;">
-$\circ\,$ In general, the singularities of amplitudes with massess look like those in the decay kinematics.
+$\circ\,$ In general, the singularities of amplitudes w/ massess look like those in the decay kinematics
+</div>
+<div style="font-size: 17pt; float: center; margin-top: 0mm; margin-bottom: 0mm;">
+$$
+\text{e.g.:} \qquad \{1,2,3,\boldsymbol{4},\boldsymbol{5}\} \sim \{1,2,3,(\boldsymbol{4}\rightarrow4+5),(\boldsymbol{5}\rightarrow6+7)\} + \text{constraints (e.g. deg. bound.)}
+$$
 </div>
 
 <b style="font-variant: small-caps; font-size: xx-large"> Modifying the Quotient Ring  </b>    
@@ -607,7 +647,45 @@ $$
 <b style="font-variant: small-caps; font-size: xxx-large"> Internal Masses - The Easy Case </b>
 
 <div style="text-align: left; font-size: x-large; margin-top: 0mm;">
-$\circ\,$ The only dependence is in the numerator, do a Laurent expansion.
+$\circ\,$ If the only dependence is in the numerator, then a Laurent expansion is generally enough (like $\epsilon$). <br>
+$\phantom{\circ}\,$ For instance, taking results from $0 \rightarrow q\bar q (V\rightarrow \ell\bar\ell )(V'\rightarrow \ell'\bar\ell') g$ w/ massive q-loop
+</div>
+<div style="font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm;">
+   <a href=https://arxiv.org/abs/2203.17170> Campbell, GDL, Ellis ('22) </a>
+</div>
+
+<br>
+
+<div style="font-size: 17pt; float: center; margin-top: -8mm; margin-bottom: 0mm;">
+$$
+\begin{eqnarray} \label{basicexpansion}
+d_{\{i\times j\times k\}}&=\;(v_L^2+v_R^2)\, &\big[m^0 d_{\{i\times j\times k\}}^{(0)}+m^2 d_{\{i\times j\times k\}}^{(2)}+m^4 d_{\{i\times j\times k\}}^{(4)}\big] \nonumber \\
+ &\;+\;v_L v_R &\big[ m^2 \tilde{d}_{\{i\times j\times k\}}^{(2)}+m^4 \tilde{d}_{\{i\times j\times k\}}^{(4)} \big] \, .
+\end{eqnarray}
+$$
+</div>
+
+<div style="text-align: left; font-size: x-large; margin-top: 0mm;">
+$\circ\,$ Where e.g. $d_{\{12\times34\times56\}}^{(4)}$ is: (using $\Gamma_{34|56} = |3+4|5+6|$, and tilde for anti-symm.)
+<div style="font-size: 16pt; float: center; margin-top: 9mm; margin-bottom: 0mm;">
+$$
+d_{\{12\times34\times56\}}^{(4)}=\frac{[2|\tilde\Gamma_{34|12|56}|1\rangle}
+{s_{12}s_{34}s_{56}\langle7|\Gamma_{34|56}|7\rangle}
+\left(\frac{[4|\tilde\Gamma_{34|12|56}|3\rangle[6|\tilde\Gamma_{34|12|56}|5\rangle}
+{\langle7|\Gamma_{34|56}|7\rangle[7|\Gamma_{34|56}|7]}
+-\langle3|5\rangle[4|6]
+\right)
+$$
+</div>
+
+<div style="text-align: left; font-size: x-large; margin-top: 0mm;">
+$\circ\,$ Which follows from the following primary decomposition
+</div     >
+<div style="font-size: 16pt; float: center; margin-top: 9mm; margin-bottom: 0mm;">
+$$
+\big\langle ⟨7|\Gamma_{34|56}|7⟩, [7|\Gamma_{34|56}|7] \big\rangle = \big\langle ⟨7|\Gamma_{34}|7], ⟨7|\Gamma_{56}|7], ⟨7|\Gamma_{34|56}|7⟩, [7|\Gamma_{34|56}|7] \big\rangle  \nonumber \\
+\kern50mm \quad \cap  \; \big\langle  ⟨7|\Gamma_{34|56}|7⟩, [7|\Gamma_{34|56}|7], \tilde\Gamma_{12|34|56} \big\rangle \, .
+$$
 </div>
 
 
@@ -616,12 +694,40 @@ $\circ\,$ The only dependence is in the numerator, do a Laurent expansion.
 <b style="font-variant: small-caps; font-size: xxx-large"> Internal Masses - The Hard Case </b>
 
 <div style="text-align: left; font-size: x-large; margin-top: 0mm;">
-$\circ\,$ The poles have mixed dependence
+$\circ\,$ The poles have mixed mass-kinematics dependence, e.g.
 </div>
 
-$(-s_{12}⟨1|\boldsymbol{5}|\boldsymbol{4}|3⟩[32]⟨23⟩[3|\boldsymbol{4}|\boldsymbol{5}|1]+m_t^2([1|2|3|\boldsymbol{4}|1⟩-⟨1|2|3|\boldsymbol{4}|1])^2)$
+<div style="font-size: 18pt; float: center; margin-top: 9mm; margin-bottom: 0mm;">
+$$
+(-s_{12}⟨1|\boldsymbol{5}|\boldsymbol{4}|3⟩[32]⟨23⟩[3|\boldsymbol{4}|\boldsymbol{5}|1]+m_t^2([1|2|3|\boldsymbol{4}|1⟩-⟨1|2|3|\boldsymbol{4}|1])^2) \\
+(-s_{13}⟨1|\boldsymbol{4}|2]⟨2|\boldsymbol{4}|1]⟨2|\boldsymbol{5}|3]⟨3|\boldsymbol{5}|2]+m_t^2([1|2|3|\boldsymbol{4}|1⟩-⟨1|2|3|\boldsymbol{4}|1])^2)
+$$
+</div>
 
-$(-s_{13}⟨1|\boldsymbol{4}|2]⟨2|\boldsymbol{4}|1]⟨2|\boldsymbol{5}|3]⟨3|\boldsymbol{5}|2]+m_t^2([1|2|3|\boldsymbol{4}|1⟩-⟨1|2|3|\boldsymbol{4}|1])^2)$
+<div style="text-align: left; font-size: x-large; margin-top: 0mm;">
+$\phantom{\circ}\,$ For instance, this happens at one loop with $D=4$ cuts and pentagon diagrams.
+</div>
+
+<div style="text-align: left; font-size: x-large; margin-top: 4mm;">
+$\circ\,$ The "proper" approach would probably be to add $m_t$ to the q-ring and compute decompositions. <br>
+$\phantom{\circ}\,$ Highly non-trivial to avoid spurious singularities, e.g. $\text{tr}_5$ or spurious $\langle ij\rangle$.
+</div>
+
+<div style="text-align: left; font-size: x-large; margin-top: 4mm;">
+$\circ\,$ An approach is to use <i>effective pentagon</i> coeffs., schematically
+</div>
+<div style="text-align: left; font-size: x-large; margin-top: 0mm;">
+$$
+\text{Box} = (\text{Reduction coeff.})\times(\text{Effective pentagon}) + (\text{Effective Box})
+$$
+</div>
+<div style="text-align: left; font-size: x-large; margin-top: 4mm;">
+$\phantom{\circ}\,$ where only the Effective pentagon has the $m$-dependent pole.
+</div>
+
+<div style="text-align: left; font-size: x-large; margin-top: 4mm;">
+$\circ\,$ (Discussion) When does this happen at 2-loop? Do you need 9 propagators?
+</div>
 
 </section>
 
@@ -723,7 +829,7 @@ $(-s_{13}⟨1|\boldsymbol{4}|2]⟨2|\boldsymbol{4}|1]⟨2|\boldsymbol{5}|3]⟨3|
 <br>
 <div style="text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 5mm;">
      $$
-     \text{span}_{\vec{\mathbb{Q}},\mathbb{Q}}(r_{i \in \mathcal{B}}) = \text{column}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_{i \in \mathcal{B}}, D_k^m)) \oplus \text{null}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_{i \in \mathcal{B}}, D_k^m))
+     \text{span}_{\vec{\mathbb{Q}},\mathbb{Q}}(r_{i \in \mathcal{B}}) = \text{column}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m)) \oplus \text{null}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m))
      $$
 </div>
 
@@ -808,8 +914,8 @@ $(-s_{13}⟨1|\boldsymbol{4}|2]⟨2|\boldsymbol{4}|1]⟨2|\boldsymbol{5}|3]⟨3|
      O_{ij} \sim \langle r_i | r_j \rangle \qquad \text{(very schematically)}
      $$
 </div>
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     Is there a connection to intersection theory?
+<div style="text-align: center; font-size: x-large; float: center; margin-top: 0mm; margin-bottom: 0mm;">
+     (Discussion) Is there a connection to intersection theory?
 </div>
 
 </section>
@@ -906,19 +1012,15 @@ $\circ\,$ Linear systems solved w/ CUDA over $\mathbb{F}_{2^{31}-1}$ ($t_{\text{
 <img src="VSSizeTable-transparent.png"; style="max-width:350px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;">
 </div>
 
-<div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
-     $\circ$ For the first time with an MHV two-loop five-point amplitude the results for the rational coefficients are compact enough to be present within a paper
+<div style="text-align: left; font-size: x-large; margin-top: -2mm;">
+$\circ\,$ The basis of the vector space is now quite easy! ($r_{115}^{--}$ is the most complicated function)
 </div>
 
-https://arxiv.org/pdf/2311.10086.pdf#page=14
-
-<div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
-     $\circ$ The simplification of the basis change is <u>independent</u> of that obtained from partial fraction decompositions, as the latter can still be performed after the former.
+<div style="width:50%; font-size: x-large; float: left; display: inline-block;">
+     <img src="five-partons.png"; style="max-width:500px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;">
 </div>
-
-<div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
-     $\circ$ Can now study propertities of the amplitude <br>
-     $\phantom{\circ}$ e.g. no function has a $\text{tr}_5$ singularity, nor a pair of $\langle i | j + k | i]$ in the same denominator.
+<div style="width:50%; font-size: x-large; float: right; display: inline-block; ">
+     <img src="five-partons-last.png"; style="max-width:500px; float:center; border:none; margin-top: 7mm; margin-bottom: 2mm;">
 </div>
 
 ---
@@ -970,65 +1072,38 @@ https://arxiv.org/pdf/2311.10086.pdf#page=14
 
 {{< slide background-image="3y_and_Wjj_diagrams.png">}}
 
-# Outlook
+# Summary
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large; margin-bottom: 5mm;">
-  5-point 1-mass Amplitudes: e.g. Wjj
-</b>
-
 <div style="text-align: left; font-size: x-large; margin-top: 5mm;">
-     $0.\,$ Start from analytics of <a style="font-size: large"; href="https://arxiv.org/abs/2110.07541">Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov ('21) </a> - 1.2GB of <code>C++</code> source code.
+     We talked about:
 </div>
 
-<div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;">
-     $1.\,$ Script to split up the expressions, and compile them ($\sim 20$GB binaries) for evaluation over $\mathbb{F}_p$;
+<div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-left: 10mm;">
+     $1.\,$ Rational Functions in the Field of Fractions of Polynomial Quotient Rings: <br>
+     $\qquad\circ\,$ How to enforce constraints on polynomials; <br>
+     $\qquad\circ\,$ The relation between physics $\leftrightarrow$ algebra $\leftrightarrow$ geomtry; <br>
+     $\qquad\circ\,$ The role of the Least Common Denominator, and how to obtain it <br>
+     $\qquad\circ\,$ Partial fraction decompositions from higher-codimension information
 </div>
 
-<div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;">
-$2.\,$ Recombine the 3 projections $p_V \parallel p_1, p_V \parallel p_2, p_V \parallel p_3$ and reintroduce the little group factors <br> 
-to build 6-point spinor-helicity amplitudes (subject to degree bounds on $|5\rangle,[5|,|6\rangle,[6|$); <br>
+<div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-left: 10mm;">
+     $2.\,$ Different cases where masses appear: <br>
+     $\qquad\circ\,$ External masses <br>
+     $\qquad\circ\,$ Internal masses (simple Laurent expansion) <br>
+     $\qquad\circ\,$ Internal masses (mass- and kinematic-dependent poles)
 </div>
 
-<div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 0mm;">
-$3.\,$ Perform (rough) PFDs based on expected structures and fit the Ansatze.
+<div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-left: 10mm;">
+     $3.\,$ Vector Spaces over Fields of Fractions <br>
+     $\qquad\circ\,$ Correlation between residues, a.k.a. basis change; <br>
+     $\qquad\circ\,$ Its consequences on what functions need to be obtained.
 </div>
 
-<br>
-
-<div style="text-align: center; float:center; font-size: x-large; margin-top: -12mm; margin-bottom: 5mm;">
-Comparison of $p\bar p \rightarrow jjj$ (in full color) to $pp \rightarrow Wjj$ (at leading color):  <br>
+<div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-left: 10mm;">
+     $4.\,$ Analytic Reconstructions from an Ansatz
 </div>
-
-<table width=110% border="1" cellspacing="0" cellpadding="0" style="margin-left: -12mm; margin-bottom: 8mm; margin-top: 8mm; font-size: x-large;">
-  <tr>
-    <td><b>Kinematics</b></td>
-    <td><b># Poles ($W$)</b></td>
-    <td><b>LCD Ansatz</b></td>
-    <td><b>Partial-Fraction Ansatz</b></td>
-    <td><b>Rational Functions</b></td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">5-point massless</td>
-    <td style="text-align: center;">35</td>
-    <td style="text-align: center;">~200k</td>
-    <td style="text-align: center;">~4k</td>
-    <td style="text-align: center;">$\sim$200 KB</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">5-point 1-mass</td>
-    <td style="text-align: center;">>200</td>
-    <td style="text-align: center;">>5M</td>
-    <td style="text-align: center;">$\sim$40k</td>
-    <td style="text-align: center; background-color: yellow;">$\sim$25 MB</td>
-  </tr>
-</table>
-
-<div style="text-align: center; float: center; font-size: x-large; margin-top: 2mm; margin-bottom: 5mm;">
-     $\displaystyle \kern-10mm \{W_j\} = \bigcup_{\sigma \; \in \; \text{Aut}(R_6)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1], \langle 1|2+3|4], s_{123}, \Delta_{12|34|56}, ⟨3|2|5+6|4|3]-⟨2|1|5+6|4|2] \big\} $
-</div>
-
 </section>
 
 ---
