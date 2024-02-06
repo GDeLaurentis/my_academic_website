@@ -20,7 +20,7 @@ slides:
 <h3 style="margin-top:5mm; margin-left: -10mm; margin-right: -10mm;">
 	<b style="margin-top:15mm; font-size: 32pt;">
 	   Rational Functions  <br>
-	   of Scattering Amplitudes  <br>
+	   in MultiLeg QCD Amplitudes  <br>
         with Masses
 	</b>
 </h3>
@@ -115,6 +115,116 @@ $$
 
 ---
 
+<b style="font-variant: small-caps; font-size: xxx-large"> Numerical Generalized Unitarity </b>
+<br>
+<a style="font-size: large; text-align: center; float: center; margin-right: 0mm; margin-top: 0mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1510.05626>
+     Ita ('15)
+</a>
+<a style="font-size: large; text-align: center; float: center; margin-left:2mm; margin-right: 0mm; margin-top: 0mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1712.03946>
+     Abreu, Febres Cordero, Ita, Page, Zeng ('17)
+</a>
+
+<div style="font-size: x-large; float: left; margin-bottom: 0mm;">
+$\circ$ We have an Ansatz for the loop integrand
+</div><br>
+<div style="font-size: x-large; text-align: center; display: inline-block; margin-top: -5mm; margin-bottom: 2mm;">
+$$
+\require{color}
+\displaystyle A(\lambda, \tilde\lambda, \ell) = \sum_{\Gamma} \, \sum_{i \in M_\Gamma \cup S_\Gamma} \, c_{\,\Gamma,i}(\lambda, \tilde\lambda) \, \frac{m_{\Gamma,i}(\lambda\tilde\lambda, \ell)}{\textstyle \prod_{j} \rho_{\,\Gamma,j}(\lambda\tilde\lambda, \ell)}
+$$
+</div>
+
+<div style="font-size: x-large; float: left; margin-bottom: 0mm; margin-top: 2mm;">
+$\circ$ Generalized unitarity relates cuts of loop amplitudes to products of trees
+</div>
+
+<div style="display:block; width:100%; margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm;">
+     <div style="font-size: x-large; width:75%; float: left; text-align: center; display: inline-block; margin-top: 3mm;">
+	     $$
+	     \require{color}
+	     \displaystyle \sum_{\text{states}} \, \prod_{\text{trees}} A^{\text{tree}}(\lambda, \tilde\lambda, \ell)\big|_{\text{cut}_{\Gamma}} = \sum_{\substack{\Gamma' \ge \Gamma, \\ i \in M_\Gamma' \cup S_\Gamma'}} \kern-2mm c_{\,\Gamma',i}(\lambda, \tilde\lambda) \, \frac{m_{\Gamma',i}(\lambda\tilde\lambda, \ell)}{\displaystyle \prod_{j\in P_{\Gamma'} / P_{\Gamma}} \rho_{j}(\lambda\tilde\lambda, \ell)}\Bigg|_{\text{cut}_\Gamma}
+	     $$
+	</div>
+     <div style="width:25%; float: right; display: inline-block; margin-top: -15mm;">
+	     <div style="font-size: x-large; width:50%; float: center; text-align: center;  display: inline-block; margin-top: 0mm;">
+	     	  <code> C++ code </code>
+	     </div><br>
+	     <img src="CaravelLogo.png"; style="max-width:150px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;">
+	     <br>
+	     <a style="font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 5mm;"
+	     	href=https://arxiv.org/abs/2009.11957>
+		<div style="margin-top:0mm"> Abreu, Dormans, </div>
+		<div> Febres Cordero, Ita  </div>
+		<div> Kraus, Page, Pascual, </div>
+		<div> Ruf, Sotnikov ('20) </div>
+	     </a>
+	</div>
+     <div style="font-size: x-large; width:75%; float: left; text-align: center; display: inline-block; margin-top: 5mm;">
+	     Numerical Berends-Giele recursion for LHS, solve for coeffs. in RHS.
+	</div>
+</div>
+
+---
+
+<b style="font-variant: small-caps; font-size: xxx-large"> Six-Gluon Box Example in D=4 </b>
+<br>
+
+<div style="display:block; width:100%; font-size: 16pt; margin-top: 5mm; margin-bottom: 0mm;">
+     <div style="width:50%; float: left; display: inline-block; margin-top: 10mm; margin-left: -15mm;">
+          <img src="tree_product.png"; style="max-width:640px;float:center;border:none;margin-top:0px;margin-bottom: 5mm;">
+     </div>
+     <div style="width:50%; float: right; display: inline-block; margin-right:-10mm;">
+          <img src="6ptbox.png"; style="max-width:300px;float:center;border:none;margin-top:0px;margin-bottom: 5mm;">
+     </div>
+</div>
+
+<div style="width:100%; float: center; display: inline-block; margin-top:-15mm;">
+     <img src="onshellsolutions.png"; style="max-width:600px;float:center;border:none;margin-top:0px;margin-bottom: 5mm;">
+</div>
+
+
+<div style="width:100%; float: left; display: inline-block; margin-left: -30mm; margin-top: -5mm;">
+     <img src="boxresult.png"; style="max-width:600px;float:center;border:none;margin-top:0px;margin-bottom: 5mm;">
+</div>
+
+---
+
+<b style="font-variant: small-caps; font-size: xxx-large"> Integration By Parts Reduction </b>
+
+<div style="font-size: x-large; float: left; margin-bottom: 0mm;">
+     $\circ$ Master / surface decomposition for non-planar topologies
+</div>
+<div style="font-size: x-large; text-align: center; display: inline-block; margin-top: 1mm; margin-bottom: 1mm;">
+$$
+\require{color}
+\begin{align}
+\kern-25mm \text{IBP-generating vectors: } & \quad \displaystyle \int d^D \ell \frac{\partial }{\partial \ell^\mu_a} \frac{v^\mu_a(\ell)}{\rho_1 \dots \rho_N} = 0 \quad (\text{in dim. reg.}) \\[2mm]
+\kern-25mm \text{No propagator doubling: } & \quad \displaystyle \sum_{a, \mu} v^\mu_a(\ell) \frac{\partial \rho_i}{\partial \ell^\mu_a} - f_i(\ell)\rho_i = 0
+\end{align}
+$$
+</div>
+<div style="font-size: x-large; float: left; margin-bottom: 10mm;">
+     $(v^\mu_a, f_i)$ form a <i>syzygy module</i>, solved for in <i>embedding space</i> using <code>Singular</code> + linear algebra.
+</div
+
+<br>
+
+<div style="font-size: x-large; float: left; marign-top: 5mm; margin-bottom: 0mm;">
+     $\circ$ Semi-numerical surface terms: $\quad m_{i\in S_\Gamma}(\ell \leftarrow \text{analytical}, s_{ij} \leftarrow \text{numerical})$
+</div>
+<div style="font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;">
+     $\kern20mm\star$ dependance on external kinematics ($s_{ij}$) obtained from sparse linear systems.
+</div>
+<br>
+<div style="font-size: x-large; float: left; margin-top: 5mm;">
+     $\circ$ Little group information retained throughout the computation
+</div>
+<div style="font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;">
+     $\kern20mm\star$ genuine $c_{\Gamma,i}(\lambda, \tilde\lambda)$ instead of $c_{\Gamma,i}(\lambda\tilde\lambda)$ + conventions for the polarization states.
+</div>
+
+---
+
 <b style="font-variant: small-caps; font-size: xxx-large; margin-bottom: 10mm;">
    Complexity Swell of Amplitudes Coefficients
 </b>
@@ -157,7 +267,7 @@ $$
 </div>
 
 <div style="text-align: left; font-size: x-large; margin-top: 8mm;">
-$\circ\,$ The first fraction has Ansatz(mass dimension: 16, phase weights: [-1, 1, -1, 1, -1, 1]): 
+$\circ\,$ The first fraction has Ansatz(mass dimension: 16, phase weights: [-1, 1, -1, 1, -1, 1]) of size: 
 </div>
 <div style="text-align: left; font-size: x-large; margin-top: 2mm; margin-bottom: 1mm;">
 $$ 
@@ -168,7 +278,7 @@ $$
 ---
 
 <b style="font-variant: small-caps; font-size: xxx-large; margin-bottom: 10mm;">
-   Plan for this session
+   Plan for this talk
 </b>
 
 <div style="text-align: center; font-size: xx-large; margin-top: 10mm;">
@@ -201,7 +311,7 @@ $4.\,$ Analytic Reconstruction
 
 <br><br><br><br>
 
-mainly based on: <br>
+mostly based on: <br>
 [GDL, Page (JHEP 12 (2022) 140)](https://arxiv.org/abs/2203.04269) 
 
 ---
@@ -647,7 +757,7 @@ $$
 <b style="font-variant: small-caps; font-size: xxx-large"> Internal Masses - The Easy Case </b>
 
 <div style="text-align: left; font-size: x-large; margin-top: 0mm;">
-$\circ\,$ If the only dependence is in the numerator, then a Laurent expansion is generally enough (like $\epsilon$). <br>
+$\circ\,$ If the only dependence is in the numerator, then a Taylor expansion is generally enough (like $\epsilon$). <br>
 $\phantom{\circ}\,$ For instance, taking results from $0 \rightarrow q\bar q (V\rightarrow \ell\bar\ell )(V'\rightarrow \ell'\bar\ell') g$ w/ massive q-loop
 </div>
 <div style="font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm;">
@@ -710,7 +820,7 @@ $\phantom{\circ}\,$ For instance, this happens at one loop with $D=4$ cuts and p
 
 <div style="text-align: left; font-size: x-large; margin-top: 4mm;">
 $\circ\,$ The "proper" approach would probably be to add $m_t$ to the q-ring and compute decompositions. <br>
-$\phantom{\circ}\,$ Highly non-trivial to avoid spurious singularities, e.g. $\text{tr}_5$ or spurious $\langle ij\rangle$.
+$\phantom{\circ}\,$ This is highly non-trivial; also hard to avoid spurious singularities, e.g. $\text{tr}_5$ or spurious $\langle ij\rangle$.
 </div>
 
 <div style="text-align: left; font-size: x-large; margin-top: 4mm;">
@@ -1005,11 +1115,25 @@ $\circ\,$ Linear systems solved w/ CUDA over $\mathbb{F}_{2^{31}-1}$ ($t_{\text{
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> Five-Parton Results in Full Color </b>
-<br>
+<b style="font-variant: small-caps; font-size: xxx-large"> Some Public Computational Tools </b>
 
 <div>
-<img src="VSSizeTable-transparent.png"; style="max-width:350px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;">
+<img src="demos.png"; style="max-width:1150px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm; margin-left: -25mm;">
+</div>
+
+---
+
+<b style="font-variant: small-caps; font-size: xxx-large"> Five-Parton Results in Full Color </b>
+<br>
+<div style="font-size: 13pt; text-align: right; float: right; margin-top: -5mm; margin-bottom: 0mm; margin-left: -5mm">
+   <a href=https://arxiv.org/abs/2311.10086> GDL, Ita, Klinkert, Sotnikov ('23), </a>
+   <a href=https://arxiv.org/abs/2311.18752> GDL, Ita, Sotnikov ('23); </a>
+   see also
+   <a href=https://arxiv.org/abs/2311.09870> Agarwal, Buccioni, Devoto, Gambuti, von Manteuffel, Tancredi ('23) </a>
+</div>
+
+<div>
+<img src="VSSizeTable-transparent.png"; style="max-width:350px; float:center; border:none; margin-top: 3mm; margin-bottom: 0mm;">
 </div>
 
 <div style="text-align: left; font-size: x-large; margin-top: -2mm;">
@@ -1025,44 +1149,21 @@ $\circ\,$ The basis of the vector space is now quite easy! ($r_{115}^{--}$ is th
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> Quarks from Gluons </b>
+<b style="font-variant: small-caps; font-size: xxx-large"> Outlook: More Legs and/or Masses </b>
 <br>
 
-<div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
-     $\circ$ Checking whether a rational function belongs to a given vector space
-</div>
-<div style="text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 0mm;">
-     $$
-     r_{\text{guess}} \stackrel{?}{\in} \text{span}_{FF(R_5), \mathbb{Q}}(r_{i})
-     $$
-</div>
-<div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
-     $\phantom{\circ}$ is much simpler problem than performing a rational reconstruction! <br>
-     $\phantom{\circ}$ It only requires as many evaluations as the dimension of the vector space.
+<div style="text-align: left; font-size: x-large; margin-top: 2mm;">
+$\circ\,$ New mathematical tools help tackle the increasing complexity of amplitudes in the precision era.
 </div>
 
-<div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
-     $\circ$ The vector space has uniform mass dimension and phase weights
-</div>
-<div style="text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 0mm;">
-     $$
-     |i⟩ \rightarrow t^{1/2}|i⟩, \; |i] \rightarrow t^{1/2}|i] \quad \forall \; i \quad \text{and} \quad
-     |i⟩ \rightarrow t|i⟩, \; |i] \rightarrow \frac{1}{t}|i]
-     $$
+<div style="text-align: left; font-size: x-large; margin-top: 5mm;">
+$\circ\,$ Preliminary results for $pp\rightarrow Wjj$ are around $25 MB$ (down from $1.2GB$    ), <br>
+$\phantom{\circ}\,$ with the quark-channel basis functions down to $125 KB$, of which 25 of 92 functions are:
 </div>
 
-<div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
-     $\circ$ Generate guesses for quark functions by re-scaling gluon functions
+<div>
+<img src="quarksW.png"; style="max-width:1000px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm; margin-left: -5mm;">
 </div>
-<div style="text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 0mm;">
-     $$
-     \tilde{r}^{-}_{73}(q^+,q^-,g^+,g^+,g^-) = \frac{[14]⟨25⟩⟨45⟩}{⟨24⟩[24]⟨34⟩^2} = \frac{⟨14⟩}{⟨24⟩} \underbrace{\frac{[14]⟨25⟩⟨45⟩}{⟨14⟩[24]⟨34⟩^2}}_{r^{--}_{18}(g^+,g^-,g^+,g^+,g^-)}
-     $$
-</div>
-<div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 2mm;">
-     $\circ$ We obtain most (50% of 2q3g and 90% of 4q1g) quarks functions this way.
-</div>
-
 
 </section>
 
@@ -1075,6 +1176,9 @@ $\circ\,$ The basis of the vector space is now quite easy! ($r_{115}^{--}$ is th
 # Summary
 
 ---
+
+<b style="font-variant: small-caps; font-size: xxx-large"> Summary </b>
+<br>
 
 <div style="text-align: left; font-size: x-large; margin-top: 5mm;">
      We talked about:
