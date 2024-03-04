@@ -15,7 +15,8 @@ slides:
 
 ---
 
-{{< slide background-image="FSU-photo.png" >}}
+{{< slide background-image="LiverpoolAerial.png" >}}
+<!--- {{< slide background-image="FSU-photo.png" >}}  --->
 <!--- {{< slide background-image="EdiCastle.jpg" >}} --->
 
 <h3 style="margin-top:5mm; margin-left: -10mm; margin-right: -10mm;">
@@ -34,9 +35,9 @@ Giuseppe De Laurentis
 <A href="https://arxiv.org/abs/2311.18752">arXiv:2311.18752</a> <div style="font-size: large;"> (GDL, H. Ita, V. Sotnikov) </div>
 
 <!--- Amplitudes Meeting --->
-FSU HEP Seminar
+Liverpool HEP Seminar
 <br>
-<p style="line-height: 0.05;"> <img src="UniEdinburghLogo-transparent.png"; style="max-width:120px;float:center;border:none;"> <img src="FSU Seal.png"; style="max-width:120px;float:center;border:none;margin-left:20mm;">
+<p style="line-height: 0.05;"> <img src="UniEdinburghLogo-transparent.png"; style="max-width:120px;float:center;border:none;"> <img src="LiverpoolLogo.png"; style="max-width:120px;float:center;border:none;margin-left:20mm;">
 <br><br>
 <span style="font-size: 11pt">Find these slides at  <a href="/slides/fivepartons_dec2023/#/">gdelaurentis.github.io/slides/fivepartons_dec2023</a> </span>
 </div>

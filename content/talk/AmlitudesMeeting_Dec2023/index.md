@@ -3,7 +3,7 @@ title: "Non-Planar Two-Loop Amplitudes for Five-Parton Scattering"
 event: AmplitudesMeeting
 event_url: 
 location: Higgs Centre, Edinburgh
-summary: FSU HEP Seminar - January 12, 2024 <br> Higgs Centre Amplitudes Seminar - December 7, 2023
+summary: Liverpool HEP Seminar - March 6, 2024 <br> FSU HEP Seminar - January 12, 2024 <br> Higgs Centre Amplitudes Seminar - December 7, 2023
 abstract: 
 
 # Talk start and end times.
