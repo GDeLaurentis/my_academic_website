@@ -579,18 +579,6 @@ GDL, Ita, Page, Sotnikov (to appear)
     </div>
 </div>
 
----
-
-<b style="font-variant: small-caps; font-size: xxx-large"> Complexity of the Reconstruction </b>
-
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     $\circ\,$ Sort the $r_i$ by mass dimension of $\mathcal{N}$ ($\approx$ Ansatz size), pick simplest subset forming a basis $r_{i \in \mathcal{B}}$
-</div>
-
-<div>
-<img src="ComplexityOfReconstruction-transparent.png"; style="max-width:650px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;">
-</div>
-
 </section>
 
 ---
@@ -603,30 +591,21 @@ GDL, Ita, Page, Sotnikov (to appear)
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> Picking a Basis </b>
+<b style="font-variant: small-caps; font-size: xxx-large"> Vector Spaces of Rational Functions </b>
+
 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     $\circ\,$ We currently have:
-</div>
-<br>
-<div style="text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 0mm;">
+     $\circ\,$ Sort the $r_i$ by mass dimension of $\mathcal{N}$ ($\approx$ Ansatz size), pick simplest subset forming a basis $r_{i \in \mathcal{B}}$
+</div><br>
+<div style="text-align: center; float: center; font-size: x-large; margin-top: -8mm; margin-bottom: -2mm;">
      $$
-     R = r_{i\in \mathcal{B}} M_{ij} h_j \, , \qquad M_{ij} \in \mathbb{Q}
+     R = r_j h_j = r_{i\in \mathcal{B}} M_{ij} h_j \, , \qquad M_{ij} \in \mathbb{Q}
      $$
 </div>
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     $\phantom{\circ}\,$ with $r_{i\in \mathcal{B}} \subset r_i$, i.e. $M_{ij}$ is in reduced row echelon form, up to a permutation of columns.
+<div>
+<img src="ReconstructionComplexity.png"; style="max-width:650px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;">
 </div>
 
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
-     $\circ\,$ Basic idea: change basis from a subset of pentagon function coefficients, to linear combinations
-</div>
-<br><br>
-<div style="text-align: center; float: center; font-size: x-large; margin-top: -2mm; margin-bottom: 5mm;">
-     $$
-     \tilde{r}_{i'} = O_{i'i} \, r_{i \in \mathcal{B}} \quad \text{s.t.} \quad \text{rank}(O_{i'i}) = \text{dim(span}_{FF(R_5), \mathbb{Q}}(r_{i}))
-     $$
-</div>
 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
      $\circ\,$ Key insight: 
@@ -646,7 +625,7 @@ GDL, Ita, Page, Sotnikov (to appear)
 <b style="font-variant: small-caps; font-size: xxx-large"> Correlation of Residues </b>
 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     $\circ\,$ Build Laurent expansions around $t_{\mathcal{D}_k}$ <span style="font-size: 12pt"> (use same kind of slice <a href="slides/fivepartons_dec2023/#/3/4">as before</a>)</span>
+     $\circ\,$ Build Laurent expansions around $t_{\mathcal{D}_k}$ <span style="font-size: 12pt"> Univariate Tiele Tiziano, Ben's Lecture Notes, p(z)-adic expansion</span>
 </div>
 <br>
 <div style="text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 5mm;">
