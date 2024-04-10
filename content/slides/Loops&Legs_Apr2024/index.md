@@ -115,8 +115,6 @@ Loops & Legs 2024
     </tbody>
 </table>
 
-<br><br>
-
 <style>
     .two-col {
         display: flex;
@@ -141,6 +139,9 @@ Loops & Legs 2024
     </div>
 </div>
 
+<div style="font-size: x-large; float: center; margin-bottom: -4mm;">
+This talk: $pp\rightarrow jjj$, i.e. $\{0\rightarrow ggggg$, $0\rightarrow q\bar qggg$, $0\rightarrow q\bar qQ\bar Q g\}$
+</div>
 
 ---
 
@@ -180,7 +181,7 @@ $\circ$ Color decomposition (trace basis)
 <br><br>
 
 <div style="font-size: x-large; float: left; margin-bottom: -4mm; magin-top:-4mm;">
-$\circ$ $N_c^{n_c}$ & $N_f^{n_f}$ expansion, with notation: $A^{(L),(n_c, n_f)}_{\text{partial}}$
+$\circ$ $N_c^{n_c}$ & $N_f^{n_f}$ expansion, notation $A^{(L),(n_c, n_f)}_{\text{partial}}$, <span style="color: red"> red </span> = new
 </div><br>
 <div style="font-size: 14pt; margin-top: -2mm; margin-bottom: 0mm">
      \[
@@ -217,19 +218,45 @@ $\circ$ New identities among partials (plus two more for the $n_f = 1$ partials)
 
 ---
 
-<div style="margin-top: 2mm; margin-bottom: 4mm">
-     <b style="font-variant: small-caps; font-size: xxx-large"> Number of Cut Diagrams </b>
+
+<div style="display: flex; justify-content: center;">
+    <div style="margin: 0 10px;">
+        <div style="margin-top: 2mm; margin-bottom: 4mm">
+          <b style="font-variant: small-caps; font-size: xxx-large"> Motivation</b>
+        </div>
+        <div style="font-size: 16pt;">
+        3 is not that big! And certainly not close to $\infty$
+        </div>
+        <img src="correction_sizes_catani.png" style="max-width:600px; border:none; margin-top: 0mm; margin-bottom: 0mm;">
+        <div style="font-size: 16pt; margin-bottom: 2mm;">
+        Slc contributions to $pp\rightarrow jjj$ should be similar to blue curve.
+        </div>
+        <div style="font-size: 16pt; margin-bottom: 2mm;">
+        Expect $\mathcal{O}(10\%)$ effect on duble-virtual hard function.
+        </div>
+        <div style="font-size: 16pt;">
+        Effect on $\sigma^{\text{NNLO}}$ depends on size of $\mathcal{H}^{(2)}$ in the chosen scheme!
+        </div>
+    </div>
+    <div style="margin: 0 10px;">
+        <div style="margin-top: 2mm; margin-bottom: 4mm">
+          <b style="font-variant: small-caps; font-size: xxx-large"> Pheno. Goal</b>
+        </div>
+        <div style="font-size: 16pt; margin-bottom:2mm;">
+        Stable and fast evaluations
+        </div>
+        <img src="h2_5g.png" style="max-width:590px; border:none; margin-top: 0mm; margin-bottom: 0mm;">
+        <div style="font-size: 16pt; margin-bottom:-4mm;">
+        <code> C++ </code> Code available at
+        </div>
+        <a href="https://gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp" style="font-size: 16pt;">gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp</a>
+        <div style="font-size: 16pt; margin-bottom:-4mm;">
+        Analytics available at
+        </div>
+        <a href="https://zenodo.org/records/10142295" style="font-size: 16pt;">zenodo.org/records/10142295</a> <span style="font-size: 16pt">&</span>
+        <a href="https://zenodo.org/records/10231547" style="font-size: 16pt;">zenodo.org/records/10231547</a>
+    </div>
 </div>
-
-<div>
-<img src="NbrOfDiagramsTable-transparent.png"; style="max-width:800px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;">
-</div>
-
-<div>
-<img src="h2_5g.png"; style="max-width:600px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;">
-</div>
-
-
 
 </section>
 
@@ -338,6 +365,10 @@ $\circ$ Generalized unitarity relates cuts of loop amplitudes to products of tre
 	</div>
 </div>
 
+<div>
+<img src="NbrOfDiagramsTable-transparent.png"; style="max-width:800px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;">
+</div>
+
 ---
 
 <b style="font-variant: small-caps; font-size: xxx-large"> Finite Remainders </b>
@@ -425,6 +456,13 @@ GDL, Ita, Page, Sotnikov (to appear)
 
 ---
 
+
+<div>
+<img src="stability_mandel_spinor.png"; style="max-width:600px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;">
+</div>
+
+
+---
 
 <b style="font-variant: small-caps; font-size: xxx-large;"> Polynomial Quotient Rings  </b>
 
