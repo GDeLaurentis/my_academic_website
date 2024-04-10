@@ -503,30 +503,42 @@ GDL, Ita, Page, Sotnikov (to appear)
      </p>
 </div>
 
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     $\circ\,$ The rational coefficients take the form
-</div>
-<br>
-<div style="text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 5mm;">
-     $$
-     \displaystyle r_i(|i\rangle,[i|) = \frac{\text{Num. poly}(|i\rangle,[i|)}{\text{Denom. poly}(|i\rangle,[i|)} = \frac{\mathcal{N}(|i\rangle,[i|)}{\prod_j D_j^{q_{ij}}(|i\rangle,[i|)}
-     $$
-</div>
-
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     $\circ\,$ The $\mathcal{D}_j$ are related to the letters of the symbol alphabet
-</div>
-<a style="font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1812.04586>
-   Abreu, Dormans, Febres Cordero, Ita, Page ('18)
-</a>
-<br>
-<div style="text-align: center; float: center; font-size: x-large; margin-top: -10mm; margin-bottom: 5mm;">
-     $$
-     \displaystyle \{\mathcal{D}_{\{1,\dots,35\}}\} = \bigcup_{\sigma \; \in \; \text{Aut}(R_5)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1] \big\}
-     $$
-</div>
-<div style="text-align: center; font-size: x-large; float: center; margin-top: -10mm; margin-bottom: 0mm;">
-     $\qquad\color{green}\text{Identical to 1-loop!}$
+<div style="display:block; width:100%; margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm;">
+     <div style="font-size: x-large; width:60%; float: left; text-align: center; display: inline-block; margin-top: 3mm;">
+	     <div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 1mm;">
+                $\circ\,$ The rational coefficients take the form
+          </div>
+          <br>
+          <div style="font-size:16pt; float: left; margin-top: 1mm; margin-bottom: 0mm">
+               $$
+               \displaystyle r_i(|i\rangle,[i|) = \frac{\mathcal{N}(|i\rangle,[i|)}{\prod_j D_j^{q_{ij}}(|i\rangle,[i|)}
+               $$
+          </div>
+          <div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 1mm;">
+               $\circ\,$ The $\mathcal{D}_j$ are related to the letters of the symbol alphabet
+          </div>
+          <br>
+          <a style="font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1812.04586>
+          Abreu, Dormans, Febres Cordero, Ita, Page ('18)
+          </a>
+          <div style="font-size:16pt; float: left; margin-top: 1mm; margin-bottom: 0mm">
+               $$
+               \displaystyle \{\mathcal{D}_{\{1,\dots,35\}}\} = \bigcup_{\sigma \; \in \; \text{Aut}(R_5)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1] \big\}
+               $$
+          </div>
+          <div style="font-size:15pt; float: left; margin-top: 0mm; margin-bottom: 1mm;">
+               $\qquad\color{green}\text{Identical to 1-loop!}$
+          </div>
+	</div>
+     <div style="width:40%; float: right; display: inline-block; margin-top: 0mm;">
+          <img src="V2.png"; style="max-width:300px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;">
+          <div style="width:100%; font-size: 14pt; margin-top: -2mm; margin-bottom: 1mm;">
+               The codimension one variety 
+          </div>
+          <div style="width:100%; font-size: 14pt; margin-top: 1mm; margin-bottom: 1mm;">
+               $\langle x^3 + y^3 - z^2 \rangle$ in $\mathbb{R}[x,y,z]$
+          </div>
+     </div>
 </div>
 
 
@@ -547,6 +559,24 @@ GDL, Ita, Page, Sotnikov (to appear)
      <p style="margin-top: -2mm; margin-bottom: 2mm; font-size: 18pt;">
      (i.e. what happens at codimension greater than one)
      </p>
+</div>
+
+<div style="display: flex;">
+    <div style="flex: 1;">
+        <img src="V1.png" style="max-width:60%; height:auto;">
+    </div>
+    <div style="flex: 1; max-width:5%; margin-top:20mm;">
+        $\cap$
+    </div>
+    <div style="flex: 1;">
+        <img src="V2.png" style="max-width:60%; height:auto;">
+    </div>
+    <div style="flex: 1; max-width:5%; margin-top:20mm;">
+        $=$
+    </div>
+    <div style="flex: 1;">
+        <img src="V3.png" style="max-width:60%; height:auto;">
+    </div>
 </div>
 
 ---
