@@ -956,17 +956,45 @@ $$r^{(5 \text{ of } 54)}_{\bar{u}^+g^+g^+d^-(V\rightarrow \ell^+ \ell^-)} = \fra
 ---
 
 <b style="font-variant: small-caps; font-size: 28pt; margin-bottom: 10mm;">
-   Iterated reconstruction by sequentially removing poles
+   Iterated Reconstruction by Sequentially Removing Poles
 </b>
 
-<div style="text-align: left; font-size: x-large; margin-top: 8mm;">
+<div style="text-align: left; font-size: x-large; margin-top: 2mm;">
 $\circ\,$ In general results are much more complicated, but we can retain control surface-by-surface
 </div>
-<div style="text-align: left; font-size: large; margin-top: 2mm; margin-bottom: 1mm;">
-$$ r^{(73 \text{ of } 120)}_{\bar{u}^+g^-g^+d^-(V\rightarrow \ell^+ \ell^-)} = \frac{105}{128}\frac{⟨2|1+4|3]⟨4|2+3|1]⟨6|1+4|5]s_{14}s_{23}s_{56}{\color{green}(s_{124}-s_{134})}(s_{123}-s_{234})(s_{25}+s_{26}+s_{35}+s_{36})}{{\color{orange}⟨3|1+4|2]}{\color{red}Δ_{23|14|56}^4}} + \\
-\Bigg[-6\frac{[12]^2⟨13⟩[25]⟨34⟩⟨36⟩⟨56⟩[56]{\color{green}(s_{124}-s_{134})}}{{\color{orange}⟨3|1+4|2]^5}}\Bigg] + \Bigg[ \; \Bigg]_{1234\rightarrow \overline{4321}}+ \mathcal{O}\left(\frac{1}{⟨3|1+4|2]^{4}Δ_{23|14|56}^{3}}\right)$$
-</div>
+<a style="font-size: large; display: inline-block; text-align: right; float: right; margin-left: 0mm; margin-top: 0mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/2203.04269>
+     GDL, Page ('22)
+</a>
+<a style="font-size: large; display: inline-block; text-align: right; float: right; margin-left: 0mm; margin-top: 0mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1904.04067>
+     GDL, Maître ('19) $\;$
+</a>
 
+<br>
+<div style="text-align: left; font-size: 14pt; margin-top: -8mm; margin-bottom: 1mm;">
+$$ 
+\begin{alignedat}{2}
+& r^{(139 \text{ of } 139)}_{\bar{u}^+g^+g^-d^-(V\rightarrow \ell^+ \ell^-)} = & \qquad\qquad & \text{Variety (scheme?) to isolate term(s)} \\[2mm]
+& \frac{-7/8⟨16⟩⟨1|2+3|5]⟨3|1+4|2](s_{13}-s_{24} )(s_{123}-s_{234})}{⟨14⟩⟨1|2+3|4]^2⟨2|1+4|3]Δ_{14|23|56}} & \qquad\qquad & \Big\langle ⟨1|2+3|4]^2, Δ_{14|23|56} \Big\rangle \\[1mm]
+& +\frac{7/4(s_{24}-s_{13})⟨6|1+4|5]s_{123}(s_{124}-s_{134})}{⟨1|2+3|4]⟨2|1+4|3]^2 Δ_{14|23|56}} & \qquad\qquad & \Big\langle ⟨2|1+4|3]^2, Δ_{14|23|56} \Big\rangle \\[1mm]
+& -\frac{49/64⟨3|1+4|2]⟨6|1+4|5]s_{123}(s_{123}-s_{234})(s_{124}-s_{134})}{⟨1|2+3|4]⟨2|1+4|3]Δ^2_{14|23|56}} & \qquad\qquad & \Big\langle Δ_{14|23|56} \Big\rangle \\[1mm]
+& +\frac{1/4[12]^3⟨14⟩[45]⟨46⟩}{[13][23]⟨1|2+3|1]⟨4|5+6|4]^2} & \qquad\qquad & \Big\langle ⟨1|2+3|1], ⟨4|5+6|4]^2 \Big\rangle \\[1mm]
+& -\frac{1/4[12]2⟨13⟩⟨24⟩[45]⟨46⟩}{⟨12⟩[13]⟨2|1+3|2]⟨4|5+6|4]^2}-\frac{3/4⟨34⟩2[45]⟨46⟩⟨3|1+2|4]}{⟨14⟩⟨23⟩⟨2|1+3|4]⟨4|5+6|4]^2} & \qquad\qquad & \Big\langle ⟨4|5+6|4] \Big\rangle \\[1mm]
+& + \dots \text{more than 30 fractions} \dots &&
+\end{alignedat}
+$$
+</div>
+<!--- 
+& +\frac{7/2⟨13⟩^3[15]⟨16⟩[23]}{⟨12⟩⟨14⟩⟨1|2+3|1]⟨1|2+3|4]^2}+\frac{7/2⟨13⟩^2⟨16⟩[25]}{⟨12⟩⟨14⟩⟨1|2+3|4]^2} & \qquad\qquad & \Big\langle ⟨1|2+3|4] \Big\rangle \\[1mm]
+& -\frac{7⟨24⟩[25][35]s_{123}}{⟨12⟩[23][56]⟨2|1+4|3]^2} & \qquad\qquad & \Big\langle ⟨2|1+4|3] \Big\rangle \\[1mm]
+--->
+
+<div style="text-align: left; font-size: 16pt; margin-top: 2mm;">
+$\circ\,$ Preliminary results (originally over 1GB):
+</div>
+<div style="text-align: center; font-size: 16pt; margin-top: 2mm;">
+$pp\rightarrow Vq\bar q : \; 120\text{KB} \; r_i, \; 500\text{KB} \; M_{ij} \qquad pp\rightarrow Vgg \text{(MHV)}: \; 170\text{KB} \; r_i, \; 33\text{KB} \; M_{ij}; $ <br>
+$pp\rightarrow Vgg \text{(NMHV)}: \; 13\text{MB} \; r_i, \; 1\text{MB} \; M_{ij}.$
+</div>
 
 </section>
 
