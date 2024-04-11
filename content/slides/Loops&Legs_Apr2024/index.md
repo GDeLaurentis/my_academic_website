@@ -158,6 +158,9 @@ This talk: $pp\rightarrow jjj$, i.e. $\{0\rightarrow ggggg$, $0\rightarrow q\bar
 
 ---
 
+<div style="font-size: x-large; float: center; margin-top:4mm;">
+</div>
+
 <div style="display: flex; justify-content: center;">
     <div style="margin: 0 10px;">
         <div style="margin-top: 2mm; margin-bottom: 4mm">
@@ -166,15 +169,15 @@ This talk: $pp\rightarrow jjj$, i.e. $\{0\rightarrow ggggg$, $0\rightarrow q\bar
         <div style="font-size: 16pt;">
         3 is not that big! And certainly not close to $\infty$
         </div>
-        <img src="correction_sizes_catani.png" style="max-width:600px; border:none; margin-top: 0mm; margin-bottom: 0mm;">
-        <div style="font-size: 16pt; margin-bottom: 2mm;">
+        <img src="correction_sizes_catani.png" style="max-width:500px; border:none; margin-top: 0mm; margin-bottom: 0mm;">
+        <div style="font-size: 15pt; margin-bottom: 3mm;">
         Slc contributions to $pp\rightarrow jjj$ should be similar to blue curve.
         </div>
-        <div style="font-size: 16pt; margin-bottom: 2mm;">
-        Expect $\mathcal{O}(10\%)$ effect on duble-virtual hard function.
+        <div style="font-size: 15pt; margin-bottom: 3mm;">
+        Expect $\mathcal{O}(10\%)$ effect on duble-virtual hard function, <br> this is scheme dependant.
         </div>
-        <div style="font-size: 16pt;">
-        Effect on $\sigma^{\text{NNLO}}$ depends on size of $\mathcal{H}^{(2)}$ in the chosen scheme.
+        <div style="font-size: 15pt;">
+        Effect on $\sigma^{\text{NNLO}}$ depends on size of $\mathcal{H}^{(2)}$.
         </div>
     </div>
     <div style="margin: 0 10px;">
@@ -182,18 +185,18 @@ This talk: $pp\rightarrow jjj$, i.e. $\{0\rightarrow ggggg$, $0\rightarrow q\bar
           <b style="font-variant: small-caps; font-size: xxx-large"> Pheno. Goal</b>
         </div>
         <div style="font-size: 16pt; margin-bottom:2mm;">
-        Stable and fast evaluations
+        Stable and fast evaluations for cross sections
         </div>
-        <img src="h2_5g.png" style="max-width:590px; border:none; margin-top: 0mm; margin-bottom: 0mm;">
-        <div style="font-size: 16pt; margin-bottom:-4mm;">
+        <img src="h2_5g.png" style="max-width:490px; border:none; margin-top: 0mm; margin-bottom: 0mm;">
+        <div style="font-size: 15pt; margin-bottom:-4mm;">
         <code> C++ </code> Code available at
         </div>
-        <a href="https://gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp" style="font-size: 16pt;">gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp</a>
-        <div style="font-size: 16pt; margin-bottom:-4mm;">
+        <a href="https://gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp" style="font-size: 14pt;">gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp</a>
+        <div style="font-size: 15pt; margin-bottom:-4mm;">
         Analytics available at
         </div>
-        <a href="https://zenodo.org/records/10142295" style="font-size: 16pt;">zenodo.org/records/10142295</a> <span style="font-size: 16pt">&</span>
-        <a href="https://zenodo.org/records/10231547" style="font-size: 16pt;">zenodo.org/records/10231547</a>
+        <a href="https://zenodo.org/records/10142295" style="font-size: 14pt;">zenodo.org/records/10142295</a> <span style="font-size: 16pt">&</span>
+        <a href="https://zenodo.org/records/10231547" style="font-size: 14pt;">zenodo.org/records/10231547</a>
     </div>
 </div>
 
@@ -461,7 +464,7 @@ GDL, Ita, Page, Sotnikov (to appear)
 
 <b style="font-variant: small-caps; font-size: 33pt;"> Fieds of Fractions of Polynomial Quotient Rings  </b>
 
-<div style="display:block; width:100%; margin-top: 0mm; margin-bottom: 0mm; margin-left: -10mm; margin-right: -10mm;">
+<div style="display:block; width:100%; margin-top: 0mm; margin-bottom: 0mm; margin-left: -4mm; margin-right: -4mm;">
      <div style="font-size: x-large; width:50%; float: left; text-align: center; display: inline-block; margin-top: 3mm;">
 	     <div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;">
                $\circ$ Starting from polynomials, we have
@@ -470,21 +473,21 @@ GDL, Ita, Page, Sotnikov (to appear)
                $\phantom{\circ}$ the covariant quotient ring of spinors
           </div>
           <br> 
-          <div style="font-size:16pt; float: left; margin-top: 1mm; margin-bottom: 0mm">
+          <div style="font-size:15pt; float: left; margin-top: 1mm; margin-bottom: 0mm">
                $$\displaystyle \kern10mm R_n = \mathbb{F}\big[|1⟩, [1|, \dots, |n⟩, [n|\big] \big/ \big\langle \sum_i |i⟩[i| \big\rangle$$
           </div>
           <div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 1mm;">
                $\circ$ Lorentz invariants live in a sub-ring of $R_n$
           </div>
           <br>
-          <div style="font-size:16pt; float: left; margin-top: 1mm; margin-bottom: 0mm">
-               $$\displaystyle \kern0mm R_n \supset \mathcal{R}_n = \mathbb{F}\big[⟨1|2⟩, \dots, [n-1|n]\big] \big/ (\mathcal{J}_n + \mathcal{K}_n + \bar{\mathcal{K}}_n)$$
+          <div style="font-size:15pt; float: left; margin-top: 1mm; margin-bottom: 0mm">
+               $$\displaystyle \kern4mm R_n \supset \mathcal{R}_n = \mathbb{F}\big[⟨1|2⟩, \dots, [n-1|n]\big] \big/ (\mathcal{J}_n + \mathcal{K}_n + \bar{\mathcal{K}}_n)$$
           </div>
           <div style="font-size:15pt; float: left; margin-top: 0mm; margin-bottom: 1mm;">
-               where $\mathcal{J}_n$: momentum cons., $\;\stackrel{\tiny{(}\normalsize{-}\tiny{)}}{\mathcal{K}}_n$: shouten identities 
+               $\phantom{\circ}$ where $\mathcal{J}_n$: momentum cons., $\;\stackrel{\tiny{(}\normalsize{-}\tiny{)}}{\mathcal{K}}_n$: shouten identities 
           </div>
 	</div>
-     <div style="width:50%; float: right; display: inline-block; margin-top: 0mm; margin-right: -10mm;">
+     <div style="width:50%; float: right; display: inline-block; margin-top: 0mm; margin-right: -4mm;">
           <img src="stability_mandel_spinor.png"; style="max-width:500px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;">
           <div style="width:100%; font-size: 14pt; margin-top: -2mm; margin-bottom: 1mm;">
                Plot from LC $pp\rightarrow \gamma\gamma\gamma$ remainder in Born kinematics.
@@ -546,7 +549,7 @@ GDL, Ita, Page, Sotnikov (to appear)
           </div>
 	</div>
      <div style="width:40%; float: right; display: inline-block; margin-top: 0mm;">
-          <img src="V2.png"; style="max-width:300px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;">
+          <img src="V2.png"; style="max-width:260px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;">
           <div style="width:100%; font-size: 14pt; margin-top: -2mm; margin-bottom: 1mm;">
                The codimension one variety 
           </div>
@@ -570,8 +573,8 @@ GDL, Ita, Page, Sotnikov (to appear)
 ---
 
 <div style="margin-top: 2mm; margin-bottom: 3mm">
-     <b style="font-variant: small-caps; font-size: xxx-large"> Partial Fraction Decompositions </b>
-     <p style="margin-top: -2mm; margin-bottom: -=mm; font-size: 18pt;">
+     <b style="font-variant: small-caps; font-size: 32pt"> Partial Fraction Decompositions </b>
+     <p style="margin-top: -2mm; margin-bottom: -=mm; font-size: 16pt;">
      (i.e. what happens at codimension greater than one)
      </p>
 </div>
@@ -603,15 +606,17 @@ GDL, Ita, Page, Sotnikov (to appear)
     </div>
 </div>
 
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
+<div style="text-align: left; font-size:17pt; float: left; margin-top: 0mm; margin-bottom: 0mm;">
      $\circ$ When is a partial fraction decomposition possible? (an example)
 </div><br>
-
-<div style="font-size:16pt; float: center; margin-top: -5mm; margin-bottom: 1mm;">
-     $$\frac{\mathcal{N}}{(\prod_j \mathcal{D}_j)\times\langle 4|1+3|4]\langle 5|1+4|5]} \stackrel{?}{=} \frac{\mathcal{N}_1}{(\prod_j \mathcal{D}_j)\times\langle 4|1+3|4]} + \frac{\mathcal{N}_2}{(\prod_j \mathcal{D}_j)\times\langle 5|1+4|5]}$$
+<div style="font-size:15pt; float: center; margin-top: -8mm; margin-bottom: 1mm;">
+     $$\frac{\mathcal{N}}{(\prod_j \mathcal{D}_j^{q_j})\times\langle 4|1+3|4]\langle 5|1+4|5]} \stackrel{?}{=} \frac{\mathcal{N}_1}{(\prod_j \mathcal{D}_j^{q_j})\times\langle 4|1+3|4]} + \frac{\mathcal{N}_2}{(\prod_j \mathcal{D}_j^{q_j})\times\langle 5|1+4|5]}$$
 </div>
 
-<div style="font-size:16pt; float: center; margin-top: 2mm; margin-bottom: 1mm;">
+<div style="text-align: left; font-size:17pt; float: left; margin-top: 2mm; margin-bottom: -4mm;">
+     $\circ$ Compute primary decompositions
+</div><br>
+<div style="font-size:15pt; float: center; margin-top: -4mm; margin-bottom: 1mm;">
      $$
      J = \big\langle \langle 4|1+3|4], \langle 5|1+4|5] \big\rangle \qquad
      K = \big\langle \langle14\rangle,\langle15\rangle,\langle45\rangle,[23] \big\rangle \quad
@@ -620,7 +625,7 @@ GDL, Ita, Page, Sotnikov (to appear)
      $$
 </div>
 
-<div style="font-size:16pt; float: center; margin-top: 2mm; margin-bottom: 1mm;">
+<div style="font-size:15pt; float: center; margin-top: 2mm; margin-bottom: 1mm;">
      $$
      J = K \cap \bar K \cap L \cap \bar L \cap M \quad \text{or} \quad V(J) = V(K) \cup V(\bar K) \cup V(L) \cup V(\bar L) \cap V(M)
      $$
@@ -630,7 +635,7 @@ GDL, Ita, Page, Sotnikov (to appear)
      If $\mathcal{N}$ vanishes on all branches than the equality holds by Hilbert's Nullstellensatz.
 </div>
 
-<div style="text-align: center; float: center; font-size: 15pt; margin-top: 2mm; margin-bottom: 0mm;">
+<div style="text-align: center; float: center; font-size: 15pt; margin-top: 0mm; margin-bottom: 0mm;">
      For a fleshed out example with open-source code see <a href=https://inspirehep.net/literature/2661970> GDL (ACAT '22) </a>
 </div>
 
