@@ -88,21 +88,21 @@ Loops & Legs 2024
     <tbody>
         <tr>
             <td style="font-size: 20px;">$pp \rightarrow \gamma\gamma\gamma$</td>
-            <td style="font-size: 20px;">[3, 4, 5]</td>
-            <td style="font-size: 20px;">[3, 5]</td>
+            <td style="font-size: 20px;">[3, 4, <b>5</b>]</td>
+            <td style="font-size: 20px;">[3, <b>5</b>]</td>
             <td style="font-size: 20px;">[1, 2]</td>
         </tr>
         <tr>
             <td style="font-size: 20px;">$pp \rightarrow \gamma\gamma j$</td>
-            <td style="font-size: 20px;">Row 1, Column 1</td>
-            <td style="font-size: 20px;">Row 1, Column 2</td>
-            <td style="font-size: 20px;">Row 1, Column 3</td>
+            <td style="font-size: 20px;">[6, 7, <b>9</b>]</td>
+            <td style="font-size: 20px;">[6]</td>
+            <td style="font-size: 20px;">[8]</td>
         </tr>
         <tr>
             <td style="font-size: 20px;">$pp \rightarrow \gamma jj$</td>
-            <td style="font-size: 20px;">Row 2, Column 1</td>
-            <td style="font-size: 20px;">Row 2, Column 2</td>
-            <td style="font-size: 20px;">Row 2, Column 3</td>
+            <td style="font-size: 20px;">[<b>10</b>]</td>
+            <td style="font-size: 20px;"></td>
+            <td style="font-size: 20px;">[<b>10</b>]</td>
         </tr>
         <tr>
             <td style="font-size: 20px;">$pp \rightarrow jjj$</td>
@@ -114,33 +114,87 @@ Loops & Legs 2024
         </tr>
     </tbody>
 </table>
+<div style="font-size: 14pt; float: center; margin-top: 2mm; margin-bottom: 1mm;">
+Legend: $\star$ = planar $\neq$ leading color; $\dagger$ = planar = leading color; bold = full color
+</div><br>
 
 <style>
     .two-col {
         display: flex;
         justify-content: center;
+        margin: 0 auto;
     }
     .column {
         flex: 1;
-        padding: 10px;
-        margin: 0 10px;
-        text-align: left;
+        width: 50%;
+        padding: 1px;
+        margin: 0 1px;
+        text-align: center;
     }
 </style>
-<div class="two-col">
+<div class="two-col" style="margin-top:-16mm; margin-left:-12mm;margin-right:-12mm;">
     <div class="column">
-        <p style="margin-bottom:2mm; margin-top:2mm;"><a href="https://inspirehep.net/literature/1762583" style="font-size: 16pt;">[1] Chawdhry, Czakon, Mitov, Poncelet '19</a></p>
-        <p style="margin-bottom:1mm; margin-top:1mm;"><a href="https://inspirehep.net/literature/1827330" style="font-size: 16pt;">[3] Abreu, Page, Pascual, Sotnikov '20</a></p>
-        <p style="margin-bottom:1mm; margin-top:1mm;"><a href="https://inspirehep.net/literature/2663067" style="font-size: 16pt;">[5] Abreu, GDL, Ita, Klinkert, Page, Sotnikov '23</a></p>
+        <p style="margin-bottom:0mm; margin-top:0mm;"><a href="https://inspirehep.net/literature/1762583" style="font-size: 16pt;">[1] Chawdhry, Czakon, Mitov, Poncelet '19</a></p>
+        <p style="margin-bottom:0mm; margin-top:0mm;"><a href="https://inspirehep.net/literature/1827330" style="font-size: 16pt;">[3] Abreu, Page, Pascual, Sotnikov '20</a></p>
+        <p style="margin-bottom:0mm; margin-top:0mm;"><a href="https://inspirehep.net/literature/2663067" style="font-size: 16pt;">[5] Abreu, GDL, Ita, Klinkert, Page, Sotnikov '23</a></p>
+        <p style="margin-bottom:0mm; margin-top:0mm;"><a href="https://inspirehep.net/literature/1850624" style="font-size: 16pt;">[7] Chawdhry, Czakon, Mitov, Poncelet '21</a></p>
+        <p style="margin-bottom:0mm; margin-top:0mm;"><a href="https://inspirehep.net/literature/1862813" style="font-size: 15pt;">[9] Agarwal, Buccioni, von Manteuffel, Tancredi '21</a></p>
+        <p style="margin-bottom:0mm; margin-top:0mm;"><a href="https://inspirehep.net/literature/" style="font-size: 16pt;">[11] </a></p>
+        <p style="margin-bottom:0mm; margin-top:0mm;"><a href="https://inspirehep.net/literature/" style="font-size: 16pt;">[13] </a></p>
     </div>
-    <div class="column">
-        <p style="margin-bottom:2mm; margin-top:2mm;"><a href="https://inspirehep.net/literature/1822188" style="font-size: 16pt;">[2] Kallweit, Sotnikov, Wiesemann '20</a></p>
-        <p style="margin-bottom:2mm; margin-top:2mm;"><a href="https://inspirehep.net/literature/1838380" style="font-size: 16pt;">[4] Chawdhry, Czakon, Mitov, Poncelet '20</a></p>
+    <div class="column" style="margin-left:-5mm;">
+        <p style="margin-bottom:0mm; margin-top:0mm;"><a href="https://inspirehep.net/literature/1822188" style="font-size: 16pt;">[2] Kallweit, Sotnikov, Wiesemann '20</a></p>
+        <p style="margin-bottom:0mm; margin-top:0mm;"><a href="https://inspirehep.net/literature/1838380" style="font-size: 16pt;">[4] Chawdhry, Czakon, Mitov, Poncelet '20</a></p>
+        <p style="margin-bottom:0mm; margin-top:0mm;"><a href="https://inspirehep.net/literature/1844579" style="font-size: 15pt;">[6] Agarwal, Buccioni, von Manteuffel, Tancredi '21</a></p>
+        <p style="margin-bottom:0mm; margin-top:0mm;"><a href="https://inspirehep.net/literature/1863379" style="font-size: 16pt;">[8] Chawdhry, Czakon, Mitov, Poncelet '21</a></p>
+        <p style="margin-bottom:0mm; margin-top:0mm;"><a href="https://inspirehep.net/literature/2651109" style="font-size: 14pt;">[10] Badger, Czakon, Hartanto, Moodie, Peraro, Poncelet, Zoia '23</a></p>
+        <p style="margin-bottom:0mm; margin-top:0mm;"><a href="https://inspirehep.net/literature/" style="font-size: 16pt;">[12] </a></p>
     </div>
 </div>
 
-<div style="font-size: x-large; float: center; margin-bottom: -4mm;">
+<div style="font-size: x-large; float: center; margin-top:4mm; margin-bottom: -4mm;">
 This talk: $pp\rightarrow jjj$, i.e. $\{0\rightarrow ggggg$, $0\rightarrow q\bar qggg$, $0\rightarrow q\bar qQ\bar Q g\}$
+</div>
+
+---
+
+<div style="display: flex; justify-content: center;">
+    <div style="margin: 0 10px;">
+        <div style="margin-top: 2mm; margin-bottom: 4mm">
+          <b style="font-variant: small-caps; font-size: xxx-large"> Motivation</b>
+        </div>
+        <div style="font-size: 16pt;">
+        3 is not that big! And certainly not close to $\infty$
+        </div>
+        <img src="correction_sizes_catani.png" style="max-width:600px; border:none; margin-top: 0mm; margin-bottom: 0mm;">
+        <div style="font-size: 16pt; margin-bottom: 2mm;">
+        Slc contributions to $pp\rightarrow jjj$ should be similar to blue curve.
+        </div>
+        <div style="font-size: 16pt; margin-bottom: 2mm;">
+        Expect $\mathcal{O}(10\%)$ effect on duble-virtual hard function.
+        </div>
+        <div style="font-size: 16pt;">
+        Effect on $\sigma^{\text{NNLO}}$ depends on size of $\mathcal{H}^{(2)}$ in the chosen scheme!
+        </div>
+    </div>
+    <div style="margin: 0 10px;">
+        <div style="margin-top: 2mm; margin-bottom: 4mm">
+          <b style="font-variant: small-caps; font-size: xxx-large"> Pheno. Goal</b>
+        </div>
+        <div style="font-size: 16pt; margin-bottom:2mm;">
+        Stable and fast evaluations
+        </div>
+        <img src="h2_5g.png" style="max-width:590px; border:none; margin-top: 0mm; margin-bottom: 0mm;">
+        <div style="font-size: 16pt; margin-bottom:-4mm;">
+        <code> C++ </code> Code available at
+        </div>
+        <a href="https://gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp" style="font-size: 16pt;">gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp</a>
+        <div style="font-size: 16pt; margin-bottom:-4mm;">
+        Analytics available at
+        </div>
+        <a href="https://zenodo.org/records/10142295" style="font-size: 16pt;">zenodo.org/records/10142295</a> <span style="font-size: 16pt">&</span>
+        <a href="https://zenodo.org/records/10231547" style="font-size: 16pt;">zenodo.org/records/10231547</a>
+    </div>
 </div>
 
 ---
@@ -214,48 +268,6 @@ $\circ$ New identities among partials (plus two more for the $n_f = 1$ partials)
                - \big[ \dots \big]_{3 \leftrightarrow 4}=  0 \, .
      \end{gather}
      \]
-</div>
-
----
-
-
-<div style="display: flex; justify-content: center;">
-    <div style="margin: 0 10px;">
-        <div style="margin-top: 2mm; margin-bottom: 4mm">
-          <b style="font-variant: small-caps; font-size: xxx-large"> Motivation</b>
-        </div>
-        <div style="font-size: 16pt;">
-        3 is not that big! And certainly not close to $\infty$
-        </div>
-        <img src="correction_sizes_catani.png" style="max-width:600px; border:none; margin-top: 0mm; margin-bottom: 0mm;">
-        <div style="font-size: 16pt; margin-bottom: 2mm;">
-        Slc contributions to $pp\rightarrow jjj$ should be similar to blue curve.
-        </div>
-        <div style="font-size: 16pt; margin-bottom: 2mm;">
-        Expect $\mathcal{O}(10\%)$ effect on duble-virtual hard function.
-        </div>
-        <div style="font-size: 16pt;">
-        Effect on $\sigma^{\text{NNLO}}$ depends on size of $\mathcal{H}^{(2)}$ in the chosen scheme!
-        </div>
-    </div>
-    <div style="margin: 0 10px;">
-        <div style="margin-top: 2mm; margin-bottom: 4mm">
-          <b style="font-variant: small-caps; font-size: xxx-large"> Pheno. Goal</b>
-        </div>
-        <div style="font-size: 16pt; margin-bottom:2mm;">
-        Stable and fast evaluations
-        </div>
-        <img src="h2_5g.png" style="max-width:590px; border:none; margin-top: 0mm; margin-bottom: 0mm;">
-        <div style="font-size: 16pt; margin-bottom:-4mm;">
-        <code> C++ </code> Code available at
-        </div>
-        <a href="https://gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp" style="font-size: 16pt;">gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp</a>
-        <div style="font-size: 16pt; margin-bottom:-4mm;">
-        Analytics available at
-        </div>
-        <a href="https://zenodo.org/records/10142295" style="font-size: 16pt;">zenodo.org/records/10142295</a> <span style="font-size: 16pt">&</span>
-        <a href="https://zenodo.org/records/10231547" style="font-size: 16pt;">zenodo.org/records/10231547</a>
-    </div>
 </div>
 
 </section>
@@ -354,7 +366,7 @@ $\circ$ The integrand Ansatz is matched to products of trees on cuts
 	</div>
 </div>
 
-<div style="font-size: x-large; float: left; margin-bottom: 0mm; margin-top: 8mm;">
+<div style="font-size: x-large; float: left; margin-bottom: 4mm; margin-top: 8mm;">
 $\circ$ The SLC cut-hierarchy is significantly larger than the LC one, e.g.
 </div>
 <div>
@@ -603,21 +615,30 @@ GDL, Ita, Page, Sotnikov (to appear)
      $$
 </div>
 <div>
-<img src="ReconstructionComplexity.png"; style="max-width:650px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;">
+<img src="ReconstructionComplexity.png"; style="max-width:550px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;">
 </div>
 
 
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 1mm; margin-bottom: 0mm;">
+     $\circ\,$ Change basis: 
+</div>
+<br>
+<div style="text-align: center; float: center; font-size: x-large; margin-top: -8mm; margin-bottom: 5mm;">
+     $$
+     \kern-20mm \tilde{r}_i = O_{ii'}r_{i'\in\mathcal{B}} \; \longrightarrow \; R = \tilde{r}_{i} \, O_{ii'}M_{i'j} \, h_j = \tilde{r}_{i}  \tilde{M}_{ij} h_j
+     $$
+
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
-     $\circ\,$ Key insight: 
+     $\circ\,$ Key insight to build $O_{ii'}:$
 </div>
 <br>
 <div style="text-align: center; float: center; font-size: x-large; margin-top: -4mm; margin-bottom: 5mm;">
      $$
-     \text{dim(span}_{FF(R_5), \mathbb{Q}}\left(\lim_{\mathcal{D_j} \rightarrow  0 }r_{i}\right)) \leq \text{dim(span}_{FF(R_5), \mathbb{Q}}(r_{i}))
+     \kern-40mm\text{dim(span}(\lim_{\mathcal{D_j} \rightarrow  0 }r_{i})) \leq \text{dim(span}(r_{i}))
      $$
 </div>
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
-     $\phantom{\circ}\,$ I.e., the <span style="color: red">pole residues are correlated</span>, build linear combinations that <i> ''remove the overlap'' </i>
+<div style="text-align: left; font-size: x-large; float: left; margin-top: -4mm; margin-bottom: 0mm;">
+     $\phantom{\circ}\,$ i.e., the <span style="color: red">pole residues are correlated</span>, build linear combinations that <i> ''remove the overlap'' </i>
 </div>
 
 ---
@@ -991,6 +1012,13 @@ $\circ\,$ The three mass Grams, $\Delta_{12|34|p_V}, \Delta_{14|23|p_V}$, behave
 $$ r^{(73 \text{ of } 120)}_{\bar{u}^+g^-g^+d^-(V\rightarrow \ell^+ \ell^-)} = \frac{105}{128}\frac{⟨2|1+4|3]⟨4|2+3|1]⟨6|1+4|5]s_{14}s_{23}s_{56}{\color{green}(s_{124}-s_{134})}(s_{123}-s_{234})(s_{25}+s_{26}+s_{35}+s_{36})}{{\color{orange}⟨3|1+4|2]}{\color{red}Δ_{23|14|56}^4}} + \\
 \Bigg[-6\frac{[12]^2⟨13⟩[25]⟨34⟩⟨36⟩⟨56⟩[56]{\color{green}(s_{124}-s_{134})}}{{\color{orange}⟨3|1+4|2]^5}}\Bigg] + \Bigg[ \; \Bigg]_{1234\rightarrow \overline{4321}}+ \mathcal{O}\left(\frac{1}{⟨3|1+4|2]^{4}Δ_{23|14|56}^{3}}\right)$$
 </div>
+
+---
+
+<b style="font-variant: small-caps; font-size: 28pt; margin-bottom: 10mm;">
+   Iterated reconstruction by sequentially removing poles
+</b>
+
 
 </section>
 
