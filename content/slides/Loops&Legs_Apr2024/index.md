@@ -174,7 +174,7 @@ This talk: $pp\rightarrow jjj$, i.e. $\{0\rightarrow ggggg$, $0\rightarrow q\bar
         Expect $\mathcal{O}(10\%)$ effect on duble-virtual hard function.
         </div>
         <div style="font-size: 16pt;">
-        Effect on $\sigma^{\text{NNLO}}$ depends on size of $\mathcal{H}^{(2)}$ in the chosen scheme!
+        Effect on $\sigma^{\text{NNLO}}$ depends on size of $\mathcal{H}^{(2)}$ in the chosen scheme.
         </div>
     </div>
     <div style="margin: 0 10px;">
@@ -393,12 +393,15 @@ $$A^{1-\text{loop},D=4}_{n} = \sum_i \color{orange}{d_i} \color{red}{I^i_{Box}} 
 --->
 
 <div style="text-align: left; font-size: x-large; margin-bottom: 5mm;">
-     $\circ$ Dim-reg is great, but it also introduces <b>a lot</b> of junk (see next slide).
+     $\circ$ Dim-reg is great, but it also introduces <b>a lot</b> of junk.
 </div>
 
-<div style="text-align: left; font-size: x-large; margin-bottom: 5mm;">
-     $\circ$ <u>All physical information</u> is contained in the <i>finite remainder</i>, at two loops
+<div style="text-align: left; font-size: x-large; margin-bottom: 0mm;">
+     $\circ$ <u>All physical information</u> is contained in the <i>finite remainders</i>, at two loops
 </div>
+<a style="font-size: large; text-align: right; float: right; margin-top: -3mm; margin-bottom: -3mm;" href=https://inspirehep.net/literature/920274>
+Weinzierl ('11)
+</a>
 
 <div style="font-size: x-large; margin-top: 5mm; margin-bottom: 5mm">
 $$ 
@@ -407,10 +410,7 @@ $$
 </div>
 
 <div style="text-align: left; font-size: x-large; margin-bottom: 0mm;">
-     $\phantom{\circ}$ $\mathcal{A}^{(1)}_R$ to order $\epsilon^2$ is still needed to build $\mathcal{R}^{(2)}$, but there is no reason to reconstruct it
-</div>
-<div style="text-align: right; float: right; font-size: 11pt; margin-bottom: 1mm;">
-     Although by the time I learned this, I had already reconstructed $\mathcal{A}^{(1)}_{5g}$ to $\epsilon^2$ $\qquad$
+     $\phantom{\circ}$ $\mathcal{A}^{(1)}_R$ to order $\epsilon^2$ is still needed to build $\mathcal{R}^{(2)}$, but there is no real reason to reconstruct it.
 </div>
 
 <br>
@@ -436,8 +436,7 @@ Peraro ('16)
 </a>
 
 <div style="text-align: left; font-size: x-large; margin-bottom: 5mm;">
-     $\circ$ More precisely, we would like a basis of the vector space $\text{span}(r_i(\lambda,\tilde\lambda))$ <br>
-     $\phantom{\circ}$ (given a basis, obtaining the full set is easy).
+     $\circ$ More precisely, we would like a basis of the vector space $\text{span}(r_i)$ &ndash; more later
 </div>
 
 </section>
@@ -462,16 +461,19 @@ GDL, Ita, Page, Sotnikov (to appear)
 
 <b style="font-variant: small-caps; font-size: 33pt;"> Fieds of Fractions of Polynomial Quotient Rings  </b>
 
-<div style="display:block; width:100%; margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm;">
+<div style="display:block; width:100%; margin-top: 0mm; margin-bottom: 0mm; margin-left: -10mm; margin-right: -10mm;">
      <div style="font-size: x-large; width:50%; float: left; text-align: center; display: inline-block; margin-top: 3mm;">
-	     <div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 1mm;">
-               $\circ$ Covariant q-ring of spinors
+	     <div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;">
+               $\circ$ Starting from polynomials, we have
           </div>
-          <br>
+          <div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 1mm;">
+               $\phantom{\circ}$ the covariant quotient ring of spinors
+          </div>
+          <br> 
           <div style="font-size:16pt; float: left; margin-top: 1mm; margin-bottom: 0mm">
                $$\displaystyle \kern10mm R_n = \mathbb{F}\big[|1⟩, [1|, \dots, |n⟩, [n|\big] \big/ \big\langle \sum_i |i⟩[i| \big\rangle$$
           </div>
-          <div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 1mm;">
+          <div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 1mm;">
                $\circ$ Lorentz invariants live in a sub-ring of $R_n$
           </div>
           <br>
@@ -482,7 +484,7 @@ GDL, Ita, Page, Sotnikov (to appear)
                where $\mathcal{J}_n$: momentum cons., $\;\stackrel{\tiny{(}\normalsize{-}\tiny{)}}{\mathcal{K}}_n$: shouten identities 
           </div>
 	</div>
-     <div style="width:50%; float: right; display: inline-block; margin-top: 0mm;">
+     <div style="width:50%; float: right; display: inline-block; margin-top: 0mm; margin-right: -10mm;">
           <img src="stability_mandel_spinor.png"; style="max-width:500px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;">
           <div style="width:100%; font-size: 14pt; margin-top: -2mm; margin-bottom: 1mm;">
                Plot from LC $pp\rightarrow \gamma\gamma\gamma$ remainder in Born kinematics.
@@ -493,8 +495,8 @@ GDL, Ita, Page, Sotnikov (to appear)
      </div>
 </div>
 
-<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 8mm;">
-    $r_i(\lambda, \tilde\lambda)$ at $n$-point belong to the Field of Fractions of $\mathcal{R}_{n>3}$
+<div style="font-size: x-large; padding: 10px; display: inline-block; margin-top: 8mm;"> <!--- border: 2px solid black;  --->
+    $r_i(\lambda, \tilde\lambda)$ at $n$-point belong to the field of fractions of $\mathcal{R}_{n>3}$
 </div>
 
 <br>
@@ -520,8 +522,8 @@ GDL, Ita, Page, Sotnikov (to appear)
 	     <div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 1mm;">
                 $\circ\,$ The rational coefficients take the form
           </div>
-          <br>
-          <div style="font-size:16pt; float: left; margin-top: 1mm; margin-bottom: 0mm">
+          <br><br>
+          <div style="font-size:16pt; float: center; margin-top: -3mm; margin-bottom: 0mm">
                $$
                \displaystyle r_i(|i\rangle,[i|) = \frac{\mathcal{N}(|i\rangle,[i|)}{\prod_j D_j^{q_{ij}}(|i\rangle,[i|)}
                $$
@@ -533,13 +535,14 @@ GDL, Ita, Page, Sotnikov (to appear)
           <a style="font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1812.04586>
           Abreu, Dormans, Febres Cordero, Ita, Page ('18)
           </a>
-          <div style="font-size:16pt; float: left; margin-top: 1mm; margin-bottom: 0mm">
+          <br>
+          <div style="font-size:16pt; float: center; margin-top: 1mm; margin-bottom: 0mm">
                $$
                \displaystyle \{\mathcal{D}_{\{1,\dots,35\}}\} = \bigcup_{\sigma \; \in \; \text{Aut}(R_5)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1] \big\}
                $$
           </div>
-          <div style="font-size:15pt; float: left; margin-top: 0mm; margin-bottom: 1mm;">
-               $\qquad\color{green}\text{Identical to 1-loop!}$
+          <div style="font-size:15pt; float: right; margin-top: -10mm; margin-bottom: 1mm;">
+               $\kern0mm\color{green}\text{Identical to 1-loop!}$
           </div>
 	</div>
      <div style="width:40%; float: right; display: inline-block; margin-top: 0mm;">
@@ -568,27 +571,67 @@ GDL, Ita, Page, Sotnikov (to appear)
 
 <div style="margin-top: 2mm; margin-bottom: 3mm">
      <b style="font-variant: small-caps; font-size: xxx-large"> Partial Fraction Decompositions </b>
-     <p style="margin-top: -2mm; margin-bottom: 2mm; font-size: 18pt;">
+     <p style="margin-top: -2mm; margin-bottom: -=mm; font-size: 18pt;">
      (i.e. what happens at codimension greater than one)
      </p>
 </div>
 
-<div style="display: flex;">
+<div style="display: flex; margin-top:-6mm;">
     <div style="flex: 1;">
         <img src="V1.png" style="max-width:60%; height:auto;">
+        <div style="width:100%; font-size: 14pt; margin-top: -3mm; margin-bottom: 1mm;">
+          $\langle xy^2 + y^3 - z^2 \rangle$
+        </div>
     </div>
-    <div style="flex: 1; max-width:5%; margin-top:20mm;">
+    <div style="flex: 1; max-width:3%; margin-top:20mm;">
         $\cap$
     </div>
     <div style="flex: 1;">
         <img src="V2.png" style="max-width:60%; height:auto;">
+        <div style="width:100%; font-size: 14pt; margin-top: -3mm; margin-bottom: 1mm;">
+          $\langle x^3 + y^3 - z^2 \rangle$
+        </div>
     </div>
-    <div style="flex: 1; max-width:5%; margin-top:20mm;">
+    <div style="flex: 1; max-width:3%; margin-top:20mm;">
         $=$
     </div>
     <div style="flex: 1;">
         <img src="V3.png" style="max-width:60%; height:auto;">
+        <div style="width:100%; font-size: 14pt; margin-top: -3mm; margin-bottom: 1mm;">
+          $\begin{gather}\langle 2y^3-z^2, x-y \rangle \cap \langle y^3-z^2, x \rangle \\ \cap \langle z^2, x+y \rangle\end{gather}$ 
+        </div>
     </div>
+</div>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
+     $\circ$ When is a partial fraction decomposition possible? (an example)
+</div><br>
+
+<div style="font-size:16pt; float: center; margin-top: -5mm; margin-bottom: 1mm;">
+     $$\frac{\mathcal{N}}{(\prod_j \mathcal{D}_j)\times\langle 4|1+3|4]\langle 5|1+4|5]} \stackrel{?}{=} \frac{\mathcal{N}_1}{(\prod_j \mathcal{D}_j)\times\langle 4|1+3|4]} + \frac{\mathcal{N}_2}{(\prod_j \mathcal{D}_j)\times\langle 5|1+4|5]}$$
+</div>
+
+<div style="font-size:16pt; float: center; margin-top: 2mm; margin-bottom: 1mm;">
+     $$
+     J = \big\langle \langle 4|1+3|4], \langle 5|1+4|5] \big\rangle \qquad
+     K = \big\langle \langle14\rangle,\langle15\rangle,\langle45\rangle,[23] \big\rangle \quad
+     L = \big\langle \langle ij\rangle \; \forall \; i,j\in\{1,\dots 5\} \big\rangle \\[2mm]
+     M = \big\langle \langle 4|1+3|4], \langle 5|1+4|5], |1+4|5\rangle\langle14\rangle + |5|4\rangle\langle15\rangle, \langle\rangle \leftrightarrow [] \big\rangle
+     $$
+</div>
+
+<div style="font-size:16pt; float: center; margin-top: 2mm; margin-bottom: 1mm;">
+     $$
+     J = K \cap \bar K \cap L \cap \bar L \cap M \quad \text{or} \quad V(J) = V(K) \cup V(\bar K) \cup V(L) \cup V(\bar L) \cap V(M)
+     $$
+</div>
+
+<div style="text-align: center; float: center; font-size: x-large; margin-top: 2mm; margin-bottom: 0mm;">
+     If $\mathcal{N}$ vanishes on all branches than the equality holds by Hilbert's Nullstellensatz.
+</div>
+
+<div style="text-align: center; float: center; font-size: 15pt; margin-top: 2mm; margin-bottom: 0mm;">
+     For a fleshed out example with open-source code see <a href=https://inspirehep.net/literature/2661970> GDL (ACAT '22) </a>
 </div>
 
 </section>
