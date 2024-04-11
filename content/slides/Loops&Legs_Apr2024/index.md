@@ -457,8 +457,7 @@ Peraro ('16)
 <br><br><br><br>
 
 based on: <br>
-[GDL, Page (JHEP 12 (2022) 140)](https://arxiv.org/abs/2203.04269) <br>
-GDL, Ita, Page, Sotnikov (to appear)
+[GDL, Page (JHEP 12 (2022) 140)](https://arxiv.org/abs/2203.04269)
 
 ---
 
@@ -647,7 +646,14 @@ GDL, Ita, Page, Sotnikov (to appear)
 
 {{< slide background-image="spinor_coeffs.png" >}}
 
+<br><br><br><br><br><br>
+
 # Analytic Reconstruction
+
+<br><br><br><br>
+
+also based on: <br>
+GDL, Ita, Page, Sotnikov (to appear)
 
 ---
 
@@ -671,18 +677,18 @@ GDL, Ita, Page, Sotnikov (to appear)
      $\circ\,$ Change basis: 
 </div>
 <br>
-<div style="text-align: center; float: center; font-size: x-large; margin-top: -8mm; margin-bottom: 5mm;">
+<div style="text-align: center; float: center; font-size: x-large; margin-top: -10mm; margin-bottom: 5mm;">
      $$
      \kern-20mm \tilde{r}_i = O_{ii'}r_{i'\in\mathcal{B}} \; \longrightarrow \; R = \tilde{r}_{i} \, O_{ii'}M_{i'j} \, h_j = \tilde{r}_{i}  \tilde{M}_{ij} h_j
      $$
 
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
      $\circ\,$ Key insight to build $O_{ii'}:$
 </div>
 <br>
-<div style="text-align: center; float: center; font-size: x-large; margin-top: -4mm; margin-bottom: 5mm;">
+<div style="text-align: center; float: center; font-size: x-large; margin-top: -2mm; margin-bottom: 5mm;">
      $$
-     \kern-40mm\text{dim(span}(\lim_{\mathcal{D_j} \rightarrow  0 }r_{i})) \leq \text{dim(span}(r_{i}))
+     \text{dim(span}(\lim_{\mathcal{D_j} \rightarrow  0 }r_{i})) \leq \text{dim(span}(r_{i}))
      $$
 </div>
 <div style="text-align: left; font-size: x-large; float: left; margin-top: -4mm; margin-bottom: 0mm;">
@@ -691,7 +697,7 @@ GDL, Ita, Page, Sotnikov (to appear)
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> Correlation of Residues </b>
+<b style="font-variant: small-caps; font-size: xxx-large"> De-correlating the Residues </b>
 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
      $\circ\,$ Build Laurent expansions around $t_{\mathcal{D}_k}$ <span style="font-size: 12pt"> Univariate Tiele Tiziano, Ben's Lecture Notes, p(z)-adic expansion</span>
@@ -707,104 +713,26 @@ GDL, Ita, Page, Sotnikov (to appear)
 </div>
 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: -5mm;">
-     $\circ\,$ Repeat for several (anti-)holomorphic slices, build vectors
+     $\circ\,$ By Gaussian elimination we can partition the space:
 </div>
 <br><br>
-<div style="text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 0mm;">
+<div style="text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 5mm;">
      $$
-     \vec{e}^k_{im} = (e^k_m)_{ij} = \{ e^k_{im}(\text{slice}_1), \dots, e^k_{im}(\text{slice}_n)  \}
-     $$
-</div>
-
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
-     $\circ\,$ By Gaussian elimination on the matrix $(e^k_m)_{ij}$ we can partition the space:
-</div>
-<br>
-<div style="text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 5mm;">
-     $$
-     \text{span}_{\vec{\mathbb{Q}},\mathbb{Q}}(r_{i \in \mathcal{B}}) = \text{column}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_{i \in \mathcal{B}}, D_k^m)) \oplus \text{null}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_{i \in \mathcal{B}}, D_k^m))
+     \text{span}(r_{i \in \mathcal{B}}) = \text{column}(\text{Res}(r_{i \in \mathcal{B}}, D_k^m)) \oplus \text{null}(\text{Res}(r_{i \in \mathcal{B}}, D_k^m))
      $$
 </div>
 
 <div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 0mm;">
-    Interpretation of $\text{null}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_{i \in \mathcal{B}}, D_k^m)) \cdot r_{i \in \mathcal{B}}$: functions that do <u>not</u> have a $D_k^m$ singularity
-</div>
-
----
-
-<b style="font-variant: small-caps; font-size: xxx-large"> Breadth-First Search </b>
-
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
-     $\circ\,$ If a function $\tilde{r}$ does not have poles $D_{k_1}^{m_1}$ and $D_{k_2}^{m_2}$, then
-</div>
-<br>
-<div style="text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 5mm;">
-     $$
-     \tilde{r} \in \text{span}_{FF(R_5),\mathbb{Q}}\Bigg[\Big(\text{null}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_{i \in \mathcal{B}}, D_{k_1}^{m_1})) \cap \text{null}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_{i \in \mathcal{B}}, D_{k_2}^{m_2}))\Big)_{i'i} \; \cdot \; r_{i\in \mathcal{B}}\Bigg]
-     $$
+    Interpretation of $\text{null}(\text{Res}(r_{i \in \mathcal{B}}, D_k^m))$: functions that do <u>not</u> have a $D_k^m$ singularity
 </div>
 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
-     $\circ\,$ Build linear combination that remove as many singularities as possible, without dropping rank
-</div>
-<br>
-<div style="text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 5mm;">
-     $$
-     \displaystyle O_{i'i} = \cap_{k, m} \, \text{nulls}_{\vec{\mathbb{Q}},\mathbb{Q}} \qquad \text{(schematically)}
-     $$
-</div>
-
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
-     $\circ\,$ This is done by searching a tree of possibilities of which pole gets dropped to which order. <br>
-     $\phantom{\circ}\,$ Several optimizations required to search an otherwise proibitively large space, naively of size
-</div>
-<br><br>
-<div style="text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 5mm;">
-     $$
-     \prod_k (m_k + 1) \quad \text{with } \; k \;\text{ enumerating } \; D_k^{m_k}
-     $$
-</div>
-
----
-
-<b style="font-variant: small-caps; font-size: xxx-large"> Least Least-Common-Denominator </b>
-<br>
-
-<div style="text-align: left; font-size: x-large; margin-bottom: 2mm; margin-top: 5mm;">
-     $\circ$ In other words, we have reshuffled the $r_i$ by linear combinations of the others $r_{j\neq i}$
-</div>
-<div style="text-align: center; float:center; display: inline-block; font-size: x-large; margin-bottom: 2mm; margin-top: 2mm;">
-     $\displaystyle \tilde{r}_i = \sum_{j\neq i} O_{ij} r_j + r_i$
-</div>
-
-<br>
-
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
-     $\circ\,$ The rational functions now take the form
-</div>
-<br>
-<div style="text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 5mm;">
-     $$
-     \displaystyle \tilde{r}_i(|i\rangle,[i|) = \frac{\tilde{\mathcal{N}}(|i\rangle,[i|)}{\prod_j D_j^{\tilde{q}_{ij}}(|i\rangle,[i|)}
-     $$
-</div>
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     $\phantom{\circ}\,$ where we have minimized $\sum_j \tilde{q}_{ij}$, compared to the $r_i$.
-</div>
-
-<br>
-
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
-     $\circ\,$ This is the closest thing that I am aware of to a Gram–Schmidt procedure for vector spaces over fields that are not number fields, but in this case fields of fractions over polynomial quotient rings.
-</div>
-
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 2mm;">
-     $\circ\,$ Can we think of this as defining an inner product on the space of rational functions?
+     $\circ\,$ Search the space of intersections of the null spaces for linear combinations that remove <br> $\phantom{\circ}\,$  as many singularities as possible, without dropping rank of $O_{ii'}$
 </div>
 <br><br><br>
-<div style="text-align: center; float: center; font-size: x-large; margin-top: -8mm; margin-bottom: 0mm;">
+<div style="text-align: center; float: center; font-size: x-large; margin-top: -8mm; margin-bottom: 5mm;">
      $$
-     O_{ij} \sim \langle r_i | r_j \rangle \qquad \text{(very schematically)}
+     \displaystyle O_{i'i} = \bigcap_{k, m} \, \text{nulls}(\text{Res}(r_{i \in \mathcal{B}}, D_k^m)) \qquad \text{(schematically)}
      $$
 </div>
 
@@ -813,18 +741,29 @@ GDL, Ita, Page, Sotnikov (to appear)
 <b style="font-variant: small-caps; font-size: xxx-large"> Spinor-Helicity Results </b>
 <br>
 
-<div>
+<div style="text-align: center; float:center; font-size: x-large; margin-bottom: 1mm; margin-top: -5mm;">
 <img src="VSSizeTable-transparent.png"; style="max-width:350px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;">
+<img src="quarks_vs_sizes.png"; style="max-width:340px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;">
 </div>
 
 <div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
-     $\circ$ For the first time with an MHV two-loop five-point amplitude the results for the rational coefficients are compact enough to be present within a paper
+     $\circ$ The gluon MHV rational functions fit in 3 pages of the appendix
 </div>
 
-https://arxiv.org/pdf/2311.10086.pdf#page=14
+<div style="text-align: left; font-size: 14pt; margin-bottom: 1mm; margin-top: 5mm;">
+     $$ \tilde{r}^{\text{MHV}}_{\text{first 5 of 115}} = \left\{ \frac{⟨45⟩^2}{⟨12⟩⟨13⟩⟨23⟩}, \frac{⟨45⟩^3}{⟨12⟩^2⟨34⟩⟨35⟩}, \frac{⟨45⟩^3}{⟨12⟩⟨15⟩⟨23⟩⟨34⟩}, \frac{[14][12][35]}{⟨23⟩[45]^3}, \frac{⟨45⟩^2⟨24⟩}{⟨12⟩^2⟨23⟩⟨34⟩}, \dots \right\} \text{+ symmetries}$$
+</div>
 
 <div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
-     $\circ$ The simplification of the basis change is <u>independent</u> of that obtained from partial fraction decompositions, as the latter can still be performed after the former.
+     $\circ$ All rational functions fitted in a single finite field. The matrices still required a few values of $p$.
+</div>
+
+<div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
+     $\circ$ The size of the results is dominated by the rational matrices (explicitly given for all crossings).
+</div>
+
+<div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
+     $\circ$ The simplification of the basis change is <u>independent</u> of that from PFDs.
 </div>
 
 <div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
@@ -851,7 +790,7 @@ https://arxiv.org/pdf/2311.10086.pdf#page=14
 </div>
 
 <div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
-     $\circ$ The vector space has uniform mass dimension and phase weights
+     $\circ$ The vector space has uniform mass dimension and phase weights, which depend on helicities
 </div>
 <div style="text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 0mm;">
      $$
@@ -861,7 +800,7 @@ https://arxiv.org/pdf/2311.10086.pdf#page=14
 </div>
 
 <div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
-     $\circ$ Generate guesses for quark functions by re-scaling gluon functions
+     $\circ$ Rescale gluon amplitudes in a way reminiscent of supersymmetry Ward identities
 </div>
 <div style="text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 0mm;">
      $$
@@ -972,93 +911,46 @@ https://arxiv.org/pdf/2311.10086.pdf#page=14
     </div>
 </div>
 
----
-
-<b style="font-variant: small-caps; font-size: xxx-large; margin-bottom: 5mm;">
-  5-point 1-mass Amplitudes: e.g. Wjj
-</b>
-
-<div style="text-align: left; font-size: x-large; margin-top: 5mm;">
-     $0.\,$ Start from analytics of <a style="font-size: large"; href="https://arxiv.org/abs/2110.07541">Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov ('21) </a> - 1.2GB of <code>C++</code> source code.
-</div>
-
-<div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;">
-     $1.\,$ Script to split up the expressions, and compile them ($\sim 20$GB binaries) for evaluation over $\mathbb{F}_p$;
-</div>
-
-<div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;">
-$2.\,$ Recombine the 3 projections $p_V \parallel p_1, p_V \parallel p_2, p_V \parallel p_3$ and reintroduce the little group factors <br> 
-to build 6-point spinor-helicity amplitudes (subject to degree bounds on $|5\rangle,[5|,|6\rangle,[6|$); <br>
-</div>
 
 <div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 0mm;">
-$3.\,$ Perform (rough) PFDs based on expected structures and fit the Ansatze.
+$\circ\,$ Results are now regularly in order of 100MB to more than 1GB.
+</div>
+
+---
+
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 10mm;">
+   Complexity of 2-loop 5-point 1-mass Amplitudes
+</b>
+
+
+<div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 2mm;">
+$\circ\,$ The number of letters in the spinor alphabet goes from 35 to more then 220:
+</div>
+<div style="text-align: center; float: left; font-size: 15pt; margin-top: 2mm; margin-bottom: 5mm;">
+     $\displaystyle \kern0mm \{W_j\} = \bigcup_{\sigma \; \in \; \text{Aut}(R_6)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1], \langle 1|2+3|4], s_{123}, \Delta_{12|34|56}, ⟨3|2|5+6|4|3]-⟨2|1|5+6|4|2] \big\} $
 </div>
 
 <br>
 
-<div style="text-align: center; float:center; font-size: x-large; margin-top: -12mm; margin-bottom: 5mm;">
-Comparison of $p\bar p \rightarrow jjj$ (in full color) to $pp \rightarrow Wjj$ (at leading color):  <br>
-</div>
-
-<table width=110% border="1" cellspacing="0" cellpadding="0" style="margin-left: -12mm; margin-bottom: 8mm; margin-top: 8mm; font-size: x-large;">
-  <tr>
-    <td><b>Kinematics</b></td>
-    <td><b># Poles ($W$)</b></td>
-    <td><b>LCD Ansatz</b></td>
-    <td><b>Partial-Fraction Ansatz</b></td>
-    <td><b>Rational Functions</b></td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">5-point massless</td>
-    <td style="text-align: center;">35</td>
-    <td style="text-align: center;">~200k</td>
-    <td style="text-align: center;">~4k</td>
-    <td style="text-align: center;">$\sim$200 KB</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">5-point 1-mass</td>
-    <td style="text-align: center;">>200</td>
-    <td style="text-align: center;">>5M</td>
-    <td style="text-align: center;">$\sim$40k</td>
-    <td style="text-align: center; background-color: yellow;">$\sim$25 MB</td>
-  </tr>
-</table>
-
-<div style="text-align: center; float: center; font-size: x-large; margin-top: 2mm; margin-bottom: 5mm;">
-     $\displaystyle \kern-10mm \{W_j\} = \bigcup_{\sigma \; \in \; \text{Aut}(R_6)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1], \langle 1|2+3|4], s_{123}, \Delta_{12|34|56}, ⟨3|2|5+6|4|3]-⟨2|1|5+6|4|2] \big\} $
-</div>
-
----
-
-<b style="font-variant: small-caps; font-size: xx-large; margin-bottom: 10mm;">
-   Complexity of 2-loop 5-point 1-mass Amplitudes
-</b>
-
 <div style="display:block; width:100%; font-size: 16pt; margin-top: 5mm; margin-bottom: 4mm;">
-     <div style="width:50%; float: left; display: inline-block; font-size: x-large;">
+     <div style="width:50%; text-align: left; float: left; display: font-size: x-large;">
           $\circ$ The  Ansatz size grows quickly with <br> multiplicity (m) and mass dimension (d): <br><br>
-          $\displaystyle \small \left(\mkern -9mu \begin{pmatrix}\, m(m-3)/2 \, \\ \, d/2 \, \end{pmatrix} \mkern -9mu \right)$ <br><br>
-          is a lower bound. <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-left: -28mm; margin-top: 1mm; margin-bottom: 5mm;" href=https://arxiv.org/abs/2010.14525>
+          $\displaystyle \kern40mm \small \left(\mkern -9mu \begin{pmatrix}\, m(m-3)/2 \, \\ \, d/2 \, \end{pmatrix} \mkern -9mu \right)$ <br><br>
+          is a lower bound. <br>
+          <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-left: 0mm; margin-top: -5mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/2010.14525>
                GDL, Maître ('20)
           </a>
      </div>
-     <div style="width:50%; float: center; display: inline-block;">
-          <img src="AnsatzSizes.png"; style="max-width:320px;float:center;border:none;margin-top:0px;margin-bottom: 5mm;">
+     <div style="width:50%; float: right; display: inline-block;">
+          <img src="AnsatzSizes.png"; style="max-width:400px;float:center;border:none;margin-top:0px;margin-bottom: 5mm;">
      </div>
 </div>
 
-<div style="text-align: left; font-size: x-large; margin-top: 1mm; margin-bottom: 2mm;">
-$\circ\,$ Compact residues for the new 2-loop (spurious?) pole, $⟨k|j|p\mkern-7.5mu/_V|l|k]-⟨j|i|p\mkern-7.5mu/_V|l|j]$, e.g.:
-$$r^{(5 \text{ of } 54)}_{\bar{u}^+g^+g^+d^-(V\rightarrow \ell^+ \ell^-)} = \frac{[12][23]⟨24⟩⟨46⟩^2⟨1|2+3|4]⟨2|1+3|4]}{⟨12⟩⟨23⟩⟨56⟩(⟨3|2|5+6|4|3]-⟨2|1|5+6|4|2])^2}$$
-</div>
+<br><br><br><br><br><br><br><br>
 
-<div style="text-align: left; font-size: x-large; margin-top: 8mm;">
-$\circ\,$ The three mass Grams, $\Delta_{12|34|p_V}, \Delta_{14|23|p_V}$, behave analogously to one-loop amplitudes, e.g.:
-</div>
-<div style="text-align: left; font-size: large; margin-top: 2mm; margin-bottom: 1mm;">
-$$ r^{(73 \text{ of } 120)}_{\bar{u}^+g^-g^+d^-(V\rightarrow \ell^+ \ell^-)} = \frac{105}{128}\frac{⟨2|1+4|3]⟨4|2+3|1]⟨6|1+4|5]s_{14}s_{23}s_{56}{\color{green}(s_{124}-s_{134})}(s_{123}-s_{234})(s_{25}+s_{26}+s_{35}+s_{36})}{{\color{orange}⟨3|1+4|2]}{\color{red}Δ_{23|14|56}^4}} + \\
-\Bigg[-6\frac{[12]^2⟨13⟩[25]⟨34⟩⟨36⟩⟨56⟩[56]{\color{green}(s_{124}-s_{134})}}{{\color{orange}⟨3|1+4|2]^5}}\Bigg] + \Bigg[ \; \Bigg]_{1234\rightarrow \overline{4321}}+ \mathcal{O}\left(\frac{1}{⟨3|1+4|2]^{4}Δ_{23|14|56}^{3}}\right)$$
+<div style="text-align: left; font-size: 16pt; margin-top: 1mm; margin-bottom: 2mm;">
+$\circ\,$ We can still achieve compact results, e.g. for the new 2-loop pole, $⟨k|j|p\mkern-7.5mu/_V|l|k]-⟨j|i|p\mkern-7.5mu/_V|l|j]$
+$$r^{(5 \text{ of } 54)}_{\bar{u}^+g^+g^+d^-(V\rightarrow \ell^+ \ell^-)} = \frac{[12][23]⟨24⟩⟨46⟩^2⟨1|2+3|4]⟨2|1+3|4]}{⟨12⟩⟨23⟩⟨56⟩(⟨3|2|5+6|4|3]-⟨2|1|5+6|4|2])^2}$$
 </div>
 
 ---
@@ -1066,6 +958,14 @@ $$ r^{(73 \text{ of } 120)}_{\bar{u}^+g^-g^+d^-(V\rightarrow \ell^+ \ell^-)} = \
 <b style="font-variant: small-caps; font-size: 28pt; margin-bottom: 10mm;">
    Iterated reconstruction by sequentially removing poles
 </b>
+
+<div style="text-align: left; font-size: x-large; margin-top: 8mm;">
+$\circ\,$ In general results are much more complicated, but we can retain control surface-by-surface
+</div>
+<div style="text-align: left; font-size: large; margin-top: 2mm; margin-bottom: 1mm;">
+$$ r^{(73 \text{ of } 120)}_{\bar{u}^+g^-g^+d^-(V\rightarrow \ell^+ \ell^-)} = \frac{105}{128}\frac{⟨2|1+4|3]⟨4|2+3|1]⟨6|1+4|5]s_{14}s_{23}s_{56}{\color{green}(s_{124}-s_{134})}(s_{123}-s_{234})(s_{25}+s_{26}+s_{35}+s_{36})}{{\color{orange}⟨3|1+4|2]}{\color{red}Δ_{23|14|56}^4}} + \\
+\Bigg[-6\frac{[12]^2⟨13⟩[25]⟨34⟩⟨36⟩⟨56⟩[56]{\color{green}(s_{124}-s_{134})}}{{\color{orange}⟨3|1+4|2]^5}}\Bigg] + \Bigg[ \; \Bigg]_{1234\rightarrow \overline{4321}}+ \mathcal{O}\left(\frac{1}{⟨3|1+4|2]^{4}Δ_{23|14|56}^{3}}\right)$$
+</div>
 
 
 </section>
