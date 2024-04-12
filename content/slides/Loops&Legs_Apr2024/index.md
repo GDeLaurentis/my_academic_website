@@ -55,10 +55,10 @@ Loops & Legs 2024
 
 <div style="display: flex; justify-content: center;">
     <div style="margin: 0 10px;">
-        <img src="LHC_map.jpg" style="max-width:500px; border:none; margin-top: 0mm; margin-bottom: 0mm;">
+        <img src="LHC_map.jpg" style="max-width:500px; border:none; margin-top: 8.5mm; margin-bottom: 0mm;">
     </div>
     <div style="margin: 0 10px;">
-        <img src="HL-LHC-Schedule.jpg" style="max-width:500px; border:none; margin-top: 0mm; margin-bottom: 0mm;">
+        <img src="ATLAS-XSections-transparent.png" style="max-width:480px; border:none; margin-top: 0mm; margin-bottom: 0mm;">
     </div>
 </div>
 
@@ -311,59 +311,80 @@ Legend: <b>bold</b> = full color; $\star$ = planar $\neq$ leading color; $\dagge
 
 <h1 style="margin-top: -2mm;"> Numerical Computation </h1>
 
-
 ---
 
-<div style="margin-top: 2mm; margin-bottom: 3mm">
-     <b style="font-variant: small-caps; font-size: xxx-large; margin-bottom:0mm;"> Color Algebra </b>
-     <p style="margin-top: -2mm; margin-bottom: 2mm; font-size: 16pt;">
-     ($q\bar qQ\bar Q g$ example)
-     </p>
-</div>
+<b style="font-variant: small-caps; font-size: xxx-large"> Color Algebra in the Trace Basis </b>
 
-<div style="font-size: x-large; float: left; margin-bottom: -4mm;">
-$\circ$ Color decomposition (trace basis)
-</div><br>
 <div style="width:60%; float: left; display: inline-block;">
-     <div style="font-size: 12pt; margin-top: -2mm; margin-bottom: 0mm">
+     <div style="font-size: 12pt; margin-top: 0mm; margin-bottom: 0mm">
           \[
           \require{color}
           \require{amsmath}
           \hspace{-5mm}
           \begin{align}
+               \mathcal{A}_{\vec{a}}(1_g,2_g,3_g,4_g,5_g) & = \sum_{\sigma \in \mathcal{S}_5/\mathcal{Z}_5} \sigma\Big(\text{tr}(T^{a_1}T^{a_2}T^{a_3}T^{a_4}T^{a_5}) \; A_{1}(1,2,3,4,5)\Big) \; + \\[2mm]
+               & \quad \sum_{\sigma\in \frac{\mathcal{S}_5}{\mathcal{Z}_2 \times \mathcal{Z}_3}} \sigma\Big(\text{tr}(T^{a_1}T^{a_2}) \text{tr}(T^{a_3}T^{a_4}T^{a_5}) \; A_{2}(1,2,3,4,5)\Big) + , \\[8mm]
+               \mathcal{A}_{\vec{a}}(1_u,2_{\bar u},3_g,4_g,5_g) & =
+               \sum_{\sigma \in \mathcal{S}_3(3,4,5)} \sigma\Big(
+               (T^{a_3}T^{a_4}T^{a_5})^{\,\bar i_2}_{i_1} \; 
+               A_{3}(1,2,3,4,5)\Big) \; + \\[2mm]
+               & \quad \sum_{\sigma \in \frac{\mathcal{S}_3(3,4,5)}{\mathcal{Z}_2(3,4)}} 
+               \sigma\Big(\text{tr}(T^{a_3}T^{a_4}) (T^{a_5})^{\,\bar i_2}_{i_1} 
+               \; A_{4}(1,2,3,4,5)\Big) \; + \\[2mm]
+               & \quad \sum_{\sigma \in \frac{\mathcal{S}_3(3,4,5)}{\mathcal{Z}_{3}(3,4,5)}} 
+               \sigma\Big(\text{tr}(T^{a_3}T^{a_4}T^{a_5}) \delta^{\bar i_2}_{i_1}
+               A_{5}(1,2,3,4,5)\Big) \; , \\[8mm]
                \mathcal{A}_{\vec{a}}(1_u,2_{\bar u},3_d,4_{\bar d},5_g) &= 
                \sum_{\sigma \in \mathcal{Z}_2(\{1,2\},\{3,4\})} \sigma\Big(
                \delta^{\bar i_4}_{i_1} (T^{a_5})^{\,\bar i_2}_{i_3} 
-               \; A_{d}(1,2,3,4,5)\Big) \; + \\[2mm]
+               \; A_{6}(1,2,3,4,5)\Big) \; + \\[2mm]
                & \quad \sum_{\sigma \in \mathcal{Z}_2(\{1,2\},\{3,4\})} \kern-2mm \sigma\Big(
                \delta^{\bar i_2}_{i_1} (T^{a_5})^{\,\bar i_4}_{i_3} 
-               \; A_{s}(1,2,3,4,5)\Big)\,,\kern-1mm
+               \; A_{7}(1,2,3,4,5)\Big)\,,\kern-1mm
           \end{align}
           \]
      </div>
 </div>
 
-<div style="width:40%; float: right; display: inline-block; margin-top: -8mm;">
+<div style="width:40%; float: right; display: inline-block; margin-top: -5mm;">
+     <img src="5g-diags-transparent.png"; style="max-width:270px; float:center; border:none; margin-top: 0mm; margin-bottom: -4mm; margin-left: 0mm;">
+     <br>
+     <img src="2q3g-diags-transparent.png"; style="max-width:270px; float:center; border:none; margin-top: 0mm; margin-bottom: -4mm; margin-left: 0mm;">
+     <br>
      <img src="4q1g-diags-transparent.png"; style="max-width:270px; float:center; border:none; margin-top: 0mm; margin-bottom: -6mm; margin-left: 0mm;">
 </div>
 
-<br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-<div style="font-size: x-large; float: left; margin-bottom: -4mm; magin-top:-4mm;">
-$\circ$ $N_c^{n_c}$ & $N_f^{n_f}$ expansion, notation $A^{(L),(n_c, n_f)}_{\text{partial}}$, <span style="color: red"> red </span> = new
+<div style="font-size: x-large; float: center; margin-top:6mm; margin-bottom: 6mm;">
+Each $A_{i}$ has an expansion in powers of $\alpha_s$. We consider the $\alpha_s^2$ corrections.
+</div>
+
+---
+
+<div style="margin-top: 2mm; margin-bottom: 3mm">
+     <b style="font-variant: small-caps; font-size: xxx-large; margin-bottom:0mm;"> Relations among Partials </b>
+</div>
+
+<br>
+
+<div style="font-size: x-large; float: left; margin-bottom: 4mm; magin-top:-4mm;">
+$\circ$ $N_c^{n_c}$ & $N_f^{n_f}$ expansion, notation $A^{(L),(n_c, n_f)}_{\text{partial}}$, <span style="color: red"> red </span> = new, $0\rightarrow q\bar q Q\bar Q g$ example
 </div><br>
 <div style="font-size: 14pt; margin-top: -2mm; margin-bottom: 0mm">
      \[
      \begin{gather}
-          A_d^{(2)} = N_c^2 A_d^{(2),(2,0)} + {\color{red} A_d^{(2),(0,0)}} + \frac{1}{N_c^2} {\color{red} A_d^{(2),(-2,0)}}
-               +  N_f N_c A_d^{(2),(1,1)} + \frac{N_f}{N_c} {\color{red} A_d^{(2),(-1,1)}} + N_f^2  A_d^{(2),(0,2)} \, , \\
-          A_s^{(2)} = N_c {\color{red} A_s^{(2),(1,0)}}+\frac{1}{N_c}{\color{red} A_s^{(2),(-1,0)}}+\frac{1}{N_c^3}{\color{red} A_s^{(2),(-3,0)}}
-               + N_f{\color{red} A_s^{(2),(0,1)}} + \frac{N_f}{N_c^2} {\color{red} A_s^{(2),(-2,1)}} + \frac{N_f^2}{N_c}{\color{red} A_s^{(2),(-1,2)}} \, .
+          A_6^{(2)} = N_c^2 A_6^{(2),(2,0)} + {\color{red} A_6^{(2),(0,0)}} + \frac{1}{N_c^2} {\color{red} A_6^{(2),(-2,0)}}
+               +  N_f N_c A_6^{(2),(1,1)} + \frac{N_f}{N_c} {\color{red} A_6^{(2),(-1,1)}} + N_f^2  A_6^{(2),(0,2)} \, , \\
+          A_7^{(2)} = N_c {\color{red} A_7^{(2),(1,0)}}+\frac{1}{N_c}{\color{red} A_7^{(2),(-1,0)}}+\frac{1}{N_c^3}{\color{red} A_7^{(2),(-3,0)}}
+               + N_f{\color{red} A_7^{(2),(0,1)}} + \frac{N_f}{N_c^2} {\color{red} A_7^{(2),(-2,1)}} + \frac{N_f^2}{N_c}{\color{red} A_7^{(2),(-1,2)}} \, .
      \end{gather}
      \]
 </div>
 
-<div style="font-size: x-large; float: left; margin-bottom: 6mm;">
+<br>
+
+<div style="font-size: x-large; float: left; margin-bottom: 8mm;">
 $\circ$ New identities among partials (plus two more for the $n_f = 1$ partials) 
 </div>
 <div style="font-size: 14pt; margin-bottom: 4mm; magin-top: 6mm;">
@@ -385,6 +406,9 @@ $\circ$ New identities among partials (plus two more for the $n_f = 1$ partials)
      \]
 </div>
 
+<div style="font-size: x-large; float: center; margin-top: 10mm; margin-bottom: 6mm;">
+These redundancies do not really affect the complexity (see discussion on vector spaces).
+</div>
 
 ---
 
