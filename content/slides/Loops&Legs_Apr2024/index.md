@@ -195,15 +195,15 @@ Loops & Legs 2024
         </tr>
         <tr>
             <td>$pp \rightarrow \gamma\gamma\gamma$</td>
-            <td>[3, 4, <b>5</b>]</td>
-            <td>[3, <b>5</b>]</td>
-            <td>[1, 2]</td>
+            <td>[3$\kern-2.2mm\phantom{x}^\star$, 4$\kern-2.2mm\phantom{x}^\star$, <b>5</b>]</td>
+            <td>[3$\kern-2.2mm\phantom{x}^\star$, <b>5</b>]</td>
+            <td>[1$\kern-2.2mm\phantom{x}^\star$, 2$\kern-2.2mm\phantom{x}^\star$]</td>
         </tr>
         <tr>
             <td>$pp \rightarrow \gamma\gamma j$</td>
-            <td>[6, 7, <b>9</b>]</td>
-            <td>[6]</td>
-            <td>[8]</td>
+            <td>[6$\kern-2.2mm\phantom{x}^\dagger$, 7$\kern-2.2mm\phantom{x}^\dagger$, <b>9</b>]</td>
+            <td>[6$\kern-2.2mm\phantom{x}^\dagger$]</td>
+            <td>[8$\kern-2.2mm\phantom{x}^\dagger$]</td>
         </tr>
         <tr>
             <td>$pp \rightarrow \gamma jj$</td>
@@ -215,31 +215,31 @@ Loops & Legs 2024
             <td>$pp \rightarrow jjj$</td>
             <td>[<b>11</b>, <b>12</b>, <b>13</b>]</td>
             <td>[<b>13</b>]</td>
-            <td>Row 3, Column 3</td>
+            <td>[14$\kern-2.2mm\phantom{x}^\dagger$]</td>
         </tr>
         <tr class="double-line">
         </tr>
         <tr>
             <td>$pp \rightarrow Wb\bar b$</td>
-            <td>[14, 15]</td>
+            <td>[15$\kern-2.2mm\phantom{x}^\dagger$, 16$\kern-2.2mm\phantom{x}^\dagger$]</td>
             <td></td>
-            <td>[16]</td>
+            <td>[17$\kern-2.2mm\phantom{x}^\dagger$]</td>
         </tr>
         <tr>
             <td>$pp \rightarrow Hb\bar b$</td>
-            <td>[18]</td>
+            <td>[18$\kern-2.2mm\phantom{x}^\dagger$]</td>
             <td></td>
             <td></td>
         </tr>
         <tr>
             <td>$pp \rightarrow Wj\gamma$</td>
-            <td>[17]</td>
+            <td>[19$\kern-2.2mm\phantom{x}^\dagger$]</td>
             <td></td>
             <td></td>
         </tr>
         <tr>
             <td>$pp \rightarrow Wjj$</td>
-            <td>[14]</td>
+            <td>[15$\kern-2.2mm\phantom{x}^\dagger$]</td>
             <td></td>
             <td></td>
         </tr>
@@ -276,7 +276,8 @@ Legend: $\star$ = planar $\neq$ leading color; $\dagger$ = planar = leading colo
         <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/2723232" style="font-size: 13pt;">[11] Agarwal, Buccioni, Devoto, Gambuti, von Manteuffel, Tancredi '23</a></p>
         <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/2728739" style="font-size: 13pt;">[13] GDL, Ita, Sotnikov '23</a></p>
         <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/1944964" style="font-size: 13pt;">[15] Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov '21</a></p> <!--- pp->Wjj--->
-        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/1896584" style="font-size: 13pt;">[17] Badger, Hartanto, Kryś, Zoia '21</a></p> <!--- pp->Hbb--->
+        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/2077368" style="font-size: 13pt;">[17] Hartanto, Poncelet, Popescu, Zoia '22</a></p> <!--- pp->Wbb-xsection--->
+        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/2008918" style="font-size: 13pt;">[19] Badger, Hartanto, Kryś, Zoia '22</a></p> <!--- pp->Wjy--->  
     </div>
     <div class="column" style="margin-left:-5mm;">
         <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/1822188" style="font-size: 13pt;">[2] Kallweit, Sotnikov, Wiesemann '20</a></p>
@@ -285,9 +286,9 @@ Legend: $\star$ = planar $\neq$ leading color; $\dagger$ = planar = leading colo
         <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/1863379" style="font-size: 13pt;">[8] Chawdhry, Czakon, Mitov, Poncelet '21</a></p>
         <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/2651109" style="font-size: 13pt;">[10] Badger, Czakon, Hartanto, Moodie, Peraro, Poncelet, Zoia '23</a></p>
         <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/2723256" style="font-size: 13pt;">[12] GDL, Ita, Klinkert, Sotnikov '23</a></p>
-        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/1844767" style="font-size: 13pt;">[14] Badger, Hartanto, Zoia '21</a></p> <!--- pp->Wbb--->
-        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/2077368" style="font-size: 13pt;">[16] Hartanto, Poncelet, Popescu, Zoia '22</a></p> <!--- pp->Wbb-xsection--->
-        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/2008918" style="font-size: 13pt;">[18] Badger, Hartanto, Kryś, Zoia '22</a></p> <!--- pp->Wjy--->  
+        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/FIX" style="font-size: 13pt;">[14] Czakon, Mitov, Poncelet FIX</a></p> <!--- pp->jj - xsection LC --->
+        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/1844767" style="font-size: 13pt;">[16] Badger, Hartanto, Zoia '21</a></p> <!--- pp->Wbb--->
+        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/1896584" style="font-size: 13pt;">[18] Badger, Hartanto, Kryś, Zoia '21</a></p> <!--- pp->Hbb--->
     </div>     
 </div>
 
@@ -422,46 +423,58 @@ $\circ$ New identities among partials (plus two more for the $n_f = 1$ partials)
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> Partial Amplitudes </b>
+<b style="font-variant: small-caps; font-size: xxx-large"> Partial Amplitudes & Finite Remainders </b>
  
-<div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;">
-     $\circ$ Amplitude (integrands) can be written as (drop the extra sub- and super-scripts)
+<div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
+     $\circ$ Amplitude (integrands) can be written as (for a suitable choice of master integrals)
 </div>
 <br>
-<div style="font-size: 16pt; margin-top: 0mm;  margin-bottom: 0mm">
+<div style="font-size: 16pt; margin-top: 0mm;  margin-bottom: 2mm">
      $$
      \displaystyle A(\lambda, \tilde\lambda, \ell) =
-\sum_{\substack{\Gamma,\\ i \in M_\Gamma \cup S_\Gamma}} \, c_{\,\Gamma,i}(\lambda, \tilde\lambda, \epsilon) \,		\frac{m_{\Gamma,i}(\lambda\tilde\lambda, \ell)}{\textstyle \prod_{j} \rho_{\,\Gamma,j}(\lambda\tilde\lambda, \ell)} \;\; \xrightarrow[]{\int d^D\ell} \;\; \sum_{\substack{\Gamma,\\ i \in M_\Gamma}} {\color{red}c_{\,\Gamma, i}}(\lambda, \tilde\lambda, \epsilon) \, {\color{orange}I_{\Gamma, i}}(\lambda\tilde\lambda, \epsilon)
+\sum_{\substack{\Gamma,\\ i \in M_\Gamma \cup S_\Gamma}} \, c_{\,\Gamma,i}(\lambda, \tilde\lambda, \epsilon) \,		\frac{m_{\Gamma,i}(\lambda\tilde\lambda, \ell)}{\textstyle \prod_{j} \rho_{\,\Gamma,j}(\lambda\tilde\lambda, \ell)} \;\; \xrightarrow[]{\int d^D\ell} \;\; \sum_{\substack{\Gamma,\\ i \in M_\Gamma}} \frac{ \sum_{k=0}^{\text{finite}} \, {\color{red}c^{(k)}_{\,\Gamma, i}}(\lambda, \tilde\lambda) \, \epsilon^k}{\prod_j (\epsilon - a_{ij})} \, {\color{orange}I_{\Gamma, i}}(\lambda\tilde\lambda, \epsilon)
 $$  
 </div>
-
-<br>
-
-<div style="font-size: x-large; float: left; margin-top: -12mm; margin-bottom: 0mm;">
-     $\circ$ For a suitable choice of integrands, we get:
-</div>
-<br>
-<div style="font-size: 16pt; margin-top: -15mm; margin-bottom: 0mm">
-     $$
-     \displaystyle
-     {\color{red}c_{\Gamma, i}}(\lambda, \tilde\lambda, \epsilon) = \frac{ \sum_{k=0}^{\text{finite}} \, {\color{red}c^{(k)}_{\,\Gamma, i}}(\lambda, \tilde\lambda) \, \epsilon^k}{\prod_j (\epsilon - a_{ij})} \;, \;\;\text{with} \quad a_{ij} \in \mathbb{Q} \, . 
-     $$
+<div style="font-size: 15pt; float: center; margin-bottom: 5mm; margin-top: 5mm;">
+     $\circ$  $\Gamma$: topologies $\quad\circ$ $M_\Gamma$: master integrands $\quad\circ$ $S_\Gamma$: surface terms 
 </div>
 
-<br>
+<div style="text-align: left; font-size: x-large; margin-bottom: 0mm;">
+     $\circ$ <u>All physical information</u> is contained in the <i>finite remainders</i>, at two loops
+</div>
+<a style="font-size: large; text-align: right; float: right; margin-top: -3mm; margin-bottom: -3mm;" href=https://inspirehep.net/literature/920274>
+Weinzierl ('11)
+</a>
 
-<div style="font-size: x-large; float: left; margin-bottom: 0mm; margin-top: -10mm;">
-     Some notation:
+<div style="font-size: 16pt; margin-top: 5mm; margin-bottom: 5mm">
+$$ 
+\underbrace{\mathcal{R}^{(2)}}_{\text{finite remainder}} = \mathcal{A}^{(2)}_R \underbrace{- \quad I^{(1)}\mathcal{A}^{(1)}_R \quad - \quad I^{(2)}\mathcal{A}^{(0)}_R}_{\text{divergent + convention-dependent finite part}} + \mathcal{O}(\epsilon)
+$$
 </div>
-<br>
-<div style="font-size: x-large; float: center; margin-bottom: 0mm; margin-top: -10mm;">
-     $\circ$  $\Gamma$: topologies $\quad\circ$ $M_\Gamma$: master integrands $\quad\circ$ $S_\Gamma$: surface terms $\quad\circ$ $D = 4 - 2 \epsilon$
+
+<div style="text-align: left; font-size: 16pt; margin-bottom: 0mm;">
+     $\phantom{\circ}$ $\mathcal{A}^{(1)}_R$ to order $\epsilon^2$ is still needed to build $\mathcal{R}^{(2)}$, but there is no real reason to reconstruct it.
 </div>
-<div style="font-size: x-large; float: center; margin-bottom: 0mm; margin-top: 2mm;">
-     $\circ$ Spinors: $\lambda_i = |i\rangle, \tilde\lambda_i =[i|$
-     $\quad\circ$ External 4-momenta: $\lambda\tilde\lambda=p\kern-3mm/$
-     $\quad\circ$ Loop $D$-momenta: $\ell $
+
+<div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;">
+     $\circ$ Finite remainder as a weighted sum of <i>pentagon functions</i> <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-top: 2mm; margin-left: 4mm; " href=https://arxiv.org/abs/2009.07803> Chicherin, Sotnikov ('20);&nbsp; </a>
 </div>
+
+<div style="font-size: x-large; margin-top: 5mm; margin-bottom: 5mm">
+$$ 
+\textstyle \mathcal{R}(\lambda, \tilde\lambda) = \sum_i \color{orange}{r_{i}(\lambda,\tilde\lambda)} \, \color{red}{h_i(\lambda\tilde\lambda)}
+$$
+</div>
+
+<div style="text-align: left; font-size: x-large; margin-top: 3mm; margin-bottom: 0mm;">
+     $\circ$  Goal: reconstruct $\color{orange}{r_{i}(\lambda,\tilde\lambda)}$ from $\mathbb{F}_p$ samples
+</div>
+<a style="font-size: large; text-align: right; float: right; margin-top: -10mm; margin-bottom: -10mm;" href=https://arxiv.org/abs/1406.4513>
+von Manteuffel, Schabinger ('14)
+</a><br>
+<a style="font-size: large; text-align: right; float: right; margin-top: -18mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1608.01902>
+Peraro ('16)
+</a>
 
 ---
 
@@ -511,72 +524,6 @@ $\circ$ The SLC cut-hierarchy is significantly larger than the LC one, e.g.
 </div>
 <div>
 <img src="NbrOfDiagramsTable-transparent.png"; style="max-width:800px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;">
-</div>
-
----
-
-<b style="font-variant: small-caps; font-size: xxx-large"> Finite Remainders </b>
-
-<!---
-<div style="text-align: left; font-size: x-large; float: left; margin-bottom: 10mm; margin-top: 10mm">Decomposition in terms of <b> master integrals </b> </div>
-<a style="font-size: large; text-align: right; float: right; margin-bottom: 5mm; margin-top: 10mm" href=https://arxiv.org/abs/0712.1851>Ellis, Zanderighi</a>
-<a style="font-size: large; text-align: right; float: right; margin-bottom: 5mm; margin-top: 10mm" href=https://arxiv.org/abs/hep-ph/9212308>Bern, Dixon, Kosower;&nbsp</a>
-<a style="font-size: large; text-align: right; float: right; margin-bottom: 5mm; margin-top: 10mm" href=https://www.sciencedirect.com/science/article/pii/0550321379906059?ref=pdf_download&fr=RR-2&rr=7c4afcac1f343b58>'t Hooft, Veltman;&nbsp</a>
-
-<div style="font-size: x-large; margin-top: 10mm;">
-$$A^{1-\text{loop},D=4}_{n} = \sum_i \color{orange}{d_i} \color{red}{I^i_{Box}} + \sum_i \color{orange}{c_i} \color{red}{I^i_{Triangle}} + \sum_i \color{orange}{b_i} \color{red}{I^i_{Bubble}} + \sum_i \color{orange}{a_i} \color{red}{I^i_{Tadpoles}} + \color{orange}{R}$$
-</div>
-
-<div style="width:90%; float: center; display: inline-block;">
-       <img src="one-loop-decomposition-transparent.png"; style="max-width:750px;float:center;border:none;margin-top:-5px;">
-</div>
---->
-
-<div style="text-align: left; font-size: x-large; margin-bottom: 5mm;">
-     $\circ$ Dim-reg is great, but it also introduces <b>a lot</b> of junk.
-</div>
-
-<div style="text-align: left; font-size: x-large; margin-bottom: 0mm;">
-     $\circ$ <u>All physical information</u> is contained in the <i>finite remainders</i>, at two loops
-</div>
-<a style="font-size: large; text-align: right; float: right; margin-top: -3mm; margin-bottom: -3mm;" href=https://inspirehep.net/literature/920274>
-Weinzierl ('11)
-</a>
-
-<div style="font-size: x-large; margin-top: 5mm; margin-bottom: 5mm">
-$$ 
-\underbrace{\mathcal{R}^{(2)}}_{\text{finite remainder}} = \mathcal{A}^{(2)}_R \underbrace{- \quad I^{(1)}\mathcal{A}^{(1)}_R \quad - \quad I^{(2)}\mathcal{A}^{(0)}_R}_{\text{divergent + convention-dependent finite part}} + \mathcal{O}(\epsilon)
-$$
-</div>
-
-<div style="text-align: left; font-size: x-large; margin-bottom: 0mm;">
-     $\phantom{\circ}$ $\mathcal{A}^{(1)}_R$ to order $\epsilon^2$ is still needed to build $\mathcal{R}^{(2)}$, but there is no real reason to reconstruct it.
-</div>
-
-<br>
-
-<div style="text-align: left; font-size: x-large; margin-bottom: 5mm;">
-     $\circ$ Finite remainder as a weighted sum of <i>pentagon functions</i> <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-top: 2mm; margin-left: 4mm; " href=https://arxiv.org/abs/2009.07803> Chicherin, Sotnikov ('20);&nbsp; </a>
-</div>
-
-<div style="font-size: x-large; margin-top: 5mm; margin-bottom: 5mm">
-$$ 
-\textstyle \mathcal{R}(\lambda, \tilde\lambda) = \sum_i \color{orange}{r_{i}(\lambda,\tilde\lambda)} \, \color{red}{h_i(\lambda\tilde\lambda)}
-$$
-</div>
-
-<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 0mm; margin-right: 10mm; margin-bottom: 7mm;">
-    Goal: Reconstruct $\color{orange}{r_{i}(\lambda,\tilde\lambda)}$ from $\mathbb{F}_p$ samples
-</div>
-<a style="font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: -10mm;" href=https://arxiv.org/abs/1406.4513>
-von Manteuffel, Schabinger ('14)
-</a><br>
-<a style="font-size: large; text-align: right; float: right; margin-top: -10mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1608.01902>
-Peraro ('16)
-</a>
-
-<div style="text-align: left; font-size: x-large; margin-bottom: 5mm;">
-     $\circ$ More precisely, we would like a basis of the vector space $\text{span}(r_i)$ &ndash; more later
 </div>
 
 </section>
