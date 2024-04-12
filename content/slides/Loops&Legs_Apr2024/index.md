@@ -49,51 +49,6 @@ Loops & Legs 2024
 # Introduction:
 # (2) Loops & (5) Legs
 
-
-<!--- 
----
-
-{{< slide background-image="ATLAS2022.png" >}}
-
-<div style="max-width:500px;">
-<table width="50%" border="1" cellspacing="0" cellpadding="1" style="margin-bottom:-10px">
-  <tr class="greenline">
-    <td colspan="2" rowspan="2"> <div id="rot90"> <center> <b> $\mathcal{A}_{n-gluons}^{l-loops} \propto g_s^n $ </b> </center> </div> </td>
-    <td colspan="4"> <center> multiplicity (n) </center> </td>
-  </tr>
-  <tr>
-    <td><b>4</b></td>
-    <td><b>5</b></td>
-    <td><b>6</b></td>
-    <td><b>7</b></td>
-  </tr>
-  <tr>
-    <td rowspan="3"> <center> loops (l) </center> </td>
-    <td><b>0</b></td>
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-    <td>5</td>
-  </tr>
-  <tr>
-    <td><b>1</b></td>
-    <td>4</td>
-    <td>5</td>
-    <td>6</td>
-    <td>7</td>
-  </tr>
-  <tr>
-    <td><b>2</b></td>
-    <td>6</td>
-    <td>7</td>
-    <td>8</td>
-    <td>9</td>
-  </tr>
-</table>
-</div>
-
---->
-
 ---
 
 <b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 25mm;"> Motivation </b>
@@ -101,20 +56,27 @@ Loops & Legs 2024
 <div style="display: flex; justify-content: center;">
     <div style="margin: 0 10px;">
         <img src="LHC_map.jpg" style="max-width:500px; border:none; margin-top: 0mm; margin-bottom: 0mm;">
-        <div style="font-size: 15pt; margin-bottom: 3mm;">
-        Slc contributions to $pp\rightarrow jjj$ should be similar to blue curve.
-        </div>
     </div>
     <div style="margin: 0 10px;">
         <img src="HL-LHC-Schedule.jpg" style="max-width:500px; border:none; margin-top: 0mm; margin-bottom: 0mm;">
-        <div style="font-size: 15pt; margin-bottom:-4mm;">
-        <code> C++ </code> Code available at
-        </div>
-        <a href="https://gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp" style="font-size: 14pt;">gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp</a>
-        <div style="font-size: 15pt; margin-bottom:-4mm;">
-        Analytics available at
-        </div>
     </div>
+</div>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 4mm;">
+     $\circ\,$ LHC physics program possible also thanks to advancements on many fronts of the theory
+</div>
+
+<br>
+
+<div style="display:block; width:100%;margin-top:0mm;">
+  <div style="width:50%; font-size: 16pt; float: left; display: inline-block;">
+       Subtraction <br> <span style="color: green;"> A</span> <br>
+       Resummation <br> <span style="color: green;"> B</span>
+  </div>
+  <div style="width:50%; font-size: 16pt; float: right; display: inline-block;">
+       PDFs <br> <span style="color: green;"> C </span> <br>
+       Fixed order <br> <span style="color: green;"> D </span>
+  </div>
 </div>
 
 ---
@@ -140,14 +102,17 @@ Loops & Legs 2024
 </div>
 
 <div style="text-align: left; font-size: 16pt; float: left; margin-top: 5mm; margin-bottom: -5mm;">
-     $\circ\,$ Need high multiplicity amplitudes because
+     $\circ\,$ High-multiplicity two-loop amplitudes required because:
 </div> <br>
 <div style="display:block; width:100%;margin-top:0mm;">
-  <div style="width:50%; font-size: 16pt; float: left; display: inline-block;">
-       At high energy, some radiation is more likely than no radiation
+  <div style="width:100%; font-size: 16pt; float: left; text-align: left; ">
+       $\qquad\star$ At high energy, some radiation is more likely than no radiation (resummation disrupts naive $\alpha_s$ counting)
   </div>
-  <div style="width:50%; font-size: 16pt; float: right; display: inline-block;">
-       As real-virtual contributions
+  <div style="width:100%; font-size: 16pt; float: left; text-align: left; ">
+       $\qquad\star$ As real-virtual(-virtual) contributions to emerging N$^3$LO computations (or N$^2$LO if loop-induced)
+  </div>
+  <div style="width:100%; font-size: 16pt; float: left; text-align: left; ">
+       $\qquad\star$ Some interesting kinematic regions are only accessible with radiation (e.g. $p_T$ distributions)
   </div>
 </div>
 
@@ -227,13 +192,13 @@ Loops & Legs 2024
         </tr>
         <tr>
             <td>$pp \rightarrow Hb\bar b$</td>
-            <td>[18$\kern-2.2mm\phantom{x}^\dagger$]</td>
+            <td>[18$^{\dagger\ast}$]</td>
             <td></td>
             <td></td>
         </tr>
         <tr>
             <td>$pp \rightarrow Wj\gamma$</td>
-            <td>[19$\kern-2.2mm\phantom{x}^\dagger$]</td>
+            <td>[19]</td>
             <td></td>
             <td></td>
         </tr>
@@ -249,7 +214,7 @@ Loops & Legs 2024
 </table>
 </div>
 <div style="font-size: 14pt; float: center; margin-top: 2mm; margin-bottom: 4mm;">
-Legend: $\star$ = planar $\neq$ leading color; $\dagger$ = planar = leading color; bold = full color
+Legend: <b>bold</b> = full color; $\star$ = planar $\neq$ leading color; $\dagger$ = planar = leading color; $\ast$ = ($y_b \neq 0$, $m_b = 0$)
 </div><br>
 
 <style>
@@ -912,17 +877,21 @@ GDL, Ita, Page, Sotnikov (to appear)
    Complexity of 2-loop 5-point 1-mass Amplitudes
 </b>
 
-
-<div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 2mm;">
+<div style="text-align: left; font-size: 16pt; margin-top: 5mm; margin-bottom: 1mm;">
 $\circ\,$ The number of letters in the spinor alphabet goes from 35 to more then 220:
 </div>
-<div style="text-align: center; float: left; font-size: 15pt; margin-top: 2mm; margin-bottom: 5mm;">
-     $\displaystyle \kern0mm \{W_j\} = \bigcup_{\sigma \; \in \; \text{Aut}(R_6)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1], \langle 1|2+3|4], s_{123}, \Delta_{12|34|56}, ⟨3|2|5+6|4|3]-⟨2|1|5+6|4|2] \big\} $
+<div style="text-align: center; float: left; font-size: 16pt; margin-top: 0mm; margin-bottom: -2mm;">
+     $$
+     \displaystyle \kern5mm \{W_j\} = \bigcup_{\sigma \; \in \; \text{Aut}(R_6)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1], \langle 1|2+3|4], s_{123}, \Delta_{12|34|56}, ⟨3|2|5+6|4|3]-⟨2|1|5+6|4|2] \big\}
+     $$
+</div> <br><br>
+<div style="text-align: left; font-size: 16pt; margin-top: -15mm; margin-bottom: 0mm;">
+$\phantom{\circ}\,$ from the point of view of the coefficients, this is closer to a massless 6-pt. computation than a 5-pt. one.
 </div>
 
 <br>
 
-<div style="display:block; width:100%; font-size: 16pt; margin-top: 5mm; margin-bottom: 4mm;">
+<div style="display:block; width:100%; font-size: 16pt; margin-top: -5mm; margin-bottom: 4mm;">
      <div style="width:50%; text-align: left; float: left; display: font-size: x-large;">
           $\circ$ The  Ansatz size grows quickly with <br> multiplicity (m) and mass dimension (d): <br><br>
           $\displaystyle \kern40mm \small \left(\mkern -9mu \begin{pmatrix}\, m(m-3)/2 \, \\ \, d/2 \, \end{pmatrix} \mkern -9mu \right)$ <br><br>
@@ -932,13 +901,13 @@ $\circ\,$ The number of letters in the spinor alphabet goes from 35 to more then
           </a>
      </div>
      <div style="width:50%; float: right; display: inline-block;">
-          <img src="AnsatzSizes.png"; style="max-width:400px;float:center;border:none;margin-top:0px;margin-bottom: 5mm;">
+          <img src="AnsatzSizes.png"; style="max-width:440px;float:center;border:none;margin-top:-10pt;margin-bottom: 0mm;">
      </div>
 </div>
 
-<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
 
-<div style="text-align: left; font-size: 16pt; margin-top: 1mm; margin-bottom: 2mm;">
+<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 2mm;">
 $\circ\,$ We can still achieve compact results, e.g. for the new 2-loop pole, $⟨k|j|p\mkern-7.5mu/_V|l|k]-⟨j|i|p\mkern-7.5mu/_V|l|j]$
 $$r^{(5 \text{ of } 54)}_{\bar{u}^+g^+g^+d^-(V\rightarrow \ell^+ \ell^-)} = \frac{[12][23]⟨24⟩⟨46⟩^2⟨1|2+3|4]⟨2|1+3|4]}{⟨12⟩⟨23⟩⟨56⟩(⟨3|2|5+6|4|3]-⟨2|1|5+6|4|2])^2}$$
 </div>
@@ -952,11 +921,20 @@ $$r^{(5 \text{ of } 54)}_{\bar{u}^+g^+g^+d^-(V\rightarrow \ell^+ \ell^-)} = \fra
 <div style="text-align: left; font-size: x-large; margin-top: 2mm;">
 $\circ\,$ In general results are much more complicated, but we can retain control surface-by-surface
 </div>
-<a style="font-size: large; display: inline-block; text-align: right; float: right; margin-left: 0mm; margin-top: 0mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/2203.04269>
-     GDL, Page ('22)
+<a style="font-size: large; display: inline-block; text-align: right; float: right; margin-left: 0mm; margin-top: 0mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/fix>
+     Campbell, GDL, Ellis, ('22)
 </a>
+<p style="font-size: large; display: inline-block; text-align: right; float: right; margin-left: 0mm; margin-top: 0mm; margin-bottom: 0mm">
+     and $\;$
+</p>
+<a style="font-size: large; display: inline-block; text-align: right; float: right; margin-left: 0mm; margin-top: 0mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/2203.04269>
+     GDL, Page ('22) $\;$
+</a>
+<p style="font-size: large; display: inline-block; text-align: right; float: right; margin-left: 0mm; margin-top: 0mm; margin-bottom: 0mm">
+     see also: $\;$
+</p>
 <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-left: 0mm; margin-top: 0mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1904.04067>
-     GDL, Maître ('19) $\;$
+     GDL, Maître ('19) $\;$ 
 </a>
 
 <br>
@@ -979,7 +957,7 @@ $$
 --->
 
 <div style="text-align: left; font-size: 16pt; margin-top: 2mm;">
-$\circ\,$ Preliminary results (originally over 1GB):
+$\circ\,$ Preliminary results (originally around 1.3GB of source code, compiled in almost 20GB of C++ binaries):
 </div>
 <div style="text-align: center; font-size: 16pt; margin-top: 2mm;">
 $pp\rightarrow Vq\bar q : \; 120\text{KB} \; r_i, \; 500\text{KB} \; M_{ij} \qquad pp\rightarrow Vgg \text{(MHV)}: \; 170\text{KB} \; r_i, \; 33\text{KB} \; M_{ij}; $ <br>
