@@ -46,19 +46,19 @@ Loops & Legs 2024
 
 {{< slide background-image="LHCcern.jpg" >}}
 
-# Introduction:
-# (2) Loops & (5) Legs
+# Introduction
+### (2) Loops & (5) Legs
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 25mm;"> Motivation </b>
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 25mm;"> Introduction / Overview </b>
 
 <div style="display: flex; justify-content: center;">
     <div style="margin: 0 10px;">
-        <img src="LHC_map.jpg" style="max-width:500px; border:none; margin-top: 8.5mm; margin-bottom: 0mm;">
+        <img src="LHC_map.jpg" style="max-width:450px; border:none; margin-top: 8.5mm; margin-bottom: 0mm;">
     </div>
     <div style="margin: 0 10px;">
-        <img src="ATLAS-XSections-transparent.png" style="max-width:480px; border:none; margin-top: 0mm; margin-bottom: 0mm;">
+        <img src="ATLAS-XSections-transparent.png" style="max-width:430px; border:none; margin-top: 0mm; margin-bottom: 0mm;">
     </div>
 </div>
 
@@ -68,23 +68,30 @@ Loops & Legs 2024
 
 <br>
 
-<div style="display:block; width:100%;margin-top:0mm;">
+<div style="display:block; width:100%; margin-top:0mm;">
   <div style="width:50%; font-size: 16pt; float: left; display: inline-block;">
-       Subtraction <br> <span style="color: green;"> A</span> <br>
-       Resummation <br> <span style="color: green;"> B</span>
+       Subtraction <br> <span style="font-size: 13pt; color: green;"> Pikelner, Pedron, Guadagni, Magnea, Vicini, $\dots$</span> <br>
+       Resummation <br> <span style="font-size: 13pt; color: green;"> Novikov</span> <br>
+       Feynman Integrals <br> <span style="font-size: 13pt; color: green;"> Chaubey, Behring, Nega, Page, Broadhurst, $\dots$  </span>
   </div>
-  <div style="width:50%; font-size: 16pt; float: right; display: inline-block;">
-       PDFs <br> <span style="color: green;"> C </span> <br>
-       Fixed order <br> <span style="color: green;"> D </span>
+  <div style="width:50%; font-size: 13pt; float: right; display: inline-block;">
+       PDFs <br> <span style="font-size: 13pt; color: green;"> C </span> <br>
+       Fixed order <br> <span style="font-size: 13pt; color: green;"> D </span> <br>
+       Approximate Fixed order <br> <span style="font-size: 13pt; color: green;"> D </span>
   </div>
+</div>
+
+<br><br><br><br>
+<div style="text-align: center; float:center; font-size: 15pt; margin-top: 0mm; margin-bottom: 4mm;">
+    Lines between subfields often very blurry!
 </div>
 
 ---
 
 <b style="font-variant: small-caps; font-size: 32pt"> Precision Physics Requires NNLO Corrections </b>
 
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 4mm;">
-     $\circ\,$ $\sigma^{\text{NNLO}}_{pp\rightarrow \gamma\gamma\gamma}$ with leading-color double-virtual amplitudes
+<div style="text-align: left; font-size: 17pt; float: left; margin-top: 5mm; margin-bottom: 4mm;">
+     $\circ\,$ K-factors at NNLO can still be large, especially if new channels open up beyond tree, e.g. $\sigma^{\text{NNLO}}_{pp\rightarrow \gamma\gamma\gamma}$
 </div>
 <div style="display:block; width:100%;">
   <div style="width:50%; float: left; display: inline-block;">
@@ -101,7 +108,7 @@ Loops & Legs 2024
   </div>
 </div>
 
-<div style="text-align: left; font-size: 16pt; float: left; margin-top: 5mm; margin-bottom: -5mm;">
+<div style="text-align: left; font-size: 16pt; float: left; margin-top: 5mm; margin-bottom: 0mm;">
      $\circ\,$ High-multiplicity two-loop amplitudes required because:
 </div> <br>
 <div style="display:block; width:100%;margin-top:0mm;">
@@ -112,7 +119,7 @@ Loops & Legs 2024
        $\qquad\star$ As real-virtual(-virtual) contributions to emerging N$^3$LO computations (or N$^2$LO if loop-induced)
   </div>
   <div style="width:100%; font-size: 16pt; float: left; text-align: left; ">
-       $\qquad\star$ Some interesting kinematic regions are only accessible with radiation (e.g. $p_T$ distributions)
+       $\qquad\star$ Some interesting kinematic regions are only accessible with extra radiation (e.g. $p_T$ distributions)
   </div>
 </div>
 
@@ -178,35 +185,43 @@ Loops & Legs 2024
         </tr>
         <tr>
             <td>$pp \rightarrow jjj$</td>
-            <td>[<b>11</b>, <b>12</b>, <b>13</b>]</td>
-            <td>[<b>13</b>]</td>
-            <td>[14$\kern-2.2mm\phantom{x}^\dagger$]</td>
+            <td>[11$^\dagger$, <b>12</b>, <b>13</b>, <b>14</b>]</td>
+            <td>[11$^\dagger$,<b>14</b>]</td>
+            <td>[15$\kern-2.2mm\phantom{x}^\dagger$]</td>
         </tr>
         <tr class="double-line">
         </tr>
         <tr>
             <td>$pp \rightarrow Wb\bar b$</td>
-            <td>[15$\kern-2.2mm\phantom{x}^\dagger$, 16$\kern-2.2mm\phantom{x}^\dagger$]</td>
+            <td>[16$\kern-2.2mm\phantom{x}^\dagger$, 17$\kern-2.2mm\phantom{x}^\dagger$]</td>
             <td></td>
-            <td>[17$\kern-2.2mm\phantom{x}^\dagger$]</td>
+            <td>[18$\kern-2.2mm\phantom{x}^\dagger$]</td>
         </tr>
         <tr>
             <td>$pp \rightarrow Hb\bar b$</td>
-            <td>[18$^{\dagger\ast}$]</td>
+            <td>[19$^{\dagger\ast}$]</td>
             <td></td>
             <td></td>
         </tr>
         <tr>
             <td>$pp \rightarrow Wj\gamma$</td>
-            <td>[19]</td>
+            <td>[20$^\star$]</td>
             <td></td>
             <td></td>
         </tr>
         <tr>
             <td>$pp \rightarrow Wjj$</td>
-            <td>[15$\kern-2.2mm\phantom{x}^\dagger$]</td>
+            <td>[16$\kern-2.2mm\phantom{x}^\dagger$]</td>
             <td></td>
             <td></td>
+        </tr>
+        <tr class="double-line">
+        </tr>
+        <tr>
+            <td>$pp \rightarrow ttH$</td>
+            <td></td>
+            <td></td>
+            <td>[21]</td>
         </tr>
         <tr>
         </tr>
@@ -233,27 +248,29 @@ Legend: <b>bold</b> = full color; $\star$ = planar $\neq$ leading color; $\dagge
 </style>
 <div class="two-col" style="margin-top:-16mm; margin-left:-12mm;margin-right:-12mm;">
     <div class="column">
-        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/1762583" style="font-size: 13pt;">[1] Chawdhry, Czakon, Mitov, Poncelet '19</a></p>
-        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/1827330" style="font-size: 13pt;">[3] Abreu, Page, Pascual, Sotnikov '20</a></p>
-        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/2663067" style="font-size: 13pt;">[5] Abreu, GDL, Ita, Klinkert, Page, Sotnikov '23</a></p>
-        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/1850624" style="font-size: 13pt;">[7] Chawdhry, Czakon, Mitov, Poncelet '21</a></p>
-        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/1862813" style="font-size: 13pt;">[9] Agarwal, Buccioni, von Manteuffel, Tancredi '21</a></p>
-        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/2723232" style="font-size: 13pt;">[11] Agarwal, Buccioni, Devoto, Gambuti, von Manteuffel, Tancredi '23</a></p>
-        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/2728739" style="font-size: 13pt;">[13] GDL, Ita, Sotnikov '23</a></p>
-        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/1944964" style="font-size: 13pt;">[15] Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov '21</a></p> <!--- pp->Wjj--->
-        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/2077368" style="font-size: 13pt;">[17] Hartanto, Poncelet, Popescu, Zoia '22</a></p> <!--- pp->Wbb-xsection--->
-        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/2008918" style="font-size: 13pt;">[19] Badger, Hartanto, Kryś, Zoia '22</a></p> <!--- pp->Wjy--->  
+        <p style="margin-bottom:-3mm; margin-top:-3mm;"><a href="https://inspirehep.net/literature/1762583" style="font-size: 13pt;">[1] Chawdhry, Czakon, Mitov, Poncelet '19</a></p>
+        <p style="margin-bottom:-3mm; margin-top:-3mm;"><a href="https://inspirehep.net/literature/1827330" style="font-size: 13pt;">[3] Abreu, Page, Pascual, Sotnikov '20</a></p>
+        <p style="margin-bottom:-3mm; margin-top:-3mm;"><a href="https://inspirehep.net/literature/2663067" style="font-size: 13pt;">[5] Abreu, GDL, Ita, Klinkert, Page, Sotnikov '23</a></p>
+        <p style="margin-bottom:-3mm; margin-top:-3mm;"><a href="https://inspirehep.net/literature/1850624" style="font-size: 13pt;">[7] Chawdhry, Czakon, Mitov, Poncelet '21</a></p>
+        <p style="margin-bottom:-3mm; margin-top:-3mm;"><a href="https://inspirehep.net/literature/1862813" style="font-size: 13pt;">[9] Agarwal, Buccioni, von Manteuffel, Tancredi '21</a></p>
+        <p style="margin-bottom:-3mm; margin-top:-3mm;"><a href="https://inspirehep.net/literature/1849070" style="font-size: 13pt;">[11] Abreu, Febres Cordero, Ita, Page, Sotnikov</a></p>
+        <p style="margin-bottom:-3mm; margin-top:-3mm;"><a href="https://inspirehep.net/literature/2723256" style="font-size: 13pt;">[13] GDL, Ita, Klinkert, Sotnikov '23</a></p>
+        <p style="margin-bottom:-3mm; margin-top:-3mm;"><a href="https://inspirehep.net/literature/1868437" style="font-size: 13pt;">[15] Czakon, Mitov, Poncelet '21'</a></p> <!--- pp->jj - xsection LC --->
+        <p style="margin-bottom:-3mm; margin-top:-3mm;"><a href="https://inspirehep.net/literature/1844767" style="font-size: 13pt;">[17] Badger, Hartanto, Zoia '21</a></p> <!--- pp->Wbb--->
+        <p style="margin-bottom:-3mm; margin-top:-3mm;"><a href="https://inspirehep.net/literature/1896584" style="font-size: 13pt;">[19] Badger, Hartanto, Kryś, Zoia '21</a></p> <!--- pp->Hbb--->
+        <p style="margin-bottom:-3mm; margin-top:-3mm;"><a href="https://inspirehep.net/literature/2165654" style="font-size: 13pt;">[21] Catani, Devoto, Grazzini, Kallweit, Mazzitelli, Savoini3 '22</a></p> <!--- pp->Hbb--->
     </div>
     <div class="column" style="margin-left:-5mm;">
-        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/1822188" style="font-size: 13pt;">[2] Kallweit, Sotnikov, Wiesemann '20</a></p>
-        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/1838380" style="font-size: 13pt;">[4] Chawdhry, Czakon, Mitov, Poncelet '20</a></p>
-        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/1844579" style="font-size: 13pt;">[6] Agarwal, Buccioni, von Manteuffel, Tancredi '21</a></p>
-        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/1863379" style="font-size: 13pt;">[8] Chawdhry, Czakon, Mitov, Poncelet '21</a></p>
-        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/2651109" style="font-size: 13pt;">[10] Badger, Czakon, Hartanto, Moodie, Peraro, Poncelet, Zoia '23</a></p>
-        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/2723256" style="font-size: 13pt;">[12] GDL, Ita, Klinkert, Sotnikov '23</a></p>
-        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/FIX" style="font-size: 13pt;">[14] Czakon, Mitov, Poncelet FIX</a></p> <!--- pp->jj - xsection LC --->
-        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/1844767" style="font-size: 13pt;">[16] Badger, Hartanto, Zoia '21</a></p> <!--- pp->Wbb--->
-        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/1896584" style="font-size: 13pt;">[18] Badger, Hartanto, Kryś, Zoia '21</a></p> <!--- pp->Hbb--->
+        <p style="margin-bottom:-3mm; margin-top:-3mm;"><a href="https://inspirehep.net/literature/1822188" style="font-size: 13pt;">[2] Kallweit, Sotnikov, Wiesemann '20</a></p>
+        <p style="margin-bottom:-3mm; margin-top:-3mm;"><a href="https://inspirehep.net/literature/1838380" style="font-size: 13pt;">[4] Chawdhry, Czakon, Mitov, Poncelet '20</a></p>
+        <p style="margin-bottom:-3mm; margin-top:-3mm;"><a href="https://inspirehep.net/literature/1844579" style="font-size: 13pt;">[6] Agarwal, Buccioni, von Manteuffel, Tancredi '21</a></p>
+        <p style="margin-bottom:-3mm; margin-top:-3mm;"><a href="https://inspirehep.net/literature/1863379" style="font-size: 13pt;">[8] Chawdhry, Czakon, Mitov, Poncelet '21</a></p>
+        <p style="margin-bottom:-3mm; margin-top:-3mm;"><a href="https://inspirehep.net/literature/2651109" style="font-size: 13pt;">[10] Badger, Czakon, Hartanto, Moodie, Peraro, Poncelet, Zoia '23</a></p>
+        <p style="margin-bottom:-3mm; margin-top:-3mm;"><a href="https://inspirehep.net/literature/2723232" style="font-size: 13pt;">[12] Agarwal, Buccioni, Devoto, Gambuti, von Manteuffel, Tancredi '23</a></p>
+        <p style="margin-bottom:-3mm; margin-top:-3mm;"><a href="https://inspirehep.net/literature/2728739" style="font-size: 13pt;">[14] GDL, Ita, Sotnikov '23</a></p>
+        <p style="margin-bottom:-3mm; margin-top:-3mm;"><a href="https://inspirehep.net/literature/1944964" style="font-size: 13pt;">[16] Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov '21</a></p> <!--- pp->Wjj--->
+        <p style="margin-bottom:-3mm; margin-top:-3mm;"><a href="https://inspirehep.net/literature/2077368" style="font-size: 13pt;">[18] Hartanto, Poncelet, Popescu, Zoia '22</a></p> <!--- pp->Wbb-xsection--->
+        <p style="margin-bottom:-3mm; margin-top:-3mm;"><a href="https://inspirehep.net/literature/2008918" style="font-size: 13pt;">[20] Badger, Hartanto, Kryś, Zoia '22</a></p> <!--- pp->Wjy--->  
     </div>     
 </div>
 
@@ -384,7 +401,7 @@ $\circ$ $N_c^{n_c}$ & $N_f^{n_f}$ expansion, notation $A^{(L),(n_c, n_f)}_{\text
 
 <br>
 
-<div style="font-size: x-large; float: left; margin-bottom: 8mm;">
+<div style="font-size: x-large; float: left; margin-top:-2mm; margin-bottom: 8mm;">
 $\circ$ New identities among partials (plus two more for the $n_f = 1$ partials) 
 </div>
 <div style="font-size: 14pt; margin-bottom: 4mm; magin-top: 6mm;">
@@ -752,11 +769,11 @@ GDL, Ita, Page, Sotnikov (to appear)
 <br>
 <div style="text-align: center; float: center; font-size: x-large; margin-top: -10mm; margin-bottom: 5mm;">
      $$
-     \kern-20mm \tilde{r}_i = O_{ii'}r_{i'\in\mathcal{B}} \; \longrightarrow \; R = \tilde{r}_{i} \, O_{ii'}M_{i'j} \, h_j = \tilde{r}_{i}  \tilde{M}_{ij} h_j
+     \kern-20mm \tilde{r}_i = O_{ii'}r_{i'\in\mathcal{B}} \; \longrightarrow \; R = \tilde{r}_{i} \, O_{ii'}^{-1}M_{i'j} \, h_j = \tilde{r}_{i}  \tilde{M}_{ij} h_j
      $$
 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
-     $\circ\,$ Key insight to build $O_{ii'}:$
+     $\circ\,$ Key insight to build a good $O_{ii'}:$
 </div>
 <br>
 <div style="text-align: center; float: center; font-size: x-large; margin-top: -2mm; margin-bottom: 5mm;">
