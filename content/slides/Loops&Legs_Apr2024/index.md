@@ -49,11 +49,112 @@ Loops & Legs 2024
 # Introduction:
 # (2) Loops & (5) Legs
 
+
+<!--- 
 ---
 
 {{< slide background-image="ATLAS2022.png" >}}
 
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 25mm;"> Status: Two-Loop Five-Point Massless Amplitudes </b>
+<div style="max-width:500px;">
+<table width="50%" border="1" cellspacing="0" cellpadding="1" style="margin-bottom:-10px">
+  <tr class="greenline">
+    <td colspan="2" rowspan="2"> <div id="rot90"> <center> <b> $\mathcal{A}_{n-gluons}^{l-loops} \propto g_s^n $ </b> </center> </div> </td>
+    <td colspan="4"> <center> multiplicity (n) </center> </td>
+  </tr>
+  <tr>
+    <td><b>4</b></td>
+    <td><b>5</b></td>
+    <td><b>6</b></td>
+    <td><b>7</b></td>
+  </tr>
+  <tr>
+    <td rowspan="3"> <center> loops (l) </center> </td>
+    <td><b>0</b></td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td><b>1</b></td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td><b>2</b></td>
+    <td>6</td>
+    <td>7</td>
+    <td>8</td>
+    <td>9</td>
+  </tr>
+</table>
+</div>
+
+--->
+
+---
+
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 25mm;"> Motivation </b>
+
+<div style="display: flex; justify-content: center;">
+    <div style="margin: 0 10px;">
+        <img src="LHC_map.jpg" style="max-width:500px; border:none; margin-top: 0mm; margin-bottom: 0mm;">
+        <div style="font-size: 15pt; margin-bottom: 3mm;">
+        Slc contributions to $pp\rightarrow jjj$ should be similar to blue curve.
+        </div>
+    </div>
+    <div style="margin: 0 10px;">
+        <img src="HL-LHC-Schedule.jpg" style="max-width:500px; border:none; margin-top: 0mm; margin-bottom: 0mm;">
+        <div style="font-size: 15pt; margin-bottom:-4mm;">
+        <code> C++ </code> Code available at
+        </div>
+        <a href="https://gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp" style="font-size: 14pt;">gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp</a>
+        <div style="font-size: 15pt; margin-bottom:-4mm;">
+        Analytics available at
+        </div>
+    </div>
+</div>
+
+---
+
+<b style="font-variant: small-caps; font-size: 32pt"> Precision Physics Requires NNLO Corrections </b>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 4mm;">
+     $\circ\,$ $\sigma^{\text{NNLO}}_{pp\rightarrow \gamma\gamma\gamma}$ with leading-color double-virtual amplitudes
+</div>
+<div style="display:block; width:100%;">
+  <div style="width:50%; float: left; display: inline-block;">
+       <img src="1911.00479.crosssection.png"; style="max-width:473px;float:center;border:none;margin-top:0px;margin-bottom:-5mm;">
+       <a style="font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1911.00479>
+       	  Chawdhry, Czakon, Mitov, Poncelet ('19)
+       </a>
+  </div>
+  <div style="width:50%; float: center; display: inline-block;">
+       <img src="2010.04681.crosssection.png"; style="max-width:450px;float:center;border:none;margin-top:0px;margin-bottom:-5mm;">
+       <a style="font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/2010.04681>
+       	  Kallweit, Sotnikov, Wiesemann ('20)
+       </a>
+  </div>
+</div>
+
+<div style="text-align: left; font-size: 16pt; float: left; margin-top: 5mm; margin-bottom: -5mm;">
+     $\circ\,$ Need high multiplicity amplitudes because
+</div> <br>
+<div style="display:block; width:100%;margin-top:0mm;">
+  <div style="width:50%; font-size: 16pt; float: left; display: inline-block;">
+       At high energy, some radiation is more likely than no radiation
+  </div>
+  <div style="width:50%; font-size: 16pt; float: right; display: inline-block;">
+       As real-virtual contributions
+  </div>
+</div>
+
+
+---
+
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 25mm;"> Status of Two-Loop Five-Point Amplitudes </b>
 
 <style>
     table {
@@ -62,59 +163,92 @@ Loops & Legs 2024
     }
     th, td {
         border: 1px solid black;
-        padding: 8px;
+        padding: 3px;
         text-align: center !important;
     }
     th {
-        font-size: 20px; /* Adjust the font size for table headers */
+        font-size: 18px; /* Adjust the font size for table headers */
     }
     td {
-        font-size: 16px; /* Adjust the font size for table data */
+        font-size: 15px; /* Adjust the font size for table data */
     }
     tr:last-child td {
         border-bottom: 1px solid black; /* Add border to bottom of last row */
     }
+    .double-line { 
+          border-bottom: 2px double black; /* Adjust the width and color as needed */
+    }
 </style>
 
+<div style="max-width: 800px; margin: 0 auto;">
 <table>
     <thead>
         <tr>
-            <th style="font-size: 24px;">Process</th>
-            <th style="font-size: 24px;">Analytical Amplitudes</th>
-            <th style="font-size: 24px;">Numerical Codes</th>
-            <th style="font-size: 24px;">Cross Sections</th>
+            <th>Process</th>
+            <th>Analytical Amplitudes</th>
+            <th>Numerical Codes</th>
+            <th>Cross Sections</th>
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td style="font-size: 20px;">$pp \rightarrow \gamma\gamma\gamma$</td>
-            <td style="font-size: 20px;">[3, 4, <b>5</b>]</td>
-            <td style="font-size: 20px;">[3, <b>5</b>]</td>
-            <td style="font-size: 20px;">[1, 2]</td>
+        <tr class="double-line">
         </tr>
         <tr>
-            <td style="font-size: 20px;">$pp \rightarrow \gamma\gamma j$</td>
-            <td style="font-size: 20px;">[6, 7, <b>9</b>]</td>
-            <td style="font-size: 20px;">[6]</td>
-            <td style="font-size: 20px;">[8]</td>
+            <td>$pp \rightarrow \gamma\gamma\gamma$</td>
+            <td>[3, 4, <b>5</b>]</td>
+            <td>[3, <b>5</b>]</td>
+            <td>[1, 2]</td>
         </tr>
         <tr>
-            <td style="font-size: 20px;">$pp \rightarrow \gamma jj$</td>
-            <td style="font-size: 20px;">[<b>10</b>]</td>
-            <td style="font-size: 20px;"></td>
-            <td style="font-size: 20px;">[<b>10</b>]</td>
+            <td>$pp \rightarrow \gamma\gamma j$</td>
+            <td>[6, 7, <b>9</b>]</td>
+            <td>[6]</td>
+            <td>[8]</td>
         </tr>
         <tr>
-            <td style="font-size: 20px;">$pp \rightarrow jjj$</td>
-            <td style="font-size: 20px;">Row 3, Column 1</td>
-            <td style="font-size: 20px;">Row 3, Column 2</td>
-            <td style="font-size: 20px;">Row 3, Column 3</td>
+            <td>$pp \rightarrow \gamma jj$</td>
+            <td>[<b>10</b>]</td>
+            <td></td>
+            <td>[<b>10</b>]</td>
+        </tr>
+        <tr>
+            <td>$pp \rightarrow jjj$</td>
+            <td>[<b>11</b>, <b>12</b>, <b>13</b>]</td>
+            <td>[<b>13</b>]</td>
+            <td>Row 3, Column 3</td>
+        </tr>
+        <tr class="double-line">
+        </tr>
+        <tr>
+            <td>$pp \rightarrow Wb\bar b$</td>
+            <td>[14, 15]</td>
+            <td></td>
+            <td>[16]</td>
+        </tr>
+        <tr>
+            <td>$pp \rightarrow Hb\bar b$</td>
+            <td>[18]</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>$pp \rightarrow Wj\gamma$</td>
+            <td>[17]</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>$pp \rightarrow Wjj$</td>
+            <td>[14]</td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
         </tr>
     </tbody>
 </table>
-<div style="font-size: 14pt; float: center; margin-top: 2mm; margin-bottom: 1mm;">
+</div>
+<div style="font-size: 14pt; float: center; margin-top: 2mm; margin-bottom: 4mm;">
 Legend: $\star$ = planar $\neq$ leading color; $\dagger$ = planar = leading color; bold = full color
 </div><br>
 
@@ -134,26 +268,27 @@ Legend: $\star$ = planar $\neq$ leading color; $\dagger$ = planar = leading colo
 </style>
 <div class="two-col" style="margin-top:-16mm; margin-left:-12mm;margin-right:-12mm;">
     <div class="column">
-        <p style="margin-bottom:0mm; margin-top:0mm;"><a href="https://inspirehep.net/literature/1762583" style="font-size: 16pt;">[1] Chawdhry, Czakon, Mitov, Poncelet '19</a></p>
-        <p style="margin-bottom:0mm; margin-top:0mm;"><a href="https://inspirehep.net/literature/1827330" style="font-size: 16pt;">[3] Abreu, Page, Pascual, Sotnikov '20</a></p>
-        <p style="margin-bottom:0mm; margin-top:0mm;"><a href="https://inspirehep.net/literature/2663067" style="font-size: 16pt;">[5] Abreu, GDL, Ita, Klinkert, Page, Sotnikov '23</a></p>
-        <p style="margin-bottom:0mm; margin-top:0mm;"><a href="https://inspirehep.net/literature/1850624" style="font-size: 16pt;">[7] Chawdhry, Czakon, Mitov, Poncelet '21</a></p>
-        <p style="margin-bottom:0mm; margin-top:0mm;"><a href="https://inspirehep.net/literature/1862813" style="font-size: 15pt;">[9] Agarwal, Buccioni, von Manteuffel, Tancredi '21</a></p>
-        <p style="margin-bottom:0mm; margin-top:0mm;"><a href="https://inspirehep.net/literature/" style="font-size: 16pt;">[11] </a></p>
-        <p style="margin-bottom:0mm; margin-top:0mm;"><a href="https://inspirehep.net/literature/" style="font-size: 16pt;">[13] </a></p>
+        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/1762583" style="font-size: 13pt;">[1] Chawdhry, Czakon, Mitov, Poncelet '19</a></p>
+        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/1827330" style="font-size: 13pt;">[3] Abreu, Page, Pascual, Sotnikov '20</a></p>
+        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/2663067" style="font-size: 13pt;">[5] Abreu, GDL, Ita, Klinkert, Page, Sotnikov '23</a></p>
+        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/1850624" style="font-size: 13pt;">[7] Chawdhry, Czakon, Mitov, Poncelet '21</a></p>
+        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/1862813" style="font-size: 13pt;">[9] Agarwal, Buccioni, von Manteuffel, Tancredi '21</a></p>
+        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/2723232" style="font-size: 13pt;">[11] Agarwal, Buccioni, Devoto, Gambuti, von Manteuffel, Tancredi '23</a></p>
+        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/2728739" style="font-size: 13pt;">[13] GDL, Ita, Sotnikov '23</a></p>
+        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/1944964" style="font-size: 13pt;">[15] Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov '21</a></p> <!--- pp->Wjj--->
+        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/1896584" style="font-size: 13pt;">[17] Badger, Hartanto, Kryś, Zoia '21</a></p> <!--- pp->Hbb--->
     </div>
     <div class="column" style="margin-left:-5mm;">
-        <p style="margin-bottom:0mm; margin-top:0mm;"><a href="https://inspirehep.net/literature/1822188" style="font-size: 16pt;">[2] Kallweit, Sotnikov, Wiesemann '20</a></p>
-        <p style="margin-bottom:0mm; margin-top:0mm;"><a href="https://inspirehep.net/literature/1838380" style="font-size: 16pt;">[4] Chawdhry, Czakon, Mitov, Poncelet '20</a></p>
-        <p style="margin-bottom:0mm; margin-top:0mm;"><a href="https://inspirehep.net/literature/1844579" style="font-size: 15pt;">[6] Agarwal, Buccioni, von Manteuffel, Tancredi '21</a></p>
-        <p style="margin-bottom:0mm; margin-top:0mm;"><a href="https://inspirehep.net/literature/1863379" style="font-size: 16pt;">[8] Chawdhry, Czakon, Mitov, Poncelet '21</a></p>
-        <p style="margin-bottom:0mm; margin-top:0mm;"><a href="https://inspirehep.net/literature/2651109" style="font-size: 14pt;">[10] Badger, Czakon, Hartanto, Moodie, Peraro, Poncelet, Zoia '23</a></p>
-        <p style="margin-bottom:0mm; margin-top:0mm;"><a href="https://inspirehep.net/literature/" style="font-size: 16pt;">[12] </a></p>
-    </div>
-</div>
-
-<div style="font-size: x-large; float: center; margin-top:4mm; margin-bottom: -4mm;">
-This talk: $pp\rightarrow jjj$, i.e. $\{0\rightarrow ggggg$, $0\rightarrow q\bar qggg$, $0\rightarrow q\bar qQ\bar Q g\}$
+        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/1822188" style="font-size: 13pt;">[2] Kallweit, Sotnikov, Wiesemann '20</a></p>
+        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/1838380" style="font-size: 13pt;">[4] Chawdhry, Czakon, Mitov, Poncelet '20</a></p>
+        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/1844579" style="font-size: 13pt;">[6] Agarwal, Buccioni, von Manteuffel, Tancredi '21</a></p>
+        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/1863379" style="font-size: 13pt;">[8] Chawdhry, Czakon, Mitov, Poncelet '21</a></p>
+        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/2651109" style="font-size: 13pt;">[10] Badger, Czakon, Hartanto, Moodie, Peraro, Poncelet, Zoia '23</a></p>
+        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/2723256" style="font-size: 13pt;">[12] GDL, Ita, Klinkert, Sotnikov '23</a></p>
+        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/1844767" style="font-size: 13pt;">[14] Badger, Hartanto, Zoia '21</a></p> <!--- pp->Wbb--->
+        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/2077368" style="font-size: 13pt;">[16] Hartanto, Poncelet, Popescu, Zoia '22</a></p> <!--- pp->Wbb-xsection--->
+        <p style="margin-bottom:-2mm; margin-top:-2mm;"><a href="https://inspirehep.net/literature/2008918" style="font-size: 13pt;">[18] Badger, Hartanto, Kryś, Zoia '22</a></p> <!--- pp->Wjy--->  
+    </div>     
 </div>
 
 ---
@@ -164,7 +299,7 @@ This talk: $pp\rightarrow jjj$, i.e. $\{0\rightarrow ggggg$, $0\rightarrow q\bar
 <div style="display: flex; justify-content: center;">
     <div style="margin: 0 10px;">
         <div style="margin-top: 2mm; margin-bottom: 4mm">
-          <b style="font-variant: small-caps; font-size: xxx-large"> Motivation</b>
+          <b style="font-variant: small-caps; font-size: xxx-large"> Full $N_C $ motivation</b>
         </div>
         <div style="font-size: 16pt;">
         3 is not that big! And certainly not close to $\infty$
@@ -199,6 +334,17 @@ This talk: $pp\rightarrow jjj$, i.e. $\{0\rightarrow ggggg$, $0\rightarrow q\bar
         <a href="https://zenodo.org/records/10231547" style="font-size: 14pt;">zenodo.org/records/10231547</a>
     </div>
 </div>
+
+</section>
+
+---
+
+<section>
+
+{{< slide background-image="Feynman-Diagrams-transparent.png" >}}
+
+<h1 style="margin-top: -2mm;"> Numerical Computation </h1>
+
 
 ---
 
@@ -273,15 +419,6 @@ $\circ$ New identities among partials (plus two more for the $n_f = 1$ partials)
      \]
 </div>
 
-</section>
-
----
-
-<section>
-
-{{< slide background-image="Feynman-Diagrams-transparent.png" >}}
-
-<h1 style="margin-top: -2mm;"> Numerical Computation </h1>
 
 ---
 
@@ -821,100 +958,6 @@ GDL, Ita, Page, Sotnikov (to appear)
 {{< slide background-image="Wjj_diagrams.png">}}
 
 # Outlook
-
----
-
-{{< slide background-image="ATLAS2022.png" >}}
-
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 25mm;"> Status: Two-Loop Five-Point One-Mass Amplitudes </b>
-
-<style>
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-    th, td {
-        border: 1px solid black;
-        padding: 8px;
-        text-align: center !important;
-    }
-    th {
-        font-size: 20px; /* Adjust the font size for table headers */
-    }
-    td {
-        font-size: 16px; /* Adjust the font size for table data */
-    }
-    tr:last-child td {
-        border-bottom: 1px solid black; /* Add border to bottom of last row */
-    }
-</style>
-
-<table>
-    <thead>
-        <tr>
-            <th style="font-size: 24px;">Process</th>
-            <th style="font-size: 24px;">Analytical Amplitudes</th>
-            <th style="font-size: 24px;">Numerical Codes</th>
-            <th style="font-size: 24px;">Cross Sections</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td style="font-size: 20px;">$pp \rightarrow Wb\bar b$</td>
-            <td style="font-size: 20px;">[3, 4, 5]</td>
-            <td style="font-size: 20px;">[3, 5]</td>
-            <td style="font-size: 20px;">[1, 2]</td>
-        </tr>
-        <tr>
-            <td style="font-size: 20px;">$pp \rightarrow Hb\bar b$</td>
-            <td style="font-size: 20px;">Row 1, Column 1</td>
-            <td style="font-size: 20px;">Row 1, Column 2</td>
-            <td style="font-size: 20px;">Row 1, Column 3</td>
-        </tr>
-        <tr>
-            <td style="font-size: 20px;">$pp \rightarrow Wj\gamma$</td>
-            <td style="font-size: 20px;">Row 2, Column 1</td>
-            <td style="font-size: 20px;">Row 2, Column 2</td>
-            <td style="font-size: 20px;">Row 2, Column 3</td>
-        </tr>
-        <tr>
-            <td style="font-size: 20px;">$pp \rightarrow Wjj$</td>
-            <td style="font-size: 20px;">Row 3, Column 1</td>
-            <td style="font-size: 20px;">Row 3, Column 2</td>
-            <td style="font-size: 20px;">Row 3, Column 3</td>
-        </tr>
-        <tr>
-        </tr>
-    </tbody>
-</table>
-
-<br><br>
-
-<style>
-    .two-col {
-        display: flex;
-        justify-content: center;
-    }
-    .column {
-        flex: 1;
-        padding: 10px;
-        margin: 0 10px;
-        text-align: left;
-    }
-</style>
-<div class="two-col">
-    <div class="column">
-        <p style="margin-bottom:2mm; margin-top:2mm;"><a href="https://inspirehep.net/literature/1762583" style="font-size: 16pt;">[1] ... '19</a></p>
-    </div>
-    <div class="column">
-        <p style="margin-bottom:2mm; margin-top:2mm;"><a href="https://inspirehep.net/literature/1822188" style="font-size: 16pt;">[2] ... '20</a></p>
-    </div>
-</div>
-
-
-<div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 0mm;">
-$\circ\,$ Results are now regularly in order of 100MB to more than 1GB.
-</div>
 
 ---
 
