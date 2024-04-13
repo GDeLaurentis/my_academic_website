@@ -47,13 +47,12 @@ Loops & Legs 2024
 {{< slide background-image="LHCcern.jpg" >}}
 
 # Introduction
-### (2) Loops & (5) Legs
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 25mm;"> Introduction / Overview </b>
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: -5mm;"> Overview </b>
 
-<div style="display: flex; justify-content: center;">
+<div style="display: flex; justify-content: center; margin-top: -3mm;">
     <div style="margin: 0 10px;">
         <img src="LHC_map.jpg" style="max-width:450px; border:none; margin-top: 8.5mm; margin-bottom: 0mm;">
     </div>
@@ -62,28 +61,36 @@ Loops & Legs 2024
     </div>
 </div>
 
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 4mm;">
+<div style="text-align: left; font-size: 18pt; float: left; margin-top: -2mm; margin-bottom: 4mm;">
      $\circ\,$ LHC physics program possible also thanks to advancements on many fronts of the theory
 </div>
 
 <br>
 
-<div style="display:block; width:100%; margin-top:0mm;">
-  <div style="width:50%; font-size: 16pt; float: left; display: inline-block;">
-       Subtraction <br> <span style="font-size: 13pt; color: green;"> Pikelner, Pedron, Guadagni, Magnea, Vicini, $\dots$</span> <br>
-       Resummation <br> <span style="font-size: 13pt; color: green;"> Novikov</span> <br>
-       Feynman Integrals <br> <span style="font-size: 13pt; color: green;"> Chaubey, Behring, Nega, Page, Broadhurst, $\dots$  </span>
+<div style="display:block; width:100%; margin-top: -5mm;">
+  <div style="width:43%; font-size: 14pt; float: left; display: inline-block; margin-left:-12mm;">
+       Subtraction <br> <span style="font-size: 12pt; color: green;"> Pikelner, Pedron, Guadagni, Magnea, van Hameren, Vicini, $\dots$</span> <br>
+       Renomalization / $\gamma^5$-schemes <br> <span style="font-size: 12pt; color: green;"> Gracey, Heinrich, Weißwange, Kühler, Stöckinger$\dots$</span> <br>
+       Feynman Integrals <br> <span style="font-size: 12pt; color: green;"> Chaubey, Behring, Nega, Jones, Page, Broadhurst, $\dots$ <span>
   </div>
-  <div style="width:50%; font-size: 13pt; float: right; display: inline-block;">
-       PDFs <br> <span style="font-size: 13pt; color: green;"> C </span> <br>
-       Fixed order <br> <span style="font-size: 13pt; color: green;"> D </span> <br>
-       Approximate Fixed order <br> <span style="font-size: 13pt; color: green;"> D </span>
+  <div style="width:33%; font-size: 14pt; float: right; display: inline-block; margin-right:-10mm;">
+       Three / Four / Five Loops  <br> <span style="font-size: 12pt; color: green;"> Bluemlein, Yang, Moch, Schönwald, Maier, $\dots$ </span> <br>
+       $\sigma$'s at N$^{(2-3)}$LO <br> <span style="font-size: 12pt; color: green;"> Sotnikov, Neumann, Chen, Mella, Savoini, $\dots$ </span> <br>
+       Automation <br> <span style="font-size: 12pt; color: green;"> Lange, Shtabovenko, Zoller$\dots$ </span>
+  </div>
+  <div style="width:30%; font-size: 14pt; float: right; display: inline-block; margin-left:-8mm;">
+       Higgses (<span style="font-size: 14pt">$2 \rightarrow 2$</span> w/ masses) <br> <span style="font-size: 12pt; color: green;"> Zhang, Davies, Kerner, $\dots$ </span> <br>
+       Top-quark(s), internal or external<br> <span style="font-size: 12pt; color: green;"> Vitti, Coro, Wang, Magerya, $\dots$ </span> <br>
+       Resummation <br> <span style="font-size: 12pt; color: green;"> Novikov, Andersen, Li, $\dots$ </span>
   </div>
 </div>
 
 <br><br><br><br>
-<div style="text-align: center; float:center; font-size: 15pt; margin-top: 0mm; margin-bottom: 4mm;">
-    Lines between subfields often very blurry!
+<div style="text-align: center; float:center; font-size: 15pt; margin-top: -3mm; margin-bottom: 4mm;">
+    And much more! Also, lines between various subfields often very blurry!
+</div>
+<div style="text-align: center; float:center; font-size: 15pt; margin-top: -3mm; margin-bottom: 4mm;">
+    This talk: fixed order, 2 loops and 5 legs.
 </div>
 
 ---
@@ -258,7 +265,7 @@ Legend: <b>bold</b> = full color; $\star$ = planar $\neq$ leading color; $\dagge
         <p style="margin-bottom:-3mm; margin-top:-3mm;"><a href="https://inspirehep.net/literature/1868437" style="font-size: 13pt;">[15] Czakon, Mitov, Poncelet '21'</a></p> <!--- pp->jj - xsection LC --->
         <p style="margin-bottom:-3mm; margin-top:-3mm;"><a href="https://inspirehep.net/literature/1844767" style="font-size: 13pt;">[17] Badger, Hartanto, Zoia '21</a></p> <!--- pp->Wbb--->
         <p style="margin-bottom:-3mm; margin-top:-3mm;"><a href="https://inspirehep.net/literature/1896584" style="font-size: 13pt;">[19] Badger, Hartanto, Kryś, Zoia '21</a></p> <!--- pp->Hbb--->
-        <p style="margin-bottom:-3mm; margin-top:-3mm;"><a href="https://inspirehep.net/literature/2165654" style="font-size: 13pt;">[21] Catani, Devoto, Grazzini, Kallweit, Mazzitelli, Savoini3 '22</a></p> <!--- pp->Hbb--->
+        <p style="margin-bottom:-3mm; margin-top:-3mm;"><a href="https://inspirehep.net/literature/2165654" style="font-size: 13pt;">[21] Catani, Devoto, Grazzini, Kallweit, Mazzitelli, Savoini '22</a></p> <!--- pp->Hbb--->
     </div>
     <div class="column" style="margin-left:-5mm;">
         <p style="margin-bottom:-3mm; margin-top:-3mm;"><a href="https://inspirehep.net/literature/1822188" style="font-size: 13pt;">[2] Kallweit, Sotnikov, Wiesemann '20</a></p>
@@ -315,6 +322,9 @@ Legend: <b>bold</b> = full color; $\star$ = planar $\neq$ leading color; $\dagge
         </div>
         <a href="https://zenodo.org/records/10142295" style="font-size: 14pt;">zenodo.org/records/10142295</a> <span style="font-size: 16pt">&</span>
         <a href="https://zenodo.org/records/10231547" style="font-size: 14pt;">zenodo.org/records/10231547</a>
+        <div style="font-size: 15pt; margin-bottom:-4mm;">
+        with <code style="font-size: 14pt;">Mathematica</code>, <code style="font-size: 14pt;">Python</code> and <code style="font-size: 14pt;">C++</code> scripts.
+        </div>
     </div>
 </div>
 
@@ -406,9 +416,9 @@ $\circ$ New identities among partials (plus two more for the $n_f = 1$ partials)
 </div>
 <div style="font-size: 14pt; margin-bottom: 4mm; magin-top: 6mm;">
      \[\\[2mm]
-     \Big\{ \big[ 16 \, A^{(2),(2,0)}_d\, (1,2,3,4,5) 
-          + 4 \, A^{(2),(0,0)}_d\, (1,2,3,4,5) + 
-          A^{(2),(-2,0)}_d(1,2,3,4,5) \big]
+     \Big\{ \big[ 16 \, A^{(2),(2,0)}_6\, (1,2,3,4,5) 
+          + 4 \, A^{(2),(0,0)}_6\, (1,2,3,4,5) + 
+          A^{(2),(-2,0)}_6(1,2,3,4,5) \big]
           - \big[\dots \big]_{3 \leftrightarrow 4} \Big\}
           - \Big\{ \dots \Big\}_{1 \leftrightarrow 2} = 0 \, .
      \]
@@ -416,15 +426,15 @@ $\circ$ New identities among partials (plus two more for the $n_f = 1$ partials)
 <div style="font-size: 14pt; margin-top: 8mm; margin-bottom: 0mm">
      \[
      \begin{gather}
-          \big[  32 \, A^{(2),(2,0)}_d\, (1,2,3,4,5) + 8 \, A^{(2),(0,0)}_d\, (1,2,3,4,5) + 2 A^{(2),(-2,0)}_d(1,2,3,4,5) \\
-               + 16 \, A^{(2),(1,0)}_s\, (1,2,3,4,5) \, + 4 A^{(2),(-1,0)}_s(1,2,3,4,5) + A^{(2),(-3,0)}_s (1,2,3,4,5) \big]
+          \big[  32 \, A^{(2),(2,0)}_6\, (1,2,3,4,5) + 8 \, A^{(2),(0,0)}_6\, (1,2,3,4,5) + 2 A^{(2),(-2,0)}_6(1,2,3,4,5) \\
+               + 16 \, A^{(2),(1,0)}_7\, (1,2,3,4,5) \, + 4 A^{(2),(-1,0)}_7( 1,2,3,4,5) + A^{(2),(-3,0)}_7 (1,2,3,4,5) \big]
                - \big[ \dots \big]_{3 \leftrightarrow 4}=  0 \, .
      \end{gather}
      \]
 </div>
 
-<div style="font-size: x-large; float: center; margin-top: 10mm; margin-bottom: 6mm;">
-These redundancies do not really affect the complexity (see discussion on vector spaces).
+<div style="font-size: 16pt; float: center; margin-top: 10mm; margin-bottom: 6mm;">
+These redundancies do not affect the complexity of the calculation (see discussion on vector spaces).
 </div>
 
 ---
@@ -787,43 +797,63 @@ GDL, Ita, Page, Sotnikov (to appear)
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> De-correlating the Residues </b>
+<b style="font-variant: small-caps; font-size: xxx-large; margin-bottom: -2mm;"> De-correlating the Residues </b>
 
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     $\circ\,$ Build Laurent expansions around $t_{\mathcal{D}_k}$ <span style="font-size: 12pt"> Univariate Tiele Tiziano, Ben's Lecture Notes, p(z)-adic expansion</span>
+<div style="text-align: left; font-size: 17pt; float: left; margin-top: 0mm; margin-bottom: 0mm;">
+     $\circ\,$ Build Laurent expansions around $t_{\mathcal{D}_k}$
 </div>
+<span style="font-size: 11pt; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm;" >
+See also: 
+<a style="font-size: 11pt; " href=https://arxiv.org/abs/1608.01902>
+Tiele interpolation - Peraro ('16); 
+</a>
+<a style="font-size: 11pt; " href=https://inspirehep.net/literature/1944964>
+spinor slice - Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov ('21); 
+</a>
+<a style="font-size: 11pt; " href=https://inspirehep.net/literature/2654774>
+p(z)-adic expansion - Fontana, Peraro ('23)$\phantom{; }$
+</a>
+</span>
 <br>
-<div style="text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 5mm;">
+<div style="text-align: center; float: center; font-size: 17pt; margin-top: -13mm; margin-bottom: 5mm;">
      $$
      r_{i \in \mathcal{B}} = \sum_{m = 1}^{q_k = \text{max}_i(q_{ik})} \frac{e^k_{im}}{(t-t_{\mathcal{D}_k})^m} + \mathcal{O}((t-t_{\mathcal{D}_k})^0)
      $$
 </div>
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
+<div style="text-align: left; font-size: 17pt; float: left; margin-top: 0mm; margin-bottom: 0mm;">
      $\phantom{\circ}\,$ strictly formal over $\mathbb{F}_p$, but convergent over $\mathbb{Q}_p$ for $(t-t_{\mathcal{D}_k}) \propto p$
 </div>
 
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: -5mm;">
-     $\circ\,$ By Gaussian elimination we can partition the space:
-</div>
-<br><br>
-<div style="text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 5mm;">
+<div style="text-align: left; font-size: 17pt; float: left; margin-top: 5mm; margin-bottom: 0mm;">
+     $\circ\,$ By Gaussian elimination, partition the space:
+</div> <br><br>
+<div style="text-align: center; font-size: 17pt; float: center; margin-top: -4mm; margin-bottom: 2mm;">
      $$
-     \text{span}(r_{i \in \mathcal{B}}) = \text{column}(\text{Res}(r_{i \in \mathcal{B}}, D_k^m)) \oplus \text{null}(\text{Res}(r_{i \in \mathcal{B}}, D_k^m))
+     \text{span}(r_{i \in \mathcal{B}}) = \underbrace{\text{column}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m))}_{\text{functions with the singularity}} \;\;\; \oplus \, \underbrace{\text{null}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m))}_{\text{functions without the singularity}}
      $$
-</div>
-
-<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 0mm;">
-    Interpretation of $\text{null}(\text{Res}(r_{i \in \mathcal{B}}, D_k^m))$: functions that do <u>not</u> have a $D_k^m$ singularity
 </div>
 
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
-     $\circ\,$ Search the space of intersections of the null spaces for linear combinations that remove <br> $\phantom{\circ}\,$  as many singularities as possible, without dropping rank of $O_{ii'}$
+<!---
+<div style="border: 1px solid black; font-size: 17pt; padding: 10px; display: inline-block; margin-top: 2mm;">
+    $\text{null}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m))$: functions that do <u>not</u> have a $D_k^m$ singularity
 </div>
-<br><br><br>
-<div style="text-align: center; float: center; font-size: x-large; margin-top: -8mm; margin-bottom: 5mm;">
-     $$
-     \displaystyle O_{i'i} = \bigcap_{k, m} \, \text{nulls}(\text{Res}(r_{i \in \mathcal{B}}, D_k^m)) \qquad \text{(schematically)}
-     $$
+--->
+
+<div style="display:block; width:100%; margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm;">
+     <div style="font-size: 17pt; width:50%; float: left; text-align: center; display: inline-block; margin-top: 3mm;">
+	     <div style="font-size: 17pt; float: left; margin-top: 4mm; margin-bottom: 1mm;">
+               $\circ\,$ Search for linear combinations that remove as many singularities as possible
+          </div>
+          <br>
+          <div style="font-size:16pt; float: left; margin-top: 0mm; margin-bottom: 0mm">
+               $$
+               \kern25mm \displaystyle O_{i'i} = \bigcap_{k, m} \, \text{nulls}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m))
+               $$
+          </div>
+	</div>
+     <div style="width:50%; float: right; display: inline-block; margin-top: 0mm;">
+          <img src="search_tree.png"; style="max-width:400px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;">
+     </div>
 </div>
 
 ---
@@ -988,7 +1018,7 @@ $$
 & -\frac{49/64⟨3|1+4|2]⟨6|1+4|5]s_{123}(s_{123}-s_{234})(s_{124}-s_{134})}{⟨1|2+3|4]⟨2|1+4|3]Δ^2_{14|23|56}} & \qquad\qquad & \Big\langle Δ_{14|23|56} \Big\rangle \\[1mm]
 & +\frac{1/4[12]^3⟨14⟩[45]⟨46⟩}{[13][23]⟨1|2+3|1]⟨4|5+6|4]^2} & \qquad\qquad & \Big\langle ⟨1|2+3|1], ⟨4|5+6|4]^2 \Big\rangle \\[1mm]
 & -\frac{1/4[12]2⟨13⟩⟨24⟩[45]⟨46⟩}{⟨12⟩[13]⟨2|1+3|2]⟨4|5+6|4]^2}-\frac{3/4⟨34⟩2[45]⟨46⟩⟨3|1+2|4]}{⟨14⟩⟨23⟩⟨2|1+3|4]⟨4|5+6|4]^2} & \qquad\qquad & \Big\langle ⟨4|5+6|4] \Big\rangle \\[1mm]
-& + \dots \text{more than 30 fractions} \dots &&
+& + \dots \text{more than 30 other fractions} \dots &&
 \end{alignedat}
 $$
 </div>
