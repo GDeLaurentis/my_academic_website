@@ -61,27 +61,27 @@ ICHEP 2024
 </div>
 
 <div style="text-align: left; font-size: 18pt; float: left; margin-top: -2mm; margin-bottom: 4mm;">
-     $\circ\,$ Observations at the LHC are beautifully predicted by the Standard Model,
+     $\circ\,$ Observations at the LHC are beautifully predicted by the Standard Model through,
 </div>
 
 <div style="font-size: 18pt; float: center; margin-top: 0mm; margin-bottom: 0mm;">
 $$
 \require{color}
 \require{amsmath}
-σ_{2 \rightarrow n - 2} = \sum_{a,b} \int dx_a dx_b f_{a/h_1}(x_a, \mu_F) \, f_{b/h_2}(x_b, \mu_F) \;\hat{\sigma}_{ab\rightarrow n-2}(x_a, x_b, \mu_F, \mu_R) \\
-\hat{σ}_{n}=\frac{1}{2\hat{s}}\int d\Pi_{n-2}\;(2π)^4δ^4\big(\sum_{i=1}^n p_i\big)\;|\overline{\mathcal{A}(p_i,h_i,a_i,μ_F, μ_R)}|^2
+σ_{2 \rightarrow n - 2} = \sum_{a,b} \int dx_a dx_b f_{a/h_1}(x_a, \mu_F) \, f_{b/h_2}(x_b, \mu_F) \;\hat{\sigma}_{ab\rightarrow n-2}(x_a, x_b, \mu_F, \mu_R) \, , \\
+\hat{σ}_{n}=\frac{1}{2\hat{s}}\int d\Pi_{n-2}\;(2π)^4δ^4\big(\sum_{i=1}^n p_i\big)\;|\overline{\mathcal{A}(p_i,h_i,a_i,μ_F, μ_R)}|^2 \, .
 $$
 </div>
 
 <div style="text-align: left; float:center; font-size: 18pt; margin-top: -3mm; margin-bottom: 4mm;">
-    $\phantom{\circ}\,$ At least to the extent with which we can compute $\footnotesize \mathcal{A} = \mathcal{A}^{(0)} + \alpha_{(s)}\mathcal{A}^{(1)} + \alpha^2_{(s)}\mathcal{A}^{(2)} + \dots $
+    $\phantom{\circ}\,$ At least to the extent with which we can compute <span style="font-size: 15pt"> $\mathcal{A} = \mathcal{A}^{(0)} + \alpha_{(s)}\mathcal{A}^{(1)} + \alpha^2_{(s)}\mathcal{A}^{(2)} + \dots$</span>
 </div>
 
 ---
 
 <b style="font-variant: small-caps; font-size: 32pt"> Precision Physics Requires NNLO Corrections </b>
 
-<div style="text-align: left; font-size: 17pt; float: left; margin-top: 2mm; margin-bottom: 4mm;">
+<div style="text-align: left; font-size: 17pt; float: left; margin-top: -1mm; margin-bottom: 4mm;">
      $\circ\,$ NNLO corrections can still be large! Especially in the presence of loop-induced channels,
 </div>
 <div style="display:block; width:100%; margin-top:4mm;">
@@ -106,14 +106,14 @@ $$
 </div>
 
 <div style="text-align: left; font-size: 16pt; float: left; margin-top: 0mm; margin-bottom: -2mm;">
-     $\circ\,$ High-multiplicity one/two-loop amplitudes required also because:
+     $\circ\,$ High-multiplicity two-loop amplitudes required also because:
 </div> <br>
 <div style="display:block; width:100%;margin-top:-2mm;">
   <div style="width:100%; font-size: 16pt; float: left; text-align: left; ">
        $\qquad\star$ At high energy, some radiation is more likely than no radiation (captured by resummation);
   </div>
   <div style="width:100%; font-size: 16pt; float: left; text-align: left; ">
-       $\qquad\star$ As real-virtual(-virtual) contributions to emerging N$^{3}$LO or N$^2$LO computations;
+       $\qquad\star$ As real-virtual-virtual contributions to emerging N$^{3}$LO computations;
   </div>
   <div style="width:100%; font-size: 16pt; float: left; text-align: left; ">
        $\qquad\star$ Many interesting kinematic regions are only accessible with extra radiation (e.g. $p_T$ distributions).
@@ -215,7 +215,7 @@ $$
         <tr class="double-line">
         </tr>
         <tr>
-            <td>$pp \rightarrow ttH$</td>
+            <td>$pp \rightarrow t\bar tH$</td>
             <td></td>
             <td></td>
             <td>[22]</td>
@@ -256,7 +256,7 @@ Legend: <b>bold</b> = full color; $\star$ = planar $\neq$ leading color; $\dagge
         <p style="margin-bottom:-4mm; margin-top:-4mm;"><a href="https://inspirehep.net/literature/1944964" style="font-size: 12pt;">[17] Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov '21</a></p> <!--- pp->Wjj--->
         <p style="margin-bottom:-4mm; margin-top:-4mm;"><a href="https://inspirehep.net/literature/2077368" style="font-size: 12pt;">[19a, </a><a href="https://inspirehep.net/literature/2148214" style="font-size: 12pt;"> 19b] Hartanto, Poncelet, Popescu, Zoia '22</a></p> <!--- pp->Wbb-xsection--->
         <p style="margin-bottom:-4mm; margin-top:-4mm;"><a href="https://inspirehep.net/literature/2008918" style="font-size: 12pt;">[21] Badger, Hartanto, Kryś, Zoia '22</a></p> <!--- pp->Wjy--->  
-        <p style="margin-bottom:-4mm; margin-top:-4mm;"><a href="https://inspirehep.net/literature/" style="font-size: 12pt;">[23] <span style="color: green; font-weight: bold;">GDL</span>, Ita, Page, Sotnikov - To appear</a></p> <!--- pp->Wjy--->  
+        <p style="margin-bottom:-4mm; margin-top:-4mm;"><a href="https://inspirehep.net/literature/" style="font-size: 12pt;">[23] <span style="color: green; font-weight: bold;">GDL</span>, Ita, Page, Sotnikov - To appear '24 </a></p> <!--- pp->Wjy--->  
     </div>
     <div class="column" style="margin-left:-5mm;">
         <p style="margin-bottom:-4mm; margin-top:-4mm;"><a href="https://inspirehep.net/literature/1822188" style="font-size: 12pt;">[2] Kallweit, Sotnikov, Wiesemann '20</a></p>
@@ -285,30 +285,80 @@ Legend: <b>bold</b> = full color; $\star$ = planar $\neq$ leading color; $\dagge
 
 ---
 
+<b style="font-variant: small-caps; font-size: 34pt; magin-bottom: -5mm;"> Numerical Generalized Unitarity @ 2 Loops </b> <br>
+<a style="font-size: large; text-align: center; float: center; margin-right: 0mm; margin-top: -10mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1510.05626>
+     Ita ('15)
+</a>
+<a style="font-size: large; text-align: center; float: center; margin-left:2mm; margin-right: 0mm; margin-top: -2mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1712.03946>
+     Abreu, Febres Cordero, Ita, Page, Zeng ('17)
+</a>
+
+<div style="font-size: 18pt; float: left; margin-bottom: 0mm; margin-top: 2mm;">
+$\circ$ The integrand Ansatz is matched to products of trees on cuts
+</div>
+
+<div style="display:block; width:100%; margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm;">
+     <div style="font-size: 16pt; width:75%; float: left; text-align: center; display: inline-block; margin-top: 3mm;">
+	     $$
+	     \require{color}
+	     \displaystyle \sum_{\text{states}} \, \prod_{\text{trees}} A^{\text{tree}}(\lambda, \tilde\lambda, \ell)\big|_{\text{cut}_{\Gamma}} = \sum_{\substack{\Gamma' \ge \Gamma, \\ i \in M_\Gamma' \cup S_\Gamma'}} \kern-2mm {\color{red}{c_{\,\Gamma',i}(\lambda, \tilde\lambda)}} \, \frac{m_{\Gamma',i}(\lambda\tilde\lambda, \ell)}{\displaystyle \prod_{j\in P_{\Gamma'} / P_{\Gamma}} \rho_{j}(\lambda\tilde\lambda, \ell)}\Bigg|_{\text{cut}_\Gamma}
+	     $$
+	</div>
+     <div style="width:25%; float: right; display: inline-block; margin-top: -15mm;">
+	     <div style="font-size: x-large; width:50%; float: center; text-align: center;  display: inline-block; margin-top: 0mm;">
+	     	  <code> C++ code </code>
+	     </div><br>
+	     <img src="CaravelLogo.png"; style="max-width:150px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;">
+	     <br>
+	     <a style="font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 5mm;"
+	     	href=https://arxiv.org/abs/2009.11957>
+		<div style="margin-top:0mm"> Abreu, Dormans, </div>
+		<div> Febres Cordero, Ita  </div>
+		<div> Kraus, Page, Pascual, </div>
+		<div> Ruf, Sotnikov ('20) </div>
+	     </a>
+	</div>
+     <div style="font-size: 18pt; width:75%; float: left; text-align: center; display: inline-block; margin-top: 5mm;">
+	     $\star$ Numerical Berends-Giele recursion for LHS, <span style= "color:red"> solve for coeffs. in RHS. </span>
+	</div>
+     <div style="font-size: 18pt; width:75%; float: left; text-align: center; display: inline-block; margin-top: 5mm;">
+	     $\star$ IBP reduction = decomposition on RHS, $\; m_{\Gamma,i} \in M_\Gamma \cup S_\Gamma $
+	</div>
+</div>
+
+<div style="font-size: 18pt; float: left; margin-bottom: 4mm; margin-top: 8mm;">
+$\circ$ The SLC (non-planar) cut-hierarchy is significantly larger than the LC (planar) one, e.g.
+</div>
+<div>
+<img src="NbrOfDiagramsTable-transparent.png"; style="max-width:800px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;">
+</div>
+
+---
+
 <b style="font-variant: small-caps; font-size: xxx-large"> Partial Amplitudes & Finite Remainders </b>
  
-<div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
+<div style="font-size: 18pt; float: left; margin-top: 2mm; margin-bottom: 0mm;">
      $\circ$ Amplitude (integrands) can be written as (for a suitable choice of master integrals)
 </div>
 <br>
-<div style="font-size: 16pt; margin-top: 0mm;  margin-bottom: 2mm">
+<div style="font-size: 14.5pt; margin-top: 0mm;  margin-bottom: 2mm">
      $$
      \displaystyle A(\lambda, \tilde\lambda, \ell) =
 \sum_{\substack{\Gamma,\\ i \in M_\Gamma \cup S_\Gamma}} \, c_{\,\Gamma,i}(\lambda, \tilde\lambda, \epsilon) \,		\frac{m_{\Gamma,i}(\lambda\tilde\lambda, \ell)}{\textstyle \prod_{j} \rho_{\,\Gamma,j}(\lambda\tilde\lambda, \ell)} \;\; \xrightarrow[]{\int d^D\ell} \;\; \sum_{\substack{\Gamma,\\ i \in M_\Gamma}} \frac{ \sum_{k=0}^{\text{finite}} \, {\color{red}c^{(k)}_{\,\Gamma, i}}(\lambda, \tilde\lambda) \, \epsilon^k}{\prod_j (\epsilon - a_{ij})} \, {\color{orange}I_{\Gamma, i}}(\lambda\tilde\lambda, \epsilon)
 $$  
 </div>
-<div style="font-size: 15pt; float: center; margin-bottom: 5mm; margin-top: 5mm;">
+<div style="font-size: 14pt; float: center; margin-bottom: 5mm; margin-top: 5mm;">
      $\circ$  $\Gamma$: topologies $\quad\circ$ $M_\Gamma$: master integrands $\quad\circ$ $S_\Gamma$: surface terms 
 </div>
 
-<div style="text-align: left; font-size: x-large; margin-bottom: 0mm;">
+<div style="text-align: left; font-size: 18pt; margin-bottom: 0mm;">
      $\circ$ <u>All physical information</u> is contained in the <i>finite remainders</i>, at two loops
 </div>
 <a style="font-size: large; text-align: right; float: right; margin-top: -3mm; margin-bottom: -3mm;" href=https://inspirehep.net/literature/920274>
 Weinzierl ('11)
 </a>
 
-<div style="font-size: 16pt; margin-top: 5mm; margin-bottom: 5mm">
+<div style="font-size: 14.5pt; margin-top: 5mm; margin-bottom: 5mm">
 $$ 
 \underbrace{\mathcal{R}^{(2)}}_{\text{finite remainder}} = \mathcal{A}^{(2)}_R \underbrace{- \quad I^{(1)}\mathcal{A}^{(1)}_R \quad - \quad I^{(2)}\mathcal{A}^{(0)}_R}_{\text{divergent + convention-dependent finite part}} + \mathcal{O}(\epsilon)
 $$
@@ -327,75 +377,32 @@ Gardi, Magnea ('09)
      $\phantom{\circ}$ $\mathcal{A}^{(1)}_R$ to order $\epsilon^2$ is still needed to build $\mathcal{R}^{(2)}$, but there is no real reason to reconstruct it.
 </div>
 
-<div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;">
+<div style="text-align: left; font-size: 18pt; margin-top: 5mm; margin-bottom: 5mm;">
      $\circ$ Finite remainder as a weighted sum of <i>pentagon functions</i> <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-top: 2mm; margin-left: 4mm; " href=https://arxiv.org/abs/2009.07803> Chicherin, Sotnikov ('20);&nbsp; </a>
 </div>
 
-<div style="font-size: x-large; margin-top: 5mm; margin-bottom: 5mm">
+<div style="font-size: 14.5pt; margin-top: 5mm; margin-bottom: 5mm">
 $$ 
 \textstyle \mathcal{R}(\lambda, \tilde\lambda) = \sum_i \color{red}{r_{i}(\lambda,\tilde\lambda)} \, \color{orange}{h_i(\lambda\tilde\lambda)}
 $$
 </div>
 
-<div style="text-align: left; font-size: x-large; margin-top: 3mm; margin-bottom: 0mm;">
-     $\circ$  Goal: reconstruct $\color{red}{r_{i}(\lambda,\tilde\lambda)}$ from $\mathbb{F}_p$ samples
+<div style="text-align: left; font-size: 16pt; margin-top: 3mm; margin-bottom: 0mm;">
+     $\circ$  Goal: reconstruct <span style="font-size: 14pt">$\color{red}{r_{i}(\lambda,\tilde\lambda)}$</span> from numerical samples in a field $\mathbb{F}$
 </div>
-<a style="font-size: large; text-align: right; float: right; margin-top: -10mm; margin-bottom: -10mm;" href=https://arxiv.org/abs/1406.4513>
-von Manteuffel, Schabinger ('14)
+<a style="font-size: large; text-align: right; float: right; margin-top: -10mm; margin-bottom: -10mm; margin-right: 24mm;" href=https://arxiv.org/abs/1406.4513>
+$\mathbb{F}_p$: von Manteuffel, Schabinger ('14); 
+</a> <a style="font-size: large; text-align: right; float: right; margin-top: -10mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1608.01902>
+$\phantom{\mathbb{F}_p}$ Peraro ('16)
 </a><br>
-<a style="font-size: large; text-align: right; float: right; margin-top: -18mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1608.01902>
-Peraro ('16)
+<a style="font-size: large; text-align: right; float: right; margin-top: -17mm; margin-bottom: -10mm; margin-right: 43mm;" href=https://arxiv.org/abs/1406.4513>
+$\mathbb{C}$: GDL, Maitre ('19);
+</a> <a style="font-size: large; text-align: right; float: right; margin-top: -16.7mm; margin-bottom: -10mm;" href=https://arxiv.org/abs/1406.4513>
+$\mathbb{Q}_p$: GDL, Page ('22)
 </a>
 
----
 
-<b style="font-variant: small-caps; font-size: xxx-large; magin-bottom:-2mm;"> Numerical Generalized Unitarity @ 2 Loops </b>
-<a style="font-size: large; text-align: center; float: center; margin-right: 0mm; margin-top: -2mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1510.05626>
-     Ita ('15)
-</a>
-<a style="font-size: large; text-align: center; float: center; margin-left:2mm; margin-right: 0mm; margin-top: -2mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1712.03946>
-     Abreu, Febres Cordero, Ita, Page, Zeng ('17)
-</a>
 
-<div style="font-size: x-large; float: left; margin-bottom: 0mm; margin-top: 2mm;">
-$\circ$ The integrand Ansatz is matched to products of trees on cuts
-</div>
-
-<div style="display:block; width:100%; margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm;">
-     <div style="font-size: x-large; width:75%; float: left; text-align: center; display: inline-block; margin-top: 3mm;">
-	     $$
-	     \require{color}
-	     \displaystyle \sum_{\text{states}} \, \prod_{\text{trees}} A^{\text{tree}}(\lambda, \tilde\lambda, \ell)\big|_{\text{cut}_{\Gamma}} = \sum_{\substack{\Gamma' \ge \Gamma, \\ i \in M_\Gamma' \cup S_\Gamma'}} \kern-2mm c_{\,\Gamma',i}(\lambda, \tilde\lambda) \, \frac{m_{\Gamma',i}(\lambda\tilde\lambda, \ell)}{\displaystyle \prod_{j\in P_{\Gamma'} / P_{\Gamma}} \rho_{j}(\lambda\tilde\lambda, \ell)}\Bigg|_{\text{cut}_\Gamma}
-	     $$
-	</div>
-     <div style="width:25%; float: right; display: inline-block; margin-top: -15mm;">
-	     <div style="font-size: x-large; width:50%; float: center; text-align: center;  display: inline-block; margin-top: 0mm;">
-	     	  <code> C++ code </code>
-	     </div><br>
-	     <img src="CaravelLogo.png"; style="max-width:150px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;">
-	     <br>
-	     <a style="font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 5mm;"
-	     	href=https://arxiv.org/abs/2009.11957>
-		<div style="margin-top:0mm"> Abreu, Dormans, </div>
-		<div> Febres Cordero, Ita  </div>
-		<div> Kraus, Page, Pascual, </div>
-		<div> Ruf, Sotnikov ('20) </div>
-	     </a>
-	</div>
-     <div style="font-size: x-large; width:75%; float: left; text-align: center; display: inline-block; margin-top: 5mm;">
-	     $\star$ Numerical Berends-Giele recursion for LHS, solve for coeffs. in RHS.
-	</div>
-     <div style="font-size: x-large; width:75%; float: left; text-align: center; display: inline-block; margin-top: 5mm;">
-	     $\star$ IBP reduction = decomposition on RHS, $\; m_{\Gamma,i} \in M_\Gamma \cup S_\Gamma $
-	</div>
-</div>
-
-<div style="font-size: x-large; float: left; margin-bottom: 4mm; margin-top: 8mm;">
-$\circ$ The SLC cut-hierarchy is significantly larger than the LC one, e.g.
-</div>
-<div>
-<img src="NbrOfDiagramsTable-transparent.png"; style="max-width:800px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;">
-</div>
 
 </section>
 
@@ -407,112 +414,34 @@ $\circ$ The SLC cut-hierarchy is significantly larger than the LC one, e.g.
 
 <br><br><br><br>
 
-# Analytic and Geometric Structure
+# Analytic & Geometric Structure
 
 <br><br><br><br>
 
-based on: <br>
-[GDL, Page (JHEP 12 (2022) 140)](https://arxiv.org/abs/2203.04269)
-
-<!---
----
-
-<b style="font-variant: small-caps; font-size: 33pt;"> Flavors of Analytic Reconstruction  </b>
-
-<div style="float:left; font-size: x-large; margin-top: 2mm; margin-bottom: 1mm;">
-     $\circ$ Two distinct but related reconstruction problems:
-</div>
-<br>
-<div style="display:block; width:100%; margin-top: 2mm; margin-bottom: 0mm; margin-left: 0mm; margin-right: 0mm;">
-     <div style="width:50%; float: left; text-align: center; font-size: x-large;  margin-top: 0mm;">
-          $\star$ individual functions <br>
-          <span style="font-size: 15pt;"> see tomorrow's talk by <span style="color: green; "> Chawdhry </span> <br><br>
-          Eventually have to face this. </span> 
-     </div>
-     <div style="width:50%; float: right; text-align: center; font-size: x-large; margin-top: 0mm;">
-          $\star$ functions within vector spaces <br>
-          <span style="font-size: 15pt;"> see tomorrow's talk by <span style="color: green; "> Liu </span> <br><br>
-          <p style="margin-top:-4mm; font-size: 15pt;">
-          Relations + choice of basis <br>   
-          help the reconstruction </p>
-          </span> 
-	</div>
-</div>
-
-<br><br><br>
-
-<div style="float:left; font-size: x-large; margin-top: 2mm; margin-bottom: 1mm;">
-     $\circ$ Two main approaches to analytic reconstruction
-</div>
-<br>
-<div style="display:block; width:100%; margin-top: 2mm; margin-bottom: 0mm; margin-left: 0mm; margin-right: 0mm;">
-     <div style="width:50%; float: left; text-align: center; font-size: x-large; margin-top: 0mm;">
-          $\star$ interpolation <br>
-          <span style="font-size: 15pt;"> 
-          No Gaussian elimination required; <br>
-          but not clear how to handle redundant variables
-          </span> 
-	</div>
-     <div style="width:50%; float: right; text-align: center; font-size: x-large;  margin-top: 0mm;">
-          $\star$ Ansatzing <br>
-          <span style="font-size: 15pt;">
-          Requires Gaussian elimination; <br>
-          but works with redundant variables
-          </span> 
-     </div>
-</div>
---->
-
----
-
-<b style="font-variant: small-caps; font-size: 33pt; margin-bottom: 10mm;"> Spinor-Helicity Amplitudes  </b>
-
-<div style="font-size: x-large; float: left; text-align: center; display: inline-block; margin-top: 3mm;">
-     <div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;">
-          $\circ$ Starting from polynomials, we have the covariant quotient ring of spinors
-     </div>
-     <br> 
-     <div style="font-size:15pt; float: left; margin-top: 1mm; margin-bottom: 0mm">
-          $$\displaystyle \kern10mm R_n = \mathbb{F}\big[|1⟩, [1|, \dots, |n⟩, [n|\big] \big/ \big\langle \sum_i |i⟩[i| \big\rangle$$
-     </div>
-     <div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 1mm;">
-          $\circ$ Lorentz invariants live in a sub-ring of $R_n$
-     </div>
-     <br>
-     <div style="font-size:15pt; float: left; margin-top: 1mm; margin-bottom: 0mm">
-          $$\displaystyle \kern4mm R_n \supset \mathcal{R}_n = \mathbb{F}\big[⟨1|2⟩, \dots, [n-1|n]\big] \big/ (\mathcal{J}_n + \mathcal{K}_n + \bar{\mathcal{K}}_n)$$
-     </div>
-     <div style="font-size:15pt; float: left; margin-top: 0mm; margin-bottom: 1mm;">
-          $\phantom{\circ}$ where $\mathcal{J}_n$: momentum cons., $\;\stackrel{\tiny{(}\normalsize{-}\tiny{)}}{\mathcal{K}}_n$: shouten identities 
-     </div>
-</div>
-
-<div style="font-size: x-large; padding: 10px; display: inline-block; margin-top: 8mm;"> <!--- border: 2px solid black;  --->
-    $r_i(\lambda, \tilde\lambda)$ at $n$-point belong to the field of fractions of $\mathcal{R}_{n>3}$
-</div>
-
-<br>
-
-<div style="float:left; font-size: x-large; margin-top: 8mm; margin-bottom: 1mm;">
-     $\circ$ This allows to manifes:
-</div>
-<div style="float:left; font-size: 16pt; margin-top: 1mm; margin-bottom: 1mm;">
-     $\kern8mm$ 1) that the singularities are $\approx \sqrt{s_{ij}}\kern10mm$ 2) the behaviour with $P^\mu \in \mathbb{C}$, i.e. away from $\langle ij \rangle = [ij]^{\ast}$
-</div>
+<span style="font-size: 18pt">based on:<span> <br>
+<span style="font-size: 18pt">[GDL, Page (JHEP 12 (2022) 140)](https://arxiv.org/abs/2203.04269)<span>
 
 ---
 
 <div style="margin-top: 2mm; margin-bottom: 3mm">
      <b style="font-variant: small-caps; font-size: xxx-large"> Least Common Denominator </b>
-     <p style="margin-top: -2mm; margin-bottom: 2mm; font-size: 18pt;">
+     <p style="margin-top: -2mm; margin-bottom: 2mm; font-size: 16pt;">
      (i.e. geometry at codimension one)
      </p>
 </div>
 
-<div style="display:block; width:100%; margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm;">
+<div style="font-size: 16pt; float: left; margin-top: 0mm; margin-bottom: 0mm;">
+     $\circ$ Polynomials belong to the the covariant quotient ring of spinors,
+</div>
+<br>
+<div style="font-size:15pt; float: center; margin-top: -6mm; margin-bottom: -10mm">
+     $$\displaystyle \kern10mm R_n = \mathbb{F}\big[|1⟩, [1|, \dots, |n⟩, [n|\big] \big/ \big\langle \sum_i |i⟩[i| \big\rangle$$
+</div>
+
+<div style="display:block; width:100%; margin-top: -6mm; margin-bottom: 0mm; margin-left: 0mm;">
      <div style="font-size: x-large; width:60%; float: left; text-align: center; display: inline-block; margin-top: 3mm;">
-	     <div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 1mm;">
-                $\circ\,$ The rational coefficients take the form
+	     <div style="font-size: 16pt; float: left; margin-top: 4mm; margin-bottom: 1mm;">
+                $\circ\,$ The rational function <span style="font-size: 15pt">$r_i$</span> belong to the field of fractions of <span style="font-size: 14pt">$R_n$</span>,
           </div>
           <br><br>
           <div style="font-size:16pt; float: center; margin-top: -3mm; margin-bottom: 0mm">
@@ -520,24 +449,24 @@ based on: <br>
                \displaystyle r_i(|i\rangle,[i|) = \frac{\mathcal{N}(|i\rangle,[i|)}{\prod_j \mathcal{D}_j^{q_{ij}}(|i\rangle,[i|)}
                $$
           </div>
-          <div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 1mm;">
-               $\circ\,$ The $\mathcal{D}_j$ are related to the letters of the symbol alphabet
+          <div style="font-size: 16pt; float: left; margin-top: 0mm; margin-bottom: 1mm;">
+               $\circ\,$ The <span style="font-size: 14pt">$\mathcal{D}_j$</span> are related to the letters of the symbol alphabet
           </div>
           <br>
-          <a style="font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1812.04586>
+          <a style="font-size: 13pt; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1812.04586>
           Abreu, Dormans, Febres Cordero, Ita, Page ('18)
           </a>
           <br>
-          <div style="font-size:16pt; float: center; margin-top: 1mm; margin-bottom: 0mm">
+          <div style="font-size:14pt; float: center; margin-top: 1mm; margin-bottom: 0mm">
                $$
                \displaystyle \{\mathcal{D}_{\{1,\dots,35\}}\} = \bigcup_{\sigma \; \in \; \text{Aut}(R_5)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1] \big\}
                $$
           </div>
-          <div style="font-size:15pt; float: right; margin-top: -10mm; margin-bottom: 1mm;">
+          <div style="font-size:13pt; float: right; margin-top: -10mm; margin-bottom: 0mm;">
                $\kern0mm\color{green}\text{Identical to 1-loop!}$
           </div>
 	</div>
-     <div style="width:40%; float: right; display: inline-block; margin-top: 0mm;">
+     <div style="width:40%; float: right; display: inline-block; margin-top: 6mm;">
           <img src="V2.png"; style="max-width:260px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;">
           <div style="width:100%; font-size: 14pt; margin-top: -2mm; margin-bottom: 1mm;">
                The codimension one variety 
@@ -548,15 +477,18 @@ based on: <br>
      </div>
 </div>
 
-
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
-     $\phantom{\circ}$ Non-trivial statement (not proven!): all irreducible polynomials generate prime ideals, @ 5-pt.
+<div style="text-align: center; float: left; font-size: 14pt; margin-top: -5mm; margin-bottom: -2mm;">
+     $$
+     \displaystyle \kern5mm \{D_j\} = \kern-3mm \bigcup_{\sigma \; \in \; \text{Aut}(R_6)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1], \langle 1|2+3|4], s_{123}, \Delta_{12|34|56}, ⟨3|2|5+6|4|3]-⟨2|1|5+6|4|2] \big\}
+     $$
+</div>
+<div style="font-size:13pt; float: right; margin-top: -10mm; margin-bottom: 1mm;">
+     $\kern0mm\color{green}\text{New letter! Can we get rid of it?}$
 </div>
 
-
-<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 5mm;">
+<div style="border: 2px solid black; font-size: 16pt; padding: 10px; display: inline-block; margin-top: 2mm;">
     Poles & Zeros $\;\Leftrightarrow\;$ Irreducible Varieties $\;\Leftrightarrow\;$ Prime Ideals <br>
-    <i style="font-size: 12pt; border-top: -8mm; border-bottom: -2mm;"> Physics $\kern38mm$ Geometry $\kern38mm$ Algebra </i>
+    <i style="font-size: 14pt; border-top: -8mm; border-bottom: -2mm;"> Physics $\kern18mm$ Geometry $\kern18mm$ Algebra </i>
 </div>
 
 ---
@@ -595,17 +527,19 @@ based on: <br>
     </div>
 </div>
 
-<div style="text-align: left; font-size:17pt; float: left; margin-top: 0mm; margin-bottom: 0mm;">
+<div style="text-align: left; font-size:16pt; float: left; margin-top: 0mm; margin-bottom: 0mm;">
      $\circ$ When is a partial fraction decomposition possible? (an example)
 </div><br>
-<div style="font-size:15pt; float: center; margin-top: -8mm; margin-bottom: 1mm;">
-     $$\frac{\mathcal{N}}{(\prod_j \mathcal{D}_j^{q_j})\times\langle 4|1+3|4]\langle 5|1+4|5]} \stackrel{?}{=} \frac{\mathcal{N}_1}{(\prod_j \mathcal{D}_j^{q_j})\times\langle 4|1+3|4]} + \frac{\mathcal{N}_2}{(\prod_j \mathcal{D}_j^{q_j})\times\langle 5|1+4|5]}$$
+<div style="font-size:14pt; float: center; margin-top: -6mm; margin-bottom: 1mm;">
+     $$
+     \frac{\mathcal{N}}{(\prod_j \mathcal{D}_j^{q_j})\times\langle 4|1+3|4]\langle 5|1+4|5]} \stackrel{?}{=} \frac{\mathcal{N}_1}{(\prod_j \mathcal{D}_j^{q_j})\times\langle 4|1+3|4]} + \frac{\mathcal{N}_2}{(\prod_j \mathcal{D}_j^{q_j})\times\langle 5|1+4|5]}
+     $$
 </div>
 
-<div style="text-align: left; font-size:17pt; float: left; margin-top: 2mm; margin-bottom: -4mm;">
+<div style="text-align: left; font-size:16pt; float: left; margin-top: 2mm; margin-bottom: -4mm;">
      $\circ$ Compute primary decompositions
 </div><br>
-<div style="font-size:15pt; float: center; margin-top: -4mm; margin-bottom: 1mm;">
+<div style="font-size:14pt; float: center; margin-top: -4mm; margin-bottom: 1mm;">
      $$
      J = \big\langle \langle 4|1+3|4], \langle 5|1+4|5] \big\rangle \qquad
      K = \big\langle \langle14\rangle,\langle15\rangle,\langle45\rangle,[23] \big\rangle \quad
@@ -614,13 +548,13 @@ based on: <br>
      $$
 </div>
 
-<div style="font-size:15pt; float: center; margin-top: 2mm; margin-bottom: 1mm;">
+<div style="font-size:14pt; float: center; margin-top: 2mm; margin-bottom: 1mm;">
      $$
      J = K \cap \bar K \cap L \cap \bar L \cap M \quad \text{or} \quad V(J) = V(K) \cup V(\bar K) \cup V(L) \cup V(\bar L) \cap V(M)
      $$
 </div>
 
-<div style="text-align: center; float: center; font-size: x-large; margin-top: 2mm; margin-bottom: 0mm;">
+<div style="text-align: center; float: center; font-size: 15pt; margin-top: 2mm; margin-bottom: 0mm;">
      If $\mathcal{N}$ vanishes on all branches than the equality holds by Hilbert's Nullstellensatz.
 </div>
 
@@ -640,9 +574,7 @@ based on: <br>
 
 # Analytic Reconstruction
 
-<span style="font-size: 16pt;"> see also tomorrow's talks by <span style="color: green; "> Chawdhry </span> and <span style="color: green; "> Liu </span> 
-
-<br><br>
+<br><br><br><br>
 
 <p style="margin-top:13mm; font-size: 16pt;">
 also based on: <br>
@@ -651,71 +583,20 @@ GDL, Ita, Page, Sotnikov (to appear)
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> Vector Spaces of Rational Functions </b>
+<b style="font-variant: small-caps; font-size: xxx-large"> Decorrelating Kinematic Residues </b>
 
 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     $\circ\,$ Sort the $r_i$ by mass dimension of $\mathcal{N}$ ($\approx$ Ansatz size), pick simplest subset forming a basis $r_{i \in \mathcal{B}}$
+     $\circ\,$ Change basis from a subset of the pentagon coefficients $r_{i \in \mathcal{B}}$ to $\tilde r$,
 </div><br>
-<div style="text-align: center; float: center; font-size: x-large; margin-top: -8mm; margin-bottom: -2mm;">
+<div style="text-align: center; float: center; font-size: x-large; margin-top: -4mm; margin-bottom: 2mm;">
      $$
-     R = r_j h_j = r_{i\in \mathcal{B}} M_{ij} h_j \, , \qquad M_{ij} \in \mathbb{Q}
+     R = r_j h_j = r_{i\in \mathcal{B}} M_{ij} h_j = \tilde{r}_{i} \, O_{ii'}M_{i'j} \, h_j \, , \qquad O_{ii'}, M_{ij}\in \mathbb{Q}
      $$
 </div>
+
 <div>
-<img src="BasisChangeEffectWjj.png"; style="max-width:900px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;">
-</div>
-
-
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 1mm; margin-bottom: 0mm;">
-     $\circ\,$ Change basis: 
-</div>
-<br>
-<div style="text-align: center; float: center; font-size: x-large; margin-top: -10mm; margin-bottom: 5mm;">
-     $$
-     \kern-20mm \tilde{r}_i = O_{ii'}r_{i'\in\mathcal{B}} \; \longrightarrow \; R = \tilde{r}_{i} \, O_{ii'}^{-1}M_{i'j} \, h_j = \tilde{r}_{i}  \tilde{M}_{ij} h_j
-     $$
-
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
-     $\circ\,$ Key insight to build a good $O_{ii'}:$
-</div>
-<br>
-<div style="text-align: center; float: center; font-size: x-large; margin-top: -2mm; margin-bottom: 5mm;">
-     $$
-     \text{dim(span}(\lim_{\mathcal{D_j} \rightarrow  0 }r_{i})) \leq \text{dim(span}(r_{i}))
-     $$
-</div>
-<div style="text-align: left; font-size: x-large; float: left; margin-top: -4mm; margin-bottom: 0mm;">
-     $\phantom{\circ}\,$ i.e., the <span style="color: red">pole residues are correlated</span>, build linear combinations that <i> de-correlate</i> them
-</div>
-
----
-
-<b style="font-variant: small-caps; font-size: xxx-large; margin-bottom: -2mm;"> De-correlating the Residues </b>
-
-<div style="text-align: left; font-size: 17pt; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     $\circ\,$ Build Laurent expansions around $t_{\mathcal{D}_k}$
-</div>
-<span style="font-size: 11pt; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm;" >
-See also: 
-<a style="font-size: 11pt; " href=https://arxiv.org/abs/1608.01902>
-Tiele interpolation - Peraro ('16); 
-</a>
-<a style="font-size: 11pt; " href=https://inspirehep.net/literature/1944964>
-spinor slice - Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov ('21); 
-</a>
-<a style="font-size: 11pt; " href=https://inspirehep.net/literature/2654774>
-p(z)-adic expansion - Fontana, Peraro ('23)$\phantom{; }$
-</a>
-</span>
-<br>
-<div style="text-align: center; float: center; font-size: 17pt; margin-top: -13mm; margin-bottom: 5mm;">
-     $$
-     r_{i \in \mathcal{B}} = \sum_{m = 1}^{q_k = \text{max}_i(q_{ik})} \frac{e^k_{im}}{(t-t_{\mathcal{D}_k})^m} + \mathcal{O}((t-t_{\mathcal{D}_k})^0)
-     $$
-</div>
-<div style="text-align: left; font-size: 17pt; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     $\phantom{\circ}\,$ strictly formal over $\mathbb{F}_p$, but convergent over $\mathbb{Q}_p$ for $(t-t_{\mathcal{D}_k}) \propto p$
+<img src="BasisChangeEffectWjj.png"; style="max-width:900px; float:center; border:none; margin-top: 2mm; margin-bottom: 0mm;">
 </div>
 
 <div style="text-align: left; font-size: 17pt; float: left; margin-top: 5mm; margin-bottom: 0mm;">
@@ -726,12 +607,6 @@ p(z)-adic expansion - Fontana, Peraro ('23)$\phantom{; }$
      \text{span}(r_{i \in \mathcal{B}}) = \underbrace{\text{column}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m))}_{\text{functions with the singularity}} \;\;\; \oplus \, \underbrace{\text{null}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m))}_{\text{functions without the singularity}}
      $$
 </div>
-
-<!---
-<div style="border: 1px solid black; font-size: 17pt; padding: 10px; display: inline-block; margin-top: 2mm;">
-    $\text{null}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m))$: functions that do <u>not</u> have a $D_k^m$ singularity
-</div>
---->
 
 <div style="display:block; width:100%; margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm;">
      <div style="font-size: 17pt; width:50%; float: left; text-align: center; display: inline-block; margin-top: 3mm;">
