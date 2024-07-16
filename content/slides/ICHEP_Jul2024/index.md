@@ -34,9 +34,9 @@ Giuseppe De Laurentis
 
 ICHEP 2024
 <br>
-<p style="line-height: 0.05;"> <img src="UniEdinburghLogo-transparent.png"; style="max-width:120px;float:center;border:none;"> 
-<br><br>
-<span style="font-size: 11pt">Find these slides at  <a href="/slides/fivepartons_dec2023/#/">gdelaurentis.github.io/slides/ichep_jul2024</a> </span>
+<p style="line-height: 0.05;"> <img src="UniEdinburghLogo-transparent.png"; style="max-width:120px;float:center;border:none;margin-bottom:5mm;"> 
+<br><br><br>
+<span style="font-size: 11pt;">Find these slides at  <a href="/slides/fivepartons_dec2023/#/">gdelaurentis.github.io/slides/ichep_jul2024</a> </span>
 </div>
 
 ---
@@ -378,7 +378,7 @@ Gardi, Magnea ('09)
 </div>
 
 <div style="text-align: left; font-size: 18pt; margin-top: 5mm; margin-bottom: 5mm;">
-     $\circ$ Finite remainder as a weighted sum of <i>pentagon functions</i> <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-top: 2mm; margin-left: 4mm; " href=https://arxiv.org/abs/2009.07803> Chicherin, Sotnikov ('20);&nbsp; </a>
+     $\circ$ Finite remainder as a weighted sum of <i>pentagon functions</i> <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-top: 0mm; margin-left: 4mm; " href=https://arxiv.org/abs/2009.07803> Chicherin, Sotnikov ('20) </a> <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-top: -3mm; margin-left: 4mm; " href=https://arxiv.org/abs/2110.10111> Chicherin, Sotnikov, Zoia ('21) </a>
 </div>
 
 <div style="font-size: 14.5pt; margin-top: 5mm; margin-bottom: 5mm">
@@ -537,9 +537,15 @@ $\mathbb{Q}_p$: GDL, Page ('22)
 </div>
 
 <div style="text-align: left; font-size:16pt; float: left; margin-top: 2mm; margin-bottom: -4mm;">
-     $\circ$ Compute primary decompositions
+     $\circ$ Compute primary decompositions and check if <span style="font-size: 14p">$\mathcal{N}$</span> vanishes on all branches (Hilbert's Nullstellensatz)
 </div><br>
 <div style="font-size:14pt; float: center; margin-top: -4mm; margin-bottom: 1mm;">
+     $$
+     J = K \cap \bar K \cap L \cap \bar L \cap M \quad \text{or} \quad V(J) = V(K) \cup V(\bar K) \cup V(L) \cup V(\bar L) \cap V(M)
+     $$
+</div>
+
+<div style="font-size:14pt; float: center; margin-top: 1mm; margin-bottom: 1mm;">
      $$
      J = \big\langle \langle 4|1+3|4], \langle 5|1+4|5] \big\rangle \qquad
      K = \big\langle \langle14\rangle,\langle15\rangle,\langle45\rangle,[23] \big\rangle \quad
@@ -548,17 +554,7 @@ $\mathbb{Q}_p$: GDL, Page ('22)
      $$
 </div>
 
-<div style="font-size:14pt; float: center; margin-top: 2mm; margin-bottom: 1mm;">
-     $$
-     J = K \cap \bar K \cap L \cap \bar L \cap M \quad \text{or} \quad V(J) = V(K) \cup V(\bar K) \cup V(L) \cup V(\bar L) \cap V(M)
-     $$
-</div>
-
-<div style="text-align: center; float: center; font-size: 15pt; margin-top: 2mm; margin-bottom: 0mm;">
-     If $\mathcal{N}$ vanishes on all branches than the equality holds by Hilbert's Nullstellensatz.
-</div>
-
-<div style="text-align: center; float: center; font-size: 15pt; margin-top: 0mm; margin-bottom: 0mm;">
+<div style="text-align: center; float: center; font-size: 16pt; margin-top: 0mm; margin-bottom: 0mm;">
      For a fleshed out example with open-source code see <a href=https://inspirehep.net/literature/2661970> GDL (ACAT '22) </a>
 </div>
 
@@ -585,38 +581,41 @@ GDL, Ita, Page, Sotnikov (to appear)
 
 <b style="font-variant: small-caps; font-size: xxx-large"> Decorrelating Kinematic Residues </b>
 
-
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     $\circ\,$ Change basis from a subset of the pentagon coefficients $r_{i \in \mathcal{B}}$ to $\tilde r$,
+<div style="text-align: left; font-size: 16pt; float: left; margin-top: -2mm; margin-bottom: -2mm;">
+     $\circ\,$ Change basis from a subset of the pentagon coefficients $r_{i \in \mathcal{B}}$ to <span style="font-size: 14pt">$\mathbb{Q}$</span>-linear combinations $\tilde r$,
 </div><br>
-<div style="text-align: center; float: center; font-size: x-large; margin-top: -4mm; margin-bottom: 2mm;">
+<div style="text-align: center; float: center; font-size: 15pt; margin-top: -8mm; margin-bottom: 0mm;">
      $$
      R = r_j h_j = r_{i\in \mathcal{B}} M_{ij} h_j = \tilde{r}_{i} \, O_{ii'}M_{i'j} \, h_j \, , \qquad O_{ii'}, M_{ij}\in \mathbb{Q}
      $$
 </div>
 
 <div>
-<img src="BasisChangeEffectWjj.png"; style="max-width:900px; float:center; border:none; margin-top: 2mm; margin-bottom: 0mm;">
+<img src="BasisChangeEffectWjj.png"; style="max-width:800px; float:center; border:none; margin-top: -2mm; margin-bottom: 0mm;">
 </div>
 
-<div style="text-align: left; font-size: 17pt; float: left; margin-top: 5mm; margin-bottom: 0mm;">
+<div style="text-align: center; font-size: 14pt; float: center; margin-top: -6mm; margin-bottom: 0mm;">
+     $\phantom{\circ}\,$ Notation: [mass dimension], {Little-group weights}
+</div>
+
+<div style="text-align: left; font-size: 16pt; float: left; margin-top: 3mm; margin-bottom: -2mm;">
      $\circ\,$ By Gaussian elimination, partition the space:
-</div> <br><br>
-<div style="text-align: center; font-size: 17pt; float: center; margin-top: -4mm; margin-bottom: 2mm;">
+</div> <br>
+<div style="text-align: center; font-size: 15pt; float: center; margin-top: -2mm; margin-bottom: 2mm;">
      $$
      \text{span}(r_{i \in \mathcal{B}}) = \underbrace{\text{column}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m))}_{\text{functions with the singularity}} \;\;\; \oplus \, \underbrace{\text{null}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m))}_{\text{functions without the singularity}}
      $$
 </div>
 
-<div style="display:block; width:100%; margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm;">
+<div style="display:block; width:100%; margin-top: -4mm; margin-bottom: 0mm; margin-left: 0mm;">
      <div style="font-size: 17pt; width:50%; float: left; text-align: center; display: inline-block; margin-top: 3mm;">
 	     <div style="font-size: 17pt; float: left; margin-top: 4mm; margin-bottom: 1mm;">
                $\circ\,$ Search for linear combinations that remove as many singularities as possible
           </div>
           <br>
-          <div style="font-size:16pt; float: left; margin-top: 0mm; margin-bottom: 0mm">
+          <div style="font-size:15pt; float: left; margin-top: 0mm; margin-bottom: 0mm">
                $$
-               \kern25mm \displaystyle O_{i'i} = \bigcap_{k, m} \, \text{nulls}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m))
+               \kern12mm \displaystyle O_{i'i} = \bigcap_{k, m} \, \text{nulls}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m))
                $$
           </div>
 	</div>
@@ -627,37 +626,39 @@ GDL, Ita, Page, Sotnikov (to appear)
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> Spinor-Helicity Results </b>
+<b style="font-variant: small-caps; font-size: 36pt; margin-bottom: -6mm;"> Spinor-Helicity Results </b>
 <br>
 
-<div style="text-align: center; float:center; font-size: x-large; margin-bottom: 1mm; margin-top: -5mm;">
+<div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: -4mm;">
+     $\circ$ The 5-gluon MHV rational functions fit in 3 pages of the appendix,
+</div>
+
+<div style="text-align: center; float:center; font-size: x-large; margin-bottom: 1mm; margin-top: -2mm;">
 <img src="VSSizeTable-transparent.png"; style="max-width:350px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;">
 <img src="quarks_vs_sizes.png"; style="max-width:340px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;">
 </div>
 
-<div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
-     $\circ$ The gluon MHV rational functions fit in 3 pages of the appendix
-</div>
-
-<div style="text-align: left; font-size: 14pt; margin-bottom: 1mm; margin-top: 5mm;">
+<div style="text-align: left; font-size: 13pt; margin-bottom: 1mm; margin-top: 5mm;">
      $$ \tilde{r}^{\text{MHV}}_{\text{first 5 of 115}} = \left\{ \frac{⟨45⟩^2}{⟨12⟩⟨13⟩⟨23⟩}, \frac{⟨45⟩^3}{⟨12⟩^2⟨34⟩⟨35⟩}, \frac{⟨45⟩^3}{⟨12⟩⟨15⟩⟨23⟩⟨34⟩}, \frac{[14][12][35]}{⟨23⟩[45]^3}, \frac{⟨45⟩^2⟨24⟩}{⟨12⟩^2⟨23⟩⟨34⟩}, \dots \right\} \text{+ symmetries}$$
 </div>
 
-<div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
-     $\circ$ All rational functions fitted in a single finite field. The matrices still required a few values of $p$.
+
+<div style="text-align: left; font-size: 16pt; margin-bottom: 1mm; margin-top: 5mm;">
+     $\circ$ The <span style="font-size: 14pt;">$pp\rightarrow Wjj$</span> functions are now 1.9 MB (from 1.3 GB),
 </div>
 
-<div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
-     $\circ$ The size of the results is dominated by the rational matrices (explicitly given for all crossings).
+<div style="display: flex; justify-content: center; margin-top: -10mm;">
+    <div style="margin: 0 10px;">
+        <img src="W_vs_sizes.png"; style="max-width:400px; float:center; border:none; margin-top: 18mm; margin-bottom: 0mm;">
+    </div>
+    $\kern4mm$
+    <div style="margin: 0 10px;">
+        <img src="CoefficientSizes.png"; style="max-width:350px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;">
+    </div>
 </div>
 
-<div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
-     $\circ$ The simplification of the basis change is <u>independent</u> of that from PFDs.
-</div>
-
-<div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
-     $\circ$ Can now study propertities of the amplitude <br>
-     $\phantom{\circ}$ e.g. no function has a $\text{tr}_5$ singularity, nor a pair of $\langle i | j + k | i]$ in the same denominator.
+<div style="text-align: left; font-size: 16pt; margin-bottom: 1mm; margin-top: -4mm;">
+     $\phantom{\circ}$ Since <code style="font-size: 14pt;">PentagonsFunction++</code> can take permutations of the 1-mass basis we only need one <span style="font-size: 14pt;">$M_{ij}$</span> per partial <br> $\phantom{\circ}$ (another 2 MB overall). We now have fast and stable floating-point evaluations in double precision!
 </div>
 
 </section>
@@ -672,98 +673,71 @@ GDL, Ita, Page, Sotnikov (to appear)
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 10mm;">
-   Complexity of 2-loop 5-point 1-mass Amplitudes
+<b style="font-variant: small-caps; font-size: 30pt; margin-bottom: 4mm;">
+   Taming the Complexity Growth
 </b>
 
-<div style="text-align: left; font-size: 16pt; margin-top: 5mm; margin-bottom: 1mm;">
-$\circ\,$ The number of letters in the spinor alphabet goes from 35 to more then 220:
-</div>
-<div style="text-align: center; float: left; font-size: 16pt; margin-top: 0mm; margin-bottom: -2mm;">
-     $$
-     \displaystyle \kern5mm \{W_j\} = \bigcup_{\sigma \; \in \; \text{Aut}(R_6)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1], \langle 1|2+3|4], s_{123}, \Delta_{12|34|56}, ⟨3|2|5+6|4|3]-⟨2|1|5+6|4|2] \big\}
-     $$
-</div> <br><br>
-<div style="text-align: left; font-size: 16pt; margin-top: -15mm; margin-bottom: 0mm;">
-$\phantom{\circ}\,$ from the point of view of the coefficients, this is closer to a massless 6-pt. computation than a 5-pt. one.
-</div>
-
-<br>
-
-<div style="display:block; width:100%; font-size: 16pt; margin-top: -5mm; margin-bottom: 4mm;">
+<div style="display:block; width:100%; font-size: 16pt; margin-top: 4mm; margin-bottom: 4mm;">
      <div style="width:50%; text-align: left; float: left; display: font-size: x-large; margin-top:8mm;">
-          $\circ$ The LCD Ansatz size grows quickly with <br> multiplicity (m) and mass dimension (d): <br><br>
-          <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-left: 0mm; margin-top: -8mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/2010.14525>
+          $\circ$ For every leg or mass, the number of letters in the spinor alphabet grows, as well their mass dimension;  <br><br>
+          $\circ$ The LCD Ansatz size also grows quickly with <br> multiplicity (m) and mass dimension (d): <br><br>
+          <a style="font-size: 12pt; display: inline-block; text-align: right; float: right; margin-left: 0mm; margin-top: -12mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/2010.14525>
                GDL, Maître ('20)
           </a> <br>
-          $\displaystyle \kern20mm \text{Ansatz size} \geq \small \left(\mkern -9mu \begin{pmatrix}\, m(m-3)/2 \, \\ \, d/2 \, \end{pmatrix} \mkern -9mu \right)$ <br>
+          <div style="text-align: left; font-size: 14pt; margin-top: -12mm; margin-bottom: 1mm;">
+               $$
+               \displaystyle \kern2mm \text{Ansatz size} \geq \small \left(\mkern -9mu \begin{pmatrix}\, m(m-3)/2 \, \\ \, d/2 \, \end{pmatrix} \mkern -9mu \right)
+               $$
+          </div>
      </div>
-     <div style="width:50%; float: right; display: inline-block;">
-          <img src="AnsatzSizes.png"; style="max-width:440px;float:center;border:none;margin-top:-10pt;margin-bottom: 0mm;">
+     <div style="width:50%; float: right; display: inline-block; margin-top: 4mm;">
+          <img src="AnsatzSizes.png"; style="max-width:430px;float:center;border:none;margin-top:-10pt;margin-bottom: 0mm;">
      </div>
 </div>
 
-<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
 
-<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 2mm;">
-$\circ\,$ We can still achieve compact results, e.g. for the new (spurious?) 2-loop pole, $⟨k|j|p\mkern-7.5mu/_V|l|k]-⟨j|i|p\mkern-7.5mu/_V|l|j]$
-$$r^{(5 \text{ of } 54)}_{\bar{u}^+g^+g^+d^-(V\rightarrow \ell^+ \ell^-)} = \frac{[12][23]⟨24⟩⟨46⟩^2⟨1|2+3|4]⟨2|1+3|4]}{⟨12⟩⟨23⟩⟨56⟩(⟨3|2|5+6|4|3]-⟨2|1|5+6|4|2])^2}$$
+<div style="text-align: left; font-size: 16pt; margin-top: -6mm; margin-bottom: -4mm;">
+$\circ\,$ We can retain control by iterating surface by surface
 </div>
-
----
-
-<b style="font-variant: small-caps; font-size: 28pt; margin-bottom: 10mm;">
-   Iterated Reconstruction by Sequentially Removing Poles
-</b>
-
-<div style="text-align: left; font-size: x-large; margin-top: 2mm;">
-$\circ\,$ In general results are much more complicated, but we can retain control surface-by-surface
-</div>
-<a style="font-size: large; display: inline-block; text-align: right; float: right; margin-left: 0mm; margin-top: 0mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/fix>
-     Campbell, GDL, Ellis, ('22)
+<a style="font-size: 12pt; display: inline-block; text-align: right; float: right; margin-left: 0mm; margin-top: -3mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/fix>
+     Campbell, GDL, Ellis, ('22)$\;$
 </a>
-<p style="font-size: large; display: inline-block; text-align: right; float: right; margin-left: 0mm; margin-top: 0mm; margin-bottom: 0mm">
-     and $\;$
-</p>
-<a style="font-size: large; display: inline-block; text-align: right; float: right; margin-left: 0mm; margin-top: 0mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/2203.04269>
-     GDL, Page ('22) $\;$
+<a style="font-size: 12pt; display: inline-block; text-align: right; float: right; margin-left: 0mm; margin-top: -3mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/2203.04269>
+     GDL, Page ('22);$\;$
 </a>
-<p style="font-size: large; display: inline-block; text-align: right; float: right; margin-left: 0mm; margin-top: 0mm; margin-bottom: 0mm">
-     see also: $\;$
-</p>
-<a style="font-size: large; display: inline-block; text-align: right; float: right; margin-left: 0mm; margin-top: 0mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1904.04067>
-     GDL, Maître ('19) $\;$ 
+<a style="font-size: 12pt; display: inline-block; text-align: right; float: right; margin-left: 0mm; margin-top: -3mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1904.04067>
+     GDL, Maître ('19);$\;$
 </a>
 
 <br>
-<div style="text-align: left; font-size: 14pt; margin-top: -8mm; margin-bottom: 1mm;">
+<div style="text-align: left; font-size: 13pt; margin-top: -8mm; margin-bottom: 1mm;">
 $$ 
 \begin{alignedat}{2}
-& r^{(139 \text{ of } 139)}_{\bar{u}^+g^+g^-d^-(V\rightarrow \ell^+ \ell^-)} = & \qquad\qquad & \text{Variety (scheme?) to isolate term(s)} \\[2mm]
+& r^{(139 \text{ of } 139)}_{\bar{u}^+g^+g^-d^-(V\rightarrow \ell^+ \ell^-)} = & \qquad\qquad & {\small \text{Variety (scheme?) to isolate term(s)}} \\[2mm]
 & +\frac{7/4(s_{24}-s_{13})⟨6|1+4|5]s_{123}(s_{124}-s_{134})}{⟨1|2+3|4]⟨2|1+4|3]^2 Δ_{14|23|56}} & \qquad\qquad & \Big\langle ⟨2|1+4|3]^2, Δ_{14|23|56} \Big\rangle \\[1mm]
-& -\frac{49/64⟨3|1+4|2]⟨6|1+4|5]s_{123}(s_{123}-s_{234})(s_{124}-s_{134})}{⟨1|2+3|4]⟨2|1+4|3]Δ^2_{14|23|56}} & \qquad\qquad & \Big\langle Δ_{14|23|56} \Big\rangle \\[1mm]
-& +\frac{1/4[12]^3⟨14⟩[45]⟨46⟩}{[13][23]⟨1|2+3|1]⟨4|5+6|4]^2} & \qquad\qquad & \Big\langle ⟨1|2+3|1], ⟨4|5+6|4]^2 \Big\rangle \\[1mm]
-& -\frac{1/4[12]2⟨13⟩⟨24⟩[45]⟨46⟩}{⟨12⟩[13]⟨2|1+3|2]⟨4|5+6|4]^2}-\frac{3/4⟨34⟩2[45]⟨46⟩⟨3|1+2|4]}{⟨14⟩⟨23⟩⟨2|1+3|4]⟨4|5+6|4]^2} & \qquad\qquad & \Big\langle ⟨4|5+6|4] \Big\rangle \\[1mm]
-& + \dots \text{more than 30 other fractions} \dots &&
+& -\frac{49/64⟨3|1+4|2]⟨6|1+4|5]s_{123}(s_{123}-s_{234})(s_{124}-s_{134})}{⟨1|2+3|4]⟨2|1+4|3]Δ^2_{14|23|56}} + \dots & \qquad\qquad & \Big\langle Δ_{14|23|56} \Big\rangle
 \end{alignedat}
 $$
 </div>
 <!--- 
+ \\[1mm]
+& + {\small \dots \text{more than 30 other fractions} \dots } &&
+& +\frac{1/4[12]^3⟨14⟩[45]⟨46⟩}{[13][23]⟨1|2+3|1]⟨4|5+6|4]^2} & \qquad\qquad & \Big\langle ⟨1|2+3|1], ⟨4|5+6|4]^2 \Big\rangle \\[1mm]
+& -\frac{1/4[12]2⟨13⟩⟨24⟩[45]⟨46⟩}{⟨12⟩[13]⟨2|1+3|2]⟨4|5+6|4]^2}-\frac{3/4⟨34⟩2[45]⟨46⟩⟨3|1+2|4]}{⟨14⟩⟨23⟩⟨2|1+3|4]⟨4|5+6|4]^2} & \qquad\qquad & \Big\langle ⟨4|5+6|4] \Big\rangle \\[1mm]
 & \frac{-7/8⟨16⟩⟨1|2+3|5]⟨3|1+4|2](s_{13}-s_{24} )(s_{123}-s_{234})}{⟨14⟩⟨1|2+3|4]^2⟨2|1+4|3]Δ_{14|23|56}} & \qquad\qquad & \Big\langle ⟨1|2+3|4]^2, Δ_{14|23|56} \Big\rangle \\[1mm]
 & +\frac{7/2⟨13⟩^3[15]⟨16⟩[23]}{⟨12⟩⟨14⟩⟨1|2+3|1]⟨1|2+3|4]^2}+\frac{7/2⟨13⟩^2⟨16⟩[25]}{⟨12⟩⟨14⟩⟨1|2+3|4]^2} & \qquad\qquad & \Big\langle ⟨1|2+3|4] \Big\rangle \\[1mm]
 & -\frac{7⟨24⟩[25][35]s_{123}}{⟨12⟩[23][56]⟨2|1+4|3]^2} & \qquad\qquad & \Big\langle ⟨2|1+4|3] \Big\rangle \\[1mm]
 --->
 
-<div style="text-align: left; font-size: 16pt; margin-top: 2mm;">
-$\circ\,$ Preliminary results (originally around 1.3GB of source code, compiled in almost 20GB of C++ binaries):
+<div style="text-align: left; font-size: 16pt; margin-top: -4mm; margin-bottom: -4mm;">
+$\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
 </div>
-<div style="text-align: center; font-size: 15pt; margin-top: 2mm;">
-$pp\rightarrow Vq\bar q : \; 120\text{KB} \; r_i, \; 500\text{KB} \; M_{ij} \qquad pp\rightarrow Vgg\; \text{(MHV)}: \; 170\text{KB} \; r_i, \; 33\text{KB} \; M_{ij}; $ <br>
-$pp\rightarrow Vgg\; \text{(NMHV)}: \; 13\text{MB} \; r_i, \; 1\text{MB} \; M_{ij}.$
-</div>
-
-<div style="border: 1px solid black;  display: inline-block; text-align: center; float:center; font-size: 17pt; margin-top: 5mm;">
-Compact results are still achievable, but advancements will be required to make this sustainable.
+<div style="text-align: left; font-size: 12pt; margin-top: 0mm; margin-bottom: 1mm;">
+     $$
+     \sqrt{\big\langle ⟨2|1+4|3], Δ_{14|23|56} \big\rangle} = \big\langle s_{124}-s_{134}, ⟨2|1+4|3] \big\rangle \, , \\[1mm] 
+     \big\langle ⟨1|2+3|4], ⟨2|1+4|3] \big\rangle = \big\langle ⟨1|2+3|4], ⟨2|1+4|3], (s_{13}-s_{24})\big\rangle \cap \big\langle ⟨12⟩, [34] \big\rangle
+     $$
 </div>
 
 </section>
