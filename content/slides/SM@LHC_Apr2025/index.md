@@ -78,85 +78,149 @@ $$
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt"> Precision Physics Requires NNLO Corrections </b>
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> QCD Corrections to $V+n-jets$ </b>
 
-<div style="text-align: left; font-size: 17pt; float: left; margin-top: -1mm; margin-bottom: 0mm;">
-     $\circ\,$ Theoretical uncertainties already larger than experimental ones, especially at higher points
-</div>
-<div style="width:100%; float: left; display: inline-block;">
-     <span style="width:100%; font-size: 14pt; float: left; text-align: left; margin-left:25mm; margin-top:12mm; margin-bottom:-10mm;">
-          $\sigma^{\text{exp.}}_{pp \, \rightarrow \, Z \, + \, n\,j}:$
-     </span><img src="cross-sections-transposed-transparent.png"; style="max-width:450px;float:center;border:none;margin-top:-5mm ;margin-bottom:2mm;">
-</div>
-<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 2mm;">
-     $\phantom{\circ}\,$ 13 TeV data for W+jets appears to not be avaiable yet.
+<div style="margin: 0 10px;">
+     <table style="border-collapse: collapse; text-align: center; margin-top: 4mm; font-size: 14pt;">
+          <tr>
+               <td style="border: 1px solid black; padding: 5px;">4-Loops</td>
+               <td style="border: 1px solid black; padding: 5px; background-color: #FF7F7F;">
+               </td>
+               <td style="border: 1px solid black; padding: 5px; background-color: #FF7F7F;">
+               </td>
+               <td style="border: 1px solid black; padding: 5px; background-color: #FF7F7F;">
+               </td>
+               <td style="border: 1px solid black; padding: 5px; background-color: #FF7F7F;">
+               ?
+               </td>
+          </tr>
+          <tr>
+               <td style="border: 1px solid black; padding: 5px;">3-Loops</td>
+               <td style="border: 1px solid black; padding: 5px; background-color: #90EE90;">
+               <a href="https://arxiv.org/abs/example4">[X]</a>
+               </td>
+               <td style="border: 1px solid black; padding: 5px; background-color: #FFD700;">
+               <a href="https://arxiv.org/abs/example8">✓</a>
+               </td>
+               <td style="border: 1px solid black; padding: 5px; background-color: #FF7F7F;">
+               ?
+               </td>
+               <td style="border: 1px solid black; padding: 5px; background-color: #FF7F7F;">
+               ?
+               </td>
+          </tr>
+          <tr>
+               <td style="border: 1px solid black; padding: 5px;">2-Loops</td>
+               <td style="border: 1px solid black; padding: 5px; background-color: #90EE90;">
+               <a href="https://arxiv.org/abs/2307.15405">[X]</a>
+               </td>
+               <td style="border: 1px solid black; padding: 5px; background-color: #90EE90;">
+               <a href="https://arxiv.org/abs/example7">✓</a>
+               </td>
+               <td style="border: 1px solid black; padding: 5px; background-color: #FFD700;">
+               <a href="https://arxiv.org/abs/2110.07541">✓</a>
+               </td>
+               <td style="border: 1px solid black; padding: 5px; background-color: #FF7F7F;">
+               ?
+               </td>
+          </tr>
+          <tr>
+               <td style="border: 1px solid black; padding: 5px;">1-Loop</td>
+               <td style="border: 1px solid black; padding: 5px; background-color: #90EE90;">
+               <a href="https://arxiv.org/abs/example2">✓</a>
+               </td>
+               <td style="border: 1px solid black; padding: 5px; background-color: #90EE90;">
+               <a href="https://arxiv.org/abs/example6">✓</a>
+               </td>
+               <td style="border: 1px solid black; padding: 5px; background-color: #90EE90;">
+               <a href="https://arxiv.org/abs/example10">[X]</a>
+               </td>
+               <td style="border: 1px solid black; padding: 5px; background-color:rgb(234, 255, 0);">
+               <a href="https://arxiv.org/abs/example11"></a>
+               </td>
+          </tr>
+          <tr>
+               <td style="border: 1px solid black; padding: 5px;">Tree</td>
+               <td style="border: 1px solid black; padding: 5px; background-color: #90EE90;">
+               <a href="https://arxiv.org/abs/example2">[1]</a>
+               </td>
+               <td style="border: 1px solid black; padding: 5px; background-color: #90EE90;">
+               </td>
+               <td style="border: 1px solid black; padding: 5px; background-color: #90EE90;">
+               <a href="https://arxiv.org/abs/example10"></a>
+               </td>
+               <td style="border: 1px solid black; padding: 5px; background-color: #90EE90;">
+               <a href="https://arxiv.org/abs/example10"></a>
+               </td>
+          </tr>
+          <tr>
+               <th style="border: 1px solid black; padding: 5px;">Loops ↑ vs Jets →</th>
+               <th style="border: 1px solid black; padding: 5px;">$0$</th>
+               <th style="border: 1px solid black; padding: 5px;">$1$</th>
+               <th style="border: 1px solid black; padding: 5px;">$2$</th>
+               <th style="border: 1px solid black; padding: 5px;">$\geq3$</th>
+          </tr>
+     </table>
+     <div style="margin-top: 5mm; margin-bottom: 2mm; font-size: 12pt;">
+     <span style="background-color: #90EE90; padding: 5px; margin-right: 10px;">Analytic</span>
+     <span style="background-color: rgb(234, 255, 0); padding: 5px; margin-right: 10px;"> Numeric</span>
+     <span style="background-color: #FFD700; padding: 5px; margin-right: 10px;">Analytic (planar)</span>
+     <span style="background-color: #FF7F7F; padding: 5px; margin-right: 10px;">Unknown</span>
+     </div>
 </div>
 
-<div style="text-align: left; font-size: 17pt; margin-top: -1mm; margin-bottom: 0mm;">
-     $\circ\,$ NNLO is essential for agreement with experiment, e.g.
-</div>
-<div style="width:100%; float: left; display: inline-block;">
-     <span style="width:100%; font-size: 14pt; float: left; text-align: left; margin-left:25mm; margin-top:12mm; margin-bottom:-10mm;">
-          $\sigma^{\text{exp.}}_{pp \, \rightarrow \, Z \, + \, n\,j}:$
-     </span><img src="cross-sections-transposed-transparent.png"; style="max-width:450px;float:center;border:none;margin-top:-5mm ;margin-bottom:2mm;">
-</div>
+<a href="https://arxiv.org/abs/2307.15405" style="font-size: 14pt">[X] T. Gehrmann, P. Jakubčík, C. C. Mella, N. Syrrakos, L. Tancredi '23</a>
+<br>
+<a href="https://arxiv.org/abs/hep-ph/9708239" style="font-size: 14pt">[X] Z. Bern, L. Dixon, D.A. Kosower '97</a>
 
-<div style="text-align: left; font-size: 16pt; fmargin-top: 4mm; margin-bottom: 4mm;">
-     $\circ\,$ Phenomenology can be hindered by complexity of results
-</div>
 
 <div style="text-align: left; font-size: 16pt;margin-top: 4mm; margin-bottom: 4mm;">
      $\circ\,$ High-multiplicity two-loop amplitudes required also because:
 </div>
 <div style="display:block; width:100%;margin-top:-2mm;">
   <div style="width:100%; font-size: 16pt; float: left; text-align: left; ">
-       $\qquad\star$ As real-virtual-virtual contributions to emerging N$^{3}$LO computations;
+       $\qquad\star$ they are real-virtual$^m$ contributions to emerging N$^{3}$LO computations;
   </div>
   <div style="width:100%; font-size: 16pt; float: left; text-align: left; ">
-       $\qquad\star$ Many interesting kinematic regions are only accessible with extra radiation (e.g. $p_T$ distributions).
+       $\qquad\star$ several interesting kinematic regions are only accessible with extra radiation (e.g. $p_T$ distributions).
   </div>
 </div>
-
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Guiding Principles </b>
+<b style="font-variant: small-caps; font-size: 32pt"> Precision Physics Requires NNLO Corrections </b>
 
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Amplitude should be gauge and Lorentz invariant, and little group covariant
+<div style="text-align: left; font-size: 18pt; float: left; margin-top: -1mm; margin-bottom: 0mm;">
+     $\circ\,$ Theoretical uncertainties already larger than experimental ones, especially at higher points
 </div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 10mm; margin-right: 2mm;">
-     ${\color{red} ✗}$ $\xi$-gauge dependence; reference vectors; open Lorentz indices (tensors)
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 10mm; margin-right: 2mm;">
-     ${\color{greeN} ✓}$ $P^\mu\sigma_{\mu\alpha\dot\alpha} = \lambda_\alpha \tilde\lambda_{\dot\alpha}$; all $\alpha, \dot\alpha$ indices contracted
-</div>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ The singularity structure should be manifest in $\mathbb{C}$
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 10mm; margin-right: 2mm;">
-     ${\color{red} ✗}$ Rational reparametrisations of the kinematics change the denominator structure
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 10mm; margin-right: 2mm;">
-     ${\color{red} ✗}$ If a function is neither even nor odd, forcing the split misses cancellations
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 10mm; margin-right: 2mm;">
-     ${\color{greeN} ✓}$ Little-group dependend cancellations to obtain the true LCD
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 10mm; margin-right: 2mm;">
-     ${\color{greeN} ✓}$ Work off the real slice: $P^\mu \in \mathbb{C}^4$, $\lambda_\alpha \neq \tilde\lambda_{\dot\alpha}^\dagger$
+<div style="width:100%; float: left; display: inline-block;">
+     <span style="width:100%; font-size: 16pt; float: left; text-align: left; margin-left:12mm; margin-top:20mm; margin-bottom:-10mm;">
+          $\sigma^{\text{tot.}}_{pp \, \rightarrow \, Z \, + \, n\,j}:$
+     </span><img src="cross-sections-transposed-transparent.png"; style="max-width:600px;float:center;border:none; margin-top:-10mm ;margin-bottom:2mm; margin-left:25mm;">
 </div>
 
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Focus only on final physical expressions
+<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 0mm;">
+     $\circ\,$ NNLO is essential for agreement with experiment, e.g.
 </div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 10mm; margin-right: 2mm;">
-     ${\color{red} ✗}$ Unphysical intermediate steps may be unnecessarily complicated
+<div style="width:100%; float: left; display: inline-block;">
+     <span style="width:100%; font-size: 18pt; float: left; text-align: left; margin-left:5mm; margin-top:20mm; margin-bottom:-10mm;">
+          $\frac{d\sigma_{pp \, \rightarrow \, Z \, + \, \geq 1 \, b jet}}{d |\eta|^{b-jet_1}}:$
+     </span><img src="Z1jSotnikov-transparent.png"; style="max-width:550px;float:center;border:none;margin-top:-15mm ;margin-bottom:2mm;">
 </div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 10mm; margin-right: 2mm;">
-     ${\color{greeN} ✓}$ Bypass all intermediate steps with numerical evaluations
+
+<div style="text-align: left; font-size: 18pt; fmargin-top: 4mm; margin-bottom: 4mm;">
+     $\circ\,$ Phenomenology can be hindered by complexity of results. 
 </div>
+
+<a style="font-size: large; text-align: right; float: right; margin-top: -3mm; margin-bottom: -3mm;" href=https://arxiv.org/abs/2404.08598>
+Mazzitelli, Sotnikov, Wiesemann '24
+</a>
+<a style="font-size: large; text-align: right; float: right; margin-top: -3mm; margin-bottom: -3mm;" href=https://arxiv.org/abs/2212.04954>
+Buonocore, Devoto, Kallweit, Mazzitelli, Rottoli, Savoini '22; 
+</a>
+<a style="font-size: large; text-align: right; float: right; margin-top: -3mm; margin-bottom: -3mm;" href=https://arxiv.org/abs/2205.01687>
+Hartanto, Poncelet, Popescu, Zoia '22; 
+</a>
 
 </section>
 
@@ -241,14 +305,14 @@ $\mathbb{Q}_p$: GDL, Page ('22)
 <b style="font-variant: small-caps; font-size: 34pt; magin-bottom: -5mm;"> Numerical Computation </b> <br>
 
 <div style="font-size: 18pt; text-align:left; margin-bottom: 0mm; margin-top: 2mm;">
-$\circ$ Original computation performed with Caravel
+$\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" style="font-size: 18pt">[1] </a> performed with Caravel
 </div>
 
 <div style="display:block; width:100%; margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm;">
-     <div style="font-size: 16pt; width:75%; float: left; text-align: center; display: inline-block; margin-top: 3mm;">
+     <div style="font-size: 16pt; width:75%; text-align: left; display: inline-block; margin-top: 3mm;">
 	     $$
 	     \require{color}
-	     \displaystyle \sum_{\text{states}} \, \prod_{\text{trees}} A^{\text{tree}}(\lambda, \tilde\lambda, \ell)\big|_{\text{cut}_{\Gamma}} = \sum_{\substack{\Gamma' \ge \Gamma, \\ i \in M_\Gamma' \cup S_\Gamma'}} \kern-2mm {\color{red}{c_{\,\Gamma',i}(\lambda, \tilde\lambda)}} \, \frac{m_{\Gamma',i}(\lambda\tilde\lambda, \ell)}{\displaystyle \prod_{j\in P_{\Gamma'} / P_{\Gamma}} \rho_{j}(\lambda\tilde\lambda, \ell)}\Bigg|_{\text{cut}_\Gamma}
+	     \displaystyle \sum_{\text{states}} \, \prod_{\text{trees}} A^{\text{tree}}(\lambda, \tilde\lambda, \ell)\big|_{\text{cut}_{\Gamma}} = \sum_{\substack{\Gamma' \ge \Gamma, \\ i \in M_\Gamma' \cup S_\Gamma'}} \kern-2mm {\color{black}{c_{\,\Gamma',i}(\lambda, \tilde\lambda)}} \, \frac{m_{\Gamma',i}(\lambda\tilde\lambda, \ell)}{\displaystyle \prod_{j\in P_{\Gamma'} / P_{\Gamma}} \rho_{j}(\lambda\tilde\lambda, \ell)}\Bigg|_{\text{cut}_\Gamma}
 	     $$
 	</div>
      <div style="width:25%; float: right; display: inline-block; margin-top: -15mm;">
@@ -265,18 +329,25 @@ $\circ$ Original computation performed with Caravel
 		<div> Ruf, Sotnikov ('20) </div>
 	     </a>
 	</div>
-     <div style="font-size: 18pt; width:75%; float: left; text-align: center; display: inline-block; margin-top: 5mm;">
-	     $\star$ Numerical Berends-Giele recursion for LHS, <span style= "color:red"> solve for coeffs. in RHS. </span>
+     <div style="font-size: 18pt; width:75%; text-align: left; display: inline-block; margin-top: 5mm;">
+	     $\star$ Numerical Berends-Giele recursion for LHS, solve for coeffs. in RHS.
 	</div>
-     <div style="font-size: 18pt; width:75%; float: left; text-align: center; display: inline-block; margin-top: 5mm;">
+     <div style="font-size: 18pt; width:75%; text-align: left; display: inline-block; margin-top: 2mm;">
 	     $\star$ IBP reduction = decomposition on RHS, $\; m_{\Gamma,i} \in M_\Gamma \cup S_\Gamma $
 	</div>
 </div>
 
-<div style="font-size: 18pt; float: left; margin-bottom: 4mm; margin-top: 8mm;">
-$\circ$ This computation used the ancillaries of ...
+<div style="font-size: 18pt; text-align: left; margin-bottom: 0mm; margin-top: 8mm;">
+     $\circ$ This computation started from the ancillaries files of <a href="https://arxiv.org/abs/hep-ph/9708239" style="font-size: 18pt">[1] </a>
+     <div style="font-size: 18pt; width:99%; text-align: left; display: inline-block; margin-top: 5mm; margin-left:10mm;">
+	     1. Wrote a Python script to split the 1.4 GB ancillaries into >10k files <br>
+	     2. Compile into 18.2 GB of C++ binaries (for reference Caravel compiles into approx. 5 GB) <br>
+          3. Obtain $\mathbb{F}_p$ evaluations of the form factors (each takes approx. 1 sec per point)<br>
+          4. Recombine triplets of form factors into helicity amplitudes
+	</div>
 </div>
 
+ <a href="https://arxiv.org/abs/hep-ph/9708239" style="font-size: 18pt">[1] Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov '21</a>
 
 </section>
 
@@ -297,6 +368,46 @@ $\circ$ This computation used the ancillaries of ...
 
 ---
 
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Guiding Principles </b>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ Amplitude should be gauge and Lorentz invariant, and little group covariant
+</div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 10mm; margin-right: 2mm;">
+     ${\color{red} ✗}$ gauge dependence; reference vector dependence; tensors decomposition $\epsilon_\mu T^\mu$
+</div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 10mm; margin-right: 2mm;">
+     ${\color{greeN} ✓}$ $P^\mu\sigma_{\mu\alpha\dot\alpha} = \lambda_\alpha \tilde\lambda_{\dot\alpha}$; all $\alpha, \dot\alpha$ indices contracted
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ The singularity structure should be manifest in $\mathbb{C}$
+</div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 10mm; margin-right: 2mm;">
+     ${\color{red} ✗}$ Rational reparametrisations of the kinematics change the denominator structure
+</div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 10mm; margin-right: 2mm;">
+     ${\color{red} ✗}$ If a function is neither even nor odd, forcing the split misses cancellations
+</div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 10mm; margin-right: 2mm;">
+     ${\color{greeN} ✓}$ Chiral cancellations yield true Least Common Denominator
+</div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 10mm; margin-right: 2mm;">
+     ${\color{greeN} ✓}$ Work off the real slice: $P^\mu \in \mathbb{C}^4$, $\lambda_\alpha \neq \tilde\lambda_{\dot\alpha}^\dagger$
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ Focus only on final physical expressions
+</div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 10mm; margin-right: 2mm;">
+     ${\color{red} ✗}$ Unphysical intermediate steps may be unnecessarily complicated
+</div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 10mm; margin-right: 2mm;">
+     ${\color{greeN} ✓}$ Bypass all intermediate steps with numerical evaluations
+</div>
+
+---
+
 <div style="margin-top: 2mm; margin-bottom: 3mm">
      <b style="font-variant: small-caps; font-size: xxx-large"> Least Common Denominator </b>
      <p style="margin-top: -2mm; margin-bottom: 2mm; font-size: 16pt;">
@@ -304,63 +415,55 @@ $\circ$ This computation used the ancillaries of ...
      </p>
 </div>
 
-<div style="font-size: 16pt; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     $\circ$ Polynomials belong to the the covariant quotient ring of spinors,
-</div>
-<br>
-<div style="font-size:15pt; float: center; margin-top: -6mm; margin-bottom: -10mm">
-     $$\displaystyle \kern10mm R_n = \mathbb{F}\big[|1⟩, [1|, \dots, |n⟩, [n|\big] \big/ \big\langle \sum_i |i⟩[i| \big\rangle$$
-</div>
-
-<div style="display:block; width:100%; margin-top: -6mm; margin-bottom: 0mm; margin-left: 0mm;">
-     <div style="font-size: x-large; width:60%; float: left; text-align: center; display: inline-block; margin-top: 3mm;">
-	     <div style="font-size: 16pt; float: left; margin-top: 4mm; margin-bottom: 1mm;">
-                $\circ\,$ The rational function <span style="font-size: 15pt">$r_i$</span> belong to the field of fractions of <span style="font-size: 14pt">$R_n$</span>,
+<div style="display:block; width:100%; margin-top: 2mm; margin-bottom: 0mm; margin-left: 0mm;">
+     <div style="font-size: x-large; width: 65%; text-align: left; display: inline-block; margin-top: 2mm;">
+          <div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2mm;">
+               $\circ$ Polynomials belong to the the covariant quotient ring of spinors,
           </div>
-          <br><br>
-          <div style="font-size:16pt; float: center; margin-top: -3mm; margin-bottom: 0mm">
+          <div style="font-size:16pt; text-align: center; margin-top: 2mm; margin-bottom: 2mm">
+               $$\displaystyle \kern10mm R_n = \mathbb{F}\big[|1⟩, [1|, \dots, |n⟩, [n|\big] \big/ \big\langle \sum_i |i⟩[i| \big\rangle$$
+          </div>
+	     <div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 1mm;">
+                $\circ\,$ The rational function <span style="font-size: 16pt">$r_i$</span> belong to the field of fractions of <span style="font-size: 16pt">$R_n$</span>,
+          </div>
+          <div style="font-size:16pt; text-align: center; margin-top: 2mm; margin-bottom: 2mm">
                $$
                \displaystyle r_i(|i\rangle,[i|) = \frac{\mathcal{N}(|i\rangle,[i|)}{\prod_j \mathcal{D}_j^{q_{ij}}(|i\rangle,[i|)}
                $$
           </div>
-          <div style="font-size: 16pt; float: left; margin-top: 0mm; margin-bottom: 1mm;">
+          <div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 1mm;">
+                $\phantom{\circ}\,$ we obtain  <span style="font-size: 16pt">$q_{ij}$</span> from a univariate slice  <span style="font-size: 16pt">$\vec\lambda(t)$</span>.
+          </div>
+          <div style="font-size: 16pt; float: left; margin-top: 2mm; margin-bottom: 2mm;">
                $\circ\,$ The <span style="font-size: 14pt">$\mathcal{D}_j$</span> are related to the letters of the symbol alphabet
           </div>
-          <br>
-          <a style="font-size: 13pt; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1812.04586>
+          <a style="font-size: 13pt; text-align: center; float: left; margin-left:40mm; margin-top: 0mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1812.04586>
           Abreu, Dormans, Febres Cordero, Ita, Page ('18)
           </a>
-          <br>
-          <div style="font-size:14pt; float: center; margin-top: 1mm; margin-bottom: 0mm">
-               $$
-               \displaystyle \{\mathcal{D}_{\{1,\dots,35\}}\} = \bigcup_{\sigma \; \in \; \text{Aut}(R_5)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1] \big\}
-               $$
-          </div>
-          <div style="font-size:13pt; float: right; margin-top: -10mm; margin-bottom: 0mm;">
-               $\kern0mm\color{green}\text{Identical to 1-loop!}$
-          </div>
 	</div>
-     <div style="width:40%; float: right; display: inline-block; margin-top: 6mm;">
-          <img src="V2.png"; style="max-width:260px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;">
-          <div style="width:100%; font-size: 14pt; margin-top: -2mm; margin-bottom: 1mm;">
-               The codimension one variety 
+     <div style="width:35%; float: right; display: inline-block; margin-top: 6mm; ">
+          <img src="variety_slice_v2-transparent.png"; style="max-width:360px; float:center; border:none; margin-top: -5mm; margin-bottom: -2mm;">
+          <div style="width:100%; font-size: 14pt; margin-top: 0mm; margin-bottom: 1mm;">
+               Space has dimension $4n-4$, 
           </div>
-          <div style="width:100%; font-size: 14pt; margin-top: 1mm; margin-bottom: 1mm;">
-               $\langle x^3 + y^3 - z^2 \rangle$ in $\mathbb{R}[x,y,z]$
+          <div style="width:100%; font-size: 14pt; margin-top: 0mm; margin-bottom: 1mm;">
+               $\mathcal{D}_j = 0$ have dimension $4n-5$,
+          </div>
+          <div style="width:100%; font-size: 14pt; margin-top: 0mm; margin-bottom: 1mm;">
+               $\vec\lambda(t)$'s have dimension 1.
           </div>
      </div>
 </div>
 
-<div style="text-align: center; float: left; font-size: 14pt; margin-top: -5mm; margin-bottom: -2mm;">
-     $$
+<div style="text-align: center; float: center; font-size: 14pt; margin-top: 10mm; margin-bottom: 4mm;">
+     $
      \displaystyle \kern5mm \{D_j\} \subset \kern-3mm \bigcup_{\sigma \; \in \; \text{Aut}(R_6)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1], \langle 1|2+3|4], s_{123}, \Delta_{12|34|56}, ⟨3|2|5+6|4|3]-⟨2|1|5+6|4|2] \big\}
-     $$
+     $
 </div>
-<div style="font-size:13pt; float: right; margin-top: -10mm; margin-bottom: 1mm;">
-     $\kern0mm\color{green}\text{New letter! Can we get rid of it?}$
+<div style="font-size:13pt; float: right; margin-top: -9mm; margin-bottom: 1mm;">
+     $\kern0mm\color{green}\text{New letter!}$
 </div>
-
-<div style="border: 2px solid black; font-size: 16pt; padding: 10px; display: inline-block; margin-top: 2mm;">
+<div style="border: 2px solid black; font-size: 16pt; padding: 10px; display: inline-block; margin-top: 0mm;">
     Poles & Zeros $\;\Leftrightarrow\;$ Irreducible Varieties $\;\Leftrightarrow\;$ Prime Ideals <br>
     <i style="font-size: 14pt; border-top: -8mm; border-bottom: -2mm;"> Physics $\kern18mm$ Geometry $\kern18mm$ Algebra </i>
 </div>
