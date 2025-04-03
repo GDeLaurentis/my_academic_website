@@ -470,6 +470,86 @@ $\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" sty
 
 ---
 
+<b style="font-variant: small-caps; font-size: xxx-large"> Basis Change from Pole Residues </b>
+
+<div style="text-align: left; font-size: 16pt; float: left; margin-top: -2mm; margin-bottom: -2mm;">
+     $\circ\,$ Change basis from a subset of the pentagon coefficients $r_{i \in \mathcal{B}}$ to <span style="font-size: 14pt">$\mathbb{Q}$</span>-linear combinations $\tilde r$,
+</div><br>
+<div style="text-align: center; float: center; font-size: 15pt; margin-top: -8mm; margin-bottom: 0mm;">
+     $$
+     R = r_j h_j = r_{i\in \mathcal{B}} M_{ij} h_j = \tilde{r}_{i} \, O_{ii'}M_{i'j} \, h_j \, , \qquad O_{ii'}, M_{ij}\in \mathbb{Q}
+     $$
+</div>
+
+<div>
+<img src="BasisChangeEffectWjj.png"; style="max-width:800px; float:center; border:none; margin-top: -2mm; margin-bottom: 0mm;">
+</div>
+
+<div style="text-align: center; font-size: 14pt; float: center; margin-top: -6mm; margin-bottom: 0mm;">
+     $\phantom{\circ}\,$ Notation: [mass dimension], {Little-group weights}
+</div>
+
+<div style="text-align: left; font-size: 16pt; float: left; margin-top: 3mm; margin-bottom: -2mm;">
+     $\circ\,$ By Gaussian elimination, partition the space:
+</div> <br>
+<div style="text-align: center; font-size: 15pt; float: center; margin-top: -2mm; margin-bottom: 2mm;">
+     $$
+     \text{span}(r_{i \in \mathcal{B}}) = \underbrace{\text{column}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m))}_{\text{functions with the singularity}} \;\;\; \oplus \, \underbrace{\text{null}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m))}_{\text{functions without the singularity}}
+     $$
+</div>
+
+<div style="display:block; width:100%; margin-top: -4mm; margin-bottom: 0mm; margin-left: 0mm;">
+     <div style="font-size: 17pt; width:50%; float: left; text-align: center; display: inline-block; margin-top: 3mm;">
+	     <div style="font-size: 17pt; float: left; margin-top: 4mm; margin-bottom: 1mm;">
+               $\circ\,$ Search for linear combinations that remove as many singularities as possible
+          </div>
+          <br>
+          <div style="font-size:15pt; float: left; margin-top: 0mm; margin-bottom: 0mm">
+               $$
+               \kern12mm \displaystyle O_{i'i} = \bigcap_{k, m} \, \text{nulls}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m))
+               $$
+          </div>
+	</div>
+     <div style="width:50%; float: right; display: inline-block; margin-top: 0mm;">
+          <img src="search_tree.png"; style="max-width:400px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;">
+     </div>
+</div>
+
+</section>
+
+---
+
+<section>
+
+{{< slide background-image="spinor_coeffs.png" >}}
+
+<br><br><br><br><br><br>
+
+# Analytic Reconstruction
+
+<br><br><br><br>
+
+<p style="margin-top:13mm; font-size: 16pt;">
+also based on: <br>
+GDL, Ita, Page, Sotnikov (to appear)
+</p>
+
+---
+
+<div style="margin-top: 2mm; margin-bottom: 3mm">
+     <b style="font-variant: small-caps; font-size: 32pt"> Reconstruction from Conjectured Properties </b>
+     <p style="margin-top: -2mm; margin-bottom: -=mm; font-size: 16pt;">
+     (for planar five-point one-mass amplitudes)
+     </p>
+</div>
+
+<div style="text-align: left; font-size: 18pt; float: left; margin-top: 3mm; margin-bottom: -2mm;">
+     $\circ\,$ {$s_{ijk},s_{lmn}$} <br>
+     $\circ\,$ {$\Delta_{ab|cd|ef},\Delta_{ij|kl|mn}$}
+</div>
+
+---
+
 <div style="margin-top: 2mm; margin-bottom: 3mm">
      <b style="font-variant: small-caps; font-size: 32pt"> Multivariate Partial Fraction Decompositions </b>
      <p style="margin-top: -2mm; margin-bottom: -=mm; font-size: 16pt;">
@@ -541,65 +621,9 @@ $\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" sty
 
 <section>
 
-{{< slide background-image="spinor_coeffs.png" >}}
+{{< slide background-image="Wjj_diagrams.png">}}
 
-<br><br><br><br><br><br>
-
-# Analytic Reconstruction
-
-<br><br><br><br>
-
-<p style="margin-top:13mm; font-size: 16pt;">
-also based on: <br>
-GDL, Ita, Page, Sotnikov (to appear)
-</p>
-
----
-
-<b style="font-variant: small-caps; font-size: xxx-large"> Basis Change based on Pole Residues </b>
-
-<div style="text-align: left; font-size: 16pt; float: left; margin-top: -2mm; margin-bottom: -2mm;">
-     $\circ\,$ Change basis from a subset of the pentagon coefficients $r_{i \in \mathcal{B}}$ to <span style="font-size: 14pt">$\mathbb{Q}$</span>-linear combinations $\tilde r$,
-</div><br>
-<div style="text-align: center; float: center; font-size: 15pt; margin-top: -8mm; margin-bottom: 0mm;">
-     $$
-     R = r_j h_j = r_{i\in \mathcal{B}} M_{ij} h_j = \tilde{r}_{i} \, O_{ii'}M_{i'j} \, h_j \, , \qquad O_{ii'}, M_{ij}\in \mathbb{Q}
-     $$
-</div>
-
-<div>
-<img src="BasisChangeEffectWjj.png"; style="max-width:800px; float:center; border:none; margin-top: -2mm; margin-bottom: 0mm;">
-</div>
-
-<div style="text-align: center; font-size: 14pt; float: center; margin-top: -6mm; margin-bottom: 0mm;">
-     $\phantom{\circ}\,$ Notation: [mass dimension], {Little-group weights}
-</div>
-
-<div style="text-align: left; font-size: 16pt; float: left; margin-top: 3mm; margin-bottom: -2mm;">
-     $\circ\,$ By Gaussian elimination, partition the space:
-</div> <br>
-<div style="text-align: center; font-size: 15pt; float: center; margin-top: -2mm; margin-bottom: 2mm;">
-     $$
-     \text{span}(r_{i \in \mathcal{B}}) = \underbrace{\text{column}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m))}_{\text{functions with the singularity}} \;\;\; \oplus \, \underbrace{\text{null}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m))}_{\text{functions without the singularity}}
-     $$
-</div>
-
-<div style="display:block; width:100%; margin-top: -4mm; margin-bottom: 0mm; margin-left: 0mm;">
-     <div style="font-size: 17pt; width:50%; float: left; text-align: center; display: inline-block; margin-top: 3mm;">
-	     <div style="font-size: 17pt; float: left; margin-top: 4mm; margin-bottom: 1mm;">
-               $\circ\,$ Search for linear combinations that remove as many singularities as possible
-          </div>
-          <br>
-          <div style="font-size:15pt; float: left; margin-top: 0mm; margin-bottom: 0mm">
-               $$
-               \kern12mm \displaystyle O_{i'i} = \bigcap_{k, m} \, \text{nulls}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m))
-               $$
-          </div>
-	</div>
-     <div style="width:50%; float: right; display: inline-block; margin-top: 0mm;">
-          <img src="search_tree.png"; style="max-width:400px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;">
-     </div>
-</div>
+# Outlook
 
 ---
 
@@ -638,15 +662,6 @@ GDL, Ita, Page, Sotnikov (to appear)
      $\phantom{\circ}$ Since <code style="font-size: 14pt;">PentagonsFunction++</code> can take permutations of the 1-mass basis we only need one <span style="font-size: 14pt;">$M_{ij}$</span> per partial <br> $\phantom{\circ}$ (another 2 MB overall). We now have fast and stable floating-point evaluations in double precision!
 </div>
 
-</section>
-
----
-
-<section>
-
-{{< slide background-image="Wjj_diagrams.png">}}
-
-# Outlook
 
 ---
 
