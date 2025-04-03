@@ -302,7 +302,7 @@ $\mathbb{Q}_p$: GDL, Page ('22)
 
 ---
 
-<b style="font-variant: small-caps; font-size: 34pt; magin-bottom: -5mm;"> Numerical Computation </b> <br>
+<b style="font-variant: small-caps; font-size: 34pt; magin-bottom: -5mm;"> Setting up the Simplification </b> <br>
 
 <div style="font-size: 18pt; text-align:left; margin-bottom: 0mm; margin-top: 2mm;">
 $\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" style="font-size: 18pt">[1] </a> performed with Caravel
@@ -347,7 +347,7 @@ $\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" sty
 	</div>
 </div>
 
- <a href="https://arxiv.org/abs/hep-ph/9708239" style="font-size: 18pt">[1] Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov '21</a>
+<a href="https://arxiv.org/abs/hep-ph/9708239" style="font-size: 18pt">[1] Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov '21</a>
 
 </section>
 
@@ -477,16 +477,15 @@ $\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" sty
 </div><br>
 <div style="text-align: center; float: center; font-size: 15pt; margin-top: -8mm; margin-bottom: 0mm;">
      $$
-     R = r_j h_j = r_{i\in \mathcal{B}} M_{ij} h_j = \tilde{r}_{i} \, O_{ii'}M_{i'j} \, h_j \, , \qquad O_{ii'}, M_{ij}\in \mathbb{Q}
+     R = r_j h_j = r_{i\in \mathcal{B}} M_{ij} h_j = \tilde{r}_{i} \, O_{ii'}M_{i'j} \, h_j \, , \qquad O_{ii'}, M_{i'j}\in \mathbb{Q}
      $$
 </div>
 
 <div>
-<img src="BasisChangeEffectWjj.png"; style="max-width:800px; float:center; border:none; margin-top: -2mm; margin-bottom: 0mm;">
+<img src="BasisChangeEffectWjj.png"; style="max-width:900px; float:center; border:none; margin-top: -2mm; margin-bottom: 0mm;">
 </div>
-
-<div style="text-align: center; font-size: 14pt; float: center; margin-top: -6mm; margin-bottom: 0mm;">
-     $\phantom{\circ}\,$ Notation: [mass dimension], {Little-group weights}
+<div style="text-align: center; font-size: 14pt; float: center; margin-top: -3mm; margin-bottom: 0mm;">
+     [<a href="https://arxiv.org/abs/hep-ph/9708239" style="font-size: 14pt">6</a>] Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov '21
 </div>
 
 <div style="text-align: left; font-size: 16pt; float: left; margin-top: 3mm; margin-bottom: -2mm;">
@@ -527,12 +526,7 @@ $\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" sty
 
 # Analytic Reconstruction
 
-<br><br><br><br>
-
-<p style="margin-top:13mm; font-size: 16pt;">
-also based on: <br>
-GDL, Ita, Page, Sotnikov (to appear)
-</p>
+<br><br><br><br><br><br><br>
 
 ---
 
@@ -543,9 +537,30 @@ GDL, Ita, Page, Sotnikov (to appear)
      </p>
 </div>
 
-<div style="text-align: left; font-size: 18pt; float: left; margin-top: 3mm; margin-bottom: -2mm;">
-     $\circ\,$ {$s_{ijk},s_{lmn}$} <br>
-     $\circ\,$ {$\Delta_{ab|cd|ef},\Delta_{ij|kl|mn}$}
+<div style="text-align: left; font-size: 18pt; margin-top: 3mm; margin-bottom: 2mm;">
+     $\circ\,$ Denominator pairs <span style="font-size: 16pt">$\{\mathcal{D}_i, \mathcal{D}_j\}$</span> can be <i>cleanly separated</i>:
+</div>
+<div style="font-size:14pt; text-align: center; margin-top: 2mm; margin-bottom: 1mm;">
+     $$
+     \frac{\mathcal{N}}{\mathcal{D}_i^{q_i}\mathcal{D}_j^{q_j}\mathcal{D}_{\text{rest}}} \rightarrow \frac{\mathcal{N}_i}{\mathcal{D}_i^{q_i}\mathcal{D}_{\text{rest}}} + \frac{\mathcal{N}_j}{\mathcal{D}_j^{q_j}\mathcal{D}_{\text{rest}}}
+     $$
+</div>
+<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
+     $\phantom{\circ}\,$ Examples of <span style="font-size: 16pt">$\{\mathcal{D}_i, \mathcal{D}_j\}$</span> are:
+</div>
+<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
+     $\qquad\star\,$ Any pairs of <span style="font-size: 16pt">$s_{ijk}$</span> or <span style="font-size: 16pt">$\Delta_{ij|kl|mn}$</span> or <span style="font-size: 16pt">$\langle i|j|p_V|k|i]-\langle j|l|p_V|k|j]$</span> <br>
+     $\qquad\star\,$ Any conjugate pair <span style="font-size: 16pt">$\{\langle i|j+k|l], \langle l|j+k|i]\}$</span> or cyclic <span style="font-size: 16pt">$\{\langle i|j\rangle, [i|j]\}$</span> <br>
+     $\qquad\star\,$ Pairs of the form <span style="font-size: 16pt">$\{\Delta_{ij|kl|mn}, \langle a|b+c|d]\}$</span> and <span style="font-size: 16pt">$\{\Delta_{ij|kl|mn}, \langle ab \rangle\}$</span> and <span style="font-size: 16pt">$\{\Delta_{ij|kl|mn}, [ab]\}$</span> <br>
+     $\qquad\phantom{\star}\,$ unless <span style="font-size: 16pt">$\{bc\}$</span> are <span style="font-size: 16pt">$\{ij\}$</span> or <span style="font-size: 16pt">$\{kl\}$</span> or <span style="font-size: 16pt">$\{mn\}$</span>
+</div>
+
+<div style="text-align: left; font-size: 18pt; margin-top: 8mm; margin-bottom: 2mm;">
+     $\circ\,$ Denominator pairs <span style="font-size: 16pt">$\{\mathcal{D}_i, \mathcal{D}_j\}$</span> can be <i>separated to order $\kappa$</i>:
+</div>
+
+<div style="text-align: left; font-size: 18pt; margin-top: 3mm; margin-bottom: -2mm;">
+     $\circ\,$ These properties are only checked a posteriori
 </div>
 
 ---
@@ -763,7 +778,7 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
 --->
 
 
-{{< slide background-image="Prague.jpeg" >}}
+{{< slide background-image="durham.jpeg" >}}
 
 <div style="margin-top: 50mm; margin-bottom: 30mm;">
 <b style="font-variant: small-caps; font-size: xxx-large;"> Thank you <br> for your attention! </b>
