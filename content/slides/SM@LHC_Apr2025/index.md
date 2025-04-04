@@ -304,23 +304,6 @@ $\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" sty
 
 <a href="https://arxiv.org/abs/2110.07541" style="font-size: 18pt">[1] Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov '21</a>
 
-</section>
-
----
-
-<section >
-
-{{< slide background-image="varieties-no-background.png" >}}
-
-<br><br><br><br>
-
-# Analytic & Geometric Structure
-
-<br><br><br><br>
-
-<span style="font-size: 18pt">based on:<span> <br>
-<span style="font-size: 18pt">[GDL, Page (JHEP 12 (2022) 140)](https://arxiv.org/abs/2203.04269)<span>
-
 ---
 
 <b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Guiding Principles </b>
@@ -360,6 +343,25 @@ $\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" sty
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 10mm; margin-right: 2mm;">
      ${\color{greeN} ✓}$ Bypass all intermediate steps with numerical evaluations
 </div>
+
+
+</section>
+
+---
+
+<section >
+
+{{< slide background-image="varieties-no-background.png" >}}
+
+<br><br><br><br>
+
+# Analytic & Geometric Structure
+
+<br><br><br><br>
+
+<span style="font-size: 18pt">based on:<span> <br>
+<span style="font-size: 18pt">[GDL, Page (JHEP 12 (2022) 140)](https://arxiv.org/abs/2203.04269)<span>
+
 
 ---
 
@@ -672,190 +674,6 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
 # Backup Slides
 
 ---
-
-<div style="font-size: x-large; float: center; margin-top:4mm;">
-</div>
-
-<div style="display: flex; justify-content: center;">
-    <div style="margin: 0 10px;">
-        <div style="margin-top: 2mm; margin-bottom: 4mm">
-          <b style="font-variant: small-caps; font-size: xxx-large"> Full $N_C $ motivation</b>
-        </div>
-        <div style="font-size: 16pt;">
-        3 is not that big! And certainly not close to $\infty$
-        </div>
-        <img src="correction_sizes_catani.png" style="max-width:500px; border:none; margin-top: 0mm; margin-bottom: 0mm;">
-        <div style="font-size: 15pt; margin-bottom: 3mm;">
-        Slc contributions to $pp\rightarrow jjj$ should be similar to blue curve.
-        </div>
-        <div style="font-size: 15pt; margin-bottom: 3mm;">
-        Expect $\mathcal{O}(10\%)$ effect on duble-virtual hard function, <br> this is scheme dependant.
-        </div>
-        <div style="font-size: 15pt;">
-        Effect on $\sigma^{\text{NNLO}}$ depends on size of $\mathcal{H}^{(2)}$.
-        </div>
-    </div>
-    <div style="margin: 0 10px;">
-        <div style="margin-top: 2mm; margin-bottom: 4mm">
-          <b style="font-variant: small-caps; font-size: xxx-large"> Pheno. Goal</b>
-        </div>
-        <div style="font-size: 16pt; margin-bottom:2mm;">
-        Stable and fast evaluations for cross sections
-        </div>
-        <img src="h2_5g.png" style="max-width:490px; border:none; margin-top: 0mm; margin-bottom: 0mm;">
-        <div style="font-size: 15pt; margin-bottom:-4mm;">
-        <code> C++ </code> Code available at
-        </div>
-        <a href="https://gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp" style="font-size: 14pt;">gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp</a>
-        <div style="font-size: 15pt; margin-bottom:-4mm;">
-        Analytics available at
-        </div>
-        <a href="https://zenodo.org/records/10142295" style="font-size: 14pt;">zenodo.org/records/10142295</a> <span style="font-size: 16pt">&</span>
-        <a href="https://zenodo.org/records/10231547" style="font-size: 14pt;">zenodo.org/records/10231547</a>
-        <div style="font-size: 15pt; margin-bottom:-4mm;">
-        with <code style="font-size: 14pt;">Mathematica</code>, <code style="font-size: 14pt;">Python</code> and <code style="font-size: 14pt;">C++</code> scripts.
-        </div>
-    </div>
-</div>
-
----
-
-<b style="font-variant: small-caps; font-size: xxx-large; margin-bottom: -5mm;"> Constraints from Poles </b>
-<br>
-<b style="font-variant: small-caps; font-size: x-large; margin-top: -16mm;"> Bootstrapping trees (?) </b>
-
-<div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 8mm;">
-     $\circ$ The degree of divergence / vanishing on various surfaces imposes strong constraints, e.g.
-</div>
-
-<div style="font-size: 20pt; float: center; margin-top: 5mm; margin-bottom: 5mm;">
-     $ A^{\text{tree}}_{q^+g^+g^+\bar q^-g^-g^-} = \frac{\mathcal{N(\text{m.d.} = 6\,,\; \text{p.w.} = [-1, 0, 0, 1, 0, 0])}}{\langle 12\rangle\langle 23\rangle\langle 34\rangle [45][56][61]s_{345}}$
-</div>
-
-<div style="font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;">
-     $\circ$ Pretend this is un unknown integral coefficient, $\mathcal{N}$ has 143 free parameters.
-</div>
-
-<div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 5mm;">
-     $\circ$ List the various prime ideal, such as
-</div>
-
-<br><br><br>
-
-<div style="font-size: 20pt; float: center; margin-top: -2mm; margin-bottom: 0mm;">
-     $ \big\langle \langle 12\rangle, \langle 23\rangle, \langle 13\rangle \big\rangle, \; \big\langle |1\rangle \big\rangle, \; \big\langle \langle 12\rangle, |1+2|3]\big\rangle, \dots$
-</div>
-
-<div style="font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 2mm;">
-     $\phantom{\circ}$ and impose that $\mathcal{N}$ vanishes to the correct order. We determine it up to an overall constant.
-</div>
-<a style="font-size: large; text-align: right; float: right; margin-top: -2mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/2207.10125>
-     GDL, Page ('22)
-</a>
-
-<div style="font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;">
-     $\circ$ Likewise, the ansatz for $A^{\text{tree}}_{g^+g^+g^+ g^-g^-g^-}$ shrinks $1326 \rightarrow 1$, etc..
-</div>
-
-<br><br><br>
-
-<div style="font-size: x-large; float: center; margin-top: -2mm; margin-bottom: 0mm;">
-     <i> Effectively, we can <b> compute </b> trees, just from their <u>poles orders</u>. <br> Note: compared to BCFW there is <u>no</u> information about <u>residues</u>. </i>
-</div>
-
----
-
-<b style="font-variant: small-caps; font-size: xxx-large"> Partial Fraction Decompositions </b>
-
-<div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     $\circ$ For integral coefficients, we can't rely on the Ansatz to shrinks to an overall constant.
-</div>
-
-<div style="font-size: x-large; float: left; margin-top: 3mm; margin-bottom: 0mm;">
-     $\circ$ Partial fraction decompositions (PFDs) are a popular method to tame algebraic complexity.
-</div>
-
-<div style="font-size: x-large; float: left; margin-top: 3mm; margin-bottom: 0mm;">
-     $\circ$ In my opinion, a PFD algorithm needs
-</div>
-<br><br><br>
-<div style="font-size: x-large; float: center; margin-top: -3mm; margin-bottom: 5mm;">
-     $1.$ to say if two poles $W_a$ and $W_b$ are separable into different fractions; <br>
-     $2.$ ideally, to answer $(1.)$ without having access to an analytic expression. 
-</div>
-
-<div style="font-size: x-large; float: left; margin-top: 1mm; margin-bottom: 0mm;">
-     $\circ$ <span style="color: green">Hilbert's nullstellensatz</span>: if $\mathcal{N}$ vanishes on all branches of $\langle W_a, W_b \rangle$, then the PFD is possible$\kern-3mm\phantom{x}^\dagger$.
-</div>
-<div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
-     $\circ$ Generalizing to powers $>\kern-1mm 1$ can be done via <span style="color: green">symbolic powers</span> and the <span style="color: green">Zariski-Nagata Theorem</span>.
-</div>
-<a style="font-size: large; text-align: right; float: right; margin-top: 1mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/.>
-   GDL, Page ('22)
-</a>
-<div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
-     $\circ$ Similarly, generalizing to non-radical ideals requires <span style="color: green">ring extensions</span>.
-</div>
-<a style="font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm; margin-right: 33mm;" href=https://arxiv.org/abs/.>
-   Campbell, GDL, Ellis ('22)
-</a>
-
-<div style="font-size: x-large; float: left; margin-top: 7mm; margin-bottom: 0mm;">
-     <b> Issue: </b>evaluations on singular surfaces are expensive, but are not always needed!
-</div>
-<div style="font-size: x-large; float: left; margin-top: 1mm; margin-bottom: 0mm;">
-     <b> Opportunity: </b>we get more than partial fraction decompositions.
-</div>
-
-<br><br><br><br><br><br>
-
-<div style="font-size: large; float: center; margin-top: 5mm; margin-bottom: 5mm;">
-     $\kern-4mm\phantom{x}^\dagger$ $\langle W_a, W_b\rangle$ needs to be radical.
-</div>
-
----
-
-<b style="font-variant: small-caps; font-size: xxx-large"> Beyond Partial Fractions </b>
-
-<div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     $\circ$ $\color{red}\text{Case 0}$: the ideal does $\color{green}\text{not involve denominator factors}$.
-</div>
-<div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
-     E.g. a 6-point function $c_i$ has a pole at $⟨1|2+3|4]$ but not at $⟨4|2+3|1]$,
-</div>
-<div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     yet it is regular on the irreducible surface $V(\big\langle ⟨1|2+3|4], ⟨4|2+3|1] \big\rangle)$. Then
-</div>
-<br><br>
-<div style="font-size: x-large; float: center; margin-top: 5mm; margin-bottom: 0mm;">
-     $\displaystyle c_i \sim \frac{⟨4|2+3|1]}{⟨1|2+3|4]} + \mathcal{O}(⟨1|2+3|4]^0) \; \text{ instead of } \; c_i \sim \frac{1}{⟨1|2+3|4]}  + \mathcal{O}(⟨1|2+3|4]^0)$
-</div>
-
-<div style="font-size: x-large; float: left; margin-top: 8mm; margin-bottom: 0mm;">
-     $\circ$ $\color{red}\text{Case 1}$: the $\color{green}\text{degree of vanishing is non-uniform}$ across branches, for example:
-</div>
-<br>
-<div style="font-size: x-large; float: center; margin-top: 0mm; margin-bottom: 0mm;">
-     $\displaystyle \frac{s_{14}-s_{23}}{⟨1|3+4|2]⟨3|1+2|4]}$
-</div>
-<div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;">
-     has a double pole on the first branch, and a simple pole on the second branch of
-</div>
-<br>
-<div style="font-size: x-large; float: center; margin-top: 3mm; margin-bottom: 0mm;">
-     $\big\langle⟨1|3+4|2], ⟨3|1+2|4]\big\rangle_{R_6} = \big\langle ⟨13⟩, [24] \big\rangle_{R_6} \cap \big\langle ⟨1|3+4|2], ⟨3|1+2|4], (s_{14}-s_{23})\big\rangle_{R_6}$
-</div>
-
-<div style="font-size: x-large; float: left; margin-top: 10mm; margin-bottom: 0mm;">
-     $\circ$ $\color{red}\text{Case 2}$: ideal is $\color{green}\text{non-radical}$ (example on last slide)
-</div>
-<br><br>
-<div style="font-size: x-large; float: center; margin-top: -3mm; margin-bottom: 0mm;">
-     $\displaystyle \small \kern0mm \sqrt{\big\langle {\color{black}⟨3|1+4|2]}, {\color{black}Δ_{23|14|56}} \big\rangle_{R_6}} = \big\langle {\color{black}⟨3|1+4|2]}, {\color{black}s_{124}-s_{134}} \big\rangle_{R_6} $
-</div>
-
----
-
 
 <b style="font-variant: small-caps; font-size: xxx-large"> The Numerator Ansatz </b>
 
