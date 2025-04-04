@@ -259,7 +259,7 @@ $\mathbb{Q}_p$: GDL, Page ('22)
 
 <b style="font-variant: small-caps; font-size: 34pt; magin-bottom: -5mm;"> Setting up the Calculation </b> <br>
 
-<div style="font-size: 18pt; text-align:left; margin-bottom: 0mm; margin-top: 2mm;">
+<div style="font-size: 18pt; text-align:left; margin-bottom: 0mm; margin-top: 0mm;">
 $\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" style="font-size: 18pt">[1]</a> was performed with <code style="font-size: 17pt">Caravel</code>
 </div>
 
@@ -284,17 +284,15 @@ $\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" sty
 		<div> Ruf, Sotnikov ('20) </div>
 	     </a>
 	</div>
-     <div style="font-size: 18pt; width:75%; text-align: left; display: inline-block; margin-top: 5mm;">
-	     $\star$ Numerical Berends-Giele recursion for LHS, solve for coeffs. in RHS.
-	</div>
-     <div style="font-size: 18pt; width:75%; text-align: left; display: inline-block; margin-top: 2mm;">
+     <div style="font-size: 18pt; width:75%; text-align: left; display: inline-block; margin-top: 5mm; margin-bottom: -4mm;">
+	     $\star$ Numerical Berends-Giele recursion for LHS, solve for coeffs. in RHS.<br>
 	     $\star$ IBP reduction = decomposition on RHS, <span style="font-size: 16t">$\; m_{\Gamma,i} \in M_\Gamma \cup S_\Gamma$</span>
 	</div>
 </div>
 
-<div style="font-size: 18pt; text-align: left; margin-bottom: 0mm; margin-top: 8mm;">
-     $\circ$ This computation started from the ancillaries files of <a href="https://arxiv.org/abs/hep-ph/9708239" style="font-size: 18pt">[1] </a>
-     <div style="font-size: 18pt; width:99%; text-align: left; display: inline-block; margin-top: 5mm; margin-left:10mm;">
+<div style="font-size: 18pt; text-align: left; margin-bottom: 0mm; margin-top: 6mm;">
+     $\circ$ This computation started from the ancillaries files of <a href="https://arxiv.org/abs/hep-ph/9708239" style="font-size: 14pt">[1] Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov</a>
+     <div style="font-size: 18pt; width:99%; text-align: left; display: inline-block; margin-top: 2mm; margin-left:10mm;">
 	     1. Wrote a Python script to split the 1.4 GB ancillaries into >10k files <br>
 	     2. Compile into 18.2 GB of C++ binaries (for reference <code style="font-size: 17pt">Caravel</code> compiles into approx. 5 GB) <br>
           3. Obtain <span style="font-size: 16t">$\mathbb{F}_p$</span> evaluations of the form factors (each takes approx. 1 sec per point)<br>
@@ -302,7 +300,9 @@ $\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" sty
 	</div>
 </div>
 
-<a href="https://arxiv.org/abs/2110.07541" style="font-size: 18pt">[1] Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov '21</a>
+<div style="font-size: 18pt; text-align:left; margin-bottom: 0mm; margin-top: 4mm;">
+$\circ$ Assemble helicity amplitudes into 3 categories: <span style="font-size: 15pt;">$\mathcal{R}_{\bar qggqV}^{\text{NMHV}} ,\, \mathcal{R}_{\bar qggqV}^{\text{MHV}} ,\, \mathcal{R}_{\bar qQ\bar QqV}^{\text{NMHV}}$</span>
+</div>
 
 ---
 
@@ -505,20 +505,26 @@ $\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" sty
 <div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
      $\phantom{\circ}\,$ Examples of <span style="font-size: 16pt">$\{\mathcal{D}_i, \mathcal{D}_j\}$</span> are:
 </div>
-<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
-     $\qquad\star\,$ Any pairs of <span style="font-size: 16pt">$s_{ijk}$</span> or <span style="font-size: 16pt">$\Delta_{ij|kl|mn}$</span> or <span style="font-size: 16pt">$\langle i|j|p_V|k|i]-\langle j|l|p_V|k|j]$</span> <br>
-     $\qquad\star\,$ Any conjugate pair <span style="font-size: 16pt">$\{\langle i|j+k|l], \langle l|j+k|i]\}$</span> or cyclic <span style="font-size: 16pt">$\{\langle i|j\rangle, [i|j]\}$</span> <br>
-     $\qquad\star\,$ Pairs of the form <span style="font-size: 16pt">$\{\Delta_{ij|kl|mn}, \langle a|b+c|d]\}$</span> and <span style="font-size: 16pt">$\{\Delta_{ij|kl|mn}, \langle ab \rangle\}$</span> and <span style="font-size: 16pt">$\{\Delta_{ij|kl|mn}, [ab]\}$</span> <br>
-     $\qquad\phantom{\star}\,$ unless <span style="font-size: 16pt">$\{bc\}$</span> are <span style="font-size: 16pt">$\{ij\}$</span> or <span style="font-size: 16pt">$\{kl\}$</span> or <span style="font-size: 16pt">$\{mn\}$</span>
+<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 2mm;">
+     $\qquad\star\,$ Any pairs of <span style="font-size: 14pt">$s_{ijk}$</span> or <span style="font-size: 14pt">$\Delta_{ij|kl|mn}$</span> or <span style="font-size: 16pt">$\langle i|j|p_V|k|i]-\langle j|l|p_V|k|j]$</span> <br>
+     $\qquad\star\,$ Any conjugate pair <span style="font-size: 14pt">$\{\langle i|j+k|l], \langle l|j+k|i]\}$</span> or cyclic <span style="font-size: 14pt">$\{\langle i|j\rangle, [i|j]\}$</span> <br>
+     $\qquad\star\,$ Pairs of the form <span style="font-size: 14pt">$\{\Delta_{ij|kl|mn}, \langle c|a+b|d] \text{ or } \langle ab \rangle \text{ or } [ab] \}$</span> unless <span style="font-size: 14pt">$\{ab\}$</span> are <span style="font-size: 14pt">$\{ij\}$</span> or <span style="font-size: 14pt">$\{kl\}$</span> or <span style="font-size: 14pt">$\{mn\}$</span>
 </div>
 
-<div style="text-align: left; font-size: 18pt; margin-top: 8mm; margin-bottom: 2mm;">
-     $\circ\,$ Denominator pairs <span style="font-size: 16pt">$\{\mathcal{D}_i, \mathcal{D}_j\}$</span> can be <i>separated to order $\kappa$</i>:
+<div style="text-align: left; font-size: 18pt; margin-top: 4mm; margin-bottom: 2mm;">
+     $\circ\,$ Other denominator pairs <span style="font-size: 15pt">$\{\mathcal{D}_i, \mathcal{D}_j\}$</span> can be <i>separated to order $\kappa$</i> 
+</div>
+<div style="font-size:14pt; text-align: center; margin-top: 2mm; margin-bottom: 1mm;">
+     $$
+     \frac{\mathcal{N}}{\mathcal{D}_i^{q_i}\mathcal{D}_j^{q_j}\mathcal{D}_{\text{rest}}} \rightarrow \sum_{\kappa - q_j\leq m \leq q_i}\frac{\mathcal{N}_i}{\mathcal{D}_i^{m}\mathcal{D}_j^{\kappa - m}\mathcal{D}_{\text{rest}}}
+     $$
+</div><div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 2mm;">
+     $\qquad\star\,$ E.g. <span style="font-size: 14pt">$\Delta_{ij|kl|mn}^4, \langle i|k+l|j]^5$</span> are separable to order 5.
 </div>
 
 <div style="text-align: center; font-size: 18pt; margin-top: 3mm; margin-bottom: -2mm;">
      ${\color{greeN} ✓}$ Reconstruction only requires <span style="font-size: 16pt">$\mathbb{F}_p$</span> samples $\;{\color{greeN} ✓}$Already simpler than original ones (<span style="font-size: 14pt">$\sim$</span>20MB) <br>
-     $\;{\color{red} ✗}$ Results are unstable and sub-optimal, e.g. numbers of this size appeared
+     $\;{\color{red} ✗}$ Results are unstable and sub-optimal, e.g. numbers like this appeared
 </div>
 <span style="font-size: 14pt">127187555379407704220939486282289348327703498501718808908391691454242601886997968263623652083189652150273</span>
 
@@ -596,28 +602,24 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
 
 {{< slide background-image="Wjj_diagrams.png">}}
 
-# Outlook
+# Conclusion
 
 ---
 
-<b style="font-variant: small-caps; font-size: 36pt; margin-bottom: -6mm;"> Spinor-Helicity Results </b>
+<b style="font-variant: small-caps; font-size: 36pt; margin-bottom: -6mm;"> Spinor-Helicity Amplitudes Results </b>
 <br>
 
-<div style="text-align: left; font-size: 16pt; margin-bottom: 1mm; margin-top: 5mm;">
-     $\circ$ The <span style="font-size: 14pt;">$pp\rightarrow Wjj$</span> functions are now 1.9 MB (from 1.4 GB),
+<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 5mm;">
+     $\circ$ The <span style="font-size: 14pt;">$pp\rightarrow Wjj$</span> coefficient functions are now 1.9 MB (from 1.4 GB), of which 1.6 MB for gluons NMHV, 200 KB are the gluons mhv one, and 100 KB are the quarks nmhv.
 </div>
-
-<div style="display: flex; justify-content: center; margin-top: -10mm;">
-    <div style="margin: 0 10px;">
-        <img src="W_vs_sizes.png"; style="max-width:400px; float:center; border:none; margin-top: 18mm; margin-bottom: 0mm;">
+<div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 2mm;">
+    <div style="padding: 0 10px;">
+        <img src="CoefficientSizes.png" style="width: 100%; max-width: 450px; border: none; margin-top: 2mm; margin-bottom: 0mm;">
     </div>
-    $\kern4mm$
-    <div style="margin: 0 10px;">
-        <img src="CoefficientSizes.png"; style="max-width:350px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;">
+    <div style="padding: 0 10px; ">
+        <img src="h2__g_g__Z_d_d.stability.png" style="width: 100%; max-width: 550px; border: none; margin-top: 3mm; margin-bottom: 0mm;">
     </div>
 </div>
-
-1.6MB 200KB 100KB
 
 <div style="text-align: left; font-size: 16pt; margin-bottom: 1mm; margin-top: -4mm;">
      $\phantom{\circ}$ Since <code style="font-size: 14pt;">PentagonsFunction++</code> can take permutations of the 1-mass basis we only need one <span style="font-size: 14pt;">$M_{ij}$</span> per partial <br> $\phantom{\circ}$ (another 2 MB overall). We now have fast and stable floating-point evaluations in double precision!
