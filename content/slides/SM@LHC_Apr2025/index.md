@@ -175,52 +175,55 @@ $$
 
 
 <div style="text-align: left; font-size: 16pt;margin-top: 4mm; margin-bottom: 4mm;">
-     $\circ\,$ High-multiplicity two-loop amplitudes required also because:
+     $\circ\,$ High-multiplicity two-loop amplitudes are required also because:
 </div>
 <div style="display:block; width:100%;margin-top:-2mm;">
   <div style="width:100%; font-size: 16pt; float: left; text-align: left; ">
-       $\qquad\star$ they are real-virtual$^m$ contributions to emerging N$^{3}$LO computations;
+       $\qquad\star$ they are real-virtual-virtual contributions to emerging N$^{3}$LO computations;
   </div>
   <div style="width:100%; font-size: 16pt; float: left; text-align: left; ">
-       $\qquad\star$ several interesting kinematic regions are only accessible with extra radiation (e.g. $p_T$ distributions).
+       $\qquad\star$ several interesting kinematic regions are only accessible with extra radiation (e.g. <span style="font-size: 16pt">$p_T$</span> distributions).
   </div>
 </div>
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt"> Precision Physics Requires NNLO Corrections </b>
+<b style="font-variant: small-caps; font-size: 32pt"> Precision Physics Requires Compact Amplitudes </b>
 
-<div style="text-align: left; font-size: 18pt; float: left; margin-top: -1mm; margin-bottom: 0mm;">
+<div style="text-align: left; font-size: 18pt; float: left; margin-top: -1mm; margin-bottom: -2mm;">
      $\circ\,$ Theoretical uncertainties already larger than experimental ones, especially at higher points
 </div>
 <div style="width:100%; float: left; display: inline-block;">
-     <span style="width:100%; font-size: 16pt; float: left; text-align: left; margin-left:12mm; margin-top:20mm; margin-bottom:-10mm;">
+     <span style="width:100%; font-size: 16pt; float: left; text-align: left; margin-left:12mm; margin-top:16mm; margin-bottom:-10mm;">
           $\sigma^{\text{tot.}}_{pp \, \rightarrow \, Z \, + \, n\,j}:$
-     </span><img src="cross-sections-transposed-transparent.png"; style="max-width:600px;float:center;border:none; margin-top:-10mm ;margin-bottom:2mm; margin-left:25mm;">
+     </span><img src="cross-sections-transposed-transparent-v2.png"; style="max-width:600px;float:center;border:none; margin-top:-10mm ;margin-bottom:2mm; margin-left:25mm;">
 </div>
 
 <div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 0mm;">
      $\circ\,$ NNLO is essential for agreement with experiment, e.g.
 </div>
-<div style="width:100%; float: left; display: inline-block;">
-     <span style="width:100%; font-size: 18pt; float: left; text-align: left; margin-left:5mm; margin-top:20mm; margin-bottom:-10mm;">
-          $\frac{d\sigma_{pp \, \rightarrow \, Z \, + \, \geq 1 \, b jet}}{d |\eta|^{b-jet_1}}:$
-     </span><img src="Z1jSotnikov-transparent.png"; style="max-width:550px;float:center;border:none;margin-top:-15mm ;margin-bottom:2mm;">
-</div>
-
-<div style="text-align: left; font-size: 18pt; fmargin-top: 4mm; margin-bottom: 4mm;">
-     $\circ\,$ Phenomenology can be hindered by complexity of results. 
-</div>
-
-<a style="font-size: large; text-align: right; float: right; margin-top: -3mm; margin-bottom: -3mm;" href=https://arxiv.org/abs/2404.08598>
+<a style="font-size: large; text-align: right; float: right; margin-top: -4mm; margin-bottom: -4mm;" href=https://arxiv.org/abs/2404.08598>
 Mazzitelli, Sotnikov, Wiesemann '24
 </a>
+<div style="width:100%; display: inline-block;">
+     <span style="width:100%; font-size: 18pt; float: left; text-align: left; margin-left:5mm; margin-top:15mm; margin-bottom:-10mm;">
+          $\frac{d\sigma_{pp \, \rightarrow \, Z \, + \, \geq 1 \, b \text{ jet}}}{d |\eta|^{b-\text{jet}_1}}:$
+     </span><img src="Z1jSotnikov-transparent-v2.png"; style="max-width:550px;text-align:center;border:none;margin-top:-15mm ;margin-bottom:2mm;">
+</div>
+
+<div style="text-align: left; font-size: 18pt; margin-top: 0mm; margin-bottom: 2mm;">
+     $\circ\,$ Besides this, only two other cross-section studies at NNLO, only for the process <span style="font-size: 16pt">$q\bar q'\rightarrow Wb\bar b$</span>
+</div>
 <a style="font-size: large; text-align: right; float: right; margin-top: -3mm; margin-bottom: -3mm;" href=https://arxiv.org/abs/2212.04954>
-Buonocore, Devoto, Kallweit, Mazzitelli, Rottoli, Savoini '22; 
+$\,$Buonocore, Devoto, Kallweit, Mazzitelli, Rottoli, Savoini '22;
 </a>
 <a style="font-size: large; text-align: right; float: right; margin-top: -3mm; margin-bottom: -3mm;" href=https://arxiv.org/abs/2205.01687>
-Hartanto, Poncelet, Popescu, Zoia '22; 
+Hartanto, Poncelet, Popescu, Zoia '22;$\,$
 </a>
+
+<div style="text-align: left; font-size: 18pt; margin-top: 10mm; margin-bottom: 4mm;">
+     $\circ\,$ Phenomenology can be hindered by complexity of results. It's hard to do Monte Carlo integration <br> $\phantom{\circ}\,$ and verify IR cancellations when you have to evaluate >1GB of files in higher precision.
+</div>
 
 </section>
 
@@ -302,10 +305,10 @@ $\mathbb{Q}_p$: GDL, Page ('22)
 
 ---
 
-<b style="font-variant: small-caps; font-size: 34pt; magin-bottom: -5mm;"> Setting up the Simplification </b> <br>
+<b style="font-variant: small-caps; font-size: 34pt; magin-bottom: -5mm;"> Setting up the Calculation </b> <br>
 
 <div style="font-size: 18pt; text-align:left; margin-bottom: 0mm; margin-top: 2mm;">
-$\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" style="font-size: 18pt">[1] </a> performed with Caravel
+$\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" style="font-size: 18pt">[1]</a> was performed with <code style="font-size: 17pt">Caravel</code>
 </div>
 
 <div style="display:block; width:100%; margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm;">
@@ -333,7 +336,7 @@ $\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" sty
 	     $\star$ Numerical Berends-Giele recursion for LHS, solve for coeffs. in RHS.
 	</div>
      <div style="font-size: 18pt; width:75%; text-align: left; display: inline-block; margin-top: 2mm;">
-	     $\star$ IBP reduction = decomposition on RHS, $\; m_{\Gamma,i} \in M_\Gamma \cup S_\Gamma $
+	     $\star$ IBP reduction = decomposition on RHS, <span style="font-size: 16t">$\; m_{\Gamma,i} \in M_\Gamma \cup S_\Gamma$</span>
 	</div>
 </div>
 
@@ -341,8 +344,8 @@ $\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" sty
      $\circ$ This computation started from the ancillaries files of <a href="https://arxiv.org/abs/hep-ph/9708239" style="font-size: 18pt">[1] </a>
      <div style="font-size: 18pt; width:99%; text-align: left; display: inline-block; margin-top: 5mm; margin-left:10mm;">
 	     1. Wrote a Python script to split the 1.4 GB ancillaries into >10k files <br>
-	     2. Compile into 18.2 GB of C++ binaries (for reference Caravel compiles into approx. 5 GB) <br>
-          3. Obtain $\mathbb{F}_p$ evaluations of the form factors (each takes approx. 1 sec per point)<br>
+	     2. Compile into 18.2 GB of C++ binaries (for reference <code style="font-size: 17pt">Caravel</code> compiles into approx. 5 GB) <br>
+          3. Obtain <span style="font-size: 16t">$\mathbb{F}_p$</span> evaluations of the form factors (each takes approx. 1 sec per point)<br>
           4. Recombine triplets of form factors into helicity amplitudes
 	</div>
 </div>
@@ -660,7 +663,7 @@ $\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" sty
 
 
 <div style="text-align: left; font-size: 16pt; margin-bottom: 1mm; margin-top: 5mm;">
-     $\circ$ The <span style="font-size: 14pt;">$pp\rightarrow Wjj$</span> functions are now 1.9 MB (from 1.3 GB),
+     $\circ$ The <span style="font-size: 14pt;">$pp\rightarrow Wjj$</span> functions are now 1.9 MB (from 1.4 GB),
 </div>
 
 <div style="display: flex; justify-content: center; margin-top: -10mm;">
