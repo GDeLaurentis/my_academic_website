@@ -18,7 +18,7 @@ slides:
 {{< slide background-image="particle_tracks.jpg" >}}
 
 <h3 style="margin-top:5mm; margin-left: -10mm; margin-right: -10mm;">
-	<b style="margin-top:15mm; font-size: 28pt; text-transform: none;">
+	<b style="margin-top:15mm; font-size: 34pt; text-transform: none;">
 	   Compact Two-Loop QCD Corrections <br>
 	   for $Vjj$ Production in $pp$ Collisions
 	</b>
@@ -35,7 +35,7 @@ SM@LHC 2025
 <div style="font-size: large; margin-top:-5mm; margin-bottom:10mm"> Durham </div>
 <p style="line-height: 0.05;"> <img src="UniEdinburghLogo-transparent.png"; style="max-width:120px;float:center;border:none;margin-bottom:5mm;"> 
 <br><br><br>
-<span style="font-size: 11pt;">Find these slides at  <a href="/slides/sm@lhc_apr2025/#/">gdelaurentis.github.io/slides/sm@lhc_apr2025</a> </span>
+<span style="font-size: 11pt; margin-top: 10mm;">Find these slides at  <a href="/slides/sm@lhc_apr2025/#/">gdelaurentis.github.io/slides/sm@lhc_apr2025</a> </span>
 </div>
 
 ---
@@ -312,10 +312,14 @@ $\circ$ Assemble helicity amplitudes into 3 categories: <span style="font-size: 
      $\circ$ Amplitude should be gauge and Lorentz invariant, and little group covariant
 </div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 10mm; margin-right: 2mm;">
-     ${\color{red} ✗}$ gauge dependence; reference vector dependence; tensors decomposition $\epsilon_\mu T^\mu$
+     ${\color{red} ✗}$ gauge dependence, e.g. through reference vectors <br>
+     
+</div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 10mm; margin-right: 2mm;">
+     ${\color{red} ✗}$ tensor decompositions <span style="font-size: 16pt;">$\epsilon_\mu T^\mu$</span>, polarizations are needed for simplifications
 </div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 10mm; margin-right: 2mm;">
-     ${\color{greeN} ✓}$ $P^\mu\sigma_{\mu\alpha\dot\alpha} = \lambda_\alpha \tilde\lambda_{\dot\alpha}$; all $\alpha, \dot\alpha$ indices contracted
+     ${\color{greeN} ✓}$ <span style="font-size: 16pt;">$\epsilon_\mu \rightarrow \epsilon_{\alpha\dot\alpha}$, $P^\mu \rightarrow  \lambda_\alpha \tilde\lambda_{\dot\alpha}$</span>; all <span style="font-size: 16pt;">$\alpha, \dot\alpha$</span> indices contracted
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
@@ -331,7 +335,7 @@ $\circ$ Assemble helicity amplitudes into 3 categories: <span style="font-size: 
      ${\color{greeN} ✓}$ Chiral cancellations yield true Least Common Denominator
 </div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 10mm; margin-right: 2mm;">
-     ${\color{greeN} ✓}$ Work off the real slice: $P^\mu \in \mathbb{C}^4$, $\lambda_\alpha \neq \tilde\lambda_{\dot\alpha}^\dagger$
+     ${\color{greeN} ✓}$ Work off the real slice: <span style="font-size: 16pt;">$P^\mu \in \mathbb{C}^4$, $\lambda_\alpha \neq \tilde\lambda_{\dot\alpha}^\dagger$</span>. In practice, <span style="font-size: 16pt;">$P^{\mu=y}\in i\mathbb{Q}\Rightarrow \lambda_{\alpha} \in \mathbb{F}_p \text{ or } \mathbb{Q}_p$</span>
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
@@ -359,7 +363,7 @@ $\circ$ Assemble helicity amplitudes into 3 categories: <span style="font-size: 
 
 <br><br><br><br>
 
-<span style="font-size: 18pt">based on:<span> <br>
+<span style="font-size: 18pt">see algebro-geometric formulation in:<span> <br>
 <span style="font-size: 18pt">[GDL, Page (JHEP 12 (2022) 140)](https://arxiv.org/abs/2203.04269)<span>
 
 
@@ -610,7 +614,8 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
 <br>
 
 <div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 5mm;">
-     $\circ$ The <span style="font-size: 14pt;">$pp\rightarrow Wjj$</span> coefficient functions are now 1.9 MB (from 1.4 GB), of which 1.6 MB for gluons NMHV, 200 KB are the gluons mhv one, and 100 KB are the quarks nmhv.
+     $\circ$ The <span style="font-size: 14pt;">$pp\rightarrow Wjj$</span> coefficient functions are now 1.9 MB (from 1.4 GB), fast and stable. <br>
+     $\phantom{\circ}$ Matrices <span style="font-size: 15pt;">$M_{ij}$</span> account for another 2 MB overall
 </div>
 <div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 2mm;">
     <div style="padding: 0 10px;">
@@ -621,12 +626,20 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
     </div>
 </div>
 
-<div style="text-align: left; font-size: 16pt; margin-bottom: 1mm; margin-top: -4mm;">
-     $\phantom{\circ}$ Since <code style="font-size: 14pt;">PentagonsFunction++</code> can take permutations of the 1-mass basis we only need one <span style="font-size: 14pt;">$M_{ij}$</span> per partial <br> $\phantom{\circ}$ (another 2 MB overall). We now have fast and stable floating-point evaluations in double precision!
+<div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
+     $\circ$ The complexity split is: quarks NMHV: 100 KB, gluons MHV: 200 KB, gluons NMHV: 1.6 MB.
 </div>
-
-<div style="text-align: left; font-size: 16pt; margin-bottom: 1mm; margin-top: 5mm;">
-     $\circ$ quarks nmhv and gluons mhv largest number has 3-digit, gluons nmhv 12 digits
+<div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
+     $\circ$ The largest numbers are: quarks NMHV and gluons MHV: 3-digit, gluons NMHV: 12 digits.
+</div>
+<div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
+     $\circ$ Five-point one-mass transcendental basis <a href="https://gitlab.com/pentagon-functions/PentagonFunctions-cpp">PentagonFunctions++</a>
+</div>
+<div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
+     $\circ$ Pheno ready results available at <a href="https://gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp">FivePointAmplitudes</a>
+</div>
+<div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
+     $\circ$ Amplitudes at <a href="https://github.com/GDeLaurentis/antares-results">antares-results</a>, with <a href="https://gdelaurentis.github.io/antares-results/index.html">human readable results</a>, and <a href="https://github.com/GDeLaurentis/antares-results/actions/">CI tests</a> for full amplitude in real kinematics
 </div>
 
 </section>
