@@ -198,6 +198,9 @@ $$
           $\sigma^{\text{tot.}}_{pp \, \rightarrow \, Z \, + \, n\,j}:$
      </span><img src="cross-sections-transposed-transparent-v2.png"; style="max-width:600px;float:center;border:none; margin-top:-10mm ;margin-bottom:2mm; margin-left:25mm;">
 </div>
+<a style="font-size: large; text-align: right; float: right; margin-top: -8mm; margin-bottom: -4mm;" href=https://inspirehep.net/literature/2808096>
+ATLAS Collab. '24
+</a>
 
 <div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 0mm;">
      $\circ\,$ NNLO is essential for agreement with experiment, e.g.
@@ -536,7 +539,7 @@ $\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" sty
 <div style="margin-top: 2mm; margin-bottom: 3mm">
      <b style="font-variant: small-caps; font-size: 32pt"> Reconstruction from Conjectured Properties </b>
      <p style="margin-top: -2mm; margin-bottom: -=mm; font-size: 16pt;">
-     (for planar five-point one-mass amplitudes)
+     (for planar five-point one-mass amplitudes - all properties checked a posteriori)
      </p>
 </div>
 
@@ -562,19 +565,24 @@ $\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" sty
      $\circ\,$ Denominator pairs <span style="font-size: 16pt">$\{\mathcal{D}_i, \mathcal{D}_j\}$</span> can be <i>separated to order $\kappa$</i>:
 </div>
 
-<div style="text-align: left; font-size: 18pt; margin-top: 3mm; margin-bottom: -2mm;">
-     $\circ\,$ These properties are only checked a posteriori
+<div style="text-align: center; font-size: 18pt; margin-top: 3mm; margin-bottom: -2mm;">
+     ${\color{greeN} ✓}$ Reconstruction only requires <span style="font-size: 16pt">$\mathbb{F}_p$</span> samples $\;{\color{greeN} ✓}$Already simpler than original ones (<span style="font-size: 14pt">$\sim$</span>20MB) <br>
+     $\;{\color{red} ✗}$ Results are unstable and sub-optimal, e.g. numbers of this size appeared
 </div>
+<span style="font-size: 14pt">127187555379407704220939486282289348327703498501718808908391691454242601886997968263623652083189652150273</span>
 
 ---
 
 <div style="margin-top: 2mm; margin-bottom: 3mm">
-     <b style="font-variant: small-caps; font-size: 32pt"> Multivariate Partial Fraction Decompositions </b>
+     <b style="font-variant: small-caps; font-size: 32pt"> Iterated Pole Subtraction </b>
      <p style="margin-top: -2mm; margin-bottom: -=mm; font-size: 16pt;">
      (i.e. geometry at codimension greater than one)
      </p>
 </div>
 
+<div style="text-align: left; font-size:16pt; margin-top: 0mm; margin-bottom: 0mm;">
+     $\circ$ Multivariate Partial Fraction Decompositions
+</div>
 <div style="display: flex; margin-top:-6mm;">
     <div style="flex: 1;">
         <img src="V1.png" style="max-width:60%; height:auto;">
@@ -602,30 +610,26 @@ $\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" sty
     </div>
 </div>
 
-<div style="text-align: left; font-size:16pt; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     $\circ$ When is a partial fraction decomposition possible? (an example)
-</div><br>
-<div style="font-size:14pt; float: center; margin-top: -6mm; margin-bottom: 1mm;">
-     $$
-     \frac{\mathcal{N}}{(\prod_j \mathcal{D}_j^{q_j})\times\langle 4|1+3|4]\langle 5|1+4|5]} \stackrel{?}{=} \frac{\mathcal{N}_1}{(\prod_j \mathcal{D}_j^{q_j})\times\langle 4|1+3|4]} + \frac{\mathcal{N}_2}{(\prod_j \mathcal{D}_j^{q_j})\times\langle 5|1+4|5]}
-     $$
+<div style="text-align: left; font-size: 16pt; margin-top: -4mm; margin-bottom: 0mm;">
+$\circ\,$ Retain control iterating surface by surface
+</div>
+<div style="text-align: left; font-size: 13pt; margin-top: 0mm; margin-bottom: 1mm;">
+$$ 
+\begin{alignedat}{2}
+& r^{(139 \text{ of } 139)}_{\bar{u}^+g^+g^-d^-(V\rightarrow \ell^+ \ell^-)} = & \qquad\qquad & {\small \text{Variety (scheme?) to isolate term(s)}} \\[2mm]
+& +\frac{7/4(s_{24}-s_{13})⟨6|1+4|5]s_{123}(s_{124}-s_{134})}{⟨1|2+3|4]⟨2|1+4|3]^2 Δ_{14|23|56}} & \qquad\qquad & \Big\langle ⟨2|1+4|3]^2, Δ_{14|23|56} \Big\rangle \\[1mm]
+& -\frac{49/64⟨3|1+4|2]⟨6|1+4|5]s_{123}(s_{123}-s_{234})(s_{124}-s_{134})}{⟨1|2+3|4]⟨2|1+4|3]Δ^2_{14|23|56}} + \dots & \qquad\qquad & \Big\langle Δ_{14|23|56} \Big\rangle
+\end{alignedat}
+$$
 </div>
 
-<div style="text-align: left; font-size:16pt; float: left; margin-top: 2mm; margin-bottom: -4mm;">
-     $\circ$ Compute primary decompositions and check if <span style="font-size: 14p">$\mathcal{N}$</span> vanishes on all branches (Hilbert's Nullstellensatz)
-</div><br>
-<div style="font-size:14pt; float: center; margin-top: -4mm; margin-bottom: 1mm;">
-     $$
-     J = K \cap \bar K \cap L \cap \bar L \cap M \quad \text{or} \quad V(J) = V(K) \cup V(\bar K) \cup V(L) \cup V(\bar L) \cap V(M)
-     $$
+<div style="text-align: left; font-size: 16pt; margin-top: -4mm; margin-bottom: -4mm;">
+$\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
 </div>
-
-<div style="font-size:14pt; float: center; margin-top: 1mm; margin-bottom: 1mm;">
+<div style="text-align: left; font-size: 12pt; margin-top: 0mm; margin-bottom: 1mm;">
      $$
-     J = \big\langle \langle 4|1+3|4], \langle 5|1+4|5] \big\rangle \qquad
-     K = \big\langle \langle14\rangle,\langle15\rangle,\langle45\rangle,[23] \big\rangle \quad
-     L = \big\langle \langle ij\rangle \; \forall \; i,j\in\{1,\dots 5\} \big\rangle \\[2mm]
-     M = \big\langle \langle 4|1+3|4], \langle 5|1+4|5], |1+4|5\rangle\langle14\rangle + |5|4\rangle\langle15\rangle, \langle\rangle \leftrightarrow [] \big\rangle
+     \sqrt{\big\langle ⟨2|1+4|3], Δ_{14|23|56} \big\rangle} = \big\langle s_{124}-s_{134}, ⟨2|1+4|3] \big\rangle \, , \\[1mm] 
+     \big\langle ⟨1|2+3|4], ⟨2|1+4|3] \big\rangle = \big\langle ⟨1|2+3|4], ⟨2|1+4|3], (s_{13}-s_{24})\big\rangle \cap \big\langle ⟨12⟩, [34] \big\rangle
      $$
 </div>
 
@@ -648,20 +652,6 @@ $\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" sty
 <b style="font-variant: small-caps; font-size: 36pt; margin-bottom: -6mm;"> Spinor-Helicity Results </b>
 <br>
 
-<div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: -4mm;">
-     $\circ$ The 5-gluon MHV rational functions fit in 3 pages of the appendix,
-</div>
-
-<div style="text-align: center; float:center; font-size: x-large; margin-bottom: 1mm; margin-top: -2mm;">
-<img src="VSSizeTable-transparent.png"; style="max-width:350px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;">
-<img src="quarks_vs_sizes.png"; style="max-width:340px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;">
-</div>
-
-<div style="text-align: left; font-size: 13pt; margin-bottom: 1mm; margin-top: 5mm;">
-     $$ \tilde{r}^{\text{MHV}}_{\text{first 5 of 115}} = \left\{ \frac{⟨45⟩^2}{⟨12⟩⟨13⟩⟨23⟩}, \frac{⟨45⟩^3}{⟨12⟩^2⟨34⟩⟨35⟩}, \frac{⟨45⟩^3}{⟨12⟩⟨15⟩⟨23⟩⟨34⟩}, \frac{[14][12][35]}{⟨23⟩[45]^3}, \frac{⟨45⟩^2⟨24⟩}{⟨12⟩^2⟨23⟩⟨34⟩}, \dots \right\} \text{+ symmetries}$$
-</div>
-
-
 <div style="text-align: left; font-size: 16pt; margin-bottom: 1mm; margin-top: 5mm;">
      $\circ$ The <span style="font-size: 14pt;">$pp\rightarrow Wjj$</span> functions are now 1.9 MB (from 1.4 GB),
 </div>
@@ -676,78 +666,14 @@ $\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" sty
     </div>
 </div>
 
+1.6MB 200KB 100KB
+
 <div style="text-align: left; font-size: 16pt; margin-bottom: 1mm; margin-top: -4mm;">
      $\phantom{\circ}$ Since <code style="font-size: 14pt;">PentagonsFunction++</code> can take permutations of the 1-mass basis we only need one <span style="font-size: 14pt;">$M_{ij}$</span> per partial <br> $\phantom{\circ}$ (another 2 MB overall). We now have fast and stable floating-point evaluations in double precision!
 </div>
 
-
----
-
-<b style="font-variant: small-caps; font-size: 30pt; margin-bottom: 4mm;">
-   Taming the Complexity Growth
-</b>
-
-<div style="display:block; width:100%; font-size: 16pt; margin-top: 4mm; margin-bottom: 4mm;">
-     <div style="width:50%; text-align: left; float: left; display: font-size: x-large; margin-top:8mm;">
-          $\circ$ For every leg or mass, the number of letters in the spinor alphabet grows, as well their mass dimension;  <br><br>
-          $\circ$ The LCD Ansatz size also grows quickly with <br> multiplicity (m) and mass dimension (d): <br><br>
-          <a style="font-size: 12pt; display: inline-block; text-align: right; float: right; margin-left: 0mm; margin-top: -12mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/2010.14525>
-               GDL, Maître ('20)
-          </a> <br>
-          <div style="text-align: left; font-size: 14pt; margin-top: -12mm; margin-bottom: 1mm;">
-               $$
-               \displaystyle \kern2mm \text{Ansatz size} \geq \small \left(\mkern -9mu \begin{pmatrix}\, m(m-3)/2 \, \\ \, d/2 \, \end{pmatrix} \mkern -9mu \right)
-               $$
-          </div>
-     </div>
-     <div style="width:50%; float: right; display: inline-block; margin-top: 4mm;">
-          <img src="AnsatzSizes.png"; style="max-width:430px;float:center;border:none;margin-top:-10pt;margin-bottom: 0mm;">
-     </div>
-</div>
-
-<br><br><br><br><br><br><br><br>
-
-<div style="text-align: left; font-size: 16pt; margin-top: -6mm; margin-bottom: -4mm;">
-$\circ\,$ We can retain control by iterating surface by surface
-</div>
-<a style="font-size: 12pt; display: inline-block; text-align: right; float: right; margin-left: 0mm; margin-top: -3mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/fix>
-     Campbell, GDL, Ellis, ('22)$\;$
-</a>
-<a style="font-size: 12pt; display: inline-block; text-align: right; float: right; margin-left: 0mm; margin-top: -3mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/2203.04269>
-     GDL, Page ('22);$\;$
-</a>
-<a style="font-size: 12pt; display: inline-block; text-align: right; float: right; margin-left: 0mm; margin-top: -3mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1904.04067>
-     GDL, Maître ('19);$\;$
-</a>
-
-<br>
-<div style="text-align: left; font-size: 13pt; margin-top: -8mm; margin-bottom: 1mm;">
-$$ 
-\begin{alignedat}{2}
-& r^{(139 \text{ of } 139)}_{\bar{u}^+g^+g^-d^-(V\rightarrow \ell^+ \ell^-)} = & \qquad\qquad & {\small \text{Variety (scheme?) to isolate term(s)}} \\[2mm]
-& +\frac{7/4(s_{24}-s_{13})⟨6|1+4|5]s_{123}(s_{124}-s_{134})}{⟨1|2+3|4]⟨2|1+4|3]^2 Δ_{14|23|56}} & \qquad\qquad & \Big\langle ⟨2|1+4|3]^2, Δ_{14|23|56} \Big\rangle \\[1mm]
-& -\frac{49/64⟨3|1+4|2]⟨6|1+4|5]s_{123}(s_{123}-s_{234})(s_{124}-s_{134})}{⟨1|2+3|4]⟨2|1+4|3]Δ^2_{14|23|56}} + \dots & \qquad\qquad & \Big\langle Δ_{14|23|56} \Big\rangle
-\end{alignedat}
-$$
-</div>
-<!--- 
- \\[1mm]
-& + {\small \dots \text{more than 30 other fractions} \dots } &&
-& +\frac{1/4[12]^3⟨14⟩[45]⟨46⟩}{[13][23]⟨1|2+3|1]⟨4|5+6|4]^2} & \qquad\qquad & \Big\langle ⟨1|2+3|1], ⟨4|5+6|4]^2 \Big\rangle \\[1mm]
-& -\frac{1/4[12]2⟨13⟩⟨24⟩[45]⟨46⟩}{⟨12⟩[13]⟨2|1+3|2]⟨4|5+6|4]^2}-\frac{3/4⟨34⟩2[45]⟨46⟩⟨3|1+2|4]}{⟨14⟩⟨23⟩⟨2|1+3|4]⟨4|5+6|4]^2} & \qquad\qquad & \Big\langle ⟨4|5+6|4] \Big\rangle \\[1mm]
-& \frac{-7/8⟨16⟩⟨1|2+3|5]⟨3|1+4|2](s_{13}-s_{24} )(s_{123}-s_{234})}{⟨14⟩⟨1|2+3|4]^2⟨2|1+4|3]Δ_{14|23|56}} & \qquad\qquad & \Big\langle ⟨1|2+3|4]^2, Δ_{14|23|56} \Big\rangle \\[1mm]
-& +\frac{7/2⟨13⟩^3[15]⟨16⟩[23]}{⟨12⟩⟨14⟩⟨1|2+3|1]⟨1|2+3|4]^2}+\frac{7/2⟨13⟩^2⟨16⟩[25]}{⟨12⟩⟨14⟩⟨1|2+3|4]^2} & \qquad\qquad & \Big\langle ⟨1|2+3|4] \Big\rangle \\[1mm]
-& -\frac{7⟨24⟩[25][35]s_{123}}{⟨12⟩[23][56]⟨2|1+4|3]^2} & \qquad\qquad & \Big\langle ⟨2|1+4|3] \Big\rangle \\[1mm]
---->
-
-<div style="text-align: left; font-size: 16pt; margin-top: -4mm; margin-bottom: -4mm;">
-$\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
-</div>
-<div style="text-align: left; font-size: 12pt; margin-top: 0mm; margin-bottom: 1mm;">
-     $$
-     \sqrt{\big\langle ⟨2|1+4|3], Δ_{14|23|56} \big\rangle} = \big\langle s_{124}-s_{134}, ⟨2|1+4|3] \big\rangle \, , \\[1mm] 
-     \big\langle ⟨1|2+3|4], ⟨2|1+4|3] \big\rangle = \big\langle ⟨1|2+3|4], ⟨2|1+4|3], (s_{13}-s_{24})\big\rangle \cap \big\langle ⟨12⟩, [34] \big\rangle
-     $$
+<div style="text-align: left; font-size: 16pt; margin-bottom: 1mm; margin-top: 5mm;">
+     $\circ$ quarks nmhv and gluons mhv largest number has 3-digit, gluons nmhv 12 digits
 </div>
 
 </section>
@@ -755,31 +681,6 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
 ---
 
 <section>
-
-<!---
-<b style="font-variant: small-caps; font-size: xxx-large; margin-bottom: 10mm;">
-   Conclusions
-</b>
-
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
-     $\circ\,$ Full-color 5-point massless amplitudes are well within reach, 
-</div>
-
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
-     $\circ\,$ Subleading color corrections can be fairly sizable
-</div>
-
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
-     $\circ\,$ The reconstruction can be peformed in spinor-helicity variables, which yield compact results
-</div>
-
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
-     $\circ\,$ Understanding the partial fraction structure of amplitudes is essential to tame their complexity
-</div>
-
----
---->
-
 
 {{< slide background-image="durham.jpeg" >}}
 
