@@ -48,22 +48,13 @@ SM@LHC 2025
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> Cross Sections at the Large Hadron Collider </b>
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> $V+n\text{-jet}$ Cross Sections at the LHC </b>
 
-<div style="display: flex; justify-content: center; margin-top: 0mm;">
-    <div style="margin: 0 10px;">
-        <img src="LHC_map.jpg" style="max-width:480px; border:none; margin-top: 8.5mm; margin-bottom: 0mm;">
-    </div>
-    <div style="margin: 0 10px;">
-        <img src="ATLAS-XSections-transparent.png" style="max-width:450px; border:none; margin-top: 0mm; margin-bottom: 0mm;">
-    </div>
-</div>
 
 <div style="text-align: left; font-size: 18pt; float: left; margin-top: -2mm; margin-bottom: 4mm;">
-     $\circ\,$ Observations at the LHC are beautifully predicted by the Standard Model through,
+     $\circ\,$ Observations at the LHC are beautifully predicted by the Standard Model
 </div>
-
-<div style="font-size: 18pt; float: center; margin-top: 0mm; margin-bottom: 0mm;">
+<div style="font-size: 16pt; float: center; margin-top: 0mm; margin-bottom: 0mm;">
 $$
 \require{color}
 \require{amsmath}
@@ -71,119 +62,77 @@ $$
 \hat{σ}_{n}=\frac{1}{2\hat{s}}\int d\Pi_{n-2}\;(2π)^4δ^4\big(\sum_{i=1}^n p_i\big)\;|\overline{\mathcal{A}(p_i,h_i,a_i,μ_F, μ_R)}|^2 \, .
 $$
 </div>
-
 <div style="text-align: left; float:center; font-size: 18pt; margin-top: -3mm; margin-bottom: 4mm;">
-    $\phantom{\circ}\,$ At least to the extent with which we can compute <span style="font-size: 15pt"> $\mathcal{A} = \mathcal{A}^{(0)} + \alpha_{(s)}\mathcal{A}^{(1)} + \alpha^2_{(s)}\mathcal{A}^{(2)} + \dots$</span>
+    $\phantom{\circ}\,$ at least to the extent with which we can compute <span style="font-size: 14pt"> $\mathcal{A} = \mathcal{A}^{(0)} + \alpha_{(s)}\mathcal{A}^{(1)} + \alpha^2_{(s)}\mathcal{A}^{(2)} + \dots$</span>
 </div>
 
----
-
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> QCD Corrections to $V+n-jets$ </b>
-
-<div style="margin: 0 10px;">
-     <table style="border-collapse: collapse; text-align: center; margin-top: 4mm; font-size: 14pt;">
-          <tr>
-               <td style="border: 1px solid black; padding: 5px;">4-Loops</td>
-               <td style="border: 1px solid black; padding: 5px; background-color: #FF7F7F;">
-               </td>
-               <td style="border: 1px solid black; padding: 5px; background-color: #FF7F7F;">
-               </td>
-               <td style="border: 1px solid black; padding: 5px; background-color: #FF7F7F;">
-               </td>
-               <td style="border: 1px solid black; padding: 5px; background-color: #FF7F7F;">
-               ?
-               </td>
-          </tr>
-          <tr>
-               <td style="border: 1px solid black; padding: 5px;">3-Loops</td>
-               <td style="border: 1px solid black; padding: 5px; background-color: #90EE90;">
-               <a href="https://arxiv.org/abs/example4">[X]</a>
-               </td>
-               <td style="border: 1px solid black; padding: 5px; background-color: #FFD700;">
-               <a href="https://arxiv.org/abs/example8">✓</a>
-               </td>
-               <td style="border: 1px solid black; padding: 5px; background-color: #FF7F7F;">
-               ?
-               </td>
-               <td style="border: 1px solid black; padding: 5px; background-color: #FF7F7F;">
-               ?
-               </td>
-          </tr>
-          <tr>
-               <td style="border: 1px solid black; padding: 5px;">2-Loops</td>
-               <td style="border: 1px solid black; padding: 5px; background-color: #90EE90;">
-               <a href="https://arxiv.org/abs/2307.15405">[X]</a>
-               </td>
-               <td style="border: 1px solid black; padding: 5px; background-color: #90EE90;">
-               <a href="https://arxiv.org/abs/example7">✓</a>
-               </td>
-               <td style="border: 1px solid black; padding: 5px; background-color: #FFD700;">
-               <a href="https://arxiv.org/abs/2110.07541">✓</a>
-               </td>
-               <td style="border: 1px solid black; padding: 5px; background-color: #FF7F7F;">
-               ?
-               </td>
-          </tr>
-          <tr>
-               <td style="border: 1px solid black; padding: 5px;">1-Loop</td>
-               <td style="border: 1px solid black; padding: 5px; background-color: #90EE90;">
-               <a href="https://arxiv.org/abs/example2">✓</a>
-               </td>
-               <td style="border: 1px solid black; padding: 5px; background-color: #90EE90;">
-               <a href="https://arxiv.org/abs/example6">✓</a>
-               </td>
-               <td style="border: 1px solid black; padding: 5px; background-color: #90EE90;">
-               <a href="https://arxiv.org/abs/example10">[X]</a>
-               </td>
-               <td style="border: 1px solid black; padding: 5px; background-color:rgb(234, 255, 0);">
-               <a href="https://arxiv.org/abs/example11"></a>
-               </td>
-          </tr>
-          <tr>
-               <td style="border: 1px solid black; padding: 5px;">Tree</td>
-               <td style="border: 1px solid black; padding: 5px; background-color: #90EE90;">
-               <a href="https://arxiv.org/abs/example2">[1]</a>
-               </td>
-               <td style="border: 1px solid black; padding: 5px; background-color: #90EE90;">
-               </td>
-               <td style="border: 1px solid black; padding: 5px; background-color: #90EE90;">
-               <a href="https://arxiv.org/abs/example10"></a>
-               </td>
-               <td style="border: 1px solid black; padding: 5px; background-color: #90EE90;">
-               <a href="https://arxiv.org/abs/example10"></a>
-               </td>
-          </tr>
-          <tr>
-               <th style="border: 1px solid black; padding: 5px;">Loops ↑ vs Jets →</th>
-               <th style="border: 1px solid black; padding: 5px;">$0$</th>
-               <th style="border: 1px solid black; padding: 5px;">$1$</th>
-               <th style="border: 1px solid black; padding: 5px;">$2$</th>
-               <th style="border: 1px solid black; padding: 5px;">$\geq3$</th>
-          </tr>
-     </table>
-     <div style="margin-top: 5mm; margin-bottom: 2mm; font-size: 12pt;">
-     <span style="background-color: #90EE90; padding: 5px; margin-right: 10px;">Analytic</span>
-     <span style="background-color: rgb(234, 255, 0); padding: 5px; margin-right: 10px;"> Numeric</span>
-     <span style="background-color: #FFD700; padding: 5px; margin-right: 10px;">Analytic (planar)</span>
-     <span style="background-color: #FF7F7F; padding: 5px; margin-right: 10px;">Unknown</span>
+<div style="display: flex; justify-content: center; margin-top: 0mm;">
+     <div style="margin: 0 10px; margin-left: -2mm;">
+         <img src="ATLAS-XSections-transparent-Vnj.png" style="max-width:450px; border:none; margin-top: 0mm; margin-bottom: 0mm;">
      </div>
-</div>
-
-<a href="https://arxiv.org/abs/2307.15405" style="font-size: 14pt">[X] T. Gehrmann, P. Jakubčík, C. C. Mella, N. Syrrakos, L. Tancredi '23</a>
-<br>
-<a href="https://arxiv.org/abs/hep-ph/9708239" style="font-size: 14pt">[X] Z. Bern, L. Dixon, D.A. Kosower '97</a>
-
-
-<div style="text-align: left; font-size: 16pt;margin-top: 4mm; margin-bottom: 4mm;">
-     $\circ\,$ High-multiplicity two-loop amplitudes are required also because:
-</div>
-<div style="display:block; width:100%;margin-top:-2mm;">
-  <div style="width:100%; font-size: 16pt; float: left; text-align: left; ">
-       $\qquad\star$ they are real-virtual-virtual contributions to emerging N$^{3}$LO computations;
-  </div>
-  <div style="width:100%; font-size: 16pt; float: left; text-align: left; ">
-       $\qquad\star$ several interesting kinematic regions are only accessible with extra radiation (e.g. <span style="font-size: 16pt">$p_T$</span> distributions).
-  </div>
+     <div style="margin: 0 10px; margin-left: -2mm;">
+          <table style="border-collapse: collapse; text-align: center; margin-top: 4mm; font-size: 14pt;">
+               <tr>
+                    <td style="border: 1px solid black; padding: 5px; text-align: center;">3</td>
+                    <td style="border: 1px solid black; padding: 5px; background-color: #FFD700; text-align: center;">
+                    2023 <a href="https://arxiv.org/abs/example8">[6]</a>
+                    </td>
+                    <td style="border: 1px solid black; padding: 5px; background-color: #FF7F7F; text-align: center;">
+                    ?
+                    </td>
+                    <td style="border: 1px solid black; padding: 5px; background-color: #FF7F7F; text-align: center;">
+                    ?
+                    </td>
+               </tr>
+               <tr>
+                    <td style="border: 1px solid black; padding: 5px; text-align: center;">2</td>
+                    <td style="border: 1px solid black; padding: 5px; background-color: #90EE90; text-align: center;">
+                    2007 <a href="https://arxiv.org/abs/example7">[4]</a>
+                    </td>
+                    <td style="border: 1px solid black; padding: 5px; background-color: #FFD700; text-align: center;">
+                    2021 <a href="https://arxiv.org/abs/2110.07541">[5]</a>
+                    </td>
+                    <td style="border: 1px solid black; padding: 5px; background-color: #FF7F7F; text-align: center;">
+                    ?
+                    </td>
+               </tr>
+               <tr>
+                    <td style="border: 1px solid black; padding: 5px; text-align: center;">1</td>
+                    <td style="border: 1px solid black; padding: 5px; background-color: #90EE90; text-align: center;">
+                    1981 <a href="https://arxiv.org/abs/example6">[1]</a>
+                    </td>
+                    <td style="border: 1px solid black; padding: 5px; background-color: #90EE90; text-align: center;">
+                    1997 <a href="https://arxiv.org/abs/example10">[2]</a>
+                    </td>
+                    <td style="border: 1px solid black; padding: 5px; background-color:rgb(250, 255, 0); text-align: center;">
+                    2008 <a href="https://arxiv.org/abs/example11">[3]</a>
+                    </td>
+               </tr>
+               <tr>
+                    <th style="border: 1px solid black; padding: 5px; text-align: center;">Loops ↑<br>Jets →</th>
+                    <th style="border: 1px solid black; padding: 5px; text-align: center;">$1$</th>
+                    <th style="border: 1px solid black; padding: 5px; text-align: center;">$2$</th>
+                    <th style="border: 1px solid black; padding: 5px; text-align: center;">$\geq3$</th>
+               </tr>
+          </table>
+          <div style="margin-top: 5mm; margin-bottom: 2mm; font-size: 12pt;">
+               <span style="background-color: #90EE90; padding: 5px; margin-right: 10px;">Analytic</span>
+               <span style="background-color: rgb(250, 255, 0); padding: 5px; margin-right: 10px;"> Numeric</span>
+               <span style="background-color: #FFD700; padding: 5px; margin-right: 10px;">Analytic (LCA)</span>
+               <span style="background-color: #FF7F7F; padding: 5px; margin-right: 10px;">Unknown</span>
+          </div>
+          <div style="width: 105%; margin-left: -2mm;">
+               <div style="font-size: 14pt; margin-top: 4mm; margin-bottom: -4mm;">
+                    <a href="https://www.sciencedirect.com/science/article/abs/pii/0550321381901656?via%3Dihub">[1] Ellis, Ross, Terrano; </a>
+                    <a href="https://arxiv.org/abs/hep-ph/9708239">[2] Bern, Dixon, Kosower;</a>
+                    <a href="https://arxiv.org/abs/0803.4180">[3] BlackHat; </a><a href="https://arxiv.org/abs/1907.13071">OpenLoops; </a>
+                    <a href="https://arxiv.org/abs/0711;.4711">[4] Gehrmann-De Ridder, Gehrmann, Glover, Heinrich; </a>
+                    <a href="https://arxiv.org/abs/2110.07541">[5] Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov </a> 
+                    <a href="https://arxiv.org/abs/2503.10595" style="color:rgb(255, 149, 0);">+ This talk; </a>
+                    <a href="https://arxiv.org/abs/2307.15405">[6] Gehrmann, Jakubčík, Mella, Syrrakos, Tancredi</a>
+               </div>
+          </div>
+     </div>
 </div>
 
 ---
@@ -353,7 +302,7 @@ $\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" sty
 	</div>
 </div>
 
-<a href="https://arxiv.org/abs/hep-ph/9708239" style="font-size: 18pt">[1] Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov '21</a>
+<a href="https://arxiv.org/abs/2110.07541" style="font-size: 18pt">[1] Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov '21</a>
 
 </section>
 
@@ -450,7 +399,7 @@ $\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" sty
      <div style="width:35%; float: right; display: inline-block; margin-top: 6mm; ">
           <img src="variety_slice_v2-transparent.png"; style="max-width:360px; float:center; border:none; margin-top: -5mm; margin-bottom: -2mm;">
           <div style="width:100%; font-size: 14pt; margin-top: 0mm; margin-bottom: 1mm;">
-               Space has dimension $4n-4$, 
+               Space has dimension $4n-4$,
           </div>
           <div style="width:100%; font-size: 14pt; margin-top: 0mm; margin-bottom: 1mm;">
                $\mathcal{D}_j = 0$ have dimension $4n-5$,
