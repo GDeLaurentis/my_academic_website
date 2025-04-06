@@ -324,7 +324,7 @@ $\circ$ Assemble helicity amplitudes into 3 categories: <span style="font-size: 
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ The singularity structure should be manifest in $\mathbb{C}$
+     $\circ$ The singularity structure should be manifest in $\mathbb{C}$ (thing will then be better behaved in $\mathbb{R}$ too)
 </div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 10mm; margin-right: 2mm;">
      ${\color{red} ✗}$ Rational reparametrisations of the kinematics change the denominator structure
@@ -573,7 +573,7 @@ $\circ$ Assemble helicity amplitudes into 3 categories: <span style="font-size: 
 </div>
 
 <div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
-$\circ\,$ Retain control by iteratively fitting residues on varieties
+$\circ\,$ Retain control by iteratively fitting residues on varieties (using $p$-adic numbers, $\mathbb{Q}_p$)
 </div>
 <div style="text-align: left; font-size: 13pt; margin-top: 0mm; margin-bottom: 1mm;">
 $$ 
