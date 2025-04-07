@@ -324,7 +324,7 @@ $\circ$ Assemble helicity amplitudes into 3 categories: <span style="font-size: 
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ The singularity structure should be manifest in $\mathbb{C}$ (thing will then be better behaved in $\mathbb{R}$ too)
+     $\circ$ The singularity structure should be manifest in $\mathbb{C}$ (exprs will then be better behaved in $\mathbb{R}$ too)
 </div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 10mm; margin-right: 2mm;">
      ${\color{red} ✗}$ Rational reparametrisations of the kinematics change the denominator structure
@@ -634,7 +634,7 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g. (see
      $\circ$ The largest numbers are: quarks NMHV and gluons MHV: 3-digit, gluons NMHV: 12 digits.
 </div>
 <div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
-     $\circ$ Pheno ready results available at <a href="https://gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp">FivePointAmplitudes</a>.
+     $\circ$ Pheno ready results for the hard functions are available at <a href="https://gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp">FivePointAmplitudes</a>.
 </div>
 <div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
      $\circ$ Amplitudes at <a href="https://github.com/GDeLaurentis/antares-results">antares-results</a>, with <a href="https://gdelaurentis.github.io/antares-results/index.html">human readable expr.</a>, and <a href="https://github.com/GDeLaurentis/antares-results/actions/">CI tests</a> for full amplitude in real kinematics
