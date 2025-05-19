@@ -19,7 +19,7 @@ slides:
 
 <h3 style="margin-top:5mm; margin-left: -10mm; margin-right: -10mm;">
 	<b style="margin-top:15mm; font-size: 32pt; text-transform: none;">
-	   Analytic Structure and Reconstruction in QCD: Two-Loop $pp \to Vjj$ and One-Loop $q\bar{q}\rightarrow t\bar{t}H$
+	   Analytic Structure and Reconstruction in QCD: Two-Loop $\boldsymbol{pp \to Vjj}$ and One-Loop $\boldsymbol{q\bar{q}\rightarrow t\bar{t}H}$
 	</b>
 </h3>
 
@@ -49,14 +49,78 @@ LoopFest XXIII
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> $V+n\text{-jet}$ Cross Sections at the LHC </b>
+<b style="font-variant: small-caps; font-size: 32pt; margin-top: 2mm; margin-bottom: 0mm;">Phenomenological Motivation</b>
 
-
-<div style="display: flex; justify-content: center; margin-top: 0mm;">
-     <div style="margin: 0 10px; margin-left: -2mm;">
-         <img src="ATLAS-XSections-transparent-Vnj.png" style="max-width:450px; border:none; margin-top: 0mm; margin-bottom: 0mm;">
+<div style="text-align: left; font-size: 18pt; margin-bottom: 4mm; margin-top: 0mm;">
+     $\circ\,$ <span style="font-size: 16pt">$pp\rightarrow Vjj$</span> (or similarly <span style="font-size: 16pt">$e^+e^-\rightarrow V \rightarrow 4j$</span>) is important for several EW precision measurements
+</div>
+<!-- Static background image (fades via fragment) -->
+<div style="position: relative; width: 100%; min-height: 450px;">
+     <!-- Fragment 1: full-opacity image -->
+     <div class="fragment" data-fragment-index="1"
+          style="position: absolute; top: 0; left: 0; z-index: 0; margin-top: 4mm;">
+          <img src="ATLAS-XSections-transparent.png"
+               style="max-width: 550px; opacity: 1; border: none; margin: 0;" />
      </div>
-     <div style="margin: 0 10px; margin-left: -2mm;">
+     <!-- Fragment 2: faded image and content -->
+     <div class="fragment visible" data-fragment-index="2" 
+          style="position: absolute; top: 0; left: 0; z-index: 0; margin-top: 4mm;">
+          <img src="ATLAS-XSections-transparent-Vnj.png"
+               style="max-width: 550px; opacity: 0.10; border: none; margin: 0;" />
+     </div>
+     <!-- Main text container (shown at same time as faded background) -->
+     <div class="fragment visible" data-fragment-index="2"
+          style="position: relative; z-index: 1; margin-left: 15%; padding: 10px;">
+          <div style="text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: -5mm;">
+          $\rightarrow\,$ Theoretical uncertainties are already larger than experimental ones,
+          <img src="cross-sections-transposed-transparent-v2.png"
+               style="max-width:600px; border:none; margin-left:20mm; margin-top: 2mm;" />
+          <a style="font-size: large; text-align: right; float: right; margin-top: -6mm;" href="https://inspirehep.net/literature/2808096">
+          ATLAS Collab. '24
+          </a>
+          </div>
+          <div style="clear: both; text-align: left; font-size: 18pt; margin-top: -10mm;">
+          $\rightarrow\,$ NNLO is essential for agreement with experiment,
+          <a style="font-size: large; text-align: right; float: right; margin-top: 5mm;" href="https://arxiv.org/abs/2404.08598">
+          Mazzitelli, Sotnikov, Wiesemann '24
+          </a>
+          <img src="Z1jSotnikov-transparent-v2.png"
+               style="max-width:500px; border:none; margin-left:24mm; margin-top: 0mm;" />
+          <div style="text-align: left; font-size: 18pt; margin-top: -5mm; margin-bottom: 0mm;">
+          Only two other studies at NNLO for <span style="font-size: 16pt">$q\bar q'\rightarrow Wb\bar b, \; \text{e.g. no} \; gg\rightarrow Wq\bar q'$</span>
+          </div>
+          <a style="font-size: large; text-align: right; float: right; margin-top: -2mm; margin-bottom: -3mm;" href="https://arxiv.org/abs/2212.04954">
+          $\,$Buonocore, Devoto, Kallweit, Mazzitelli, Rottoli, Savoini '22;
+          </a>
+          <a style="font-size: large; text-align: right; float: right; margin-top: -2mm; margin-bottom: -3mm;" href="https://arxiv.org/abs/2205.01687">
+          Hartanto, Poncelet, Popescu, Zoia '22;$\,$
+          </a>
+          </div>
+     </div>
+</div>
+
+<div class="fragment" data-fragment-index="2"
+     style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: -4mm;">
+     $\circ\,$ <span style="font-size: 16pt">$pp\rightarrow ttH$</span> of interest primarely for direct access to top Yukawa $y_t$ (but also CP, EFTs, ...) <br>
+     $\phantom{\circ}\,$ NNLO pheno. relies on approximate amplitudes
+     <a style="font-size: large; text-align: right; float: right; margin-top: 1mm; margin-bottom: -3mm;" href="https://arxiv.org/abs/2210.07846">
+     Catani, Devoto, Grazzini, Kallweit, Mazzitelli, Savoini '22;$\,$
+     </a>
+     <a style="font-size: large; text-align: right; float: right; margin-top: -3mm; margin-bottom: -3mm;" href="https://arxiv.org/abs/2411.15340">
+     Devoto, Grazzini, Kallweit, Mazzitelli, Savoini '24;$\,$
+     </a>
+</div>
+
+---
+
+<b style="font-variant: small-caps; font-size: 32pt"> Theoretical Motivation </b>
+<div style="display: flex; justify-content: center; margin-top: 0mm;">
+     <div style="width: 50%; text-align: left; font-size: 17pt; margin: 0 10px; margin-left: 0mm;">
+          $\circ\,$ Limited knowledge at higher loops/points <br>
+          $\circ\,$ Pheno can be hindered by complexity of results. It's hard to do Monte Carlo integration <br> 
+          $\phantom{\circ}\,$ and verify IR cancellations when you have to evaluate >1GB of files in higher precision.
+     </div>
+     <div style="width: 50%; font-size: 16pt; margin: 0 10px; margin-left: 0mm;">
           <table style="border-collapse: collapse; text-align: center; margin-top: 4mm; font-size: 14pt;">
                <tr>
                     <td style="border: 1px solid black; padding: 5px; text-align: center;">3</td>
@@ -119,64 +183,6 @@ LoopFest XXIII
                </div>
           </div>
      </div>
-</div>
-
-
-<div style="text-align: left; font-size: 18pt; float: left; margin-top: -2mm; margin-bottom: 4mm;">
-     $\phantom{\circ}\,$ Observations at the LHC are beautifully predicted by the Standard Model
-</div>
-<div style="font-size: 16pt; float: center; margin-top: 0mm; margin-bottom: 0mm;">
-$$
-\require{color}
-\require{amsmath}
-σ_{2 \rightarrow n - 2} = \sum_{a,b} \int dx_a dx_b f_{a/h_1}(x_a, \mu_F) \, f_{b/h_2}(x_b, \mu_F) \;\hat{\sigma}_{ab\rightarrow n-2}(x_a, x_b, \mu_F, \mu_R) \, , \\
-\hat{σ}_{n}=\frac{1}{2\hat{s}}\int d\Pi_{n-2}\;(2π)^4δ^4\big(\sum_{i=1}^n p_i\big)\;|\overline{\mathcal{A}(p_i,h_i,a_i,μ_F, μ_R)}|^2 \, .
-$$
-</div>
-<div style="text-align: left; float:center; font-size: 18pt; margin-top: -3mm; margin-bottom: 4mm;">
-    $\phantom{\circ}\,$ at least to the extent with which we can compute <span style="font-size: 14pt"> $\mathcal{A} = \mathcal{A}^{(0)} + \alpha_{(s)}\mathcal{A}^{(1)} + \alpha^2_{(s)}\mathcal{A}^{(2)} + \dots$</span>
-</div>
-
----
-
-<b style="font-variant: small-caps; font-size: 32pt"> Precision Physics Requires Compact Amplitudes </b>
-
-<div style="text-align: left; font-size: 18pt; float: left; margin-top: -1mm; margin-bottom: -2mm;">
-     $\circ\,$ Theoretical uncertainties already larger than experimental ones, especially at higher points
-</div>
-<div style="width:100%; float: left; display: inline-block;">
-     <span style="width:100%; font-size: 16pt; float: left; text-align: left; margin-left:12mm; margin-top:16mm; margin-bottom:-10mm;">
-          $\sigma^{\text{tot.}}_{pp \, \rightarrow \, Z \, + \, n\,j}:$
-     </span><img src="cross-sections-transposed-transparent-v2.png"; style="max-width:600px;float:center;border:none; margin-top:-10mm ;margin-bottom:2mm; margin-left:25mm;">
-</div>
-<a style="font-size: large; text-align: right; float: right; margin-top: -8mm; margin-bottom: -4mm;" href=https://inspirehep.net/literature/2808096>
-ATLAS Collab. '24
-</a>
-
-<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 0mm;">
-     $\circ\,$ NNLO is essential for agreement with experiment, e.g.
-</div>
-<a style="font-size: large; text-align: right; float: right; margin-top: -4mm; margin-bottom: -4mm;" href=https://arxiv.org/abs/2404.08598>
-Mazzitelli, Sotnikov, Wiesemann '24
-</a>
-<div style="width:100%; display: inline-block;">
-     <span style="width:100%; font-size: 18pt; float: left; text-align: left; margin-left:5mm; margin-top:15mm; margin-bottom:-10mm;">
-          $\frac{d\sigma_{pp \, \rightarrow \, Z \, + \, \geq 1 \, b \text{ jet}}}{d |\eta|^{b-\text{jet}_1}}:$
-     </span><img src="Z1jSotnikov-transparent-v2.png"; style="max-width:550px;text-align:center;border:none;margin-top:-15mm ;margin-bottom:2mm;">
-</div>
-
-<div style="text-align: left; font-size: 18pt; margin-top: 0mm; margin-bottom: 2mm;">
-     $\circ\,$ Besides this, only two other cross-section studies at NNLO, only for the process <span style="font-size: 16pt">$q\bar q'\rightarrow Wb\bar b$</span>
-</div>
-<a style="font-size: large; text-align: right; float: right; margin-top: -3mm; margin-bottom: -3mm;" href=https://arxiv.org/abs/2212.04954>
-$\,$Buonocore, Devoto, Kallweit, Mazzitelli, Rottoli, Savoini '22;
-</a>
-<a style="font-size: large; text-align: right; float: right; margin-top: -3mm; margin-bottom: -3mm;" href=https://arxiv.org/abs/2205.01687>
-Hartanto, Poncelet, Popescu, Zoia '22;$\,$
-</a>
-
-<div style="text-align: left; font-size: 18pt; margin-top: 10mm; margin-bottom: 4mm;">
-     $\circ\,$ Phenomenology can be hindered by complexity of results. It's hard to do Monte Carlo integration <br> $\phantom{\circ}\,$ and verify IR cancellations when you have to evaluate >1GB of files in higher precision.
 </div>
 
 </section>
@@ -303,14 +309,14 @@ $\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" sty
 </div>
 
 <div style="font-size: 18pt; text-align:left; margin-bottom: 0mm; margin-top: 4mm;">
-$\circ$ Assemble helicity amplitudes into 3 categories: <span style="font-size: 15pt;">$\mathcal{R}_{\bar qQ\bar QqV}^{\text{NMHV}} ,\, \mathcal{R}_{\bar qggqV}^{\text{MHV}} ,\, \mathcal{R}_{\bar qggqV}^{\text{NMHV}}$</span>
+$\rightarrow$ Assemble 5 helicity amplitudes into 3 categories: <span style="font-size: 15pt;">$\mathcal{R}_{\bar qQ\bar QqV}^{\text{NMHV}} ,\, \mathcal{R}_{\bar qggqV}^{\text{MHV}} ,\, \mathcal{R}_{\bar qggqV}^{\text{NMHV}}$</span>
 </div>
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Guiding Principles </b>
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> Guiding Principles </b>
 
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: -2mm; margin-left: 2mm; margin-right: 2mm;">
      $\circ$ Amplitude should be gauge and Lorentz invariant, and little group covariant
 </div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
@@ -330,7 +336,7 @@ $\circ$ Assemble helicity amplitudes into 3 categories: <span style="font-size: 
      ${\color{red} ✗}$ Rational reparametrisations of the kinematics change the denominator structure
 </div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{red} ✗}$ If a function is neither even nor odd, forcing the split misses cancellations
+     ${\color{red} ✗}$ Forcing unphysical splits misses cancellations (e.g. even nor odd separation)
 </div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 6mm; margin-right: 2mm;">
      ${\color{greeN} ✓}$ Chiral cancellations are required to obtain the true Least Common Denominator
@@ -345,8 +351,11 @@ $\circ$ Assemble helicity amplitudes into 3 categories: <span style="font-size: 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
      ${\color{red} ✗}$ Unphysical intermediate steps may be unnecessarily complicated
 </div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
+     ${\color{red} ✗}$ Analytic manipulations at this complexity are unfeasible, even on "physical" results
+</div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{greeN} ✓}$ Bypass all intermediate steps with numerical evaluations
+     ${\color{greeN} ✓}$ Bypass all intermediate steps with numerical evaluations (cancellations happen numerically)
 </div>
 
 ---
