@@ -118,9 +118,10 @@ LoopFest XXIII
      <div style="width: 50%; text-align: left; font-size: 17pt; margin: 0 10px; margin-left: 0mm;">
           $\circ\,$ Limited knowledge at higher loops/points <br>
           $\circ\,$ Pheno can be hindered by complexity of results. It's hard to do Monte Carlo integration <br> 
-          $\phantom{\circ}\,$ and verify IR cancellations when you have to evaluate >1GB of files in higher precision.
+          $\phantom{\circ}\,$ and verify IR cancellations when you have to evaluate >1GB of files in higher precision. <br>
+          $\circ\,$ Goal:
      </div>
-     <div style="width: 50%; font-size: 16pt; margin: 0 10px; margin-left: 0mm;">
+     <div style="width: 55%; font-size: 14pt; margin: 0 10px; margin-left: 0mm;">
           <table style="border-collapse: collapse; text-align: center; margin-top: 4mm; font-size: 14pt;">
                <tr>
                     <td style="border: 1px solid black; padding: 5px; text-align: center;">3</td>
@@ -183,6 +184,17 @@ LoopFest XXIII
                </div>
           </div>
      </div>
+</div>
+
+<br>
+
+<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: -4mm;">
+     $\circ\,$ <span style="font-size: 16pt">$q\bar q\rightarrow ttH$</span> not known analytically, even at one-loop <br>
+     $\phantom{\circ}\,$ <span style="font-size: 16pt">$gg\rightarrow ttH$</span> to $\mathcal{O}(\epsilon^2)$ in 2312.10015 <br>
+     Numerical, Nf, qq initiated, Nf, 2402.03301 Bakul Agarwal,a Gudrun Heinrich,a Stephen P. Jones,b Matthias Kerner,a Sven
+Yannick Klein,c Jannis Lang,a Vitaly Magerya,a Anton Olssona <br>
+     2312.08131 2L Nf master integrals F. Febres Cordero, G. Figueiredo, M. Kraus, B. Page, L. Reina <br>
+     $\circ\,$ Goal:
 </div>
 
 </section>
@@ -413,12 +425,11 @@ $$
 
 <br><br><br>
 
-<span style="font-size: 18pt">see algebro-geometric formulation in:<span> <br>
+<span style="font-size: 18pt">algebro-geometric formulation for physicists in:<span> <br>
 <span style="font-size: 18pt">[GDL, Page (JHEP 12 (2022) 140)](https://arxiv.org/abs/2203.04269)<span>
 
 <span style="font-size: 18pt">see also Sturmfeld et al. "Spinor-Helicity Varieties":<span> <br>
 <span style="font-size: 18pt">[arXiv:2406.17331](https://arxiv.org/abs/2406.17331)<span>
-
 
 ---
 
@@ -440,7 +451,7 @@ $$
           </div>
           --->
 	     <div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 1mm;">
-                $\circ\,$ The rational functions <span style="font-size: 16pt">$r_i$</span> belong to the field of fractions of <span style="font-size: 16pt">$R_n$</span>,
+                $\circ\,$ The rational functions <span style="font-size: 16pt">$r_i$</span> belong to the field of fractions of <span style="font-size: 16pt">$R_X$</span>,
           </div>
           <div style="font-size:16pt; text-align: center; margin-top: 2mm; margin-bottom: 2mm">
                $$
@@ -454,11 +465,11 @@ $$
           <div style="font-size: 16pt; float: left; margin-top: 2mm; margin-bottom: 2mm;">
                $\circ\,$ The <span style="font-size: 14pt">$\mathcal{D}_j$</span> are (mostly) related to the letters of the symbol alphabet
           </div>
-          <a style="font-size: 13pt; text-align: center; float: left; margin-left:40mm; margin-top: 0mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1812.04586>
+          <a style="font-size: 13pt; text-align: right; float: right; margin-top: -3mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1812.04586>
           Abreu, Dormans, Febres Cordero, Ita, Page ('18)
           </a>
           <br>
-          <div style="text-align: center; float: center; font-size: 14pt; margin-top: 15mm; margin-bottom: 4mm;">
+          <div style="text-align: center; float: center; font-size: 14pt; margin-top: 10mm; margin-bottom: 4mm;">
                $
                \displaystyle \mathcal{D}_{Vjj} \subset \kern-3mm \bigcup_{\sigma \; \in \; \text{Aut}(R_6)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1], \langle 1|2+3|4], s_{123}, \\[-2mm] \kern30mm \Delta_{12|34|56}, ⟨3|2|5+6|4|3]-⟨2|1|5+6|4|2] \big\}
                $
@@ -490,7 +501,7 @@ $$
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> Basis Change from Pole Residues </b>
+<b style="font-variant: small-caps; font-size: xxx-large"> Basis Change from Laurent Coefficients </b>
 
 <div style="text-align: left; font-size: 16pt; float: left; margin-top: -2mm; margin-bottom: -2mm;">
      $\circ\,$ Change basis from a subset of the pentagon coefficients $r_{i \in \mathcal{B}}$ to <span style="font-size: 14pt">$\mathbb{Q}$</span>-linear combinations $\tilde r$,
@@ -586,7 +597,7 @@ $$
 </div>
 
 <div style="text-align: center; font-size: 18pt; margin-top: 3mm; margin-bottom: -2mm;">
-     ${\color{greeN} ✓}$ Reconstruction only requires <span style="font-size: 16pt">$\mathbb{F}_p$</span> samples $\;{\color{greeN} ✓}$Already simpler than original ones (<span style="font-size: 14pt">$\sim$</span>20MB) <br>
+     ${\color{greeN} ✓}$ Reconstruction only required 50k <span style="font-size: 16pt">$\mathbb{F}_p$</span> samples $\;{\color{greeN} ✓}$Already simpler than original ones (<span style="font-size: 14pt">$\sim$</span>20MB) <br>
      $\;{\color{red} ✗}$ Results are unstable and sub-optimal, e.g. numbers like this appeared
 </div>
 <span style="font-size: 14pt">127187555379407704220939486282289348327703498501718808908391691454242601886997968263623652083189652150273</span>
@@ -602,6 +613,12 @@ $$
 
 <div style="text-align: left; font-size:16pt; margin-top: -2mm; margin-bottom: 0mm;">
      $\circ$ Multivariate partial fraction decompositions follow from varieties where pairs of denominator factors vanish
+</div>
+<div style="text-align: left; font-size: 13pt; margin-top: 2mm; margin-bottom: 1mm;">
+$$ 
+\frac{\mathcal{N}}{\mathcal{D}_1\mathcal{D}_2} \stackrel{?}{=}
+ \frac{\mathcal{N}_2}{\mathcal{D}_1} + \frac{\mathcal{N}_1}{\mathcal{D}_2} \; \Longleftrightarrow \; \mathcal{N} \stackrel{?}{\in} \big\langle \mathcal{D}_1, \mathcal{D}_2 \big\rangle \, \text{ i.e. } \; \mathcal{N} \stackrel{?}{=} \mathcal{N}_1 \mathcal{D}_1 + \mathcal{N}_2 \mathcal{D}_2
+$$
 </div>
 <div style="display: flex; margin-top:-6mm;">
     <div style="flex: 1;">
@@ -631,14 +648,14 @@ $$
 </div>
 
 <div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
-$\circ\,$ Retain control by iteratively fitting residues on varieties (using $p$-adic numbers, $\mathbb{Q}_p$)
+$\circ\,$ Retain control by iteratively fitting residues on varieties (using <span style="text-size: 14pt">$p$</span>-adic numbers $\mathbb{Q}_p$, get $\mathbb{F}_p$ vals for nums)
 </div>
 <div style="text-align: left; font-size: 13pt; margin-top: 0mm; margin-bottom: 1mm;">
 $$ 
 \begin{alignedat}{2}
 & r^{(139 \text{ of } 139)}_{\bar{u}^+g^+g^-d^-(V\rightarrow \ell^+ \ell^-)} = & \qquad\qquad & {\small \text{Variety (scheme?) to isolate term(s)}} \\[2mm]
-& +\frac{7/4(s_{24}-s_{13})⟨6|1+4|5]s_{123}(s_{124}-s_{134})}{⟨1|2+3|4]⟨2|1+4|3]^2 Δ_{14|23|56}} & \qquad\qquad & \Big\langle ⟨2|1+4|3]^2, Δ_{14|23|56} \Big\rangle \\[1mm]
-& -\frac{49/64⟨3|1+4|2]⟨6|1+4|5]s_{123}(s_{123}-s_{234})(s_{124}-s_{134})}{⟨1|2+3|4]⟨2|1+4|3]Δ^2_{14|23|56}} + \dots & \qquad\qquad & \Big\langle Δ_{14|23|56} \Big\rangle
+& +\frac{7/4{\color{blue}(s_{24}-s_{13})}⟨6|1+4|5]s_{123}{\color{green}(s_{124}-s_{134})}}{⟨1|2+3|4]⟨2|1+4|3]^2 Δ_{14|23|56}} + ... & \qquad\qquad & \Big\langle ⟨2|1+4|3]^2, Δ_{14|23|56} \Big\rangle \\[1mm]
+% & -\frac{49/64⟨3|1+4|2]⟨6|1+4|5]s_{123}(s_{123}-s_{234})(s_{124}-s_{134})}{⟨1|2+3|4]⟨2|1+4|3]Δ^2_{14|23|56}} + \dots & \qquad\qquad & \Big\langle Δ_{14|23|56} \Big\rangle
 \end{alignedat}
 $$
 </div>
@@ -648,23 +665,45 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g. (see
 </div>
 <div style="text-align: left; font-size: 12pt; margin-top: 0mm; margin-bottom: 1mm;">
      $$
-     \sqrt{\big\langle ⟨2|1+4|3], Δ_{14|23|56} \big\rangle} = \big\langle s_{124}-s_{134}, ⟨2|1+4|3] \big\rangle \, , \\[1mm] 
-     \big\langle ⟨1|2+3|4], ⟨2|1+4|3] \big\rangle = \big\langle ⟨1|2+3|4], ⟨2|1+4|3], (s_{13}-s_{24})\big\rangle \cap \big\langle ⟨12⟩, [34] \big\rangle
+     \sqrt{\big\langle ⟨2|1+4|3], Δ_{14|23|56} \big\rangle} = \big\langle {\color{green}(s_{124}-s_{134})}, ⟨2|1+4|3] \big\rangle \, , \\[1mm] 
+     \big\langle ⟨1|2+3|4], ⟨2|1+4|3] \big\rangle = \big\langle ⟨1|2+3|4], ⟨2|1+4|3], {\color{blue}(s_{13}-s_{24})}\big\rangle \cap \big\langle ⟨12⟩, [34] \big\rangle
      $$
 </div>
 
 ---
 
 <div style="margin-top: 2mm; margin-bottom: -2mm">
-     <b style="font-variant: small-caps; font-size: 32pt"> Building any special Phase Space Point </b>
-     <p style="margin-top: -2mm; margin-bottom: -=mm; font-size: 16pt;">
-     (i.e. multivariate solver in an arbitrary quotient-ring over any field $\small \mathbb{Q}, \mathbb{F}_p, \mathbb{Q}_p$)
-     </p>
+     <b style="font-variant: small-caps; font-size: 32pt"> Core Tools - Fully Open Source </b>
 </div>
-
 
 <div style="text-align: center; float: center; font-size: 16pt; margin-top: 0mm; margin-bottom: 0mm;">
      For a fleshed out example with open-source code see <a href=https://inspirehep.net/literature/2661970> GDL (ACAT '22) </a>
+</div>
+
+<div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 2mm;">
+     Install from github (<code style="font-size:14pt;">git clone</code>) or PyPI (<code style="font-size:14pt;">pip install</code>), use of Jupyter is recommended.
+</div>
+
+<div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
+     $\circ$ pyadic <br>
+     $\quad\rightarrow$ Finite-charactistic number types $Q_p$, $F_p$ <br>
+     $\quad\rightarrow$ rational number reconstruction (Wang's EEA, LGRR, MQRR) <br>
+     $\quad\rightarrow$ univariate and multivariante Newthon & univariate Thiele interpolation algorithms
+</div>
+
+<div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
+     $\circ$ syngular (backhand Singular for many operations)<br>
+     $\quad\rightarrow$ object-oriented algebraic geometry (Field, Ring, Quotient Ring, Ideal) <br>
+     $\quad\rightarrow$ ring-agnostic monomials and polynomials (with support for unicode characters, e.g. spinor brackets)<br>
+     $\quad\rightarrow$ multivariate solver (Ideal.point_on_variety), under- and over-constrained systems OK <br>
+     $\quad\rightarrow$ custom prime and primary semi-numerical test
+</div>
+
+<div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
+     $\circ$ lips (Lorentz invariant phase space)<br>
+     $\quad\rightarrow$ phase space points over any field ($Q, Qi, R, C, Qp, Fp$), including internal and external masses <br>
+     $\quad\rightarrow$ evaluate any Mandelstam or spinor expression (custom ast/regex parser) <br>
+     $\quad\rightarrow$ generation of any special kinematic configuration (wrapper around Ideal.point_on_variety)
 </div>
 
 </section>
@@ -710,15 +749,23 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g. (see
 
 ---
 
-<b style="font-variant: small-caps; font-size: 36pt; margin-bottom: -6mm;"> A New Kind of CAS </b>
+<b style="font-variant: small-caps; font-size: 34pt; margin-bottom: -6mm;"> A Numerical CAS for Computations in Q-Rings </b>
 <br>
 <div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
      $\circ$ Most operations do not require defining the variables, only being able to evaluate them.
 </div>
 
-
 <div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
      $\circ$ Only need to define the quotient ring to build the Ansatz (and even not having the redundancies is not a big problem)
+</div>
+
+<div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
+     $\circ$ github.com/GDeLaurentis/antares-results
+</div>
+<div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 2mm;">
+    <div style="padding: 0 10px;">
+        <img src="antares-results-transparent.png" style="width: 100%; max-width: 250px; border: none; margin-top: 2mm; margin-bottom: 0mm;">
+    </div>
 </div>
 
 </section>
@@ -727,7 +774,7 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g. (see
 
 <section>
 
-{{< slide background-image="durham.jpeg" >}}
+{{< slide background-image="edmonton.jpg" >}}
 
 <div style="margin-top: 50mm; margin-bottom: 30mm;">
 <b style="font-variant: small-caps; font-size: xxx-large;"> Thank you <br> for your attention! </b>
