@@ -713,14 +713,14 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
 </div>
 
 <div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
-     $\circ$ pyadic <br>
+     $\circ$ <a href="https://github.com/GDeLaurentis/pyadic/" style="font-size: 20pt; font-variant: small-caps;">pyadic</a><br>
      $\quad\rightarrow$ Finite-charactistic number types $Q_p$, $F_p$, including field extensions <br>
      $\quad\rightarrow$ rational number reconstruction (Wang's EEA, LGRR, MQRR) <br>
      $\quad\rightarrow$ univariate and multivariante Newthon & univariate Thiele interpolation algorithms
 </div>
 
 <div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
-     $\circ$ syngular (in the backhand Singular is used for many operations)<br>
+     $\circ$ <a href="https://github.com/GDeLaurentis/syngular/" style="font-size: 20pt; font-variant: small-caps;">syngular</a> (in the backhand Singular is used for many operations)<br>
      $\quad\rightarrow$ object-oriented algebraic geometry (Field, Ring, Quotient Ring, Ideal) <br>
      $\quad\rightarrow$ ring-agnostic monomials and polynomials (with support for unicode characters, e.g. spinor brackets)<br>
      $\quad\rightarrow$ multivariate solver (Ideal.point_on_variety), under- and over-constrained systems OK <br>
@@ -728,7 +728,7 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
 </div>
 
 <div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
-     $\circ$ lips (Lorentz invariant phase space)<br>
+     $\circ$ <a href="https://github.com/GDeLaurentis/lips/" style="font-size: 20pt; font-variant: small-caps;">lips</a> (Lorentz invariant phase space)<br>
      $\quad\rightarrow$ phase space points over any field ($Q, Qi, R, C, Qp, Fp$), including internal and external masses <br>
      $\quad\rightarrow$ evaluate any Mandelstam or spinor expression (custom ast/regex parser) <br>
      $\quad\rightarrow$ generation of any special kinematic configuration (wrapper around Ideal.point_on_variety)
@@ -788,7 +788,7 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
 </div>
 
 <div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
-     $\circ$ github.com/GDeLaurentis/antares-results
+     $\circ$ <a href="https://github.com/GDeLaurentis/antares/" style="font-size: 20pt; font-variant: small-caps;">antares</a> (automated numerical to analytical reconstruction software), <a href="https://github.com/GDeLaurentis/antares-results/" style="font-size: 20pt; font-variant: small-caps;">antares-results</a>, <a href="https://gdelaurentis.github.io/antares-results/">documentation</a>
 </div>
 <div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 2mm;">
     <div style="padding: 0 10px;">
