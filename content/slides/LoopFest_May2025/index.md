@@ -57,19 +57,19 @@ LoopFest XXIII
 <!-- Static background image (fades via fragment) -->
 <div style="position: relative; width: 100%; min-height: 450px;">
      <!-- Fragment 1: full-opacity image -->
-     <div class="fragment" data-fragment-index="1"
+     <div class="fragment" data-fragment-index="0"
           style="position: absolute; top: 0; left: 0; z-index: 0; margin-top: 4mm;">
           <img src="ATLAS-XSections-transparent.png"
                style="max-width: 550px; opacity: 1; border: none; margin: 0;" />
      </div>
-     <!-- Fragment 2: faded image and content -->
-     <div class="fragment visible" data-fragment-index="2" 
+     <!-- Fragment 1: faded image and content -->
+     <div class="fragment visible" data-fragment-index="1" 
           style="position: absolute; top: 0; left: 0; z-index: 0; margin-top: 4mm;">
           <img src="ATLAS-XSections-transparent-Vnj.png"
                style="max-width: 550px; opacity: 0.10; border: none; margin: 0;" />
      </div>
      <!-- Main text container (shown at same time as faded background) -->
-     <div class="fragment visible" data-fragment-index="2"
+     <div class="fragment visible" data-fragment-index="1"
           style="position: relative; z-index: 1; margin-left: 15%; padding: 10px;">
           <div style="text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: -5mm;">
           $\rightarrow\,$ Theoretical uncertainties are already larger than experimental ones,
@@ -99,7 +99,7 @@ LoopFest XXIII
      </div>
 </div>
 
-<div class="fragment" data-fragment-index="2"
+<div class="fragment" data-fragment-index="1"
      style="text-align: left; font-size: 17pt; margin-bottom: 2mm; margin-top: -8mm;">
      $\circ\,$ <span style="font-size: 16pt">$pp\rightarrow ttH$</span> of interest primarily for direct access to top Yukawa <span style="font-size: 16pt">$y_t$</span> (but also CP, EFTs, 2HDM, etc.) <br>
      $\phantom{\circ}\,$ current N$^2$LO pheno. relies on approx. amplitudes
@@ -296,12 +296,12 @@ $\mathbb{Q}_p$: GDL, Page ('22)
 
 <b style="font-variant: small-caps; font-size: 34pt; magin-bottom: -5mm;"> Setting up the Calculation </b> <br>
 
-<div style="font-size: 18pt; text-align:left; margin-bottom: 0mm; margin-top: 0mm;">
-$\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" style="font-size: 18pt">[1]</a> was performed with <code style="font-size: 17pt">Caravel</code>
+<div style="font-size: 17pt; text-align:left; margin-bottom: 0mm; margin-top: 0mm;">
+$\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" style="font-size: 18pt">[1]</a> was performed with <span style="font-variant: small-caps;font-size: 17pt">Caravel</span>
 </div>
 
 <div style="display:block; width:100%; margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm;">
-     <div style="font-size: 16pt; width:75%; text-align: left; display: inline-block; margin-top: 3mm;">
+     <div style="font-size: 15pt; width:75%; text-align: left; display: inline-block; margin-top: 1mm;">
 	     $$
 	     \require{color}
 	     \displaystyle \sum_{\text{states}} \, \prod_{\text{trees}} A^{\text{tree}}(\lambda, \tilde\lambda, \ell)\big|_{\text{cut}_{\Gamma}} = \sum_{\substack{\Gamma' \ge \Gamma, \\ i \in M_\Gamma' \cup S_\Gamma'}} \kern-2mm {\color{black}{c_{\,\Gamma',i}(\lambda, \tilde\lambda)}} \, \frac{m_{\Gamma',i}(\lambda\tilde\lambda, \ell)}{\displaystyle \prod_{j\in P_{\Gamma'} / P_{\Gamma}} \rho_{j}(\lambda\tilde\lambda, \ell)}\Bigg|_{\text{cut}_\Gamma}
@@ -315,31 +315,36 @@ $\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" sty
 	     <br>
 	     <a style="font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 5mm;"
 	     	href=https://arxiv.org/abs/2009.11957>
-		<div style="margin-top:0mm"> Abreu, Dormans, </div>
-		<div> Febres Cordero, Ita  </div>
-		<div> Kraus, Page, Pascual, </div>
-		<div> Ruf, Sotnikov ('20) </div>
+		<div style="margin-top:-4mm; font-size: 11pt;"> Abreu, Dormans, </div>
+		<div style="margin-top:0mm; font-size: 11pt;"> Febres Cordero, Ita  </div>
+		<div style="margin-top:0mm; font-size: 11pt;"> Kraus, Page, Pascual, </div>
+		<div style="margin-top:0mm; font-size: 11pt;"> Ruf, Sotnikov ('20) </div>
 	     </a>
 	</div>
-     <div style="font-size: 18pt; width:75%; text-align: left; display: inline-block; margin-top: 5mm; margin-bottom: -4mm;">
-	     $\star$ Numerical Berends-Giele recursion for LHS, solve for coeffs. in RHS.<br>
-	     $\star$ IBP reduction = decomposition on RHS, <span style="font-size: 16t">$\; m_{\Gamma,i} \in M_\Gamma \cup S_\Gamma$</span>
+     <div style="font-size: 16pt; width:75%; text-align: left; display: inline-block; margin-top: 2mm; margin-bottom: -4mm;">
+	     $\rightarrow$ Numerical Berends-Giele recursion for LHS, solve for coeffs. in RHS.<br>
+	     $\rightarrow$ IBP reduction = decomposition on RHS, <span style="font-size: 16t">$\; m_{\Gamma,i} \in M_\Gamma \cup S_\Gamma$</span>
 	</div>
 </div>
 
-<div style="font-size: 18pt; text-align: left; margin-bottom: 0mm; margin-top: 6mm;">
+<div style="font-size: 17pt; text-align: left; margin-bottom: 0mm; margin-top: 6mm;">
      $\circ$ This computation started from the ancillaries files of <a href="https://arxiv.org/abs/hep-ph/9708239" style="font-size: 14pt">[1] Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov</a>
-     <div style="font-size: 18pt; width:99%; text-align: left; display: inline-block; margin-top: 2mm; margin-left:10mm;">
+     <div style="font-size: 16pt; width:99%; text-align: left; display: inline-block; margin-top: 2mm; margin-left:10mm;">
 	     1. Wrote a Python script to split the 1.4 GB ancillaries into >10k files <br>
-	     2. Compile into 18.2 GB of C++ binaries (for reference <code style="font-size: 17pt">Caravel</code> compiles into approx. 5 GB) <br>
+	     2. Compile into 18.2 GB of C++ binaries (for reference <span style="font-variant: small-caps;font-size: 17pt">Caravel</span> compiles into approx. 5 GB) <br>
           3. Obtain <span style="font-size: 16t">$\mathbb{F}_p$</span> evaluations of the form factors (each takes approx. 1 sec per point)<br>
           4. Recombine triplets of form factors into helicity amplitudes
 	</div>
 </div>
 
-<div style="font-size: 18pt; text-align:left; margin-bottom: 0mm; margin-top: 4mm;">
-$\rightarrow$ Assemble 5 helicity amplitudes into 3 categories: <span style="font-size: 15pt;">$\mathcal{R}_{\bar qQ\bar QqV}^{\text{NMHV}} ,\, \mathcal{R}_{\bar qggqV}^{\text{MHV}} ,\, \mathcal{R}_{\bar qggqV}^{\text{NMHV}}$</span>
+<div style="font-size: 17pt; text-align:left; margin-bottom: 0mm; margin-top: 2mm;">
+$\rightarrow$ Assemble 5 helicity amplitudes into 3 categories: <span style="font-size: 14pt;">$\mathcal{R}_{\bar qQ\bar QqV}^{\text{NMHV}} ,\, \mathcal{R}_{\bar qggqV}^{\text{MHV}} ,\, \mathcal{R}_{\bar qggqV}^{\text{NMHV}}$</span>
 </div>
+
+<div style="font-size: 17pt; text-align: left; margin-bottom: 0mm; margin-top: 3mm;">
+     $\circ$ <span style="font-size: 15pt;">$ttH$</span> computed analytically (<span style="font-variant: small-caps;">Form</span> optimized) with unitarity, standard Feynman diagrams techniques, <br> $\phantom{\circ}$ and cross checked with <span style="font-variant: small-caps;">Open-Loops</span>
+</div>
+<a href="https://arxiv.org/abs/1907.13071" style="font-size: 14pt; margin-top: -5mm; float: right; font-align: right;"> Buccioni, Lang, Lindert, Maierhöfer, Pozzorini, Zhang, Zoller</a>
 
 </section>
 
@@ -423,7 +428,7 @@ $$
 $$
 </div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}$ where we took the the <span style="font-size: 15pt;">$V$</span> current to be <span style="font-size: 15pt;">$[5|\gamma^\mu|6\rangle$</span> and removed $5_{\alpha\dot\alpha}$ by mom. cons.; and
+     $\phantom{\circ}$ where we took the the <span style="font-size: 15pt;">$V$</span> current to be <span style="font-size: 15pt;">$[5|\gamma^\mu|6\rangle$</span> and removed <span style="font-size: 15pt;">$5_{\alpha\dot\alpha}$</span> by mom. cons.; and
 </div>
 <div style="font-size: 15pt; margin-top: 5mm; margin-bottom: 5mm">
 $$ 
@@ -714,7 +719,7 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
 
 <div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
      $\circ$ <a href="https://github.com/GDeLaurentis/pyadic/" style="font-size: 20pt; font-variant: small-caps;">pyadic</a><br>
-     $\quad\rightarrow$ Finite fields $\mathbb{F}_p$ and $p$-adic number types $\mathbb{Q}_p$, including field extensions <br>
+     $\quad\rightarrow$ Finite field $\mathbb{F}_p$ and $p$-adic $\mathbb{Q}_p$ number types, including field extensions <br>
      $\quad\rightarrow$ rational number reconstruction (Wang's EEA, LGRR, MQRR) <br>
      $\quad\rightarrow$ univariate and multivariante Newthon & univariate Thiele interpolation algorithms in $\mathbb{F}_p$
 </div>
@@ -729,7 +734,7 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
 
 <div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
      $\circ$ <a href="https://github.com/GDeLaurentis/lips/" style="font-size: 20pt; font-variant: small-caps;">lips</a> (Lorentz invariant phase space)<br>
-     $\quad\rightarrow$ phase space points over any field ($Q, Qi, R, C, Qp, Fp$), including internal and external masses <br>
+     $\quad\rightarrow$ phase space points over any field ($\mathbb{Q}, \mathbb{Q}[i], \mathbb{R}, \mathbb{C}, \mathbb{Q}_p, \mathbb{F}_p$), including internal and external masses <br>
      $\quad\rightarrow$ evaluate any Mandelstam or spinor expression (custom ast/regex parser) <br>
      $\quad\rightarrow$ generation of any special kinematic configuration (wrapper around Ideal.point_on_variety)
 </div>
@@ -742,7 +747,7 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
 
 {{< slide background-image="Wjj_diagrams.png">}}
 
-# Conclusion
+# <br> Conclusions <br> & <br> Outlook
 
 ---
 
@@ -777,18 +782,22 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
 
 ---
 
-<b style="font-variant: small-caps; font-size: 34pt; margin-bottom: -6mm;"> A Numerical CAS for Computations in Q-Rings </b>
-<br>
-<div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
-     $\circ$ Most operations do not require defining the variables, only being able to evaluate them.
+<div style="margin-top: 2mm; margin-bottom: -2mm">
+     <b style="font-variant: small-caps; font-size: 32pt"> A Numerical CAS for Computations in Q-Rings </b>
+     <p style="margin-top: -2mm; margin-bottom: -=mm; font-size: 16pt;">
+     (partially work in progress)
+     </p>
 </div>
 
 <div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
-     $\circ$ Only need to define the quotient ring to build the Ansatz (and even then not having anlytic identities for the redundancies is not a big problem)
+     $\circ$ <a href="https://github.com/GDeLaurentis/antares/" style="font-size: 20pt; font-variant: small-caps;">antares</a> (automated numerical to analytical reconstruction software) <br>
+     $\rightarrow$ Univariate slicing, LCD determination, basis change, ultivariate partial fractioning strategies, <br>
+     $\phantom{\rightarrow}$ constraining of numerators, Ansatz generation and fitting strategies <br>
+     $\rightarrow$ Most operations do not require defining the variables, only being able to evaluate them.
 </div>
 
 <div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
-     $\circ$ <a href="https://github.com/GDeLaurentis/antares/" style="font-size: 20pt; font-variant: small-caps;">antares</a> (automated numerical to analytical reconstruction software), <a href="https://github.com/GDeLaurentis/antares-results/" style="font-size: 20pt; font-variant: small-caps;">antares-results</a>, <a href="https://gdelaurentis.github.io/antares-results/">documentation</a>
+     $\circ$ <a href="https://github.com/GDeLaurentis/antares-results/" style="font-size: 20pt; font-variant: small-caps;">antares-results</a> (see <a href="https://gdelaurentis.github.io/antares-results/">documentation</a>)
 </div>
 <div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 2mm;">
     <div style="padding: 0 10px;">
