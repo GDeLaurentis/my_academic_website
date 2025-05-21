@@ -333,7 +333,7 @@ $\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" sty
 	     1. Wrote a Python script to split the 1.4 GB ancillaries into >10k files <br>
 	     2. Compile into 18.2 GB of C++ binaries (for reference <span style="font-variant: small-caps;font-size: 17pt">Caravel</span> compiles into approx. 5 GB) <br>
           3. Obtain <span style="font-size: 16t">$\mathbb{F}_p$</span> evaluations of the form factors (each takes approx. 1 sec per point)<br>
-          4. Recombine triplets of form factors into helicity amplitudes
+          4. Recombine triplets of form factors into six-point helicity amplitudes (incl. decays)
 	</div>
 </div>
 
@@ -428,15 +428,15 @@ $$
 $$
 </div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}$ where we took the the <span style="font-size: 15pt;">$V$</span> current to be <span style="font-size: 15pt;">$[5|\gamma^\mu|6\rangle$</span> and removed <span style="font-size: 15pt;">$5_{\alpha\dot\alpha}$</span> by mom. cons.; and
+     $\phantom{\circ}$ where we took the the <span style="font-size: 15pt;">$V$</span> current to be <span style="font-size: 15pt;">$[5|\gamma^\mu|6\rangle$</span> and removed <span style="font-size: 15pt;">$(5+6)_{\alpha\dot\alpha}$</span> by mom. cons.; and
 </div>
 <div style="font-size: 15pt; margin-top: 5mm; margin-bottom: 5mm">
 $$ 
-\displaystyle \kern10mm R_{ttH} = \frac{\mathbb{F}\big[|1⟩_{\alpha}, [1|_{\dot\alpha}, |2⟩_{\alpha}, [2|_{\dot\alpha}, |\boldsymbol{3}^I⟩_{\alpha}, [\boldsymbol{3}^I|_{\dot\alpha}, |\boldsymbol{4}_J⟩_{\alpha}, [\boldsymbol{4}_J|_{\dot\alpha}, \boldsymbol{5}_{\alpha\dot\alpha} \big]}{\big\langle \sum_{i=1}^5 |i\rangle[i|, \langle \boldsymbol{3}|\boldsymbol{3}⟩ +[\boldsymbol{3}|\boldsymbol{3}], \langle \boldsymbol{3}|\boldsymbol{3}⟩-\langle \boldsymbol{4}|\boldsymbol{4}⟩, \langle \boldsymbol{4}|\boldsymbol{4}⟩ +[\boldsymbol{4}|\boldsymbol{4}]\big\rangle}
+\displaystyle \kern10mm R_{ttH} = \frac{\mathbb{F}\big[|1⟩_{\alpha}, [1|_{\dot\alpha}, |2⟩_{\alpha}, [2|_{\dot\alpha}, |\boldsymbol{3}^I⟩_{\alpha}, [\boldsymbol{3}^I|_{\dot\alpha}, |\boldsymbol{4}_J⟩_{\alpha}, [\boldsymbol{4}_J|_{\dot\alpha}, \boldsymbol{5}_{\alpha\dot\alpha} \big]}{\big\langle \sum_{i,I,J} |i\rangle[i|, \langle \boldsymbol{3}|\boldsymbol{3}⟩ +[\boldsymbol{3}|\boldsymbol{3}], \langle \boldsymbol{3}|\boldsymbol{3}⟩-\langle \boldsymbol{4}|\boldsymbol{4}⟩, \langle \boldsymbol{4}|\boldsymbol{4}⟩ +[\boldsymbol{4}|\boldsymbol{4}]\big\rangle}
 $$
 </div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}$ where <span style="font-size: 15pt;">$\langle \boldsymbol{3}^I|\boldsymbol{3}^J⟩=m\epsilon^{JI} \text{ and } [\boldsymbol{3}^I|\boldsymbol{3}^J⟩=\bar{m}\epsilon^{IJ}$</span>; we are setting <span style="font-size: 15pt;">$m=\bar{m}$</span> and the tops on-shell. <br>
+     $\phantom{\circ}$ where <span style="font-size: 15pt;">$\langle \boldsymbol{3}^I|\boldsymbol{3}^J⟩=m\epsilon^{JI} \text{ and } [\boldsymbol{3}^I|\boldsymbol{3}^J]=\bar{m}\epsilon^{IJ}$</span>; we are setting <span style="font-size: 15pt;">$m=\bar{m}$</span> and the tops on-shell. <br>
      $\phantom{\circ}$ <u>Note</u>: we need only reconstruct a single choice, say <span style="font-size: 15pt;">$I=J=1$</span>, the other follow by covariance.
 </div>
 
@@ -451,7 +451,7 @@ $$
 <div style="font-size: 15pt; margin-top: 5mm; margin-bottom: 5mm">
 $$ 
 \displaystyle \mathcal{R}_{ttH} = \mathbb{F}\big[ \underbrace{\langle 12\rangle, \langle \boldsymbol{3}1\rangle ... ⟨2|\boldsymbol{3}|2] ... ⟨2|\boldsymbol{3}|\boldsymbol{4}|2⟩}_{37\; \text{invariants}}
- \big]\Big/ \big\langle \underbrace{⟨2|\boldsymbol{3}|2]⟨2|\boldsymbol{4}1]-⟨2|\boldsymbol{3}|1]⟨2|\boldsymbol{4}|2]-[1|2]⟨2|\boldsymbol{3}|\boldsymbol{4}|2⟩, ...}_{\text{more than} \; 90 \; \text{generators}} \big\rangle
+ \big]\Big/ \big\langle \underbrace{⟨2|\boldsymbol{3}|2]⟨2|\boldsymbol{4}|1]-⟨2|\boldsymbol{3}|1]⟨2|\boldsymbol{4}|2]-[1|2]⟨2|\boldsymbol{3}|\boldsymbol{4}|2⟩, ...}_{\text{more than} \; 90 \; \text{generators}} \big\rangle
 $$
 </div>
 
@@ -725,7 +725,7 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
 </div>
 
 <div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
-     $\circ$ <a href="https://github.com/GDeLaurentis/syngular/" style="font-size: 20pt; font-variant: small-caps;">syngular</a> (in the backhand Singular is used for many operations)<br>
+     $\circ$ <a href="https://github.com/GDeLaurentis/syngular/" style="font-size: 20pt; font-variant: small-caps;">syngular</a> (in the backhand <a href="https://www.singular.uni-kl.de/index.php.html" style="font-size: 20pt; font-variant: small-caps;">Singular</a>  is used for many operations)<br>
      $\quad\rightarrow$ object-oriented algebraic geometry (Field, Ring, Quotient Ring, Ideal) <br>
      $\quad\rightarrow$ ring-agnostic monomials and polynomials (with support for unicode characters, e.g. spinor brackets)<br>
      $\quad\rightarrow$ multivariate solver (Ideal.point_on_variety), under- and over-constrained systems OK <br>
@@ -755,7 +755,7 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
 <br>
 
 <div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 5mm;">
-     $\circ$ The <span style="font-size: 14pt;">$pp\rightarrow Vjj$</span> coefficient functions are now 1.9 MB (from 1.4 GB), fast and stable. <br>
+     $\circ$ The <span style="font-size: 15pt;">$pp\rightarrow Vjj$</span> coefficient functions are now 1.9 MB (down from 1.4 GB), fast and stable. <br>
      $\phantom{\circ}$ Matrices <span style="font-size: 15pt;">$M_{ij}$</span> account for another 2 MB overall. Transcendental basis at <a href="https://gitlab.com/pentagon-functions/PentagonFunctions-cpp">PentagonFunctions++</a>.
 </div>
 <div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 2mm;">
@@ -776,9 +776,11 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
 <div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
      $\circ$ Pheno ready results for the hard functions are available at <a href="https://gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp">FivePointAmplitudes</a>.
 </div>
+<!---
 <div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
      $\circ$ Amplitudes at <a href="https://github.com/GDeLaurentis/antares-results">antares-results</a>, with <a href="https://gdelaurentis.github.io/antares-results/index.html">human readable expr.</a>, and <a href="https://github.com/GDeLaurentis/antares-results/actions/">CI tests</a> for full amplitude in real kinematics
 </div>
+--->
 
 ---
 
@@ -791,18 +793,17 @@ $\circ\,$ Partial fraction decomposition and numerator insertions from e.g.:
 
 <div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
      $\circ$ <a href="https://github.com/GDeLaurentis/antares/" style="font-size: 20pt; font-variant: small-caps;">antares</a> (automated numerical to analytical reconstruction software) <br>
-     $\rightarrow$ Univariate slicing, LCD determination, basis change, ultivariate partial fractioning strategies, <br>
+     $\rightarrow$ Univariate slicing, LCD determination, basis change, multivariate partial fractioning strategies, <br>
      $\phantom{\rightarrow}$ constraining of numerators, Ansatz generation and fitting strategies <br>
-     $\rightarrow$ Most operations do not require defining the variables, only being able to evaluate them.
+     $\rightarrow$ Most operations do not require defining the variables (or redundancies), only being able to evaluate them.
 </div>
 
 <div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
-     $\circ$ <a href="https://github.com/GDeLaurentis/antares-results/" style="font-size: 20pt; font-variant: small-caps;">antares-results</a> (see <a href="https://gdelaurentis.github.io/antares-results/">documentation</a>)
+     $\circ$ <a href="https://github.com/GDeLaurentis/antares-results/" style="font-size: 20pt; font-variant: small-caps;">antares-results</a> (human readable exprs in <a href="https://gdelaurentis.github.io/antares-results/">docs</a>) with <a href="https://github.com/GDeLaurentis/antares-results/actions/">CI tests</a> for coefficients and/or full amplitudes
 </div>
 <div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 2mm;">
-    <div style="padding: 0 10px;">
-        <img src="antares-results-transparent.png" style="width: 100%; max-width: 250px; border: none; margin-top: 2mm; margin-bottom: 0mm;">
-    </div>
+     <img src="antares-results-transparent-combined-v2.png" 
+          style="width: 100%; max-width: 850px; float: left; border: none; margin-top: 2mm; margin-bottom: 0mm;">
 </div>
 
 </section>
