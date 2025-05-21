@@ -36,7 +36,7 @@ LoopFest XXIII
 <div style="font-size: large; margin-top:-5mm; margin-bottom:5mm"> Edmonton, CA </div>
 <p style="line-height: 0.05;"> <img src="UniEdinburghLogo-transparent.png"; style="max-width:120px;float:center;border:none;margin-bottom:5mm;"> 
 <br><br><br>
-<span style="font-size: 11pt; margin-top: 10mm;">Find these slides at  <a href="/slides/sm@lhc_may2025/#/">gdelaurentis.github.io/slides/loopfest_may2025</a> </span>
+<span style="font-size: 11pt; margin-top: 10mm;">Find these slides at  <a href="/slides/loopfest_may2025/#/">gdelaurentis.github.io/slides/loopfest_may2025</a> </span>
 </div>
 
 ---
