@@ -1,5 +1,5 @@
 ---
-title: "Compact Two-Loop QCD Corrections for $Vjj$ Production in Proton Collisions"
+title: "Analytic Structure and Reconstruction in QCD: Two-Loop $pp \\rightarrow Vjj$ and One-Loop $q\\bar{q} \\rightarrow t\\bar{t}H$"
 event: LoopFest_XXIII
 event_url: 
 location: Durham
@@ -30,6 +30,10 @@ links:
   icon_pack: ai
   name: arXiv:2503.10595
   url: https://arxiv.org/abs/2503.10595
+- icon: arxiv
+  icon_pack: ai
+  name: arXiv:2504.19909
+  url: https://arxiv.org/abs/2504.19909
 url_code: ""
 url_pdf: ""
 url_slides: ""
