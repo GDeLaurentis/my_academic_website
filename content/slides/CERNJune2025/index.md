@@ -1130,7 +1130,7 @@ $$
 </div>
 <div style="text-align: left; font-size: 13pt; margin-top: -4mm; margin-bottom: 1mm;">
 $$ 
-\langle xy^2 + y^3 - z^2 \rangle \cap \langle x^3 + y^3 - z^2 \rangle = \langle xy^2 + y^3 - z^2, x^3 + y^3 - z^2 \rangle = \langle 2y^3-z^2, x-y \rangle \cap \langle y^3-z^2, x \rangle \cap \langle z^2, x+y \rangle
+\langle xy^2 + y^3 - z^2 \rangle + \langle x^3 + y^3 - z^2 \rangle = \langle xy^2 + y^3 - z^2, x^3 + y^3 - z^2 \rangle = \langle 2y^3-z^2, x-y \rangle \cap \langle y^3-z^2, x \rangle \cap \langle z^2, x+y \rangle
 $$
 </div>
 <div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
@@ -1276,6 +1276,10 @@ $\circ\,$ Computing primary decompositions with these many variables is hard, Si
 $\circ\,$ Even constructing the ansatz requires a GB, which in some cases Singular doesn't easily give
 </div>
 
+<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
+$\circ\,$ And of course computing the reduction to MIs of the amplitude is not easy in the first place.
+</div>
+
 ---
 
 <div style="margin-top: 2mm; margin-bottom: -2mm">
@@ -1339,6 +1343,19 @@ $\circ\,$ Even constructing the ansatz requires a GB, which in some cases Singul
         <img src="h2__g_g__Z_d_d.stability.png" style="width: 100%; max-width: 550px; border: none; margin-top: 3mm; margin-bottom: 0mm;">
     </div>
 </div>
+<!---
+<div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 2mm;">
+    <div style="padding: 0 10px;">
+        <img src="CoefficientSizes.png" style="width: 100%; max-width: 450px; border: none; margin-top: 2mm; margin-bottom: 0mm;">
+    </div>
+    <div style="padding: 0 10px; ">
+        <img src="h2__g_g__Z_b_b.stability.png" style="width: 100%; max-width: 550px; border: none; margin-top: 4mm; margin-bottom: 0mm;">
+    </div>
+</div>
+<a style="font-size: 11pt; text-align: right; float: right; margin-top: -10mm; margin-bottom: -3mm;" href="https://arxiv.org/abs/2404.08598">
+Courtesy of V. Sotnikov, <br>see also Mazzitelli, Sotnikov, Wiesemann ('24)
+</a>
+--->
 
 <div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
      $\circ$ The complexity split is: quarks NMHV: 100 KB, gluons MHV: 200 KB, gluons NMHV: 1.6 MB.
