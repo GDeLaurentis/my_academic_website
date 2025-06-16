@@ -1385,7 +1385,7 @@ $\circ\,$ Even constructing the ansatz requires a GB, which in some cases Singul
 
 <section>
 
-{{< slide background-image="edmonton.jpg" >}}
+<!--- {{< slide background-image="edmonton.jpg" >}} --->
 
 <div style="margin-top: 50mm; margin-bottom: 30mm;">
 <b style="font-variant: small-caps; font-size: xxx-large;"> Thank you <br> for your attention! </b>
