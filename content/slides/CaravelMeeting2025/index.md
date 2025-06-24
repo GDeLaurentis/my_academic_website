@@ -1,5 +1,5 @@
 ---
-tile: "Analytic Structure and Reconstruction in QCD: Two-Loop $pp \\rightarrow Vjj$ and One-Loop $q\\bar{q} \\rightarrow t\\bar{t}H$"
+tile: "Amplitude Reconstruction: Tools and Methods"
 summary: 
 authors: ["Giuseppe De Laurentis"]
 tags: [QCD, Scattering Amplitudes]
@@ -28,193 +28,16 @@ Giuseppe De Laurentis
 <br>
 <div style="font-size: large;"> University of Edinburgh </div>
 <br>
-Vjj: <a href="https://arxiv.org/abs/2503.10595">arXiv:2503.10595</a> <div style="font-size: large; margin-bottom:5mm;"> (GDL, H. Ita, B. Page, V. Sotnikov) </div>
+Vjj: <a href="https://link.springer.com/article/10.1007/JHEP06(2025)093">JHEP 06 (2025) 093</a> <div style="font-size: large; margin-bottom:5mm;"> (GDL, H. Ita, B. Page, V. Sotnikov) </div>
 ttH: <a href="https://arxiv.org/abs/2504.19909">arXiv:2504.19909</a> <div style="font-size: large;"> (J. Campbell, GDL, K. Ellis) </div>
 
 
-CERN QCD Seminar
-<div style="font-size: large; margin-top:-5mm; margin-bottom:5mm"> Geneva, CH </div>
+Caravel Meeting 2025
+<div style="font-size: large; margin-top:-5mm; margin-bottom:5mm"> UZH </div>
 <p style="line-height: 0.05;"> <img src="UniEdinburghLogo-transparent.png"; style="max-width:120px;float:center;border:none;margin-bottom:5mm;"> 
 <br><br><br>
-<span style="font-size: 11pt; margin-top: 10mm;">Find these slides at  <a href="/slides/cernjune2025/#/">gdelaurentis.github.io/slides/cernjune2025</a> </span>
+<span style="font-size: 11pt; margin-top: 10mm;">Find these slides at  <a href="/slides/caravelmeeting2025/#/">gdelaurentis.github.io/slides/caravelmeeting2025</a> </span>
 </div>
-
----
-
-<section>
-
-{{< slide background-image="LHCcern.jpg" >}}
-
-# Introduction
-
----
-
-<b style="font-variant: small-caps; font-size: 32pt; margin-top: 2mm; margin-bottom: 0mm;">Phenomenological Motivation</b>
-
-<div style="text-align: left; font-size: 18pt; margin-bottom: 4mm; margin-top: 0mm;">
-     $\circ\,$ <span style="font-size: 16pt">$pp\rightarrow Vjj$</span> (or similarly <span style="font-size: 16pt">$e^+e^-\rightarrow V \rightarrow 4j$</span>) is important for several EW precision measurements
-</div>
-<!-- Static background image (fades via fragment) -->
-<div style="position: relative; width: 100%; min-height: 450px;">
-     <!-- Fragment 1: full-opacity image -->
-     <div class="fragment" data-fragment-index="0"
-          style="position: absolute; top: 0; left: 0; z-index: 0; margin-top: 4mm;">
-          <img src="ATLAS-XSections-transparent.png"
-               style="max-width: 550px; opacity: 1; border: none; margin: 0;" />
-     </div>
-     <!-- Fragment 1: faded image and content -->
-     <div class="fragment visible" data-fragment-index="1" 
-          style="position: absolute; top: 0; left: 0; z-index: 0; margin-top: 4mm;">
-          <img src="ATLAS-XSections-transparent-Vnj.png"
-               style="max-width: 550px; opacity: 0.10; border: none; margin: 0;" />
-     </div>
-     <!-- Main text container (shown at same time as faded background) -->
-     <div class="fragment visible" data-fragment-index="1"
-          style="position: relative; z-index: 1; margin-left: 15%; padding: 10px;">
-          <div style="text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: -5mm;">
-          $\rightarrow\,$ Theoretical uncertainties are already larger than experimental ones,
-          <img src="cross-sections-transposed-transparent-v2.png"
-               style="max-width:600px; border:none; margin-left:20mm; margin-top: 2mm;" />
-          <a style="font-size: large; text-align: right; float: right; margin-top: -6mm;" href="https://inspirehep.net/literature/2808096">
-          ATLAS Collab. '24
-          </a>
-          </div>
-          <div style="clear: both; text-align: left; font-size: 18pt; margin-top: -10mm;">
-          $\rightarrow\,$ NNLO is essential for agreement with experiment,
-          <a style="font-size: large; text-align: right; float: right; margin-top: 5mm;" href="https://arxiv.org/abs/2404.08598">
-          Mazzitelli, <div style="height: -10mm; margin-top: -1mm; margin-bottom: -1mm;"></div> Sotnikov, <div style="height: -10mm; margin-top: -1mm; margin-bottom: -1mm;"></div> Wiesemann '24
-          </a>
-          <img src="Z1jSotnikov-transparent-v2.png"
-               style="max-width:500px; border:none; margin-left:24mm; margin-top: 0mm;" />
-          <div style="text-align: right; font-size: 18pt; margin-top: -5mm; margin-bottom: 0mm; margin-left: -22mm;">
-          Other studies at NNLO only for <span style="font-size: 16pt">$q\bar q'\rightarrow Wb\bar b, \; \text{e.g. no} \; gg\rightarrow Wq\bar q'$</span> despite available amps
-          </div>
-          <a style="font-size: large; text-align: right; float: right; margin-top: -1mm; margin-bottom: -3mm;" href="https://arxiv.org/abs/2212.04954">
-          $\,$Buonocore, Devoto, Kallweit, Mazzitelli, Rottoli, Savoini '22;
-          </a>
-          <a style="font-size: large; text-align: right; float: right; margin-top: -1mm; margin-bottom: -3mm;" href="https://arxiv.org/abs/2205.01687">
-          Hartanto, Poncelet, Popescu, Zoia '22;$\,$
-          </a>
-          </div>
-     </div>
-</div>
-
-<div class="fragment" data-fragment-index="1"
-     style="text-align: left; font-size: 17pt; margin-bottom: 2mm; margin-top: -8mm;">
-     $\circ\,$ <span style="font-size: 16pt">$pp\rightarrow t\bar{t}H$</span> of interest primarily for direct access to top Yukawa <span style="font-size: 16pt">$y_t$</span> (but also CP, EFTs, 2HDM, etc.) <br>
-     $\phantom{\circ}\,$ current N$^2$LO pheno. relies on approx. amplitudes
-     <a style="font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: -3mm;" href="https://arxiv.org/abs/2210.07846">
-     Catani, Devoto, Grazzini, Kallweit, Mazzitelli, Savoini '22;$\,$
-     </a>
-     <a style="font-size: large; text-align: right; float: right; margin-top: -3mm; margin-bottom: -3mm;" href="https://arxiv.org/abs/2411.15340">
-     Devoto, Grazzini, Kallweit, Mazzitelli, Savoini '24;$\,$
-     </a>
-</div>
-
----
-
-<b style="font-variant: small-caps; font-size: 32pt"> Theoretical Motivation </b>
-
-<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: -4mm;">
-     $\circ\,$ Status for Drell-Yan plus jets (Vjj)
-</div>
-<div style="display: flex; justify-content: center; margin-top: 0mm;">
-     <div style="width: 55%; text-align: left; font-size: 17pt; margin: 0 10px; margin-left: -4mm;">
-          $\;\star\,$ Limited knowledge at higher loops/points; <br>
-          $\;\star\,$ All amplitudes in the lower triangle contribute  <br> 
-          $\;\phantom{\star}\,$ at a given perturbatifve order; <br> 
-          $\;\star\,$ Pheno can be hindered by complexity of results, <br> 
-          $\;\phantom{\star}\,$ especially if IR cancellations are needed; <br> 
-          $\;\star\,$ E.g. the two-loop amps of [5] were >1GB of files. <br><br>
-          $\circ\,$ Goal: reduce complexity of [5] by manifesting the analytic structure to facilitate future computations
-     </div>
-     <div style="width: 55%; font-size: 14pt; margin: 0 10px; margin-left: -4mm; margin-right: -4mm;">
-          <table style="border-collapse: collapse; text-align: center; margin-top: 1mm; font-size: 14pt;">
-               <tr>
-                    <td style="border: 1px solid black; padding: 5px; text-align: center;">3</td>
-                    <td style="border: 1px solid black; padding: 5px; background-color: #FFD700; text-align: center;">
-                    2023 <a href="https://arxiv.org/abs/example8">[6]</a>
-                    </td>
-                    <td style="border: 1px solid black; padding: 5px; background-color: #FF7F7F; text-align: center;">
-                    ?
-                    </td>
-                    <td style="border: 1px solid black; padding: 5px; background-color: #FF7F7F; text-align: center;">
-                    ?
-                    </td>
-               </tr>
-               <tr>
-                    <td style="border: 1px solid black; padding: 5px; text-align: center;">2</td>
-                    <td style="border: 1px solid black; padding: 5px; background-color: #90EE90; text-align: center;">
-                    2007 <a href="https://arxiv.org/abs/example7">[4]</a>
-                    </td>
-                    <td style="border: 1px solid black; padding: 5px; background-color: #FFD700; text-align: center;">
-                    2021 <a href="https://arxiv.org/abs/2110.07541">[5]</a>
-                    </td>
-                    <td style="border: 1px solid black; padding: 5px; background-color: #FF7F7F; text-align: center;">
-                    ?
-                    </td>
-               </tr>
-               <tr>
-                    <td style="border: 1px solid black; padding: 5px; text-align: center;">1</td>
-                    <td style="border: 1px solid black; padding: 5px; background-color: #90EE90; text-align: center;">
-                    1981 <a href="https://arxiv.org/abs/example6">[1]</a>
-                    </td>
-                    <td style="border: 1px solid black; padding: 5px; background-color: #90EE90; text-align: center;">
-                    1997 <a href="https://arxiv.org/abs/example10">[2]</a>
-                    </td>
-                    <td style="border: 1px solid black; padding: 5px; background-color:rgb(250, 255, 0); text-align: center;">
-                    2008 <a href="https://arxiv.org/abs/example11">[3]</a>
-                    </td>
-               </tr>
-               <tr>
-                    <th style="border: 1px solid black; padding: 5px; text-align: center;">Loops ↑<br>Jets →</th>
-                    <th style="border: 1px solid black; padding: 5px; text-align: center;">$1$</th>
-                    <th style="border: 1px solid black; padding: 5px; text-align: center;">$2$</th>
-                    <th style="border: 1px solid black; padding: 5px; text-align: center;">$\geq3$</th>
-               </tr>
-          </table>
-          <div style="margin-top: 5mm; margin-bottom: 2mm; font-size: 12pt;">
-               <span style="background-color: #90EE90; padding: 5px; margin-right: 10px;">Analytic</span>
-               <span style="background-color: rgb(250, 255, 0); padding: 5px; margin-right: 10px;"> Numeric</span>
-               <span style="background-color: #FFD700; padding: 5px; margin-right: 10px;">Analytic (LCA)</span>
-               <span style="background-color: #FF7F7F; padding: 5px; margin-right: 10px;">Unknown</span>
-          </div>
-          <div style="width: 105%; margin-left: -2mm;">
-               <div style="font-size: 14pt; margin-top: 4mm; margin-bottom: -4mm;">
-                    <a href="https://www.sciencedirect.com/science/article/abs/pii/0550321381901656?via%3Dihub">[1] Ellis, Ross, Terrano; </a>
-                    <a href="https://arxiv.org/abs/hep-ph/9708239">[2] Bern, Dixon, Kosower;</a>
-                    <a href="https://arxiv.org/abs/0803.4180">[3] BlackHat; </a><a href="https://arxiv.org/abs/1907.13071">OpenLoops; </a>
-                    <a href="https://arxiv.org/abs/0711;.4711">[4] Gehrmann-De Ridder, Gehrmann, Glover, Heinrich; </a>
-                    <a href="https://arxiv.org/abs/2110.07541">[5] Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov </a> 
-                    <a href="https://arxiv.org/abs/2503.10595" style="color:rgb(255, 149, 0);">+ This work; </a>
-                    <a href="https://arxiv.org/abs/2307.15405">[6] Gehrmann, Jakubčík, Mella, Syrrakos, Tancredi</a>
-               </div>
-          </div>
-     </div>
-</div>
-
-
-<div style="text-align: left; font-size: 18pt; margin-bottom: 1mm; margin-top: 2mm; margin-left: -4mm;">
-     $\circ\,$ Status for $pp\rightarrow t\bar tH$
-</div>
-<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 0mm; margin-left: -4mm;">
-     $\;\star\,$ one-loop: <span style="font-size: 15pt">$q\bar q\rightarrow t\bar tH$</span> previously not known analytically; <br>
-     $\kern15mm$ <span style="font-size: 15pt">$gg\rightarrow t\bar t H$</span> known to <span style="font-size: 15pt">$\mathcal{O}(\epsilon^2)$</span> in terms of form factors <br>
-     <a style="font-size: large; text-align: right; float: right; margin-top: -5mm; margin-bottom: -3mm;" href="https://arxiv.org/abs/2312.10015">
-     Buccioni, Kreer, Liu, Tancredi '23
-     </a>
-     $\;\star\,$ two-loop: <span style="font-size: 15pt">$q\bar q\rightarrow t\bar tH$</span> with quark-loop (<span style="font-size: 15pt">$n_f$</span> part), known numerically (<a href="https://secdec.readthedocs.io/en/stable/" style="font-variant: small-caps;">pySecDec</a>) <br>
-     <a style="font-size: large; text-align: right; float: right; margin-top: -1mm; margin-bottom: -4mm;" href="https://arxiv.org/abs/2402.03301">
-     Agarwal, Heinrich, Jones, Kerner, Klein, Lang, Magerya, Olsson '24
-     </a>
-     $\kern15mm$ <span style="font-size: 15pt; margin-top: 5mm;">$pp\rightarrow t\bar tH$</span> master integrals in LCA
-     <a style="font-size: large; text-align: right; float: right; margin-top: -4mm; margin-bottom: -3mm;" href="https://arxiv.org/abs/2312.08131">
-     Febres Cordero, Figueiredo, Kraus, Page, Reina '23
-     </a>
-     $\circ\,$ Goal: show how to reconstruct amplitudes in a manifestly spin- and little-group covariant form
-</div>
-
-</section>
 
 ---
 
@@ -368,98 +191,6 @@ $\rightarrow$ Assemble 5 helicity amplitudes into 3 categories: <span style="fon
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> Guiding Principles </b>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: -2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Amplitude should be gauge and Lorentz invariant, and spin and little-group covariant
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{red} ✗}$ gauge dependence, e.g. through reference vectors <br>
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{red} ✗}$ tensor decompositions <span style="font-size: 16pt;">$\epsilon_\mu T^\mu$</span>, polarizations are needed for simplifications
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{greeN} ✓}$ <span style="font-size: 16pt;">$\epsilon_\mu \rightarrow \epsilon_{\alpha\dot\alpha}$, $P^\mu \rightarrow  \lambda_\alpha \tilde\lambda_{\dot\alpha}$</span>; all <span style="font-size: 16pt;">$\alpha, \dot\alpha$</span> indices contracted; all <span style="font-size: 16pt;">$\lambda, \tilde\lambda$</span> random (subject to mom cons)
-</div>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ The singularity structure should be manifest in $\mathbb{C}$ (exprs will then be better behaved in $\mathbb{R}$ too)
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{red} ✗}$ Rational reparametrisations of the kinematics change the denominator structure
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{red} ✗}$ Forcing unphysical splits misses cancellations (e.g. even nor odd separation)
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{greeN} ✓}$ Chiral cancellations are required to obtain the true Least Common Denominator
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{greeN} ✓}$ Work off the real slice: <span style="font-size: 16pt;">$P^\mu \in \mathbb{C}^4$, $\lambda_\alpha \neq \tilde\lambda_{\dot\alpha}^\dagger$</span>. In practice, <span style="font-size: 16pt;">$P^{\mu=y}\in i\mathbb{Q}\Rightarrow \lambda_{\alpha} \in \mathbb{F}_p \text{ or } \mathbb{Q}_p$</span>
-</div>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Focus only on final physical expressions
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{red} ✗}$ Unphysical intermediate steps may be unnecessarily complicated
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{red} ✗}$ Analytic manipulations at this complexity are unfeasible, even on "physical" results
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{greeN} ✓}$ Bypass all intermediate steps with numerical evaluations (cancellations happen numerically)
-</div>
-
----
-
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Trade-offs and Challenges </b>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ We must work with <u>variables subject to constrains</u>. The language is that of algebraic geometry.
-</div>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ For example, consider polynomials in two variables <span style="font-size: 14pt;">$x, y$</span>. They live in a <b>polynomial ring</b>:
-</div>
-<div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
-$$ 
-\displaystyle f(x,y), g(x, y), h(x, y) \in \mathbb{Q}[x, y] \, .
-$$
-</div>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Now, localize them, e.g. on the unit circle <span style="font-size: 14pt;">$(x^2+y^2-1)$</span>
-</div>
-<div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
-$$ 
-\displaystyle f(x,y) \approx g(x, y) + h(x, y) (x^2+y^2-1) \, ,
-$$
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}$ we should consider <span style="font-size: 14pt;">$f(x,y)$</span> and <span style="font-size: 14pt;">$g(x, y)$</span> as equivalent, for any <span style="font-size: 14pt;">$h(x,y)$</span>.
-</div>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ The structure is that of a polynomial <b>quotient</b> ring
-</div>
-<div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
-$$ 
-\displaystyle \mathbb{Q}[x, y] \big/ \big\langle x^2+y^2-1 \big\rangle \\[2mm]
-$$
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}$ its elements are <b>equivalence classes</b> of polynomials.
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ <span style="font-size: 14pt;">$\big\langle x^2+y^2-1 \big\rangle \subset \mathbb{Q}[x, y]$</span> is an example of an <b>ideal</b>, the infinite set of polynomials <br> 
-     $\phantom{\circ}$ <span style="font-size: 14pt;">$h(x, y) (x^2+y^2-1)$</span> that vanishes on the unit circle.
-</div>
-
-
----
-
 <b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> Massless Scattering </b>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
@@ -490,7 +221,7 @@ $$
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Interesting mathematica observations and open questions: <br>
+     $\circ$ Interesting mathematical observations and open questions: <br>
      $\quad\star$ <span style="font-size: 16pt">$R_3$</span> is not an Integral Domain, i.e. it breaks <span style="font-size: 16pt">$ab=0 \Rightarrow a = 0 \text{ or } b = 0$</span> <br>
      $\quad\star$ <span style="font-size: 16pt">$R_4$</span> is not an Unique Factorization Domain (which is why MHV = anti-MHV) <br>
      $\quad\star$ Conjecture: <span style="font-size: 16pt">$R_{n\geq 5}$</span> is UFD. For instance, this would imply the  denominators $\mathcal{D}$ are unique <br>
