@@ -54,112 +54,97 @@ HHH Workshop
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt"> Subprocesses \& Feynman Diagrams </b>
+<b style="font-variant: small-caps; font-size: 32pt"> Theoretical Motivation </b>
 
+<div style="text-align: left; font-size: 18pt; margin-bottom: 1mm; margin-top: 2mm; margin-left: -4mm;">
+     $\circ\,$ Direct probe of triple and quartic Higgs self-couplings at current and future colliders. <br>
+     $\phantom{\circ}\,$ We write the potential in the kappa framwork (SM: <span style="font-size: 15pt">$\kappa_3 = \kappa_4 = 1$</span>)
+</div>
+
+<div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
+$$ 
+V(H) = \frac{1}{2} m_h^2 H^2 + \kappa_3 \lambda v H^3 + \kappa_4 \frac{\lambda}{4}  H^4
+$$
+</div>
+<div style="text-align: left; font-size: 18pt; margin-bottom: 1mm; margin-top: 2mm; margin-left: -4mm;">
+     $\phantom{\circ}\,$ We have contributions proportional to <span style="font-size: 15pt">$\kappa_4$, $\kappa_3^2$ ($A_3$), $\kappa_3$ ($A_4$)</span>, and no <span style="font-size: 15pt">$\kappa$ ($A_5$).</span>
+</div>
+
+<div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
+$$ 
+A_{\rm tot} = \delta^{AB} \frac{g_s^2}{16\pi^2} \, \frac{m_t^4}{v^3} \left(
+A_3 + A_4 + A_5 \right)\, .
+$$
+</div>
+
+<div style="text-align: left; font-size: 18pt; margin-bottom: 5mm; margin-top: 5mm; margin-left: -4mm;">
+     $\circ\,$ Facilitate phenomenological studies through faster and more stable evaluations: <br>
+     $\phantom{\circ}\,$ We obtain an order of magnitude speed up compared to Recola2 and OpenLoops2.
+</div>
+
+<div style="text-align: left; font-size: 18pt; margin-bottom: 1mm; margin-top: 5mm; margin-left: -4mm;">
+     $\circ\,$ Improve understanding of the analytical structure:
+     <div style="text-align: left; font-size: 18pt; margin-bottom: 1mm; margin-top: 2mm; margin-left: -4mm;">
+          $\qquad\star\,$ Stepping stone towards real-radiation processes and, eventually, multi-loop corrections.
+     </div>
+     <div style="text-align: left; font-size: 18pt; margin-bottom: 1mm; margin-top: 2mm; margin-left: -4mm;">
+          $\qquad\star\,$ Provide necessary input to understand cancellation of spurious kinematic singularities.
+     </div>
+     $\phantom{\circ}\,$ In this context full control over the leading order result is an essential baseline.
+</div>
 
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt"> Theoretical Motivation </b>
-
-<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: -4mm;">
-     $\circ\,$ Status for Drell-Yan plus jets (Vjj)
-</div>
-<div style="display: flex; justify-content: center; margin-top: 0mm;">
-     <div style="width: 55%; text-align: left; font-size: 17pt; margin: 0 10px; margin-left: -4mm;">
-          $\;\star\,$ Limited knowledge at higher loops/points; <br>
-          $\;\star\,$ All amplitudes in the lower triangle contribute  <br> 
-          $\;\phantom{\star}\,$ at a given perturbatifve order; <br> 
-          $\;\star\,$ Pheno can be hindered by complexity of results, <br> 
-          $\;\phantom{\star}\,$ especially if IR cancellations are needed; <br> 
-          $\;\star\,$ E.g. the two-loop amps of [5] were >1GB of files. <br><br>
-          $\circ\,$ Goal: reduce complexity of [5] by manifesting the analytic structure to facilitate future computations
-     </div>
-     <div style="width: 55%; font-size: 14pt; margin: 0 10px; margin-left: -4mm; margin-right: -4mm;">
-          <table style="border-collapse: collapse; text-align: center; margin-top: 1mm; font-size: 14pt;">
-               <tr>
-                    <td style="border: 1px solid black; padding: 5px; text-align: center;">3</td>
-                    <td style="border: 1px solid black; padding: 5px; background-color: #FFD700; text-align: center;">
-                    2023 <a href="https://arxiv.org/abs/example8">[6]</a>
-                    </td>
-                    <td style="border: 1px solid black; padding: 5px; background-color: #FF7F7F; text-align: center;">
-                    ?
-                    </td>
-                    <td style="border: 1px solid black; padding: 5px; background-color: #FF7F7F; text-align: center;">
-                    ?
-                    </td>
-               </tr>
-               <tr>
-                    <td style="border: 1px solid black; padding: 5px; text-align: center;">2</td>
-                    <td style="border: 1px solid black; padding: 5px; background-color: #90EE90; text-align: center;">
-                    2007 <a href="https://arxiv.org/abs/example7">[4]</a>
-                    </td>
-                    <td style="border: 1px solid black; padding: 5px; background-color: #FFD700; text-align: center;">
-                    2021 <a href="https://arxiv.org/abs/2110.07541">[5]</a>
-                    </td>
-                    <td style="border: 1px solid black; padding: 5px; background-color: #FF7F7F; text-align: center;">
-                    ?
-                    </td>
-               </tr>
-               <tr>
-                    <td style="border: 1px solid black; padding: 5px; text-align: center;">1</td>
-                    <td style="border: 1px solid black; padding: 5px; background-color: #90EE90; text-align: center;">
-                    1981 <a href="https://arxiv.org/abs/example6">[1]</a>
-                    </td>
-                    <td style="border: 1px solid black; padding: 5px; background-color: #90EE90; text-align: center;">
-                    1997 <a href="https://arxiv.org/abs/example10">[2]</a>
-                    </td>
-                    <td style="border: 1px solid black; padding: 5px; background-color:rgb(250, 255, 0); text-align: center;">
-                    2008 <a href="https://arxiv.org/abs/example11">[3]</a>
-                    </td>
-               </tr>
-               <tr>
-                    <th style="border: 1px solid black; padding: 5px; text-align: center;">Loops ↑<br>Jets →</th>
-                    <th style="border: 1px solid black; padding: 5px; text-align: center;">$1$</th>
-                    <th style="border: 1px solid black; padding: 5px; text-align: center;">$2$</th>
-                    <th style="border: 1px solid black; padding: 5px; text-align: center;">$\geq3$</th>
-               </tr>
-          </table>
-          <div style="margin-top: 5mm; margin-bottom: 2mm; font-size: 12pt;">
-               <span style="background-color: #90EE90; padding: 5px; margin-right: 10px;">Analytic</span>
-               <span style="background-color: rgb(250, 255, 0); padding: 5px; margin-right: 10px;"> Numeric</span>
-               <span style="background-color: #FFD700; padding: 5px; margin-right: 10px;">Analytic (LCA)</span>
-               <span style="background-color: #FF7F7F; padding: 5px; margin-right: 10px;">Unknown</span>
-          </div>
-          <div style="width: 105%; margin-left: -2mm;">
-               <div style="font-size: 14pt; margin-top: 4mm; margin-bottom: -4mm;">
-                    <a href="https://www.sciencedirect.com/science/article/abs/pii/0550321381901656?via%3Dihub">[1] Ellis, Ross, Terrano; </a>
-                    <a href="https://arxiv.org/abs/hep-ph/9708239">[2] Bern, Dixon, Kosower;</a>
-                    <a href="https://arxiv.org/abs/0803.4180">[3] BlackHat; </a><a href="https://arxiv.org/abs/1907.13071">OpenLoops; </a>
-                    <a href="https://arxiv.org/abs/0711;.4711">[4] Gehrmann-De Ridder, Gehrmann, Glover, Heinrich; </a>
-                    <a href="https://arxiv.org/abs/2110.07541">[5] Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov </a> 
-                    <a href="https://arxiv.org/abs/2503.10595" style="color:rgb(255, 149, 0);">+ This work; </a>
-                    <a href="https://arxiv.org/abs/2307.15405">[6] Gehrmann, Jakubčík, Mella, Syrrakos, Tancredi</a>
-               </div>
-          </div>
-     </div>
-</div>
-
+<b style="font-variant: small-caps; font-size: 32pt"> Subprocesses \& Feynman Diagrams: $\kappa_4$ \& $\kappa_3^2$</b>
 
 <div style="text-align: left; font-size: 18pt; margin-bottom: 1mm; margin-top: 2mm; margin-left: -4mm;">
-     $\circ\,$ Status for $pp\rightarrow t\bar tH$
+     $\circ\,$ The $\kappa_4$ and $\kappa_3^2$ diagrams are triangles (no contribution from pinch bubbles)
 </div>
-<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 0mm; margin-left: -4mm;">
-     $\;\star\,$ one-loop: <span style="font-size: 15pt">$q\bar q\rightarrow t\bar tH$</span> previously not known analytically; <br>
-     $\kern15mm$ <span style="font-size: 15pt">$gg\rightarrow t\bar t H$</span> known to <span style="font-size: 15pt">$\mathcal{O}(\epsilon^2)$</span> in terms of form factors <br>
-     <a style="font-size: large; text-align: right; float: right; margin-top: -5mm; margin-bottom: -3mm;" href="https://arxiv.org/abs/2312.10015">
-     Buccioni, Kreer, Liu, Tancredi '23
-     </a>
-     $\;\star\,$ two-loop: <span style="font-size: 15pt">$q\bar q\rightarrow t\bar tH$</span> with quark-loop (<span style="font-size: 15pt">$n_f$</span> part), known numerically (<a href="https://secdec.readthedocs.io/en/stable/" style="font-variant: small-caps;">pySecDec</a>) <br>
-     <a style="font-size: large; text-align: right; float: right; margin-top: -1mm; margin-bottom: -4mm;" href="https://arxiv.org/abs/2402.03301">
-     Agarwal, Heinrich, Jones, Kerner, Klein, Lang, Magerya, Olsson '24
-     </a>
-     $\kern15mm$ <span style="font-size: 15pt; margin-top: 5mm;">$pp\rightarrow t\bar tH$</span> master integrals in LCA
-     <a style="font-size: large; text-align: right; float: right; margin-top: -4mm; margin-bottom: -3mm;" href="https://arxiv.org/abs/2312.08131">
-     Febres Cordero, Figueiredo, Kraus, Page, Reina '23
-     </a>
-     $\circ\,$ Goal: show how to reconstruct amplitudes in a manifestly spin- and little-group covariant form
+
+<img src="diagrams_self_coupling_k4_transparent.png" style="max-width:70%; height:auto;">
+
+<div style="text-align: left; font-size: 18pt; margin-bottom: 1mm; margin-top: 2mm; margin-left: -4mm;">
+     $\phantom{\circ}\,$ This sub-amplitude is easily stated as (for the two indep. helicity configurations)
 </div>
+<div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
+$$
+\def\mt{m}
+\def\mh{M_H}
+\def\spa#1.#2{\left\langle#1\,#2\right\rangle}
+\def\spb#1.#2{\left[#1\,#2\right]}
+\begin{eqnarray}
+A_3^{++} &=& 
+\frac{\spb1.2}{\spa1.2} \, \frac{6\mh^2}{\mt^2(s_{12}-\mh^2)} 
+ \Bigl[(4\mt^2-s_{12}) C_0(p_1,p_2; \mt)+2\Bigr]\times
+ \left(\kappa_4+ \frac{3\kappa_3^2 \mh^2}{s_{34}-\mh^2} + \text{perm.} \right) \, ,
+\\
+A_3^{-+} &=& 0 \, .
+\end{eqnarray}
+$$
+</div>
+
+<div style="text-align: left; font-size: 18pt; margin-bottom: 1mm; margin-top: 2mm; margin-left: -4mm;">
+     $\phantom{\circ}\,$ Where $C_0(p_1,p_2; \mt)$ is the scalar triangle Feynman integral.
+</div>
+
+---
+
+<b style="font-variant: small-caps; font-size: 32pt"> Subprocesses \& Feynman Diagrams: $\kappa_3$ \& no $\kappa$ </b>
+
+<div style="text-align: left; font-size: 18pt; margin-bottom: 1mm; margin-top: 2mm; margin-left: -4mm;">
+     $\circ\,$ The $\kappa_3$ diagrams are boxes (and triangle pinches, but no bubble contribution)
+</div>
+<img src="diagrams_self_coupling_k3_transparent.png" style="max-width:70%; height:auto;">
+<div style="text-align: left; font-size: 18pt; margin-bottom: 1mm; margin-top: 2mm; margin-left: -4mm;">
+     $\phantom{\circ}\,$ Their contribution is also fairly simple, it can be written in 4 or 5 lines.
+</div>
+
+<div style="text-align: left; font-size: 18pt; margin-bottom: 3mm; margin-top: 3mm; margin-left: -4mm;">
+     $\circ\,$ The background diagrams are by far the most complicated, for reasons we'll see shortly
+</div>
+<img src="diagrams_background_transparent.png" style="max-width:70%; height:auto;">
+
 
 </section>
 
@@ -169,7 +154,7 @@ HHH Workshop
 
 {{< slide background-image="Feynman-Diagrams-transparent.png" >}}
 
-<h1 style="margin-top: -2mm;"> Numerical Computation </h1>
+<h1 style="margin-top: -2mm;"> Computation Setup </h1>
 
 ---
 
@@ -179,7 +164,7 @@ HHH Workshop
      $\circ$ Amplitude (integrands) can be written as (for a suitable choice of master integrals)
 </div>
 <br>
-<div style="font-size: 14.5pt; margin-top: 0mm;  margin-bottom: 2mm">
+<div style="font-size: 15pt; margin-top: 0mm;  margin-bottom: 2mm">
 $$
 \displaystyle A(\lambda, \tilde\lambda, \ell) =
 \sum_{\substack{\Gamma,\\ i \in M_\Gamma \cup S_\Gamma}} \, c_{\,\Gamma,i}(\lambda, \tilde\lambda, \epsilon) \,		\frac{m_{\Gamma,i}(\lambda\tilde\lambda, \ell)}{\textstyle \prod_{j} \rho_{\,\Gamma,j}(\lambda\tilde\lambda, \ell)} \;\; \xrightarrow[]{\int d^D\ell} \;\; \sum_{\substack{\Gamma,\\ i \in M_\Gamma}} \frac{ \sum_{k=0}^{\text{finite}} \, {\color{red}c^{(k)}_{\,\Gamma, i}}(\lambda, \tilde\lambda) \, \epsilon^k}{\prod_j (\epsilon - a_{ij})} \, {\color{orange}I_{\Gamma, i}}(\lambda\tilde\lambda, \epsilon)
