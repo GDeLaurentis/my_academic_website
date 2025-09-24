@@ -331,26 +331,27 @@ $$
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Covariant Q-Ring for HHH </b>
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Covariant Q-Ring for $\text{ggHHH}$ </b>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ For <span style="font-size: 15pt;">$pp \rightarrow ttH$</span> we use the massive spinor-helicity (or spin-spinor) formalism
+     $\circ$ For <span style="font-size: 15pt;">$pp \rightarrow HHH$</span> we use the massive spinor-helicity (or spin-spinor) formalism, <br>
+     $\phantom{\circ}$ albeit in this case in a very simplified form since scalars have no states.
 </div>
-<a href="https://arxiv.org/abs/1809.09644" style="font-size: 14pt; margin-top: -3mm; float: right; font-align: right;"> Shadmi, Weiss </a>
-<a href="https://arxiv.org/abs/1802.06730" style="font-size: 14pt; margin-top: -3mm;  margin-right: 2mm; float: right; font-align: right;"> Ochirov; </a>
-<a href="https://arxiv.org/abs/1709.04891" style="font-size: 14pt; margin-top: -3mm; margin-right: 2mm; float: right; font-align: right;"> Arkani-Hamed, Huang, Huang;</a>
+<a href="https://arxiv.org/abs/1809.09644" style="font-size: 14pt; margin-top: -2mm; float: right; font-align: right;"> Shadmi, Weiss </a>
+<a href="https://arxiv.org/abs/1802.06730" style="font-size: 14pt; margin-top: -2mm;  margin-right: 2mm; float: right; font-align: right;"> Ochirov; </a>
+<a href="https://arxiv.org/abs/1709.04891" style="font-size: 14pt; margin-top: -2mm; margin-right: 2mm; float: right; font-align: right;"> Arkani-Hamed, Huang, Huang;</a>
 
-<div style="font-size: 15pt; margin-top: 8mm; margin-bottom: 5mm">
+<div style="font-size: 15pt; margin-top: 12mm; margin-bottom: 5mm">
 $$ 
-\displaystyle \kern10mm R_{HHH} = \frac{\mathbb{F}\big[|1⟩_{\alpha}, [1|_{\dot\alpha}, |2⟩_{\alpha}, [2|_{\dot\alpha}, \boldsymbol{3}_{\alpha,\dot\alpha}, \boldsymbol{4}_{\alpha,\dot\alpha}, \boldsymbol{5}_{\alpha,\dot\alpha} \big]}{\big\langle \sum_{i,I,J} |i\rangle[i|, \langle \boldsymbol{3}|\boldsymbol{3}⟩ +[\boldsymbol{3}|\boldsymbol{3}], \langle \boldsymbol{3}|\boldsymbol{3}⟩-\langle \boldsymbol{4}|\boldsymbol{4}⟩, \langle \boldsymbol{4}|\boldsymbol{4}⟩ +[\boldsymbol{4}|\boldsymbol{4}]\big\rangle}
+\displaystyle \kern10mm R_{HHH} = \frac{\mathbb{F}\big[|1⟩_{\alpha}, [1|_{\dot\alpha}, |2⟩_{\alpha}, [2|_{\dot\alpha}, \boldsymbol{3}_{\alpha,\dot\alpha}, \boldsymbol{4}_{\alpha,\dot\alpha}, \boldsymbol{5}_{\alpha,\dot\alpha} \big]}{\big\langle |1\rangle[1|+|2\rangle[2| + \boldsymbol{3}_{\alpha,\dot\alpha} + \boldsymbol{4}_{\alpha,\dot\alpha} + \boldsymbol{5}_{\alpha,\dot\alpha}, \;\, \boldsymbol{3}_{\alpha,\dot\alpha} \boldsymbol{3}^{\dot\alpha,\alpha} - \boldsymbol{4}_{\alpha,\dot\alpha} \boldsymbol{4}^{\dot\alpha,\alpha}, \;\, \boldsymbol{4}_{\alpha,\dot\alpha} \boldsymbol{4}^{\dot\alpha,\alpha}- \boldsymbol{5}_{\alpha,\dot\alpha} \boldsymbol{5}^{\dot\alpha,\alpha} \big\rangle}
 $$
 </div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}$ where <span style="font-size: 15pt;">$\langle \boldsymbol{3}^I|\boldsymbol{3}^J⟩=m\epsilon^{JI} \text{ and } [\boldsymbol{3}^I|\boldsymbol{3}^J]=\bar{m}\epsilon^{IJ}$</span>; we are setting <span style="font-size: 15pt;">$m=\bar{m}$</span> and the tops on-shell.
+     $\phantom{\circ}$ where <span style="font-size: 15pt;">$\boldsymbol{3}_{\alpha,\dot\alpha} \boldsymbol{3}^{\dot\alpha,\alpha} = \boldsymbol{4}_{\alpha,\dot\alpha} \boldsymbol{4}^{\dot\alpha,\alpha} = \boldsymbol{5}_{\alpha,\dot\alpha} \boldsymbol{5}^{\dot\alpha,\alpha} = 2 M_h^2$</span>.
 </div>
 
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ <span style="font-size: 15pt;">$|\boldsymbol{3}^I⟩_{\alpha}$</span> is basically two copies of a massless spinor, we can think of this through the map
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 6mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ It is sometimes useful to map to a set of all massless momenta / spinors,
 </div>
 <a href="https://arxiv.org/abs/1601.08113" style="font-size: 14pt; margin-top: -3mm; margin-right: 2mm; float: right; font-align: right;"> Conde, Marzolla</a>
 <a href="https://arxiv.org/abs/1605.07402" style="font-size: 14pt; margin-top: -3mm; margin-right: 2mm; float: right; font-align: right;"> Conde, Joung, Mkrtchyan;</a>
@@ -363,105 +364,8 @@ $$
      $\phantom{\circ}$ but if we want neat expressions we must be careful not to overparametrise the space!
 </div>
 
----
-
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> Examples of Trees </b>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: -2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ To not make this too abstract, we are after expressions like these, but for the MI coefficients.
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ For <span style="font-size: 15pt;">$Vjj$</span> there are 5 amplitudes (showing 3)
-</div>
-<div style="font-size: 15pt; margin-top: 0mm; margin-bottom: 3mm">
-$$ 
-{A}_g^{(0)}(1^{+}_\bar{q}, 2^{+}_g, 3^{+}_g, 4^{-}_q, 5^{+}_\bar{\ell}, 6^{-}_\ell) = \frac{⟨46⟩^2}{⟨12⟩⟨23⟩⟨34⟩⟨65⟩} \, , \\[6mm]
-{A}_g^{(0)}(1^{+}_\bar{q}, 2^{+}_g, 3^{-}_g, 4^{-}_q, 5^{+}_\bar{\ell}, 6^{-}_\ell) = \frac{⟨13⟩⟨3|1+2|5]^2}{⟨12⟩⟨23⟩[65]⟨1|2+3|4]s_{123}} \; + \; (123456\rightarrow \overline{432165}) \, , \\[6mm]
-{A}_q^{(0)}(1^{+}_\bar{q}, 2^{+}_{q'}, 3^{+}_{\bar{q}'}, 4^{-}_q, 5^{+}_\bar{\ell}, 6^{-}_\ell) = -\frac{[12]⟨46⟩⟨3|1+2|5]}{⟨23⟩[23]⟨56⟩[56]s_{123}}+(123456\rightarrow 156423)\phantom{+}
-$$
-</div>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ For <span style="font-size: 15pt;">$q\bar{q}\rightarrow t\bar{t}H$</span> there is only a single amplitude
-</div>
-<div style="font-size: 15pt; margin-top: 8mm; margin-bottom: 5mm">
-$$ 
-{A}_{ttH}^{(0)}(1^{+}_q, 2^{-}_\bar{q}, 3_t, 4_\bar{t}, 5_H)^I_J = \frac{⟨2|𝟑|1]⟨𝟑^I𝟒_J⟩-[𝟑^I1][1𝟒_J]⟨12⟩}{s_{12}(s_{12𝟑}-m_t²)} + 
-(12345\rightarrow\overline{21345},12435,\overline{21435})
-$$
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}$ where for clarity I have not suppressed the spin indices. Symmetries are made manifest.
-</div>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}$ <u>Note</u>: The amplitude is <b>spin covariant</b>, just like it is little group covariant! <br>
-     $\phantom{\circ} \kern7.2mm$ We need only obtain a single choice, say <span style="font-size: 15pt;">$I=J=1$</span>, the other follows. 
-</div>
-
----
-
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Spinor Alphabets </b>
-
-<div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2          mm;">
-     $\circ$ We can always factorize a polynomial into products of irreducible factors, to some powers
-</div>
-<div style="font-size:15pt; text-align: center; margin-top: 2mm; margin-bottom: 2mm">
-     $$
-     \displaystyle r_i(|i\rangle,[i|) = \frac{\mathcal{N}(|i\rangle,[i|)}{\prod_j \mathcal{D}_j^{q_{ij}}(|i\rangle,[i|)} % \, , \quad r_i(|i\rangle,[i|) \in \text{Frac}(R_n)
-     $$
-</div>
-<div style="font-size: 16pt; text-align: left; margin-top: 0mm; margin-bottom: 2mm;">
-     $\phantom{\circ}$ For the numerators this is generally not particularly useful (when in least common denominator form) <br>
-     $\phantom{\circ}$ The denominator factors <span style="font-size: 14pt">$\mathcal{D}_j$</span> are conjectured to be (mostly) related to the letters of the symbol alphabet
-</div>
-<a style="font-size: 13pt; text-align: right; float: right; margin-top: -3mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1812.04586>
-Abreu, Dormans, Febres Cordero, Ita, Page ('18)
-</a>
-
-<br>
-
-<div style="font-size: 17pt; text-align: left; margin-top: -10mm; margin-bottom: 2mm;">
-     $\circ$ Convert your alphabet from independent Mandelstam invariants to redudant spinors brackets
-</div>
-<a style="font-size: 13pt; text-align: right; float: right; margin-top: -3mm; margin-bottom: 2mm;" href="">
-From work in progress with S. Abreu, X. Liu, P.F. Monni
-</a>
-<br>
-<div style="display: flex; align-items: center; justify-content: space-between; font-size: 16pt; margin-top: -8mm;">
-  <div style="width: 48%; text-align: center;">
-    <b style="font-variant: small-caps;">Mandelstam letters</b><br>
-    <span style="font-size: 14pt;">$s_{12}$</span><br>
-    <span style="font-size: 14pt;">$s_{123}$</span><br>
-    <span style="font-size: 14pt;">$s_{12} - s_{123} - s_{345} + s_{45}$</span><br>
-    <span style="font-size: 14pt;">$-s_{12} + s_{123}$</span><br>
-    <span style="font-size: 14pt;">$s_{12}(s_{123} - s_{56}) - s_{123}(s_{123} + s_{34} - s_{56})$</span><br>
-    <span style="font-size: 14pt;">
-      $\displaystyle\frac{
-        s_{12}\left(s_{16}(s_{23} - s_{234})s_{34} + s_{23}^{2}(\cdots) + \cdots\right) + s_{123}(\cdots) + s_{23}(\cdots)
-      }{
-        \sqrt{(-s_{12} + s_{123} - s_{23})^2\cdots}
-      }$
-    </span><br>
-  </div>
-  <div style="width: 4%; text-align: center;">
-    <b style="font-size: 20pt;">$\Rightarrow$</b>
-  </div>
-  <div style="width: 48%; text-align: center;">
-    <b style="font-variant: small-caps;">Spinor letters</b><br>
-    <span style="font-size: 14pt;">$\langle 1\,2\rangle[1\,2]$</span><br>
-    <span style="font-size: 14pt;">$s_{123}$</span><br>
-    <span style="font-size: 14pt;">$\langle 3\,|\,6\rangle[3\,|\,6]$</span><br>
-    <span style="font-size: 14pt;">$\langle 3\,|\,1{+}2\,|\,3]$</span><br>
-    <span style="font-size: 14pt;">$\langle 3\,|\,1{+}2\,|\,4]\langle 4\,|\,1{+}2\,|\,3]$</span><br>
-    <div style="display: flex; align-items: center; justify-content: center; height: 2.8em;">
-      <span style="font-size: 14pt;">$\operatorname{tr}_5(2,3,4,5)$</span>
-    </div>
-  </div>
-</div>
-
-<div style="font-size: 17pt; text-align: left; margin-top: 4mm; margin-bottom: 2mm;">
-     $\circ$ Factorization and extra chiral cancellations are key for simplification in gauge amplitudes 
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 6mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ Our coefficients <span style="font-size: 15pt">$d^{h_1h_2}_{p_a\times p_b \times p_c }$</span> and <span style="font-size: 15pt">$c^{h_1h_2}_{p_a\times p_b}$</span> belong to the field of fractions over <span style="font-size: 15pt">$R_{HHH}$</span>.
 </div>
 
 ---
@@ -531,6 +435,29 @@ From work in progress with S. Abreu, X. Liu, P.F. Monni
 <div style="border: 2px solid black; font-size: 16pt; padding: 10px; display: inline-block; margin-top: 4mm;">
     Poles & Zeros $\;\Leftrightarrow\;$ Irreducible Varieties $\;\Leftrightarrow\;$ Prime Ideals <br>
     <i style="font-size: 14pt; border-top: -8mm; border-bottom: -2mm;"> Physics $\kern18mm$ Geometry $\kern18mm$ Algebra </i>
+</div>
+
+---
+
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> A Concrete Example </b>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: -2mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ For instance, <span style="font-size: 15pt">$\hat d^{+-}_{p_{12}\times p_3 \times p_4}=$</span>
+</div>
+<div style="font-size: 14pt; margin-top: 0mm; margin-bottom: 3mm">
+$$ 
+\begin{gathered}
+\frac{-1/4⟨1|𝟒|𝟑-𝟓|1⟩⟨1|𝟑|𝟒|𝟓|2](s_{12}-3m_h²+8m_t²)}{⟨12⟩Δ_{12|𝟑|𝟒|𝟓}} +\\
+\frac{(⟨1|𝟑|𝟒|𝟓|1]-⟨2|𝟑|𝟒|𝟓|2])⟨2|𝟑|𝟒|𝟓|2]⟨1|𝟑|𝟒|1⟩(-1/4(s_{12}-3m_h²+8m_t²)-1/8(s_{1𝟒}-s_{1𝟓}-2s_{12}+2s_{𝟑𝟒}-2m_h²))}{⟨12⟩⟨2|𝟑|𝟒|𝟓|1]Δ_{12|𝟑|𝟒|𝟓}} +\\
+\frac{(⟨1|𝟑|𝟒|𝟓|1]-⟨2|𝟑|𝟒|𝟓|2])⟨1|𝟑|𝟒|𝟓|1]⟨1|𝟓|𝟒|1⟩(-1/4(s_{12}-3m_h²+8m_t²)-1/8(s_{1𝟒}-2s_{1𝟓}-2s_{12}+2s_{𝟑𝟒}))}{⟨12⟩⟨2|𝟑|𝟒|𝟓|1]Δ_{12|𝟑|𝟒|𝟓}} +\\
+\frac{(⟨1|𝟑|𝟒|𝟓|1]-⟨2|𝟑|𝟒|𝟓|2])⟨1|𝟑|𝟒|𝟓|2]⟨1|𝟑|𝟓|2⟩(-1/8(m_h²-3s_{12}+2s_{1𝟒}-2s_{2𝟑}-s_{2𝟒})-1/4(s_{12}-3m_h²+8m_t²))}{⟨12⟩⟨2|𝟑|𝟒|𝟓|1]Δ_{12|𝟑|𝟒|𝟓}} +\\
+\frac{(⟨1|𝟑|𝟒|𝟓|1]-⟨2|𝟑|𝟒|𝟓|2])⟨1|𝟑|𝟒|𝟓|2](3/16⟨1|𝟑|1]²+3/16⟨1|𝟒|1]²+1/8\text{tr}(𝟑|𝟒)⟨2|𝟑|2]+1/16⟨2|𝟑|2]²)}{⟨2|𝟑|𝟒|𝟓|1]Δ_{12|𝟑|𝟒|𝟓}} +\\
+\frac{(⟨1|𝟑|𝟒|𝟓|1]-⟨2|𝟑|𝟒|𝟓|2])(-1/8⟨1|𝟑|2]⟨1|𝟑|𝟓|1⟩+1/4⟨1|𝟒|2]⟨1|𝟑|𝟒|1⟩)}{⟨12⟩Δ_{12|𝟑|𝟒|𝟓}} +\\
+\frac{-1/4⟨1|𝟒|2]⟨1|𝟒|1](⟨1|𝟑|𝟒|𝟓|1]-⟨2|𝟑|𝟒|𝟓|2])⟨1|𝟑|𝟒|𝟓|1]}{⟨2|𝟑|𝟒|𝟓|1]Δ_{12|𝟑|𝟒|𝟓}} +\\
+\frac{(⟨1|𝟑|𝟒|𝟓|1]-⟨2|𝟑|𝟒|𝟓|2])⟨1|𝟑|𝟒|1⟩m_h²(-1/8m_h²⟨1|𝟒|1]-1/8(s_{𝟑𝟒}-m_h²)⟨2|𝟑|2])}{⟨12⟩⟨2|𝟑|𝟒|𝟓|1]Δ_{12|𝟑|𝟒|𝟓}} +\\
+(21𝟓𝟒𝟑,\;\text{True}) \phantom{+}
+\end{gathered}
+$$
 </div>
 
 ---
@@ -687,102 +614,6 @@ $\circ\,$ Efficient implementation using open-source software only
 
 <div style="text-align: left; font-size: x-large; margin-top: -2mm;">
 $\circ\,$ Linear systems solved w/ CUDA over $\mathbb{F}_{2^{31}-1}$ ($t_{\text{solving}} \ll t_{\text{sampling}}$) w/ <a href=https://github.com/GDeLaurentis/linac-dev> linac </a> <span style="text-align: left; font-size: small;"> (coming soon-ish) </span>
-</div>
-
----
-
-<div style="margin-top: 2mm; margin-bottom: 3mm">
-     <b style="font-variant: small-caps; font-size: 32pt"> Reconstruction from Conjectured Properties </b>
-     <p style="margin-top: -2mm; margin-bottom: -=mm; font-size: 16pt;">
-     (for planar five-point one-mass amplitudes - all properties checked a posteriori)
-     </p>
-</div>
-
-<div style="text-align: left; font-size: 18pt; margin-top: 3mm; margin-bottom: 2mm;">
-     $\circ\,$ Denominator pairs <span style="font-size: 16pt">$\{\mathcal{D}_i, \mathcal{D}_j\}$</span> can be <i>cleanly separated</i>:
-</div>
-<div style="font-size:14pt; text-align: center; margin-top: 2mm; margin-bottom: 1mm;">
-     $$
-     \frac{\mathcal{N}}{\mathcal{D}_i^{q_i}\mathcal{D}_j^{q_j}\mathcal{D}_{\text{rest}}} \rightarrow \frac{\mathcal{N}_i}{\mathcal{D}_i^{q_i}\mathcal{D}_{\text{rest}}} + \frac{\mathcal{N}_j}{\mathcal{D}_j^{q_j}\mathcal{D}_{\text{rest}}}
-     $$
-</div>
-<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
-     $\phantom{\circ}\,$ Examples of <span style="font-size: 16pt">$\{\mathcal{D}_i, \mathcal{D}_j\}$</span> are:
-</div>
-<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 2mm;">
-     $\qquad\star\,$ Any pairs of <span style="font-size: 14pt">$s_{ijk}$</span> or <span style="font-size: 14pt">$\Delta_{ij|kl|mn}$</span> or <span style="font-size: 16pt">$\langle i|j|p_V|k|i]-\langle j|l|p_V|k|j]$</span> <br>
-     $\qquad\star\,$ Any conjugate pair <span style="font-size: 14pt">$\{\langle i|j+k|l], \langle l|j+k|i]\}$</span> or cyclic <span style="font-size: 14pt">$\{\langle i|j\rangle, [i|j]\}$</span> <br>
-     $\qquad\star\,$ Pairs of the form <span style="font-size: 14pt">$\{\Delta_{ij|kl|mn}, \langle c|a+b|d] \text{ or } \langle ab \rangle \text{ or } [ab] \}$</span> unless <span style="font-size: 14pt">$\{ab\}$</span> are <span style="font-size: 14pt">$\{ij\}$</span> or <span style="font-size: 14pt">$\{kl\}$</span> or <span style="font-size: 14pt">$\{mn\}$</span>
-</div>
-
-<div style="text-align: left; font-size: 18pt; margin-top: 4mm; margin-bottom: 2mm;">
-     $\circ\,$ Other denominator pairs <span style="font-size: 15pt">$\{\mathcal{D}_i, \mathcal{D}_j\}$</span> can be <i>separated to order $\kappa$</i> 
-</div>
-<div style="font-size:14pt; text-align: center; margin-top: 2mm; margin-bottom: 1mm;">
-     $$
-     \frac{\mathcal{N}}{\mathcal{D}_i^{q_i}\mathcal{D}_j^{q_j}\mathcal{D}_{\text{rest}}} \rightarrow \sum_{\kappa - q_j\leq m \leq q_i}\frac{\mathcal{N}_i}{\mathcal{D}_i^{m}\mathcal{D}_j^{\kappa - m}\mathcal{D}_{\text{rest}}}
-     $$
-</div><div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 2mm;">
-     $\qquad\star\,$ E.g. <span style="font-size: 14pt">$\Delta_{ij|kl|mn}^4, \langle i|k+l|j]^5$</span> are separable to order 5.
-</div>
-
-<div style="text-align: center; font-size: 18pt; margin-top: 3mm; margin-bottom: -2mm;">
-     ${\color{greeN} ✓}$ Reconstruction only required 50k <span style="font-size: 16pt">$\mathbb{F}_p$</span> samples $\;{\color{greeN} ✓}$Already simpler than original ones (<span style="font-size: 14pt">$\sim$</span>20MB) <br>
-     $\;{\color{red} ✗}$ Results are unstable and sub-optimal, e.g. numbers like this appeared
-</div>
-<span style="font-size: 14pt">127187555379407704220939486282289348327703498501718808908391691454242601886997968263623652083189652150273</span>
-
----
-
-<div style="margin-top: 2mm; margin-bottom: 3mm">
-     <b style="font-variant: small-caps; font-size: 32pt"> Example </b>
-</div>
-
-<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
-     $\circ\,$ Start from the function
-</div>
-<div style="font-size: 13pt; margin-top: 5mm; margin-bottom: 5mm">
-$$ 
-\displaystyle f^{\text{ex}} = \frac{\mathcal{N}^{\text{ex}}}{⟨14⟩^2[14]^2 s_{56} ⟨1|2+4|3]^2⟨2|1+4|3]^4⟨2|1+3|4]^2Δ_{14|23|56}^4}
-$$
-</div>
-<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
-     $\phantom{\circ}\,$  The numerator Ansatz has size 104$\,$128
-</div>
-
-<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
-     $\circ\,$ Clean up the <span style="font-size: 14pt">$Δ_{14|23|56}$</span> Gram residue
-</div>
-<div style="font-size: 13pt; margin-top: 5mm; margin-bottom: 5mm">
-$$ 
-\displaystyle f^{\text{ex}} = \frac{\mathcal{N}^{\text{ex}}_1}{⟨14⟩^2[14]^2s_{56}⟨2|1\!+\!4|3]^4Δ_{14|23|56}^4 \,} + \frac{\mathcal{N}^{\text{ex}}_2}{⟨14⟩^2[14]^2s_{56}⟨2|1+4|3]^4⟨1|2\!+\!4|3]^2⟨2|1\!+\!3|4]^2}
-$$
-</div>
-
-<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
-     $\circ\,$ Split <span style="font-size: 14pt">$s_{14}$</span> and impose symmetry
-</div>
-<div style="font-size: 13pt; margin-top: 5mm; margin-bottom: 5mm">
-$$ 
-\displaystyle f^{\text{ex}} =
-  \frac{\mathcal{N}^{\text{ex}}_{3}}{⟨14⟩^2 s_{56} ⟨2|1+4|3]^4Δ_{14|23|56}^4}
-  + \frac{\mathcal{N}^{\text{ex}}_{4}}{⟨14⟩^2 s_{56} ⟨1|2+4|3]^2⟨2|1+4|3]^4⟨2|1+3|4]^2} + (123456\rightarrow \overline{432165})
-$$
-</div>
-
-<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
-     $\circ\,$ Impose degree bound on poles at codimension two
-</div>
-<div style="font-size: 13pt; margin-top: 5mm; margin-bottom: 5mm">
-$$ 
-\displaystyle f^{\text{ex}} = 
-  \sum_{k=0}^3 \frac{\mathcal{N}^{\text{ex}}_{5,k}}{⟨14⟩^2 s_{56} ⟨2|1+4|3]^{1+k} Δ_{14|23|56}^{4-k}}
-    + \frac{\mathcal{N}^{\text{ex}}_6}{⟨14⟩^2 s_{56}⟨1|2+4|3]^2⟨2|1+4|3]^4⟨2|1+3|4]^2} + (123456\rightarrow \overline{432165})
-$$
-</div>
-
-<div style="text-align: center; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
-     The Ansatz now has size 13$\,$532, almost a factor of 10 simpler.
 </div>
 
 ---
