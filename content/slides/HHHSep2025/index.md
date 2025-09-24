@@ -163,10 +163,9 @@ $$
 
 ---
 
-<b style="font-variant: small-caps; font-size: 34pt; magin-bottom: -5mm;"> Setting up the Calculation </b> <br>
+<b style="font-variant: small-caps; font-size: 34pt; magin-bottom: -10mm;"> Setting up the Calculation </b> <br>
 
-
-<div style="font-size: 17pt; text-align:left; margin-bottom: 2mm; margin-top: 0mm;">
+<div style="font-size: 17pt; text-align:left; margin-bottom: 2mm; margin-top: -4mm;">
 $\circ$ We perform a first analytic computation in two ways
      <div style="font-size: 16pt; width:99%; text-align: left; display: inline-block; margin-top: 2mm; margin-left:10mm;">
 	     1. A standard computation directly from Feynman diagrams <br>
@@ -187,11 +186,11 @@ $\circ$ We perform a first analytic computation in two ways
 <div style="font-size: 17pt; text-align:left; margin-bottom: 2mm; margin-top: 0mm;">
      <div style="font-size: 16pt; width:99%; text-align: left; display: inline-block; margin-top: 2mm; margin-left:10mm;">
           $\kern2mm$ The sum in the RHS is over all topologies <span style="font-size: 14pt;">$\Gamma'$</span> that have at least the cut propagators $\Gamma$, <br>
-          $\kern2mm$ and the product is over not cut propagators.
+          $\kern2mm$ and the product is over propagators that have not been cut.
 	</div>
 </div>
 
-<div style="font-size: 17pt; text-align: left; margin-bottom: 0mm; margin-top: 6mm;">
+<div style="font-size: 17pt; text-align: left; margin-bottom: 0mm; margin-top: 2mm;">
      $\circ$ Pentagons are reducible to linear combination of boxes, and we observe all bubbles vanish, leaving:
 </div>
 <div style="display:block; width:100%; margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm;">
@@ -207,8 +206,34 @@ $\circ$ We perform a first analytic computation in two ways
 </div>
 
 <div style="font-size: 17pt; text-align: left; margin-bottom: 0mm; margin-top: 3mm;">
-     $\circ$ In principle, we do not require such an starting analytic representation: <br>
-     $\phantom{\circ}$ we just need a program that gives us numbers for the master integral coefficients.
+     $\circ$ In principle, a numerical program for <span style="font-size: 15pt">$d^{h_1h_2}_{p_a\times p_b \times p_c }$</span> and <span style="font-size: 15pt">$c^{h_1h_2}_{p_a\times p_b}$</span> would suffice for what follows.
+</div>
+
+---
+
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> Overview of the Approach </b>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: -2mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ Goal is to obtain simple forms for <span style="font-size: 15pt">$d^{h_1h_2}_{p_a\times p_b \times p_c }$</span> and <span style="font-size: 15pt">$c^{h_1h_2}_{p_a\times p_b}$</span>
+</div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
+     $\star$ We will use only numerical evaluations to study their structure <br>
+     $\star$ We will parametrize the possible functional form (Ansatz) and solve for free coefficients
+</div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
+     Think of this as a bootstrap helped by additional numerical information.
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ The analytic structure should be clear with $p^\mu \in \mathbb{C}^{4}$ (good $\mathbb{R}^{4}$ behaviour will follow)
+</div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
+     $\phantom{\star}$ In practice, take <span style="font-size: 16pt;">$P^{\mu=y}\in i\mathbb{Q}\Rightarrow \lambda_{\alpha} \in \mathbb{F}_p \text{ or } \mathbb{Q}_p$</span> <br>
+     $\phantom{\star}$ This allows us to generate phase space points in a finite field (modular arithmetics)
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$  Analytic manipulations are too complex, we bypass this complexity by letting cancellations happen numerically
 </div>
 
 </section>
@@ -233,57 +258,7 @@ $\circ$ We perform a first analytic computation in two ways
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> Guiding Principles </b>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: -2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Amplitude should be gauge and Lorentz invariant, and spin and little-group covariant
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{red} ✗}$ gauge dependence, e.g. through reference vectors <br>
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{red} ✗}$ tensor decompositions <span style="font-size: 16pt;">$\epsilon_\mu T^\mu$</span>, polarizations are needed for simplifications
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{greeN} ✓}$ <span style="font-size: 16pt;">$\epsilon_\mu \rightarrow \epsilon_{\alpha\dot\alpha}$, $P^\mu \rightarrow  \lambda_\alpha \tilde\lambda_{\dot\alpha}$</span>; all <span style="font-size: 16pt;">$\alpha, \dot\alpha$</span> indices contracted; all <span style="font-size: 16pt;">$\lambda, \tilde\lambda$</span> random (subject to mom cons)
-</div>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ The singularity structure should be manifest in $\mathbb{C}$ (exprs will then be better behaved in $\mathbb{R}$ too)
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{red} ✗}$ Rational reparametrisations of the kinematics change the denominator structure
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{red} ✗}$ Forcing unphysical splits misses cancellations (e.g. even nor odd separation)
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{greeN} ✓}$ Chiral cancellations are required to obtain the true Least Common Denominator
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{greeN} ✓}$ Work off the real slice: <span style="font-size: 16pt;">$P^\mu \in \mathbb{C}^4$, $\lambda_\alpha \neq \tilde\lambda_{\dot\alpha}^\dagger$</span>. In practice, <span style="font-size: 16pt;">$P^{\mu=y}\in i\mathbb{Q}\Rightarrow \lambda_{\alpha} \in \mathbb{F}_p \text{ or } \mathbb{Q}_p$</span>
-</div>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Focus only on final physical expressions
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{red} ✗}$ Unphysical intermediate steps may be unnecessarily complicated
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{red} ✗}$ Analytic manipulations at this complexity are unfeasible, even on "physical" results
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{greeN} ✓}$ Bypass all intermediate steps with numerical evaluations (cancellations happen numerically)
-</div>
-
----
-
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Trade-offs and Challenges </b>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ We must work with <u>variables subject to constrains</u>. The language is that of algebraic geometry.
-</div>
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Variables Subject to Constraints </b>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
      $\circ$ For example, consider polynomials in two variables <span style="font-size: 14pt;">$x, y$</span>. They live in a <b>polynomial ring</b>:
