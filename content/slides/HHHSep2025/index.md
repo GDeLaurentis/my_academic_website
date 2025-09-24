@@ -29,7 +29,7 @@ Giuseppe De Laurentis
 <div style="font-size: large;"> University of Edinburgh </div>
 <br>
 <a href="https://arxiv.org/pdf/2507.19313">arXiv:2507.19313</a> 
-<div style="font-size: large; margin-bottom:5mm;"> (J. Campbell, GDL, K. Ellis) </div>
+<div style="font-size: large; margin-bottom:5mm;"> with J. Campbell and K. Ellis </div>
 
 <div style="font-size: large; margin-top:10mm; margin-bottom:10mm;"> See also: <br>
 <span style="font-size: 12pt;">$q\bar{q}\rightarrow t\bar{t}H$</span> (<a href="https://arxiv.org/abs/2504.19909">arXiv:2504.19909</a>) <br>
@@ -56,7 +56,7 @@ HHH Workshop
 
 <b style="font-variant: small-caps; font-size: 32pt"> Theoretical Motivation </b>
 
-<div style="text-align: left; font-size: 18pt; margin-bottom: 1mm; margin-top: 2mm; margin-left: -4mm;">
+<div style="text-align: left; font-size: 18pt; margin-bottom: 1mm; margin-top: 0mm; margin-left: -4mm;">
      $\circ\,$ Direct probe of triple and quartic Higgs self-couplings at current and future colliders. <br>
      $\phantom{\circ}\,$ We write the potential in the kappa framwork (SM: <span style="font-size: 15pt">$\kappa_3 = \kappa_4 = 1$</span>)
 </div>
@@ -67,7 +67,7 @@ V(H) = \frac{1}{2} m_h^2 H^2 + \kappa_3 \lambda v H^3 + \kappa_4 \frac{\lambda}{
 $$
 </div>
 <div style="text-align: left; font-size: 18pt; margin-bottom: 1mm; margin-top: 2mm; margin-left: -4mm;">
-     $\phantom{\circ}\,$ We have contributions proportional to <span style="font-size: 15pt">$\kappa_4$, $\kappa_3^2$ ($A_3$), $\kappa_3$ ($A_4$)</span>, and no <span style="font-size: 15pt">$\kappa$ ($A_5$).</span>
+     $\phantom{\circ}\,$ There are contributions proportional to <span style="font-size: 15pt">$\kappa_4$, $\kappa_3^2$ ($A_3$), $\kappa_3$ ($A_4$)</span>, and no <span style="font-size: 15pt">$\kappa$ ($A_5$).</span>
 </div>
 
 <div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
@@ -79,10 +79,12 @@ $$
 
 <div style="text-align: left; font-size: 18pt; margin-bottom: 5mm; margin-top: 5mm; margin-left: -4mm;">
      $\circ\,$ Facilitate phenomenological studies through faster and more stable evaluations: <br>
-     $\phantom{\circ}\,$ We obtain an order of magnitude speed up compared to Recola2 and OpenLoops2.
+     $\phantom{\circ}\,$ we observe an order of magnitude speed up compared to <span style="font-variant: small-caps;">Recola2</span> and <span style="font-variant: small-caps;">OpenLoops2</span>.
 </div>
+<a href="https://arxiv.org/abs/1907.13071" style="font-size: 14pt; margin-top: 0mm; margin-bottom: -10mm; float: right; font-align: right;"> Buccioni, Lang, Lindert, Maierhöfer, Pozzorini, Zhang, Zoller</a>
+<a href="https://arxiv.org/abs/1711.07388" style="font-size: 14pt; margin-top: -6mm; margin-bottom: 0mm; float: right; font-align: right;"> Denner, Lang, Uccirati</a>
 
-<div style="text-align: left; font-size: 18pt; margin-bottom: 1mm; margin-top: 5mm; margin-left: -4mm;">
+<div style="text-align: left; font-size: 18pt; margin-bottom: 1mm; margin-top: 14mm; margin-left: -4mm;">
      $\circ\,$ Improve understanding of the analytical structure:
      <div style="text-align: left; font-size: 18pt; margin-bottom: 1mm; margin-top: 2mm; margin-left: -4mm;">
           $\qquad\star\,$ Stepping stone towards real-radiation processes and, eventually, multi-loop corrections.
@@ -117,7 +119,7 @@ $$
 A_3^{++} &=& 
 \frac{\spb1.2}{\spa1.2} \, \frac{6\mh^2}{\mt^2(s_{12}-\mh^2)} 
  \Bigl[(4\mt^2-s_{12}) C_0(p_1,p_2; \mt)+2\Bigr]\times
- \left(\kappa_4+ \frac{3\kappa_3^2 \mh^2}{s_{34}-\mh^2} + \text{perm.} \right) \, ,
+ \left(\kappa_4+ \frac{3\kappa_3^2 \mh^2}{s_{34}-\mh^2} + \text{perms.} \right) \, ,
 \\
 A_3^{-+} &=& 0 \, .
 \end{eqnarray}
@@ -125,25 +127,28 @@ $$
 </div>
 
 <div style="text-align: left; font-size: 18pt; margin-bottom: 1mm; margin-top: 2mm; margin-left: -4mm;">
-     $\phantom{\circ}\,$ Where $C_0(p_1,p_2; \mt)$ is the scalar triangle Feynman integral.
+     $\phantom{\circ}\,$ Where $C_0(p_1,p_2; \mt)$ is the scalar triangle Feynman integral: $\frac{1}{i \pi^{2}} \int \,  \frac{d^4 l}{d_0 \; d_1 \; d_2} $
 </div>
 
 ---
 
 <b style="font-variant: small-caps; font-size: 32pt"> Subprocesses \& Feynman Diagrams: $\kappa_3$ \& no $\kappa$ </b>
 
-<div style="text-align: left; font-size: 18pt; margin-bottom: 1mm; margin-top: 2mm; margin-left: -4mm;">
+<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: -4mm;">
      $\circ\,$ The $\kappa_3$ diagrams are boxes (and triangle pinches, but no bubble contribution)
 </div>
-<img src="diagrams_self_coupling_k3_transparent.png" style="max-width:70%; height:auto;">
-<div style="text-align: left; font-size: 18pt; margin-bottom: 1mm; margin-top: 2mm; margin-left: -4mm;">
+<img src="diagrams_self_coupling_k3_transparent.png" style="max-width:70%; height:auto; margin-top: 0mm; margin-bottom: 0mm;">
+<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: -4mm;">
      $\phantom{\circ}\,$ Their contribution is also fairly simple, it can be written in 4 or 5 lines.
 </div>
 
-<div style="text-align: left; font-size: 18pt; margin-bottom: 3mm; margin-top: 3mm; margin-left: -4mm;">
+<div style="text-align: left; font-size: 18pt; margin-bottom: 8mm; margin-top: 2mm; margin-left: -4mm;">
      $\circ\,$ The background diagrams are by far the most complicated, for reasons we'll see shortly
 </div>
-<img src="diagrams_background_transparent.png" style="max-width:70%; height:auto;">
+<img src="diagrams_background_transparent.png" style="max-width:70%; height:auto; margin-top: 0mm; margin-bottom: 0mm;">
+<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: -4mm;">
+     $\phantom{\circ}\,$ We require a new approach to tackle them analytically.
+</div>
 
 
 </section>
@@ -158,125 +163,53 @@ $$
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> Partial Amplitudes & Finite Remainders </b>
- 
-<div style="font-size: 18pt; float: left; margin-top: 2mm; margin-bottom: 0mm;">
-     $\circ$ Amplitude (integrands) can be written as (for a suitable choice of master integrals)
-</div>
-<br>
-<div style="font-size: 15pt; margin-top: 0mm;  margin-bottom: 2mm">
-$$
-\displaystyle A(\lambda, \tilde\lambda, \ell) =
-\sum_{\substack{\Gamma,\\ i \in M_\Gamma \cup S_\Gamma}} \, c_{\,\Gamma,i}(\lambda, \tilde\lambda, \epsilon) \,		\frac{m_{\Gamma,i}(\lambda\tilde\lambda, \ell)}{\textstyle \prod_{j} \rho_{\,\Gamma,j}(\lambda\tilde\lambda, \ell)} \;\; \xrightarrow[]{\int d^D\ell} \;\; \sum_{\substack{\Gamma,\\ i \in M_\Gamma}} \frac{ \sum_{k=0}^{\text{finite}} \, {\color{red}c^{(k)}_{\,\Gamma, i}}(\lambda, \tilde\lambda) \, \epsilon^k}{\prod_j (\epsilon - a_{ij})} \, {\color{orange}I_{\Gamma, i}}(\lambda\tilde\lambda, \epsilon)
-$$  
-</div>
-<div style="font-size: 14pt; float: center; margin-bottom: 5mm; margin-top: 5mm;">
-     $\circ$  $\Gamma$: topologies $\quad\circ$ $M_\Gamma$: master integrands $\quad\circ$ $S_\Gamma$: surface terms 
-</div>
-
-<div style="text-align: left; font-size: 18pt; margin-bottom: 0mm;">
-     $\circ$ <u>All physical information</u> is contained in the <i>finite remainders</i>, at two loops
-</div>
-<a style="font-size: large; text-align: right; float: right; margin-top: -3mm; margin-bottom: -3mm;" href=https://inspirehep.net/literature/920274>
-Weinzierl ('11)
-</a>
-
-<div style="font-size: 14.5pt; margin-top: 5mm; margin-bottom: 5mm">
-$$ 
-\underbrace{\mathcal{R}^{(2)}}_{\text{finite remainder}} = \mathcal{A}^{(2)}_R \underbrace{- \quad I^{(1)}\mathcal{A}^{(1)}_R \quad - \quad I^{(2)}\mathcal{A}^{(0)}_R}_{\text{divergent + convention-dependent finite part}} + \mathcal{O}(\epsilon)
-$$
-</div>
-<a style="font-size: 13pt; float:right; text-align:right; margin-top:-18mm;" href=https://www.sciencedirect.com/science/article/abs/pii/S0370269398003323?via%3Dihub>
-Catani ('98)
-</a>
-<a style="font-size: 13pt; float:right; margin-top:-13mm;" href=https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.102.162001>
-Becher, Neubert ('09)
-</a>
-<a style="font-size: 13pt; float:right; text-align:right; margin-top:-8mm;" href=https://arxiv.org/abs/0901.1091>
-Gardi, Magnea ('09)
-</a>
-
-<div style="text-align: left; font-size: 16pt; margin-bottom: 0mm; margin-top:0mm;">
-     $\phantom{\circ}$ <span style="font-size: 15pt">$\mathcal{A}^{(1)}_R$</span> to order <span style="font-size: 15pt">$\epsilon^2$</span> is still needed to build <span style="font-size: 15pt">$\mathcal{R}^{(2)}$</span>, but there is no real physical reason to reconstruct it.
-</div>
-
-<div style="text-align: left; font-size: 18pt; margin-top: 5mm; margin-bottom: 5mm;">
-     $\circ$ Finite remainder as a weighted sum of <i>pentagon functions</i> <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-top: 0mm; margin-left: 4mm; " href=https://arxiv.org/abs/2009.07803> Chicherin, Sotnikov ('20) </a> <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-top: -3mm; margin-left: 4mm; " href=https://arxiv.org/abs/2110.10111> Chicherin, Sotnikov, Zoia ('21) </a>
-</div>
-
-<div style="font-size: 14.5pt; margin-top: 5mm; margin-bottom: 5mm">
-$$ 
-\textstyle \mathcal{R}(\lambda, \tilde\lambda) = \sum_i \color{red}{r_{i}(\lambda,\tilde\lambda)} \, \color{orange}{h_i(\lambda\tilde\lambda)}
-$$
-</div>
-
-<div style="text-align: left; font-size: 16pt; margin-top: 3mm; margin-bottom: 0mm;">
-     $\circ$  Goal: reconstruct <span style="font-size: 14pt">$\color{red}{r_{i}(\lambda,\tilde\lambda)}$</span> from numerical samples in a field $\mathbb{F}$
-</div>
-<a style="font-size: large; text-align: right; float: right; margin-top: -10mm; margin-bottom: -10mm; margin-right: 24mm;" href=https://arxiv.org/abs/1406.4513>
-$\mathbb{F}_p$: von Manteuffel, Schabinger ('14); 
-</a> <a style="font-size: large; text-align: right; float: right; margin-top: -10mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1608.01902>
-$\phantom{\mathbb{F}_p}$ Peraro ('16)
-</a><br>
-<a style="font-size: large; text-align: right; float: right; margin-top: -17mm; margin-bottom: -10mm; margin-right: 43mm;" href=https://arxiv.org/abs/1406.4513>
-$\mathbb{C}$: GDL, Maitre ('19);
-</a> <a style="font-size: large; text-align: right; float: right; margin-top: -16.7mm; margin-bottom: -10mm;" href=https://arxiv.org/abs/1406.4513>
-$\mathbb{Q}_p$: GDL, Page ('22)
-</a>
-
----
-
 <b style="font-variant: small-caps; font-size: 34pt; magin-bottom: -5mm;"> Setting up the Calculation </b> <br>
 
-<div style="font-size: 17pt; text-align:left; margin-bottom: 0mm; margin-top: 0mm;">
-$\circ$ Original computation  <a href="https://arxiv.org/abs/hep-ph/9708239" style="font-size: 18pt">[1]</a> was performed with <span style="font-variant: small-caps;font-size: 17pt">Caravel</span>
+
+<div style="font-size: 17pt; text-align:left; margin-bottom: 2mm; margin-top: 0mm;">
+$\circ$ We perform a first analytic computation in two ways
+     <div style="font-size: 16pt; width:99%; text-align: left; display: inline-block; margin-top: 2mm; margin-left:10mm;">
+	     1. A standard computation directly from Feynman diagrams <br>
+	     2. A generalized-unitarity computation from cut-diagrams (i.e. products of trees) <br>
+          $\kern2mm$ In this approach the amplitude is constructed as (schematically)
+	</div>
 </div>
 
 <div style="display:block; width:100%; margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm;">
-     <div style="font-size: 15pt; width:75%; text-align: left; display: inline-block; margin-top: 1mm;">
+     <div style="font-size: 15pt; text-align: left; display: inline-block; margin-top: 1mm;">
 	     $$
 	     \require{color}
-	     \displaystyle \sum_{\text{states}} \, \prod_{\text{trees}} A^{\text{tree}}(\lambda, \tilde\lambda, \ell)\big|_{\text{cut}_{\Gamma}} = \sum_{\substack{\Gamma' \ge \Gamma, \\ i \in M_\Gamma' \cup S_\Gamma'}} \kern-2mm {\color{black}{c_{\,\Gamma',i}(\lambda, \tilde\lambda)}} \, \frac{m_{\Gamma',i}(\lambda\tilde\lambda, \ell)}{\displaystyle \prod_{j\in P_{\Gamma'} / P_{\Gamma}} \rho_{j}(\lambda\tilde\lambda, \ell)}\Bigg|_{\text{cut}_\Gamma}
+	     \displaystyle \sum_{\text{states}} \, \prod_{\text{trees}} A^{\text{tree}}(\lambda, \tilde\lambda, \ell)\big|_{\text{cut}_{\Gamma}} = \sum_{\Gamma' \ge \Gamma} \kern0mm {\color{black}{c_{\,\Gamma',i}(\lambda, \tilde\lambda)}} \, \frac{m_{\Gamma',i}(\lambda\tilde\lambda, \ell)}{\displaystyle \prod_{j\in P_{\Gamma'} / P_{\Gamma}} \rho_{j}(\lambda\tilde\lambda, \ell)}\Bigg|_{\text{cut}_\Gamma}
 	     $$
 	</div>
-     <div style="width:25%; float: right; display: inline-block; margin-top: -15mm;">
-	     <div style="font-size: x-large; width:50%; float: center; text-align: center;  display: inline-block; margin-top: 0mm;">
-	     	  <code> C++ code </code>
-	     </div><br>
-	     <img src="CaravelLogo.png"; style="max-width:150px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;">
-	     <br>
-	     <a style="font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 5mm;"
-	     	href=https://arxiv.org/abs/2009.11957>
-		<div style="margin-top:-4mm; font-size: 11pt;"> Abreu, Dormans, </div>
-		<div style="margin-top:0mm; font-size: 11pt;"> Febres Cordero, Ita  </div>
-		<div style="margin-top:0mm; font-size: 11pt;"> Kraus, Page, Pascual, </div>
-		<div style="margin-top:0mm; font-size: 11pt;"> Ruf, Sotnikov ('20) </div>
-	     </a>
-	</div>
-     <div style="font-size: 16pt; width:75%; text-align: left; display: inline-block; margin-top: 2mm; margin-bottom: -4mm;">
-	     $\rightarrow$ Numerical Berends-Giele recursion for LHS, solve for coeffs. in RHS.<br>
-	     $\rightarrow$ IBP reduction = decomposition on RHS, <span style="font-size: 16t">$\; m_{\Gamma,i} \in M_\Gamma \cup S_\Gamma$</span>
+</div>
+
+<div style="font-size: 17pt; text-align:left; margin-bottom: 2mm; margin-top: 0mm;">
+     <div style="font-size: 16pt; width:99%; text-align: left; display: inline-block; margin-top: 2mm; margin-left:10mm;">
+          $\kern2mm$ The sum in the RHS is over all topologies <span style="font-size: 14pt;">$\Gamma'$</span> that have at least the cut propagators $\Gamma$, <br>
+          $\kern2mm$ and the product is over not cut propagators.
 	</div>
 </div>
 
 <div style="font-size: 17pt; text-align: left; margin-bottom: 0mm; margin-top: 6mm;">
-     $\circ$ This computation started from the ancillaries files of <a href="https://arxiv.org/abs/hep-ph/9708239" style="font-size: 14pt">[1] Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov</a>
-     <div style="font-size: 16pt; width:99%; text-align: left; display: inline-block; margin-top: 2mm; margin-left:10mm;">
-	     1. Wrote a Python script to split the 1.4 GB ancillaries into >10k files <br>
-	     2. Compile into 18.2 GB of C++ binaries (for reference <span style="font-variant: small-caps;font-size: 17pt">Caravel</span> compiles into approx. 5 GB) <br>
-          3. Obtain <span style="font-size: 16t">$\mathbb{F}_p$</span> evaluations of the form factors (each takes approx. 1 sec per point)<br>
-          4. Recombine triplets of form factors into six-point helicity amplitudes (incl. decays)
+     $\circ$ Pentagons are reducible to linear combination of boxes, and we observe all bubbles vanish, leaving:
+</div>
+<div style="display:block; width:100%; margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm;">
+     <div style="font-size: 15pt; text-align: left; display: inline-block; margin-top: 1mm;">
+	     $$
+	     A_5^{h_1h_2} = \sum_{a,b,c} d^{h_1h_2}_{p_a\times p_b \times p_c } D_0(p_a, p_b, p_c; m_t) + \sum_{a,b} c^{h_1h_2}_{p_a\times p_b} C_0(p_a, p_b; m_t)
+	     $$
 	</div>
 </div>
 
-<div style="font-size: 17pt; text-align:left; margin-bottom: 0mm; margin-top: 2mm;">
-$\rightarrow$ Assemble 5 helicity amplitudes into 3 categories: <span style="font-size: 14pt;">$\mathcal{R}_{\bar qQ\bar QqV}^{\text{NMHV}} ,\, \mathcal{R}_{\bar qggqV}^{\text{MHV}} ,\, \mathcal{R}_{\bar qggqV}^{\text{NMHV}}$</span>
+<div style="font-size: 17pt; text-align: left; margin-bottom: 0mm; margin-top: -3mm;">
+     $\circ$ This results in a few MBs of optimized <span style="font-variant: small-caps;">FORM</span> routines for the box and triangle coefficients.
 </div>
 
 <div style="font-size: 17pt; text-align: left; margin-bottom: 0mm; margin-top: 3mm;">
-     $\circ$ <span style="font-size: 15pt;">$t\bar{t}H$</span> computed analytically (<span style="font-variant: small-caps;">Form</span> optimized) with unitarity, standard Feynman diagrams techniques, <br> $\phantom{\circ}$ and cross checked with <span style="font-variant: small-caps;">Open-Loops</span>
+     $\circ$ In principle, we do not require such an starting analytic representation: <br>
+     $\phantom{\circ}$ we just need a program that gives us numbers for the master integral coefficients.
 </div>
-<a href="https://arxiv.org/abs/1907.13071" style="font-size: 14pt; margin-top: -5mm; float: right; font-align: right;"> Buccioni, Lang, Lindert, Maierhöfer, Pozzorini, Zhang, Zoller</a>
 
 </section>
 
@@ -421,30 +354,9 @@ $$
      $$
 </div>
 
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Interesting mathematica observations and open questions: <br>
-     $\quad\star$ <span style="font-size: 16pt">$R_3$</span> is not an Integral Domain, i.e. it breaks <span style="font-size: 16pt">$ab=0 \Rightarrow a = 0 \text{ or } b = 0$</span> <br>
-     $\quad\star$ <span style="font-size: 16pt">$R_4$</span> is not an Unique Factorization Domain (which is why MHV = anti-MHV) <br>
-     $\quad\star$ Conjecture: <span style="font-size: 16pt">$R_{n\geq 5}$</span> is UFD. For instance, this would imply the  denominators $\mathcal{D}$ are unique <br>
-     $\phantom{\circ}$ <u>Note</u>: all polynomial rings are UFD, so clearly <span style="font-size: 16pt">$R_4$</span> is not equivalent to one, e.g. <span style="font-size: 16pt">$\mathbb{F}[s,t]$</span>
-</div>
-
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Choosing the Appropriate Covariant Q-Ring </b>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ For <span style="font-size: 15pt;">$pp \rightarrow V(\rightarrow \bar\ell\ell)jj$</span> the space is simpler than that of say <span style="font-size: 15pt;">$pp \rightarrow jjjj$</span>, we don't want to use <span style="font-size: 15pt;">$R_6$</span>. <br>
-     $\phantom{\circ}$ Take the decay current to be <span style="font-size: 15pt;">$[5|\gamma^\mu|6\rangle$</span>, and remove <span style="font-size: 15pt;">$p_{V\alpha\dot\alpha}=(5+6)_{\alpha\dot\alpha}$</span> by mom. cons.
-</div>
-<div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
-$$ 
-\displaystyle \kern10mm R_{Vjj} = \mathbb{F}\big[|1⟩_{\alpha}, [1|_{\dot\alpha}, |2⟩_{\alpha}, [2|_{\dot\alpha}, |3⟩_{\alpha}, [3|_{\dot\alpha},  |4⟩_{\alpha}, [4|_{\dot\alpha}, [5|_{\dot\alpha}, |6⟩_{\alpha} \big] \Big/ \big\langle {\textstyle \sum_{i=1}^4} [5|i]\langle i |6\rangle \big\rangle
-$$
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}$ This always holds for the numerator polynomials (and almost the denomiantors).
-</div>
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Covariant Q-Ring for HHH </b>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
      $\circ$ For <span style="font-size: 15pt;">$pp \rightarrow ttH$</span> we use the massive spinor-helicity (or spin-spinor) formalism
@@ -455,7 +367,7 @@ $$
 
 <div style="font-size: 15pt; margin-top: 8mm; margin-bottom: 5mm">
 $$ 
-\displaystyle \kern10mm R_{ttH} = \frac{\mathbb{F}\big[|1⟩_{\alpha}, [1|_{\dot\alpha}, |2⟩_{\alpha}, [2|_{\dot\alpha}, |\boldsymbol{3}^I⟩_{\alpha}, [\boldsymbol{3}^I|_{\dot\alpha}, |\boldsymbol{4}_J⟩_{\alpha}, [\boldsymbol{4}_J|_{\dot\alpha}, \boldsymbol{5}_{\alpha\dot\alpha} \big]}{\big\langle \sum_{i,I,J} |i\rangle[i|, \langle \boldsymbol{3}|\boldsymbol{3}⟩ +[\boldsymbol{3}|\boldsymbol{3}], \langle \boldsymbol{3}|\boldsymbol{3}⟩-\langle \boldsymbol{4}|\boldsymbol{4}⟩, \langle \boldsymbol{4}|\boldsymbol{4}⟩ +[\boldsymbol{4}|\boldsymbol{4}]\big\rangle}
+\displaystyle \kern10mm R_{HHH} = \frac{\mathbb{F}\big[|1⟩_{\alpha}, [1|_{\dot\alpha}, |2⟩_{\alpha}, [2|_{\dot\alpha}, \boldsymbol{3}_{\alpha,\dot\alpha}, \boldsymbol{4}_{\alpha,\dot\alpha}, \boldsymbol{5}_{\alpha,\dot\alpha} \big]}{\big\langle \sum_{i,I,J} |i\rangle[i|, \langle \boldsymbol{3}|\boldsymbol{3}⟩ +[\boldsymbol{3}|\boldsymbol{3}], \langle \boldsymbol{3}|\boldsymbol{3}⟩-\langle \boldsymbol{4}|\boldsymbol{4}⟩, \langle \boldsymbol{4}|\boldsymbol{4}⟩ +[\boldsymbol{4}|\boldsymbol{4}]\big\rangle}
 $$
 </div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
@@ -685,101 +597,6 @@ From work in progress with S. Abreu, X. Liu, P.F. Monni
      $\phantom{\circ}\,$ For <span style="font-size: 15pt">$Vjj$</span> the most complicated <span style="font-size: 14pt">$\bar{q}^+g^-g^+q^-$</span> function had a mass dimension (<span style="font-size: 13pt">$\approx$</span> poly. degree) of 114, <br>
      $\phantom{\circ}\,$ and little group weights <span style="font-size: 14pt">$\{3, -12, 12, -3, -1, 1\}$</span>.  The ansatz size is approx. 25M. <br>
      $\phantom{\circ}\,$ Note how different from zero the little group weights are, chiral invariants are important!
-</div>
-
----
-
-<b style="font-variant: small-caps; font-size: xxx-large"> Basis Change from Laurent Coefficients </b>
-
-<div style="text-align: left; font-size: 16pt; float: left; margin-top: -2mm; margin-bottom: -2mm;">
-     $\circ\,$ Change basis from a subset of the pentagon coefficients $r_{i \in \mathcal{B}}$ to <span style="font-size: 14pt">$\mathbb{Q}$</span>-linear combinations $\tilde r$,
-</div><br>
-<div style="text-align: center; float: center; font-size: 15pt; margin-top: -8mm; margin-bottom: 0mm;">
-     $$
-     R = r_j h_j = r_{i\in \mathcal{B}} M_{ij} h_j = \tilde{r}_{i} \, O_{ii'}M_{i'j} \, h_j \, , \qquad O_{ii'}, M_{i'j}\in \mathbb{Q}
-     $$
-</div>
-
-<div>
-<img src="BasisChangeEffectWjj.png"; style="max-width:900px; float:center; border:none; margin-top: -2mm; margin-bottom: 0mm;">
-</div>
-<div style="text-align: center; font-size: 14pt; float: center; margin-top: -3mm; margin-bottom: 0mm;">
-     [<a href="https://arxiv.org/abs/hep-ph/9708239" style="font-size: 14pt">6</a>] Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov '21
-</div>
-
-<div style="text-align: left; font-size: 16pt; float: left; margin-top: 3mm; margin-bottom: -2mm;">
-     $\circ\,$ By Gaussian elimination, partition the space (abusing notation for <i>residue</i>):
-</div> <br>
-<div style="text-align: center; font-size: 15pt; float: center; margin-top: -2mm; margin-bottom: 2mm;">
-     $$
-     \text{span}(r_{i \in \mathcal{B}}) = \underbrace{\text{column}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m))}_{\text{functions with the singularity}} \;\;\; \oplus \, \underbrace{\text{null}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m))}_{\text{functions without the singularity}}
-     $$
-</div>
-
-<div style="display:block; width:100%; margin-top: -4mm; margin-bottom: 0mm; margin-left: 0mm;">
-     <div style="font-size: 17pt; width:50%; float: left; text-align: center; display: inline-block; margin-top: 3mm;">
-	     <div style="font-size: 17pt; float: left; margin-top: 4mm; margin-bottom: 1mm;">
-               $\circ\,$ Search for linear combinations that remove as many singularities as possible
-          </div>
-          <br>
-          <div style="font-size:15pt; float: left; margin-top: 0mm; margin-bottom: 0mm">
-               $$
-               \kern12mm \displaystyle O_{i'i} = \bigcap_{k, m} \, \text{nulls}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m))
-               $$
-          </div>
-	</div>
-     <div style="width:50%; float: right; display: inline-block; margin-top: 0mm;">
-          <img src="search_tree.png"; style="max-width:400px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;">
-     </div>
-</div>
-
----
-
-<b style="font-variant: small-caps; font-size: xxx-large"> Laurent Series or p(z)-adic expansion </b>
-
-<div style="text-align: left; font-size: 16pt; margin-top: 3mm; margin-bottom: -2mm;">
-     $\circ\,$ With <span style="font-size: 14pt">$p$</span>-adic numbers this would be straight forward, set <span style="font-size: 14pt">$\mathcal{D}_j\propto p$</span> and evaluate the function
-</div>
-<div style="text-align: center; font-size: 15pt; margin-top: -2mm; margin-bottom: 2mm;">
-     $$
-     r_{i\in \mathcal{B}} = \sum_{m = 1}^{\text{max}_i(q_{ik})} \frac{e^k_{im}}{p^m} + \mathcal{O}(p^0) \text{ is a number in } \mathbb{Q}_p
-     $$
-</div>
-<div style="text-align: center; font-size: 16pt; margin-top: 3mm; margin-bottom: -2mm;">
-     See <code style="font-size: 14pt;">Particles._singular_variety</code> or <code style="font-size: 14pt;">Ideal.point_on_variety</code> to generate the configuration
-</div>
-
-<div style="text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: -2mm;">
-     $\circ\,$ We can't do this with only finite fields. Instead, build Laurent expansions around $t_{\mathcal{D}_k}$ <span style="font-size: 12pt"> (use more slices) </span>
-</div>
-<div style="text-align: center; font-size: 15pt; margin-top: -2mm; margin-bottom: 2mm;">
-     $$
-     r_{i \in \mathcal{B}} = \sum_{m = 1}^{\text{max}_i(q_{ik})} \frac{e^k_{im}}{(t-t_{\mathcal{D}_k})^m} + \mathcal{O}((t-t_{\mathcal{D}_k})^0)
-     $$
-</div>
-<div style="text-align: left; font-size: 16pt; margin-top: 3mm; margin-bottom: -2mm;">
-     $\phantom{\circ}\,$ strictly formal over $\mathbb{F}_p$, but convergent over $\mathbb{Q}_p$ for $(t-t_{\mathcal{D}_k}) \propto p$
-</div>
-
-<div style="text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: -2mm;">
-     $\circ\,$ Issue what if the letter does not have a factor linear in <span style="font-size: 15pt">$t$</span>?
-</div>
-<div style="text-align: center; font-size: 15pt; margin-top: -2mm; margin-bottom: 2mm;">
-     $$
-     r_{i \in \mathcal{B}} = \sum_{m = 1}^{\text{max}_i(q_{ik})} \frac{c^k_{im} t + d^k_{im}}{(t^2+a_kt+b_k)^m} + \mathcal{O}((t^2+a_kt+b_k)^0)
-     $$
-</div>
-<a style="font-size: 13pt; text-align: right; float: right; margin-top: -10mm; margin-bottom: 2mm;" href=https://arxiv.org/abs/2304.14336 >
-see also Fontana, Peraro ('23)
-</a>
-
-<div style="text-align: left; font-size: 16pt; margin-top: 3mm; margin-bottom: -2mm;">
-     $\circ\,$ From these coefficients, build null spaces used in the search for simple functions
-</div>
-<div style="text-align: center; font-size: 15pt; float: center; margin-top: -2mm; margin-bottom: 2mm;">
-     $$
-     \text{null}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m))_{ij} \text{ from } \text{ rref }  (d^k_{m})_{i,\text{slice}_j}
-     $$
 </div>
 
 </section>
