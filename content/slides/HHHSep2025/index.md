@@ -29,7 +29,7 @@ Giuseppe De Laurentis
 <div style="font-size: large;"> University of Edinburgh </div>
 <br>
 <a href="https://arxiv.org/pdf/2507.19313">arXiv:2507.19313</a> 
-<div style="font-size: large; margin-bottom:5mm;"> with J. Campbell and K. Ellis </div>
+<div style="font-size: large; margin-bottom:5mm;"> with J. M. Campbell and R. K. Ellis </div>
 
 <div style="font-size: large; margin-top:10mm; margin-bottom:10mm;"> See also: <br>
 <span style="font-size: 12pt;">$q\bar{q}\rightarrow t\bar{t}H$</span> (<a href="https://arxiv.org/abs/2504.19909">arXiv:2504.19909</a>) <br>
@@ -98,7 +98,7 @@ $$
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt"> Subprocesses \& Feynman Diagrams: $\kappa_4$ \& $\kappa_3^2$</b>
+<b style="font-variant: small-caps; font-size: 32pt"> Feynman Diagrams for $A_3$: $\kappa_4$ \& $\kappa_3^2$</b>
 
 <div style="text-align: left; font-size: 18pt; margin-bottom: 1mm; margin-top: 2mm; margin-left: -4mm;">
      $\circ\,$ The $\kappa_4$ and $\kappa_3^2$ diagrams are triangles (no contribution from pinch bubbles)
@@ -132,7 +132,7 @@ $$
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt"> Subprocesses \& Feynman Diagrams: $\kappa_3$ \& no $\kappa$ </b>
+<b style="font-variant: small-caps; font-size: 32pt"> Feynman Diagrams for $A_4$ and $A_5$: $\kappa_3$ \& no $\kappa$ </b>
 
 <div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: -4mm;">
      $\circ\,$ The $\kappa_3$ diagrams are boxes (and triangle pinches, but no bubble contribution)
@@ -202,7 +202,7 @@ $\circ$ We perform a first analytic computation in two ways
 </div>
 
 <div style="font-size: 17pt; text-align: left; margin-bottom: 0mm; margin-top: -3mm;">
-     $\circ$ This results in a few MBs of optimized <span style="font-variant: small-caps;">FORM</span> routines for the box and triangle coefficients.
+     $\circ$ This yields a few MBs of optimized <span style="font-variant: small-caps;">FORM</span> routines for the integral coefficients, which we simplify.
 </div>
 
 <div style="font-size: 17pt; text-align: left; margin-bottom: 0mm; margin-top: 3mm;">
@@ -261,7 +261,7 @@ $\circ$ We perform a first analytic computation in two ways
 <b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Variables Subject to Constraints </b>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ For example, consider polynomials in two variables <span style="font-size: 14pt;">$x, y$</span>. They live in a <b>polynomial ring</b>:
+     $\circ$ Consider polynomials <span style="font-size: 14pt;">$f, g, h$</span> in two variables <span style="font-size: 14pt;">$x, y$</span>. They live in a <b>polynomial ring</b>:
 </div>
 <div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
 $$ 
@@ -269,8 +269,8 @@ $$
 $$
 </div>
 
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Now, localize them, e.g. on the unit circle <span style="font-size: 14pt;">$(x^2+y^2-1)$</span>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 5mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ We may want to consider e.g. funcitons on the unit circle, <span style="font-size: 14pt;">$(x^2+y^2-1)$</span>. If we have
 </div>
 <div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
 $$ 
@@ -278,11 +278,11 @@ $$
 $$
 </div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}$ we should consider <span style="font-size: 14pt;">$f(x,y)$</span> and <span style="font-size: 14pt;">$g(x, y)$</span> as equivalent, for any <span style="font-size: 14pt;">$h(x,y)$</span>.
+     $\phantom{\circ}$ then we should consider <span style="font-size: 14pt;">$f(x,y)$</span> and <span style="font-size: 14pt;">$g(x, y)$</span> as equivalent, for any <span style="font-size: 14pt;">$h(x,y)$</span>.
 </div>
 
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ The structure is that of a polynomial <b>quotient</b> ring
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 5mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ This structure is that of a polynomial <b>quotient</b> ring
 </div>
 <div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
 $$ 
@@ -292,9 +292,10 @@ $$
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
      $\phantom{\circ}$ its elements are <b>equivalence classes</b> of polynomials.
 </div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ <span style="font-size: 14pt;">$\big\langle x^2+y^2-1 \big\rangle \subset \mathbb{Q}[x, y]$</span> is an example of an <b>ideal</b>, the infinite set of polynomials <br> 
-     $\phantom{\circ}$ <span style="font-size: 14pt;">$h(x, y) (x^2+y^2-1)$</span> that vanishes on the unit circle.
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 5mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ <span style="font-size: 14pt;">$\big\langle x^2+y^2-1 \big\rangle \subset \mathbb{Q}[x, y]$</span> is an example of an <b>ideal</b>, that is the infinite set of polynomials <br> 
+     $\phantom{\circ}$ <span style="font-size: 14pt;">$h(x, y) (x^2+y^2-1)$</span>, for any <span style="font-size: 14pt;">$h(x,y)$</span>, that vanishes on the unit circle.
 </div>
 
 
@@ -305,6 +306,9 @@ $$
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
      $\circ$ For <span style="font-size: 14pt;">$n$</span>-point massless scattering, the quotient ring is
 </div>
+<a style="font-size: large; text-align: right; float: right; margin-top: -4mm; margin-bottom: -10mm;" href=https://arxiv.org/abs/2203.04269>
+   GDL, Page ('22)
+</a>
 <div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
 $$ 
 \displaystyle \kern10mm R_{n} = \mathbb{F}\Big[|1⟩_{\alpha}, [1|_{\dot\alpha}, \dots, |n⟩_{\alpha}, [n|_{\dot\alpha} \Big] \Big/ \Big\langle {\textstyle \sum_{i=1}^n} |i\rangle[ i | \Big\rangle
@@ -321,7 +325,7 @@ $$
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ The rational functions <span style="font-size: 16pt">$r_i$</span> belong to the field of fractions of <span style="font-size: 16pt">$R_n$</span>,
+     $\circ$ Integral coefficients are rational functions <span style="font-size: 16pt">$r_i$</span> in the field of fractions of <span style="font-size: 16pt">$R_n$</span>,
 </div>
 <div style="font-size:16pt; text-align: center; margin-top: 2mm; margin-bottom: 2mm">
      $$
@@ -335,11 +339,10 @@ $$
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
      $\circ$ For <span style="font-size: 15pt;">$pp \rightarrow HHH$</span> we use the massive spinor-helicity (or spin-spinor) formalism, <br>
-     $\phantom{\circ}$ albeit in this case in a very simplified form since scalars have no states.
+     $\phantom{\circ}$ albeit in a very simplified form since scalars have no states.
 </div>
-<a href="https://arxiv.org/abs/1809.09644" style="font-size: 14pt; margin-top: -2mm; float: right; font-align: right;"> Shadmi, Weiss </a>
-<a href="https://arxiv.org/abs/1802.06730" style="font-size: 14pt; margin-top: -2mm;  margin-right: 2mm; float: right; font-align: right;"> Ochirov; </a>
-<a href="https://arxiv.org/abs/1709.04891" style="font-size: 14pt; margin-top: -2mm; margin-right: 2mm; float: right; font-align: right;"> Arkani-Hamed, Huang, Huang;</a>
+<a href="https://arxiv.org/abs/1809.09644" style="font-size: 14pt; margin-bottom: -6mm; margin-top: -5mm; float: right; font-align: right;"> Shadmi, Weiss </a> <a href="https://arxiv.org/abs/1802.06730" style="font-size: 14pt; margin-bottom: -6mm; margin-top: -5mm;  margin-right: 31mm; float: right; font-align: right;"> Ochirov; </a>
+<a href="https://arxiv.org/abs/1709.04891" style="font-size: 14pt; margin-bottom: -10mm; margin-top: -11mm; margin-right: 0mm; float: right; font-align: right;"> Arkani-Hamed, Huang, Huang;</a>
 
 <div style="font-size: 15pt; margin-top: 12mm; margin-bottom: 5mm">
 $$ 
@@ -439,29 +442,6 @@ $$
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> A Concrete Example </b>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: -2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ For instance, <span style="font-size: 15pt">$\hat d^{+-}_{p_{12}\times p_3 \times p_4}=$</span>
-</div>
-<div style="font-size: 14pt; margin-top: 0mm; margin-bottom: 3mm">
-$$ 
-\begin{gathered}
-\frac{-1/4⟨1|𝟒|𝟑-𝟓|1⟩⟨1|𝟑|𝟒|𝟓|2](s_{12}-3m_h²+8m_t²)}{⟨12⟩Δ_{12|𝟑|𝟒|𝟓}} +\\
-\frac{(⟨1|𝟑|𝟒|𝟓|1]-⟨2|𝟑|𝟒|𝟓|2])⟨2|𝟑|𝟒|𝟓|2]⟨1|𝟑|𝟒|1⟩(-1/4(s_{12}-3m_h²+8m_t²)-1/8(s_{1𝟒}-s_{1𝟓}-2s_{12}+2s_{𝟑𝟒}-2m_h²))}{⟨12⟩⟨2|𝟑|𝟒|𝟓|1]Δ_{12|𝟑|𝟒|𝟓}} +\\
-\frac{(⟨1|𝟑|𝟒|𝟓|1]-⟨2|𝟑|𝟒|𝟓|2])⟨1|𝟑|𝟒|𝟓|1]⟨1|𝟓|𝟒|1⟩(-1/4(s_{12}-3m_h²+8m_t²)-1/8(s_{1𝟒}-2s_{1𝟓}-2s_{12}+2s_{𝟑𝟒}))}{⟨12⟩⟨2|𝟑|𝟒|𝟓|1]Δ_{12|𝟑|𝟒|𝟓}} +\\
-\frac{(⟨1|𝟑|𝟒|𝟓|1]-⟨2|𝟑|𝟒|𝟓|2])⟨1|𝟑|𝟒|𝟓|2]⟨1|𝟑|𝟓|2⟩(-1/8(m_h²-3s_{12}+2s_{1𝟒}-2s_{2𝟑}-s_{2𝟒})-1/4(s_{12}-3m_h²+8m_t²))}{⟨12⟩⟨2|𝟑|𝟒|𝟓|1]Δ_{12|𝟑|𝟒|𝟓}} +\\
-\frac{(⟨1|𝟑|𝟒|𝟓|1]-⟨2|𝟑|𝟒|𝟓|2])⟨1|𝟑|𝟒|𝟓|2](3/16⟨1|𝟑|1]²+3/16⟨1|𝟒|1]²+1/8\text{tr}(𝟑|𝟒)⟨2|𝟑|2]+1/16⟨2|𝟑|2]²)}{⟨2|𝟑|𝟒|𝟓|1]Δ_{12|𝟑|𝟒|𝟓}} +\\
-\frac{(⟨1|𝟑|𝟒|𝟓|1]-⟨2|𝟑|𝟒|𝟓|2])(-1/8⟨1|𝟑|2]⟨1|𝟑|𝟓|1⟩+1/4⟨1|𝟒|2]⟨1|𝟑|𝟒|1⟩)}{⟨12⟩Δ_{12|𝟑|𝟒|𝟓}} +\\
-\frac{-1/4⟨1|𝟒|2]⟨1|𝟒|1](⟨1|𝟑|𝟒|𝟓|1]-⟨2|𝟑|𝟒|𝟓|2])⟨1|𝟑|𝟒|𝟓|1]}{⟨2|𝟑|𝟒|𝟓|1]Δ_{12|𝟑|𝟒|𝟓}} +\\
-\frac{(⟨1|𝟑|𝟒|𝟓|1]-⟨2|𝟑|𝟒|𝟓|2])⟨1|𝟑|𝟒|1⟩m_h²(-1/8m_h²⟨1|𝟒|1]-1/8(s_{𝟑𝟒}-m_h²)⟨2|𝟑|2])}{⟨12⟩⟨2|𝟑|𝟒|𝟓|1]Δ_{12|𝟑|𝟒|𝟓}} +\\
-(21𝟓𝟒𝟑,\;\text{True}) \phantom{+}
-\end{gathered}
-$$
-</div>
-
----
-
 <div style="margin-top: 2mm; margin-bottom: 4mm">
      <b style="font-variant: small-caps; font-size: xx-large">$\boldsymbol{Vjj}$</b> 
      <b style="font-variant: small-caps; font-size: xxx-large">and</b>
@@ -500,6 +480,27 @@ $$
      $\phantom{\circ}\,$ and little group weights <span style="font-size: 14pt">$\{3, -12, 12, -3, -1, 1\}$</span>.  The ansatz size is approx. 25M. <br>
      $\phantom{\circ}\,$ Note how different from zero the little group weights are, chiral invariants are important!
 </div>
+
+---
+
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> A Concrete Example </b>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: -2mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ For instance, 
+</div>
+<div style="font-size: 12pt; margin-top: 10mm; margin-bottom: 3mm">
+$$ 
+\begin{gathered}
+\hat d^{+-}_{p_{12}\times p_3 \times p_4}=\Bigg\{\frac{[2|𝟒|𝟑-𝟓|2]\text{tr}(𝟓|𝟒|𝟑|1-2)}{4⟨12⟩⟨1|𝟓|𝟒|𝟑|2]} -
+\frac{(s_{𝟑𝟒}-2m_h²)(s_{𝟑𝟓}+m_h²-2s_{2𝟒})}{2⟨12⟩²} -
+\frac{(\text{tr}(1-2|𝟑)m_h²+⟨1|𝟑|𝟒|2⟩[12])}{⟨12⟩²} +\\
+-\frac{(s_{𝟒𝟓}-s_{𝟑𝟒})²(s_{1𝟑}-s_{2𝟑})(s_{1𝟑}+s_{2𝟑})(\text{tr}(1+2|𝟒)+4s_{𝟑𝟒}-8m_t²)}{32⟨12⟩²Δ_{12|𝟑|𝟒|𝟓}} +\\
+-\frac{(s_{𝟒𝟓}-s_{𝟑𝟒})(s_{1𝟑}-s_{2𝟑})(s_{𝟑𝟒}-m_h²)((s_{𝟒𝟓}-s_{𝟑𝟒})\text{tr}(1+2|𝟒)+s_{𝟑4}(s_{1𝟑}+s_{2𝟑})-s_{𝟑4}(s_{𝟑𝟒}-2m_h²)-8s_{123}m_t²)}{8⟨12⟩²Δ_{12|𝟑|𝟒|𝟓}} +\\
+\frac{Δ_{12|𝟒|𝟑5}(s_{1𝟑}-s_{2𝟑})(s_{1𝟑}+s_{2𝟑})(\text{tr}(1+2|𝟒)-8m_t²)}{8⟨12⟩²Δ_{12|𝟑|𝟒|𝟓}} \Bigg\} + \Bigg\{12𝟑𝟒𝟓\rightarrow21𝟓𝟒𝟑\Bigg\}
+\end{gathered}
+$$
+</div>
+
 
 </section>
 
