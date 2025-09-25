@@ -19,7 +19,7 @@ slides:
 
 <h3 style="margin-top:5mm; margin-left: -10mm; margin-right: -10mm;">
 	<b style="margin-top:15mm; font-size: 31pt; text-transform: none;">
-	   Analytic One-Loop Amplitude for $gg \rightarrow HHH$
+	   Analytic One-Loop Amplitudes for $gg \rightarrow HHH$
 	</b>
 </h3>
 
@@ -393,15 +393,16 @@ $$
 	     <div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 1mm;">
                 $\circ\,$ We can now determine the least common denominators (LCDs),
           </div>
-          <div style="font-size:16pt; text-align: center; margin-top: 2mm; margin-bottom: 0mm">
+          <div style="font-size:15pt; text-align: center; margin-top: 2mm; margin-bottom: 0mm">
                $$
-               \displaystyle \mathcal{D} = \prod_j \mathcal{D}_j^{q_{ij}}(|i\rangle,[i|) \, .
+               \displaystyle \mathcal{D} = \prod_j \mathcal{D}_j^{q_{ij}} \in R_{HHH} \; , \; \mathcal{D}_j \text{ irreducible} \, ,
                $$
           </div>
           <div style="font-size: 17pt; text-align: left; margin-top: -3mm; margin-bottom: 1mm;">
-               $\phantom{\circ}\,$ Obtain the <span style="font-size: 16pt">$q_{ij}$</span> from a univariate slice  <span style="font-size: 16pt">$\vec\lambda(t)$</span>, i.e. a 1D curve.
+               $\phantom{\circ}\,$ from a univariate slice <span style="font-size: 16pt">$\vec\lambda(t)$</span> giving us <span style="font-size: 16pt">$\mathcal{D}(t)$</span>, <br> 
+               $\phantom{\circ}\,$ if we know the possible <span style="font-size: 16pt">$\mathcal{D}_j$</span>
           </div>
-          <div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 1mm;">
+          <div style="font-size: 17pt; text-align: left; margin-top: 5mm; margin-bottom: 1mm;">
                $\circ$ The curve must intersect all varieties <span style="font-size: 16pt">$V(\langle \mathcal{D}_j \rangle)$</span>, e.g.
           </div>
           <div style="font-size:16pt; text-align: center; margin-top: 2mm; margin-bottom: 2mm">
@@ -412,22 +413,14 @@ $$
           <div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 1mm;">
                $\phantom{\circ}\,$ Solve for <span style="font-size: 16pt">$a_i, b_i$</span> such that constraints are satisfied.
           </div>
-	     <div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 1mm;">
-               $\circ\,$ Publicly impelemented, see <a href="https://github.com/GDeLaurentis/antares/" style="font-size: 20pt; font-variant: small-caps;">antares</a>, <a href="https://github.com/GDeLaurentis/lips/" style="font-size: 20pt; font-variant: small-caps;">lips</a>, <a href="https://github.com/GDeLaurentis/syngular/" style="font-size: 20pt; font-variant: small-caps;">syngular</a> 
-          </div>
-          <div style="font-size: 17pt; text-align: left; margin-top: 1mm; margin-bottom: 1mm;">
-               $\phantom{\circ}\,$ <code style="font-size: 15pt;">do_codimension_one_study(func, slice, denoms)</code> <br>
-               $\phantom{\circ}\,$ <code style="font-size: 15pt;">Particles.univariate_slice</code> or 
-               <code style="font-size: 15pt;">Ring.univariate_slice</code>
-          </div>
 	</div>
      <div style="width:35%; float: right; display: inline-block; margin-top: 6mm; ">
           <img src="variety_slice_v2-transparent.png"; style="max-width:360px; float:center; border:none; margin-top: -5mm; margin-bottom: -2mm;">
           <div style="width:100%; font-size: 14pt; margin-top: 0mm; margin-bottom: 1mm;">
-               Space has dimension $4n-4$,
+               The space has dimension $20-6=14$,
           </div>
           <div style="width:100%; font-size: 14pt; margin-top: 0mm; margin-bottom: 1mm;">
-               $\mathcal{D}_j = 0$ have dimension $4n-5$,
+               $\mathcal{D}_j = 0$ have dimension $14-1=13$,
           </div>
           <div style="width:100%; font-size: 14pt; margin-top: 0mm; margin-bottom: 1mm;">
                $\vec\lambda(t)$'s have dimension 1.
@@ -435,63 +428,74 @@ $$
      </div>
 </div>
 
-<div style="border: 2px solid black; font-size: 16pt; padding: 10px; display: inline-block; margin-top: 4mm;">
+<div style="border: 2px solid black; font-size: 16pt; padding: 10px; display: inline-block; margin-top: 10mm;">
     Poles & Zeros $\;\Leftrightarrow\;$ Irreducible Varieties $\;\Leftrightarrow\;$ Prime Ideals <br>
     <i style="font-size: 14pt; border-top: -8mm; border-bottom: -2mm;"> Physics $\kern18mm$ Geometry $\kern18mm$ Algebra </i>
 </div>
 
 ---
 
-<div style="margin-top: 2mm; margin-bottom: 4mm">
-     <b style="font-variant: small-caps; font-size: xx-large">$\boldsymbol{Vjj}$</b> 
-     <b style="font-variant: small-caps; font-size: xxx-large">and</b>
-     <b style="font-variant: small-caps; font-size: xx-large">$\boldsymbol{t\bar{t}H}$</b>
-     <b style="font-variant: small-caps; font-size: xxx-large">LCDs</b>
-</div>
+
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> $HHH$ LCD Factors </b>
+
 
 <div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 2mm;">
-     $\circ\,$ The irreducible denominator factors <span style="font-size: 14pt">$\mathcal{D}_j \text{ for } Vjj$</span> (modding out by permutation orbits) read
+     $\circ\,$ The irreducible denominator factors <span style="font-size: 14pt">$\mathcal{D}_j$</span> for <span style="font-size: 14pt">$HHH$</span> are
+</div>
+
+<div style="text-align: center; font-size: 14pt; margin-top: 2mm; margin-bottom: 2mm;">
+     $$
+     \begin{gathered}
+     \mathcal{D}_{HHH} = \big\{ 
+          ⟨1|2⟩, [1|2], ⟨2|𝟓|1], ⟨2|𝟒|1], ⟨2|𝟑|1], ⟨1|𝟑|2], [1|𝟑|𝟓|1], ⟨1|𝟑|𝟓|1⟩, ⟨1|𝟓|𝟒|2⟩, [2|𝟒|𝟓|1], Δ_{12|𝟑|𝟒|𝟓}, \\
+          ⟨2|𝟑|𝟒|𝟓|1], ⟨1|𝟓|𝟒|𝟑|2], ⟨1|2⟩[1|2]⟨1|𝟓|𝟒|𝟑|2]⟨2|𝟑|𝟒|𝟓|1]+m_t^2\text{tr}_5(1|2|𝟑|𝟒)^2, \\
+          ⟨1|𝟑|2]⟨2|𝟒|𝟓|1⟩[1|𝟑|2⟩[2|𝟒|𝟓|1]+m_t^2\text{tr}_5(1|2|𝟑|𝟒)^2
+     \big\}
+     \end{gathered}
+     $$
+</div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: -2mm; margin-left: 2mm; margin-right: 2mm;">
+     $\phantom{\circ}$ plus some permutations, where 
 </div>
 <div style="text-align: center; font-size: 14pt; margin-top: 2mm; margin-bottom: 2mm;">
      $$
-     \displaystyle \mathcal{D}_{Vjj} \subset \kern-3mm \bigcup_{\sigma \; \in \; \text{Aut}(R_6)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1], \langle 1|2+3|4], s_{123}, \Delta_{12|34|56}, ⟨3|2|5+6|4|3]-⟨2|1|5+6|4|2] \big\}
+     \Delta_{12|3|4|5} \;=\;
+\det\begin{pmatrix}
+p_{12}\!\cdot\! p_{12} & p_{12}\!\cdot\! p_{3} & p_{12}\!\cdot\! p_{4} \\
+p_{3}\!\cdot\! p_{12} & p_{3}\!\cdot\! p_{3}   & p_{3}\!\cdot\! p_{4} \\
+p_{4}\!\cdot\! p_{12} & p_{4}\!\cdot\! p_{3}   & p_{4}\!\cdot\! p_{4}
+\end{pmatrix} \quad \text{ and } \quad\quad
+   \begin{aligned}
+       \text{tr}_5(1|2|3|4)^2 &= \text{tr}(\gamma^5 p_1 p_2 p_3 p_4) \\
+       &= [1|2|𝟑|𝟒||1⟩ - ⟨1|2|𝟑|𝟒||1]
+     \end{aligned}
      $$
-</div>
-<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 2mm;">
-     $\phantom{\circ}\,$ where only the last one is new at two loops.
 </div>
 
-<div style="text-align: left; font-size: 16pt; margin-top: 3mm; margin-bottom: 2mm;">
-     $\circ\,$ The <span style="font-size: 14pt">$\mathcal{D}_j \text{ for } t\bar{t}H$</span> read
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 5mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ For example, for an integral coefficient at this stage we see
 </div>
-<div style="text-align: center; font-size: 14pt; margin-top: 2mm; margin-bottom: 2mm;">
-     $$
-     \displaystyle \kern-10mm \mathcal{D}_{ttH} = \big\{ \langle 12 \rangle, [12], s_{123}, \dots, (s_{123}-m^2), \langle 1|\boldsymbol{3}|1], \dots, \\[2mm] 
-     \kern30mm \langle 1|\boldsymbol{3}|\boldsymbol{4}| 2 \rangle, \dots, \langle 1|\boldsymbol{3}|1+2|\boldsymbol{4}| 2], \dots, \Delta_{12|34|5}, \dots \Delta_{12|3|4|5} \big\}
-     $$
+<div style="font-size: 14pt; margin-top: 10mm; margin-bottom: 10mm">
+$$ 
+\hat d^{++}_{12\times 3 \times 4}= \frac{\mathcal{N}}{⟨12⟩²⟨1|𝟓|𝟒|𝟑|2]⟨2|𝟑|𝟒|𝟓|1]Δ_{12|𝟑|𝟒|𝟓}}
+$$
 </div>
-<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 2mm;">
-     $\phantom{\circ}\,$ note that there is no dependence on the top states (this looks like 3 massive scalars).
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: -2mm; margin-left: 2mm; margin-right: 2mm;">
+     $\phantom{\circ}$ For some unknown <span style="font-size: 15pt">$\mathcal{N}$</span> which would be fairly complicated in this LCD form.
 </div>
 
-<div style="font-size: 16pt; text-align: left; margin-top: 3mm; margin-bottom: 2mm;">
-     $\circ\,$ Challenge: in LCD form the numerators are intractably complicated. <br>
-     $\phantom{\circ}\,$ For <span style="font-size: 15pt">$Vjj$</span> the most complicated <span style="font-size: 14pt">$\bar{q}^+g^-g^+q^-$</span> function had a mass dimension (<span style="font-size: 13pt">$\approx$</span> poly. degree) of 114, <br>
-     $\phantom{\circ}\,$ and little group weights <span style="font-size: 14pt">$\{3, -12, 12, -3, -1, 1\}$</span>.  The ansatz size is approx. 25M. <br>
-     $\phantom{\circ}\,$ Note how different from zero the little group weights are, chiral invariants are important!
-</div>
 
 ---
 
 <b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> A Concrete Example </b>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: -2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ For instance, 
+     $\circ$ For instance, we aim to find a form like
 </div>
 <div style="font-size: 12pt; margin-top: 10mm; margin-bottom: 3mm">
 $$ 
 \begin{gathered}
-\hat d^{+-}_{p_{12}\times p_3 \times p_4}=\Bigg\{\frac{[2|𝟒|𝟑-𝟓|2]\text{tr}(𝟓|𝟒|𝟑|1-2)}{4⟨12⟩⟨1|𝟓|𝟒|𝟑|2]} -
+\hat d^{++}_{12\times 3 \times 4}=\Bigg\{\frac{[2|𝟒|𝟑-𝟓|2]\text{tr}(𝟓|𝟒|𝟑|1-2)}{4⟨12⟩⟨1|𝟓|𝟒|𝟑|2]} -
 \frac{(s_{𝟑𝟒}-2m_h²)(s_{𝟑𝟓}+m_h²-2s_{2𝟒})}{2⟨12⟩²} -
 \frac{(\text{tr}(1-2|𝟑)m_h²+⟨1|𝟑|𝟒|2⟩[12])}{⟨12⟩²} +\\
 -\frac{(s_{𝟒𝟓}-s_{𝟑𝟒})²(s_{1𝟑}-s_{2𝟑})(s_{1𝟑}+s_{2𝟑})(\text{tr}(1+2|𝟒)+4s_{𝟑𝟒}-8m_t²)}{32⟨12⟩²Δ_{12|𝟑|𝟒|𝟓}} +\\
@@ -501,6 +505,14 @@ $$
 $$
 </div>
 
+<div style="font-size: 16pt; text-align: left; margin-top: 3mm; margin-bottom: 2mm;">
+     $\circ\,$ Challenge 1: how do we parametrize the numerators?
+</div>
+
+<div style="font-size: 16pt; text-align: left; margin-top: 3mm; margin-bottom: 2mm;">
+     $\circ\,$ Challenge 2: in LCD form the numerators are often too complicated. <br>
+     $\kern18mm$ How do we identify allowed partial fraction decompositions?
+</div>
 
 </section>
 
@@ -518,17 +530,17 @@ $$
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Invariant Quotient Rings </b>
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Invariant Quotient Sub-Rings </b>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Helicity amplitudes are Lorentz invariant: minimal ansätze are build in the invariant sub-rings.
+     $\circ$ Helicity amplitudes are Lorentz invariant: minimal ansätze are build in the <b>invariant sub-ring</b>.
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ General construction for Lorentz-Invariant sub-rings through elimination theory
+     $\circ$ General construction for Lorentz-invariant sub-rings through elimination theory
 </div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\quad\star$ Build a ring with both covariant and invariant variables
+     $\quad\star$ Build a ring with both covariant and invariant variables (here showing massless case)
 </div>
 <div style="font-size: 15pt; text-align: center; margin-top: 5mm; margin-bottom: 5mm">
 $$ 
@@ -536,7 +548,7 @@ $$
 $$
 </div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\quad\star$ Define relations among variables (on top of existing constraints)
+     $\quad\star$ Define relations among variables (on top of existing constraints, e.g. <span style="font-size: 15pt">$p_3^2=p_4^2$</span>)
 </div>
 <div style="font-size: 15pt; text-align: center; margin-top: 5mm; margin-bottom: 5mm">
 $$ 
@@ -548,17 +560,13 @@ $$
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ We obtain the following invariant rings
+     $\circ$ For  <span style="font-size: 15pt">$HHH$</span>, this yields the following quotient ring for the invariants
 </div>
-<div style="font-size: 15pt; margin-top: 5mm; margin-bottom: 5mm">
+
+<div style="font-size: 14pt; margin-top: 5mm; margin-bottom: 5mm">
 $$ 
-\displaystyle \mathcal{R}_{Vjj} = \frac{\mathbb{F}\big[ \langle ij\rangle : \, 1\leq i< j\leq 6, i,j \neq 5, \; [ij] : 1\leq i< j\leq 5 \big]}{\big\langle {\textstyle \sum_{i=1}^4} [5|i]\langle i |6\rangle, 34 \text{ Schouten identities} \big\rangle}
-$$
-</div>
-<div style="font-size: 15pt; margin-top: 5mm; margin-bottom: 5mm">
-$$ 
-\displaystyle \mathcal{R}_{ttH} = \mathbb{F}\big[ \underbrace{\langle 12\rangle, \langle \boldsymbol{3}1\rangle ... ⟨2|\boldsymbol{3}|2] ... ⟨2|\boldsymbol{3}|\boldsymbol{4}|2⟩}_{37\; \text{invariants}}
- \big]\Big/ \big\langle \underbrace{⟨2|\boldsymbol{3}|2]⟨2|\boldsymbol{4}|1]-⟨2|\boldsymbol{3}|1]⟨2|\boldsymbol{4}|2]-[1|2]⟨2|\boldsymbol{3}|\boldsymbol{4}|2⟩, ...}_{\text{more than} \; 90 \; \text{generators}} \big\rangle
+\displaystyle \mathcal{R}_{HHH} = \frac{\underbrace{\substack{\normalsize\kern-30mm\mathbb{F}\big[ ⟨1|2⟩, [1|2], ⟨1|𝟑|1], ⟨1|𝟑|2], ⟨2|𝟑|1], ⟨2|𝟑|2], ⟨1|𝟒|1], ⟨1|𝟒|2], ⟨2|𝟒|1], ⟨2|𝟒|2],\\[2mm] \normalsize \kern10mm ⟨1|𝟑|𝟒|1⟩, ⟨1|𝟑|𝟒|2⟩, ⟨2|𝟑|𝟒|2⟩, [1|𝟑|𝟒|1], [1|𝟑|𝟒|2], [2|𝟑|𝟒|2], \text{tr}(𝟑|𝟑), \text{tr}(𝟑|𝟒), \text{tr}(𝟒|𝟒), m_h^2
+ \big]}}_{20 \text{ variables}}}{\big\langle \underbrace{\text{tr}(𝟒|𝟒)-2m_h^2, \text{tr}(𝟑|𝟑)-2m_h^2, ⟨2|\boldsymbol{3}|2]⟨2|\boldsymbol{4}|1]-⟨2|\boldsymbol{3}|1]⟨2|\boldsymbol{4}|2]-[1|2]⟨2|\boldsymbol{3}|\boldsymbol{4}|2⟩, ...}_{\text{subject to } 122 \; \text{redundancy relations / Schouten identities (only first 2 are trivial rewritings)}} \big\rangle}
 $$
 </div>
 
@@ -573,7 +581,7 @@ $\circ\,$ The numerator Ansatz takes the form
 <a style="font-size: large; text-align: right; float: right; margin-top: -6mm; margin-bottom: 4mm;" href=https://arxiv.org/abs/1904.04067>
    GDL, Maître ('19)
 </a>
-<div style="text-align: center; font-size: x-large; margin-bottom: 5mm; margin-top: 1mm;">
+<div style="text-align: center; font-size: 15pt; margin-bottom: 5mm; margin-top: 1mm;">
 $\displaystyle \text{Num. poly}(\lambda, \tilde\lambda) = \sum_{\vec \alpha, \vec \beta} c_{(\vec\alpha,\vec\beta)} \prod_{j=1}^n\prod_{i=1}^{j-1} \langle ij\rangle^{\alpha_{ij}} [ij]^{\beta_{ij}}$
 </div>
 <div style="text-align: left; font-size: x-large; float: left; margin-top: -2mm; margin-bottom: 0mm;">
@@ -586,7 +594,7 @@ $\displaystyle \text{Num. poly}(\lambda, \tilde\lambda) = \sum_{\vec \alpha, \ve
 $\circ\,$ Construct the Ansatz via the algorithm from Section 2.2 of <a href=https://arxiv.org/abs/2203.04269>GDL, Page ('22)</a>
 </div>
 <div style="text-align: center; display: inline-block; font-size: x-large;">
-Linear independence = irreducibility by the Gröbner basis of a specific ideal.
+Linear independence = irreducibility by the Gröbner basis of the ideal of the redundancies.
 </div>
 
 <div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 0mm;">
@@ -614,7 +622,7 @@ $\circ\,$ Efficient implementation using open-source software only
 <br><br><br><br>
 
 <div style="text-align: left; font-size: x-large; margin-top: -2mm;">
-$\circ\,$ Linear systems solved w/ CUDA over $\mathbb{F}_{2^{31}-1}$ ($t_{\text{solving}} \ll t_{\text{sampling}}$) w/ <a href=https://github.com/GDeLaurentis/linac-dev> linac </a> <span style="text-align: left; font-size: small;"> (coming soon-ish) </span>
+$\circ\,$ Linear systems solved w/ CUDA over $\mathbb{F}_{2^{31}-1}$ ($t_{\text{solving}} \ll t_{\text{sampling}}$) w/ <a href=https://github.com/GDeLaurentis/linac-dev> linac </a> <span style="text-align: left; font-size: small;"> (coming soon) </span>
 </div>
 
 ---
@@ -690,7 +698,9 @@ $$
 $$
 </div>
 <div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
-     $\phantom{\circ}$ This is a primary decomposition. If <span style="font-size: 14pt">$\mathcal{N}$</span> vanishes on all branches, than the partial fraction decomposition exists.
+     $\phantom{\circ}$ This is a primary decomposition, it is the equivalent for polynomials of say: <span style="font-size: 14pt">$12 = 2^2 \times 3$</span> <br> 
+     $\phantom{\circ}$ If <span style="font-size: 14pt">$\mathcal{N}$</span> vanishes on all branches, than the partial fraction decomposition exists.
+</div>
 
 ---
 
@@ -881,52 +891,6 @@ $\circ\,$ And of course computing the reduction to MIs of the amplitude is not e
 {{< slide background-image="Wjj_diagrams.png">}}
 
 # <br> Conclusions <br> & <br> Outlook
-
----
-
-<b style="font-variant: small-caps; font-size: 36pt; margin-bottom: -6mm;"> Spinor-Helicity Amplitudes Results </b>
-<br>
-
-<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 5mm;">
-     $\circ$ The <span style="font-size: 15pt;">$pp\rightarrow Vjj$</span> coefficient functions are now 1.9 MB (down from 1.4 GB), fast and stable. <br>
-     $\phantom{\circ}$ Matrices <span style="font-size: 15pt;">$M_{ij}$</span> account for another 2 MB overall. Transcendental basis at <a href="https://gitlab.com/pentagon-functions/PentagonFunctions-cpp">PentagonFunctions++</a>.
-</div>
-<div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 2mm;">
-    <div style="padding: 0 10px;">
-        <img src="CoefficientSizes.png" style="width: 100%; max-width: 450px; border: none; margin-top: 2mm; margin-bottom: 0mm;">
-    </div>
-    <div style="padding: 0 10px; ">
-        <img src="h2__g_g__Z_d_d.stability.png" style="width: 100%; max-width: 550px; border: none; margin-top: 3mm; margin-bottom: 0mm;">
-    </div>
-</div>
-<!---
-<div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 2mm;">
-    <div style="padding: 0 10px;">
-        <img src="CoefficientSizes.png" style="width: 100%; max-width: 450px; border: none; margin-top: 2mm; margin-bottom: 0mm;">
-    </div>
-    <div style="padding: 0 10px; ">
-        <img src="h2__g_g__Z_b_b.stability.png" style="width: 100%; max-width: 550px; border: none; margin-top: 4mm; margin-bottom: 0mm;">
-    </div>
-</div>
-<a style="font-size: 11pt; text-align: right; float: right; margin-top: -10mm; margin-bottom: -3mm;" href="https://arxiv.org/abs/2404.08598">
-Courtesy of V. Sotnikov, <br>see also Mazzitelli, Sotnikov, Wiesemann ('24)
-</a>
---->
-
-<div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
-     $\circ$ The complexity split is: quarks NMHV: 100 KB, gluons MHV: 200 KB, gluons NMHV: 1.6 MB.
-</div>
-<div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
-     $\circ$ The largest numbers are: quarks NMHV and gluons MHV: 3-digit, gluons NMHV: 12 digits.
-</div>
-<div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
-     $\circ$ Pheno ready results for the hard functions are available at <a href="https://gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp">FivePointAmplitudes</a>.
-</div>
-<!---
-<div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
-     $\circ$ Amplitudes at <a href="https://github.com/GDeLaurentis/antares-results">antares-results</a>, with <a href="https://gdelaurentis.github.io/antares-results/index.html">human readable expr.</a>, and <a href="https://github.com/GDeLaurentis/antares-results/actions/">CI tests</a> for full amplitude in real kinematics
-</div>
---->
 
 ---
 
