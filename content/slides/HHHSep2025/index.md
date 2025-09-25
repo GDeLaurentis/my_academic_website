@@ -147,7 +147,7 @@ $$
 </div>
 <img src="diagrams_background_transparent.png" style="max-width:70%; height:auto; margin-top: 0mm; margin-bottom: 0mm;">
 <div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: -4mm;">
-     $\phantom{\circ}\,$ We require a new approach to tackle them analytically.
+     $\phantom{\circ}\,$ We require a different approach to tackle them analytically.
 </div>
 
 
@@ -213,27 +213,34 @@ $\circ$ We perform a first analytic computation in two ways
 
 <b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> Overview of the Approach </b>
 
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: -2mm; margin-left: 2mm; margin-right: 2mm;">
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
      $\circ$ Goal is to obtain simple forms for <span style="font-size: 15pt">$d^{h_1h_2}_{p_a\times p_b \times p_c }$</span> and <span style="font-size: 15pt">$c^{h_1h_2}_{p_a\times p_b}$</span>
 </div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
-     $\star$ We will use only numerical evaluations to study their structure <br>
+     $\star$ We will use only numerical evaluations to study their analytic     structure <br>
      $\star$ We will parametrize the possible functional form (Ansatz) and solve for free coefficients
 </div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
-     Think of this as a bootstrap helped by additional numerical information.
+     Think of this as a bootstrap approach, helped by additional numerical information.
 </div>
 
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 10mm; margin-left: 2mm; margin-right: 2mm;">
      $\circ$ The analytic structure should be clear with $p^\mu \in \mathbb{C}^{4}$ (good $\mathbb{R}^{4}$ behaviour will follow)
 </div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
-     $\phantom{\star}$ In practice, take <span style="font-size: 16pt;">$P^{\mu=y}\in i\mathbb{Q}\Rightarrow \lambda_{\alpha} \in \mathbb{F}_p \text{ or } \mathbb{Q}_p$</span> <br>
+     $\phantom{\star}$ In practice, take <span style="font-size: 15pt;">$p^{\mu=y}\in i\mathbb{Q} \; \Rightarrow \; E\pm p^z \text{ and } p^x\pm ip^y \in \mathbb{R} \; \Rightarrow \; \lambda_{\alpha} \in \mathbb{R} \text{ or } \mathbb{Q}$</span> <br>
      $\phantom{\star}$ This allows us to generate phase space points in a finite field (modular arithmetics)
 </div>
 
+<pre><code class="language-python">from syngular import Field
+from lips import Particles
+Particles(5, field=Field("finite field", 2 ** 31 - 1, 1), seed=0)  # Fp
+Particles(5, field=Field("padic", 2 ** 31 - 1, 5), seed=0)  # Qp
+</code></pre>
+
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$  Analytic manipulations are too complex, we bypass this complexity by letting cancellations happen numerically
+     $\circ$  Analytic manipulations are too complex, we bypass this complexity by letting cancellations <br>
+     $\phantom{\circ}$ happen numerically. Modular arithmetic will ensure we do not lose precision.
 </div>
 
 </section>
@@ -723,83 +730,152 @@ $$
    Xia, Yang ('25)
 </a>
 
-<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
-$\circ\,$ Iteratively reconstruct a residues at a time using <span style="text-size: 13pt">$p$</span>-adic numbers to get <span style="text-size: 13pt">$\mathbb{F}_p$</span> samples for the residues
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 5mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ Let's go back to our example
 </div>
-<div style="text-align: left; font-size: 13pt; margin-top: 0mm; margin-bottom: 1mm;">
+<div style="font-size: 14pt; margin-top: 4mm; margin-bottom: 3mm">
 $$ 
-\begin{alignedat}{2}
-& r^{(139 \text{ of } 139)}_{\bar{u}^+g^+g^-d^-(V\rightarrow \ell^+ \ell^-)} = & \qquad\qquad & {\small \text{Variety (scheme?) to isolate term(s)}} \\[2mm]
-& +\frac{7/4{\color{blue}(s_{24}-s_{13})}⟨6|1+4|5]s_{123}{\color{green}(s_{124}-s_{134})}}{⟨1|2+3|4]⟨2|1+4|3]^2 Δ_{14|23|56}} +  & \qquad\qquad & \Big\langle ⟨2|1+4|3]^2, Δ_{14|23|56} \Big\rangle \\[1mm]
-& -\frac{49/64⟨3|1+4|2]⟨6|1+4|5]s_{123}(s_{123}-s_{234})(s_{124}-s_{134})}{⟨1|2+3|4]⟨2|1+4|3]Δ^2_{14|23|56}} + \dots & \qquad\qquad & \Big\langle Δ_{14|23|56} \Big\rangle
-\end{alignedat}
+\hat d^{++}_{12\times 3 \times 4}= \frac{\mathcal{N} \leftarrow 2794 \text{ free parameters }}{⟨12⟩²⟨1|𝟓|𝟒|𝟑|2]⟨2|𝟑|𝟒|𝟓|1]Δ_{12|𝟑|𝟒|𝟓}}
 $$
 </div>
 
-<div style="text-align: left; font-size: 16pt; margin-top: -2mm; margin-bottom: 0mm;">
-$\circ\,$ We get more than just partial fraction decomposition, we cna identify numerator insertions from e.g.:
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 8mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ We can prove <span style="font-size: 13pt">$⟨1|𝟓|𝟒|𝟑|2], ⟨2|𝟑|𝟒|𝟓|1]$</span> can be separated, their primary decomposition reads
 </div>
-<div style="text-align: left; font-size: 12pt; margin-top: 2mm; margin-bottom: 1mm;">
-     $$
-     \sqrt{\big\langle ⟨2|1+4|3], Δ_{14|23|56} \big\rangle} = \big\langle {\color{green}(s_{124}-s_{134})}, ⟨2|1+4|3] \big\rangle \, , \\[1mm] 
-     \big\langle ⟨1|2+3|4], ⟨2|1+4|3] \big\rangle = \big\langle ⟨1|2+3|4], ⟨2|1+4|3], {\color{blue}(s_{13}-s_{24})}\big\rangle \cap \big\langle ⟨12⟩, [34] \big\rangle
-     $$
+<div style="font-size: 14pt; margin-top: 3mm; margin-bottom: 4mm">
+$$ 
+\big\langle ⟨1|𝟓|𝟒|𝟑|2], ⟨2|𝟑|𝟒|𝟓|1] \big\rangle = \big\langle ⟨1|𝟓|𝟒|𝟑|2], ⟨2|𝟑|𝟒|𝟓|1], \text{tr}_5 \big\rangle \cap \big\langle ⟨1|𝟓|𝟒|𝟑|2], ⟨2|𝟑|𝟒|𝟓|1], s_{2𝟑}, s_{1𝟓} \big\rangle
+$$
+</div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
+     $\phantom{\circ}$ Generate two phase space points, one for each branch, and verify the numerator vanishes.
 </div>
 
-<div style="text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: 0mm;">
-$\circ\,$ Interesting and non-trivial bevhavior also at 5-point 3-mass
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 8mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ Similarly, with four evaluations we can prove <span style="font-size: 13pt">$⟨1|𝟓|𝟒|𝟑|2], Δ_{12|𝟑|𝟒|𝟓}$</span> can be separated,
 </div>
-<div style="text-align: left; font-size: 13pt; margin-top: 0mm; margin-bottom: 1mm;">
+<div style="font-size: 14pt; margin-top: 3mm; margin-bottom: 4mm">
 $$ 
-\def\spa#1.#2{\left\langle#1\,#2\right\rangle}
-\def\spb#1.#2{\left[#1\,#2\right]}
-\def\spaa#1.#2.#3{\langle\mskip-1mu{#1} 
-                  | #2 | {#3}\mskip-1mu\rangle}
-\def\spbb#1.#2.#3{[\mskip-1mu{#1}
-                  | #2 | {#3}\mskip-1mu]}
-\def\spab#1.#2.#3{\langle\mskip-1mu{#1} 
-                  | #2 | {#3}\mskip-1mu]}
-\def\spba#1.#2.#3{[\mskip-1mu{#1} 
-                  | #2 | {#3}\mskip-1mu\rangle}
-\def\spaba#1.#2.#3.#4{\langle\mskip-1mu{#1} 
-                  | #2 | #3 | {#4}\mskip-1mu\rangle}
-\def\spbab#1.#2.#3.#4{[\mskip-1mu{#1} 
-                  | #2 | #3 | {#4}\mskip-1mu]}
-\def\spabab#1.#2.#3.#4.#5{\langle\mskip-1mu{#1}
-                  | #2 | #3 | {#4}| {#5} \mskip-1mu]}
-\def\spbaba#1.#2.#3.#4.#5{[\mskip-1mu{#1} 
-                  | #2 | #3 | {#4}| {#5}\mskip-1mu\rangle}
-\def\tr#1.#2{\text{tr}(#1|#2)}
-\def\qb{\bar{q}}
-\def\Qb{\bar{Q}}
-\def\cA{{\cal A}}
-\def\slsh{\rlap{$\;\!\!\not$}}     \def\three{{\bf 3}}
-\def\four{{\bf 4}}
-\def\five{{\bf 5}}
-\begin{align}\label{eq:decomp_spaba1351_spbab2542}
-\big\langle \spaba1.\three.\five.1,\, \spbab2.\five.\four.2 \big\rangle = \; &\big\langle \,  \spab1.\three.2,\, \spab1.\four.2,\, \spaba1.\three.\five.1,\, \spbab2.\five.\four.2
-\, \big\rangle\; \cap \\
-&\big\langle \, \spaba1.\three.\five.1,\, \spbab2.\five.\four.2, |\five|2]\langle1|\three| - |1+\three|2]\langle1|\five| \, \big\rangle \;, \nonumber
-\end{align} \\
-\text{because: } |\five|2]\spaba1.\three.\five.1[2| + |1\rangle\spbab2.\five.\four.2\langle1|\five| = \spab1.\five.2 \Big( |\five|2]\langle1|\three| - |1+\three|2]\langle1|\five| \Big) \, ,
+\big\langle ⟨1|𝟓|𝟒|𝟑|2] , \, Δ_{12|𝟑|𝟒|𝟓} \big\rangle= \big\langle M_H, \; 𝟓_{\alpha\dot\alpha}𝟒^{\dot\alpha\beta} \big\rangle \cap \big\langle M_H, \; 𝟒^{\dot\alpha\alpha}𝟑_{\alpha\dot\beta} \big\rangle \cap \big\langle \langle 1 | 𝟑 | 2], \; \langle 1 | 𝟒 | 2], \; \langle 1 | 𝟑 | 𝟒 | 1 \rangle, [2 | 𝟑 | 𝟒 | 2] \big\rangle \cap \big\langle ??? \big\rangle
 $$
 </div>
-<div style="text-align: left; font-size: 16pt; margin-top: -2mm; margin-bottom: 0mm;">
-$\phantom{\circ}\,$ or between the triangle and box Grams
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 8mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ Fit <span style="font-size: 13pt">$⟨1|𝟓|𝟒|𝟑|2]$</span> residue by sampling in limit <span style="font-size: 13pt">$⟨1|𝟓|𝟒|𝟑|2] \rightarrow 0$</span>
 </div>
-<div style="text-align: left; font-size: 13pt; margin-top: 0mm; margin-bottom: 1mm;">
+<div style="font-size: 14pt; margin-top: 10mm; margin-bottom: 10mm">
 $$ 
-\begin{gather}\label{eq:decomp_delta12_34_5_and_delta_12_3_4_5}
-  \big\langle \Delta_{12|34|5},\,\Delta_{12|3|4|5} \big\rangle =
-  \big\langle
-  s_{34},\, \tr1+2.{\three+\four}^2
-  \big\rangle \cap
-  \big\langle
-  \Delta_{12|34|5},\, \tr1+2.{\three-\four}^2 
-  \big\rangle \, .
-\end{gather}
+\hat d^{++}_{12\times 3 \times 4} = \frac{\mathcal{N} \leftarrow 112 \text{ free parameters }}{⟨12⟩²⟨1|𝟓|𝟒|𝟑|2]} + \mathcal{O}(⟨1|𝟓|𝟒|𝟑|2]^0)
 $$
 </div>
+
+---
+
+<div style="margin-top: 2mm; margin-bottom: -2mm">
+     <b style="font-variant: small-caps; font-size: 32pt"> Example of Code Syntax </b>
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 5mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ This is just a couple of pip install's aways
+</div>
+<pre><code class="language-python" style="font-size: 11pt">field = Field("padic", 2 ** 31 - 1, 5)
+oPs8pt = Particles(8, field=field, seed=0)
+oPs8pt._singular_variety(("s_34-s_56", "s_56-s_78", '⟨1|7+8|5+6|3+4|2]', '⟨2|3+4|5+6|7+8|1]'),
+                         (field.digits, field.digits, 1, 1), seed=0,
+                         generators=('s_34-s_56', 's_56-s_78', '⟨1|7+8|5+6|3+4|2]', 
+                                     '⟨2|3+4|5+6|7+8|1]', 'tr5(1|2|3+4|5+6)'))
+oPs8pt.m_t = field.random()
+oPs8pt.m_h = "sqrt(s_34)"
+oPs5pt = oPs.cluster([[1, ], [2, ], [3, 4], [5, 6], [7, 8]])
+
+from antares_results.HHH.ggHHH.pp import coeffs as coeffs_pp
+coeffs_pp\['d_12x3x4'\](oPsC)
+1308080686\*2147483647^-1 + 687356881 + 792807618\*2147483647 + 696603492\*2147483647^2 + O(2147483647^3)
+</code></pre>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 5mm; margin-left: 2mm; margin-right: 2mm;">
+     The denominator goes like <span style="font-size: 13pt">$p^2$</span>, but the coefficient goes like <span style="font-size: 13pt">$p^{-1} \Rightarrow$</span> the numerator vanishes linearly.
+</div>
+
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 5mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ This is a <span style="font-size: 13pt">$p$</span>-adic numbers, i.e. a Laurent series in powers of the prime.<br> 
+     $\phantom{\circ}$ Note that with finite fields we cannot do this! We would be dividing by zero.
+</div>
+
+---
+
+<div style="margin-top: 2mm; margin-bottom: -2mm">
+     <b style="font-variant: small-caps; font-size: 32pt"> Core Tools - Fully Open Source </b>
+</div>
+
+<div style="text-align: center; float: center; font-size: 16pt; margin-top: 0mm; margin-bottom: 0mm;">
+     For fleshed out examples see e.g. <a href=https://inspirehep.net/literature/2661970> GDL (ACAT '22)</a> or <a href="https://arxiv.org/abs/2504.19909">Appendix B of 2504.19909</a>
+</div>
+
+<div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 2mm;">
+     Install from github (<code style="font-size:14pt;">git clone</code>) or PyPI (<code style="font-size:14pt;">pip install</code>); use of Jupyter is recommended.
+</div>
+
+<div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
+     $\circ$ <a href="https://github.com/GDeLaurentis/pyadic/" style="font-size: 20pt; font-variant: small-caps;">pyadic</a><br>
+     $\quad\rightarrow$ Finite field $\mathbb{F}_p$ and $p$-adic $\mathbb{Q}_p$ number types, including field extensions <br>
+     $\quad\rightarrow$ rational number reconstruction (Wang's EEA, LGRR, MQRR) <br>
+     $\quad\rightarrow$ univariate and multivariante Newthon & univariate Thiele interpolation algorithms in $\mathbb{F}_p$
+</div>
+
+<div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
+     $\circ$ <a href="https://github.com/GDeLaurentis/syngular/" style="font-size: 20pt; font-variant: small-caps;">syngular</a> (in the backhand <a href="https://www.singular.uni-kl.de/index.php.html" style="font-size: 20pt; font-variant: small-caps;">Singular</a>  is used for many operations)<br>
+     $\quad\rightarrow$ object-oriented algebraic geometry (Field, Ring, Quotient Ring, Ideal) <br>
+     $\quad\rightarrow$ ring-agnostic monomials and polynomials (with support for unicode characters, e.g. spinor brackets)<br>
+     $\quad\rightarrow$ multivariate solver (Ideal.point_on_variety), under- and over-constrained systems OK <br>
+     $\quad\rightarrow$ a semi-numerical prime and primary ideal test (assumes equi-dimensionality of ideal)
+</div>
+
+<div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
+     $\circ$ <a href="https://github.com/GDeLaurentis/lips/" style="font-size: 20pt; font-variant: small-caps;">lips</a> (Lorentz invariant phase space)<br>
+     $\quad\rightarrow$ phase space points over any field ($\mathbb{Q}, \mathbb{Q}[i], \mathbb{R}, \mathbb{C}, \mathbb{Q}_p, \mathbb{F}_p$), including internal and external masses <br>
+     $\quad\rightarrow$ evaluate any Mandelstam or spinor expression (custom ast/regex parser) <br>
+     $\quad\rightarrow$ generation of any special kinematic configuration (wrapper around Ideal.point_on_variety)
+</div>
+
+<div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
+     $\circ$ <a href="https://github.com/GDeLaurentis/antares/" style="font-size: 20pt; font-variant: small-caps;">antares</a> (automated numerical to analytical reconstruction software) - still under development <br>
+     $\quad\rightarrow$ Univariate slicing, LCD determination, basis change, multivariate partial fractioning strategies, <br>
+     $\phantom{\rightarrow}$ constraining of numerators, Ansatz generation and fitting strategies, etc.
+</div>
+
+</section>
+
+---
+
+<section>
+
+{{< slide background-image="Wjj_diagrams.png">}}
+
+# <br> Conclusions <br> & <br> Outlook
+
+---
+
+<div style="margin-top: 2mm; margin-bottom: -2mm">
+     <b style="font-variant: small-caps; font-size: 32pt"> Analytic Results for Theory and Phenomenology </b>
+</div>
+
+<div style="text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 2mm;">
+     $\circ$ Analytic expressions implemented in <a href="https://mcfm.fnal.gov/">MCFM</a>, for phenomenology use this efficient Fortran implementation
+</div>
+<a href="https://arxiv.org/abs/1909.09117" style="font-size: 14pt; margin-top: -3mm; margin-right: 2mm; float: right; font-align: right;"> Campbell, Neumann</a>
+<a href="https://arxiv.org/abs/1503.06182" style="font-size: 14pt; margin-top: -3mm; margin-right: 2mm; float: right; font-align: right;"> Campbell, Ellis, Giele;</a>
+<a href="https://arxiv.org/abs/1105.0020" style="font-size: 14pt; margin-top: -3mm; margin-right: 2mm; float: right; font-align: right;"> Campbell, Ellis, Williams;</a>
+
+<div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 10mm;">
+     $\circ$ <a href="https://github.com/GDeLaurentis/antares-results/" style="font-size: 20pt; font-variant: small-caps;">antares-results</a> (human readable exprs in <a href="https://gdelaurentis.github.io/antares-results/">docs</a>) with <a href="https://github.com/GDeLaurentis/antares-results/actions/">CI tests</a> for coefficients and/or full amplitudes
+</div>
+<div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 2mm;">
+     <img src="antares-results-transparent.png" 
+          style="width: 100%; max-width: 700px; float: left; border: none; margin-top: 2mm; margin-bottom: 0mm;">
+</div>
+
 
 ---
 
@@ -846,83 +922,13 @@ $\circ\,$ Even constructing the ansatz requires a GB, which in some cases Singul
 $\circ\,$ And of course computing the reduction to MIs of the amplitude is not easy in the first place.
 </div>
 
----
-
-<div style="margin-top: 2mm; margin-bottom: -2mm">
-     <b style="font-variant: small-caps; font-size: 32pt"> Core Tools - Fully Open Source </b>
-</div>
-
-<div style="text-align: center; float: center; font-size: 16pt; margin-top: 0mm; margin-bottom: 0mm;">
-     For fleshed out examples see e.g. <a href=https://inspirehep.net/literature/2661970> GDL (ACAT '22)</a> or <a href="https://arxiv.org/abs/2504.19909">Appendix B of 2504.19909</a>
-</div>
-
-<div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 2mm;">
-     Install from github (<code style="font-size:14pt;">git clone</code>) or PyPI (<code style="font-size:14pt;">pip install</code>); use of Jupyter is recommended.
-</div>
-
-<div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
-     $\circ$ <a href="https://github.com/GDeLaurentis/pyadic/" style="font-size: 20pt; font-variant: small-caps;">pyadic</a><br>
-     $\quad\rightarrow$ Finite field $\mathbb{F}_p$ and $p$-adic $\mathbb{Q}_p$ number types, including field extensions <br>
-     $\quad\rightarrow$ rational number reconstruction (Wang's EEA, LGRR, MQRR) <br>
-     $\quad\rightarrow$ univariate and multivariante Newthon & univariate Thiele interpolation algorithms in $\mathbb{F}_p$
-</div>
-
-<div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
-     $\circ$ <a href="https://github.com/GDeLaurentis/syngular/" style="font-size: 20pt; font-variant: small-caps;">syngular</a> (in the backhand <a href="https://www.singular.uni-kl.de/index.php.html" style="font-size: 20pt; font-variant: small-caps;">Singular</a>  is used for many operations)<br>
-     $\quad\rightarrow$ object-oriented algebraic geometry (Field, Ring, Quotient Ring, Ideal) <br>
-     $\quad\rightarrow$ ring-agnostic monomials and polynomials (with support for unicode characters, e.g. spinor brackets)<br>
-     $\quad\rightarrow$ multivariate solver (Ideal.point_on_variety), under- and over-constrained systems OK <br>
-     $\quad\rightarrow$ a semi-numerical prime and primary ideal test (assumes equi-dimensionality of ideal)
-</div>
-
-<div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
-     $\circ$ <a href="https://github.com/GDeLaurentis/lips/" style="font-size: 20pt; font-variant: small-caps;">lips</a> (Lorentz invariant phase space)<br>
-     $\quad\rightarrow$ phase space points over any field ($\mathbb{Q}, \mathbb{Q}[i], \mathbb{R}, \mathbb{C}, \mathbb{Q}_p, \mathbb{F}_p$), including internal and external masses <br>
-     $\quad\rightarrow$ evaluate any Mandelstam or spinor expression (custom ast/regex parser) <br>
-     $\quad\rightarrow$ generation of any special kinematic configuration (wrapper around Ideal.point_on_variety)
-</div>
-
 </section>
 
 ---
 
 <section>
 
-{{< slide background-image="Wjj_diagrams.png">}}
-
-# <br> Conclusions <br> & <br> Outlook
-
----
-
-<div style="margin-top: 2mm; margin-bottom: -2mm">
-     <b style="font-variant: small-caps; font-size: 32pt"> A Numerical CAS for Computations in Q-Rings </b>
-     <p style="margin-top: -2mm; margin-bottom: -=mm; font-size: 16pt;">
-     (partially work in progress)
-     </p>
-</div>
-
-<div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
-     $\circ$ <a href="https://github.com/GDeLaurentis/antares/" style="font-size: 20pt; font-variant: small-caps;">antares</a> (automated numerical to analytical reconstruction software) <br>
-     $\rightarrow$ Univariate slicing, LCD determination, basis change, multivariate partial fractioning strategies, <br>
-     $\phantom{\rightarrow}$ constraining of numerators, Ansatz generation and fitting strategies <br>
-     $\rightarrow$ Most operations do not require defining the variables (or redundancies), only being able to evaluate them.
-</div>
-
-<div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
-     $\circ$ <a href="https://github.com/GDeLaurentis/antares-results/" style="font-size: 20pt; font-variant: small-caps;">antares-results</a> (human readable exprs in <a href="https://gdelaurentis.github.io/antares-results/">docs</a>) with <a href="https://github.com/GDeLaurentis/antares-results/actions/">CI tests</a> for coefficients and/or full amplitudes
-</div>
-<div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 2mm;">
-     <img src="antares-results-transparent-combined-v2.png" 
-          style="width: 100%; max-width: 850px; float: left; border: none; margin-top: 2mm; margin-bottom: 0mm;">
-</div>
-
-</section>
-
----
-
-<section>
-
-<!--- {{< slide background-image="edmonton.jpg" >}} --->
+{{< slide background-image="dubrovnik.jpeg" >}}
 
 <div style="margin-top: 50mm; margin-bottom: 30mm;">
 <b style="font-variant: small-caps; font-size: xxx-large;"> Thank you <br> for your attention! </b>
