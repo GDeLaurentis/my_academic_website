@@ -1,6 +1,6 @@
 ---
 title: "Analytic One-Loop Amplitude for $gg \\rightarrow HHH$"
-event: CERN QCD Seminar
+event: HHH Workshop
 event_url: 
 location: Dubrovnik
 summary: HHH Workshop - Sep 29, 2025
