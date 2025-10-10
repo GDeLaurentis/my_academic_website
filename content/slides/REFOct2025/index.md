@@ -85,66 +85,63 @@ $$
 ---
 
 <b style="font-variant: small-caps; font-size: 32pt"> Leading Order Kernel Components </b>
-
-<div style="text-align: left; font-size: 18pt; margin-bottom: 5mm; margin-top: 5mm; margin-left: -4mm;">
-     $\circ\,$ test test
+<div  style="text-align: left; font-size: 16pt; margin-bottom: 5mm; margin-top: -6mm; text-align: center;">
+Leading-Log (LL) Resummation: <span style="font-size: 14pt;">$\mathcal{O}\big(\alpha_s^n \log^n(s/|t|)\big )$</span>
 </div>
-<a href="https://arxiv.org/abs/1907.13071" style="font-size: 14pt; margin-top: 0mm; margin-bottom: -10mm; float: right; font-align: right;"> Buccioni, Lang, Lindert, Maierhöfer, Pozzorini, Zhang, Zoller</a>
-<a href="https://arxiv.org/abs/1711.07388" style="font-size: 14pt; margin-top: -6mm; margin-bottom: 0mm; float: right; font-align: right;"> Denner, Lang, Uccirati</a>
 
+<div style="text-align: left; font-size: 18pt; margin-bottom: 5mm; margin-top: 5mm;">
+     $\circ\,$ The two components of the leading order (LO) BFKL kernel, <br>
+     $\phantom{\circ}\,$ required for resummation of leading logarithms (LL), are
+</div>
 
-<img src="LOKernel.png" style="max-width: 130mm; margin-top: 0mm; margin-bottom:0 mm;">
+<img src="LOKernel.png" style="max-width: 130mm; margin-top: 0mm; margin-bottom: 0mm;">
 
-Emmet P. Byrne,a Vittorio Del Duca,b,c,1 Lance J. Dixon,d Einan Gardia
-and Jennifer M. Smillie https://arxiv.org/pdf/2204.12459
+<span style="font-size: 14pt; margin-top: -5mm; margin-bottom: 5mm; float: right; font-align: right;"> <a href="https://arxiv.org/abs/2204.12459"> Byrne, Del Duca, Dixon, Gardi, Smillie </a></span>
+
+<div style="text-align: left; font-size: 18pt; margin-bottom: 5mm; margin-top: 10mm;">
+     $\phantom{\circ}\,$ (a) is a correction to the Regge trajectory <br>
+     $\phantom{\circ}\,$ (b) is the leading order central emission vertex (CEV)
+</div>
 
 ---
 
 <b style="font-variant: small-caps; font-size: 32pt"> NLO Kernel </b>
+<div  style="text-align: left; font-size: 16pt; margin-bottom: 5mm; margin-top: -6mm; text-align: center;">
+Next-To-Leading-Log (NLL) Resummation: <span style="font-size: 14pt;">$\mathcal{O}\big(\alpha_s^n \log^{n-1}(s/|t|)\big )$</span>
+</div>
 
 <img src="NLOKernel.png" style="max-width: 180mm; margin-top: 0mm; margin-bottom:0 mm;">
 
-<div style="text-align: left; font-size: 18pt; margin-bottom: 1mm; margin-top: 2mm; margin-left: -4mm;">
-     $\circ\,$ The $\kappa_4$ and $\kappa_3^2$ diagrams are triangles (no contribution from pinch bubbles)
+<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: 0mm;">
+     $\phantom{\circ}\,$ (a) two-loop correction to the Regge trajectory
 </div>
 
-<div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
-$$
-\def\mt{m}
-\def\mh{M_H}
-\def\spa#1.#2{\left\langle#1\,#2\right\rangle}
-\def\spb#1.#2{\left[#1\,#2\right]}
-\begin{eqnarray}
-A_3^{++} &=& 
-\frac{\spb1.2}{\spa1.2} \, \frac{6\mh^2}{\mt^2(s_{12}-\mh^2)} 
- \Bigl[(4\mt^2-s_{12}) C_0(p_1,p_2; \mt)+2\Bigr]\times
- \left(\kappa_4+ \frac{3\kappa_3^2 \mh^2}{s_{34}-\mh^2} + \text{perms.} \right) \, ,
-\\
-A_3^{-+} &=& 0 \, .
-\end{eqnarray}
-$$
+<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: 0mm;">
+     $\phantom{\circ}\,$ (b) one-loop correction to the one-emission CEV
+</div>
+
+<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: 0mm;">
+     $\phantom{\circ}\,$ (c) leading two-emission CEV, this requires an next-to-MRK (NMRK) tree computation: <br>
+     $\phantom{\circ}\,\kern4mm$ the two central gluons are <u>not</u> rapidity gapped
 </div>
 
 ---
 
 <b style="font-variant: small-caps; font-size: 32pt"> NNLO Kernel </b>
-
-<img src="NNLOKernel.png" style="max-width: 150mm; margin-top: 0mm; margin-bottom:0 mm;">
-
-<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: -4mm;">
-     $\circ\,$ The $\kappa_3$ diagrams are boxes (and triangle pinches, but no bubble contribution)
-</div>
-<img src="diagrams_self_coupling_k3_transparent.png" style="max-width:70%; height:auto; margin-top: 0mm; margin-bottom: 0mm;">
-<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: -4mm;">
-     $\phantom{\circ}\,$ Their contribution is also fairly simple, it can be written in 4 or 5 lines.
+<div  style="text-align: left; font-size: 16pt; margin-bottom: 5mm; margin-top: -6mm; text-align: center;">
+NNLL Resummation: <span style="font-size: 14pt;">$\mathcal{O}\big(\alpha_s^n \log^{n-2}(s/|t|)\big )$</span>
 </div>
 
-<div style="text-align: left; font-size: 18pt; margin-bottom: 8mm; margin-top: 2mm; margin-left: -4mm;">
-     $\circ\,$ The background diagrams are by far the most complicated,
+
+<img src="NNLOKernel.png" style="max-width: 280mm; margin-top: 0mm; margin-bottom:0 mm; margin-left: -16mm">
+
+<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: 0mm;">
+     $\phantom{\circ}\,$ (b) the two-loop correction to the central emission vertex for one gluon was computed last year
 </div>
-<img src="diagrams_background_transparent.png" style="max-width:70%; height:auto; margin-top: 0mm; margin-bottom: 0mm;">
-<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: -4mm;">
-     $\phantom{\circ}\,$ We require a different approach to tackle them analytically.
+<span style="font-size: 14pt; margin-top: -3mm; margin-bottom: -5mm; float: right; font-align: right;"> <a href="https://arxiv.org/abs/2204.12459" > Abreu, GDL, Falcioni, Gardi, Milloy, Vernazza</a>;$\;$<a href="https://arxiv.org/abs/2204.12459"> Buccioni, Caola, Devoto, Gambuti</a></span>
+
+<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 8mm; margin-left: 0mm;">
+     $\phantom{\circ}\,$ (d) The last missing component is the next-to-maximally-helicity-violiating (NMHV) one-loop two-gluon CEV
 </div>
 
 
@@ -171,74 +168,12 @@ $\circ$ We perform a first analytic computation in two ways
 	</div>
 </div>
 
-<div style="display:block; width:100%; margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm;">
-     <div style="font-size: 15pt; text-align: left; display: inline-block; margin-top: 1mm;">
-	     $$
-	     \require{color}
-	     \displaystyle \sum_{\text{states}} \, \prod_{\text{trees}} A^{\text{tree}}(\lambda, \tilde\lambda, \ell)\big|_{\text{cut}_{\Gamma}} = \sum_{\Gamma' \ge \Gamma} \kern0mm {\color{black}{c_{\,\Gamma',i}(\lambda, \tilde\lambda)}} \, \frac{m_{\Gamma',i}(\lambda\tilde\lambda, \ell)}{\displaystyle \prod_{j\in P_{\Gamma'} / P_{\Gamma}} \rho_{j}(\lambda\tilde\lambda, \ell)}\Bigg|_{\text{cut}_\Gamma}
-	     $$
-	</div>
-</div>
-
-<div style="font-size: 17pt; text-align:left; margin-bottom: 2mm; margin-top: 0mm;">
-     <div style="font-size: 16pt; width:99%; text-align: left; display: inline-block; margin-top: 2mm; margin-left:10mm;">
-          $\kern2mm$ The sum in the RHS is over all topologies <span style="font-size: 14pt;">$\Gamma'$</span> that have at least the cut propagators $\Gamma$, <br>
-          $\kern2mm$ and the product is over propagators that have not been cut.
-	</div>
-</div>
-
-<div style="font-size: 17pt; text-align: left; margin-bottom: 0mm; margin-top: 2mm;">
-     $\circ$ Pentagons are reducible to linear combination of boxes, and we observe all bubbles vanish, leaving:
-</div>
-<div style="display:block; width:100%; margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm;">
-     <div style="font-size: 15pt; text-align: left; display: inline-block; margin-top: 1mm;">
-	     $$
-	     A_5^{h_1h_2} = \sum_{a,b,c} d^{h_1h_2}_{p_a\times p_b \times p_c } D_0(p_a, p_b, p_c; m_t) + \sum_{a,b} c^{h_1h_2}_{p_a\times p_b} C_0(p_a, p_b; m_t)
-	     $$
-	</div>
-</div>
-
-<div style="font-size: 17pt; text-align: left; margin-bottom: 0mm; margin-top: -3mm;">
-     $\circ$ This yields a few MBs of optimized <span style="font-variant: small-caps;">FORM</span> routines for the integral coefficients, which we simplify.
-</div>
-
-<div style="font-size: 17pt; text-align: left; margin-bottom: 0mm; margin-top: 3mm;">
-     $\circ$ In principle, a numerical program for <span style="font-size: 15pt">$d^{h_1h_2}_{p_a\times p_b \times p_c }$</span> and <span style="font-size: 15pt">$c^{h_1h_2}_{p_a\times p_b}$</span> would suffice for what follows.
-</div>
-
 ---
 
 <b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> Expanding Amplitudes in MRK and NMRK </b>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
      $\circ$ Goal is to obtain simple forms for <span style="font-size: 15pt">$d^{h_1h_2}_{p_a\times p_b \times p_c }$</span> and <span style="font-size: 15pt">$c^{h_1h_2}_{p_a\times p_b}$</span>
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
-     $\star$ We will use only numerical evaluations to study their analytic     structure <br>
-     $\star$ We will parametrize the possible functional form (Ansatz) and solve for free coefficients
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
-     Think of this as a bootstrap approach, helped by additional numerical information.
-</div>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 6mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ The analytic structure should be clear with $p^\mu \in \mathbb{C}^{4}$ (good $\mathbb{R}^{4}$ behaviour will follow)
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
-     $\phantom{\star}$ In practice, take <span style="font-size: 15pt;">$p^{\mu=y}\in i\mathbb{Q} \; \Rightarrow \; E\pm p^z \text{ and } p^x\pm ip^y \in \mathbb{R} \; \Rightarrow \; \lambda_{\alpha} \in \mathbb{R} \text{ or } \mathbb{Q}$</span> <br>
-     $\phantom{\star}$ This allows us to generate phase space points in a finite field (modular arithmetics)
-</div>
-
-<pre><code class="language-python">from syngular import Field
-from lips import Particles
-Particles(5, field=Field("finite field", 2 ** 31 - 1, 1), seed=0)  # Fp
-Particles(5, field=Field("padic", 2 ** 31 - 1, 5), seed=0)  # Qp
-Particles(5, field=Field("mpc", 0, 300), seed=0)  # C (examples for massless PSPs)
-</code></pre>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$  Analytic manipulations are too complex, we bypass this complexity by letting cancellations <br>
-     $\phantom{\circ}$ happen numerically. Modular arithmetic will ensure we do not lose precision.
 </div>
 
 </section>
