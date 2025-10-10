@@ -28,12 +28,13 @@ Giuseppe De Laurentis
 <br>
 <div style="font-size: large;"> University of Edinburgh </div>
 <br>
-<div style="font-size: 14pt; margin-bottom:0mm;"> Two Loops One Emission </div>
+<div style="font-size: 15pt; margin-bottom:0mm;"> One Emission at Two Loops </div>
 <div style="font-size: 15pt; margin-bottom:0mm;"><a href="https://arxiv.org/pdf/2412.20578">arXiv:2412.20578</a> <a href="https://link.springer.com/article/10.1007/JHEP04(2025)161">(10.1007/JHEP04(2025)161)</a></div>
-<div style="font-size: 14pt; margin-bottom:5mm;"> with S. Abreu, G. Falcioni, E. Gardi, C. Milloy, L. Vernazza </div>
+<div style="font-size: 15pt; margin-bottom:0mm;"> with S. Abreu, G. Falcioni, E. Gardi, C. Milloy, L. Vernazza </div>
 <br>
-<div style="font-size: 14pt; margin-bottom:0mm;"> One Loop Two Emissions - To Appear </div>
-<div style="font-size: 14pt; margin-bottom:5mm;"> with E. Byrne, V. Del Duca, E. Gardi, J. Smillie </div>
+<div style="font-size: 15pt; margin-bottom:0mm;"> Two Emissions at One Loop </div>
+<div style="font-size: 15pt; margin-bottom:0mm;"> To Appear </div>
+<div style="font-size: 15pt; margin-bottom:10mm;"> with E. Byrne, V. Del Duca, E. Gardi, J. Smillie </div>
 
 REF Conference
 <div style="font-size: large; margin-top:-5mm; margin-bottom:5mm"> Milan, IT </div>
@@ -54,26 +55,54 @@ REF Conference
 
 <b style="font-variant: small-caps; font-size: 32pt"> Large Logarithms from Big Rapidity Gaps  </b>
 
+<div style="text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: 0mm; margin-left: 0mm;">
+     $\circ\,$ In <span style="font-size: 15pt">$2\to 2$</span> scattering, in the <b>forward limit</b> <span style="font-size: 15pt">$s \gg t$</span> (large CoM energy vs. momentum transfer)
+</div>
+<img src="forward_diagram.png" style="max-width:100mm; margin-top:-4mm; margin-bottom:-7mm;">
+<div style="text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: 0mm; margin-left: 0mm;">
+     $\phantom{\circ}\,$ final state emissions develop <b> large rapidity gaps </b>. The cross section grows as
+</div>
+<div style="font-size: 16pt; margin-top: 0mm; margin-bottom: -3mm">
+$$
+\sigma \approx \mathcal{O}\big(\alpha_s^n \log^n(s/|t|)\big )
+$$
+</div>
+<div style="text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: 0mm; margin-left: 0mm;">
+     $\phantom{\circ}\,$ which is unphysically large (e.g. it violates the Froissart bound).
+</div>
+
+<div style="text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: 8mm; margin-left: 0mm;">
+     $\circ\,$ The BFKL kernel captures the <b>exponentiation</b> of these <b>large logarithms</b>,<br>
+     $\phantom{\circ}\,$ allowing us to <b>resum</b> their contribution to the cross section.
+</div>
+
+<div style="text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: 8mm; margin-left: 0mm;">
+     $\circ\,$ In this kinematic limit, known as <b>Multi-Regge Kinematics</b> (MRK), an effective particle is <br>
+     $\phantom{\circ}\,$ exchanged in the t-channel, a Reggeon, from which more rapidity-gapped radiation is emitted.
+</div>
+
+
 ---
 
 <b style="font-variant: small-caps; font-size: 32pt"> Leading Order Kernel Components </b>
 
-<div style="text-align: left; font-size: 18pt; margin-bottom: 1mm; margin-top: 0mm; margin-left: -4mm;">
-     $\circ\,$ Direct probe of triple and quartic Higgs self-couplings at current and future colliders. <br>
-     $\phantom{\circ}\,$ We write the potential in the kappa framwork (SM: <span style="font-size: 15pt">$\kappa_3 = \kappa_4 = 1$</span>)
-</div>
-
 <div style="text-align: left; font-size: 18pt; margin-bottom: 5mm; margin-top: 5mm; margin-left: -4mm;">
-     $\circ\,$ Facilitate phenomenological studies through faster and more stable evaluations: <br>
-     $\phantom{\circ}\,$ we observe an order of magnitude speed up compared to <span style="font-variant: small-caps;">Recola2</span> and <span style="font-variant: small-caps;">OpenLoops2</span>.
+     $\circ\,$ test test
 </div>
 <a href="https://arxiv.org/abs/1907.13071" style="font-size: 14pt; margin-top: 0mm; margin-bottom: -10mm; float: right; font-align: right;"> Buccioni, Lang, Lindert, Maierhöfer, Pozzorini, Zhang, Zoller</a>
 <a href="https://arxiv.org/abs/1711.07388" style="font-size: 14pt; margin-top: -6mm; margin-bottom: 0mm; float: right; font-align: right;"> Denner, Lang, Uccirati</a>
 
 
+<img src="LOKernel.png" style="max-width: 130mm; margin-top: 0mm; margin-bottom:0 mm;">
+
+Emmet P. Byrne,a Vittorio Del Duca,b,c,1 Lance J. Dixon,d Einan Gardia
+and Jennifer M. Smillie https://arxiv.org/pdf/2204.12459
+
 ---
 
 <b style="font-variant: small-caps; font-size: 32pt"> NLO Kernel </b>
+
+<img src="NLOKernel.png" style="max-width: 180mm; margin-top: 0mm; margin-bottom:0 mm;">
 
 <div style="text-align: left; font-size: 18pt; margin-bottom: 1mm; margin-top: 2mm; margin-left: -4mm;">
      $\circ\,$ The $\kappa_4$ and $\kappa_3^2$ diagrams are triangles (no contribution from pinch bubbles)
@@ -99,6 +128,8 @@ $$
 ---
 
 <b style="font-variant: small-caps; font-size: 32pt"> NNLO Kernel </b>
+
+<img src="NNLOKernel.png" style="max-width: 150mm; margin-top: 0mm; margin-bottom:0 mm;">
 
 <div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: -4mm;">
      $\circ\,$ The $\kappa_3$ diagrams are boxes (and triangle pinches, but no bubble contribution)
