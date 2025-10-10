@@ -81,6 +81,37 @@ $$
      $\phantom{\circ}\,$ exchanged in the t-channel, a Reggeon, from which more rapidity-gapped radiation is emitted.
 </div>
 
+---
+
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> Expanding Amplitudes in MRK and NMRK </b>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ In the (N)MRK limit the amplitude factorizes as follows
+</div>
+
+---
+
+<b style="font-variant: small-caps; font-size: 34pt; magin-bottom: -10mm;"> Minimal Variables for Multi-Regge Kinematics </b> <br>
+
+<div style="font-size: 17pt; text-align:left; margin-bottom: 2mm; margin-top: -4mm;">
+$\circ$ The MRK limit is a two-variable problem
+</div>
+
+
+<div style="font-size: 17pt; text-align:left; margin-bottom: 2mm; margin-top: 2mm;">
+$\circ$ The NMRK limit is a five-variable problem
+</div>
+
+
+</section>
+
+---
+
+<section>
+
+{{< slide background-image="Feynman-Diagrams-transparent.png" >}}
+
+<h1 style="margin-top: -2mm;"> Kernel Components </h1>
 
 ---
 
@@ -149,59 +180,19 @@ NNLL Resummation: <span style="font-size: 14pt;">$\mathcal{O}\big(\alpha_s^n \lo
 
 ---
 
-<section>
-
-{{< slide background-image="Feynman-Diagrams-transparent.png" >}}
-
-<h1 style="margin-top: -2mm;"> Computation Setup </h1>
-
----
-
-<b style="font-variant: small-caps; font-size: 34pt; magin-bottom: -10mm;"> Minimal Variables for Multi-Regge Kinematics </b> <br>
-
-<div style="font-size: 17pt; text-align:left; margin-bottom: 2mm; margin-top: -4mm;">
-$\circ$ We perform a first analytic computation in two ways
-     <div style="font-size: 16pt; width:99%; text-align: left; display: inline-block; margin-top: 2mm; margin-left:10mm;">
-	     1. A standard computation directly from Feynman diagrams <br>
-	     2. A generalized-unitarity computation from cut-diagrams (i.e. products of trees) <br>
-          $\kern2mm$ In this approach the amplitude is constructed as (schematically)
-	</div>
-</div>
-
----
-
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> Expanding Amplitudes in MRK and NMRK </b>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Goal is to obtain simple forms for <span style="font-size: 15pt">$d^{h_1h_2}_{p_a\times p_b \times p_c }$</span> and <span style="font-size: 15pt">$c^{h_1h_2}_{p_a\times p_b}$</span>
-</div>
-
-</section>
-
----
-
 <section >
 
 {{< slide background-image="varieties-no-background.png" >}}
 
-<br><br><br><br>
-
 # NMRK Expansion
 
-<br><br><br>
-
-<span style="font-size: 18pt">algebro-geometric formulation for physicists in:<span> <br>
-<span style="font-size: 18pt">[GDL, Page (JHEP 12 (2022) 140)](https://arxiv.org/abs/2203.04269)<span>
-
-<span style="font-size: 18pt">see also Sturmfeld et al. "Spinor-Helicity Varieties":<span> <br>
-<span style="font-size: 18pt">[arXiv:2406.17331](https://arxiv.org/abs/2406.17331)<span>
 
 ---
 
 <b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Challenge from Spurious Cancellations </b>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Consider polynomials <span style="font-size: 14pt;">$f, g, h$</span> in two variables <span style="font-size: 14pt;">$x, y$</span>. They live in a <b>polynomial ring</b>:
+     $\circ$ 
 </div>
 <div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
 $$ 
@@ -211,23 +202,64 @@ $$
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> $p$-adic numbers </b>
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> <span style="font-size: 27pt;">$p\kern0.2mm$</span>-adic numbers </b>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ For <span style="font-size: 14pt;">$n$</span>-point massless scattering, the quotient ring is
+     $\circ$ Analytic computation is unfeasible (run out of both RAM and time), <br>
+     $\phantom{\circ}$ while floating point calculations are very unstable due to 7-8 orders of spurious cancellations.
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ You may be familiar with finite field (integers modulo a prime)
+</div>
+<div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
+$$ 
+\displaystyle a \in \mathbb{F}_p : a \in \{0, \dots, p -1\} \; \text{ with } \; \{+, -, \times, \div\}
+$$
+</div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
+     $\phantom{\circ}$ Limits (and calculus) is not well defined in $\mathbb{F}_p$. We can make things zero, but not small.
+</div>
+<div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
+$$ 
+\displaystyle |a|_0 = 1 if a = 0 else 1
+$$
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ There exists just one more absolute value on the rationals, the $p$-adic absolute value.
+</div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ Let's start from $p$-adic integers, instead of working modulo p, expand in powers of p
+</div>
+<div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
+$$ 
+\displaystyle a \in \mathbb{Z}_p : a_0 p^0 + a_1 p^1 + a_2 p^2 + \dots + \mathcal{O}(p^n)
+$$
+</div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
+     $\phantom{\circ}$ Think of $p$ as a small quantity, $\epsilon$, even if it is a large (by the real absolute value) prime in practice.
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ $p$-adic numbers allow for negative powers of $p$, 
+</div>
+<div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
+$$ 
+\displaystyle a \in \mathbb{Q}_p : a_{-\nu} p^{-\nu} + \dots + a_0 + a_1 p^1 + \dots + \mathcal{O}(p^n)
+$$
 </div>
 <a style="font-size: large; text-align: right; float: right; margin-top: -4mm; margin-bottom: -10mm;" href=https://arxiv.org/abs/2203.04269>
    GDL, Page ('22)
 </a>
-<div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
-$$ 
-\displaystyle \kern10mm R_{n} = \mathbb{F}\Big[|1⟩_{\alpha}, [1|_{\dot\alpha}, \dots, |n⟩_{\alpha}, [n|_{\dot\alpha} \Big] \Big/ \Big\langle {\textstyle \sum_{i=1}^n} |i\rangle[ i | \Big\rangle
-$$
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}$ Recall the simple relation <span style="font-size: 14pt;">$p_i^\mu \sigma^\mu_{\alpha\dot\alpha} = |i\rangle_\alpha [i|_{\dot\alpha}$</span>.
-</div>
 
+---
+
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> The <span style="font-size: 27pt;">$p\kern0.2mm$</span>-adic (N)MRK Limit </b>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ Set the (N)MRK parameter controlling the rapidity gap to be large negative power of $p$
+</div>
 
 ---
 
@@ -242,11 +274,8 @@ $$
 
 <div style="font-size: 15pt; margin-top: 12mm; margin-bottom: 5mm">
 $$ 
-\displaystyle \kern10mm R_{HHH} = \frac{\mathbb{F}\big[|1⟩_{\alpha}, [1|_{\dot\alpha}, |2⟩_{\alpha}, [2|_{\dot\alpha}, \boldsymbol{3}_{\alpha,\dot\alpha}, \boldsymbol{4}_{\alpha,\dot\alpha}, \boldsymbol{5}_{\alpha,\dot\alpha} \big]}{\big\langle |1\rangle[1|+|2\rangle[2| + \boldsymbol{3}_{\alpha,\dot\alpha} + \boldsymbol{4}_{\alpha,\dot\alpha} + \boldsymbol{5}_{\alpha,\dot\alpha}, \;\, \boldsymbol{3}_{\alpha,\dot\alpha} \boldsymbol{3}^{\dot\alpha,\alpha} - \boldsymbol{4}_{\alpha,\dot\alpha} \boldsymbol{4}^{\dot\alpha,\alpha}, \;\, \boldsymbol{4}_{\alpha,\dot\alpha} \boldsymbol{4}^{\dot\alpha,\alpha}- \boldsymbol{5}_{\alpha,\dot\alpha} \boldsymbol{5}^{\dot\alpha,\alpha} \big\rangle}
+\displaystyle \kern10mm R_{NRMK} = \mathbb{F}\big[ z, \bar z, w, \bar w, X(=X_{45}) \big]
 $$
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}$ where <span style="font-size: 15pt;">$\boldsymbol{3}_{\alpha,\dot\alpha} \boldsymbol{3}^{\dot\alpha,\alpha} = \boldsymbol{4}_{\alpha,\dot\alpha} \boldsymbol{4}^{\dot\alpha,\alpha} = \boldsymbol{5}_{\alpha,\dot\alpha} \boldsymbol{5}^{\dot\alpha,\alpha} = 2 M_h^2$</span>, <span style="font-size: 15pt;">$\boldsymbol{3}_{\alpha,\dot\alpha},\boldsymbol{4}_{\alpha,\dot\alpha},\boldsymbol{5}_{\alpha,\dot\alpha}$</span> are full-rank (unfactorizable).
 </div>
 
 ---
@@ -350,43 +379,7 @@ $$
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 5mm; margin-left: 2mm; margin-right: 2mm;">
      $\circ$ Let's go back to our example
 </div>
-<div style="font-size: 14pt; margin-top: 4mm; margin-bottom: 3mm">
-$$ 
-\hat d^{++}_{12\times 3 \times 4}= \frac{\mathcal{N} \leftarrow 2794 \text{ free parameters }}{⟨12⟩²⟨1|𝟓|𝟒|𝟑|2]⟨2|𝟑|𝟒|𝟓|1]Δ_{12|𝟑|𝟒|𝟓}}
-$$
-</div>
 
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 8mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ We can prove <span style="font-size: 13pt">$⟨1|𝟓|𝟒|𝟑|2], ⟨2|𝟑|𝟒|𝟓|1]$</span> can be separated, their primary decomposition reads
-</div>
-<div style="font-size: 14pt; margin-top: 3mm; margin-bottom: 4mm">
-$$ 
-\big\langle ⟨1|𝟓|𝟒|𝟑|2], ⟨2|𝟑|𝟒|𝟓|1] \big\rangle = \big\langle ⟨1|𝟓|𝟒|𝟑|2], ⟨2|𝟑|𝟒|𝟓|1], \text{tr}_5 \big\rangle \cap \big\langle ⟨1|𝟓|𝟒|𝟑|2], ⟨2|𝟑|𝟒|𝟓|1], s_{2𝟑}, s_{1𝟓} \big\rangle
-$$
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}$ Generate two phase space points, one for each branch, and verify the numerator vanishes.
-</div>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 8mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Similarly, with four evaluations we can prove <span style="font-size: 13pt">$⟨1|𝟓|𝟒|𝟑|2], Δ_{12|𝟑|𝟒|𝟓}$</span> can be separated,
-</div>
-<div style="font-size: 14pt; margin-top: 3mm; margin-bottom: 4mm">
-$$ 
-\big\langle ⟨1|𝟓|𝟒|𝟑|2] , \, Δ_{12|𝟑|𝟒|𝟓} \big\rangle= \big\langle M_H, \; 𝟓_{\alpha\dot\alpha}𝟒^{\dot\alpha\beta} \big\rangle \cap \big\langle M_H, \; 𝟒^{\dot\alpha\alpha}𝟑_{\alpha\dot\beta} \big\rangle \cap \big\langle \langle 1 | 𝟑 | 2], \; \langle 1 | 𝟒 | 2], \; \langle 1 | 𝟑 | 𝟒 | 1 \rangle, [2 | 𝟑 | 𝟒 | 2] \big\rangle \cap \big\langle ??? \big\rangle
-$$
-</div><div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}$ Although we don't have a complete set of generators for the last branch, we can still sample it.
-</div>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 6mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Fit <span style="font-size: 13pt">$⟨1|𝟓|𝟒|𝟑|2]$</span> residue by sampling in limit <span style="font-size: 13pt">$⟨1|𝟓|𝟒|𝟑|2] \rightarrow 0$</span>
-</div>
-<div style="font-size: 14pt; margin-top: 4mm; margin-bottom: 10mm">
-$$ 
-\hat d^{++}_{12\times 3 \times 4} = \frac{\mathcal{N} \leftarrow 112 \text{ free parameters }}{⟨12⟩²⟨1|𝟓|𝟒|𝟑|2]} + \mathcal{O}(⟨1|𝟓|𝟒|𝟑|2]^0)
-$$
-</div>
 
 </section>
 
@@ -401,22 +394,11 @@ $$
 ---
 
 <div style="margin-top: 2mm; margin-bottom: -2mm">
-     <b style="font-variant: small-caps; font-size: 32pt"> Past and Upcoming Results </b>
+     <b style="font-variant: small-caps; font-size: 32pt"> Towards the NMHV 2-Emission CEV </b>
 </div>
 
 <div style="text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 2mm;">
-     $\circ$ Analytic expressions implemented in <a href="https://mcfm.fnal.gov/">MCFM</a>, for phenomenology use this efficient Fortran implementation
-</div>
-<a href="https://arxiv.org/abs/1909.09117" style="font-size: 14pt; margin-top: -3mm; margin-right: 2mm; float: right; font-align: right;"> Campbell, Neumann</a>
-<a href="https://arxiv.org/abs/1503.06182" style="font-size: 14pt; margin-top: -3mm; margin-right: 2mm; float: right; font-align: right;"> Campbell, Ellis, Giele;</a>
-<a href="https://arxiv.org/abs/1105.0020" style="font-size: 14pt; margin-top: -3mm; margin-right: 2mm; float: right; font-align: right;"> Campbell, Ellis, Williams;</a>
-
-<div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 10mm;">
-     $\circ$ <a href="https://github.com/GDeLaurentis/antares-results/" style="font-size: 20pt; font-variant: small-caps;">antares-results</a> (human readable exprs in <a href="https://gdelaurentis.github.io/antares-results/">docs</a>) with <a href="https://github.com/GDeLaurentis/antares-results/actions/">CI tests</a> for coefficients and/or full amplitudes
-</div>
-<div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 2mm;">
-     <img src="antares-results-transparent.png" 
-          style="width: 100%; max-width: 700px; float: left; border: none; margin-top: 2mm; margin-bottom: 0mm;">
+     $\circ$ Tests: MRK, same functions from ++-+-- and +-+-+-, match part of the result to N=4 and N=1 SUSY
 </div>
 
 </section>
