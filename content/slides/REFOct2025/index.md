@@ -175,7 +175,6 @@ NNLL Resummation: <span style="font-size: 14pt;">$\mathcal{O}\big(\alpha_s^n \lo
      $\phantom{\circ}\,$ (d) The last missing component is the next-to-maximally-helicity-violiating (NMHV) one-loop two-gluon CEV
 </div>
 
-
 </section>
 
 ---
@@ -184,30 +183,41 @@ NNLL Resummation: <span style="font-size: 14pt;">$\mathcal{O}\big(\alpha_s^n \lo
 
 {{< slide background-image="varieties-no-background.png" >}}
 
-# NMRK Expansion
-
+# NMRK Numerical Expansion
 
 ---
 
 <b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Challenge from Spurious Cancellations </b>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ 
+     $\circ\,$ For the two-loop MRK limit of last year, we started from the full-color two-loop five-gluon amplitude
 </div>
-<div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
-$$ 
-\displaystyle f(x,y), g(x, y), h(x, y) \in \mathbb{Q}[x, y] \, .
-$$
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ\,$ For the missing NMRK vertex we start from the one-loop six-gluon amplitude <a href=https://arxiv.org/abs/2203.04269> GDL, Maitre ('19)</a>
+</div>
+<pre><code class="language-python" style="font-size: 11pt">from antares_results.jjjj.gggggg.pmpmpm import coeffs  # import integral coefficients
+coeffs['box(1)']
+</code></pre>
+<pre><code class="language-python" style="margin-top:-5mm; font-size: 10pt">Terms("""+(-1/2j⟨1|2⟩⁴[1|2][2|3]⟨3|1+2|5]⁴)/(⟨1|3⟩⁴[4|5][5|6]⟨1|2+3|4]⟨3|1+2|6]s_123)""")
+</code></pre>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
+     $\phantom{\circ}\,$ Some coefficients (three mass triangles and bubbles) are very complicated.
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ\,$ Problem: we observe up to 8 orders of spurious cancellations in the MRK parameter $x\rightarrow 0$
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
+     ${\color{red} ✗}$ Analytic expansion is a no go. Run out of memory and time! <br>
+     ${\color{red} ✗}$ Numerical expansion with floating-point numbers is also too complicated. <br>
+     $\phantom{{\color{red} ✗}}$ Say we input $x\approx 10^{-10}$ to have 10 good digits to work with, we would lose 80 digits!
 </div>
 
 ---
 
 <b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> <span style="font-size: 27pt;">$p\kern0.2mm$</span>-adic numbers </b>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Analytic computation is unfeasible (run out of both RAM and time), <br>
-     $\phantom{\circ}$ while floating point calculations are very unstable due to 7-8 orders of spurious cancellations.
-</div>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
      $\circ$ You may be familiar with finite field (integers modulo a prime)
@@ -218,11 +228,11 @@ $$
 $$
 </div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}$ Limits (and calculus) is not well defined in $\mathbb{F}_p$. We can make things zero, but not small.
+     $\phantom{\circ}$ Limits (and calculus) is not well defined in $\mathbb{F}_p$. We can make things zero, but not small:
 </div>
 <div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
 $$ 
-\displaystyle |a|_0 = 1 if a = 0 else 1
+\displaystyle |a|_0 = 1 \; \text{if} \; a = 0 \; \text{else} \; 1 \quad \text{a.k.a. the trivial absolute value.}
 $$
 </div>
 
@@ -238,11 +248,11 @@ $$
 $$
 </div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}$ Think of $p$ as a small quantity, $\epsilon$, even if it is a large (by the real absolute value) prime in practice.
+     $\phantom{\circ}$ In some sense we are correcting the finite field result with more (subleading) information.
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ $p$-adic numbers allow for negative powers of $p$, 
+     $\circ$ $p$-adic numbers $\mathbb{Q}_p$ allow for negative powers of $p$, (would be division by zero in $\mathbb{F}_p$!)
 </div>
 <div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
 $$ 
@@ -253,25 +263,67 @@ $$
    GDL, Page ('22)
 </a>
 
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ The $p$-adic absolute value is defined as $|a|_p = p^\nu$.
+</div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
+     $\phantom{\circ}$ Think of $p$ as a small quantity, $\epsilon$, even if it is a large prime (by the real absolute value, $|\,|_\infty$).
+</div>
+
 ---
 
 <b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> The <span style="font-size: 27pt;">$p\kern0.2mm$</span>-adic (N)MRK Limit </b>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Set the (N)MRK parameter controlling the rapidity gap to be large negative power of $p$
+     $\circ$ The space of $p$-adic numbers is an <b>ultrametric</b> space, the triangle inequality is strengthened to:
 </div>
+<div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
+$$ 
+\displaystyle d(x,z)\leq \max \left\{d(x,y),d(y,z)\right\} 
+$$
+</div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
+     $\phantom{\circ}$ This leads to better stability properties: adding two numbers can never result is a larger number!
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ With general kinematic
+</div>
+<pre><code class="language-python" style="font-size: 11pt">from syngular import Field
+oPs = Particles(6, field=Field("padic", 2 ** 31 - 1, 9), seed=0)  # create psp
+(1j * coeffs['bubble(1)'])(oPs)  # evaluate the coefficient(s)
+</code></pre>
+<pre><code class="language-python" style="margin-top:-5mm; font-size: 10pt">490010355 + 1085079429*2147483647 + 1676653899*2147483647^2 + 726358851*2147483647^3 + 1074867770*2147483647^4 + 133781189*2147483647^5 + 892424664*2147483647^6 + 1457115085*2147483647^7 + 2127645140*2147483647^8 + O(2147483647^9)
+</code></pre>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ Manipulate phase space: set the (N)MRK parameter controlling the rapidity gap to be $x\approx p$
+</div>
+<div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
+$$ 
+\displaystyle 0 \leq \text{leading NMRK behavior} \leq p-1 + \mathcal{O}(2147483647^1)
+$$
+</div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
+     ${\color{greeN} ✓}$ We still lose 1 digit per spurious pole, but the result is now <u>exact</u>.
+</div>
+
+</section>
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Analytic Reconstruction </b>
+<section>
+
+{{< slide background-image="varieties-no-background.png" >}}
+
+# NMRK Analytic Reconstruction
+
+---
+
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Variables Ring \& Least Common Denomiantors </b>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ For <span style="font-size: 15pt;">$pp \rightarrow HHH$</span> we use the massive spinor-helicity (or spin-spinor) formalism, <br>
-     $\phantom{\circ}$ albeit in a very simplified form since scalars have no states.
+     $\circ$ We have 5 independent variables
 </div>
-<a href="https://arxiv.org/abs/1809.09644" style="font-size: 14pt; margin-bottom: -6mm; margin-top: -5mm; float: right; font-align: right;"> Shadmi, Weiss </a> <a href="https://arxiv.org/abs/1802.06730" style="font-size: 14pt; margin-bottom: -6mm; margin-top: -5mm;  margin-right: 31mm; float: right; font-align: right;"> Ochirov; </a>
-<a href="https://arxiv.org/abs/1709.04891" style="font-size: 14pt; margin-bottom: -10mm; margin-top: -11mm; margin-right: 0mm; float: right; font-align: right;"> Arkani-Hamed, Huang, Huang;</a>
-
 <div style="font-size: 15pt; margin-top: 12mm; margin-bottom: 5mm">
 $$ 
 \displaystyle \kern10mm R_{NRMK} = \mathbb{F}\big[ z, \bar z, w, \bar w, X(=X_{45}) \big]
@@ -359,9 +411,6 @@ $$
 
 <div style="margin-top: 2mm; margin-bottom: -2mm">
      <b style="font-variant: small-caps; font-size: 32pt"> Iterated Pole Subtraction </b>
-     <p style="margin-top: -2mm; margin-bottom: -=mm; font-size: 16pt;">
-     (i.e. geometry at codimension greater than one)
-     </p>
 </div>
 <a style="font-size: large; text-align: right; float: right; margin-top: -21mm; margin-bottom: -10mm;" href=https://arxiv.org/abs/1904.04067>
    GDL, Maître ('19)
@@ -377,7 +426,8 @@ $$
 </a>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 5mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Let's go back to our example
+     $\circ\;$ Nesting the $p$-adic limit: set $x \propto p^5$, get 5 digits for the leading NMRK behaviour <br>
+     $\phantom{\circ}\;$ Set $\mathcal{D}_i \propto p$, as long as it's pole degree is less than 5, get a value for the residue
 </div>
 
 
