@@ -92,13 +92,13 @@ $$
 <br>
 <span style="font-size: 14pt; margin-top: -8mm; margin-bottom: -8mm; margin-right:-5mm; float: right; font-align: right;"> Images from <a href="https://arxiv.org/abs/2312.15051"> Byrne `23</a></span>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: -2mm;">
-     $\phantom{\circ}\;$ where: the ziggly line is a Reggeon, the green blobs are impact factors, the blue blob is <br>
-     $\phantom{\circ}\;$ a one-emission central vertex and the gray blob is a two-emission central vertex.
+     $\phantom{\circ}\;$ where: the ziggly line is a Reggeon <span style="font-size: 15pt">$\mathcal{R}$</span>, the green blobs are impact factors <span style="font-size: 15pt">$\mathcal{C}$</span>, the blue blob is <br>
+     $\phantom{\circ}\;$ a one-emission central vertex <span style="font-size: 15pt">$\mathcal{V}_g$</span>, and the gray blob is a two-emission central vertex <span style="font-size: 15pt">$\mathcal{V}_{gg}$</span>.
 </div>
 
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: -2mm;">
-     $\circ\;$ The amplitude factorise as follows
+     $\circ\;$ The amplitude factorise as follows (schematically)
 </div>
 <div style="font-size: 16pt; margin-top: 0mm; margin-bottom: -3mm">
 $$
@@ -116,12 +116,12 @@ $$
 <b style="font-variant: small-caps; font-size: 34pt; magin-bottom: -10mm;"> Minimal Variables for (N)MRK </b> <br>
 
 <div style="font-size: 17pt; text-align:left; margin-bottom: 2mm; margin-top: -4mm;">
-$\circ$ The MRK limit is a two-variable problem
+$\circ$ The MRK limit is a two-variable problem <span style="font-size: 15pt;">$z, \bar z$</span>
 </div>
-
+<img src="mrk-variables.png" style="max-width:100mm; margin-top: 2mm; margin-bottom: 0mm;">
 
 <div style="font-size: 17pt; text-align:left; margin-bottom: 2mm; margin-top: 2mm;">
-$\circ$ The NMRK limit is a five-variable problem
+$\circ$ The NMRK limit is a five-variable problem <span style="font-size: 15pt;">$z, \bar z, w, \bar w, X=X_{(45)}$</span>
 </div>
 
 
@@ -152,8 +152,8 @@ Leading-Log (LL) Resummation: <span style="font-size: 14pt;">$\mathcal{O}\big(\a
 <span style="font-size: 14pt; margin-top: -5mm; margin-bottom: 5mm; float: right; font-align: right;"> <a href="https://arxiv.org/abs/2204.12459"> Byrne, Del Duca, Dixon, Gardi, Smillie </a></span>
 
 <div style="text-align: left; font-size: 18pt; margin-bottom: 5mm; margin-top: 10mm;">
-     $\phantom{\circ}\,$ (a) is a correction to the Regge trajectory <br>
-     $\phantom{\circ}\,$ (b) is the leading order central emission vertex (CEV)
+     $\phantom{\circ}\,$ (a) is a correction to the Regge trajectory <span style="font-size: 15pt">$\mathcal{R^{(1)}}$</span><br>
+     $\phantom{\circ}\,$ (b) is the leading order central emission vertex (CEV) <span style="font-size: 15pt">$\mathcal{V}_g^{(0)}$</span>
 </div>
 
 ---
@@ -166,15 +166,15 @@ Next-To-Leading-Log (NLL) Resummation: <span style="font-size: 14pt;">$\mathcal{
 <img src="NLOKernel.png" style="max-width: 180mm; margin-top: 0mm; margin-bottom:0 mm;">
 
 <div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: 0mm;">
-     $\phantom{\circ}\,$ (a) two-loop correction to the Regge trajectory
+     $\phantom{\circ}\,$ (a) two-loop correction to the Regge trajectory, <span style="font-size: 15pt">$\mathcal{R}^{(2)}$</span>
 </div>
 
 <div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: 0mm;">
-     $\phantom{\circ}\,$ (b) one-loop correction to the one-emission CEV
+     $\phantom{\circ}\,$ (b) one-loop correction to the one-emission CEV, <span style="font-size: 15pt">$\mathcal{V}_g^{(1)}$</span>
 </div>
 
 <div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: 0mm;">
-     $\phantom{\circ}\,$ (c) leading two-emission CEV, this requires an next-to-MRK (NMRK) tree computation: <br>
+     $\phantom{\circ}\,$ (c) leading two-emission CEV <span style="font-size: 15pt">$\mathcal{V}_{gg}^{(0)}$</span>, this requires an next-to-MRK (NMRK) tree computation: <br>
      $\phantom{\circ}\,\kern4mm$ the two central gluons are <u>not</u> rapidity gapped
 </div>
 
@@ -188,14 +188,21 @@ NNLL Resummation: <span style="font-size: 14pt;">$\mathcal{O}\big(\alpha_s^n \lo
 
 <img src="NNLOKernel.png" style="max-width: 280mm; margin-top: 0mm; margin-bottom:0 mm; margin-left: -16mm">
 
-<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: 0mm;">
-     $\phantom{\circ}\,$ (b) the two-loop correction to the central emission vertex for one gluon was computed last year
+<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: -7mm;">
+     $\phantom{\circ}\,$ (b) the two-loop correction to the central emission vertex <span style="font-size: 15pt">$\mathcal{V}_g^{(2)}$</span> for one gluon was computed last year
 </div>
 <span style="font-size: 14pt; margin-top: -3mm; margin-bottom: -5mm; float: right; font-align: right;"> <a href="https://arxiv.org/abs/2204.12459" > Abreu, GDL, Falcioni, Gardi, Milloy, Vernazza</a>;$\;$<a href="https://arxiv.org/abs/2204.12459"> Buccioni, Caola, Devoto, Gambuti</a></span>
-
-<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 8mm; margin-left: 0mm;">
-     $\phantom{\circ}\,$ (d) The last missing component is the next-to-maximally-helicity-violiating (NMHV) one-loop two-gluon CEV
+<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 5mm; margin-left: -7mm;">
+     $\phantom{\circ}\,\kern4mm$ expanding in the MRK limit the recently available two-loop five-parton amplitudes
 </div>
+
+<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 8mm; margin-left: -7mm;">
+     $\phantom{\circ}\,$ (d) The last missing component is the next-to-maximally-helicity-violiating (NMHV) one-loop two-gluon CEV <span style="font-size: 15pt">$\mathcal{V}_{gg}^{(0)}$</span>, that is, <span style="font-size: 15pt">$\mathcal{V}_{g^{+}g^{-}}^{(0)}$</span> 
+</div>
+<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 5mm; margin-left: -7mm;">
+     $\phantom{\circ}\,\kern4mm$ this requires expanding in the NMRK the one-loop six-gluon amplitude
+</div>
+<span style="font-size: 14pt; margin-top: -3mm; margin-bottom: -5mm; float: right; font-align: right;"> <a href="https://arxiv.org/abs/19xx.xxxx" > GDL, Maitre ('19)</a></span>
 
 </section>
 
@@ -212,19 +219,27 @@ NNLL Resummation: <span style="font-size: 14pt;">$\mathcal{O}\big(\alpha_s^n \lo
 <b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Challenge from Spurious Cancellations </b>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ\,$ For the two-loop MRK limit of last year, we started from the full-color two-loop five-gluon amplitude
+     $\circ\,$ For the two-loop MRK limit of last year
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ\,$ For the missing NMRK vertex we start from the one-loop six-gluon amplitude <a href=https://arxiv.org/abs/2203.04269> GDL, Maitre ('19)</a>
+     $\circ\,$ NMRK six point
 </div>
-<pre><code class="language-python" style="font-size: 11pt">from antares_results.jjjj.gggggg.pmpmpm import coeffs  # import integral coefficients
-coeffs['box(1)']
+<pre><code class="language-python" style="font-size: 11pt">> from antares_results.jjjj.gggggg.pmpmpm import coeffs  # import integral coefficients
+> coeffs['box(1)']
 </code></pre>
-<pre><code class="language-python" style="margin-top:-5mm; font-size: 10pt">Terms("""+(-1/2j⟨1|2⟩⁴[1|2][2|3]⟨3|1+2|5]⁴)/(⟨1|3⟩⁴[4|5][5|6]⟨1|2+3|4]⟨3|1+2|6]s_123)""")
+<pre><code class="language-python" style="margin-top:-5mm; font-size: 10pt">< Terms("""+(-1/2j⟨1|2⟩⁴[1|2][2|3]⟨3|1+2|5]⁴)/(⟨1|3⟩⁴[4|5][5|6]⟨1|2+3|4]⟨3|1+2|6]s_123)""")
+</code></pre>
+<pre><code class="language-python" style="font-size: 11pt">> len(str(coeffs['box(1)']))
+</code></pre>
+<pre><code class="language-python" style="margin-top:-5mm; font-size: 10pt">< 76
+</code></pre>
+<pre><code class="language-python" style="font-size: 11pt">> len(str(coeffs['triangle(19)']))
+</code></pre>
+<pre><code class="language-python" style="margin-top:-5mm; font-size: 10pt">< 168150
 </code></pre>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}\,$ Some coefficients (three mass triangles and bubbles) are very complicated.
+     $\phantom{\circ}\,$ Some coefficients (three mass triangles and bubbles) are very complicated!
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
@@ -244,6 +259,9 @@ coeffs['box(1)']
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
      $\circ$ You may be familiar with finite field (integers modulo a prime)
 </div>
+<a style="font-size: large; text-align: right; float: right; margin-top: -4mm; margin-bottom: -10mm;" href=https://arxiv.org/abs/FIXME>
+   Heller, von Manteuffel; Peraro
+</a>
 <div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
 $$ 
 \displaystyle a \in \mathbb{F}_p : a \in \{0, \dots, p -1\} \; \text{ with } \; \{+, -, \times, \div\}
@@ -254,13 +272,16 @@ $$
 </div>
 <div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
 $$ 
-\displaystyle |a|_0 = 1 \; \text{if} \; a = 0 \; \text{else} \; 1 \quad \text{a.k.a. the trivial absolute value.}
+\displaystyle |a|_0 = 0 \; \text{if} \; a = 0 \; \text{else} \; 1 \quad \text{a.k.a. the trivial absolute value.}
 $$
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
      $\circ$ There exists just one more absolute value on the rationals, the $p$-adic absolute value.
 </div>
+<a style="font-size: large; text-align: right; float: right; margin-top: -4mm; margin-bottom: -10mm;" href=https://arxiv.org/abs/FIXME>
+   Ostrowoski theorem
+</a>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
      $\circ$ Let's start from $p$-adic integers, instead of working modulo p, expand in powers of p
 </div>
@@ -346,10 +367,43 @@ $$
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
      $\circ$ We have 5 independent variables
 </div>
-<div style="font-size: 15pt; margin-top: 12mm; margin-bottom: 5mm">
+<div style="font-size: 15pt; margin-top: 2mm; margin-bottom: 5mm">
 $$ 
 \displaystyle \kern10mm R_{NRMK} = \mathbb{F}\big[ z, \bar z, w, \bar w, X(=X_{45}) \big]
 $$
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ We are after rational functions in these five variables
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ The complexity is not just because of the number of variables, but also because of the possible sigularities
+</div>
+<div style="font-size: 15pt; margin-top: 2mm; margin-bottom: 5mm">
+$$ 
+\displaystyle \mathcal{D}_{\Delta_{3m}} = -4(-1+w)w(-1+\bar w)\bar w X^2 (-1+z) z (-1+\bar z) \bar z+ \\ (X z (\bar w+\bar z-\bar w \bar z+X\bar z)+w(\bar w-X (-1+z) \bar z+\bar w X(1-\bar z+z(-1+2\bar z))))^2
+$$
+</div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
+     $\phantom{\circ}$ alone has degreee 10. It appears up to cubic pole, making denominators exceed degree 30.
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ By comparison the most complicated singularity at 5-point was <span style="font-size: 15pt;">$(z - \bar{z})$</span>
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ Obtain least common denominators from a unviariate slice (think BCFW shift)
+</div>
+<div style="font-size: 15pt; margin-top: 2mm; margin-bottom: 5mm">
+$$ 
+\displaystyle z \rightarrow z + c_z t, \; \bar z \rightarrow \bar z + c_{\bar z} t, \; w \rightarrow w + c_{\bar w} t, \; \bar w \rightarrow \bar w + c_{\bar w} t, \; X \rightarrow X + c_X t
+$$
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ In Least Common Denominator form the numberators are too complex, we would need hundred of thousands to millions of evaluations to determine them.
 </div>
 
 ---
@@ -461,7 +515,7 @@ $$
 
 {{< slide background-image="Wjj_diagrams.png">}}
 
-# <br> Conclusions <br> & <br> Outlook
+# <br> Summary <br> & <br> Outlook
 
 ---
 
