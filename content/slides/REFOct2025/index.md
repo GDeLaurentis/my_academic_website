@@ -28,11 +28,11 @@ Giuseppe De Laurentis
 <br>
 <div style="font-size: large;"> University of Edinburgh </div>
 <br>
-<div style="font-size: 15pt; margin-bottom:0mm;"> One Emission at Two Loops </div>
+<div style="font-size: 15pt; margin-bottom:0mm;"> One Central Emission at Two Loops </div>
 <div style="font-size: 15pt; margin-bottom:0mm;"><a href="https://arxiv.org/pdf/2412.20578">arXiv:2412.20578</a> <a href="https://link.springer.com/article/10.1007/JHEP04(2025)161">(10.1007/JHEP04(2025)161)</a></div>
 <div style="font-size: 15pt; margin-bottom:0mm;"> with S. Abreu, G. Falcioni, E. Gardi, C. Milloy, L. Vernazza </div>
 <br>
-<div style="font-size: 15pt; margin-bottom:0mm;"> Two Emissions at One Loop </div>
+<div style="font-size: 15pt; margin-bottom:0mm;"> Two Central Emissions at One Loop </div>
 <div style="font-size: 15pt; margin-bottom:0mm;"> To Appear </div>
 <div style="font-size: 15pt; margin-bottom:10mm;"> with E. Byrne, V. Del Duca, E. Gardi, J. Smillie </div>
 
@@ -55,43 +55,65 @@ REF Conference
 
 <b style="font-variant: small-caps; font-size: 32pt"> Large Logarithms from Big Rapidity Gaps  </b>
 
-<div style="text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: 0mm; margin-left: 0mm;">
+<div style="text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: 0mm; margin-left: -5mm;">
      $\circ\,$ In <span style="font-size: 15pt">$2\to 2$</span> scattering, in the <b>forward limit</b> <span style="font-size: 15pt">$s \gg t$</span> (large CoM energy vs. momentum transfer)
 </div>
 <img src="forward_diagram.png" style="max-width:100mm; margin-top:-4mm; margin-bottom:-7mm;">
-<div style="text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: 0mm; margin-left: 0mm;">
-     $\phantom{\circ}\,$ final state emissions develop <b> large rapidity gaps </b>. The cross section grows as
+<div style="text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: 0mm; margin-left: -5mm;">
+     $\phantom{\circ}\,$ final state emissions develop <b> large rapidity gaps</b>. The cross section grows as
 </div>
 <div style="font-size: 16pt; margin-top: 0mm; margin-bottom: -3mm">
 $$
 \sigma \approx \mathcal{O}\big(\alpha_s^n \log^n(s/|t|)\big )
 $$
 </div>
-<div style="text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: 0mm; margin-left: 0mm;">
+<div style="text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: 0mm; margin-left: -5mm;">
      $\phantom{\circ}\,$ which is unphysically large (e.g. it violates the Froissart bound).
 </div>
 
-<div style="text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: 8mm; margin-left: 0mm;">
+<div style="text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: 8mm; margin-left: -5mm;">
      $\circ\,$ The BFKL kernel captures the <b>exponentiation</b> of these <b>large logarithms</b>,<br>
      $\phantom{\circ}\,$ allowing us to <b>resum</b> their contribution to the cross section.
 </div>
 
-<div style="text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: 8mm; margin-left: 0mm;">
+<div style="text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: 8mm; margin-left: -5mm;">
      $\circ\,$ In this kinematic limit, known as <b>Multi-Regge Kinematics</b> (MRK), an effective particle is <br>
-     $\phantom{\circ}\,$ exchanged in the t-channel, a Reggeon, from which more rapidity-gapped radiation is emitted.
+     $\phantom{\circ}\,$ exchanged in the t-channel, a Reggeon, from which more rapidity-gapped radiation can be emitted.
 </div>
 
 ---
 
 <b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> Expanding Amplitudes in MRK and NMRK </b>
 
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ In the (N)MRK limit the amplitude factorizes as follows
+<div style="font-size: 18pt; text-align: left; margin-bottom: 1mm; margin-top: 2mm; margin-left: -2mm;">
+     $\circ\;$ In the (N)MRK we can picture the amplitude as follows
+</div>
+<img src="Emissions-transparent.png" style="max-width:225mm; margin-top: 2mm; margin-bottom: 0mm;">
+<br>
+<span style="font-size: 14pt; margin-top: -8mm; margin-bottom: -8mm; margin-right:-5mm; float: right; font-align: right;"> Images from <a href="https://arxiv.org/abs/2312.15051"> Byrne `23</a></span>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: -2mm;">
+     $\phantom{\circ}\;$ where: the ziggly line is a Reggeon, the green blobs are impact factors, the blue blob is <br>
+     $\phantom{\circ}\;$ a one-emission central vertex and the gray blob is a two-emission central vertex.
+</div>
+
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: -2mm;">
+     $\circ\;$ The amplitude factorise as follows
+</div>
+<div style="font-size: 16pt; margin-top: 0mm; margin-bottom: -3mm">
+$$
+\mathcal{A}_4 \approx \mathcal{C}  \, \mathcal{R} \, \mathcal{C} \, , \qquad
+\mathcal{A}_5 \approx \mathcal{C}  \, \mathcal{R} \, \mathcal{V}_g \, \mathcal{R} \, \mathcal{C} \, , \qquad
+\mathcal{A}_6 \approx \mathcal{C}  \, \mathcal{R} \, \mathcal{V}_{gg} \, \mathcal{R} \, \mathcal{C}
+$$
+</div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: -2mm;">
+     $\phantom{\circ}\;$ where each component admits an expansion in powers of <span style="font-size: 15pt">$\alpha_s$</span>, thus e.g. <span style="font-size: 15pt">$\mathcal{A}_4^{(1)}$</span> gives us <span style="font-size: 15pt">$\mathcal{C}^{(1)}$</span> and <span style="font-size: 15pt">$\mathcal{R}^{(1)}$</span>
 </div>
 
 ---
 
-<b style="font-variant: small-caps; font-size: 34pt; magin-bottom: -10mm;"> Minimal Variables for Multi-Regge Kinematics </b> <br>
+<b style="font-variant: small-caps; font-size: 34pt; magin-bottom: -10mm;"> Minimal Variables for (N)MRK </b> <br>
 
 <div style="font-size: 17pt; text-align:left; margin-bottom: 2mm; margin-top: -4mm;">
 $\circ$ The MRK limit is a two-variable problem
