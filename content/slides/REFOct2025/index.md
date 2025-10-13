@@ -215,41 +215,43 @@ NNLL Resummation: <span style="font-size: 14pt;">$\mathcal{O}\big(\alpha_s^n \lo
 <b style="font-variant: small-caps; font-size: 34pt; magin-bottom: -10mm;"> Minimal Variables for (N)MRK </b> <br>
 
 <div style="font-size: 17pt; text-align:left; margin-bottom: 2mm; margin-top: -4mm;">
-$\circ$ The MRK limit is a two-variable problem <span style="font-size: 15pt;">$z, \bar z$</span>
+$\circ$ The problem is most easily formulated in terms of lightcone momenta
+</div>
+<div style="font-size: 16pt; margin-top: 0mm; margin-bottom: 0mm">
+$$
+\begin{array}{rllll}
+p \; = & (p^+, & p^-, & p_\perp , & \bar p_\perp ) \\
+  = & (E + p_z, & E - p_z, & p_x + i p_y, & p_x - i p_y)
+\end{array}
+$$
 </div>
 
+<div style="font-size: 17pt; text-align:left; margin-bottom: 2mm; margin-top: 2mm;">
+$\circ$ We can picture the MRK limit as follows
+</div>
 <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 2mm; margin-bottom: 0mm;">
-
-  <!-- Left column: image -->
-  <div style="flex: 1; margin-right: 10mm;">
-    <img src="mrk-variables.png" style="max-width:100mm; margin-top: 2mm; margin-bottom: 0mm;">
-  </div>
-  <!-- Right column: table -->
-  <div style="flex: 1; font-family: 'Latin Modern Math', serif; font-size: 13pt;">
-    <table style="border-collapse: collapse; width: 100%;">
-      <tbody>
-        <tr><td><b>p<sub>4⊥</sub></b></td><td>= − q₁ / (z − 1)</td></tr>
-        <tr><td><b>p<sub>4⊥</sub><sup>*</sup></b></td><td>= − q₁* / (ż − 1)</td></tr>
-        <tr><td><b>p<sub>5⊥</sub></b></td><td>= z q₁ / (z − 1)</td></tr>
-        <tr><td><b>p<sub>5⊥</sub><sup>*</sup></b></td><td>= ż q₁* / (ż − 1)</td></tr>
-        <tr><td><b>p₃⁺</b></td><td>= p₄⁺ X<sub>34</sub></td></tr>
-        <tr><td><b>p₅⁺</b></td><td>= p₄⁺ / X<sub>45</sub></td></tr>
-      </tbody>
-    </table>
-    <p style="margin-top: 6mm; font-weight: bold;">Light-cone momenta:</p>
-    <pre style="font-family: 'Courier New', monospace; font-size: 12pt; line-height: 1.2; margin-top: 2mm;">
-[   0      fix     0      0   ]
-[  fix      0      0      0   ]
-[  p₃⁺     fix    fix    fix  ]
-[  p₄⁺     fix   p₄_⊥= − q₁ / (z − 1)   p₄⊥*  ]
-[  p₅⁺     fix   p₅⊥   p₅⊥*  ]
-    </pre>
-  </div>
-
+     <!-- Left column: image -->
+     <div style="flex: 1; margin-right: 10mm;">
+     <img src="mrk-variables.png" style="max-width:100mm; margin-top: 2mm; margin-bottom: 0mm;">
+     </div>
+     <!-- Right column: table -->
+     <div style="font-size: 16pt; margin-top: 10mm; margin-bottom: 0mm; margin-right: 20mm;">
+     $$
+     p_{i}^{\;j} = \left(
+     \begin{array}{cccc}
+     0 & \text{mc} & 0 & 0 \\
+     \text{mc} & 0 & 0 & 0 \\
+     p_4^{+} X_{34} & \text{mc} & \text{mc} & \text{mc} \\
+     p_4^{+}  & \text{mc} & \frac{-q_1}{z − 1} & \frac{-\bar q_1}{\bar z − 1} \\
+     p_4^{+} / X_{45} & \text{mc} & \frac{q_1 z}{z − 1} & \frac{\bar q_1\bar z }{\bar z − 1} 
+     \end{array}\right)
+     $$
+     </div>
 </div>
-
-
-<img src="mrk-variables.png" style="max-width:100mm; margin-top: 2mm; margin-bottom: 0mm;">
+<div style="font-size: 17pt; text-align:left; margin-bottom: 2mm; margin-top: 2mm;">
+$\circ\,$ The MRK limit is a two-variable problem <span style="font-size: 16pt;">$z, \bar z$</span>; <br>
+$\phantom{\circ}\,$ <span style="font-size: 16pt;">$q_1, \bar q_1, p_4^+$</span> drop out by normalizing by the tree and <span style="font-size: 16pt;">$X_{34} \sim X_{45} \sim 1/x \gg 1$</span>
+</div>
 
 <div style="font-size: 17pt; text-align:left; margin-bottom: 2mm; margin-top: 2mm;">
 $\circ$ The NMRK limit is a five-variable problem <span style="font-size: 15pt;">$z, \bar z, w, \bar w, X=X_{(45)}$</span>
@@ -259,8 +261,14 @@ $\circ$ The NMRK limit is a five-variable problem <span style="font-size: 15pt;"
 
 <b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Challenge from Spurious Cancellations </b>
 
+<div style="font-size: 16pt; margin-top: 10mm; margin-bottom: 0mm; margin-right: 20mm;">
+$$
+\mathcal{A}^{(\ell)} = \sum_i c_i \, I_i
+$$
+</div>
+
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ\,$ For the two-loop MRK limit of last year
+     $\circ\,$ For the MRK limit of the two-loop five-point amplitude we had to expand to second order in <span style="font-size: 16pt;">$x$</span>, because of one order of spurious singularity between the <span style="font-size: 16pt;">$c_i$</span> and <span style="font-size: 16pt;">$I_i$</span>
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
@@ -271,13 +279,9 @@ $\circ$ The NMRK limit is a five-variable problem <span style="font-size: 15pt;"
 </code></pre>
 <pre><code class="language-python" style="margin-top:-5mm; font-size: 10pt">< Terms("""+(-1/2j⟨1|2⟩⁴[1|2][2|3]⟨3|1+2|5]⁴)/(⟨1|3⟩⁴[4|5][5|6]⟨1|2+3|4]⟨3|1+2|6]s_123)""")
 </code></pre>
-<pre><code class="language-python" style="font-size: 11pt">> len(str(coeffs['box(1)']))
+<pre><code class="language-python" style="font-size: 11pt">> len(str(coeffs['box(1)'])), len(str(coeffs['triangle(19)']))
 </code></pre>
-<pre><code class="language-python" style="margin-top:-5mm; font-size: 10pt">< 76
-</code></pre>
-<pre><code class="language-python" style="font-size: 11pt">> len(str(coeffs['triangle(19)']))
-</code></pre>
-<pre><code class="language-python" style="margin-top:-5mm; font-size: 10pt">< 168150
+<pre><code class="language-python" style="margin-top:-5mm; font-size: 10pt">< 76, 168150
 </code></pre>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
      $\phantom{\circ}\,$ Some coefficients (three mass triangles and bubbles) are very complicated!
@@ -288,14 +292,14 @@ $\circ$ The NMRK limit is a five-variable problem <span style="font-size: 15pt;"
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
-     ${\color{red} ✗}$ Analytic expansion is a no go. Run out of memory and time! <br>
+     ${\color{red} ✗}$ Analytic expansion is a no go. Run out of memory and time after 3 or 4 orders! <br>
      ${\color{red} ✗}$ Numerical expansion with floating-point numbers is also too complicated. <br>
      $\phantom{{\color{red} ✗}}$ Say we input $x\approx 10^{-10}$ to have 10 good digits to work with, we would lose 80 digits!
 </div>
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> <span style="font-size: 27pt;">$p\kern0.2mm$</span>-adic numbers </b>
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> <span style="font-size: 27pt;">$p\kern2mm$</span>-adic numbers </b>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
      $\circ$ You may be familiar with finite field (integers modulo a prime)
@@ -309,7 +313,7 @@ $$
 $$
 </div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}$ Limits (and calculus) is not well defined in $\mathbb{F}_p$. We can make things zero, but not small:
+     $\phantom{\circ}$ Limits (and calculus) are not well defined in $\mathbb{F}_p$. We can make things zero, but not small:
 </div>
 <div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
 $$ 
@@ -356,7 +360,7 @@ $$
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> The <span style="font-size: 27pt;">$p\kern0.2mm$</span>-adic (N)MRK Limit </b>
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> The <span style="font-size: 27pt;">$p\kern2mm$</span>-adic (N)MRK Limit </b>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
      $\circ$ The space of $p$-adic numbers is an <b>ultrametric</b> space, the triangle inequality is strengthened to:
