@@ -56,7 +56,7 @@ REF Conference
 <b style="font-variant: small-caps; font-size: 32pt"> Large Logarithms from Big Rapidity Gaps  </b>
 
 <div style="text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: 0mm; margin-left: -5mm;">
-     $\circ\,$ In <span style="font-size: 15pt">$2\to 2$</span> scattering, in the <b>forward limit</b> <span style="font-size: 15pt">$s \gg t$</span> (large CoM energy vs. momentum transfer)
+     $\circ\,$ In the <b>forward limit</b> <span style="font-size: 15pt">$s \gg t$</span> (large CoM energy vs. momentum transfer), e.g. <span style="font-size: 15pt">$2\to 2$</span> scattering,
 </div>
 <img src="forward_diagram.png" style="max-width:100mm; margin-top:-4mm; margin-bottom:-7mm;">
 <div style="text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: 0mm; margin-left: -5mm;">
@@ -91,7 +91,7 @@ $$
 </div>
 <img src="Emissions-transparent.png" style="max-width:225mm; margin-top: 2mm; margin-bottom: 0mm;">
 <br>
-<span style="font-size: 14pt; margin-top: -8mm; margin-bottom: -8mm; margin-right:-5mm; float: right; font-align: right;"> Images from <a href="https://arxiv.org/abs/2312.15051"> Byrne `23</a></span>
+<span style="font-size: 14pt; margin-top: -8mm; margin-bottom: -8mm; margin-right:-5mm; float: right; font-align: right;"> Images adapted from <a href="https://arxiv.org/abs/2312.15051"> Byrne `23</a></span>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: -2mm;">
      $\phantom{\circ}\;$ where: the ziggly line is a Reggeon <span style="font-size: 15pt">$\mathcal{R}$</span>, the green blobs are impact factors <span style="font-size: 15pt">$\mathcal{C}$</span>, the blue blob is <br>
      $\phantom{\circ}\;$ a one-emission central vertex <span style="font-size: 15pt">$\mathcal{V}_g$</span>, and the gray blob is a two-emission central vertex <span style="font-size: 15pt">$\mathcal{V}_{gg}$</span>.
@@ -99,7 +99,7 @@ $$
 
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: -2mm;">
-     $\circ\;$ The amplitude factorise as follows (schematically)
+     $\circ\;$ The amplitude factorise as follows (very schematically)
 </div>
 <div style="font-size: 16pt; margin-top: 0mm; margin-bottom: -3mm">
 $$
@@ -111,6 +111,104 @@ $$
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: -2mm;">
      $\phantom{\circ}\;$ where each component admits an expansion in powers of <span style="font-size: 15pt">$\alpha_s$</span>, thus e.g. <span style="font-size: 15pt">$\mathcal{A}_4^{(1)}$</span> gives us <span style="font-size: 15pt">$\mathcal{C}^{(1)}$</span> and <span style="font-size: 15pt">$\mathcal{R}^{(1)}$</span>
 </div>
+
+</section>
+
+---
+
+<section>
+
+{{< slide background-image="Feynman-Diagrams-transparent.png" >}}
+
+<h1 style="margin-top: -2mm;"> Kernel Components </h1>
+
+---
+
+<b style="font-variant: small-caps; font-size: 32pt"> Leading Order Kernel Components </b>
+<div  style="text-align: left; font-size: 16pt; margin-bottom: 5mm; margin-top: -6mm; text-align: center;">
+Leading-Log (LL) Resummation: <span style="font-size: 14pt;">$\mathcal{O}\big(\alpha_s^n \log^n(s/|t|)\big )$</span>
+</div>
+
+<div style="text-align: left; font-size: 18pt; margin-bottom: 5mm; margin-top: 5mm;">
+     $\circ\,$ The two components of the leading order (LO) BFKL kernel, <br>
+     $\phantom{\circ}\,$ required for resummation of leading logarithms (LL), are
+</div>
+
+<img src="LOKernel.png" style="max-width: 130mm; margin-top: 0mm; margin-bottom: 0mm;">
+
+<span style="font-size: 14pt; margin-top: -5mm; margin-bottom: 5mm; float: right; font-align: right;">Images from<a href="https://arxiv.org/abs/2204.12459"> Byrne, Del Duca, Dixon, Gardi, Smillie </a></span>
+
+<div style="text-align: left; font-size: 18pt; margin-bottom: 5mm; margin-top: 10mm;">
+     $\phantom{\circ}\,$ (a) is a correction to the Regge trajectory <span style="font-size: 15pt">$\mathcal{R}^{(1)}$</span><br>
+     $\phantom{\circ}\,$ (b) is the leading order central emission vertex (CEV) <span style="font-size: 15pt">$\mathcal{V}_g^{(0)}$</span> in MRK
+</div>
+
+---
+
+<b style="font-variant: small-caps; font-size: 32pt"> NLO Kernel </b>
+<div  style="text-align: left; font-size: 16pt; margin-bottom: 5mm; margin-top: -6mm; text-align: center;">
+Next-To-Leading-Log (NLL) Resummation: <span style="font-size: 14pt;">$\mathcal{O}\big(\alpha_s^n \log^{n-1}(s/|t|)\big )$</span>
+</div>
+
+<img src="NLOKernel.png" style="max-width: 180mm; margin-top: 0mm; margin-bottom:0 mm;">
+
+<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: 0mm;">
+     $\phantom{\circ}\,$ (a) two-loop correction to the Regge trajectory, <span style="font-size: 15pt">$\mathcal{R}^{(2)}$</span>
+</div>
+
+<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: 0mm;">
+     $\phantom{\circ}\,$ (b) one-loop correction to the one-emission CEV <span style="font-size: 15pt">$\mathcal{V}_g^{(1)}$</span> in MRK
+</div>
+
+<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: 0mm;">
+     $\phantom{\circ}\,$ (c) leading two-emission CEV <span style="font-size: 15pt">$\mathcal{V}_{gg}^{(0)}$</span>, this requires an next-to-MRK (NMRK) tree computation: <br>
+     $\phantom{\circ}\,\kern4mm$ the two central gluons are <u>not</u> rapidity gapped
+</div>
+
+---
+
+<b style="font-variant: small-caps; font-size: 32pt"> NNLO Kernel </b>
+<div  style="text-align: left; font-size: 16pt; margin-bottom: 5mm; margin-top: -6mm; text-align: center;">
+NNLL Resummation: <span style="font-size: 14pt;">$\mathcal{O}\big(\alpha_s^n \log^{n-2}(s/|t|)\big )$</span>
+</div>
+
+<img src="NNLOKernel.png" style="max-width: 280mm; margin-top: -5mm; margin-bottom: 2mm; margin-left: -16mm">
+
+<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: -3mm; margin-left: -7mm;">
+     $\phantom{\circ}\,$ (a) Three loop <span style="font-size: 15pt">$2\to 2$</span> MRK, from three Reggeons to three-loop correction to the trajectory, <span style="font-size: 15pt">$\mathcal{R}^{(3)}$</span>
+</div>
+<span style="font-size: 14pt; margin-top: -3mm; margin-bottom: -5mm; float: right; font-align: right;"> <a href="https://arxiv.org/abs/2112.11098" > Falcioni, Gardi, Maher, Milloy, Vernazza `21</a>;$\;$<a href="https://arxiv.org/abs/2112.11097" > Caola, Chakraborty, Gambuti, von Manteuffel, Tancredi `21</a></span>
+
+<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 6mm; margin-left: -7mm;">
+     $\phantom{\circ}\,$ (b) Two-loop correction to the central emission vertex <span style="font-size: 15pt">$\mathcal{V}_g^{(2)}$</span> for one gluon
+</div>
+<span style="font-size: 14pt; margin-top: -3mm; margin-bottom: -5mm; float: right; font-align: right;"> <a href="https://arxiv.org/abs/2412.20578"> Abreu, GDL, Falcioni, Gardi, Milloy, Vernazza `24</a>;$\;$<a href="https://arxiv.org/abs/2411.14050"> Buccioni, Caola, Devoto, Gambuti `24</a></span>
+<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 5mm; margin-left: -7mm;">
+     $\phantom{\circ}\,\kern9mm$ by expanding in the MRK limit the recently available two-loop five-parton amplitudes
+</div>
+<span style="font-size: 14pt; margin-top: -3mm; margin-bottom: -5mm; float: right; font-align: right;"> <a href="https://arxiv.org/abs/2311.10086"> GDL, Ita, Klinkert, Sotnikov `23</a>;$\;$<a href="https://arxiv.org/abs/2311.18752"> GDL, Ita, Sotnikov `23</a>;$\;$<a href="https://arxiv.org/abs/2311.09870"> Agarwal, Buccioni, Devoto, Gambuti, von Manteuffel, Tancredi `23</a></span>
+
+<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 8mm; margin-left: -7mm;">
+     $\phantom{\circ}\,$ (d) The last missing component is the next-to-maximally-helicity-violiating (NMHV) one-loop <br>
+     $\phantom{\circ}\,\kern9mm$ two-gluon CEV <span style="font-size: 15pt">$\mathcal{V}_{g^{+}g^{-}}^{(0)}$</span>,
+     this requires expanding in NMRK the one-loop six-gluon amplitude
+</div>
+<span style="font-size: 14pt; margin-top: -3mm; margin-bottom: -5mm; float: right; font-align: right;"> Byrne, GDL, Del Duca, Gardi, Smillie - in progress; <a href="https://arxiv.org/abs/1904.04067" >GDL, Maitre `19</a></span>
+
+<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 8mm; margin-left: -7mm;">
+     $\phantom{\circ}\,$ (e) The leading CEV for three emissions <span style="font-size: 15pt">$\mathcal{V}_{ggg}^{(0)}$</span> from an NNMRK limit at tree level
+</div>
+<span style="font-size: 14pt; margin-top: -3mm; margin-bottom: -5mm; float: right; font-align: right;"> <a href="https://arxiv.org/abs/2506.10644"> Byrne, Del Duca, Gardi, Mo, Smillie `25</a></span>
+
+</section>
+
+---
+
+<section>
+
+{{< slide background-image="varieties-no-background.png" >}}
+
+# NMRK Numerical Expansion
 
 ---
 
@@ -156,107 +254,6 @@ $\circ$ The MRK limit is a two-variable problem <span style="font-size: 15pt;">$
 <div style="font-size: 17pt; text-align:left; margin-bottom: 2mm; margin-top: 2mm;">
 $\circ$ The NMRK limit is a five-variable problem <span style="font-size: 15pt;">$z, \bar z, w, \bar w, X=X_{(45)}$</span>
 </div>
-
-
-</section>
-
----
-
-<section>
-
-{{< slide background-image="Feynman-Diagrams-transparent.png" >}}
-
-<h1 style="margin-top: -2mm;"> Kernel Components </h1>
-
----
-
-<b style="font-variant: small-caps; font-size: 32pt"> Leading Order Kernel Components </b>
-<div  style="text-align: left; font-size: 16pt; margin-bottom: 5mm; margin-top: -6mm; text-align: center;">
-Leading-Log (LL) Resummation: <span style="font-size: 14pt;">$\mathcal{O}\big(\alpha_s^n \log^n(s/|t|)\big )$</span>
-</div>
-
-<div style="text-align: left; font-size: 18pt; margin-bottom: 5mm; margin-top: 5mm;">
-     $\circ\,$ The two components of the leading order (LO) BFKL kernel, <br>
-     $\phantom{\circ}\,$ required for resummation of leading logarithms (LL), are
-</div>
-
-<img src="LOKernel.png" style="max-width: 130mm; margin-top: 0mm; margin-bottom: 0mm;">
-
-<span style="font-size: 14pt; margin-top: -5mm; margin-bottom: 5mm; float: right; font-align: right;">Images from<a href="https://arxiv.org/abs/2204.12459"> Byrne, Del Duca, Dixon, Gardi, Smillie </a></span>
-
-<div style="text-align: left; font-size: 18pt; margin-bottom: 5mm; margin-top: 10mm;">
-     $\phantom{\circ}\,$ (a) is a correction to the Regge trajectory <span style="font-size: 15pt">$\mathcal{R^{(1)}}$</span><br>
-     $\phantom{\circ}\,$ (b) is the leading order central emission vertex (CEV) <span style="font-size: 15pt">$\mathcal{V}_g^{(0)}$</span>
-</div>
-
----
-
-<b style="font-variant: small-caps; font-size: 32pt"> NLO Kernel </b>
-<div  style="text-align: left; font-size: 16pt; margin-bottom: 5mm; margin-top: -6mm; text-align: center;">
-Next-To-Leading-Log (NLL) Resummation: <span style="font-size: 14pt;">$\mathcal{O}\big(\alpha_s^n \log^{n-1}(s/|t|)\big )$</span>
-</div>
-
-<img src="NLOKernel.png" style="max-width: 180mm; margin-top: 0mm; margin-bottom:0 mm;">
-
-<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: 0mm;">
-     $\phantom{\circ}\,$ (a) two-loop correction to the Regge trajectory, <span style="font-size: 15pt">$\mathcal{R}^{(2)}$</span>
-</div>
-
-<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: 0mm;">
-     $\phantom{\circ}\,$ (b) one-loop correction to the one-emission CEV, <span style="font-size: 15pt">$\mathcal{V}_g^{(1)}$</span>
-</div>
-
-<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: 0mm;">
-     $\phantom{\circ}\,$ (c) leading two-emission CEV <span style="font-size: 15pt">$\mathcal{V}_{gg}^{(0)}$</span>, this requires an next-to-MRK (NMRK) tree computation: <br>
-     $\phantom{\circ}\,\kern4mm$ the two central gluons are <u>not</u> rapidity gapped
-</div>
-
----
-
-<b style="font-variant: small-caps; font-size: 32pt"> NNLO Kernel </b>
-<div  style="text-align: left; font-size: 16pt; margin-bottom: 5mm; margin-top: -6mm; text-align: center;">
-NNLL Resummation: <span style="font-size: 14pt;">$\mathcal{O}\big(\alpha_s^n \log^{n-2}(s/|t|)\big )$</span>
-</div>
-
-<img src="NNLOKernel.png" style="max-width: 280mm; margin-top: 0mm; margin-bottom: 0mm; margin-left: -16mm">
-
-<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: -3mm; margin-left: -7mm;">
-     $\phantom{\circ}\,$ (a) Three loop <span style="font-size: 15pt">$2\to 2$</span> MRK, from three Reggeons to three-loop correction to the trajectory, <span style="font-size: 15pt">$\mathcal{R}^{(3)}$</span>
-</div>
-<span style="font-size: 14pt; margin-top: -3mm; margin-bottom: -5mm; float: right; font-align: right;"> <a href="https://arxiv.org/abs/2112.11098" > Falcioni, Gardi, Maher, Milloy, Vernazza `21</a>;$\;$<a href="https://arxiv.org/abs/2112.11097" > Caola, Chakraborty, Gambuti, von Manteuffel, Tancredi `21</a></span>
-
-<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 6mm; margin-left: -7mm;">
-     $\phantom{\circ}\,$ (b) Two-loop correction to the central emission vertex <span style="font-size: 15pt">$\mathcal{V}_g^{(2)}$</span> for one gluon
-</div>
-<span style="font-size: 14pt; margin-top: -3mm; margin-bottom: -5mm; float: right; font-align: right;"> <a href="https://arxiv.org/abs/2412.20578"> Abreu, GDL, Falcioni, Gardi, Milloy, Vernazza `24</a>;$\;$<a href="https://arxiv.org/abs/2411.14050"> Buccioni, Caola, Devoto, Gambuti `24</a></span>
-<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 5mm; margin-left: -7mm;">
-     $\phantom{\circ}\,\kern4mm$ expanding in the MRK limit the recently available two-loop five-parton amplitudes
-</div>
-<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 8mm; margin-left: -7mm;">
-     $\phantom{\circ}\,$ (d) The last missing component is the next-to-maximally-helicity-violiating (NMHV) one-loop two-gluon CEV <span style="font-size: 15pt">$\mathcal{V}_{gg}^{(0)}$</span>, that is, <span style="font-size: 15pt">$\mathcal{V}_{g^{+}g^{-}}^{(0)}$</span> 
-</div>
-<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 5mm; margin-left: -7mm;">
-     $\phantom{\circ}\,\kern4mm$ this requires expanding in the NMRK the one-loop six-gluon amplitude
-</div>
-<span style="font-size: 14pt; margin-top: -3mm; margin-bottom: -5mm; float: right; font-align: right;"> <a href="https://arxiv.org/abs/19xx.xxxx" > GDL, Maitre ('19)</a></span>
-
-<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 8mm; margin-left: -7mm;">
-     $\phantom{\circ}\,$ (a) Three loop MRK </span> 
-</div>
-<span style="font-size: 14pt; margin-top: -3mm; margin-bottom: -5mm; float: right; font-align: right;"> <a href="https://arxiv.org/pdf/2506.10644" > Gardi, </a></span>
-
-
-
-
-</section>
-
----
-
-<section >
-
-{{< slide background-image="varieties-no-background.png" >}}
-
-# NMRK Numerical Expansion
 
 ---
 
