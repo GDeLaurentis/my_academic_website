@@ -30,6 +30,14 @@ links:
   icon_pack: ai
   name: arXiv:2503.10595
   url: https://arxiv.org/abs/2503.10595
+- icon: arxiv
+  icon_pack: ai
+  name: arXiv:2504.19909
+  url: https://arxiv.org/abs/2504.19909
+- icon: arxiv
+  icon_pack: ai
+  name: arXiv:2507.19313
+  url: https://arxiv.org/abs/2507.19313
 url_code: ""
 url_pdf: ""
 url_slides: ""

@@ -35,11 +35,11 @@ Giuseppe De Laurentis
 <div style="font-size: large;"> with J. Campbell and K. Ellis </div>
 
 
-SDU Seminar
-<div style="font-size: large; margin-top:-5mm; margin-bottom:5mm"> Odense, DK </div>
+Universe+ Seminar
+<div style="font-size: large; margin-top:-5mm; margin-bottom:5mm"> Online </div>
 <p style="line-height: 0.05;"> <img src="UniEdinburghLogo-transparent.png"; style="max-width:120px;float:center;border:none;margin-bottom:5mm;"> 
 <br><br><br>
-<span style="font-size: 11pt; margin-top: 10mm;">Find these slides at  <a href="/slides/SDUOct2025/#/">gdelaurentis.github.io/slides/SDUOct2 025</a> </span>
+<span style="font-size: 11pt; margin-top: 10mm;">Find these slides at  <a href="/slides/Universe+Oct2025/#/">gdelaurentis.github.io/slides/SDUOct2 025</a> </span>
 </div>
 
 ---
