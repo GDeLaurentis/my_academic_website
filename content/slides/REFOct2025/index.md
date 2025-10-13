@@ -75,6 +75,7 @@ $$
      $\circ\,$ The BFKL kernel captures the <b>exponentiation</b> of these <b>large logarithms</b>,<br>
      $\phantom{\circ}\,$ allowing us to <b>resum</b> their contribution to the cross section.
 </div>
+<span style="font-size: 14pt; margin-top: -8mm; margin-bottom: -8mm; margin-right:-5mm; float: right; font-align: right;"><a href="https://www.sciencedirect.com/science/article/abs/pii/0370269375905249"> Fadin, Kuraev, Lipatov `75</a></span>
 
 <div style="text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: 8mm; margin-left: -5mm;">
      $\circ\,$ In this kinematic limit, known as <b>Multi-Regge Kinematics</b> (MRK), an effective particle is <br>
@@ -118,6 +119,38 @@ $$
 <div style="font-size: 17pt; text-align:left; margin-bottom: 2mm; margin-top: -4mm;">
 $\circ$ The MRK limit is a two-variable problem <span style="font-size: 15pt;">$z, \bar z$</span>
 </div>
+
+<div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 2mm; margin-bottom: 0mm;">
+
+  <!-- Left column: image -->
+  <div style="flex: 1; margin-right: 10mm;">
+    <img src="mrk-variables.png" style="max-width:100mm; margin-top: 2mm; margin-bottom: 0mm;">
+  </div>
+  <!-- Right column: table -->
+  <div style="flex: 1; font-family: 'Latin Modern Math', serif; font-size: 13pt;">
+    <table style="border-collapse: collapse; width: 100%;">
+      <tbody>
+        <tr><td><b>p<sub>4⊥</sub></b></td><td>= − q₁ / (z − 1)</td></tr>
+        <tr><td><b>p<sub>4⊥</sub><sup>*</sup></b></td><td>= − q₁* / (ż − 1)</td></tr>
+        <tr><td><b>p<sub>5⊥</sub></b></td><td>= z q₁ / (z − 1)</td></tr>
+        <tr><td><b>p<sub>5⊥</sub><sup>*</sup></b></td><td>= ż q₁* / (ż − 1)</td></tr>
+        <tr><td><b>p₃⁺</b></td><td>= p₄⁺ X<sub>34</sub></td></tr>
+        <tr><td><b>p₅⁺</b></td><td>= p₄⁺ / X<sub>45</sub></td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top: 6mm; font-weight: bold;">Light-cone momenta:</p>
+    <pre style="font-family: 'Courier New', monospace; font-size: 12pt; line-height: 1.2; margin-top: 2mm;">
+[   0      fix     0      0   ]
+[  fix      0      0      0   ]
+[  p₃⁺     fix    fix    fix  ]
+[  p₄⁺     fix   p₄_⊥= − q₁ / (z − 1)   p₄⊥*  ]
+[  p₅⁺     fix   p₅⊥   p₅⊥*  ]
+    </pre>
+  </div>
+
+</div>
+
+
 <img src="mrk-variables.png" style="max-width:100mm; margin-top: 2mm; margin-bottom: 0mm;">
 
 <div style="font-size: 17pt; text-align:left; margin-bottom: 2mm; margin-top: 2mm;">
@@ -149,7 +182,7 @@ Leading-Log (LL) Resummation: <span style="font-size: 14pt;">$\mathcal{O}\big(\a
 
 <img src="LOKernel.png" style="max-width: 130mm; margin-top: 0mm; margin-bottom: 0mm;">
 
-<span style="font-size: 14pt; margin-top: -5mm; margin-bottom: 5mm; float: right; font-align: right;"> <a href="https://arxiv.org/abs/2204.12459"> Byrne, Del Duca, Dixon, Gardi, Smillie </a></span>
+<span style="font-size: 14pt; margin-top: -5mm; margin-bottom: 5mm; float: right; font-align: right;">Images from<a href="https://arxiv.org/abs/2204.12459"> Byrne, Del Duca, Dixon, Gardi, Smillie </a></span>
 
 <div style="text-align: left; font-size: 18pt; margin-bottom: 5mm; margin-top: 10mm;">
      $\phantom{\circ}\,$ (a) is a correction to the Regge trajectory <span style="font-size: 15pt">$\mathcal{R^{(1)}}$</span><br>
@@ -185,17 +218,20 @@ Next-To-Leading-Log (NLL) Resummation: <span style="font-size: 14pt;">$\mathcal{
 NNLL Resummation: <span style="font-size: 14pt;">$\mathcal{O}\big(\alpha_s^n \log^{n-2}(s/|t|)\big )$</span>
 </div>
 
+<img src="NNLOKernel.png" style="max-width: 280mm; margin-top: 0mm; margin-bottom: 0mm; margin-left: -16mm">
 
-<img src="NNLOKernel.png" style="max-width: 280mm; margin-top: 0mm; margin-bottom:0 mm; margin-left: -16mm">
-
-<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 2mm; margin-left: -7mm;">
-     $\phantom{\circ}\,$ (b) the two-loop correction to the central emission vertex <span style="font-size: 15pt">$\mathcal{V}_g^{(2)}$</span> for one gluon was computed last year
+<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: -3mm; margin-left: -7mm;">
+     $\phantom{\circ}\,$ (a) Three loop <span style="font-size: 15pt">$2\to 2$</span> MRK, from three Reggeons to three-loop correction to the trajectory, <span style="font-size: 15pt">$\mathcal{R}^{(3)}$</span>
 </div>
-<span style="font-size: 14pt; margin-top: -3mm; margin-bottom: -5mm; float: right; font-align: right;"> <a href="https://arxiv.org/abs/2204.12459" > Abreu, GDL, Falcioni, Gardi, Milloy, Vernazza</a>;$\;$<a href="https://arxiv.org/abs/2204.12459"> Buccioni, Caola, Devoto, Gambuti</a></span>
+<span style="font-size: 14pt; margin-top: -3mm; margin-bottom: -5mm; float: right; font-align: right;"> <a href="https://arxiv.org/abs/2112.11098" > Falcioni, Gardi, Maher, Milloy, Vernazza `21</a>;$\;$<a href="https://arxiv.org/abs/2112.11097" > Caola, Chakraborty, Gambuti, von Manteuffel, Tancredi `21</a></span>
+
+<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 6mm; margin-left: -7mm;">
+     $\phantom{\circ}\,$ (b) Two-loop correction to the central emission vertex <span style="font-size: 15pt">$\mathcal{V}_g^{(2)}$</span> for one gluon
+</div>
+<span style="font-size: 14pt; margin-top: -3mm; margin-bottom: -5mm; float: right; font-align: right;"> <a href="https://arxiv.org/abs/2412.20578"> Abreu, GDL, Falcioni, Gardi, Milloy, Vernazza `24</a>;$\;$<a href="https://arxiv.org/abs/2411.14050"> Buccioni, Caola, Devoto, Gambuti `24</a></span>
 <div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 5mm; margin-left: -7mm;">
      $\phantom{\circ}\,\kern4mm$ expanding in the MRK limit the recently available two-loop five-parton amplitudes
 </div>
-
 <div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 8mm; margin-left: -7mm;">
      $\phantom{\circ}\,$ (d) The last missing component is the next-to-maximally-helicity-violiating (NMHV) one-loop two-gluon CEV <span style="font-size: 15pt">$\mathcal{V}_{gg}^{(0)}$</span>, that is, <span style="font-size: 15pt">$\mathcal{V}_{g^{+}g^{-}}^{(0)}$</span> 
 </div>
@@ -203,6 +239,14 @@ NNLL Resummation: <span style="font-size: 14pt;">$\mathcal{O}\big(\alpha_s^n \lo
      $\phantom{\circ}\,\kern4mm$ this requires expanding in the NMRK the one-loop six-gluon amplitude
 </div>
 <span style="font-size: 14pt; margin-top: -3mm; margin-bottom: -5mm; float: right; font-align: right;"> <a href="https://arxiv.org/abs/19xx.xxxx" > GDL, Maitre ('19)</a></span>
+
+<div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 8mm; margin-left: -7mm;">
+     $\phantom{\circ}\,$ (a) Three loop MRK </span> 
+</div>
+<span style="font-size: 14pt; margin-top: -3mm; margin-bottom: -5mm; float: right; font-align: right;"> <a href="https://arxiv.org/pdf/2506.10644" > Gardi, </a></span>
+
+
+
 
 </section>
 
