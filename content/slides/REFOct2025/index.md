@@ -294,7 +294,7 @@ $$
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}\,$ Problem: <span style="color: red">8 orders of spurious cancellations</span> in the (N)MRK parameter as $x\rightarrow 0$
+     $\phantom{\circ}\,$ Problem: <span style="color: red">8 orders of spurious cancellations</span> in the (N)MRK parameter as <span style="font-size: 16pt;">$x\rightarrow 0$</span>
 </div>
 
 ---
@@ -332,7 +332,7 @@ $$
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
      ${\color{red} ✗}$ Analytic expansion is a no go. Run out of memory and time after 3 or 4 orders! <br>
      ${\color{red} ✗}$ Numerical expansion with floating-point numbers is also too complicated. <br>
-     $\phantom{{\color{red} ✗}}$ Say we input <span style="font-size: 15pt;">$x\approx 10^{-10}$</span> to have 10 good digits to work with, we would lose 80 digits!
+     $\phantom{{\color{red} ✗}}$ Say we input <span style="font-size: 15pt;">$x\approx 10^{-10}$</span> to have 10 digits to work with, we would lose (at least) 80 digits!
 </div>
 
 ---
@@ -361,7 +361,7 @@ $$
      $\circ$ There exists just one more absolute value on the rationals, the $p$-adic absolute value.
 </div>
 <a style="font-size: large; text-align: right; float: right; margin-top: -4mm; margin-bottom: -10mm;" href=https://en.wikipedia.org/wiki/Ostrowski%27s_theorem>
-   Ostrowski's theorem
+   Ostrowski's theorem 1916
 </a>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
      $\circ$ Let's start from <span style="font-size: 16pt;">$p$</span>-adic integers, instead of working modulo <span style="font-size: 16pt;">$p$</span>, expand in powers of <span style="font-size: 16pt;">$p$</span>
@@ -384,7 +384,7 @@ $$
 $$
 </div>
 <a style="font-size: large; text-align: right; float: right; margin-top: -4mm; margin-bottom: -10mm;" href=https://arxiv.org/abs/2203.04269>
-   GDL, Page ('22)
+   GDL, Page `22
 </a>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
@@ -602,7 +602,7 @@ $$
 </div>
 
 <div style="font-size: 17pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ\;$ Example of explicit construction with <a href=https://github.com/GDeLaurentis/syngular>syngular</a> (on GitHub), Python extension to <a href=https://www.singular.uni-kl.de/>Singular</a>
+     $\circ\;$ Example of explicit construction with <a href=https://github.com/GDeLaurentis/syngular>syngular</a> (on GitHub), a Python extension to <a href=https://www.singular.uni-kl.de/>Singular</a>
 </div>
 <pre><code class="language-python" style="font-size: 11pt">> from syngular import Field, Ring, Ideal, RingPoint
 > ring = Ring('0', ('z', 'zb', 'w', 'wb', 'X'), 'dp')
@@ -630,8 +630,35 @@ $$
      <b style="font-variant: small-caps; font-size: 32pt"> Towards the NMHV 2-Emission CEV </b>
 </div>
 
-<div style="text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 2mm;">
-     $\circ$ Tests: MRK, same functions from ++-+-- and +-+-+-, match part of the result to N=4 and N=1 SUSY
+<div style="text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 6mm;">
+     $\circ\;$ Status: 
+     <div style="text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 2mm;">
+     $\quad\star\;$ all amplitude coefficients have been reconstructed in the NMRK limit.
+     </div>
+</div>
+
+<div style="text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 6mm;">
+     $\circ\;$ Checks:
+     <div style="text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 2mm;">
+     $\quad\star\;$ The MRK limit (<span style="font-size: 14pt">$X_{45}\rightarrow \text{large}$</span>) reproduces known results; <br>
+     $\quad\star\;$ We obtain the same result from <span style="font-size: 14pt">$g^+g^-g^+g^-g^+g^-$</span> and <span style="font-size: 14pt">$g^+g^+g^-g^+g^-g^-$</span> (distinct in general kinematics); <br>
+     $\quad\star\;$ Reproduce known <span style="font-size: 14pt">$\mathcal{N}=4$</span> and <span style="font-size: 14pt">$\mathcal{N}=1$</span> SUSY results.
+     </div>
+</div>
+
+<div style="text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 6mm;">
+     $\circ\;$ To do: 
+     <div style="text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 2mm;">
+     $\quad\star\;$ Split result into contributions to trajectory, impact factors (known) and identify the (new) vertex.
+     </div>
+</div>
+
+<div style="text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 6mm;">
+     $\circ\;$ Outlook: 
+     <div style="text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 2mm;">
+     $\quad\star\;$ The proposed method provides a scalable solution to more complex processes, <br>
+     $\phantom{\quad\star\;}$ this calculation was performed entirely on a laptop.
+     </div>
 </div>
 
 </section>
