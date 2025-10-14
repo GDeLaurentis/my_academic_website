@@ -206,7 +206,7 @@ NNLL Resummation: <span style="font-size: 14pt;">$\mathcal{O}\big(\alpha_s^n \lo
 
 <section>
 
-{{< slide background-image="varieties-no-background.png" >}}
+{{< slide background-image="padics.png" >}}
 
 # NMRK Numerical Expansion
 
@@ -622,7 +622,6 @@ $$
 
 <section>
 
-{{< slide background-image="Wjj_diagrams.png">}}
 
 # <br> Summary <br> & <br> Outlook
 
@@ -669,7 +668,7 @@ $$
 
 <section>
 
-{{< slide background-image="dubrovnik.jpeg" >}}
+{{< slide background-image="italy-milan-cathedral.jpg">}}
 
 <div style="margin-top: 50mm; margin-bottom: 30mm;">
 <b style="font-variant: small-caps; font-size: xxx-large;"> Thank you <br> for your attention! </b>
