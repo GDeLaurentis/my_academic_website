@@ -255,7 +255,7 @@ $\phantom{\circ}\,$ <span style="font-size: 16pt;">$q_1, \bar q_1, p_4^+$</span>
 </div>
 
 <div style="font-size: 17pt; text-align:left; margin-bottom: 2mm; margin-top: 2mm;">
-$\circ$ The NMRK limit is a five-variable problem <span style="font-size: 15pt;">$z, \bar z, w, \bar w, X=X_{(45)}$</span>, other variables that drop out
+$\circ$ The NMRK limit is a five-variable problem <span style="font-size: 15pt;">$z, \bar z, w, \bar w, X=X_{(45)}$</span>, other variables drop out
 </div>
 
 ---
@@ -484,7 +484,7 @@ $$
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ\;$ In Least Common Denominator form the numberators are too complex, <br>
+     $\circ\;$ In Least Common Denominator form the numerators are too complex, <br>
      $\phantom{\circ}\;$ we would need hundred of thousands to millions of evaluations to determine them.
 </div>
 
