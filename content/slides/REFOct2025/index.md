@@ -97,7 +97,7 @@ $$
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: -2mm;">
-     $\circ\;$ Amplitudes factorise (very schematically, octet component only and up to Regge)
+     $\circ\;$ Amplitudes factorise (very schematically, octet component only and up to Regge cuts)
 </div>
 <div style="font-size: 16pt; margin-top: 0mm; margin-bottom: -3mm">
 $$
