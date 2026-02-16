@@ -37,7 +37,7 @@ Giuseppe De Laurentis
 <div style="font-size: large;"> at 1 loop, with J. Campbell and K. Ellis </div>
 
 
-University of Sussex - Physics Seminar
+University of Sussex - TPP Seminar
 <p style="line-height: 0.05;"> <img src="UniEdinburghLogo-transparent.png"; style="max-width:120px;float:center;border:none;margin-bottom:5mm;"> 
 <br><br><br>
 <span style="font-size: 11pt; margin-top: 10mm;">Find these slides at  <a href="/slides//sussexfeb2026/#/">gdelaurentis.github.io/slides/sussexfeb2026</a> </span>
@@ -1024,6 +1024,7 @@ $$
 
 ---
 
+<!---
 <b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Invariant Rings in Mathematics Literature </b>
 
 <p style="margin-top: -6mm; margin-bottom: 2mm; font-size: 15pt;">
@@ -1065,6 +1066,7 @@ the spaces of invariants are in fact (non-compact) Calabi-Yau varieties” </i> 
 </div>
 
 ---
+--->
 
 <b style="font-variant: small-caps; font-size: xxx-large"> The Numerator Ansatz </b>
 
@@ -1457,17 +1459,20 @@ $$
 
 ---
 
-<div style="margin-top: 2mm; margin-bottom: -2mm">
+<div style="margin-top: 2mm; margin-bottom: 2mm">
      <b style="font-variant: small-caps; font-size: 32pt"> Challenges </b>
 </div>
 
 <div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
-$\circ\,$ Can we guess the constraints? If not, can we verify them with numerical evaluations? <br>
-$\phantom{\circ}\,$ <span style="text-size: 13pt">$\mathbb{Q}_p$</span> evaluations can be costly (probably depending on implementation). <a href=https://arxiv.org/abs/2506.08452> Xia, Yang ('25) </a> say they are not!
+$\circ\,$ Can we get an IBP reduction to work stably in singular limits with p-adics?
 </div>
 
 <div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
-$\circ\,$ Ideal intersection can be highly non-trivial:
+$\circ\,$ Alternatively, can we do the same with slicing over finite fields? Working on a bivariate slice approach.
+</div>
+
+<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
+$\circ\,$ Ideal intersection can be highly non-trivial (lcm product):
 </div>
 <div style="text-align: left; font-size: 13pt; margin-top: 0mm; margin-bottom: 1mm;">
 $$ 
@@ -1487,16 +1492,19 @@ $\quad\star\,$ we compute the intersection explicitly (can be prohibitively hard
 <div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
 $\quad\star\,$ or we have to make a choice of which constrain we manifest
 </div>
-
 <div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
-$\circ\,$ Computing primary decompositions with these many variables is hard, Singular can't do it on its own
-</div>
-<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
-$\phantom{\circ}\,$ Ongoing project with a masters' student in Edinburgh to improve our ability to compute them.
+$\phantom{\circ}\,$ Tentative solution with the bivariate slice approach.
 </div>
 
 <div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
-$\circ\,$ Even constructing the ansatz requires a GB, which in some cases Singular doesn't easily give
+$\circ\,$ Computing primary decompositions with these many variables is hard, Singular can't do it on its own.
+</div>
+<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
+$\phantom{\circ}\,$ Article with a Edinburgh masters' student (D. Tai) to appear.
+</div>
+
+<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
+$\circ\,$ Even constructing the ansatz requires a GBasis, which in some cases Singular doesn't easily give.
 </div>
 
 <div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
