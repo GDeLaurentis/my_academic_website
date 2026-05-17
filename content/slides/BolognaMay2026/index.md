@@ -109,7 +109,7 @@ Gardi, Magnea ('09)
 
 <div style="font-size: 14.5pt; margin-top: 5mm; margin-bottom: 5mm">
 $$ 
-\textstyle \mathcal{R}(\lambda, \tilde\lambda) = \sum_i \color{red}{r_{i}(\lambda,\tilde\lambda)} \, \color{orange}{h_i(\lambda\tilde\lambda)}
+\textstyle \mathcal{R}(\lambda, \tilde\lambda) = \sum_i \color{red}{r_{i}(\lambda,\tilde\lambda)} \, \color{orange}{G_i(\lambda\tilde\lambda)}
 $$
 </div>
 
@@ -150,7 +150,7 @@ $\mathbb{Q}_p$: GDL, Page ('22)
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Toy example </b>
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Polynomials Modulo Constraints </b>
 
 <div style="font-size: 17pt; text-align: left; margin-bottom: 2mm; margin-top: -2mm; margin-left: 2mm; margin-right: 2mm;">
      $\circ$ Manifesting amplitude's gauge and Lorentz invariance, and spin and little-group covariance requires
@@ -246,7 +246,7 @@ $$
 </div>
 <div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
 $$ 
-\displaystyle \kern10mm R_{Vjj} = \mathbb{F}\big[|1⟩_{\alpha}, [1|_{\dot\alpha}, |2⟩_{\alpha}, [2|_{\dot\alpha}, |3⟩_{\alpha}, [3|_{\dot\alpha},  |4⟩_{\alpha}, [4|_{\dot\alpha}, [5|_{\dot\alpha}, |6⟩_{\alpha} \big] \Big/ \big\langle {\textstyle \sum_{i=1}^4} [5|i]\langle i |6\rangle \big\rangle
+\displaystyle \kern10mm R_{V(\rightarrow\ell\ell')jj} = \mathbb{F}\big[|1⟩_{\alpha}, [1|_{\dot\alpha}, |2⟩_{\alpha}, [2|_{\dot\alpha}, |3⟩_{\alpha}, [3|_{\dot\alpha},  |4⟩_{\alpha}, [4|_{\dot\alpha}, [5|_{\dot\alpha}, |6⟩_{\alpha} \big] \Big/ \big\langle {\textstyle \sum_{i=1}^4} [5|i]\langle i |6\rangle \big\rangle
 $$
 </div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
@@ -256,9 +256,17 @@ $$
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 10mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ This approach is very similar to the massless case (just remove variables), <br>
-     $\phantom{\circ}$ but does not generalise to cases with multiple massive legs, e.g. with two of them: <br>
-     $\phantom{\circ}$ <span style="font-size: 15pt;">$p_{V_1} \cdot p_{V_2}$</span> cannot be eliminated through momentum conservation in favour of massless ones.
+     $\circ$ This approach does not generalise to cases with multiple massive legs, due to <span style="font-size: 15pt;">$p_{V_1} \cdot p_{V_2}$</span>
+</div>
+<div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
+$$ 
+\displaystyle p_V = |\boldsymbol q^I\rangle [\boldsymbol q_I| =  |\boldsymbol q^1\rangle [\boldsymbol q_1| +  |\boldsymbol q^2\rangle [\boldsymbol q_2| =  |5\rangle [5| + |6\rangle [6|
+$$
+</div>
+<div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
+$$ 
+\displaystyle \kern10mm R_{V(\rightarrow\ell\ell')jj} = \mathbb{F}\big[|1⟩_{\alpha}, [1|_{\dot\alpha}, |2⟩_{\alpha}, [2|_{\dot\alpha}, |3⟩_{\alpha}, [3|_{\dot\alpha},  |4⟩_{\alpha}, [4|_{\dot\alpha}, |\boldsymbol 5⟩^J_{\alpha}, [\boldsymbol 5|^I_{\dot\alpha} \big] \Big/ \Big\langle {\textstyle \sum_{i=1}^4} |i]\langle i | + |\boldsymbol 5⟩^I_{\alpha}[\boldsymbol 5|_{I,\dot\alpha}  \Big\rangle
+$$
 </div>
 
 ---
@@ -409,6 +417,49 @@ From work in progress with S. Abreu, X. Liu, P.F. Monni
      $\circ$ Factorization and extra chiral cancellations are key for simplification in gauge amplitudes 
 </div>
 
+---
+
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> What do do with square roots? </b>
+
+<div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2          mm;">
+     $\circ$ The transcendental basis is pure up to some square roots
+</div>
+<div style="font-size: 14.5pt; margin-top: 5mm; margin-bottom: 5mm">
+$$ 
+\displaystyle \mathcal{R}(\lambda, \tilde\lambda) = \sum_i \color{red}{r_{i}(\lambda,\tilde\lambda)} \, \color{orange}{G_i(\lambda\tilde\lambda)} \color{black} \; , \qquad G_i = h_1 \quad \text{or} \quad G_i = \frac{h_i}{\sqrt{q}}
+$$
+</div>
+<div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2mm;">
+     $\phantom{\circ}$ with <span style="font-size: 14pt;">$h_i$</span> pure and irreducible polynomials <span style="font-size: 14pt;">$q$</span> in Mandelstams
+</div>
+
+<div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2mm;">
+     $\circ$ Distinguish 3 cases:
+</div>
+<div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2mm;">
+     $\quad 1.$ <span style="font-size: 14pt;">$\sqrt{q}$</span> is rational in spinors, e.g. <span style="font-size: 14pt;">$\sqrt{\Delta_5} = \pm \text{tr}(\gamma^5p_1p_2p_3p_4) = \pm ([1|2|3|4|1\rangle-\langle1|2|3|4|1])$</span>
+</div>
+<div style="font-size: 14.5pt; margin-top: 5mm; margin-bottom: 5mm">
+$$ 
+G_i \rightarrow \frac{\text{tr}_5}{\sqrt{\Delta_5}} h_i = \text{sign}\big(\text{Im}(\text{tr}_5)\big) h_i
+$$
+</div>
+<div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2mm;">
+     $\quad 2.$ The rational coefficient vanishes linearly in <span style="font-size: 14pt;">$\lim_{q\rightarrow 0}$</span>
+</div>
+<div style="font-size: 14.5pt; margin-top: 5mm; margin-bottom: 5mm">
+$$ 
+G_i \rightarrow \sqrt{\Sigma_5} \, h_i
+$$
+</div>
+<div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2mm;">
+     $\quad 3.$ Otherwise, leave it unchanged, e.g. <span style="font-size: 14pt;">$\lim_{q\rightarrow 0} h_i = \sqrt{q}$</span>
+</div>
+<div style="font-size: 14.5pt; margin-top: 5mm; margin-bottom: 5mm">
+$$ 
+G_i \rightarrow \frac{h_i}{\sqrt{\Delta_3}}
+$$
+</div>
 
 </section>
 
@@ -442,14 +493,6 @@ From work in progress with S. Abreu, X. Liu, P.F. Monni
 
 <div style="display:block; width:100%; margin-top: 2mm; margin-bottom: 0mm; margin-left: 0mm;">
      <div style="font-size: x-large; width: 65%; text-align: left; display: inline-block; margin-top: 2mm;">
-          <!---
-          <div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2mm;">
-               $\circ$ Polynomials belong to the the covariant quotient ring of spinors,
-          </div>
-          <div style="font-size:16pt; text-align: center; margin-top: 2mm; margin-bottom: 2mm">
-               $$\displaystyle \kern10mm R_n = \mathbb{F}\big[|1⟩, [1|, \dots, |n⟩, [n|\big] \big/ \big\langle \sum_i |i⟩[i| \big\rangle$$
-          </div>
-          --->
 	     <div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 1mm;">
                 $\circ\,$ We can now determine the least common denominators (LCDs),
           </div>
@@ -472,14 +515,6 @@ From work in progress with S. Abreu, X. Liu, P.F. Monni
           <div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 1mm;">
                $\phantom{\circ}\,$ Solve for <span style="font-size: 16pt">$a_i, b_i$</span> such that constraints are satisfied.
           </div>
-	     <div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 1mm;">
-               $\circ\,$ Open-source implementation in <a href="https://github.com/GDeLaurentis/antares/" style="font-size: 20pt; font-variant: small-caps;">antares</a>, <a href="https://github.com/GDeLaurentis/lips/" style="font-size: 20pt; font-variant: small-caps;">lips</a>, <a href="https://github.com/GDeLaurentis/syngular/" style="font-size: 20pt; font-variant: small-caps;">syngular</a> 
-          </div>
-          <div style="font-size: 17pt; text-align: left; margin-top: 1mm; margin-bottom: 1mm;"> 
-               $\phantom{\circ}\,$ <code style="font-size: 15pt;">Particles.univariate_slice</code> or 
-               <code style="font-size: 15pt;">Ring.univariate_slice</code> <br>
-               $\phantom{\circ}\,$ <code style="font-size: 15pt;">num_func.get_lcd(slice_fp, verbose=True)</code>
-          </div>
 	</div>
      <div style="width:35%; float: right; display: inline-block; margin-top: 6mm; ">
           <img src="variety_slice_v2-transparent.png"; style="max-width:360px; float:center; border:none; margin-top: -5mm; margin-bottom: -2mm;">
@@ -499,6 +534,46 @@ From work in progress with S. Abreu, X. Liu, P.F. Monni
     Poles & Zeros $\;\Leftrightarrow\;$ Irreducible Varieties $\;\Leftrightarrow\;$ Prime Ideals <br>
     <i style="font-size: 14pt; border-top: -8mm; border-bottom: -2mm;"> Physics $\kern18mm$ Geometry $\kern18mm$ Algebra </i>
 </div>
+
+---
+
+<div style="margin-top: 2mm; margin-bottom: 3mm">
+     <b style="font-variant: small-caps; font-size: xxx-large">Open-Source Implementation</b>
+</div>
+
+<div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 1mm;">
+     $\circ\,$ Implemented in 
+     <a href="https://github.com/GDeLaurentis/antares/" style="font-size: 20pt; font-variant: small-caps;">antares</a>,
+     <a href="https://github.com/GDeLaurentis/lips/" style="font-size: 20pt; font-variant: small-caps;">lips</a>, 
+     <a href="https://github.com/GDeLaurentis/linac/" style="font-size: 20pt; font-variant: small-caps;">linac</a>, and
+     <a href="https://github.com/GDeLaurentis/syngular/" style="font-size: 20pt; font-variant: small-caps;">syngular</a>.
+</div>
+
+<div style="font-size: 17pt; text-align: left; margin-top: 1mm; margin-bottom: 2mm;">
+     $\circ\,$ Example: determine the LCDs of a vector of finite-remainder coefficients.
+</div>
+
+<pre style="font-size: 12.5pt; line-height: 1.15; text-align: left; margin-top: 2mm; margin-bottom: 2mm; padding: 8px; width: 96%;"><code class="language-python">oTF = tensor_function(lambda oPs: numpy.array(
+    [coeff for coeff, monom in amps['qbpqmqbpqm_2L_Nc2_Nf0'].finite_remainder(oPs)] +
+    [coeff for coeff, monom in amps['qbpqmqbpqm_2L_Nc1_Nf1'].finite_remainder(oPs)] +
+    ....
+))
+oTF.multiplicity = 6
+oTF.__name__ = '4q1h_mhv'  # qbar+ q- qbar+ q- H, through two loops
+
+oSlice = Particles(6, field=Field("finite field", 2 ** 31 - 1, 1), seed=0)
+oSlice.univariate_slice(algorithm='covariant', seed=0)
+
+lTermsLCD = oTF.get_lcds(oSlice, verbose=True)
+lTermsLCD[:5]</code></pre>
+
+<pre style="font-size: 11.5pt; line-height: 1.15; text-align: left; margin-top: 1mm; padding: 8px; width: 96%;"><code class="language-python">[
+  Terms("""+(1)/(⟨1|2⟩[1|2]⟨3|4⟩[3|4]⟨1|3+4|1]⟨2|3+4|2]⟨3|1+2|3]⟨4|1+2|4])"""),
+  Terms("""+(1)/(⟨1|2⟩[1|2]⟨1|3⟩[2|4]⟨3|4⟩[3|4]⟨1|2+3|1]⟨4|2+3|4])"""),
+  Terms("""+(1[1|3])/(⟨1|3⟩⟨1|2+3|1]⟨3|1+2|3]²)"""),
+  Terms("""+(1⟨2|4⟩)/([2|4]⟨2|3+4|2]²⟨4|2+3|4])"""),
+  ...
+]</code></pre>
 
 ---
 
