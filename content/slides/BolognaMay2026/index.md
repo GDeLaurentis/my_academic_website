@@ -39,7 +39,7 @@ Giuseppe De Laurentis
 University of Bologna - Workshop Talk
 <p style="line-height: 0.05;"> <img src="UniEdinburghLogo-transparent.png"; style="max-width:120px;float:center;border:none;margin-bottom:5mm;"> 
 <br><br><br>
-<span style="font-size: 11pt; margin-top: 10mm;">Find these slides at  <a href="/slides//bolognamay2026/#/">gdelaurentis.github.io/slides/sussexfeb2026</a> </span>
+<span style="font-size: 11pt; margin-top: 10mm;">Find these slides at  <a href="/slides//bolognamay2026/#/">gdelaurentis.github.io/slides/bolognamay2026</a> </span>
 </div>
 
 ---
@@ -54,28 +54,28 @@ University of Bologna - Workshop Talk
 
 <b style="font-variant: small-caps; font-size: xxx-large"> Partial Amplitudes & Finite Remainders </b>
  
-<div style="font-size: 18pt; float: left; margin-top: 2mm; margin-bottom: 0mm;">
+<div style="font-size: 18pt; float: left; margin-top: 0mm; margin-bottom: 0mm;">
      $\circ$ Amplitude (integrands) can be written as (for a suitable choice of master integrals)
 </div>
 <br>
-<div style="font-size: 14.5pt; margin-top: 0mm;  margin-bottom: 2mm">
+<div style="font-size: 14.5pt; margin-top: -4mm; margin-bottom: -8mm">
 $$
 \displaystyle A(\lambda, \tilde\lambda, \ell) =
 \sum_{\substack{\Gamma,\\ i \in M_\Gamma \cup S_\Gamma}} \, c_{\,\Gamma,i}(\lambda, \tilde\lambda, \epsilon) \,		\frac{m_{\Gamma,i}(\lambda\tilde\lambda, \ell)}{\textstyle \prod_{j} \rho_{\,\Gamma,j}(\lambda\tilde\lambda, \ell)} \;\; \xrightarrow[]{\int d^D\ell} \;\; \sum_{\substack{\Gamma,\\ i \in M_\Gamma}} \frac{ \sum_{k=0}^{\text{finite}} \, {\color{red}c^{(k)}_{\,\Gamma, i}}(\lambda, \tilde\lambda) \, \epsilon^k}{\prod_j (\epsilon - a_{ij})} \, {\color{orange}I_{\Gamma, i}}(\lambda\tilde\lambda, \epsilon)
 $$  
 </div>
-<div style="font-size: 14pt; float: center; margin-bottom: 5mm; margin-top: 5mm;">
+<div style="font-size: 14pt; float: center; margin-bottom: -10mm; margin-top: 15mm; margin-left: -40mm;">
      $\circ$  $\Gamma$: topologies $\quad\circ$ $M_\Gamma$: master integrands $\quad\circ$ $S_\Gamma$: surface terms 
 </div>
-
-<a style="font-size: 13pt; float:right; margin-top:-17mm;" href=https://arxiv.org/abs/2009.11957> 
+<a style="font-size: 13pt; float:right; margin-top: -2mm; margin-bottom: -20mm;" href=https://arxiv.org/abs/2009.11957> 
 <div style="margin-top:-4mm; font-size: 12pt;"> Abreu, Dormans, </div>
 <div style="margin-top:0mm; font-size: 12pt;"> Febres Cordero, Ita  </div>
 <div style="margin-top:0mm; font-size: 12pt;"> Kraus, Page, Pascual, </div>
 <div style="margin-top:0mm; font-size: 12pt;"> Ruf, Sotnikov ('20) </div>
 </a>
+<img src="CaravelLogo.png"; style="max-width:90px; float:center; border:none; margin-top: -7mm; margin-bottom: -2mm; margin-left: 150mm;">
 
-<div style="text-align: left; font-size: 18pt; margin-bottom: 0mm;">
+<div style="text-align: left; font-size: 18pt; margin-bottom: 0mm; margin-top: 2mm;">
      $\circ$ <u>All physical information</u> is contained in the <i>finite remainders</i>, at two loops
 </div>
 <a style="font-size: large; text-align: right; float: right; margin-top: -3mm; margin-bottom: -3mm;" href=https://inspirehep.net/literature/920274>
@@ -131,7 +131,7 @@ $\mathbb{Q}_p$: GDL, Page ('22)
 
 ---
 
-<section >
+<section>
 
 {{< slide background-image="varieties-no-background.png" >}}
 
@@ -149,54 +149,6 @@ $\mathbb{Q}_p$: GDL, Page ('22)
 <span style="font-size: 17pt">[arXiv:2406.17331](https://arxiv.org/abs/2406.17331)<span>
 
 ---
-
-<!---
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> Guiding Principles </b>
-
-<div style="font-size: 17pt; text-align: left; margin-bottom: 2mm; margin-top: -2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Amplitude should be gauge and Lorentz invariant, and spin and little-group covariant
-</div>
-<div style="font-size: 17pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{red} ✗}$ gauge dependence, e.g. through reference vectors <br>
-</div>
-<div style="font-size: 17pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{red} ✗}$ tensor decompositions <span style="font-size: 16pt;">$\epsilon_\mu T^\mu$</span>, polarizations are needed for simplifications
-</div>
-<div style="font-size: 17pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{greeN} ✓}$ <span style="font-size: 16pt;">$\epsilon_\mu \rightarrow \epsilon_{\alpha\dot\alpha}$, $P^\mu \rightarrow  \lambda_\alpha \tilde\lambda_{\dot\alpha}$</span>; all <span style="font-size: 16pt;">$\alpha, \dot\alpha$</span> indices contracted; all <span style="font-size: 16pt;">$\lambda, \tilde\lambda$</span> random (subject to mom cons)
-</div>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ The singularity structure should be manifest in $\mathbb{C}$ (exprs will then be better behaved in $\mathbb{R}$ too)
-</div>
-<div style="font-size: 17pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{red} ✗}$ Rational reparametrisations of the kinematics change the denominator structure
-</div>
-<div style="font-size: 17pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{red} ✗}$ Forcing unphysical splits misses cancellations (e.g. even and odd separation)
-</div>
-<div style="font-size: 17pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{greeN} ✓}$ Chiral cancellations are required to obtain the true Least Common Denominator
-</div>
-<div style="font-size: 17pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{greeN} ✓}$ Work off the real slice: <span style="font-size: 16pt;">$P^\mu \in \mathbb{C}^4$, $\lambda_\alpha \neq \tilde\lambda_{\dot\alpha}^\dagger$</span>. In practice, <span style="font-size: 16pt;">$P^{\mu=y}\in i\mathbb{Q}\Rightarrow \lambda_{\alpha} \in \mathbb{F}_p \text{ or } \mathbb{Q}_p$</span>
-</div>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Focus only on final physical expressions
-</div>
-<div style="font-size: 17pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{red} ✗}$ Unphysical intermediate steps may be unnecessarily complicated
-</div>
-<div style="font-size: 17pt; text-align: left; margin-bottom: 2mm; margin-top: 3mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{red} ✗}$ Analytic manipulations at this complexity are unfeasible, even on "physical" results
-</div>
-<div style="font-size: 17pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 6mm; margin-right: 2mm;">
-     ${\color{greeN} ✓}$ Bypass all intermediate steps with numerical evaluations (let cancellations happen numerically!)
-</div>
-
----
---->
 
 <b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Toy example </b>
 
@@ -462,7 +414,7 @@ From work in progress with S. Abreu, X. Liu, P.F. Monni
 
 ---
 
-<section >
+<section>
 
 {{< slide background-image="varieties-no-background.png" >}}
 
