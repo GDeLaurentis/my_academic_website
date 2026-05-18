@@ -822,6 +822,255 @@ see also Fontana, Peraro ('23)
 
 <section>
 
+{{< slide background-image="varieties-no-background.png" >}}
+
+<br><br><br><br>
+
+# Multivariate Partial Fraction Decomposition
+
+
+<span style="font-size: 15pt;">(Geometry beyond codimension one)</span>
+
+<br><br><br>
+
+---
+
+<div style="margin-top: 2mm; margin-bottom: 3mm">
+     <b style="font-variant: small-caps; font-size: 32pt"> Reconstruction from Conjectured Properties </b>
+     <p style="margin-top: -2mm; margin-bottom: -=mm; font-size: 16pt;">
+     (for planar five-point one-mass amplitudes - all properties checked a posteriori)
+     </p>
+</div>
+
+<div style="text-align: left; font-size: 18pt; margin-top: 3mm; margin-bottom: 2mm;">
+     $\circ\,$ Denominator pairs <span style="font-size: 16pt">$\{\mathcal{D}_i, \mathcal{D}_j\}$</span> can be <i>cleanly separated</i>:
+</div>
+<div style="font-size:14pt; text-align: center; margin-top: 2mm; margin-bottom: 1mm;">
+     $$
+     \frac{\mathcal{N}}{\mathcal{D}_i^{q_i}\mathcal{D}_j^{q_j}\mathcal{D}_{\text{rest}}} \rightarrow \frac{\mathcal{N}_i}{\mathcal{D}_i^{q_i}\mathcal{D}_{\text{rest}}} + \frac{\mathcal{N}_j}{\mathcal{D}_j^{q_j}\mathcal{D}_{\text{rest}}}
+     $$
+</div>
+<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
+     $\phantom{\circ}\,$ Examples of <span style="font-size: 16pt">$\{\mathcal{D}_i, \mathcal{D}_j\}$</span> are:
+</div>
+<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 2mm;">
+     $\qquad\star\,$ Any pairs of <span style="font-size: 14pt">$s_{ijk}$</span> or <span style="font-size: 14pt">$\Delta_{ij|kl|mn}$</span> or <span style="font-size: 16pt">$\langle i|j|p_V|k|i]-\langle j|l|p_V|k|j]$</span> <br>
+     $\qquad\star\,$ Any conjugate pair <span style="font-size: 14pt">$\{\langle i|j+k|l], \langle l|j+k|i]\}$</span> or cyclic <span style="font-size: 14pt">$\{\langle i|j\rangle, [i|j]\}$</span> <br>
+     $\qquad\star\,$ Pairs of the form <span style="font-size: 14pt">$\{\Delta_{ij|kl|mn}, \langle c|a+b|d] \text{ or } \langle ab \rangle \text{ or } [ab] \}$</span> unless <span style="font-size: 14pt">$\{ab\}$</span> are <span style="font-size: 14pt">$\{ij\}$</span> or <span style="font-size: 14pt">$\{kl\}$</span> or <span style="font-size: 14pt">$\{mn\}$</span>
+</div>
+
+<div style="text-align: left; font-size: 18pt; margin-top: 4mm; margin-bottom: 2mm;">
+     $\circ\,$ Other denominator pairs <span style="font-size: 15pt">$\{\mathcal{D}_i, \mathcal{D}_j\}$</span> can be <i>separated to order $\kappa$</i> 
+</div>
+<div style="font-size:14pt; text-align: center; margin-top: 2mm; margin-bottom: 1mm;">
+     $$
+     \frac{\mathcal{N}}{\mathcal{D}_i^{q_i}\mathcal{D}_j^{q_j}\mathcal{D}_{\text{rest}}} \rightarrow \sum_{\kappa - q_j\leq m \leq q_i}\frac{\mathcal{N}_i}{\mathcal{D}_i^{m}\mathcal{D}_j^{\kappa - m}\mathcal{D}_{\text{rest}}}
+     $$
+</div><div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 2mm;">
+     $\qquad\star\,$ E.g. <span style="font-size: 14pt">$\Delta_{ij|kl|mn}^4, \langle i|k+l|j]^5$</span> are separable to order 5.
+</div>
+
+<div style="text-align: center; font-size: 18pt; margin-top: 3mm; margin-bottom: -2mm;">
+     ${\color{greeN} ✓}$ Reconstruction only required 50k <span style="font-size: 16pt">$\mathbb{F}_p$</span> samples $\;{\color{greeN} ✓}$Already simpler than original ones (<span style="font-size: 14pt">$\sim$</span>20MB) <br>
+     $\;{\color{red} ✗}$ Results are unstable and sub-optimal, e.g. numbers like this appeared
+</div>
+<span style="font-size: 14pt">127187555379407704220939486282289348327703498501718808908391691454242601886997968263623652083189652150273</span>
+
+---
+
+<div style="margin-top: 2mm; margin-bottom: 3mm">
+     <b style="font-variant: small-caps; font-size: 26pt"> $Vjj$ </b><b style="font-variant: small-caps; font-size: 32pt"> Example </b>
+</div>
+
+<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
+     $\circ\,$ Start from the function
+</div>
+<div style="font-size: 13pt; margin-top: 5mm; margin-bottom: 5mm">
+$$ 
+\displaystyle f^{\text{ex}} = \frac{\mathcal{N}^{\text{ex}}}{⟨14⟩^2[14]^2 s_{56} ⟨1|2+4|3]^2⟨2|1+4|3]^4⟨2|1+3|4]^2Δ_{14|23|56}^4}
+$$
+</div>
+<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
+     $\phantom{\circ}\,$  The numerator Ansatz has size 104$\,$128
+</div>
+
+<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
+     $\circ\,$ Clean up the <span style="font-size: 14pt">$Δ_{14|23|56}$</span> Gram residue
+</div>
+<div style="font-size: 13pt; margin-top: 5mm; margin-bottom: 5mm">
+$$ 
+\displaystyle f^{\text{ex}} = \frac{\mathcal{N}^{\text{ex}}_1}{⟨14⟩^2[14]^2s_{56}⟨2|1\!+\!4|3]^4Δ_{14|23|56}^4 \,} + \frac{\mathcal{N}^{\text{ex}}_2}{⟨14⟩^2[14]^2s_{56}⟨2|1+4|3]^4⟨1|2\!+\!4|3]^2⟨2|1\!+\!3|4]^2}
+$$
+</div>
+
+<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
+     $\circ\,$ Split <span style="font-size: 14pt">$s_{14}$</span> and impose symmetry
+</div>
+<div style="font-size: 13pt; margin-top: 5mm; margin-bottom: 5mm">
+$$ 
+\displaystyle f^{\text{ex}} =
+  \frac{\mathcal{N}^{\text{ex}}_{3}}{⟨14⟩^2 s_{56} ⟨2|1+4|3]^4Δ_{14|23|56}^4}
+  + \frac{\mathcal{N}^{\text{ex}}_{4}}{⟨14⟩^2 s_{56} ⟨1|2+4|3]^2⟨2|1+4|3]^4⟨2|1+3|4]^2} + (123456\rightarrow \overline{432165})
+$$
+</div>
+
+<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
+     $\circ\,$ Impose degree bound on poles at codimension two
+</div>
+<div style="font-size: 13pt; margin-top: 5mm; margin-bottom: 5mm">
+$$ 
+\displaystyle f^{\text{ex}} = 
+  \sum_{k=0}^3 \frac{\mathcal{N}^{\text{ex}}_{5,k}}{⟨14⟩^2 s_{56} ⟨2|1+4|3]^{1+k} Δ_{14|23|56}^{4-k}}
+    + \frac{\mathcal{N}^{\text{ex}}_6}{⟨14⟩^2 s_{56}⟨1|2+4|3]^2⟨2|1+4|3]^4⟨2|1+3|4]^2} + (123456\rightarrow \overline{432165})
+$$
+</div>
+
+<div style="text-align: center; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
+     The Ansatz now has size 13$\,$532, almost a factor of 10 simpler.
+</div>
+
+---
+
+<div style="margin-top: 2mm; margin-bottom: 3mm">
+     <b style="font-variant: small-caps; font-size: 32pt"> Multivariate Partial Fractions </b>
+</div>
+<a style="font-size: large; text-align: right; float: right; margin-top: -18mm; margin-bottom: -10mm;" href=https://arxiv.org/abs/1904.04067>
+   GDL, Maître ('19)
+</a>
+<a style="font-size: large; text-align: right; float: right; margin-top: -13mm; margin-bottom: -10mm;" href=https://arxiv.org/abs/2203.04269>
+   GDL, Page ('22)
+</a>
+
+<div style="text-align: left; font-size:16pt; margin-top: -2mm; margin-bottom: 0mm;">
+     $\circ$ We want a mathematically rigorous answer to the question
+</div>
+<div style="text-align: left; font-size: 13pt; margin-top: 2mm; margin-bottom: 1mm;">
+$$ 
+\frac{\mathcal{N}}{\mathcal{D}_1\mathcal{D}_2} \stackrel{?}{=}
+ \frac{\mathcal{N}_2}{\mathcal{D}_1} + \frac{\mathcal{N}_1}{\mathcal{D}_2} 
+$$
+</div>
+<div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
+     $\phantom{\circ}$ without knowing <span style="font-size: 15pt">$\mathcal{N}$</span> analytically. The complexity should not depend on <span style="font-size: 15pt">$\mathcal{N}$</span> (besided numerical evaluations). <br>
+     $\phantom{\circ}$ The complexity will depend on <span style="font-size: 15pt">$\mathcal{D}_1, \mathcal{D}_2$</span>
+</div>
+
+<div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
+     $\circ$ Multivariate partial fraction decompositions follow from varieties where pairs of denominator factors vanish
+</div>
+<div style="text-align: left; font-size: 13pt; margin-top: 2mm; margin-bottom: 1mm;">
+$$ 
+\frac{\mathcal{N}}{\mathcal{D}_1\mathcal{D}_2} \stackrel{?}{=}
+ \frac{\mathcal{N}_2}{\mathcal{D}_1} + \frac{\mathcal{N}_1}{\mathcal{D}_2} \; \Longleftrightarrow \; \mathcal{N} \stackrel{?}{\in} \big\langle \mathcal{D}_1, \mathcal{D}_2 \big\rangle \, \text{ i.e. } \; \mathcal{N} \stackrel{?}{=} \mathcal{N}_1 \mathcal{D}_1 + \mathcal{N}_2 \mathcal{D}_2
+$$
+</div>
+<div style="display: flex; margin-top:-6mm;">
+    <div style="flex: 1;">
+        <img src="V1.png" style="max-width:60%; height:auto;">
+        <!--
+        <div style="width:100%; font-size: 13pt; margin-top: -3mm; margin-bottom: 1mm;">
+          $\langle xy^2 + y^3 - z^2 \rangle$
+        </div>
+        -->
+    </div>
+    <div style="flex: 1; max-width:3%; margin-top:20mm;">
+        $\cap$
+    </div>
+    <div style="flex: 1;">
+        <img src="V2.png" style="max-width:60%; height:auto;">
+        <!--
+        <div style="width:100%; font-size: 13pt; margin-top: -3mm; margin-bottom: 1mm;">
+          $\langle x^3 + y^3 - z^2 \rangle$
+        </div>
+        -->
+    </div>
+    <div style="flex: 1; max-width:3%; margin-top:20mm;">
+        $=$
+    </div>
+    <div style="flex: 1;">
+        <img src="V3.png" style="max-width:53%; height:auto;">
+        <!--
+        <div style="width:120%; font-size: 14pt; margin-left:-10mm; margin-top: -3mm; margin-bottom: 1mm;">
+          $\begin{gather}\langle 2y^3-z^2, x-y \rangle \cap \langle y^3-z^2, x \rangle \cap \langle z^2, x+y \rangle\end{gather}$ 
+        </div>
+        -->
+    </div>
+</div>
+<div style="text-align: left; font-size: 13pt; margin-top: -4mm; margin-bottom: 1mm;">
+$$ 
+\langle xy^2 + y^3 - z^2 \rangle + \langle x^3 + y^3 - z^2 \rangle = \langle xy^2 + y^3 - z^2, x^3 + y^3 - z^2 \rangle = \langle 2y^3-z^2, x-y \rangle \cap \langle y^3-z^2, x \rangle \cap \langle z^2, x+y \rangle
+$$
+</div>
+<div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
+     $\phantom{\circ}$ This is a primary decomposition. If <span style="font-size: 14pt">$\mathcal{N}$</span> vanishes on all branches, than the partial fraction decomposition exists.
+
+---
+
+<div style="margin-top: 2mm; margin-bottom: 2mm">
+     <b style="font-variant: small-caps; font-size: 32pt"> Challenges </b>
+</div>
+
+<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
+$\circ\,$ Can we get an IBP reduction to work stably in singular limits with p-adics?
+</div>
+
+<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
+$\circ\,$ Alternatively, can we do the same with slicing over finite fields? Working on a bivariate slice approach.
+</div>
+
+<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
+$\circ\,$ Ideal intersection can be highly non-trivial (lcm product):
+</div>
+<div style="text-align: left; font-size: 13pt; margin-top: 0mm; margin-bottom: 1mm;">
+$$ 
+\mathcal{N} \in \langle q_1, q_2 \rangle \cap \langle q_3, q_4 \rangle \stackrel{?}{=} \langle q_1q_3, q_1q_4, q_2q_3, q_2 q_4\rangle 
+$$
+</div>
+<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
+$\phantom{\circ}\,$ Unfortunately not always. This is called a <i>complete intersection</i> when it holds.
+</div>
+
+<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
+$\circ\,$ Therefore, either: 
+</div>
+<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
+$\quad\star\,$ we compute the intersection explicitly (can be prohibitively hard)
+</div>
+<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
+$\quad\star\,$ or we have to make a choice of which constrain we manifest
+</div>
+<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
+$\phantom{\circ}\,$ Tentative solution with the bivariate slice approach.
+</div>
+
+<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
+$\circ\,$ Computing primary decompositions with these many variables is hard, Singular can't do it on its own.
+</div>
+<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
+$\phantom{\circ}\,$ Article with a Edinburgh masters' student (D. Tai) to appear.
+</div>
+
+<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
+$\circ\,$ Even constructing the ansatz requires a GBasis, which in some cases Singular doesn't easily give.
+</div>
+
+<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
+$\circ\,$ And of course computing the reduction to MIs of the amplitude is not easy in the first place.
+</div>
+
+---
+
+<div style="margin-top: 2mm; margin-bottom: 2mm">
+     <b style="font-variant: small-caps; font-size: 32pt"> mPFD from bivariate slice </b>
+</div>
+
+
+</section>
+
+---
+
+<section>
+
 {{< slide background-image="spinor_coeffs.png" >}}
 
 <br><br><br><br><br><br>
@@ -999,177 +1248,6 @@ $\circ\,$ Linear systems solved w/ CUDA over $\mathbb{F}_{2^{31}-1}$ ($t_{\text{
 
 ---
 
-<div style="margin-top: 2mm; margin-bottom: 3mm">
-     <b style="font-variant: small-caps; font-size: 32pt"> Reconstruction from Conjectured Properties </b>
-     <p style="margin-top: -2mm; margin-bottom: -=mm; font-size: 16pt;">
-     (for planar five-point one-mass amplitudes - all properties checked a posteriori)
-     </p>
-</div>
-
-<div style="text-align: left; font-size: 18pt; margin-top: 3mm; margin-bottom: 2mm;">
-     $\circ\,$ Denominator pairs <span style="font-size: 16pt">$\{\mathcal{D}_i, \mathcal{D}_j\}$</span> can be <i>cleanly separated</i>:
-</div>
-<div style="font-size:14pt; text-align: center; margin-top: 2mm; margin-bottom: 1mm;">
-     $$
-     \frac{\mathcal{N}}{\mathcal{D}_i^{q_i}\mathcal{D}_j^{q_j}\mathcal{D}_{\text{rest}}} \rightarrow \frac{\mathcal{N}_i}{\mathcal{D}_i^{q_i}\mathcal{D}_{\text{rest}}} + \frac{\mathcal{N}_j}{\mathcal{D}_j^{q_j}\mathcal{D}_{\text{rest}}}
-     $$
-</div>
-<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
-     $\phantom{\circ}\,$ Examples of <span style="font-size: 16pt">$\{\mathcal{D}_i, \mathcal{D}_j\}$</span> are:
-</div>
-<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 2mm;">
-     $\qquad\star\,$ Any pairs of <span style="font-size: 14pt">$s_{ijk}$</span> or <span style="font-size: 14pt">$\Delta_{ij|kl|mn}$</span> or <span style="font-size: 16pt">$\langle i|j|p_V|k|i]-\langle j|l|p_V|k|j]$</span> <br>
-     $\qquad\star\,$ Any conjugate pair <span style="font-size: 14pt">$\{\langle i|j+k|l], \langle l|j+k|i]\}$</span> or cyclic <span style="font-size: 14pt">$\{\langle i|j\rangle, [i|j]\}$</span> <br>
-     $\qquad\star\,$ Pairs of the form <span style="font-size: 14pt">$\{\Delta_{ij|kl|mn}, \langle c|a+b|d] \text{ or } \langle ab \rangle \text{ or } [ab] \}$</span> unless <span style="font-size: 14pt">$\{ab\}$</span> are <span style="font-size: 14pt">$\{ij\}$</span> or <span style="font-size: 14pt">$\{kl\}$</span> or <span style="font-size: 14pt">$\{mn\}$</span>
-</div>
-
-<div style="text-align: left; font-size: 18pt; margin-top: 4mm; margin-bottom: 2mm;">
-     $\circ\,$ Other denominator pairs <span style="font-size: 15pt">$\{\mathcal{D}_i, \mathcal{D}_j\}$</span> can be <i>separated to order $\kappa$</i> 
-</div>
-<div style="font-size:14pt; text-align: center; margin-top: 2mm; margin-bottom: 1mm;">
-     $$
-     \frac{\mathcal{N}}{\mathcal{D}_i^{q_i}\mathcal{D}_j^{q_j}\mathcal{D}_{\text{rest}}} \rightarrow \sum_{\kappa - q_j\leq m \leq q_i}\frac{\mathcal{N}_i}{\mathcal{D}_i^{m}\mathcal{D}_j^{\kappa - m}\mathcal{D}_{\text{rest}}}
-     $$
-</div><div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 2mm;">
-     $\qquad\star\,$ E.g. <span style="font-size: 14pt">$\Delta_{ij|kl|mn}^4, \langle i|k+l|j]^5$</span> are separable to order 5.
-</div>
-
-<div style="text-align: center; font-size: 18pt; margin-top: 3mm; margin-bottom: -2mm;">
-     ${\color{greeN} ✓}$ Reconstruction only required 50k <span style="font-size: 16pt">$\mathbb{F}_p$</span> samples $\;{\color{greeN} ✓}$Already simpler than original ones (<span style="font-size: 14pt">$\sim$</span>20MB) <br>
-     $\;{\color{red} ✗}$ Results are unstable and sub-optimal, e.g. numbers like this appeared
-</div>
-<span style="font-size: 14pt">127187555379407704220939486282289348327703498501718808908391691454242601886997968263623652083189652150273</span>
-
----
-
-<div style="margin-top: 2mm; margin-bottom: 3mm">
-     <b style="font-variant: small-caps; font-size: 26pt"> $Vjj$ </b><b style="font-variant: small-caps; font-size: 32pt"> Example </b>
-</div>
-
-<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
-     $\circ\,$ Start from the function
-</div>
-<div style="font-size: 13pt; margin-top: 5mm; margin-bottom: 5mm">
-$$ 
-\displaystyle f^{\text{ex}} = \frac{\mathcal{N}^{\text{ex}}}{⟨14⟩^2[14]^2 s_{56} ⟨1|2+4|3]^2⟨2|1+4|3]^4⟨2|1+3|4]^2Δ_{14|23|56}^4}
-$$
-</div>
-<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
-     $\phantom{\circ}\,$  The numerator Ansatz has size 104$\,$128
-</div>
-
-<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
-     $\circ\,$ Clean up the <span style="font-size: 14pt">$Δ_{14|23|56}$</span> Gram residue
-</div>
-<div style="font-size: 13pt; margin-top: 5mm; margin-bottom: 5mm">
-$$ 
-\displaystyle f^{\text{ex}} = \frac{\mathcal{N}^{\text{ex}}_1}{⟨14⟩^2[14]^2s_{56}⟨2|1\!+\!4|3]^4Δ_{14|23|56}^4 \,} + \frac{\mathcal{N}^{\text{ex}}_2}{⟨14⟩^2[14]^2s_{56}⟨2|1+4|3]^4⟨1|2\!+\!4|3]^2⟨2|1\!+\!3|4]^2}
-$$
-</div>
-
-<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
-     $\circ\,$ Split <span style="font-size: 14pt">$s_{14}$</span> and impose symmetry
-</div>
-<div style="font-size: 13pt; margin-top: 5mm; margin-bottom: 5mm">
-$$ 
-\displaystyle f^{\text{ex}} =
-  \frac{\mathcal{N}^{\text{ex}}_{3}}{⟨14⟩^2 s_{56} ⟨2|1+4|3]^4Δ_{14|23|56}^4}
-  + \frac{\mathcal{N}^{\text{ex}}_{4}}{⟨14⟩^2 s_{56} ⟨1|2+4|3]^2⟨2|1+4|3]^4⟨2|1+3|4]^2} + (123456\rightarrow \overline{432165})
-$$
-</div>
-
-<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
-     $\circ\,$ Impose degree bound on poles at codimension two
-</div>
-<div style="font-size: 13pt; margin-top: 5mm; margin-bottom: 5mm">
-$$ 
-\displaystyle f^{\text{ex}} = 
-  \sum_{k=0}^3 \frac{\mathcal{N}^{\text{ex}}_{5,k}}{⟨14⟩^2 s_{56} ⟨2|1+4|3]^{1+k} Δ_{14|23|56}^{4-k}}
-    + \frac{\mathcal{N}^{\text{ex}}_6}{⟨14⟩^2 s_{56}⟨1|2+4|3]^2⟨2|1+4|3]^4⟨2|1+3|4]^2} + (123456\rightarrow \overline{432165})
-$$
-</div>
-
-<div style="text-align: center; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
-     The Ansatz now has size 13$\,$532, almost a factor of 10 simpler.
-</div>
-
----
-
-<div style="margin-top: 2mm; margin-bottom: 3mm">
-     <b style="font-variant: small-caps; font-size: 32pt"> Multivariate Partial Fractions </b>
-</div>
-<a style="font-size: large; text-align: right; float: right; margin-top: -18mm; margin-bottom: -10mm;" href=https://arxiv.org/abs/1904.04067>
-   GDL, Maître ('19)
-</a>
-<a style="font-size: large; text-align: right; float: right; margin-top: -13mm; margin-bottom: -10mm;" href=https://arxiv.org/abs/2203.04269>
-   GDL, Page ('22)
-</a>
-
-<div style="text-align: left; font-size:16pt; margin-top: -2mm; margin-bottom: 0mm;">
-     $\circ$ We want a mathematically rigorous answer to the question
-</div>
-<div style="text-align: left; font-size: 13pt; margin-top: 2mm; margin-bottom: 1mm;">
-$$ 
-\frac{\mathcal{N}}{\mathcal{D}_1\mathcal{D}_2} \stackrel{?}{=}
- \frac{\mathcal{N}_2}{\mathcal{D}_1} + \frac{\mathcal{N}_1}{\mathcal{D}_2} 
-$$
-</div>
-<div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
-     $\phantom{\circ}$ without knowing <span style="font-size: 15pt">$\mathcal{N}$</span> analytically. The complexity should not depend on <span style="font-size: 15pt">$\mathcal{N}$</span> (besided numerical evaluations). <br>
-     $\phantom{\circ}$ The complexity will depend on <span style="font-size: 15pt">$\mathcal{D}_1, \mathcal{D}_2$</span>
-</div>
-
-<div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
-     $\circ$ Multivariate partial fraction decompositions follow from varieties where pairs of denominator factors vanish
-</div>
-<div style="text-align: left; font-size: 13pt; margin-top: 2mm; margin-bottom: 1mm;">
-$$ 
-\frac{\mathcal{N}}{\mathcal{D}_1\mathcal{D}_2} \stackrel{?}{=}
- \frac{\mathcal{N}_2}{\mathcal{D}_1} + \frac{\mathcal{N}_1}{\mathcal{D}_2} \; \Longleftrightarrow \; \mathcal{N} \stackrel{?}{\in} \big\langle \mathcal{D}_1, \mathcal{D}_2 \big\rangle \, \text{ i.e. } \; \mathcal{N} \stackrel{?}{=} \mathcal{N}_1 \mathcal{D}_1 + \mathcal{N}_2 \mathcal{D}_2
-$$
-</div>
-<div style="display: flex; margin-top:-6mm;">
-    <div style="flex: 1;">
-        <img src="V1.png" style="max-width:60%; height:auto;">
-        <!--
-        <div style="width:100%; font-size: 13pt; margin-top: -3mm; margin-bottom: 1mm;">
-          $\langle xy^2 + y^3 - z^2 \rangle$
-        </div>
-        -->
-    </div>
-    <div style="flex: 1; max-width:3%; margin-top:20mm;">
-        $\cap$
-    </div>
-    <div style="flex: 1;">
-        <img src="V2.png" style="max-width:60%; height:auto;">
-        <!--
-        <div style="width:100%; font-size: 13pt; margin-top: -3mm; margin-bottom: 1mm;">
-          $\langle x^3 + y^3 - z^2 \rangle$
-        </div>
-        -->
-    </div>
-    <div style="flex: 1; max-width:3%; margin-top:20mm;">
-        $=$
-    </div>
-    <div style="flex: 1;">
-        <img src="V3.png" style="max-width:53%; height:auto;">
-        <!--
-        <div style="width:120%; font-size: 14pt; margin-left:-10mm; margin-top: -3mm; margin-bottom: 1mm;">
-          $\begin{gather}\langle 2y^3-z^2, x-y \rangle \cap \langle y^3-z^2, x \rangle \cap \langle z^2, x+y \rangle\end{gather}$ 
-        </div>
-        -->
-    </div>
-</div>
-<div style="text-align: left; font-size: 13pt; margin-top: -4mm; margin-bottom: 1mm;">
-$$ 
-\langle xy^2 + y^3 - z^2 \rangle + \langle x^3 + y^3 - z^2 \rangle = \langle xy^2 + y^3 - z^2, x^3 + y^3 - z^2 \rangle = \langle 2y^3-z^2, x-y \rangle \cap \langle y^3-z^2, x \rangle \cap \langle z^2, x+y \rangle
-$$
-</div>
-<div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
-     $\phantom{\circ}$ This is a primary decomposition. If <span style="font-size: 14pt">$\mathcal{N}$</span> vanishes on all branches, than the partial fraction decomposition exists.
-
----
-
 <div style="margin-top: 2mm; margin-bottom: -2mm">
      <b style="font-variant: small-caps; font-size: 32pt"> Iterated Pole Subtraction </b>
      <p style="margin-top: -2mm; margin-bottom: -=mm; font-size: 16pt;">
@@ -1312,60 +1390,6 @@ $$
 $$ 
 \hat d^{++}_{12\times 3 \times 4} = \frac{\mathcal{N} \leftarrow 112 \text{ free parameters }}{⟨12⟩²⟨1|𝟓|𝟒|𝟑|2]} + \mathcal{O}(⟨1|𝟓|𝟒|𝟑|2]^0)
 $$
-</div>
-
----
-
-<div style="margin-top: 2mm; margin-bottom: 2mm">
-     <b style="font-variant: small-caps; font-size: 32pt"> Challenges </b>
-</div>
-
-<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
-$\circ\,$ Can we get an IBP reduction to work stably in singular limits with p-adics?
-</div>
-
-<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
-$\circ\,$ Alternatively, can we do the same with slicing over finite fields? Working on a bivariate slice approach.
-</div>
-
-<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
-$\circ\,$ Ideal intersection can be highly non-trivial (lcm product):
-</div>
-<div style="text-align: left; font-size: 13pt; margin-top: 0mm; margin-bottom: 1mm;">
-$$ 
-\mathcal{N} \in \langle q_1, q_2 \rangle \cap \langle q_3, q_4 \rangle \stackrel{?}{=} \langle q_1q_3, q_1q_4, q_2q_3, q_2 q_4\rangle 
-$$
-</div>
-<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
-$\phantom{\circ}\,$ Unfortunately not always. This is called a <i>complete intersection</i> when it holds.
-</div>
-
-<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
-$\circ\,$ Therefore, either: 
-</div>
-<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
-$\quad\star\,$ we compute the intersection explicitly (can be prohibitively hard)
-</div>
-<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
-$\quad\star\,$ or we have to make a choice of which constrain we manifest
-</div>
-<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
-$\phantom{\circ}\,$ Tentative solution with the bivariate slice approach.
-</div>
-
-<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
-$\circ\,$ Computing primary decompositions with these many variables is hard, Singular can't do it on its own.
-</div>
-<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
-$\phantom{\circ}\,$ Article with a Edinburgh masters' student (D. Tai) to appear.
-</div>
-
-<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
-$\circ\,$ Even constructing the ansatz requires a GBasis, which in some cases Singular doesn't easily give.
-</div>
-
-<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
-$\circ\,$ And of course computing the reduction to MIs of the amplitude is not easy in the first place.
 </div>
 
 ---
