@@ -28,11 +28,11 @@ Giuseppe De Laurentis
 <br>
 <div style="font-size: large;"> University of Edinburgh </div>
 <br>
-<span style="font-size: 14pt;">$pp\rightarrow Hjj$</span>: <a href="https://arxiv.org/abs/2605.04009 ">arXiv:2605.04009 </a> 
+<span style="font-size: 15pt;">$pp\rightarrow Hjj$</span>: <a href="https://arxiv.org/abs/2605.04009 ">arXiv:2605.04009 </a> 
 <div style="font-size: 15pt; margin-bottom:5mm;"> with H. Ita, V. Kuschke, M. Ruf, and V. Sotnikov </div>
-<span style="font-size: 14pt;">$pp\rightarrow Vjj$</span>: <a href="https://arxiv.org/abs/2503.10595">arXiv:2503.10595</a> / <a href="https://doi.org/10.1007/JHEP06(2025)093">JHEP06(2025)093</a> 
+<span style="font-size: 15pt;">$pp\rightarrow Vjj$</span>: <a href="https://arxiv.org/abs/2503.10595">arXiv:2503.10595</a> / <a href="https://doi.org/10.1007/JHEP06(2025)093">JHEP06(2025)093</a> 
 <div style="font-size: 15pt;"> with H. Ita, B. Page and V. Sotnikov </div>
-<span style="font-size: 16pt;">Massive spinor-helicity</span>: <a href="https://arxiv.org/abs/2603.10269">arXiv:2603.10269</a>  
+<span style="font-size: 16pt;">Massive spinor-helicity</span>: <a href="https://arxiv.org/abs/2603.10269">arXiv:2603.10269</a> <span style="font-size: 16pt;">/ Accepted in JHEP</span>
 <div style="font-size: large;">with K. Melnikov, M. Tresoldi </div>
 
 
@@ -41,6 +41,16 @@ University of Bologna - Workshop Talk
 <br><br><br>
 <span style="font-size: 11pt; margin-top: 10mm;">Find these slides at  <a href="/slides//bolognamay2026/#/">gdelaurentis.github.io/slides/bolognamay2026</a> </span>
 </div>
+
+---
+
+<section>
+
+{{< slide background-image="LHCcern.jpg" >}}
+
+# Introduction
+
+</section>
 
 ---
 
@@ -55,7 +65,7 @@ University of Bologna - Workshop Talk
 <b style="font-variant: small-caps; font-size: xxx-large"> Partial Amplitudes & Finite Remainders </b>
  
 <div style="font-size: 18pt; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     $\circ$ Amplitude (integrands) can be written as (for a suitable choice of master integrals)
+     $\circ$ Amplitude (integrands) can be written (for a suitable choice of master integrals) as 
 </div>
 <br>
 <div style="font-size: 14.5pt; margin-top: -4mm; margin-bottom: -8mm">
@@ -133,67 +143,71 @@ $\mathbb{Q}_p$: GDL, Page ('22)
 
 <section>
 
-{{< slide background-image="varieties-no-background.png" >}}
+{{< slide background-image="one-ring-white.jpg" >}}
 
 <br><br><br><br>
 
-# Choosing the variables
+# Variable Rings
 
-<br><br><br>
+<span style="font-size: 15pt;">(not Elvish)</span>
+
+<br><br>
 
 <span style="font-size: 18pt">based on work with Ben Page in:<span> <br>
 <span style="font-size: 17pt">[arXiv:2203.04269](https://arxiv.org/abs/2203.04269)<span>
-<span style="font-size: 17pt">[(JHEP 12 (2022) 140)](https://arxiv.org/abs/2203.04269)<span>
+<span style="font-size: 17pt">[(JHEP 12 (2022) 140)](https://link.springer.com/article/10.1007/JHEP12(2022)140)<span>
 
 <span style="font-size: 18pt">see also Sturmfeld et al. "Spinor-Helicity Varieties":<span> <br>
 <span style="font-size: 17pt">[arXiv:2406.17331](https://arxiv.org/abs/2406.17331)<span>
+<span style="font-size: 17pt">[(SIAM 24M1671840)](https://epubs.siam.org/doi/10.1137/24M1671840)<span>
 
 ---
 
 <b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Polynomials Modulo Constraints </b>
 
 <div style="font-size: 17pt; text-align: left; margin-bottom: 2mm; margin-top: -2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Manifesting amplitude's gauge and Lorentz invariance, and spin and little-group covariance requires
+     $\circ$ Manifesting amplitude's gauge and Lorentz invariance, and little-group and spin covariance requires
      <div style="font-size: 17pt; text-align: center; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
           <u>variables subject to constraints</u>.
      </div>
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Consider polynomials <span style="font-size: 14pt;">$f, g, h$</span> in two variables <span style="font-size: 14pt;">$x, y$</span>. They live in a <b>polynomial ring</b>:
+     $\circ$ Consider polynomials <span style="font-size: 15pt;">$f, g, h$</span> in two variables <span style="font-size: 15pt;">$x, y$</span>. They live in a <b>polynomial ring</b>:
 </div>
 <div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
 $$ 
-\displaystyle f(x,y), g(x, y), h(x, y) \in \mathbb{Q}[x, y] \, .
+\displaystyle f(x,y), g(x, y), h(x, y) \in \mathbb{Q}[x, y] \, \quad (\text{or more generally} \; \mathbb{F}[x, y]).
 $$
 </div>
 
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Now, localize them, e.g. on the unit circle <span style="font-size: 14pt;">$(x^2+y^2-1)$</span>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ Now, localize them, e.g. on the unit circle <span style="font-size: 15pt;">$(x^2+y^2-1)$</span>
 </div>
-<div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
+<div style="font-size: 16pt; margin-top: 3mm; margin-bottom: 3mm">
 $$ 
 \displaystyle f(x,y) \approx g(x, y) + h(x, y) (x^2+y^2-1) \, ,
 $$
 </div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}$ we should consider <span style="font-size: 14pt;">$f(x,y)$</span> and <span style="font-size: 14pt;">$g(x, y)$</span> as equivalent, for any <span style="font-size: 14pt;">$h(x,y)$</span>.
+     $\phantom{\circ}$ we should consider <span style="font-size: 15pt;">$f(x,y)$</span> and <span style="font-size: 15pt;">$g(x, y)$</span> as equivalent, for any <span style="font-size: 15pt;">$h(x,y)$</span>.
 </div>
 
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
      $\circ$ The structure is that of a polynomial <b>quotient</b> ring
 </div>
-<div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
+<div style="font-size: 16pt; margin-top: 4mm; margin-bottom: 2mm;">
 $$ 
-\displaystyle \mathbb{Q}[x, y] \big/ \big\langle x^2+y^2-1 \big\rangle \\[2mm]
+\displaystyle \mathbb{Q}[x, y] \big/ \big\langle x^2+y^2-1 \big\rangle
 $$
 </div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
      $\phantom{\circ}$ its elements are <b>equivalence classes</b> of polynomials.
 </div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ <span style="font-size: 14pt;">$\big\langle x^2+y^2-1 \big\rangle \subset \mathbb{Q}[x, y]$</span> is an example of an <b>ideal</b>, the infinite set of polynomials <br> 
-     $\phantom{\circ}$ <span style="font-size: 14pt;">$h(x, y) (x^2+y^2-1)$</span> that vanishes on the unit circle.
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ <span style="font-size: 14pt;">$\big\langle q_1(\underline X), \dots, q_m(\underline X) \big\rangle \subseteq \mathbb{Q}[\underline X]$</span> is an <b>ideal</b>, the infinite set of polynomials <span style="font-size: 14pt;">$r_1(\underline X) q_1(\underline X) + \dots + r_m(\underline X) q_m(\underline X)$</span> <br> 
+     $\phantom{\circ}$ In this example, the set of polynomils <span style="font-size: 15pt;">$h(x, y) (x^2+y^2-1)$</span> that vanish on the unit circle.
 </div>
 
 
@@ -202,7 +216,11 @@ $$
 <b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> Massless Scattering </b>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: -2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ For <span style="font-size: 14pt;">$n$</span>-point massless scattering, the quotient ring is
+     $\circ$ We have two sources of redundancies: kinematic constraints & Schouten/Gram identities.
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ For <span style="font-size: 16pt;">$n$</span>-point massless scattering, the quotient ring is
 </div>
 <div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
 $$ 
@@ -211,7 +229,7 @@ $$
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ The "unit circle" is now the codimension <span style="font-size: 14pt;">$4$</span> "momentum conservation" <b>variety</b> within a <span style="font-size: 14pt;">$4n$</span> <br> $\phantom{\circ}$ dimensional space. On this variety we have equivalence relations such as 
+     $\circ$ The "unit circle" is now the codimension <span style="font-size: 16pt;">$4$</span> "momentum conservation" <b>variety</b> within a <span style="font-size: 16pt;">$4n$</span> <br> $\phantom{\circ}$ dimensional space. On this variety we have equivalence relations such as 
 </div>
 <div style="font-size:16pt; text-align: center; margin-top: 2mm; margin-bottom: 2mm">
      $$
@@ -238,47 +256,30 @@ $$
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Choosing the Appropriate Covariant Q-Ring </b>
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Simple Massive Scattering </b>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 6mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ For <span style="font-size: 15pt;">$pp \rightarrow V(\rightarrow \bar\ell\ell)jj$</span> the space is simpler than that of say <span style="font-size: 15pt;">$pp \rightarrow jjjj$</span>, we don't want to use <span style="font-size: 15pt;">$R_6$</span>. <br>
-     $\phantom{\circ}$ Take the decay current to be <span style="font-size: 15pt;">$[5|\gamma^\mu|6\rangle$</span>, and remove <span style="font-size: 15pt;">$p_{V\alpha\dot\alpha}=(5+6)_{\alpha\dot\alpha}$</span> by mom. cons.
+     $\circ$ With a <b>single massive leg</b>, e.g. <span style="font-size: 16pt;">$pp \rightarrow V(\rightarrow \bar\ell\ell)jj$</span>, we can refer back to massless scattering (<span style="font-size: 15pt;">$R_6$</span>), <br>
+     $\phantom{\circ}$ eliminate <span style="font-size: 15pt;">$p_{V\alpha\dot\alpha}=(5+6)_{\alpha\dot\alpha}$</span> by mom. conservation and take the decay current to be <span style="font-size: 16pt;">$[5|\gamma^\mu|6\rangle$</span> 
 </div>
-<div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
+<div style="font-size: 16pt; margin-top: 3mm; margin-bottom: 3mm">
 $$ 
 \displaystyle \kern10mm R_{V(\rightarrow\ell\ell')jj} = \mathbb{F}\big[|1⟩_{\alpha}, [1|_{\dot\alpha}, |2⟩_{\alpha}, [2|_{\dot\alpha}, |3⟩_{\alpha}, [3|_{\dot\alpha},  |4⟩_{\alpha}, [4|_{\dot\alpha}, [5|_{\dot\alpha}, |6⟩_{\alpha} \big] \Big/ \big\langle {\textstyle \sum_{i=1}^4} [5|i]\langle i |6\rangle \big\rangle
 $$
 </div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}$ This always holds for the numerator polynomials, and almost always for the denomiantors. <br>
-     $\phantom{\circ}$ A denominator does not belong to <span style="font-size: 15pt;">$R_{Vjj}$</span> if one manifests <span style="font-size: 15pt;">$s_{56}=\langle 56\rangle [65]$</span>, <br> 
-     $\phantom{\circ}$ which we show can always be partial fractioned (the physical pole is <span style="font-size: 15pt;">$\sqrt{s_{56}}$</span>).
+     $\phantom{\circ}$ Assuming we don't partial fraction <span style="font-size: 15pt;">$s_{1234} = s_{56}=\langle 56\rangle [65]$</span>
+     to manifest the physical pole <span style="font-size: 15pt;">$\sqrt{s_{56}}$</span>. <br>
+     $\phantom{\circ}$ This does <b>not</b> work for multiple massive legs, due to <span style="font-size: 15pt;">$p_{V_1} \cdot p_{V_2}$</span> d.o.f.
 </div>
+<a href="https://arxiv.org/abs/arXiv:2503.10595" style="font-size: 14pt; margin-bottom: -6mm; margin-top: -8mm; float: right; font-align: right;"> GDL, Ita, Page, Sotnikov </a>
 
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 10mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ This approach does not generalise to cases with multiple massive legs, due to <span style="font-size: 15pt;">$p_{V_1} \cdot p_{V_2}$</span>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 0mm; margin-top: 12mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ For <span style="font-size: 16pt;">$pp \rightarrow HHH$</span> we use the massive spinor-helicity (or spin-spinor) formalism, <br>
+     $\phantom{\circ}$ albeit in a very simplified form since scalars have <b>no states</b>.
 </div>
-<div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
-$$ 
-\displaystyle p_V = |\boldsymbol q^I\rangle [\boldsymbol q_I| =  |\boldsymbol q^1\rangle [\boldsymbol q_1| +  |\boldsymbol q^2\rangle [\boldsymbol q_2| =  |5\rangle [5| + |6\rangle [6|
-$$
-</div>
-<div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
-$$ 
-\displaystyle \kern10mm R_{V(\rightarrow\ell\ell')jj} = \mathbb{F}\big[|1⟩_{\alpha}, [1|_{\dot\alpha}, |2⟩_{\alpha}, [2|_{\dot\alpha}, |3⟩_{\alpha}, [3|_{\dot\alpha},  |4⟩_{\alpha}, [4|_{\dot\alpha}, |\boldsymbol 5⟩^J_{\alpha}, [\boldsymbol 5|^I_{\dot\alpha} \big] \Big/ \Big\langle {\textstyle \sum_{i=1}^4} |i]\langle i | + |\boldsymbol 5⟩^I_{\alpha}[\boldsymbol 5|_{I,\dot\alpha}  \Big\rangle
-$$
-</div>
-
----
-
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Covariant Q-Ring for Massive Processes </b>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 0mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ For <span style="font-size: 15pt;">$pp \rightarrow HHH$</span> we use the massive spinor-helicity (or spin-spinor) formalism, <br>
-     $\phantom{\circ}$ albeit in a very simplified form since scalars have no states.
-</div>
-<a href="https://arxiv.org/abs/1809.09644" style="font-size: 14pt; margin-bottom: -6mm; margin-top: -5mm; float: right; font-align: right;"> Shadmi, Weiss </a> <a href="https://arxiv.org/abs/1802.06730" style="font-size: 14pt; margin-bottom: -6mm; margin-top: -5mm;  margin-right: 31mm; float: right; font-align: right;"> Ochirov; </a>
-<a href="https://arxiv.org/abs/1709.04891" style="font-size: 14pt; margin-bottom: -10mm; margin-top: -11mm; margin-right: 0mm; float: right; font-align: right;"> Arkani-Hamed, Huang, Huang;</a>
+<a href="https://arxiv.org/abs/1809.09644" style="font-size: 14pt; margin-bottom: -6mm; margin-top: -2mm; float: right; font-align: right;"> Shadmi, Weiss </a> <a href="https://arxiv.org/abs/1802.06730" style="font-size: 14pt; margin-bottom: -6mm; margin-top: -2mm;  margin-right: 31mm; float: right; font-align: right;"> Ochirov; </a>
+<a href="https://arxiv.org/abs/1709.04891" style="font-size: 14pt; margin-bottom: -10mm; margin-top: -8mm; margin-right: 0mm; float: right; font-align: right;"> Arkani-Hamed, Huang, Huang;</a>
 
 <div style="font-size: 15pt; margin-top: 6mm; margin-bottom: 5mm">
 $$ 
@@ -288,11 +289,41 @@ $$
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
      $\phantom{\circ}$ where <span style="font-size: 15pt;">$\boldsymbol{3}_{\alpha,\dot\alpha} \boldsymbol{3}^{\dot\alpha,\alpha} = \boldsymbol{4}_{\alpha,\dot\alpha} \boldsymbol{4}^{\dot\alpha,\alpha} = \boldsymbol{5}_{\alpha,\dot\alpha} \boldsymbol{5}^{\dot\alpha,\alpha} = 2 M_h^2$</span>; <span style="font-size: 15pt;">$\boldsymbol{3}_{\alpha,\dot\alpha},\boldsymbol{4}_{\alpha,\dot\alpha},\boldsymbol{5}_{\alpha,\dot\alpha}$</span> are full-rank (unfactorizable).
 </div>
+<a href="https://arxiv.org/abs/arXiv:2507.19313" style="font-size: 14pt; margin-bottom: -6mm; margin-top: -2mm; float: right; font-align: right;"> Campbell, GDL, Ellis </a>
+
+
+---
+
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Covariant Q-Rings for Massive Processes </b>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ While <span style="font-size: 15pt;">$pp \rightarrow ttH$</span> exposes the full complexity, including massive states
+     $\circ$ Let's revisit <span style="font-size: 16pt;">$pp \rightarrow Vjj$</span>, <b>including states</b> in the massive (or spin-spinor) formalism
+</div>
+<div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
+$$ 
+\displaystyle \kern10mm R_{Vjj} = \mathbb{F}\big[|1⟩_{\alpha}, [1|_{\dot\alpha}, |2⟩_{\alpha}, [2|_{\dot\alpha}, |3⟩_{\alpha}, [3|_{\dot\alpha},  |4⟩_{\alpha}, [4|_{\dot\alpha}, |\boldsymbol 5⟩^J_{\alpha}, [\boldsymbol 5|^I_{\dot\alpha} \big] \Big/ \Big\langle {\textstyle \sum_{i=1}^4} |i]\langle i | + |\boldsymbol 5⟩^I_{\alpha}[\boldsymbol 5|_{I,\dot\alpha}  \Big\rangle
+$$
+</div>
+<a href="https://arxiv.org/abs/arXiv:2603.10269" style="font-size: 14pt; margin-bottom: -6mm; margin-top: -2mm; float: right; font-align: right;"> GDL, Melnikov, Tresoldi </a>
+<div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
+$$ 
+ \displaystyle \text{with} \qquad p_V = |\boldsymbol q^I\rangle [\boldsymbol q_I| =  |\boldsymbol q^1\rangle [\boldsymbol q_1| +  |\boldsymbol q^2\rangle [\boldsymbol q_2| =  |5\rangle [5| + |6\rangle [6|
+$$
+</div>
+<div style="font-size: 15pt; margin-top: 3mm; margin-bottom: 3mm">
+$$ 
+\displaystyle \varepsilon^{\mu,IJ}_{\boldsymbol 5} = \frac{1}{\sqrt{2}m}[\boldsymbol 5^I|\gamma^\mu|\boldsymbol 5^J\rangle \quad \text{and} \quad \varepsilon^{-} \propto \varepsilon^{11}, \; \varepsilon^{L} \propto \varepsilon^{21} + \varepsilon^{12}, \; \varepsilon^{+} \propto \varepsilon^{22} \quad \text{physical}
+$$
+</div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 0mm; margin-right: 0mm;">
+     <i><b>Discussion</b></i>: <span style="font-size: 15pt;">$\mathcal{A}(1_{\bar q}^{h_1},\,2_g^{h_2},\,3_g^{h_3}\,4_q^{h_4},{\boldsymbol 5}_V^{\pm,L}) = (T^{a_2}T^{a_3})_{i_4}^{\;\bar i_1} A^{IJ}(\dots)\,$</span> has 3 indep. d.o.f.: <span style="font-size: 14pt;">$(+++-, ++--, +-+-)$</span>
 </div>
 
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 8mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ While <span style="font-size: 15pt;">$pp \rightarrow ttH$</span> exposes the <b>full complexity</b>, with multiple massive states
+</div>
+<a href="https://arxiv.org/abs/arXiv:2504.19909" style="font-size: 14pt; margin-bottom: -6mm; margin-top: -6mm; float: right; font-align: right;"> Campbell, GDL, Ellis </a>
 <div style="font-size: 15pt; margin-top: 4mm; margin-bottom: 5mm">
 $$ 
 \displaystyle \kern10mm R_{ttH} = \frac{\mathbb{F}\big[|1⟩_{\alpha}, [1|_{\dot\alpha}, |2⟩_{\alpha}, [2|_{\dot\alpha}, |\boldsymbol{3}^I⟩_{\alpha}, [\boldsymbol{3}^I|_{\dot\alpha}, |\boldsymbol{4}_J⟩_{\alpha}, [\boldsymbol{4}_J|_{\dot\alpha}, \boldsymbol{5}_{\alpha\dot\alpha} \big]}{\big\langle \sum_{i,I,J} |i\rangle[i|, \langle \boldsymbol{3}|\boldsymbol{3}⟩ +[\boldsymbol{3}|\boldsymbol{3}], \langle \boldsymbol{3}|\boldsymbol{3}⟩-\langle \boldsymbol{4}|\boldsymbol{4}⟩, \langle \boldsymbol{4}|\boldsymbol{4}⟩ +[\boldsymbol{4}|\boldsymbol{4}]\big\rangle}
@@ -302,18 +333,15 @@ $$
      $\phantom{\circ}$ where <span style="font-size: 15pt;">$\langle \boldsymbol{3}^I|\boldsymbol{3}^J⟩=m\epsilon^{JI} \text{ and } [\boldsymbol{3}^I|\boldsymbol{3}^J]=\bar{m}\epsilon^{IJ}$</span>; we are setting <span style="font-size: 15pt;">$m=\bar{m}$</span> and the tops on-shell.
 </div>
 
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 6mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ It is sometimes useful to map to a set of all massless momenta / spinors (e.g. recycle code),
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 8mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ <b>!Overparametrisation Warning!</b> Remember the map to massless case,
 </div>
-<a href="https://arxiv.org/abs/1601.08113" style="font-size: 14pt; margin-top: -3mm; margin-right: 2mm; float: right; font-align: right;"> Conde, Marzolla</a>
-<a href="https://arxiv.org/abs/1605.07402" style="font-size: 14pt; margin-top: -3mm; margin-right: 2mm; float: right; font-align: right;"> Conde, Joung, Mkrtchyan;</a>
-<div style="font-size: 15pt; margin-top: 8mm; margin-bottom: 5mm">
+<a href="https://arxiv.org/abs/1601.08113" style="font-size: 14pt; margin-top: -8mm; margin-right: 2mm; float: right; font-align: right;"> Conde, Marzolla;</a>
+<a href="https://arxiv.org/abs/1605.07402" style="font-size: 14pt; margin-top: -3mm; margin-right: 2mm; float: right; font-align: right;"> Conde, Joung, Mkrtchyan</a>
+<div style="font-size: 16pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
 $$ 
 \displaystyle 1 \rightarrow 1, 2 \rightarrow 2, \boldsymbol{3} \rightarrow 3+4, \boldsymbol{4} \rightarrow 5+6, \boldsymbol{5} \rightarrow 7+8
 $$
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: -2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}$ but if we want neat expressions we must be careful not to overparametrise the space!
 </div>
 
 ---
@@ -328,7 +356,7 @@ $$
 </div>
 <div style="font-size: 15pt; margin-top: 0mm; margin-bottom: 3mm">
 $$ 
-{A}_g^{(0)}(1^{+}_\bar{q}, 2^{+}_g, 3^{+}_g, 4^{-}_q, 5^{+}_\bar{\ell}, 6^{-}_\ell) = \frac{⟨46⟩^2}{⟨12⟩⟨23⟩⟨34⟩⟨65⟩} \, , \\[6mm]
+{A}_g^{(0)}(1^{+}_\bar{q}, 2^{+}_g, 3^{+}_g, 4^{-}_q, 5^{+}_\bar{\ell}, 6^{-}_\ell) = \frac{⟨46⟩^2}{⟨12⟩⟨23⟩⟨34⟩⟨65⟩} \, \Rightarrow {A}_g^{(0),{IJ}}(1^{+}_\bar{q}, 2^{+}_g, 3^{+}_g, 4^{-}_q, {\boldsymbol 5}) = \frac{⟨4|\boldsymbol 5|\boldsymbol 5^I]⟨\boldsymbol 5^J 4⟩}{⟨12⟩⟨23⟩⟨34⟩s_{\boldsymbol 5}}  , \\[6mm]
 {A}_g^{(0)}(1^{+}_\bar{q}, 2^{+}_g, 3^{-}_g, 4^{-}_q, 5^{+}_\bar{\ell}, 6^{-}_\ell) = \frac{⟨13⟩⟨3|1+2|5]^2}{⟨12⟩⟨23⟩[65]⟨1|2+3|4]s_{123}} \; + \; (123456\rightarrow \overline{432165}) \, , \\[6mm]
 {A}_q^{(0)}(1^{+}_\bar{q}, 2^{+}_{q'}, 3^{+}_{\bar{q}'}, 4^{-}_q, 5^{+}_\bar{\ell}, 6^{-}_\ell) = -\frac{[12]⟨46⟩⟨3|1+2|5]}{⟨23⟩[23]⟨56⟩[56]s_{123}}+(123456\rightarrow 156423)\phantom{+}
 $$
@@ -349,7 +377,7 @@ $$
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
      $\phantom{\circ}$ <u>Note</u>: The amplitude is <b>spin covariant</b>, just like it is little group covariant! <br>
-     $\phantom{\circ} \kern7.2mm$ We need only obtain a single choice, say <span style="font-size: 15pt;">$I=J=1$</span>, the other follows. 
+     $\phantom{\circ} \kern15.8mm$ We need only obtain a single choice, say <span style="font-size: 15pt;">$I=J=1$</span>, the other follows. 
 </div>
 
 ---
@@ -419,7 +447,7 @@ From work in progress with S. Abreu, X. Liu, P.F. Monni
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> What do do with square roots? </b>
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> What to do with square roots? </b>
 
 <div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2          mm;">
      $\circ$ The transcendental basis is pure up to some square roots
@@ -430,14 +458,14 @@ $$
 $$
 </div>
 <div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2mm;">
-     $\phantom{\circ}$ with <span style="font-size: 14pt;">$h_i$</span> pure and irreducible polynomials <span style="font-size: 14pt;">$q$</span> in Mandelstams
+     $\phantom{\circ}$ with <span style="font-size: 14pt;">$h_i$</span> pure and <span style="font-size: 14pt;">$q$</span> irreducible polynomials in Mandelstams
 </div>
 
-<div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2mm;">
-     $\circ$ Distinguish 3 cases:
+<div style="font-size: 17pt; text-align: left; margin-top: 8mm; margin-bottom: 2mm;">
+     $\circ$ Distinguish 3 cases for <span style="font-size: 14pt;">$\sqrt{q} = \sqrt{\Delta_5}, \sqrt{\Delta_3}, \sqrt{\Sigma_5}$</span>
 </div>
 <div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2mm;">
-     $\quad 1.$ <span style="font-size: 14pt;">$\sqrt{q}$</span> is rational in spinors, e.g. <span style="font-size: 14pt;">$\sqrt{\Delta_5} = \pm \text{tr}(\gamma^5p_1p_2p_3p_4) = \pm ([1|2|3|4|1\rangle-\langle1|2|3|4|1])$</span>
+     $\quad 1.$ <span style="font-size: 14pt;">$\sqrt{q}$</span> is rational in spinors, e.g. <span style="font-size: 14pt;">$\sqrt{\Delta_5} = \pm \text{tr}(\gamma^5p_1p_2p_3p_4) = \pm ([1|2|3|4|1\rangle-\langle1|2|3|4|1])$</span>,
 </div>
 <div style="font-size: 14.5pt; margin-top: 5mm; margin-bottom: 5mm">
 $$ 
@@ -445,7 +473,7 @@ G_i \rightarrow \frac{\text{tr}_5}{\sqrt{\Delta_5}} h_i = \text{sign}\big(\text{
 $$
 </div>
 <div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2mm;">
-     $\quad 2.$ The rational coefficient vanishes linearly in <span style="font-size: 14pt;">$\lim_{q\rightarrow 0}$</span>
+     $\quad 2.$ The rational coefficient vanishes linearly in <span style="font-size: 14pt;">$\lim_{q\rightarrow 0}$</span>,
 </div>
 <div style="font-size: 14.5pt; margin-top: 5mm; margin-bottom: 5mm">
 $$ 
@@ -453,7 +481,7 @@ G_i \rightarrow \sqrt{\Sigma_5} \, h_i
 $$
 </div>
 <div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2mm;">
-     $\quad 3.$ Otherwise, leave it unchanged, e.g. <span style="font-size: 14pt;">$\lim_{q\rightarrow 0} h_i = \sqrt{q}$</span>
+     $\quad 3.$ Otherwise, leave it unchanged, here <span style="font-size: 14pt;">$\lim_{q\rightarrow 0} h_i = \sqrt{q}$</span>,
 </div>
 <div style="font-size: 14.5pt; margin-top: 5mm; margin-bottom: 5mm">
 $$ 
@@ -473,6 +501,9 @@ $$
 
 # Least Common Denominator
 
+
+<span style="font-size: 15pt;">(Geometry at codimension one)</span>
+
 <br><br><br>
 
 <span style="font-size: 18pt">based on work with Ben Page in:<span> <br>
@@ -484,11 +515,8 @@ $$
 
 ---
 
-<div style="margin-top: 2mm; margin-bottom: 3mm">
+<div style="margin-top: 2mm; margin-bottom: 8mm">
      <b style="font-variant: small-caps; font-size: xxx-large"> Least Common Denominator </b>
-     <p style="margin-top: -2mm; margin-bottom: 2mm; font-size: 16pt;">
-     (i.e. geometry at codimension one)
-     </p>
 </div>
 
 <div style="display:block; width:100%; margin-top: 2mm; margin-bottom: 0mm; margin-left: 0mm;">
@@ -504,7 +532,7 @@ $$
           <div style="font-size: 17pt; text-align: left; margin-top: -3mm; margin-bottom: 1mm;">
                $\phantom{\circ}\,$ Obtain the <span style="font-size: 16pt">$q_{ij}$</span> from a univariate slice  <span style="font-size: 16pt">$\vec\lambda(t)$</span>, i.e. a 1D curve.
           </div>
-          <div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 1mm;">
+          <div style="font-size: 17pt; text-align: left; margin-top: 12mm; margin-bottom: 1mm;">
                $\circ$ The curve must intersect all varieties <span style="font-size: 16pt">$V(\langle \mathcal{D}_j \rangle)$</span>, e.g.
           </div>
           <div style="font-size:16pt; text-align: center; margin-top: 2mm; margin-bottom: 2mm">
@@ -532,7 +560,7 @@ $$
 
 <div style="border: 2px solid black; font-size: 16pt; padding: 10px; display: inline-block; margin-top: 4mm;">
     Poles & Zeros $\;\Leftrightarrow\;$ Irreducible Varieties $\;\Leftrightarrow\;$ Prime Ideals <br>
-    <i style="font-size: 14pt; border-top: -8mm; border-bottom: -2mm;"> Physics $\kern18mm$ Geometry $\kern18mm$ Algebra </i>
+    <i style="font-size: 14pt; border-top: -8mm; border-bottom: -2mm;"> Physics $\kern30mm$ Geometry $\kern30mm$ Algebra </i>
 </div>
 
 ---
@@ -545,13 +573,17 @@ $$
      $\circ\,$ Implemented in 
      <a href="https://github.com/GDeLaurentis/antares/" style="font-size: 20pt; font-variant: small-caps;">antares</a>,
      <a href="https://github.com/GDeLaurentis/lips/" style="font-size: 20pt; font-variant: small-caps;">lips</a>, 
-     <a href="https://github.com/GDeLaurentis/linac/" style="font-size: 20pt; font-variant: small-caps;">linac</a>, and
+     <a href="https://github.com/GDeLaurentis/linac/" style="font-size: 20pt; font-variant: small-caps;">linac</a> (coming soon!), and
      <a href="https://github.com/GDeLaurentis/syngular/" style="font-size: 20pt; font-variant: small-caps;">syngular</a>.
 </div>
 
 <div style="font-size: 17pt; text-align: left; margin-top: 1mm; margin-bottom: 2mm;">
      $\circ\,$ Example: determine the LCDs of a vector of finite-remainder coefficients.
 </div>
+
+<pre style="font-size: 12.5pt; line-height: 1.15; text-align: left; margin-top: 2mm; margin-bottom: 2mm; padding: 8px; width: 96%;"><code class="language-python">from antares.core.numerical_methods import tensor_function
+from lips import Particles
+</code></pre>
 
 <pre style="font-size: 12.5pt; line-height: 1.15; text-align: left; margin-top: 2mm; margin-bottom: 2mm; padding: 8px; width: 96%;"><code class="language-python">oTF = tensor_function(lambda oPs: numpy.array(
     [coeff for coeff, monom in amps['qbpqmqbpqm_2L_Nc2_Nf0'].finite_remainder(oPs)] +
@@ -584,16 +616,16 @@ lTermsLCD[:5]</code></pre>
 <div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 2mm;">
      $\circ\,$ The irreducible denominator factors <span style="font-size: 14pt">$\mathcal{D}_j \text{ for } Vjj$</span> (modding out by permutation orbits) read
 </div>
-<div style="text-align: center; font-size: 14pt; margin-top: 2mm; margin-bottom: 2mm;">
+<div style="text-align: center; font-size: 16pt; margin-top: 2mm; margin-bottom: 2mm;">
      $$
-     \displaystyle \mathcal{D}_{Vjj} \subset \kern-3mm \bigcup_{\sigma \; \in \; \text{Aut}(R_6)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1], \langle 1|2+3|4], s_{123}, \Delta_{12|34|56}, \underbrace{⟨3|2|5+6|4|3]-⟨2|1|5+6|4|2]}_{\normalsize\text{only new one at two loops!}} \big\}
+     \displaystyle \mathcal{D}_{Hjj} = \mathcal{D}_{Vjj} \subset \kern-3mm \bigcup_{\sigma \; \in \; \text{Aut}(R_6)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1], \langle 1|2+3|4], s_{123}, \Delta_{12|34|56}, \underbrace{⟨3|2|5+6|4|3]-⟨2|1|5+6|4|2]}_{\normalsize\text{only new one at two loops!}} \big\}
      $$
 </div>
 
 <div style="text-align: left; font-size: 16pt; margin-top: 3mm; margin-bottom: 2mm;">
      $\circ\,$ For <span style="font-size: 14pt">$t\bar{t}H$</span>, they read
 </div>
-<div style="text-align: center; font-size: 14pt; margin-top: 2mm; margin-bottom: 2mm;">
+<div style="text-align: center; font-size: 16pt; margin-top: 2mm; margin-bottom: 2mm;">
      $$
      \displaystyle \kern-10mm \mathcal{D}_{ttH} = \big\{ \langle 12 \rangle, [12], s_{123}, \dots, (s_{123}-m^2), \langle 1|\boldsymbol{3}|1], \dots, \\[2mm] 
      \kern30mm \langle 1|\boldsymbol{3}|\boldsymbol{4}| 2 \rangle, \dots, \langle 1|\boldsymbol{3}|1+2|\boldsymbol{4}| 2], \dots, \Delta_{12|34|5}, \dots \Delta_{12|3|4|5} \big\}
@@ -607,7 +639,7 @@ lTermsLCD[:5]</code></pre>
      $\circ\,$ For <span style="font-size: 14pt">$HHH$</span>, they are
 </div>
 
-<div style="text-align: center; font-size: 14pt; margin-top: 2mm; margin-bottom: 2mm;">
+<div style="text-align: center; font-size: 16pt; margin-top: 2mm; margin-bottom: 2mm;">
      $$
      \small
      \begin{gathered}
@@ -621,15 +653,15 @@ lTermsLCD[:5]</code></pre>
 </div>
 
 <div style="font-size: 16pt; text-align: left; margin-top: 3mm; margin-bottom: 2mm;">
-     $\circ\,$ Challenge: in LCD form the numerators are intractably complicated. <br>
-     $\phantom{\circ}\,$ For <span style="font-size: 15pt">$Vjj$</span> the most complicated <span style="font-size: 14pt">$\bar{q}^+g^-g^+q^-$</span> function had a mass dimension (<span style="font-size: 13pt">$\approx$</span> poly. degree) of 114, <br>
-     $\phantom{\circ}\,$ and little group weights <span style="font-size: 14pt">$\{3, -12, 12, -3, -1, 1\}$</span>.  The ansatz size is approx. 25M. <br>
-     $\phantom{\circ}\,$ Note how different from zero the little group weights are, chiral invariants are important!
+     $\circ\,$ <b>Challenge</b>: in LCD form the numerators are intractably complicated. <br>
+     $\phantom{\circ}\,$ E.g. for <span style="font-size: 15pt">$Vjj$</span> the most complicated function had a mass dim. (<span style="font-size: 13pt">$\approx$</span> poly. degree) of 114 $\Rightarrow$ 25M parameters<br>
+     $\phantom{\circ}\,\qquad$ (and non-trivial little group weights <span style="font-size: 14pt">$\{3, -12, 12, -3, -1, 1\}$</span> due to chiral cancellations!) <br>
+     $\phantom{\circ}\,$ For <span style="font-size: 15pt">$Hjj$</span> the most complicated function had a mass dim. (<span style="font-size: 13pt">$\approx$</span> poly. degree) of 168 $\Rightarrow$ 80M parameters<br>
 </div>
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> Basis Change from Laurent Coefficients </b>
+<b style="font-variant: small-caps; font-size: xxx-large"> Effect of Basis Change on LCDs </b>
 
 <div style="text-align: left; font-size: 16pt; float: left; margin-top: -2mm; margin-bottom: -2mm;">
      $\circ\,$ Change basis from a subset of the pentagon coefficients $r_{i \in \mathcal{B}}$ to <span style="font-size: 14pt">$\mathbb{Q}$</span>-linear combinations $\tilde r$,
@@ -641,41 +673,44 @@ lTermsLCD[:5]</code></pre>
 </div>
 
 <div>
-<img src="BasisChangeEffectWjj.png"; style="max-width:900px; float:center; border:none; margin-top: -2mm; margin-bottom: 0mm;">
+<img src="BasisChangeEffectWjj.png"; style="max-width:850px; float:center; border:none; margin-top: -2mm; margin-bottom: 0mm;">
 </div>
 <div style="text-align: center; font-size: 14pt; float: center; margin-top: -3mm; margin-bottom: 0mm;">
      [<a href="https://arxiv.org/abs/hep-ph/9708239" style="font-size: 14pt">6</a>] Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov '21
 </div>
 
-<div style="text-align: left; font-size: 16pt; float: left; margin-top: 3mm; margin-bottom: -2mm;">
+<div style="text-align: left; font-size: 16pt; float: left; margin-top: 4mm; margin-bottom: -2mm;">
+     $\circ\,$ For the recent Hjj computation
+</div><br>
+<div>
+<img src="BasisChangeEffectHjj.png"; style="max-width:800px; float:center; border:none; margin-top: -2mm; margin-bottom: 0mm;">
+</div>
+
+---
+
+<b style="font-variant: small-caps; font-size: xxx-large"> Basis Change from Laurent Coefficients </b>
+
+<div style="text-align: left; font-size: 16pt; float: left; margin-top: 0mm; margin-bottom: -4mm;">
      $\circ\,$ By Gaussian elimination, partition the space (abusing notation for <i>residue</i>):
-</div> <br>
-<div style="text-align: center; font-size: 15pt; float: center; margin-top: -2mm; margin-bottom: 2mm;">
+</div><br>
+<div style="text-align: center; font-size: 14pt; float: center; margin-top: -6mm; margin-bottom: 2mm;">
      $$
      \text{span}(r_{i \in \mathcal{B}}) = \underbrace{\text{column}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m))}_{\text{functions with the singularity}} \;\;\; \oplus \, \underbrace{\text{null}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m))}_{\text{functions without the singularity}}
      $$
 </div>
 
-<div style="display:block; width:100%; margin-top: -4mm; margin-bottom: 0mm; margin-left: 0mm;">
-     <div style="font-size: 17pt; width:50%; float: left; text-align: center; display: inline-block; margin-top: 3mm;">
-	     <div style="font-size: 17pt; float: left; margin-top: 4mm; margin-bottom: 1mm; margin-left: -2mm; margin-right: -3mm;">
-               $\circ\,$ Search for linear combinations that remove as many singularities as possible (while not dropping rank)
-          </div>
-          <br>
-          <div style="font-size:15pt; float: left; margin-top: 0mm; margin-bottom: 0mm">
-               $$
-               \kern12mm \displaystyle O_{i'i} = \bigcap_{k, m} \, \text{nulls}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m))
-               $$
-          </div>
-	</div>
-     <div style="width:50%; float: right; display: inline-block; margin-top: 0mm;">
-          <img src="search_tree.png"; style="max-width:400px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;">
-     </div>
+<div style="text-align: left; font-size: 16pt; float: left; margin-top: 3mm; margin-bottom: -2mm;">
+     $\circ\,$ Search for linear combinations that remove as many singularities as possible (while not dropping rank)
+</div> <br>
+<img src="search_tree_v2.png"; style="max-width:520px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;">
+
+<div style="text-align: left; font-size: 16pt; float: left; margin-top: 0mm; margin-bottom: -2mm;">
+     $\phantom{\circ}\,$ <span style="font-size: 14pt">$N^{(\text{pole order})}_{\text{denominator factor}}$</span> denote a null-spaces, and arrows denote (subsequent) intersections
 </div>
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> <span style="font-size: 27pt;">$p$</span>-adic numbers </b>
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> <span style="font-size: 27pt;">$p\kern2mm$</span>-adic numbers </b>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: -2mm; margin-left: 2mm; margin-right: 2mm;">
      $\circ$ You may be familiar with finite field (integers modulo a prime)
