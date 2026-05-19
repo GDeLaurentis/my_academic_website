@@ -17,13 +17,13 @@ slides:
 
 <style>
 .reveal mjx-container {
-  font-size: 85% !important;
+  font-size: 115% !important;
 }
 
 .reveal .MathJax,
 .reveal .MathJax_Display,
 .reveal .MathJax_CHTML {
-  font-size: 85% !important;
+  font-size: 115% !important;
 }
 </style>
 
@@ -46,6 +46,26 @@ window.addEventListener("load", function () {
   }
 });
 </script>
+
+<!---
+<style>
+.reveal mjx-container[display="true"] {
+  font-size: 130% !important;
+}
+</style>
+
+<script>
+window.addEventListener("load", function () {
+  if (window.Reveal && typeof Reveal.configure === "function") {
+    Reveal.configure({
+      minScale: 1,
+      maxScale: 1
+    });
+    Reveal.layout();
+  }
+});
+</script>
+--->
 
 {{< slide background-image="particle_tracks.jpg" >}}
 
@@ -386,7 +406,7 @@ $$
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
      $\circ$ For <span style="font-size: 14pt;">$Vjj$</span> there are 5 amplitudes (showing 3)
 </div>
-<div style="font-size: 17pt; margin-top: 0mm; margin-bottom: 3mm">
+<div style="font-size: 14pt; margin-top: 0mm; margin-bottom: 3mm">
 $$ 
 {A}_g^{(0)}(1^{+}_\bar{q}, 2^{+}_g, 3^{+}_g, 4^{-}_q, 5^{+}_\bar{\ell}, 6^{-}_\ell) = \frac{⟨46⟩^2}{⟨12⟩⟨23⟩⟨34⟩⟨65⟩} \, \Rightarrow {A}_g^{(0),{IJ}}(1^{+}_\bar{q}, 2^{+}_g, 3^{+}_g, 4^{-}_q, {\boldsymbol 5}) = \frac{⟨4|\boldsymbol 5|\boldsymbol 5^I]⟨\boldsymbol 5^J 4⟩}{⟨12⟩⟨23⟩⟨34⟩s_{\boldsymbol 5}}  , \\[6mm]
 {A}_g^{(0)}(1^{+}_\bar{q}, 2^{+}_g, 3^{-}_g, 4^{-}_q, 5^{+}_\bar{\ell}, 6^{-}_\ell) = \frac{⟨13⟩⟨3|1+2|5]^2}{⟨12⟩⟨23⟩[65]⟨1|2+3|4]s_{123}} \; + \; (123456\rightarrow \overline{432165}) \, , \\[6mm]
@@ -397,7 +417,7 @@ $$
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
      $\circ$ For <span style="font-size: 15pt;">$q\bar{q}\rightarrow t\bar{t}H$</span> there is only a single amplitude
 </div>
-<div style="font-size: 16pt; margin-top: 8mm; margin-bottom: 5mm">
+<div style="font-size: 14pt; margin-top: 8mm; margin-bottom: 5mm">
 $$ 
 {A}_{ttH}^{(0)}(1^{+}_q, 2^{-}_\bar{q}, 3_t, 4_\bar{t}, 5_H)^I_J = \frac{⟨2|𝟑|1]⟨𝟑^I𝟒_J⟩-[𝟑^I1][1𝟒_J]⟨12⟩}{s_{12}(s_{12𝟑}-m_t²)} + 
 (12345\rightarrow\overline{21345},12435,\overline{21435})
@@ -419,7 +439,7 @@ $$
 <div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2          mm;">
      $\circ$ We can always factorize a polynomial into products of irreducible factors, to some powers
 </div>
-<div style="font-size:15pt; text-align: center; margin-top: 2mm; margin-bottom: 2mm">
+<div style="font-size:14pt; text-align: center; margin-top: 2mm; margin-bottom: 2mm">
      $$
      \displaystyle r_i(|i\rangle,[i|) = \frac{\mathcal{N}(|i\rangle,[i|)}{\prod_j \mathcal{D}_j^{q_{ij}}(|i\rangle,[i|)} % \, , \quad r_i(|i\rangle,[i|) \in \text{Frac}(R_n)
      $$
@@ -486,7 +506,7 @@ From work in progress with S. Abreu, X. Liu, P.F. Monni
 </div>
 <div style="font-size: 14.5pt; margin-top: 5mm; margin-bottom: 5mm">
 $$ 
-\displaystyle \mathcal{R}(\lambda, \tilde\lambda) = \sum_i \color{red}{r_{i}(\lambda,\tilde\lambda)} \, \color{orange}{G_i(\lambda\tilde\lambda)} \color{black} \; , \qquad G_i = h_1 \quad \text{or} \quad G_i = \frac{h_i}{\sqrt{q}}
+\displaystyle \mathcal{R}(\lambda, \tilde\lambda) = \sum_i \color{red}{r_{i}(\lambda,\tilde\lambda)} \, \color{orange}{G_i(\lambda\tilde\lambda)} \color{black} \; , \qquad G_i = h_i \quad \text{or} \quad G_i = \frac{h_i}{\sqrt{q}}
 $$
 </div>
 <div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2mm;">
@@ -730,12 +750,12 @@ lTermsLCD[:5]</code></pre>
 <img src="search_tree_v2.png"; style="max-width:520px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;">
 
 <div style="text-align: left; font-size: 16pt; float: left; margin-top: 0mm; margin-bottom: -2mm;">
-     $\phantom{\circ}\,$ <span style="font-size: 14pt">$N^{(\text{pole order})}_{\text{denominator factor}}$</span> denote null-spaces, and arrows denote (subsequent) intersections
+     $\phantom{\circ}\,$ <span style="font-size: 14pt">$N^{(\text{pole order})}_{\text{denominator factor}}$</span> denote null-spaces, and arrows denote intersections. Greated observed breadth <span style="font-size: 14pt">$\mathcal{O}(100k)$</span>.
 </div>
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> <span style="font-size: 27pt;">$p\kern0.2mm$</span>-adic numbers </b>
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> <span style="font-size: 27pt;">$p\kern0.5mm$</span>-adic numbers </b>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: -2mm; margin-left: 2mm; margin-right: 2mm;">
      $\circ$ You may be familiar with finite field (integers modulo a prime)
@@ -756,13 +776,13 @@ $$
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ There exists just one more absolute value on the rationals, the <span style="font-size: 16pt;">$p$</span>-adic absolute value.
+     $\circ$ There exists just one more absolute value on the rationals, the <span style="font-size: 15pt;">$p$</span>-adic absolute value.
 </div>
 <a style="font-size: large; text-align: right; float: right; margin-top: -4mm; margin-bottom: -10mm;" href=https://en.wikipedia.org/wiki/Ostrowski%27s_theorem>
    Ostrowski's theorem 1916
 </a>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Let's start from <span style="font-size: 14pt;">$p$</span>-adic integers, instead of working modulo <span style="font-size: 14pt;">$p$</span>, expand in powers of <span style="font-size: 14pt;">$p$</span>
+     $\circ$ Let's start from <span style="font-size: 15pt;">$p$</span>-adic integers, instead of working modulo <span style="font-size: 15pt;">$p$</span>, expand in powers of <span style="font-size: 15pt;">$p$</span>
 </div>
 <div style="font-size: 14pt; margin-top: 3mm; margin-bottom: 3mm">
 $$ 
@@ -1050,7 +1070,8 @@ $$
 $$
 </div>
 <div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
-$\phantom{\circ}\,$ Unfortunately not always. This is called a <i>complete intersection</i> when it holds.
+$\phantom{\circ}\,$ Unfortunately not always. This is called a <i>complete intersection</i> when it holds. <br>
+$\phantom{\circ}\,$ In general, there will be additional non-trivial generators that cannot be written in terms of <span style="font-size: 14pt">$q_i$</span>'s.
 </div>
 
 <div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
@@ -1081,7 +1102,116 @@ $\circ\,$ And of course IBP reduction to obtain the MI coefficients is not easy 
 ---
 
 <div style="margin-top: 2mm; margin-bottom: 2mm">
-     <b style="font-variant: small-caps; font-size: 32pt"> Bivariate slice mPFD </b>
+     <b style="font-variant: small-caps; font-size: 32pt"> Bivariate Slice mPFD Algorithm</b>
+</div>
+
+<div style="font-size: 17pt; text-align: left; margin-top: 6mm; margin-bottom: 1mm;">
+     $\circ$ Build a bivariate slice (curve) that intersects all varieties <span style="font-size: 14pt">$V(\langle \mathcal{D}_i, \mathcal{D}_j \rangle)$</span>, e.g.
+</div>
+<div style="font-size:15pt; text-align: center; margin-top: 2mm; margin-bottom: 2mm">
+     $$
+     \displaystyle |i\rangle \rightarrow |i\rangle + t_1 a_i |\eta\rangle + t_2 b_i |\theta\rangle, \quad [i| \rightarrow [i| + t_1 c_i [\eta| + t_2 d_i [\theta|
+     $$
+</div>
+
+<div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 1mm;">
+     $\phantom{\circ}$ Such that for all <span style="font-size: 14pt">$t_1, t_2$</span> momentum is conserved: gives 20 eqs. defining a codim.-10 variety in 24 dims <br>
+     $\phantom{\circ}$ Pick sol. with <code style="font-size: 14pt;">syngular.Ideal.points_on_variety</code>, impl. see <code style="font-size: 14pt;">lips.Particles.bivariate_slice</code>
+</div>
+
+<div style="font-size: 17pt; text-align: left; margin-top: 6mm; margin-bottom: 1mm;">
+     $\circ$ Reconstruct (Newton-interpolate) the numerators <span style="font-size: 14pt">$\mathcal{N}(t_1, t_2)$</span>; this requires <span style="font-size: 14pt">$\text{deg}(\mathcal{N}+1)^2$</span> points.
+</div>
+
+
+<div style="font-size: 17pt; text-align: left; margin-top: 6mm; margin-bottom: 1mm;">
+     $\circ$ For each <span style="font-size: 14pt">$\mathcal{J}_{ij}^{a_i,a_j} = \big\langle \mathcal{D}_i(t_1, t_2)^{a_i}, \mathcal{D}_j(t_1, t_2)^{a_j} \big\rangle\;$</span> test <span style="font-size: 14pt">$\;\mathcal{N}_i(t_1, t_2) \in \mathcal{J}_{ij}^{a_i,a_j}$</span>
+</div>
+
+<div style="font-size: 17pt; text-align: left; margin-top: 6mm; margin-bottom: 1mm;">
+     $\circ$ If the test passes, construct the <b>simplified intersection</b> from least common multiples (lcm's)
+</div>
+
+<div style="text-align: left; font-size: 14pt; margin-top: 0mm; margin-bottom: 1mm;">
+$$
+\begin{equation}
+\begin{aligned}\label{eq:RS_merge_generalised}
+ \mathcal{I}_{\rm s}'&=
+	\mathcal{I}_{\rm s} \cap_{s} \mathcal{J}_{ij}^{a_ia_j}:=
+  \big\langle
+    \mathrm{lcm}(m_1,n_1), \mathrm{lcm}(m_1,n_2), \ldots,
+    \mathrm{lcm}(m_r,n_1), \mathrm{lcm}(m_r,n_2)
+  \big\rangle \\ 
+& \kern45mm \mbox{with}\quad 
+	n_1=\mathcal{D}_i(u,v)^{a_i}
+	  \quad\mbox{and}\quad
+	n_2=\mathcal{D}_j(u,v)^{a_j}\,,
+\end{aligned}
+\end{equation}
+$$
+</div>
+<div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 1mm;">
+     $\phantom{\circ}$ Where <span style="font-size: 14pt">$\mathcal{I}_{\rm s}$</span> starts as the unit ideal.
+</div>
+
+<div style="font-size: 17pt; text-align: left; margin-top: 4mm; margin-bottom: 1mm;">
+     $\circ$ Test <span style="font-size: 14pt">$\;\mathcal{N}_i(t_1, t_2) \in \mathcal{I}_{\rm s}'$</span>, if it passes set <span style="font-size: 14pt">$\; \mathcal{I}_{\rm s} = \mathcal{I}_{\rm s}'$</span>
+</div>
+
+---
+
+<div style="margin-top: 2mm; margin-bottom: 2mm">
+     <b style="font-variant: small-caps; font-size: 32pt"> Bivariate Slice mPFD Interpretation</b>
+</div>
+
+<div style="font-size: 17pt; text-align: left; margin-top: 4mm; margin-bottom: 1mm;">
+     $\circ$ In the end we are left with an ideal
+</div>
+<div style="text-align: left; font-size: 14pt; margin-top: 0mm; margin-bottom: 1mm;">
+$$
+\begin{equation}
+\mathcal{I}_{\rm s}=\langle m_1(\mathcal{D}),\ldots,m_r(\mathcal{D})\rangle \quad 
+\mbox{with} \quad \mathcal{N} \in \mathcal{I}_{\rm s} \,.
+\end{equation}
+$$
+</div>
+<div style="font-size: 17pt; text-align: left; margin-top: 4mm; margin-bottom: 1mm;">
+     $\phantom{\circ}$ whose genreators <span style="font-size: 14pt">$m_k$</span> are monomials in the denominator factors <span style="font-size: 14pt">$\mathcal{D}_i$</span>,
+</div>
+<div style="text-align: left; font-size: 14pt; margin-top: 0mm; margin-bottom: 1mm;">
+$$
+\begin{align}
+m_k(\mathcal{D}) = \prod_j \mathcal{D}_j^{\hat q_{jk}} \in \mathcal{I}_{\rm s}  \quad\mbox{with}\quad k=1,\ldots, r
+\end{align}
+$$
+</div>
+<div style="font-size: 17pt; text-align: left; margin-top: 4mm; margin-bottom: 1mm;">
+     $\phantom{\circ}$ with powers not exceeding those of the LCD, i.e. <b>no spurious singularities</b> by construction.
+</div>
+
+<div style="font-size: 17pt; text-align: left; margin-top: 4mm; margin-bottom: 1mm;">
+     $\circ$ We interpret this back in the full multivariate setting as
+</div>
+<div style="text-align: left; font-size: 13.5pt; margin-top: 0mm; margin-bottom: 1mm;">
+$$
+\mathcal{N} = \sum_{k=1}^{k_{\rm max}} \mathcal{N}_k \,  m_k(\mathcal{D} ) \,
+$$
+</div>
+<div style="font-size: 17pt; text-align: left; margin-top: 4mm; margin-bottom: 1mm;">
+     $\phantom{\circ}$ and thus the (<b>tentative</b>) multivariate decomposition
+</div>
+<div style="text-align: left; font-size: 14pt; margin-top: 0mm; margin-bottom: 1mm;">
+$$
+\begin{equation}
+  \tilde r = \frac{\mathcal{N}}{\prod_j \mathcal{D}_j^{q_j}} =
+  \sum_{k=1}^{r} \frac{\mathcal{N}_k }{\prod_j \mathcal{D}_j^{q_{jk}}}
+	\quad\mbox{with} \quad \prod_j \mathcal{D}_j^{q_{jk}} = \frac{\prod_j \mathcal{D}_j^{q_{j}}}{m_k(\mathcal{D})} \, .
+\end{equation}
+$$
+</div>
+
+<div style="font-size: 17pt; text-align: left; margin-top: 4mm; margin-bottom: 1mm;">
+     $\circ$ Verify by fitting the ansatz. If it fails, remove some ideals from the intersection.
 </div>
 
 
