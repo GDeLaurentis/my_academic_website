@@ -1584,62 +1584,40 @@ $$
 
 <section>
 
-{{< slide background-image="Wjj_diagrams.png">}}
+{{< slide background-image="HjjDiagrams.png">}}
 
 # <br> Conclusions <br> & <br> Outlook
 
 ---
 
-<b style="font-variant: small-caps; font-size: 36pt; margin-bottom: -6mm;"> Spinor-Helicity Amplitudes Results </b>
+<b style="font-variant: small-caps; font-size: 36pt; margin-bottom: -6mm;"> Spinor-Helicity Hjj Remainders </b>
 <br>
 
 <div style="text-align: left; font-size: 18pt; margin-bottom: 2mm; margin-top: 5mm;">
-     $\circ$ The <span style="font-size: 15pt;">$pp\rightarrow Vjj$</span> coefficient functions are now 1.9 MB (down from 1.4 GB), fast and stable. <br>
-     $\phantom{\circ}$ Matrices <span style="font-size: 15pt;">$M_{ij}$</span> account for another 2 MB overall. Transcendental basis at <a href="https://gitlab.com/pentagon-functions/PentagonFunctions-cpp">PentagonFunctions++</a>.
+     $\circ$ The <span style="font-size: 15pt;">$pp\rightarrow Hjj$</span> coefficient functions are 1.5 MB of pain text LaTeX, fast and stable to evaluate. <br>
+     $\phantom{\circ}$ Matrices <span style="font-size: 15pt;">$M_{ij}$</span> account for another 22 MB. Transcendental basis at <a href="https://gitlab.com/pentagon-functions/PentagonFunctions-cpp">PentagonFunctions++</a>.
 </div>
 <div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 2mm;">
     <div style="padding: 0 10px;">
-        <img src="CoefficientSizes.png" style="width: 100%; max-width: 450px; border: none; margin-top: 2mm; margin-bottom: 0mm;">
+        <img src="h2__g_g__g_g_H.png" style="width: 100%; max-width: 550px; border: none; margin-top: 2mm; margin-bottom: 0mm;">
     </div>
     <div style="padding: 0 10px; ">
-        <img src="h2__g_g__Z_b_b.stability.png" style="width: 100%; max-width: 550px; border: none; margin-top: 3mm; margin-bottom: 0mm;">
+        <img src="h2__g_g__u_ub_H.png" style="width: 100%; max-width: 550px; border: none; margin-top: 3mm; margin-bottom: 0mm;">
     </div>
 </div>
-<!---
-<div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 2mm;">
-    <div style="padding: 0 10px;">
-        <img src="CoefficientSizes.png" style="width: 100%; max-width: 450px; border: none; margin-top: 2mm; margin-bottom: 0mm;">
-    </div>
-    <div style="padding: 0 10px; ">
-        <img src="h2__g_g__Z_b_b.stability.png" style="width: 100%; max-width: 550px; border: none; margin-top: 4mm; margin-bottom: 0mm;">
-    </div>
-</div>
-<a style="font-size: 11pt; text-align: right; float: right; margin-top: -10mm; margin-bottom: -3mm;" href="https://arxiv.org/abs/2404.08598">
-Courtesy of V. Sotnikov, <br>see also Mazzitelli, Sotnikov, Wiesemann ('24)
-</a>
---->
 
 <div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: -2mm;">
-     $\quad\small\rhd$ The complexity split is: quarks NMHV: 100 KB, gluons MHV: 200 KB, gluons NMHV: 1.6 MB.
+     $\quad\small\rhd$ The size split is: 4gH ppmm 31%; pppm 22%, pppp 5%; 2q2gH pmpm 27%, pmpp 13%, 4qH pmpm 2%.
 </div>
 <div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
-     $\quad\small\rhd$ The largest numbers are: quarks NMHV and gluons MHV: 3-digit, gluons NMHV: 12 digits.
+     $\quad\small\rhd$ The largest (rational number) numerator (denominator) in the functions has 8 digits (6 digits);
+</div>
+<div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
+     $\quad\small\phantom{\rhd}$ while in the rational matrices they are 28 and 23 digits respectively.
 </div>
 <div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
      $\quad\small\rhd$ Pheno ready results for the hard functions are available at <a href="https://gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp">FivePointAmplitudes</a>.
 </div>
-<!---
-<div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
-     $\circ$ Amplitudes at <a href="https://github.com/GDeLaurentis/antares-results">antares-results</a>, with <a href="https://gdelaurentis.github.io/antares-results/index.html">human readable expr.</a>, and <a href="https://github.com/GDeLaurentis/antares-results/actions/">CI tests</a> for full amplitude in real kinematics
-</div>
---->
-
-<div style="text-align: left; font-size: 16pt; margin-bottom: 4mm; margin-top: 2mm;">
-     $\circ$ For <span style="font-size: 14pt">$t\bar{t}H$</span> and <span style="font-size: 14pt">$HHH$</span>, efficient Fortran implementation of the analytic expressions in <a href="https://mcfm.fnal.gov/">MCFM</a>
-</div>
-<a href="https://arxiv.org/abs/1909.09117" style="font-size: 14pt; margin-top: -3mm; margin-right: 2mm; float: right; font-align: right;"> Campbell, Neumann</a>
-<a href="https://arxiv.org/abs/1503.06182" style="font-size: 14pt; margin-top: -3mm; margin-right: 2mm; float: right; font-align: right;"> Campbell, Ellis, Giele;</a>
-<a href="https://arxiv.org/abs/1105.0020" style="font-size: 14pt; margin-top: -3mm; margin-right: 2mm; float: right; font-align: right;"> Campbell, Ellis, Williams;</a>
 
 ---
 
@@ -1660,10 +1638,36 @@ Courtesy of V. Sotnikov, <br>see also Mazzitelli, Sotnikov, Wiesemann ('24)
 <div style="text-align: left; font-size: 16pt; margin-bottom: 2mm; margin-top: 2mm;">
      $\circ$ <a href="https://github.com/GDeLaurentis/antares-results/" style="font-size: 20pt; font-variant: small-caps;">antares-results</a> (human readable exprs in <a href="https://gdelaurentis.github.io/antares-results/">docs</a>) with <a href="https://github.com/GDeLaurentis/antares-results/actions/">CI tests</a> for coefficients and/or full amplitudes
 </div>
-<div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 2mm;">
-     <img src="antares-results-transparent-combined-v2.png" 
-          style="width: 100%; max-width: 850px; float: left; border: none; margin-top: 2mm; margin-bottom: 0mm;">
-</div>
+
+<pre style="font-size: 12.5pt; line-height: 1.15; text-align: left; margin-top: 2mm; margin-bottom: 2mm; padding: 8px; width: 96%;"><code class="language-python">In [1]: from antares_results.Hjj.remainders import remainder
+In [2]: from antares_results.Hjj.momenta import oPs
+In [3]: complex(remainder("ggggH", "pmpm_2L_Nc2_Nf0", oPs))
+Out[3]: (-37.04012190864545-74.17026277643683j)
+</code></pre>
+
+<pre style="font-size: 12.5pt; line-height: 1.15; text-align: left; margin-top: 2mm; margin-bottom: 2mm; padding: 8px; width: 96%;"><code class="language-python">In [1]: import syngular
+In [2]: from antares_results.Hjj.HTL.ggggH.ppmm import lTerms
+In [3]: syngular.USE_ELLIPSIS_FOR_PRINT = True
+In [4]: print(lTerms[:2], lTerms[-2:])
+</code></pre>
+
+<pre style="font-size: 12.5pt; line-height: 1.15; text-align: left; margin-top: 2mm; margin-bottom: 2mm; padding: 8px; width: 96%;"><code style="font-size: 8.5pt;", class="language-python">Out[4]: [Terms("""+(1⟨3|4⟩²)/(⟨1|2⟩²)"""), ('3412𝟓', True)] [Terms("""
++(-994/9⟨1|2⟩³⟨1|3⟩⟨2|4⟩[1|2]³+...⟪45 terms⟫...+45⟨1|2⟩⟨2|4⟩⟨3|4⟩³[2|4][3|4]²)/(⟨1|2⟩³⟨2|3⟩[2|3][3|4])
++(-45/2⟨1|2⟩⁴⟨1|3⟩²[1|2]⁶[1|3]+...⟪102 terms⟫...+45/2⟨1|2⟩⟨2|3⟩⟨3|4⟩⁴[1|3]²[2|3][2|4]³[3|4])/(⟨1|2⟩⟨1|3⟩[1|3]⟨2|3⟩[2|3][2|4][3|4]⟨2|1+3|2]²)
++(-172/3⟨1|2⟩³⟨1|4⟩[1|2]⁴[1|3][2|4]+...⟪37 terms⟫...+45/2⟨1|3⟩⟨3|4⟩³[1|2][1|3][2|3][3|4]³)/(⟨1|2⟩[1|3][2|4][3|4]⟨1|2+4|1]⟨1|2+4|3])
++(45/2⟨1|2⟩³⟨1|3⟩⟨1|4⟩²[1|2]³[1|3]+...⟪76 terms⟫...-1/3⟨1|2⟩⟨1|4⟩⟨3|4⟩⁴[2|3][3|4]³)/(⟨1|2⟩²⟨2|4⟩[3|4]⟨1|3+4|2]⟨1|2+4|3])
++⟨1|3⟩(-1/3⟨1|2⟩²⟨1|4⟩³[1|2]⁴+...⟪34 terms⟫...-1/3⟨1|4⟩⟨3|4⟩⁴[2|3]²[3|4]²)/(⟨1|2⟩⟨2|4⟩⟨1|3+4|2]²⟨1|2+4|3])
++(68/3⟨1|2⟩²⟨1|4⟩³[1|2]³[1|3]²[2|4]²+...⟪51 terms⟫...-2⟨1|4⟩⟨2|4⟩⟨3|4⟩³[1|2][2|3]²[2|4][3|4]³)/([1|3]⟨2|4⟩[2|4][3|4]⟨1|3+4|2]⟨1|2+4|3]²)
++(56/3⟨1|2⟩²⟨1|4⟩²[1|2]²[1|3][2|3][2|4]²+...⟪23 terms⟫...+8⟨1|3⟩⟨3|4⟩³[2|3]³[3|4]³)/([2|4][3|4]⟨1|2+4|3]³)
++(s_124-s_234)[1|2](2063/48⟨1|2⟩³⟨1|4⟩²[1|2]³[1|4]+...⟪84 terms⟫...-6293/72⟨1|3⟩⟨1|4⟩²⟨2|4⟩⟨3|4⟩[1|2][1|4][3|4]²)/(⟨1|2+4|3]²⟨2|1+3|4]Δ_13|24|𝟓)
++(s_124-s_234)(s_123-s_134)⟨1|3⟩²⟨2|4⟩[1|2][1|3](-23/16⟨1|2⟩⟨1|3⟩[1|2]²[1|3]+...⟪10 terms⟫...-69/16⟨2|4⟩⟨3|4⟩[1|2][2|4][3|4])/(⟨1|2+4|3]⟨2|1+3|4]Δ_13|24|𝟓²)
++[1|2](-253/2⟨1|2⟩³⟨1|3⟩⟨2|4⟩[1|2]⁴+...⟪16 terms⟫...-161/2⟨1|4⟩⁴⟨3|4⟩[1|4]⁴)/(⟨1|2+4|3]⟨2|1+3|4]Δ_13|24|𝟓)
++('2143𝟓', False, '+')
++('3412𝟓', True, '+')
++('4321𝟓', True, '+')
+"""), ('1243𝟓', False)]
+</code></pre>
+
 
 </section>
 
