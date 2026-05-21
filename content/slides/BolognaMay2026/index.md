@@ -85,7 +85,7 @@ Giuseppe De Laurentis
 <span style="font-size: 15pt;">$pp\rightarrow Vjj$</span>: <a href="https://arxiv.org/abs/2503.10595">arXiv:2503.10595</a> / <a href="https://doi.org/10.1007/JHEP06(2025)093">JHEP06(2025)093</a> 
 <div style="font-size: 15pt;"> with H. Ita, B. Page and V. Sotnikov </div>
 <span style="font-size: 16pt;">Massive spinor-helicity</span>: <a href="https://arxiv.org/abs/2603.10269">arXiv:2603.10269</a> <span style="font-size: 16pt;">/ Accepted in JHEP</span>
-<div style="font-size: large;">with K. Melnikov, M. Tresoldi </div>
+<div style="font-size: 15pt;">with K. Melnikov, M. Tresoldi </div>
 
 
 University of Bologna - Workshop Talk
@@ -1390,7 +1390,7 @@ $\circ\,$ Linear systems solved w/ CUDA over $\mathbb{F}_{2^{31}-1}$ ($t_{\text{
 <div style="margin-top: 2mm; margin-bottom: 3mm">
      <b style="font-variant: small-caps; font-size: 32pt"> Preview of Linac </b>
      <p style="margin-top: -2mm; margin-bottom: -=mm; font-size: 16pt;">
-     work in collaboration with Jack Franklin, <b>avaiable now!</b> @ github.com/GDeLaurentis/linac
+     work in collaboration with Jack Franklin, <b>avaiable now!</b> @ <a href="https://github.com/GDeLaurentis/linac">github.com/GDeLaurentis/linac</a>
      </p>
 </div>
 
