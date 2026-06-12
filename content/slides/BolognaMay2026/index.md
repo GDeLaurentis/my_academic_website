@@ -543,7 +543,7 @@ $$
 
 --- 
 
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Discontinuity in the second derivative remainder </b>
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Discontinuity in the second derivative </b>
 <a href="https://arxiv.org/abs/arXiv:2605.04009" style="font-size: 14pt; margin-bottom: -6mm; margin-top: -2mm; float: right; font-align: right;"> GDL, Ita, Kuschke, Ruf, Sotnikov </a>
 
 <div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 4mm;">
