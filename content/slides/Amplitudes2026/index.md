@@ -97,7 +97,7 @@ window.addEventListener("load", function () {
 </span>
 <div style="font-size: 14pt; margin-top: 5mm; margin-bottom: 5mm; float: center;">
 $$ 
-\textstyle \mathcal{R}^{\ell-\text{loop}}_{n-\text{point}}(|i⟩_{\alpha}, [i|_{\dot\alpha}) = \sum_i \color{red}{r_{i}(|i⟩_{\alpha}, [i|_{\dot\alpha})} \, \color{blue}{G_i(|i⟩_{\alpha} {\scriptsize\times} [i|_{\dot\alpha})} \, .
+\textstyle \mathcal{R}^{\ell-\text{loop}}_{n-\text{point}}(|i⟩_{\alpha}, [i|_{\dot\alpha}) = \sum_i {\color{red}{r_{i}}}(|i⟩_{\alpha}, [i|_{\dot\alpha}) \, {\color{blue}{G_i}}(|i⟩_{\alpha} {\scriptsize\times} [i|_{\dot\alpha}) \, .
 $$
 </div>
 
