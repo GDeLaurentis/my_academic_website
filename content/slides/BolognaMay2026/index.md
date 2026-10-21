@@ -209,7 +209,7 @@ $\mathbb{Q}_p$: GDL, Page ('22)
 <span style="font-size: 17pt">[arXiv:2203.04269](https://arxiv.org/abs/2203.04269)<span>
 <span style="font-size: 17pt">[(JHEP 12 (2022) 140)](https://link.springer.com/article/10.1007/JHEP12(2022)140)<span>
 
-<span style="font-size: 18pt">see also Sturmfeld et al. "Spinor-Helicity Varieties":<span> <br>
+<span style="font-size: 18pt">see also Sturmfels et al. "Spinor-Helicity Varieties":<span> <br>
 <span style="font-size: 17pt">[arXiv:2406.17331](https://arxiv.org/abs/2406.17331)<span>
 <span style="font-size: 17pt">[(SIAM 24M1671840)](https://epubs.siam.org/doi/10.1137/24M1671840)<span>
 

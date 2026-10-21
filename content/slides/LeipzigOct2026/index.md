@@ -102,17 +102,7 @@ Positive Geometry: Back to Physics - MPI Leipzig
 
 {{< slide background-image="LHCcern.jpg" >}}
 
-# Introduction
-
-</section>
-
----
-
-<section>
-
-{{< slide background-image="Feynman-Diagrams-transparent.png" >}}
-
-<h1 style="margin-top: -2mm;"> Numerical Computation </h1>
+# Part 1: <br> Computing Amplitudes
 
 ---
 
@@ -197,73 +187,21 @@ $\mathbb{Q}_p$: GDL, Page ('22)
 
 <section>
 
-{{< slide background-image="one-ring-white.jpg" >}}
+{{< slide background-image="Feynman-Diagrams-transparent.png" >}}
 
-<br><br><br><br>
+<br><br><br><br><br><br>
 
-# Variable Rings
-
-<span style="font-size: 15pt;">(not Elvish)</span>
+# Variable Quotient Rings
 
 <br><br>
 
-<span style="font-size: 18pt">based on work with Ben Page in:<span> <br>
+<span style="font-size: 18pt">based on work with Ben Page:<span> <br>
 <span style="font-size: 17pt">[arXiv:2203.04269](https://arxiv.org/abs/2203.04269)<span>
 <span style="font-size: 17pt">[(JHEP 12 (2022) 140)](https://link.springer.com/article/10.1007/JHEP12(2022)140)<span>
 
-<span style="font-size: 18pt">see also Sturmfeld et al. "Spinor-Helicity Varieties":<span> <br>
+<span style="font-size: 18pt">related mathematical treatment of spinor-helicity varieties, Sturmfels et al:<span> <br>
 <span style="font-size: 17pt">[arXiv:2406.17331](https://arxiv.org/abs/2406.17331)<span>
 <span style="font-size: 17pt">[(SIAM 24M1671840)](https://epubs.siam.org/doi/10.1137/24M1671840)<span>
-
----
-
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Polynomials Modulo Constraints </b>
-
-<div style="font-size: 17pt; text-align: left; margin-bottom: 2mm; margin-top: -2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Manifesting amplitude's gauge and Lorentz invariance, and little-group and spin covariance requires
-     <div style="font-size: 17pt; text-align: center; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-          <u>variables subject to constraints</u>.
-     </div>
-</div>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Consider polynomials <span style="font-size: 14pt;">$f, g, h$</span> in two variables <span style="font-size: 14pt;">$x, y$</span>. They live in a <b>polynomial ring</b>:
-</div>
-<div style="font-size: 14pt; margin-top: 3mm; margin-bottom: 3mm">
-$$ 
-\displaystyle f(x,y), g(x, y), h(x, y) \in \mathbb{Q}[x, y] \, \quad (\text{or more generally} \; \mathbb{F}[x, y]).
-$$
-</div>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Now, localize them, e.g. on the unit circle <span style="font-size: 14pt;">$(x^2+y^2-1)$</span>
-</div>
-<div style="font-size: 14pt; margin-top: 3mm; margin-bottom: 3mm">
-$$ 
-\displaystyle f(x,y) \approx g(x, y) + h(x, y) (x^2+y^2-1) \, ,
-$$
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}$ we should consider <span style="font-size: 14pt;">$f(x,y)$</span> and <span style="font-size: 14pt;">$g(x, y)$</span> as equivalent, for any <span style="font-size: 14pt;">$h(x,y)$</span>.
-</div>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ The structure is that of a polynomial <b>quotient</b> ring
-</div>
-<div style="font-size: 14pt; margin-top: 4mm; margin-bottom: 2mm;">
-$$ 
-\displaystyle \mathbb{Q}[x, y] \big/ \big\langle x^2+y^2-1 \big\rangle
-$$
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}$ its elements are <b>equivalence classes</b> of polynomials.
-</div>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ <span style="font-size: 13pt;">$\big\langle q_1(\underline X), \dots, q_m(\underline X) \big\rangle \subseteq \mathbb{Q}[\underline X]$</span> is an <b>ideal</b>, the infinite set of polynomials <span style="font-size: 13pt;">$r_1(\underline X) q_1(\underline X) + \dots $</span> <br> 
-     $\phantom{\circ}$ In this example, the set of polynomials <span style="font-size: 14pt;">$h(x, y) (x^2+y^2-1)$</span> that vanish on the unit circle.
-</div>
-
 
 ---
 
@@ -497,67 +435,6 @@ From work in progress with S. Abreu, X. Liu, P.F. Monni
 
 <div style="font-size: 17pt; text-align: left; margin-top: 4mm; margin-bottom: 2mm;">
      $\circ$ Factorization and extra chiral cancellations are key for simplification in gauge amplitudes 
-</div>
-
----
-
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> What to do with square roots? </b>
-
-<div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2          mm;">
-     $\circ$ The transcendental basis is pure up to some square roots
-</div>
-<div style="font-size: 14.5pt; margin-top: 5mm; margin-bottom: 5mm">
-$$ 
-\displaystyle \mathcal{R}(\lambda, \tilde\lambda) = \sum_i \color{red}{r_{i}(\lambda,\tilde\lambda)} \, \color{orange}{G_i(\lambda\tilde\lambda)} \color{black} \; , \qquad G_i = h_i \quad \text{or} \quad G_i = \frac{h_i}{\sqrt{q}}
-$$
-</div>
-<div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2mm;">
-     $\phantom{\circ}$ with <span style="font-size: 14pt;">$h_i$</span> pure and <span style="font-size: 14pt;">$q$</span> irreducible polynomials in Mandelstams
-</div>
-
-<div style="font-size: 17pt; text-align: left; margin-top: 8mm; margin-bottom: 2mm;">
-     $\circ$ Distinguish 3 cases for <span style="font-size: 14pt;">$\sqrt{q} = \sqrt{\Delta_3}, \sqrt{\Delta_5}, \sqrt{\Sigma_5}$</span>
-</div>
-<div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2mm;">
-     $\quad 1.$ <span style="font-size: 14pt;">$\sqrt{q} = \sqrt{\Delta_3}$</span> is the boring case, leave it unchanged, here <span style="font-size: 14pt;">$\lim_{q\rightarrow 0} h_i = \sqrt{q}$</span>,
-</div>
-<div style="font-size: 14.5pt; margin-top: 5mm; margin-bottom: 5mm">
-$$ 
-G_i \rightarrow \frac{h_i}{\sqrt{\Delta_3}}
-$$
-</div>
-<div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2mm;">
-     $\quad 2.$ <span style="font-size: 14pt;">$\sqrt{q} = \sqrt{\Delta_5}$</span> is rational in spinors, <span style="font-size: 14pt;">$\sqrt{\Delta_5} = \pm \text{tr}(\gamma^5p_1p_2p_3p_4) = \pm ([1|2|3|4|1\rangle-\langle1|2|3|4|1])$</span>,
-</div>
-<div style="font-size: 14.5pt; margin-top: 5mm; margin-bottom: 5mm">
-$$ 
-G_i \rightarrow \frac{\text{tr}_5}{\sqrt{\Delta_5}} h_i = \text{sign}\big(\text{Im}(\text{tr}_5)\big) h_i
-$$
-</div>
-<div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 2mm;">
-     $\quad 3.$ <span style="font-size: 14pt;">$\sqrt{q} = \sqrt{\Sigma_5}$</span>, the rational coefficient vanishes linearly in <span style="font-size: 14pt;">$\lim_{q\rightarrow 0}$</span>,
-</div>
-<div style="font-size: 14.5pt; margin-top: 5mm; margin-bottom: 5mm">
-$$ 
-G_i \rightarrow \sqrt{\Sigma_5} \, h_i
-$$
-</div>
-
---- 
-
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Discontinuity in the second derivative </b>
-<a href="https://arxiv.org/abs/arXiv:2605.04009" style="font-size: 14pt; margin-bottom: -6mm; margin-top: -2mm; float: right; font-align: right;"> GDL, Ita, Kuschke, Ruf, Sotnikov </a>
-
-<div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 4mm;">
-     $\circ$ First (?) fully massless pseudo-threshold(?). Cross <span style="font-size: 14pt;">$\Sigma_5^{(3)}=0 \text{ at } t=0$</span> ,
-</div>
-<div style="font-size: 13.5pt; margin-top: 5mm; margin-bottom: 5mm">
-$$ 
-\Sigma_5^{(3)} \, = \, \big(s_{12}s_{24}+s_{13}(s_{14}+s_{24})+s_{123}(s_{12}+s_{14})\big)^2-4s_{13}s_{14}s_{123}s_{124} \, .
-$$
-</div>
-<div>
-<img src="plot_sigma5_threshold.png"; style="max-width:600px; float:center; border:none; margin-top: 2mm; margin-bottom: 0mm;">
 </div>
 
 </section>
@@ -1597,6 +1474,276 @@ $$
 
 {{< slide background-image="HjjDiagrams.png">}}
 
+<br><br>
+
+# <br> Part 2: <br> Proof of Factoriality
+
+<br><br>
+
+<span style="font-size: 18pt">based on upcoming work: <br>
+<i>Factoriality of massless spinor rings beyond four points</i><span> <br>
+
+---
+
+<b style="font-variant: small-caps; font-size: 32pt;"> Factoriality of Massless Spinor Rings </b>
+
+<div style="font-size: 19pt; text-align: left; margin-top: 5mm;">
+$\circ$ Rational coefficients live in $\operatorname{Frac}(R_n)$.
+Throughout the first part of the talk we referred to <i>the</i>
+irreducible factors of their denominators.
+</div>
+
+<div style="font-size: 19pt; text-align: left; margin-top: 5mm;">
+$\circ$ Is this factorization actually unique modulo momentum conservation?
+</div>
+
+<div style="font-size: 17pt; margin-top: 8mm;">
+$$
+\boxed{
+R_3\;\text{is not a domain},\qquad
+R_4\;\text{is a non-factorial domain},\qquad
+R_n\;\text{is a UFD for } n\geq5 .
+}
+$$
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 7mm;">
+$\circ$ The bound is sharp. At four points,
+$$
+\langle12\rangle[12]=\langle34\rangle[34],
+$$
+with inequivalent irreducible factorizations.
+</div>
+
+<div style="font-size: 16pt; text-align: left; margin-top: 5mm;">
+$\circ$ Upcoming work: <i>Factoriality of massless spinor rings beyond four points</i>.
+</div>
+
+---
+
+<b style="font-variant: small-caps; font-size: 32pt;"> Why Five Particles? </b>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 4mm;">
+$\circ$ Write
+$$
+\Lambda=(\lambda_1\,\cdots\,\lambda_n),\qquad
+\widetilde\Lambda=
+\begin{pmatrix}
+\widetilde\lambda_1\\[-1mm]\vdots\\\widetilde\lambda_n
+\end{pmatrix},
+\qquad
+R_n=\mathbb F[\Lambda,\widetilde\Lambda]/\langle\Lambda\widetilde\Lambda\rangle .
+$$
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 3mm;">
+$\circ$ Stratify the momentum-conservation variety by
+$r=\operatorname{rank}\Lambda$:
+$$
+\dim(r=2)=4n-4,\qquad
+\dim(r=1)=3n-1,\qquad
+\dim(r=0)=2n .
+$$
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 4mm;">
+$\circ$ Impose one angle bracket
+$$
+\Delta=\langle12\rangle=0.
+$$
+The full-rank component has dimension $4n-5$, while the largest
+rank-deficient locus still has dimension $3n-1$.
+</div>
+
+<div style="font-size: 22pt; margin-top: 5mm;">
+$$
+(4n-5)-(3n-1)=\boxed{n-4}.
+$$
+</div>
+
+<div style="font-size: 18pt; text-align: left;">
+$\circ$ For $n\geq5$ the lower-rank locus is too small to form another
+component: $\langle12\rangle$ is prime.
+</div>
+
+---
+
+<b style="font-variant: small-caps; font-size: 32pt;"> Localization and Nagata's Criterion </b>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 4mm;">
+$\circ$ On the open set $\Delta=\langle12\rangle\neq0$,
+the first two spinors form an invertible $2\times2$ matrix:
+$$
+M=
+\begin{pmatrix}
+a_1&a_2\\ b_1&b_2
+\end{pmatrix},
+\qquad \det M=\Delta .
+$$
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 3mm;">
+$\circ$ Momentum conservation then solves linearly for
+$c_1,c_2,d_1,d_2$:
+$$
+R_n[\Delta^{-1}]
+\cong
+\mathbb F[a_1,\ldots,b_n,c_3,\ldots,c_n,d_3,\ldots,d_n][\Delta^{-1}] .
+$$
+</div>
+
+<div style="font-size: 19pt; text-align: left; margin-top: 6mm;">
+$\circ$ Therefore the localization is a UFD.
+</div>
+
+<div style="font-size: 20pt; margin-top: 5mm;">
+$$
+\boxed{
+\Delta\ {\rm prime}
+\;+\;
+R_n[\Delta^{-1}]\ {\rm UFD}
+\quad\xRightarrow{\text{Nagata}}\quad
+R_n\ {\rm UFD}.
+}
+$$
+</div>
+
+</section>
+
+---
+
+<section>
+
+{{< slide background-image="HjjDiagrams.png">}}
+
+<br><br>
+
+# Constructive Factoriality
+
+<br><br>
+
+<span style="font-size: 18pt">based on upcoming work: <br>
+<i>Factoriality of massless spinor rings beyond four points</i><span> <br>
+
+---
+
+<b style="font-variant: small-caps; font-size: 32pt;"> A Constructive Version of the Localization Argument </b>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 4mm;">
+$\circ$ More generally, suppose a quotient domain $R=S/J$ admits
+$$
+R[\Delta^{-1}]
+\cong
+P[\Delta^{-1}],
+\qquad
+P=\mathbb F[y_1,\ldots,y_m].
+$$
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 5mm;">
+$\circ$ For $f\in R$:
+</div>
+
+<div style="font-size: 17pt; text-align: left; margin-left: 15mm;">
+1. Gröbner reduction in the localization gives
+   $\displaystyle f=N/\Delta^k$, with $N\in P$;<br>
+2. factor $N$ using ordinary polynomial factorization;<br>
+3. determine powers hidden by the quotient relations using saturation;<br>
+4. exactly divide and pull the factors back to $R$.
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 7mm;">
+$\circ$ If $\Delta=\prod_\alpha\Delta_\alpha$ with each
+$\Delta_\alpha$ prime, this is the constructive factorization descent
+underlying Nagata's criterion.
+</div>
+
+---
+
+<b style="font-variant: small-caps; font-size: 32pt;"> Finding the Localization Automatically </b>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 4mm;">
+$\circ$ Split the coordinates $X=Y\sqcup Z$ and extend
+$$
+J \longrightarrow J^e\subset\mathbb F(Y)[Z].
+$$
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 5mm;">
+$\circ$ If
+$$
+\dim_{\mathbb F(Y)}\mathbb F(Y)[Z]/J^e=1,
+$$
+the chosen coordinate projection is birational.
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 5mm;">
+$\circ$ Gröbner reduction gives
+$$
+z=r_z(Y),\qquad z\in Z.
+$$
+Taking a common denominator $D$ yields
+$$
+R[D^{-1}]\cong\mathbb F[Y,D^{-1}].
+$$
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 5mm;">
+$\circ$ Implemented in <tt>syngular</tt>. For $R_5$, choosing
+$Z=(c_1,c_2,d_1,d_2)$ rediscovers automatically
+$$
+D=a_1b_2-a_2b_1=\langle12\rangle .
+$$
+</div>
+
+---
+
+<b style="font-variant: small-caps; font-size: 32pt;"> But Residue Rings Need Not Be Factorial </b>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 4mm;">
+$\circ$ Even though $R_n$ is a UFD for $n\geq5$, the quotient
+$$
+B_\Delta=R_n/(\Delta)
+$$
+need not be.
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 5mm;">
+$\circ$ For example, on $\langle12\rangle=0$, Schouten gives
+$$
+\boxed{
+\langle13\rangle\langle24\rangle
+=
+\langle14\rangle\langle23\rangle .
+}
+$$
+The four factors remain irreducible and pairwise nonassociate.
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 6mm;">
+$\circ$ Therefore residues may admit genuinely inequivalent
+multiplicative representations.
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 4mm;">
+$\circ$ With a known alphabet, these ambiguities can still be organized
+as affine integer lattices and one can search for least-degree
+representations.
+</div>
+
+---
+
+<b style="font-variant: small-caps; font-size: 32pt;"> Least-Degree Denominators in Non-UFD Rings </b>
+
+
+</section>
+
+---
+
+<section>
+
+{{< slide background-image="HjjDiagrams.png">}}
+
 # <br> Conclusions <br> & <br> Outlook
 
 ---
@@ -1811,6 +1958,24 @@ coeffs_pp\['d_12x3x4'\](oPsC)
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 5mm; margin-left: 2mm; margin-right: 2mm;">
      $\circ$ The output is a <span style="font-size: 15pt">$p$</span>-adic number, i.e. a Laurent series in powers of the prime.<br> 
      $\phantom{\circ}$ With finite fields we cannot do this (with just one evaluation)! It would be dividing by zero.
+</div>
+
+
+---
+
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Discontinuity in the second derivative </b>
+<a href="https://arxiv.org/abs/arXiv:2605.04009" style="font-size: 14pt; margin-bottom: -6mm; margin-top: -2mm; float: right; font-align: right;"> GDL, Ita, Kuschke, Ruf, Sotnikov </a>
+
+<div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 4mm;">
+     $\circ$ First (?) fully massless pseudo-threshold(?). Cross <span style="font-size: 14pt;">$\Sigma_5^{(3)}=0 \text{ at } t=0$</span> ,
+</div>
+<div style="font-size: 13.5pt; margin-top: 5mm; margin-bottom: 5mm">
+$$ 
+\Sigma_5^{(3)} \, = \, \big(s_{12}s_{24}+s_{13}(s_{14}+s_{24})+s_{123}(s_{12}+s_{14})\big)^2-4s_{13}s_{14}s_{123}s_{124} \, .
+$$
+</div>
+<div>
+<img src="plot_sigma5_threshold.png"; style="max-width:600px; float:center; border:none; margin-top: 2mm; margin-bottom: 0mm;">
 </div>
 
 </section>
