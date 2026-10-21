@@ -443,16 +443,38 @@ From work in progress with S. Abreu, X. Liu, P.F. Monni
 
 <section>
 
-{{< slide background-image="varieties-no-background.png" >}}
+{{< slide background-image="ChatGPTVarieties.png">}}
 
-<br><br><br><br>
+<div style="
+position: absolute;
+top: -10%;
+left: -20%;
+width: 144%;
+height: 170%;
+background: rgba(0,0,0,0.24);
+z-index: 0;
+"></div>
 
-# Least Common Denominator
+<div style="
+position: relative;
+z-index: 1;
+color: white;
+text-shadow: 0 2px 8px rgba(0,0,0,0.85);
+">
 
+<br><br><br><br><br><br><br>
 
-<span style="font-size: 15pt;">(Geometry at codimension one)</span>
+<h1 style="color: white; text-shadow: 0 2px 8px rgba(0,0,0,0.85);">
+Reduced <br> Denominators
+</h1>
 
-<br><br><br>
+<br><br>
+
+<span style="font-size: 18pt;">
+(Geometry at codimension one)
+</span>
+
+</div>
 
 ---
 
@@ -1579,91 +1601,250 @@ font-size: 18pt;
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt;"> Why Five Particles? </b>
+<b style="font-variant: small-caps; font-size: 32pt;">
+Choosing a Prime Divisor
+</b>
 
 <div style="font-size: 18pt; text-align: left; margin-top: 4mm;">
-$\circ$ Write
+$\circ$ For the next step we need a <b>prime element</b>, <span style="font-size: 15pt">
+$\Delta$</span>. Say,
+</div>
+<div style="font-size: 14pt; text-align: center; margin-top: 1mm;">
+<span style="font-size: 14pt;">
 $$
-\Lambda=(\lambda_1\,\cdots\,\lambda_n),\qquad
-\widetilde\Lambda=
-\begin{pmatrix}
-\widetilde\lambda_1\\[-1mm]\vdots\\\widetilde\lambda_n
-\end{pmatrix},
-\qquad
-R_n=\mathbb F[\Lambda,\widetilde\Lambda]/\langle\Lambda\widetilde\Lambda\rangle .
+\Delta=\langle12\rangle=a_1b_2-a_2b_1.
 $$
+</span>
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 4mm;">
+$\circ$ We study the quotient
+<span style="font-size: 15pt">
+$R_n/(\Delta)$,
+</span>
+i.e. the momentum-conservation variety restricted to
+<span style="font-size: 15pt">$\langle12\rangle=0$</span>.
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 4mm;">
+$\circ$ On the full-rank locus, imposing one additional equation reduces
+the dimension by one:
+</div>
+
+<div style="font-size: 14pt; text-align: center; margin-top: 1mm;">
+<span style="font-size: 14pt;">
+$$
+\dim(r=2,\Delta=0)=4n-5.
+$$
+</span>
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-top: 3mm;">
-$\circ$ Stratify the momentum-conservation variety by
-$r=\operatorname{rank}\Lambda$:
-$$
-\dim(r=2)=4n-4,\qquad
-\dim(r=1)=3n-1,\qquad
-\dim(r=0)=2n .
-$$
+$\circ$ The largest lower-rank stratum is <span style="font-size: 15pt">$r=1$</span>,
+which already implies <span style="font-size: 15pt">$\Delta=0$</span>, <br> $\phantom\circ$ and thus
+still has dimension <span style="font-size: 15pt">$3n-1$</span>.
 </div>
 
-<div style="font-size: 18pt; text-align: left; margin-top: 4mm;">
-$\circ$ Impose one angle bracket
-$$
-\Delta=\langle12\rangle=0.
-$$
-The full-rank component has dimension $4n-5$, while the largest
-rank-deficient locus still has dimension $3n-1$.
+<div style="font-size: 18pt; text-align: left; margin-top: 3mm;">
+$\circ$ Therefore, by the same argument as before, when
 </div>
 
-<div style="font-size: 22pt; margin-top: 5mm;">
+<div style="font-size: 14pt; text-align: center; margin-top: 1mm;">
+<span style="font-size: 14pt;">
 $$
-(4n-5)-(3n-1)=\boxed{n-4}.
+(4n-5)>(3n-1) \quad\Longleftrightarrow\quad n\geq5,
 $$
+</span>
 </div>
 
-<div style="font-size: 18pt; text-align: left;">
-$\circ$ For $n\geq5$ the lower-rank locus is too small to form another
-component: $\langle12\rangle$ is prime.
+<div style="font-size: 18pt; text-align: left; margin-top: 3mm;">
+$\phantom\circ$ it follows that
+</div>
+
+<div style="font-size: 18pt; text-align: center; margin-top: 3mm;">
+<span style="font-size: 15pt">$R_n/(\langle12\rangle)$</span>
+<span style="font-size: 17pt"> is a domain</span>
+<span style="font-size: 15pt">$\;\Longrightarrow\; \langle12\rangle$</span>
+<span style="font-size: 17pt"> is prime.</span>
 </div>
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt;"> Localization and Nagata's Criterion </b>
+<b style="font-variant: small-caps; font-size: 32pt;">
+Nagata's Criterion
+</b>
 
 <div style="font-size: 18pt; text-align: left; margin-top: 4mm;">
-$\circ$ On the open set $\Delta=\langle12\rangle\neq0$,
-the first two spinors form an invertible $2\times2$ matrix:
-$$
-M=
-\begin{pmatrix}
-a_1&a_2\\ b_1&b_2
-\end{pmatrix},
-\qquad \det M=\Delta .
-$$
+$\circ$ For <span style="font-size: 15pt">$n\geq5$</span>, we have
+a Noetherian domain <span style="font-size: 15pt">$R_n$</span> containing the prime element
+<span style="font-size: 15pt">$\Delta=\langle12\rangle$</span>. <br>
+$\phantom{\circ}$ We now localize at <span style="font-size: 15pt">$\Delta$</span>,
+<i>i.e.</i> we <b>invert</b> it.
 </div>
 
-<div style="font-size: 18pt; text-align: left; margin-top: 3mm;">
-$\circ$ Momentum conservation then solves linearly for
-$c_1,c_2,d_1,d_2$:
+<div style="font-size: 18pt; text-align: left; margin-top: 4mm;">
+$\circ$ Since
+<span style="font-size: 15pt">$\det M=\Delta\neq0$</span>, the momentum-conservation equations
+</div>
+
+<div style="font-size: 14pt; text-align: center; margin-top: 1mm;">
+<span style="font-size: 13pt;">
+$$
+M
+\begin{pmatrix}
+c_1\\
+c_2
+\end{pmatrix}
+=
+-\sum_{i=3}^n c_i
+\begin{pmatrix}
+a_i\\
+b_i
+\end{pmatrix},
+\qquad
+M
+\begin{pmatrix}
+d_1\\
+d_2
+\end{pmatrix}
+=
+-\sum_{i=3}^n d_i
+\begin{pmatrix}
+a_i\\
+b_i
+\end{pmatrix}
+$$
+</span>
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 2mm;">
+$\phantom{\circ}$ uniquely solve for
+<span style="font-size: 15pt">$c_1,c_2,d_1,d_2$</span>. Therefore
+</div>
+
+<div style="font-size: 14pt; text-align: center; margin-top: 1mm;">
+<span style="font-size: 13pt;">
 $$
 R_n[\Delta^{-1}]
 \cong
-\mathbb F[a_1,\ldots,b_n,c_3,\ldots,c_n,d_3,\ldots,d_n][\Delta^{-1}] .
+P_n[\Delta^{-1}],
+\qquad
+P_n=
+\mathbb F[
+a_1,\ldots,a_n,
+b_1,\ldots,b_n,
+c_3,\ldots,c_n,
+d_3,\ldots,d_n
+].
 $$
+</span>
 </div>
 
-<div style="font-size: 19pt; text-align: left; margin-top: 6mm;">
-$\circ$ Therefore the localization is a UFD.
+<div style="font-size: 18pt; text-align: left; margin-top: 3mm;">
+$\circ$ The right-hand side is a localization of a polynomial ring,
+and is therefore a <b>UFD</b>.
 </div>
 
-<div style="font-size: 20pt; margin-top: 5mm;">
+<div style="font-size: 18pt; text-align: left; margin-top: 5mm;">
+$\circ$ <b>Nagata's criterion:</b> <br> $\phantom\circ$ Let <span style="font-size: 15pt">$B$</span> be a Noetherian domain and <span style="font-size: 15pt">$p\in B$</span> a prime element. If
+<span style="font-size: 15pt">$B[p^{-1}]$</span> is a UFD, then
+<span style="font-size: 15pt">$B$</span> is a UFD.
+</div>
+
+<div style="font-size: 18pt; text-align: center; margin-top: 4mm;">
+<span style="font-size: 17pt">
+We have:
+</span>
+<span style="font-size: 15pt">
+$\quad\Delta$
+</span>
+<span style="font-size: 17pt">
+is prime
+</span>
+<span style="font-size: 15pt">
+$\quad+\quad$
+$R_n[\Delta^{-1}]$ 
+</span>
+<span style="font-size: 17pt">
+is UFD
+</span>
+<span style="font-size: 15pt">
+$\quad\Longrightarrow\quad$
+$R_n$ 
+</span>
+<span style="font-size: 17pt">
+is UFD.
+</span>
+</div>
+
+<div style="text-align: center; margin-top: 6mm;">
+<div style="
+display: inline-block;
+border: 2px solid #444;
+border-radius: 8px;
+padding: 7px 14px;
+font-size: 19pt;
+">
+<b>Theorem:</b>
+<span style="font-size: 18pt">
+<span style="font-size: 15pt">$R_n$</span> is a unique factorization domain for every
+<span style="font-size: 15pt">$n\geq5$</span>.
+</span>
+</div>
+</div>
+
+---
+
+<b style="font-variant: small-caps; font-size: 32pt;">
+Consequences of Factoriality
+</b>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 6mm;">
+$\circ$ <b>Unique reduced denominators:</b> for
+<span style="font-size: 15pt">$n\geq5$</span>, any
+<span style="font-size: 15pt">$f\in\operatorname{Frac}(R_n)$</span> has a reduced representation
+</div>
+
+<div style="font-size: 14pt; text-align: center; margin-top: 2mm;">
+<span style="font-size: 14pt;">
 $$
-\boxed{
-\Delta\ {\rm prime}
-\;+\;
-R_n[\Delta^{-1}]\ {\rm UFD}
-\quad\xRightarrow{\text{Nagata}}\quad
-R_n\ {\rm UFD}.
-}
+f=\frac{N}{D},
+\qquad
+\gcd(N,D)=1,
 $$
+</span>
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 2mm;">
+$\phantom{\circ}$ where <span style="font-size: 15pt">$D$</span> is unique up to a nonzero constant,
+and its factorization
+<span style="font-size: 15pt">$D=\prod_i\mathcal D_i^{q_i}$</span>
+is unique up to constants and ordering.
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 7mm;">
+$\circ$ <b>For scattering amplitudes:</b> fix a basis of integral / transcendental functions
+<span style="font-size: 15pt">$\{h_i\}$</span>,
+</div>
+
+<div style="font-size: 14pt; text-align: center; margin-top: 2mm;">
+<span style="font-size: 14pt;">
+$$
+\mathcal A^{(\ell)}=\sum_i c_i h_i,
+\qquad
+c_i\in\operatorname{Frac}(R_n).
+$$
+</span>
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 2mm;">
+$\phantom{\circ}$ If the <span style="font-size: 15pt">$h_i$</span> are linearly independent over
+<span style="font-size: 15pt">$\operatorname{Frac}(R_n)$</span>, each coefficient
+<span style="font-size: 15pt">$c_i$</span> is uniquely defined and has a unique reduced denominator.
+</div>
+
+<div style="font-size: 20pt; text-align: center; margin-top: 7mm;">
+<b>Any theory, any loop order, for massless <span style="font-size: 16pt">$n\geq5$</span>.</b>
 </div>
 
 </section>
