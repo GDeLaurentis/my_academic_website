@@ -774,103 +774,6 @@ see also Fontana, Peraro ('23)
 
 <br><br><br>
 
----
-
-<div style="margin-top: 2mm; margin-bottom: 3mm">
-     <b style="font-variant: small-caps; font-size: 32pt"> mPFD from Conjectured Properties </b>
-     <p style="margin-top: -2mm; margin-bottom: -=mm; font-size: 16pt;">
-     (for planar five-point one-mass amplitudes -- properties checked a posteriori)
-     </p>
-</div>
-
-<div style="text-align: left; font-size: 18pt; margin-top: 3mm; margin-bottom: 2mm;">
-     $\circ\,$ Denominator pairs <span style="font-size: 14pt">$\{\mathcal{D}_i, \mathcal{D}_j\}$</span> can be <i>cleanly separated</i>:
-</div>
-<div style="font-size:14pt; text-align: center; margin-top: 2mm; margin-bottom: 1mm;">
-     $$
-     \frac{\mathcal{N}}{\mathcal{D}_i^{q_i}\mathcal{D}_j^{q_j}\mathcal{D}_{\text{rest}}} \rightarrow \frac{\mathcal{N}_i}{\mathcal{D}_i^{q_i}\mathcal{D}_{\text{rest}}} + \frac{\mathcal{N}_j}{\mathcal{D}_j^{q_j}\mathcal{D}_{\text{rest}}}
-     $$
-</div>
-<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
-     $\phantom{\circ}\,$ Examples of <span style="font-size: 14pt">$\{\mathcal{D}_i, \mathcal{D}_j\}$</span> are:
-</div>
-<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 2mm;">
-     $\qquad\star\,$ Any pairs of <span style="font-size: 14pt">$s_{ijk}$</span> or <span style="font-size: 14pt">$\Delta_{ij|kl|mn}$</span> or <span style="font-size: 14pt">$\langle i|j|p_V|k|i]-\langle j|l|p_V|k|j]$</span> <br>
-     $\qquad\star\,$ Any conjugate pair <span style="font-size: 14pt">$\{\langle i|j+k|l], \langle l|j+k|i]\}$</span> or cyclic <span style="font-size: 14pt">$\{\langle i|j\rangle, [i|j]\}$</span> <br>
-     $\qquad\star\,$ Pairs of the form <span style="font-size: 14pt">$\{\Delta_{ij|kl|mn}, \langle c|a+b|d] \text{ or } \langle ab \rangle \text{ or } [ab] \}$</span> unless <span style="font-size: 14pt">$\{ab\}$</span> are <span style="font-size: 14pt">$\{ij\}$</span> or <span style="font-size: 14pt">$\{kl\}$</span> or <span style="font-size: 14pt">$\{mn\}$</span>
-</div>
-
-<div style="text-align: left; font-size: 18pt; margin-top: 8mm; margin-bottom: 2mm;">
-     $\circ\,$ Other denominator pairs <span style="font-size: 14pt">$\{\mathcal{D}_i, \mathcal{D}_j\}$</span> can be <i>separated to order $\kappa$</i> 
-</div>
-<div style="font-size:14pt; text-align: center; margin-top: 2mm; margin-bottom: 1mm;">
-     $$
-     \frac{\mathcal{N}}{\mathcal{D}_i^{q_i}\mathcal{D}_j^{q_j}\mathcal{D}_{\text{rest}}} \rightarrow \sum_{\kappa - q_j\leq m \leq q_i}\frac{\mathcal{N}_i}{\mathcal{D}_i^{m}\mathcal{D}_j^{\kappa - m}\mathcal{D}_{\text{rest}}}
-     $$
-</div><div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 2mm;">
-     $\qquad\star\,$ E.g. <span style="font-size: 14pt">$\Delta_{ij|kl|mn}^4, \langle i|k+l|j]^5$</span> are separable to order 5.
-</div>
-
-<!---
-<div style="text-align: center; font-size: 18pt; margin-top: 3mm; margin-bottom: -2mm;">
-     ${\color{greeN} ✓}$ Reconstruction only required 50k <span style="font-size: 14pt">$\mathbb{F}_p$</span> samples $\;{\color{greeN} ✓}$Already simpler than original ones (<span style="font-size: 14pt">$\sim$</span>20MB) <br>
-     $\;{\color{red} ✗}$ Results are unstable and sub-optimal, e.g. numbers like this appeared
-</div>
-<span style="font-size: 14pt">127187555379407704220939486282289348327703498501718808908391691454242601886997968263623652083189652150273</span>
---->
-
----
-
-<div style="margin-top: 2mm; margin-bottom: 3mm">
-     <b style="font-variant: small-caps; font-size: 26pt"> $Vjj$ </b><b style="font-variant: small-caps; font-size: 32pt"> Example </b>
-</div>
-
-<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
-     $\circ\,$ Start from the function
-</div>
-<div style="font-size: 13pt; margin-top: 5mm; margin-bottom: 5mm">
-$$ 
-\displaystyle f^{\text{ex}} = \frac{\mathcal{N}^{\text{ex}}}{⟨14⟩^2[14]^2 s_{56} ⟨1|2+4|3]^2⟨2|1+4|3]^4⟨2|1+3|4]^2Δ_{14|23|56}^4}
-$$
-</div>
-<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
-     $\phantom{\circ}\,$  The numerator Ansatz has size 104$\,$128
-</div>
-
-<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
-     $\circ\,$ Clean up the <span style="font-size: 14pt">$Δ_{14|23|56}$</span> Gram residue
-</div>
-<div style="font-size: 13pt; margin-top: 5mm; margin-bottom: 5mm">
-$$ 
-\displaystyle f^{\text{ex}} = \frac{\mathcal{N}^{\text{ex}}_1}{⟨14⟩^2[14]^2s_{56}⟨2|1\!+\!4|3]^4Δ_{14|23|56}^4 \,} + \frac{\mathcal{N}^{\text{ex}}_2}{⟨14⟩^2[14]^2s_{56}⟨2|1+4|3]^4⟨1|2\!+\!4|3]^2⟨2|1\!+\!3|4]^2}
-$$
-</div>
-
-<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
-     $\circ\,$ Split <span style="font-size: 14pt">$s_{14}$</span> and impose symmetry
-</div>
-<div style="font-size: 13pt; margin-top: 5mm; margin-bottom: 5mm">
-$$ 
-\displaystyle f^{\text{ex}} =
-  \frac{\mathcal{N}^{\text{ex}}_{3}}{⟨14⟩^2 s_{56} ⟨2|1+4|3]^4Δ_{14|23|56}^4}
-  + \frac{\mathcal{N}^{\text{ex}}_{4}}{⟨14⟩^2 s_{56} ⟨1|2+4|3]^2⟨2|1+4|3]^4⟨2|1+3|4]^2} + (123456\rightarrow \overline{432165})
-$$
-</div>
-
-<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
-     $\circ\,$ Impose degree bound on poles at codimension two
-</div>
-<div style="font-size: 13pt; margin-top: 5mm; margin-bottom: 5mm">
-$$ 
-\displaystyle f^{\text{ex}} = 
-  \sum_{k=0}^3 \frac{\mathcal{N}^{\text{ex}}_{5,k}}{⟨14⟩^2 s_{56} ⟨2|1+4|3]^{1+k} Δ_{14|23|56}^{4-k}}
-    + \frac{\mathcal{N}^{\text{ex}}_6}{⟨14⟩^2 s_{56}⟨1|2+4|3]^2⟨2|1+4|3]^4⟨2|1+3|4]^2} + (123456\rightarrow \overline{432165})
-$$
-</div>
-
-<div style="text-align: center; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
-     The Ansatz now has size 13$\,$532, almost a factor of 10 simpler.
-</div>
 
 ---
 
@@ -1472,16 +1375,39 @@ $$
 
 <section>
 
-{{< slide background-image="HjjDiagrams.png">}}
+{{< slide background-image="ChatGPTImageProofOfFactoriality.png">}}
+
+<div style="
+position: absolute;
+top: -10%;
+left: -20%;
+width: 144%;
+height: 170%;
+background: rgba(0,0,0,0.20);
+z-index: 0;
+"></div>
+
+<div style="
+position: relative;
+z-index: 1;
+color: white;
+text-shadow: 0 2px 8px rgba(0,0,0,0.85);
+">
+
+<br><br><br><br>
+
+<h1 style="color: white; text-shadow: 0 2px 8px rgba(0,0,0,0.85);">
+Part 2:<br>Proof of Factoriality
+</h1>
 
 <br><br>
 
-# <br> Part 2: <br> Proof of Factoriality
+<span style="font-size: 18pt;">
+based on upcoming work:<br>
+<i>Factoriality of massless spinor rings beyond four points</i>
+</span>
 
-<br><br>
-
-<span style="font-size: 18pt">based on upcoming work: <br>
-<i>Factoriality of massless spinor rings beyond four points</i><span> <br>
+</div>
 
 ---
 
@@ -1518,6 +1444,12 @@ with inequivalent irreducible factorizations.
 <div style="font-size: 16pt; text-align: left; margin-top: 5mm;">
 $\circ$ Upcoming work: <i>Factoriality of massless spinor rings beyond four points</i>.
 </div>
+
+
+---
+
+<b style="font-variant: small-caps; font-size: 32pt;"> Integrality for <span style="font-size: 28pt">$n\geq 4$</span></b>
+
 
 ---
 
@@ -1614,16 +1546,30 @@ $$
 
 <section>
 
-{{< slide background-image="HjjDiagrams.png">}}
+{{< slide background-image="ChatGPTImageConstructiveFactoriality.png">}}
 
-<br><br>
+<div style="
+position: absolute;
+top: -10%;
+left: -20%;
+width: 144%;
+height: 170%;
+background: rgba(0,0,0,0.20);
+z-index: 0;
+"></div>
 
-# Constructive Factoriality
+<div style="
+position: relative;
+z-index: 1;
+color: white;
+text-shadow: 0 2px 8px rgba(0,0,0,0.85);
+">
 
-<br><br>
+<h1 style="color: white; text-shadow: 0 2px 8px rgba(0,0,0,0.85);">
+Constructive Factoriality
+</h1>
 
-<span style="font-size: 18pt">based on upcoming work: <br>
-<i>Factoriality of massless spinor rings beyond four points</i><span> <br>
+<br>
 
 ---
 
@@ -1976,6 +1922,105 @@ $$
 </div>
 <div>
 <img src="plot_sigma5_threshold.png"; style="max-width:600px; float:center; border:none; margin-top: 2mm; margin-bottom: 0mm;">
+</div>
+
+
+---
+
+<div style="margin-top: 2mm; margin-bottom: 3mm">
+     <b style="font-variant: small-caps; font-size: 32pt"> mPFD from Conjectured Properties </b>
+     <p style="margin-top: -2mm; margin-bottom: -=mm; font-size: 16pt;">
+     (for planar five-point one-mass amplitudes -- properties checked a posteriori)
+     </p>
+</div>
+
+<div style="text-align: left; font-size: 18pt; margin-top: 3mm; margin-bottom: 2mm;">
+     $\circ\,$ Denominator pairs <span style="font-size: 14pt">$\{\mathcal{D}_i, \mathcal{D}_j\}$</span> can be <i>cleanly separated</i>:
+</div>
+<div style="font-size:14pt; text-align: center; margin-top: 2mm; margin-bottom: 1mm;">
+     $$
+     \frac{\mathcal{N}}{\mathcal{D}_i^{q_i}\mathcal{D}_j^{q_j}\mathcal{D}_{\text{rest}}} \rightarrow \frac{\mathcal{N}_i}{\mathcal{D}_i^{q_i}\mathcal{D}_{\text{rest}}} + \frac{\mathcal{N}_j}{\mathcal{D}_j^{q_j}\mathcal{D}_{\text{rest}}}
+     $$
+</div>
+<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
+     $\phantom{\circ}\,$ Examples of <span style="font-size: 14pt">$\{\mathcal{D}_i, \mathcal{D}_j\}$</span> are:
+</div>
+<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 2mm;">
+     $\qquad\star\,$ Any pairs of <span style="font-size: 14pt">$s_{ijk}$</span> or <span style="font-size: 14pt">$\Delta_{ij|kl|mn}$</span> or <span style="font-size: 14pt">$\langle i|j|p_V|k|i]-\langle j|l|p_V|k|j]$</span> <br>
+     $\qquad\star\,$ Any conjugate pair <span style="font-size: 14pt">$\{\langle i|j+k|l], \langle l|j+k|i]\}$</span> or cyclic <span style="font-size: 14pt">$\{\langle i|j\rangle, [i|j]\}$</span> <br>
+     $\qquad\star\,$ Pairs of the form <span style="font-size: 14pt">$\{\Delta_{ij|kl|mn}, \langle c|a+b|d] \text{ or } \langle ab \rangle \text{ or } [ab] \}$</span> unless <span style="font-size: 14pt">$\{ab\}$</span> are <span style="font-size: 14pt">$\{ij\}$</span> or <span style="font-size: 14pt">$\{kl\}$</span> or <span style="font-size: 14pt">$\{mn\}$</span>
+</div>
+
+<div style="text-align: left; font-size: 18pt; margin-top: 8mm; margin-bottom: 2mm;">
+     $\circ\,$ Other denominator pairs <span style="font-size: 14pt">$\{\mathcal{D}_i, \mathcal{D}_j\}$</span> can be <i>separated to order $\kappa$</i> 
+</div>
+<div style="font-size:14pt; text-align: center; margin-top: 2mm; margin-bottom: 1mm;">
+     $$
+     \frac{\mathcal{N}}{\mathcal{D}_i^{q_i}\mathcal{D}_j^{q_j}\mathcal{D}_{\text{rest}}} \rightarrow \sum_{\kappa - q_j\leq m \leq q_i}\frac{\mathcal{N}_i}{\mathcal{D}_i^{m}\mathcal{D}_j^{\kappa - m}\mathcal{D}_{\text{rest}}}
+     $$
+</div><div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 2mm;">
+     $\qquad\star\,$ E.g. <span style="font-size: 14pt">$\Delta_{ij|kl|mn}^4, \langle i|k+l|j]^5$</span> are separable to order 5.
+</div>
+
+<!---
+<div style="text-align: center; font-size: 18pt; margin-top: 3mm; margin-bottom: -2mm;">
+     ${\color{greeN} ✓}$ Reconstruction only required 50k <span style="font-size: 14pt">$\mathbb{F}_p$</span> samples $\;{\color{greeN} ✓}$Already simpler than original ones (<span style="font-size: 14pt">$\sim$</span>20MB) <br>
+     $\;{\color{red} ✗}$ Results are unstable and sub-optimal, e.g. numbers like this appeared
+</div>
+<span style="font-size: 14pt">127187555379407704220939486282289348327703498501718808908391691454242601886997968263623652083189652150273</span>
+--->
+
+---
+
+<div style="margin-top: 2mm; margin-bottom: 3mm">
+     <b style="font-variant: small-caps; font-size: 26pt"> $Vjj$ </b><b style="font-variant: small-caps; font-size: 32pt"> Example </b>
+</div>
+
+<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
+     $\circ\,$ Start from the function
+</div>
+<div style="font-size: 13pt; margin-top: 5mm; margin-bottom: 5mm">
+$$ 
+\displaystyle f^{\text{ex}} = \frac{\mathcal{N}^{\text{ex}}}{⟨14⟩^2[14]^2 s_{56} ⟨1|2+4|3]^2⟨2|1+4|3]^4⟨2|1+3|4]^2Δ_{14|23|56}^4}
+$$
+</div>
+<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
+     $\phantom{\circ}\,$  The numerator Ansatz has size 104$\,$128
+</div>
+
+<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
+     $\circ\,$ Clean up the <span style="font-size: 14pt">$Δ_{14|23|56}$</span> Gram residue
+</div>
+<div style="font-size: 13pt; margin-top: 5mm; margin-bottom: 5mm">
+$$ 
+\displaystyle f^{\text{ex}} = \frac{\mathcal{N}^{\text{ex}}_1}{⟨14⟩^2[14]^2s_{56}⟨2|1\!+\!4|3]^4Δ_{14|23|56}^4 \,} + \frac{\mathcal{N}^{\text{ex}}_2}{⟨14⟩^2[14]^2s_{56}⟨2|1+4|3]^4⟨1|2\!+\!4|3]^2⟨2|1\!+\!3|4]^2}
+$$
+</div>
+
+<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
+     $\circ\,$ Split <span style="font-size: 14pt">$s_{14}$</span> and impose symmetry
+</div>
+<div style="font-size: 13pt; margin-top: 5mm; margin-bottom: 5mm">
+$$ 
+\displaystyle f^{\text{ex}} =
+  \frac{\mathcal{N}^{\text{ex}}_{3}}{⟨14⟩^2 s_{56} ⟨2|1+4|3]^4Δ_{14|23|56}^4}
+  + \frac{\mathcal{N}^{\text{ex}}_{4}}{⟨14⟩^2 s_{56} ⟨1|2+4|3]^2⟨2|1+4|3]^4⟨2|1+3|4]^2} + (123456\rightarrow \overline{432165})
+$$
+</div>
+
+<div style="text-align: left; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
+     $\circ\,$ Impose degree bound on poles at codimension two
+</div>
+<div style="font-size: 13pt; margin-top: 5mm; margin-bottom: 5mm">
+$$ 
+\displaystyle f^{\text{ex}} = 
+  \sum_{k=0}^3 \frac{\mathcal{N}^{\text{ex}}_{5,k}}{⟨14⟩^2 s_{56} ⟨2|1+4|3]^{1+k} Δ_{14|23|56}^{4-k}}
+    + \frac{\mathcal{N}^{\text{ex}}_6}{⟨14⟩^2 s_{56}⟨1|2+4|3]^2⟨2|1+4|3]^4⟨2|1+3|4]^2} + (123456\rightarrow \overline{432165})
+$$
+</div>
+
+<div style="text-align: center; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
+     The Ansatz now has size 13$\,$532, almost a factor of 10 simpler.
 </div>
 
 </section>
