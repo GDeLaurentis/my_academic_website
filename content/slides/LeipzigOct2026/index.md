@@ -1404,52 +1404,178 @@ Part 2:<br>Proof of Factoriality
 
 <span style="font-size: 18pt;">
 based on upcoming work:<br>
-<i>Factoriality of massless spinor rings beyond four points</i>
+<i>Factoriality of massless spinor rings beyond four points</i><br>
+<span style="font-size: 15pt;">
+with independent <span style="font-variant: small-caps;">Lean</span> verification
+</span>
 </span>
 
 </div>
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt;"> Factoriality of Massless Spinor Rings </b>
+<b style="font-variant: small-caps; font-size: 32pt;">
+Factoriality of Massless Spinor Rings
+</b>
 
 <div style="font-size: 19pt; text-align: left; margin-top: 5mm;">
-$\circ$ Rational coefficients live in $\operatorname{Frac}(R_n)$.
-Throughout the first part of the talk we referred to <i>the</i>
-irreducible factors of their denominators.
+$\circ$ Throughout we have referred to <i>the</i> irreducible denominator factors
+<span style="font-size: 15pt">$\mathcal{D}_i$</span>. <br> 
+$\phantom{\circ}$ But is the factorization <span style="font-size: 15pt">$\mathcal{D}=\prod_i \mathcal{D}_i$</span> actually
+<b>unique</b>? <i>i.e.</i> is <span style="font-size: 15pt">$R_n$</span> factorial?
 </div>
 
 <div style="font-size: 19pt; text-align: left; margin-top: 5mm;">
-$\circ$ Is this factorization actually unique modulo momentum conservation?
+$\circ$ <span style="font-size: 15pt">$R_3$</span> is not even a domain: it has zero divisors,
 </div>
 
-<div style="font-size: 17pt; margin-top: 8mm;">
+<div style="font-size: 16pt; text-align: center; margin-top: 5mm;">
+<span style="font-size: 15pt;">
 $$
-\boxed{
-R_3\;\text{is not a domain},\qquad
-R_4\;\text{is a non-factorial domain},\qquad
-R_n\;\text{is a UFD for } n\geq5 .
-}
+s_{12}=\langle12\rangle[21]=s_3=0,
+\qquad
+\langle12\rangle\neq0,\quad [21]\neq0 .
 $$
+</span>
 </div>
 
-<div style="font-size: 18pt; text-align: left; margin-top: 7mm;">
-$\circ$ The bound is sharp. At four points,
-$$
-\langle12\rangle[12]=\langle34\rangle[34],
-$$
-with inequivalent irreducible factorizations.
+<div style="font-size: 19pt; text-align: left; margin-top: 5mm;">
+$\circ$ <span style="font-size: 15pt">$R_4$</span> is a domain:
+the momentum-cons. ideal
+<span style="font-size: 15pt">
+$J_4=\left\langle\sum_i |i\rangle[i|\right\rangle$
+</span>
+is prime, but <span style="font-size: 15pt">$R_4$</span> is not factorial,
 </div>
 
-<div style="font-size: 16pt; text-align: left; margin-top: 5mm;">
-$\circ$ Upcoming work: <i>Factoriality of massless spinor rings beyond four points</i>.
+<div style="font-size: 16pt; text-align: center; margin-top: 5mm;">
+<span style="font-size: 15pt;">
+$$
+\langle12\rangle[12]=\langle34\rangle[34].
+$$
+</span>
 </div>
 
+<div style="font-size: 19pt; text-align: left; margin-top: 4mm;">
+$\phantom{\circ}$ Shows two inequivalent factorizations into non-associate irreducibles.<br>
+$\phantom{\circ}$ $\Rightarrow$ 4 point reduced denominators need not be unique:
+e.g. Parke-Taylor MHV = anti-MHV.
+</div>
+
+<div style="text-align: center; margin-top: 8mm;">
+  <div style="
+    display: inline-block;
+    border: 2px solid #444;
+    border-radius: 8px;
+    padding: 7px 14px;
+    font-size: 19pt;
+  ">
+    <b>Theorem:</b>
+    <span style="font-size: 18pt">
+      <span style="font-size: 15pt">$R_n$</span> is a unique factorization domain for every <span style="font-size: 15pt">$n\geq5$</span>.
+    </span>
+  </div>
+</div>
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt;"> Integrality for <span style="font-size: 28pt">$n\geq 4$</span></b>
+<b style="font-variant: small-caps; font-size: 32pt;">
+Integrality for <span style="font-size: 28pt">$n\geq4$</span>
+</b>
 
+<div style="font-size: 18pt; text-align: left; margin-top: 3mm;">
+$\circ$ <b>Criterion:</b> if a complete-intersection variety contains an
+<b>integral open subset</b> whose complement has smaller dimension,
+then the whole coordinate ring is a domain.
+</div>
+
+<div style="font-size: 14pt; text-align: center; margin-top: 1mm; margin-bottom: -2mm;">
+<span style="font-size: 13pt;">
+$$
+R_n=
+\mathbb F[\Lambda,\widetilde\Lambda]/
+\langle\Lambda\widetilde\Lambda\rangle ,
+\qquad
+\Lambda=
+\begin{pmatrix}
+a_1&\cdots&a_n\\
+b_1&\cdots&b_n
+\end{pmatrix},
+\qquad
+\widetilde\Lambda=
+\begin{pmatrix}
+c_1&d_1\\
+\vdots&\vdots\\
+c_n&d_n
+\end{pmatrix}.
+$$
+</span>
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 4mm; margin-bottom: -5mm;">
+$\circ$ Stratify by <span style="font-size: 15pt">$r=\operatorname{rank}\Lambda$</span>.
+A <span style="font-size: 15pt">$2\times n$</span> matrix of rank
+<span style="font-size: 15pt">$r$</span> depends on
+<span style="font-size: 15pt">$r(n+2-r)$</span> parameters, while
+<span style="font-size: 15pt">$\dim\ker\Lambda=n-r$</span>, thus
+</div>
+
+<div style="font-size: 14pt; text-align: center; margin-top: -5mm;">
+<span style="font-size: 13pt;">
+$$
+\begin{array}{c|c}
+r & \dim\{(\Lambda,\widetilde\Lambda):\Lambda\widetilde\Lambda=0\}\\
+\hline
+2 & 2n+2(n-2)=4n-4\\
+1 & (n+1)+2(n-1)=3n-1\\
+0 & 2n
+\end{array}
+$$
+</span>
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 3mm;">
+$\circ$ Why is the rank-two locus integral? On a chart where
+<span style="font-size: 15pt">$\Delta=\langle12\rangle\neq0$</span>, we can solve
+</div>
+
+<div style="font-size: 14pt; text-align: center; margin-top: 2mm;">
+<span style="font-size: 13pt;">
+$$
+\underbrace{
+\begin{pmatrix}
+a_1&a_2\\
+b_1&b_2
+\end{pmatrix}
+}_{M\ {\rm invertible}}
+\begin{pmatrix}
+c_1\\
+c_2
+\end{pmatrix}
+=
+-\sum_{i=3}^n c_i
+\begin{pmatrix}
+a_i\\
+b_i
+\end{pmatrix}.
+$$
+</span>
+</div>
+
+<div style="text-align: center; margin-top: 5mm;">
+<div style="
+display: inline-block;
+border: 2px solid #444;
+border-radius: 8px;
+padding: 5px 12px;
+font-size: 18pt;
+">
+<span style="font-size: 14pt">$3n-1 < 4n-4 \iff n\geq4 \;\; \Longrightarrow \; R_n$</span>
+<b>
+<span style="font-size: 16pt"> is a domain.</span>
+</b>
+</div>
+</div>
 
 ---
 
