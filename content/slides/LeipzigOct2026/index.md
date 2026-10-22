@@ -2170,6 +2170,71 @@ representation(s) with <br>
 $\phantom\circ$ minimum denominator degree. <b>Non-uniqueness becomes a controlled integer-lattice problem.</b>
 </div> 
 
+---
+
+<b style="font-variant: small-caps; font-size: 32pt;">
+Implementation and Examples
+</b>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 5mm;">
+$\circ$ Quotient-ring factorization is implemented in <code style="font-size: 15pt;">syngular</code> and <code style="font-size: 15pt;">lips</code>.
+For
+</div>
+
+<div style="font-size: 13.5pt; text-align: center; margin-top: 3mm;">
+$$
+\begin{aligned}
+f={}&-s_{12}s_{24}s_{34}-s_{12}s_{34}^2-s_{12}s_{34}s_{46}
+-s_{13}s_{24}s_{34}-s_{13}s_{24}s_{46}\\
+&-s_{13}s_{34}^2-2s_{13}s_{34}s_{46}-s_{13}s_{46}^2
++s_{14}s_{23}s_{34}+s_{14}s_{23}s_{46},
+\end{aligned}
+$$
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 2mm;">
+$\phantom\circ\;$ <code style="font-size: 15pt;"> R6.factorize(f, as_list=True) </code> gives
+</div>
+
+<div style="font-size: 14pt; text-align: center; margin-top: 3mm;">
+$$
+f=
+\bigl([1|4|6|3]-[1|5|4|3]\bigr)
+\bigl(\langle1|4|6|3\rangle-\langle1|5|4|3\rangle\bigr).
+$$
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 6mm;">
+$\phantom\circ$ The factors are returned in spinor components; here they are rewritten in invariant notation.
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 6mm;">
+$\circ$ In a non-UFD, the lattice algorithm implemented in <code style="font-size: 15pt;">antares</code> can enumerate all least-degree <br>
+$\phantom\circ$ representations. For the four-point Parke--Taylor function:
+</div>
+
+<div style="font-size: 14pt; text-align: left; margin-left: 9mm; margin-top: 3mm;">
+<code>FourPointParkeTaylor.get_lcd(Slices, ufd=False)</code>
+</div>
+
+<div style="font-size: 14pt; text-align: center; margin-top: 3mm;">
+$$
+\frac{\langle12\rangle^3}
+     {\langle23\rangle\langle34\rangle\langle14\rangle},
+\qquad
+\frac{[34]^3}
+     {[12][23][14]},
+\qquad
+\frac{\langle12\rangle^2[34]}
+     {\langle23\rangle\langle14\rangle[12]},
+\qquad \ldots
+$$
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 6mm;">
+$\phantom\circ$ The algorithm automatically returns all eight distinct least-degree representations.
+</div>
+
 </section>
 
 ---
