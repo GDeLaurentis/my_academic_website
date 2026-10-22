@@ -1819,7 +1819,7 @@ $$
 $\phantom{\circ}$ where <span style="font-size: 15pt">$D$</span> is unique up to a nonzero constant,
 and its factorization
 <span style="font-size: 15pt">$D=\prod_i\mathcal D_i^{q_i}$</span>
-is unique up to constants and ordering.
+is unique up to <br> $\phantom\circ$ constants and ordering.
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-top: 7mm;">
@@ -1840,11 +1840,11 @@ $$
 <div style="font-size: 18pt; text-align: left; margin-top: 2mm;">
 $\phantom{\circ}$ If the <span style="font-size: 15pt">$h_i$</span> are linearly independent over
 <span style="font-size: 15pt">$\operatorname{Frac}(R_n)$</span>, each coefficient
-<span style="font-size: 15pt">$c_i$</span> is uniquely defined and has a unique reduced denominator.
+<span style="font-size: 15pt">$c_i$</span> is uniquely defined and has <br> $\phantom\circ$ a unique reduced denominator.
 </div>
 
 <div style="font-size: 20pt; text-align: center; margin-top: 7mm;">
-<b>Any theory, any loop order, for massless <span style="font-size: 16pt">$n\geq5$</span>.</b>
+<b>Applies to any theory, any loop order, for massless <span style="font-size: 16pt">$n\geq5$</span>.</b>
 </div>
 
 </section>
@@ -1878,12 +1878,21 @@ Constructive Factoriality
 
 <br>
 
+</div>
+
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt;"> A Constructive Version of the Localization Argument </b>
+<b style="font-variant: small-caps; font-size: 32pt;">
+Factorization Through Principal Localization
+</b>
 
-<div style="font-size: 18pt; text-align: left; margin-top: 4mm;">
-$\circ$ More generally, suppose a quotient domain $R=S/J$ admits
+<div style="font-size: 18pt; text-align: left; margin-top: 5mm;">
+$\circ$ More generally, suppose a quotient domain
+<span style="font-size: 15pt">$R=S/J$</span> admits a principal localization
+</div>
+
+<div style="font-size: 14pt; text-align: center; margin-top: 2mm;">
+<span style="font-size: 14pt;">
 $$
 R[\Delta^{-1}]
 \cong
@@ -1891,59 +1900,142 @@ P[\Delta^{-1}],
 \qquad
 P=\mathbb F[y_1,\ldots,y_m].
 $$
-</div>
-
-<div style="font-size: 18pt; text-align: left; margin-top: 5mm;">
-$\circ$ For $f\in R$:
-</div>
-
-<div style="font-size: 17pt; text-align: left; margin-left: 15mm;">
-1. Gröbner reduction in the localization gives
-   $\displaystyle f=N/\Delta^k$, with $N\in P$;<br>
-2. factor $N$ using ordinary polynomial factorization;<br>
-3. determine powers hidden by the quotient relations using saturation;<br>
-4. exactly divide and pull the factors back to $R$.
+</span>
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-top: 7mm;">
-$\circ$ If $\Delta=\prod_\alpha\Delta_\alpha$ with each
-$\Delta_\alpha$ prime, this is the constructive factorization descent
-underlying Nagata's criterion.
+$\circ$ The localization underlying Nagata's criterion gives a constructive factorization algorithm:
+</div>
+
+<div style="font-size: 17pt; text-align: left; margin-left: 9mm; margin-top: 5mm;">
+
+<div>
+0. take <span style="font-size: 15pt">$f\in R$</span> to be factored;
+</div>
+
+<div style="margin-top: 3mm;">
+1. rewrite <span style="font-size: 14pt">$f$</span> in the localized polynomial coordinates as
+<span style="font-size: 14pt">$f=N/\Delta^k$</span>,
+with <span style="font-size: 14pt">$N\in P$</span>;
+</div>
+
+<div style="margin-top: 3mm;">
+2. factor <span style="font-size: 14pt">$N$</span> using ordinary polynomial factorization,
+<span style="font-size: 14pt">$N=u\prod_i f_i^{m_i}$</span>;
+</div>
+
+<div style="margin-top: 3mm;">
+3. determine the valuations <span style="font-size: 14pt">$v_\Delta(f_i)$</span> using saturation or <span style="font-size: 14pt">$p$</span>-adic evaluations
+in <span style="font-size: 14pt">$R$</span>, <br> $\kern2.3mm$ since the factors
+<span style="font-size: 14pt">$f_i$</span> may contain hidden powers of
+<span style="font-size: 14pt">$\Delta$</span>;
+</div>
+
+<div style="margin-top: 3mm;">
+4. exactly divide out these powers, combine them with
+<span style="font-size: 14pt">$\Delta^{-k}$</span>, and pull the remaining factors back to
+<span style="font-size: 14pt">$R$</span>.
+</div>
+
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 6mm;">
+$\circ$ The localization element need not itself be prime:
+</div>
+
+<div style="font-size: 17pt; text-align: left; margin-left: 9mm; margin-top: 3mm;">
+$\star$ if
+<span style="font-size: 14pt">
+$\Delta=\prod_\alpha \Delta_\alpha^{e_\alpha}$
+</span>
+with each
+<span style="font-size: 14pt">$\Delta_\alpha$</span>
+prime, we simply track the valuations
+<span style="font-size: 14pt">$v_{\Delta_\alpha}$</span>
+separately.
+</div>
+
+<div style="font-size: 17pt; text-align: left; margin-left: 9mm; margin-top: 3mm;">
+$\star$ if a factor <span style="font-size: 14pt">$\Delta_\alpha$</span> is non-prime, the same construction may still produce a valid
+factorization in <span style="font-size: 14pt">$R$</span>, <br> $\phantom\star$ but irreducibility and uniqueness are no longer guaranteed.
 </div>
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt;"> Finding the Localization Automatically </b>
+<b style="font-variant: small-caps; font-size: 32pt;">
+Finding a Localization Automatically
+</b>
 
-<div style="font-size: 18pt; text-align: left; margin-top: 4mm;">
-$\circ$ Split the coordinates $X=Y\sqcup Z$ and extend
+<div style="font-size: 18pt; text-align: left; margin-top: 5mm;">
+$\circ$ Write
+<span style="font-size: 15pt">$R=S/J=\mathbb F[X]/J$</span>,
+split the coordinates
+<span style="font-size: 15pt">$X=Y\sqcup Z$</span>, <br> $\phantom\circ$
+and regard the quotient relations over the rational-function field
+<span style="font-size: 15pt">$\mathbb F(Y)$</span>:
+</div>
+
+<div style="font-size: 14pt; text-align: center; margin-top: 2mm;">
 $$
-J \longrightarrow J^e\subset\mathbb F(Y)[Z].
+J
+\longrightarrow
+J^e\subset\mathbb F(Y)[Z].
 $$
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-top: 5mm;">
-$\circ$ If
-$$
-\dim_{\mathbb F(Y)}\mathbb F(Y)[Z]/J^e=1,
-$$
-the chosen coordinate projection is birational.
+$\circ$ If the quotient has vector-space dimension one,
 </div>
 
-<div style="font-size: 18pt; text-align: left; margin-top: 5mm;">
-$\circ$ Gröbner reduction gives
+<div style="font-size: 14pt; text-align: center; margin-top: 2mm;">
 $$
-z=r_z(Y),\qquad z\in Z.
-$$
-Taking a common denominator $D$ yields
-$$
-R[D^{-1}]\cong\mathbb F[Y,D^{-1}].
+\dim_{\mathbb F(Y)}
+\mathbb F(Y)[Z]/J^e
+=1,
 $$
 </div>
 
+<div style="font-size: 18pt; text-align: left; margin-top: 2mm;">
+$\phantom{\circ}$ then for every
+<span style="font-size: 15pt">$z\in Z$</span>, there exists
+<span style="font-size: 15pt">$r_z(Y)\in\mathbb F(Y)$</span> such that
+</div>
+
+<div style="font-size: 14pt; text-align: center; margin-top: 3mm;">
+$$
+z-r_z(Y)\in J^e,
+\qquad\text{i.e.}\qquad
+z=r_z(Y)\ \bmod J^e .
+$$
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 3mm;">
+$\phantom{\circ}$ Thus the projection onto the
+<span style="font-size: 15pt">$Y$</span>-coordinates is birational.
+</div>
+
 <div style="font-size: 18pt; text-align: left; margin-top: 5mm;">
-$\circ$ Implemented in <tt>syngular</tt>. For $R_5$, choosing
-$Z=(c_1,c_2,d_1,d_2)$ rediscovers automatically
+$\circ$ Taking a common denominator
+<span style="font-size: 15pt">$D$</span> of the
+<span style="font-size: 15pt">$r_z(Y)$</span> gives
+</div>
+
+<div style="font-size: 14pt; text-align: center; margin-top: 2mm;">
+$$
+R[D^{-1}]
+\cong
+\mathbb F[Y,D^{-1}].
+$$
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 5mm;">
+$\circ$ For
+<span style="font-size: 15pt">$R_5$</span>, choosing
+<span style="font-size: 15pt">$Z=(c_1,c_2,d_1,d_2)$</span>
+gives
+</div>
+
+<div style="font-size: 14pt; text-align: center; margin-top: 2mm;">
 $$
 D=a_1b_2-a_2b_1=\langle12\rangle .
 $$
@@ -1951,43 +2043,106 @@ $$
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt;"> But Residue Rings Need Not Be Factorial </b>
+<b style="font-variant: small-caps; font-size: 32pt;">
+Residue Rings Need Not Be Factorial
+</b>
 
-<div style="font-size: 18pt; text-align: left; margin-top: 4mm;">
-$\circ$ Even though $R_n$ is a UFD for $n\geq5$, the quotient
+<div style="font-size: 18pt; text-align: left; margin-top: 5mm;">
+$\circ$ Even though
+<span style="font-size: 15pt">$R_n$</span>
+is a UFD for
+<span style="font-size: 15pt">$n\geq5$</span>,
+a codimension-one quotient
+</div>
+
+<div style="font-size: 14pt; text-align: center; margin-top: 2mm;">
+<span style="font-size: 14pt;">
 $$
 B_\Delta=R_n/(\Delta)
 $$
-need not be.
+</span>
 </div>
 
-<div style="font-size: 18pt; text-align: left; margin-top: 5mm;">
-$\circ$ For example, on $\langle12\rangle=0$, Schouten gives
-$$
-\boxed{
-\langle13\rangle\langle24\rangle
-=
-\langle14\rangle\langle23\rangle .
-}
-$$
-The four factors remain irreducible and pairwise nonassociate.
+<div style="font-size: 18pt; text-align: left; margin-top: 2mm;">
+$\phantom{\circ}$ need not be factorial.
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-top: 6mm;">
-$\circ$ Therefore residues may admit genuinely inequivalent
-multiplicative representations.
+$\circ$ For example, on
+<span style="font-size: 15pt">$\langle12\rangle=0$</span>,
+Schouten gives
 </div>
 
-<div style="font-size: 18pt; text-align: left; margin-top: 4mm;">
-$\circ$ With a known alphabet, these ambiguities can still be organized
-as affine integer lattices and one can search for least-degree
-representations.
+<div style="font-size: 14pt; text-align: center; margin-top: 2mm;">
+<span style="font-size: 14pt;">
+$$
+\langle13\rangle\langle24\rangle
+=
+\langle14\rangle\langle23\rangle .
+$$
+</span>
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 3mm;">
+$\phantom{\circ}$ The four factors remain irreducible and pairwise non-associate:
+there are genuinely inequivalent factorizations.
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 6mm;">
+$\circ$ Therefore residues can have several inequivalent denominator
+representations even when the ambient kinematic ring is factorial.
 </div>
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt;"> Least-Degree Denominators in Non-UFD Rings </b>
+<b style="font-variant: small-caps; font-size: 32pt;">
+Least-Degree Denominators in Non-UFD Rings
+</b>
 
+<div style="font-size: 18pt; text-align: left; margin-top: 5mm;">
+$\circ$ Suppose the possible irreducible factors belong to a known alphabet
+<span style="font-size: 15pt">
+$\mathcal A=\{\mathcal D_1,\ldots,\mathcal D_s\}$.
+</span>
+Represent a multiplicative expression by an exponent vector
+</div>
+
+<div style="font-size: 14pt; text-align: center; margin-top: 2mm;">
+<span style="font-size: 14pt;">
+$$
+e=(e_1,\ldots,e_s)\in\mathbb Z^s,
+\qquad
+T_e=\prod_{j=1}^s\mathcal D_j^{e_j}.
+$$
+</span>
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 4mm;">
+$\circ$ On a univariate slice, factor each alphabet element into irreducible
+polynomials and record their multiplicities in an integer matrix
+<span style="font-size: 15pt">$M$</span>.
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 4mm;">
+$\circ$ All exponent vectors giving the same sliced rational function differ by
+</div>
+
+<div style="font-size: 14pt; text-align: center; margin-top: 2mm;">
+<span style="font-size: 14pt;">
+$$
+e=e_0+\ker_{\mathbb Z}M .
+$$
+</span>
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 4mm;">
+$\circ$ Intersect the lattices obtained from several slices, then search the
+remaining candidates for the representation with minimum denominator degree.
+</div>
+
+<div style="font-size: 18pt; text-align: center; margin-top: 7mm;">
+<b>Non-uniqueness becomes a finite, controlled integer-lattice problem.</b>
+</div>
 
 </section>
 
