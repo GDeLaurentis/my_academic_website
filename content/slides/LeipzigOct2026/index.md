@@ -2048,23 +2048,26 @@ Residue Rings Need Not Be Factorial
 </b>
 
 <div style="font-size: 18pt; text-align: left; margin-top: 5mm;">
-$\circ$ Even though
-<span style="font-size: 15pt">$R_n$</span>
-is a UFD for
-<span style="font-size: 15pt">$n\geq5$</span>,
-a codimension-one quotient
+$\circ$ For a prime pole
+<span style="font-size: 15pt">$\Delta\in R_n$</span>, residues take values in
 </div>
 
 <div style="font-size: 14pt; text-align: center; margin-top: 2mm;">
-<span style="font-size: 14pt;">
 $$
-B_\Delta=R_n/(\Delta)
+\operatorname{Frac}(B_\Delta),
+\qquad
+B_\Delta=R_n/(\Delta).
 $$
-</span>
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-top: 2mm;">
-$\phantom{\circ}$ need not be factorial.
+$\phantom{\circ}$ Although
+<span style="font-size: 15pt">$R_n$</span>
+is a UFD for
+<span style="font-size: 15pt">$n\geq5$</span>,
+the residue ring
+<span style="font-size: 15pt">$B_\Delta$</span>
+need not be factorial.
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-top: 6mm;">
@@ -2074,23 +2077,31 @@ Schouten gives
 </div>
 
 <div style="font-size: 14pt; text-align: center; margin-top: 2mm;">
-<span style="font-size: 14pt;">
 $$
 \langle13\rangle\langle24\rangle
 =
 \langle14\rangle\langle23\rangle .
 $$
-</span>
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-top: 3mm;">
-$\phantom{\circ}$ The four factors remain irreducible and pairwise non-associate:
-there are genuinely inequivalent factorizations.
+$\phantom{\circ}$ The four brackets remain irreducible and pairwise non-associate, <br> $\phantom{\circ}$ so
+<span style="font-size: 15pt">$B_{\langle12\rangle}$</span>
+has genuinely inequivalent factorizations.
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-top: 6mm;">
-$\circ$ Therefore residues can have several inequivalent denominator
-representations even when the ambient kinematic ring is factorial.
+$\circ$ This is not exceptional: the residue rings associated with all pole varieties
+encountered so far in <br> $\phantom{\circ}$ massless QCD amplitudes through two loops and planar six points are non-factorial, including
+</div>
+
+<div style="font-size: 16pt; text-align: center; margin-top: 4mm;">
+<span style="font-size: 14pt">
+$\langle ij\rangle$,
+$\ \langle i|k+l|j]$,
+$\ s_{ijkl}$,
+$\ \Delta_{ij|kl|mn}$.
+</span>
 </div>
 
 ---
@@ -2100,49 +2111,64 @@ Least-Degree Denominators in Non-UFD Rings
 </b>
 
 <div style="font-size: 18pt; text-align: left; margin-top: 5mm;">
-$\circ$ Suppose the possible irreducible factors belong to a known alphabet
+$\circ$ Suppose the relevant factors belong to a known alphabet
 <span style="font-size: 15pt">
 $\mathcal A=\{\mathcal D_1,\ldots,\mathcal D_s\}$.
-</span>
-Represent a multiplicative expression by an exponent vector
+</span> <br> 
+$\phantom\circ$ Encode a multiplicative representation by
 </div>
 
-<div style="font-size: 14pt; text-align: center; margin-top: 2mm;">
-<span style="font-size: 14pt;">
+<div style="font-size: 14pt; text-align: center; margin-top: 0mm;">
 $$
 e=(e_1,\ldots,e_s)\in\mathbb Z^s,
 \qquad
-T_e=\prod_{j=1}^s\mathcal D_j^{e_j}.
+T_e=\prod_{j=1}^s\mathcal D_j^{e_j},
 $$
-</span>
 </div>
 
-<div style="font-size: 18pt; text-align: left; margin-top: 4mm;">
-$\circ$ On a univariate slice, factor each alphabet element into irreducible
-polynomials and record their multiplicities in an integer matrix
-<span style="font-size: 15pt">$M$</span>.
+<div style="font-size: 18pt; text-align: left; margin-top: -2mm;">
+$\phantom{\circ}$ with positive/negative entries describing numerator/denominator factors.
 </div>
 
-<div style="font-size: 18pt; text-align: left; margin-top: 4mm;">
-$\circ$ All exponent vectors giving the same sliced rational function differ by
+<div style="font-size: 18pt; text-align: left; margin-top: 5mm;">
+$\circ$ On a univariate slice
+<span style="font-size: 15pt">$\phi:B_\Delta \to \mathbb{F}_p[t]$</span>, factor the alphabet elements as
 </div>
 
 <div style="font-size: 14pt; text-align: center; margin-top: 2mm;">
-<span style="font-size: 14pt;">
+$$
+\phi(\mathcal D_j)
+=
+u_j\prod_{\alpha}p_\alpha(t)^{M_{\alpha j}},
+\qquad
+u_j\in K^\times ,
+$$
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 2mm;">
+$\phantom{\circ}$ where
+<span style="font-size: 15pt">$M_{\alpha j}$</span>
+records the multiplicity of the sliced irreducible factor
+<span style="font-size: 15pt">$p_\alpha(t)$</span>.
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-top: 5mm;">
+$\circ$ For a fixed matching
+<span style="font-size: 15pt">$e_0$</span>,
+all multiplicatively indistinguishable representations on that slice are
+</div>
+
+<div style="font-size: 14pt; text-align: center; margin-top: 2mm;">
 $$
 e=e_0+\ker_{\mathbb Z}M .
 $$
-</span>
 </div>
 
-<div style="font-size: 18pt; text-align: left; margin-top: 4mm;">
-$\circ$ Intersect the lattices obtained from several slices, then search the
-remaining candidates for the representation with minimum denominator degree.
-</div>
-
-<div style="font-size: 18pt; text-align: center; margin-top: 7mm;">
-<b>Non-uniqueness becomes a finite, controlled integer-lattice problem.</b>
-</div>
+<div style="font-size: 18pt; text-align: left; margin-top: 5mm;">
+$\circ$ Intersect the affine lattices from several slices, then select the admissible
+representation(s) with <br> 
+$\phantom\circ$ minimum denominator degree. <b>Non-uniqueness becomes a controlled integer-lattice problem.</b>
+</div> 
 
 </section>
 
