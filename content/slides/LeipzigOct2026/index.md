@@ -729,11 +729,96 @@ $$
 </div>
 <div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
      $\phantom{\circ}$ This is a primary decomposition. If <span style="font-size: 14pt">$\mathcal{N}$</span> vanishes on all branches, than the partial fraction decomposition exists.
+</div>
+
+---
+
+<div style="margin-top: 2mm; margin-bottom: 2mm">
+     <b style="font-variant: small-caps; font-size: 32pt"> Lorentz-Covariant Primary Decompositions </b>
+</div>
+
+<a style="font-size: 14pt; text-align: right; float: right; margin-top: -4mm; margin-bottom: -10mm;"
+   href="https://arxiv.org/abs/2609.25253">
+   GDL, Tai ('26)
+</a>
+
+<div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
+     $\circ$ Generic algorithms (e.g. <code style="font-size: 15pt">primdecGTZ</code>) often fail to return in reasonable time.
+</div>
+
+<div style="text-align: left; font-size:16pt; margin-top: 4mm; margin-bottom: 0mm;">
+     $\circ$ Gröbner bases and saturations can destroy <i>manifest</i> covariance of the returned generators. E.g.
+</div>
+
+<div style="font-size:13.5pt; text-align:center; margin-top:1mm; margin-bottom:1mm;">
+$$
+f_2=\widetilde f_2+qf_1 ,
+\qquad
+X\in V(\langle f_1\rangle)
+\quad\Longrightarrow\quad
+f_2(X)=\widetilde f_2(X).
+$$
+</div>
+
+<div style="text-align: left; font-size:16pt; margin-top: 0mm; margin-bottom: 0mm;">
+     $\phantom\circ$ We can therefore re-fit a covariant representative on this codimension-one variety:
+</div>
+
+<div style="font-size:13.5pt; text-align:center; margin-top:1mm; margin-bottom:1mm;">
+$$
+\widetilde f_2=\sum_j c_j m_j,
+\qquad
+A\,c=b,
+\qquad
+A_{ij}=m_j(X_i),\quad b_i=f_2(X_i).
+$$
+</div>
+
+<div style="text-align: left; font-size:16pt; margin-top: 4mm; margin-bottom: 0mm;">
+     $\circ$ Semi-numerical determination of independent sets and variety dimensions for
+     <span style="font-size:14pt">$J$</span> and <span style="font-size:14pt">$V(J)$</span>:
+</div>
+
+<div style="font-size:13.5pt; text-align:center; margin-top:1mm; margin-bottom:1mm;">
+$$
+Y\subseteq X\ \text{independent}
+\quad\Longleftrightarrow\quad
+J\cap\mathbb{F}[Y]=\{0\},
+\qquad
+|Y|=\dim V(J)\ \text{if $Y$ is maximal}.
+$$
+</div>
+
+<div style="text-align: left; font-size:16pt; margin-top: 0mm; margin-bottom: 0mm;">
+     $\phantom\circ$ Specialise a random subset <span style="font-size: 14pt">$W\subseteq X$</span>.
+     If <span style="font-size: 14pt">$W$</span> is contained in an independent set
+     <span style="font-size: 14pt">$Y$</span>, then for the sliced ideal
+     <span style="font-size: 14pt">$J'$</span>,
+</div>
+
+<div style="font-size:13.5pt; text-align:center; margin-top:1mm; margin-bottom:1mm;">
+$$
+\dim V(J)=\dim V(J')+|W|.
+$$
+</div>
+
+<div style="text-align: left; font-size:16pt; margin-top: 3mm; margin-bottom: 0mm;">
+     $\phantom\circ$ Repeated <span style="font-size:14pt">$\mathbb{F}_p$</span> sampling quickly finds independent sets
+     and determines dimensions, avoiding expensive symbolic elimination.
+</div>
+
+<div style="text-align: left; font-size:16pt; margin-top: 4mm; margin-bottom: 0mm;">
+     $\circ$ These tools substantially accelerate primality / primaryness tests for complicated unmixed ideals,
+     as well as point generation near varieties.
+</div>
 
 ---
 
 <div style="margin-top: 2mm; margin-bottom: 2mm">
      <b style="font-variant: small-caps; font-size: 32pt"> Bivariate Slice mPFD Algorithm</b>
+</div>
+<div style="font-size: 14pt; text-align: center; margin-top: -3mm; margin-bottom: -1mm;">
+     A partial work-around
 </div>
 
 <div style="font-size: 17pt; text-align: left; margin-top: 6mm; margin-bottom: 1mm;">
