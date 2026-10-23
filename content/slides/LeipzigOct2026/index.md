@@ -208,11 +208,11 @@ $\mathbb{Q}_p$: GDL, Page ('22)
 <b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> Massless Scattering </b>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: -2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ We have two sources of redundancies: kinematic constraints & Schouten/Gram identities.
+     $\circ$ There are two sources of redundancies: kinematic constraints & Schouten/Gram identities.
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ For <span style="font-size: 15pt;">$n$</span>-point massless scattering, the quotient ring is
+     $\circ$ For <span style="font-size: 15pt;">$n$</span>-point massless scattering, the covariant quotient ring is
 </div>
 <div style="font-size: 14pt; margin-top: 3mm; margin-bottom: 3mm">
 $$ 
@@ -221,7 +221,7 @@ $$
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ The "unit circle" is now the codimension <span style="font-size: 16pt;">$4$</span> "momentum conservation" <b>variety</b> within a <span style="font-size: 16pt;">$4n$</span> <br> $\phantom{\circ}$ dimensional space. On this variety we have equivalence relations such as 
+     $\circ$ The <span style="font-size: 16pt;">$4$</span> four-momentum conservation redundancies yield equivalence relations such as 
 </div>
 <div style="font-size:14pt; text-align: center; margin-top: 2mm; margin-bottom: 2mm">
      $$
@@ -239,59 +239,37 @@ $$
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Interesting mathematical observations and open questions: <br>
+     $\circ$ Interesting mathematical observations <s>and open questions</s>: <br>
      $\quad\star$ <span style="font-size: 14pt">$R_3$</span> is not an Integral Domain, i.e. it breaks <span style="font-size: 14pt">$ab=0 \Rightarrow a = 0 \text{ or } b = 0$</span> (zero divisors) <br>
      $\quad\star$ <span style="font-size: 14pt">$R_4$</span> is not an Unique Factorization Domain (which is why MHV = anti-MHV) <br>
-     $\quad\star$ Conjecture: <span style="font-size: 14pt">$R_{n\geq 5}$</span> is UFD. For instance, this would imply the  denominators <span style="font-size: 14pt">$\mathcal{D}$</span> are unique <br>
+     $\quad\star$ <s>Conjecture</s> Theorem: <span style="font-size: 14pt">$R_{n\geq 5}$</span> is UFD. E.g. this implies uniqueness of reduced denominators<br>
      $\phantom{\circ}$ <u>Note</u>: all polynomial rings are UFD, so clearly <span style="font-size: 14pt">$R_4$</span> is not equivalent to one, e.g. <span style="font-size: 14pt">$\mathbb{F}[s,t]$</span>
 </div>
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Simple Massive Scattering </b>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 6mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ With a <b>single massive leg</b>, e.g. <span style="font-size: 14pt;">$pp \rightarrow V(\rightarrow \bar\ell\ell)jj$</span>, we can refer back to massless scattering (<span style="font-size: 14pt;">$R_6$</span>), <br>
-     $\phantom{\circ}$ eliminate <span style="font-size: 14pt;">$p_{V\alpha\dot\alpha}=(5+6)_{\alpha\dot\alpha}$</span> by mom. conservation and take the decay current to be <span style="font-size: 14pt;">$[5|\gamma^\mu|6\rangle$</span> 
-</div>
-<div style="font-size: 14pt; margin-top: 3mm; margin-bottom: 3mm">
-$$ 
-\displaystyle \kern10mm R_{V(\rightarrow\ell\ell')jj} = \mathbb{F}\big[|1⟩_{\alpha}, [1|_{\dot\alpha}, |2⟩_{\alpha}, [2|_{\dot\alpha}, |3⟩_{\alpha}, [3|_{\dot\alpha},  |4⟩_{\alpha}, [4|_{\dot\alpha}, [5|_{\dot\alpha}, |6⟩_{\alpha} \big] \Big/ \big\langle {\textstyle \sum_{i=1}^4} [5|i]\langle i |6\rangle \big\rangle
-$$
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}$ Assuming we don't partial fraction <span style="font-size: 14pt;">$s_{1234} = s_{56}=\langle 56\rangle [65]$</span>
-     to manifest the physical pole <span style="font-size: 14pt;">$\sqrt{s_{56}}$</span>. <br>
-     $\phantom{\circ}$ This does <b>not</b> work for multiple massive legs, due to <span style="font-size: 15pt;">$p_{V_1} \cdot p_{V_2}$</span> d.o.f.
-</div>
-<a href="https://arxiv.org/abs/arXiv:2503.10595" style="font-size: 14pt; margin-bottom: -6mm; margin-top: -8mm; float: right; font-align: right;"> GDL, Ita, Page, Sotnikov </a>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 0mm; margin-top: 12mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ For <span style="font-size: 14pt;">$pp \rightarrow HHH$</span> we use the massive spinor-helicity (or spin-spinor) formalism, <br>
-     $\phantom{\circ}$ albeit in a very simplified form since scalars have <b>no states</b>.
-</div>
-<a href="https://arxiv.org/abs/1809.09644" style="font-size: 14pt; margin-bottom: -6mm; margin-top: -2mm; float: right; font-align: right;"> Shadmi, Weiss </a> <a href="https://arxiv.org/abs/1802.06730" style="font-size: 14pt; margin-bottom: -6mm; margin-top: -2mm;  margin-right: 31mm; float: right; font-align: right;"> Ochirov; </a>
-<a href="https://arxiv.org/abs/1709.04891" style="font-size: 14pt; margin-bottom: -10mm; margin-top: -8mm; margin-right: 0mm; float: right; font-align: right;"> Arkani-Hamed, Huang, Huang;</a>
-
-<div style="font-size: 14pt; margin-top: 6mm; margin-bottom: 5mm">
-$$ 
-\displaystyle \kern10mm R_{HHH} = \frac{\mathbb{F}\big[|1⟩_{\alpha}, [1|_{\dot\alpha}, |2⟩_{\alpha}, [2|_{\dot\alpha}, \boldsymbol{3}_{\alpha,\dot\alpha}, \boldsymbol{4}_{\alpha,\dot\alpha}, \boldsymbol{5}_{\alpha,\dot\alpha} \big]}{\big\langle |1\rangle[1|+|2\rangle[2| + \boldsymbol{3}_{\alpha,\dot\alpha} + \boldsymbol{4}_{\alpha,\dot\alpha} + \boldsymbol{5}_{\alpha,\dot\alpha}, \;\, \boldsymbol{3}_{\alpha,\dot\alpha} \boldsymbol{3}^{\dot\alpha,\alpha} - \boldsymbol{4}_{\alpha,\dot\alpha} \boldsymbol{4}^{\dot\alpha,\alpha}, \;\, \boldsymbol{4}_{\alpha,\dot\alpha} \boldsymbol{4}^{\dot\alpha,\alpha}- \boldsymbol{5}_{\alpha,\dot\alpha} \boldsymbol{5}^{\dot\alpha,\alpha} \big\rangle}
-$$
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}$ where <span style="font-size: 14pt;">$\boldsymbol{3}_{\alpha,\dot\alpha} \boldsymbol{3}^{\dot\alpha,\alpha} = \boldsymbol{4}_{\alpha,\dot\alpha} \boldsymbol{4}^{\dot\alpha,\alpha} = \boldsymbol{5}_{\alpha,\dot\alpha} \boldsymbol{5}^{\dot\alpha,\alpha} = 2 M_h^2$</span>; <span style="font-size: 14pt;">$\boldsymbol{3}_{\alpha,\dot\alpha},\boldsymbol{4}_{\alpha,\dot\alpha},\boldsymbol{5}_{\alpha,\dot\alpha}$</span> are full-rank (unfactorizable).
-</div>
-<a href="https://arxiv.org/abs/arXiv:2507.19313" style="font-size: 14pt; margin-bottom: -6mm; margin-top: -2mm; float: right; font-align: right;"> Campbell, GDL, Ellis </a>
-
-
----
-
 <b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Covariant Q-Rings for Massive Processes </b>
 
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Let's revisit <span style="font-size: 14pt;">$pp \rightarrow Vjj$</span>, <b>including states</b> in the massive (or spin-spinor) formalism
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 6mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ With a <b>single massive leg</b>, e.g. <span style="font-size: 14pt;">$pp \rightarrow Hjj$</span>, we have <span style="font-size: 14pt;">$R_{n-1}$</span> without momentum conservation.
 </div>
 <div style="font-size: 14pt; margin-top: 3mm; margin-bottom: 3mm">
+$$ 
+\displaystyle \kern10mm R_{Hjj} = \mathbb{F}\big[|1⟩_{\alpha}, [1|_{\dot\alpha}, |2⟩_{\alpha}, [2|_{\dot\alpha}, |3⟩_{\alpha}, [3|_{\dot\alpha},  |4⟩_{\alpha}, [4|_{\dot\alpha} \big]
+$$
+</div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
+     $\phantom{\circ}$ This does <b>not</b> work for multiple massive legs, due to <span style="font-size: 15pt;">$p_{M_1} \cdot p_{M_2}$</span>, or with states.
+</div>
+<a href="https://arxiv.org/abs/arXiv:2503.10595" style="font-size: 14pt; margin-bottom: -6mm; margin-top: -16mm; float: right; font-align: right;"> GDL, Ita, Page, Sotnikov </a>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 6mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ In the massive (or spin-spinor) formalism we have, for example
+</div>
+<a href="https://arxiv.org/abs/1809.09644" style="font-size: 14pt; margin-bottom: -6mm; margin-top: -7mm; float: right; font-align: right;"> Shadmi, Weiss </a> <a href="https://arxiv.org/abs/1802.06730" style="font-size: 14pt; margin-bottom: -6mm; margin-top: -7mm;  margin-right: 31mm; float: right; font-align: right;"> Ochirov; </a>
+<a href="https://arxiv.org/abs/1709.04891" style="font-size: 14pt; margin-bottom: -20mm; margin-top: -12mm; margin-right: 0mm; float: right; font-align: right;"> Arkani-Hamed, Huang, Huang;</a>
+
+<div style="font-size: 14pt; margin-top: 4mm; margin-bottom: 3mm">
 $$ 
 \displaystyle \kern10mm R_{Vjj} = \mathbb{F}\big[|1⟩_{\alpha}, [1|_{\dot\alpha}, |2⟩_{\alpha}, [2|_{\dot\alpha}, |3⟩_{\alpha}, [3|_{\dot\alpha},  |4⟩_{\alpha}, [4|_{\dot\alpha}, |\boldsymbol 5⟩^J_{\alpha}, [\boldsymbol 5|^I_{\dot\alpha} \big] \Big/ \Big\langle {\textstyle \sum_{i=1}^4} |i]\langle i | + |\boldsymbol 5⟩^I_{\alpha}[\boldsymbol 5|_{I,\dot\alpha}  \Big\rangle
 $$
@@ -307,12 +285,8 @@ $$
 \displaystyle \varepsilon^{\mu,IJ}_{\boldsymbol 5} = \frac{1}{\sqrt{2}m}[\boldsymbol 5^I|\gamma^\mu|\boldsymbol 5^J\rangle \quad \text{and} \quad \varepsilon^{-} \propto \varepsilon^{11}, \; \varepsilon^{L} \propto \varepsilon^{21} + \varepsilon^{12}, \; \varepsilon^{+} \propto \varepsilon^{22} \quad \text{physical}
 $$
 </div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 0mm; margin-right: 0mm;">
-     <i><b>Discussion</b></i>: <span style="font-size: 13pt;">$\mathcal{A}(1_{\bar q}^{h_1},\,2_g^{h_2},\,3_g^{h_3}\,4_q^{h_4},{\boldsymbol 5}_V^{\pm,L}) = (T^{a_2}T^{a_3})_{i_4}^{\;\bar i_1} A^{IJ}(\dots)\,$</span> has 3 indep. d.o.f.: <span style="font-size: 11pt;">$(+++-, ++--, +-+-)$</span>
-</div>
 
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 8mm; margin-left: 2mm; margin-right: 2mm;">
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 6mm; margin-left: 2mm; margin-right: 2mm;">
      $\circ$ While <span style="font-size: 14pt;">$pp \rightarrow ttH$</span> exposes the <b>full complexity</b>, with multiple massive states
 </div>
 <a href="https://arxiv.org/abs/arXiv:2504.19909" style="font-size: 14pt; margin-bottom: -6mm; margin-top: -6mm; float: right; font-align: right;"> Campbell, GDL, Ellis </a>
@@ -323,17 +297,6 @@ $$
 </div>
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
      $\phantom{\circ}$ where <span style="font-size: 14pt;">$\langle \boldsymbol{3}^I|\boldsymbol{3}^J⟩=m\epsilon^{JI} \text{ and } [\boldsymbol{3}^I|\boldsymbol{3}^J]=\bar{m}\epsilon^{IJ}$</span>; we are setting <span style="font-size: 14pt;">$m=\bar{m}$</span> and the tops on-shell.
-</div>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 8mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ <b>!Overparametrisation Warning!</b> Remember the map to massless case,
-</div>
-<a href="https://arxiv.org/abs/1601.08113" style="font-size: 14pt; margin-top: -9mm; margin-right: 2mm; float: right; font-align: right;"> Conde, Marzolla;</a>
-<a href="https://arxiv.org/abs/1605.07402" style="font-size: 14pt; margin-top: -4mm; margin-right: 2mm; float: right; font-align: right;"> Conde, Joung, Mkrtchyan</a>
-<div style="font-size: 14pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-$$ 
-\displaystyle 1 \rightarrow 1, 2 \rightarrow 2, \boldsymbol{3} \rightarrow 3+4, \boldsymbol{4} \rightarrow 5+6, \boldsymbol{5} \rightarrow 7+8
-$$
 </div>
 
 ---
@@ -385,7 +348,6 @@ $$
      $$
 </div>
 <div style="font-size: 16pt; text-align: left; margin-top: 0mm; margin-bottom: 2mm;">
-     $\phantom{\circ}$ For the numerators this is generally not particularly useful (when in least common denominator form) <br>
      $\phantom{\circ}$ The denominator factors <span style="font-size: 14pt">$\mathcal{D}_j$</span> are conjectured to be (mostly) related to the letters of the symbol alphabet
 </div>
 <a style="font-size: 13pt; text-align: right; float: right; margin-top: -3mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1812.04586>
@@ -434,7 +396,10 @@ From work in progress with S. Abreu, X. Liu, P.F. Monni
 </div>
 
 <div style="font-size: 17pt; text-align: left; margin-top: 4mm; margin-bottom: 2mm;">
-     $\circ$ Factorization and extra chiral cancellations are key for simplification in gauge amplitudes 
+     $\circ$ Factorization and extra chiral cancellations are key for simplification in gauge amplitudes
+</div>
+<div style="font-size: 17pt; text-align: center; margin-top: 2mm; margin-bottom: 2mm;">
+     We now have a factorization algorithm for spinors! See Part 2.
 </div>
 
 </section>
@@ -536,7 +501,7 @@ Reduced <br> Denominators
      $\circ\,$ Implemented in 
      <a href="https://github.com/GDeLaurentis/antares/" style="font-size: 20pt; font-variant: small-caps;">antares</a>,
      <a href="https://github.com/GDeLaurentis/lips/" style="font-size: 20pt; font-variant: small-caps;">lips</a>, 
-     <a href="https://github.com/GDeLaurentis/linac/" style="font-size: 20pt; font-variant: small-caps;">linac</a> (coming soon!), and
+     <a href="https://github.com/GDeLaurentis/linac/" style="font-size: 20pt; font-variant: small-caps;">linac</a> (<s>coming soon!</s> now open-source!), and
      <a href="https://github.com/GDeLaurentis/syngular/" style="font-size: 20pt; font-variant: small-caps;">syngular</a>.
 </div>
 
@@ -671,126 +636,19 @@ lTermsLCD[:5]</code></pre>
      $\phantom{\circ}\,$ <span style="font-size: 14pt">$N^{(\text{pole order})}_{\text{denominator factor}}$</span> denote null-spaces, and arrows denote intersections. Greated observed breadth <span style="font-size: 14pt">$\mathcal{O}(100k)$</span>.
 </div>
 
----
-
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> <span style="font-size: 27pt;">$p\kern0.5mm$</span>-adic numbers </b>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: -2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ You may be familiar with finite field (integers modulo a prime)
-</div>
-<span style="font-size: 14pt; margin-top: -4mm; margin-bottom: -5mm; float: right; font-align: right;"> <a href="https://arxiv.org/abs/1406.4513"> von Manteuffel, Schabinger `14</a>;$\;$<a href="https://arxiv.org/abs/1608.01902"> Peraro `16</a></span>
-<div style="font-size: 14pt; margin-top: 3mm; margin-bottom: 3mm">
-$$ 
-\displaystyle a \in \mathbb{F}_p : a \in \{0, \dots, p -1\} \; \text{ with } \; \{+, -, \times, \div\}
-$$
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}$ Limits (and calculus) are not well defined in $\mathbb{F}_p$. We can make things zero, but not small:
-</div>
-<div style="font-size: 14pt; margin-top: 3mm; margin-bottom: 3mm">
-$$ 
-\displaystyle |a|_0 = 0 \; \text{if} \; a = 0 \; \text{else} \; 1 \quad \text{a.k.a. the trivial absolute value.}
-$$
-</div>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ There exists just one more absolute value on the rationals, the <span style="font-size: 15pt;">$p$</span>-adic absolute value.
-</div>
-<a style="font-size: large; text-align: right; float: right; margin-top: -4mm; margin-bottom: -10mm;" href=https://en.wikipedia.org/wiki/Ostrowski%27s_theorem>
-   Ostrowski's theorem 1916
-</a>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Let's start from <span style="font-size: 15pt;">$p$</span>-adic integers, instead of working modulo <span style="font-size: 15pt;">$p$</span>, expand in powers of <span style="font-size: 15pt;">$p$</span>
-</div>
-<div style="font-size: 14pt; margin-top: 3mm; margin-bottom: 3mm">
-$$ 
-\displaystyle a \in \mathbb{Z}_p : a_0 p^0 + a_1 p^1 + a_2 p^2 + \dots + \mathcal{O}(p^n)
-$$
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}$ In some sense we are correcting the finite field result with more (subleading) information.
-</div>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ <span style="font-size: 14pt;">$p$</span>-adic numbers <span style="font-size: 14pt;">$\mathbb{Q}_p$</span> allow for negative powers of <span style="font-size: 14pt;">$p$</span>, (would be division by zero in $\mathbb{F}_p$!)
-</div>
-<div style="font-size: 14pt; margin-top: 3mm; margin-bottom: 3mm">
-$$ 
-\displaystyle a \in \mathbb{Q}_p : a_{-\nu} p^{-\nu} + \dots + a_0 + a_1 p^1 + \dots + \mathcal{O}(p^n)
-$$
-</div>
-<a style="font-size: large; text-align: right; float: right; margin-top: -4mm; margin-bottom: -10mm;" href=https://arxiv.org/abs/2203.04269>
-   GDL, Page `22
-</a>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ The <span style="font-size: 14pt;">$p$</span>-adic absolute value is defined as <span style="font-size: 14pt;">$|a|_p = p^\nu$</span>.
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}$ Think of <span style="font-size: 14pt;">$p$</span> as a small quantity, <span style="font-size: 14pt;">$\epsilon$</span>, (by <span style="font-size: 14pt;">$|\,|_p$</span>) even if it is a large prime (by the real abs. <span style="font-size: 14pt;">$|\,|_\infty$</span>).
-</div>
-
----
-
-<b style="font-variant: small-caps; font-size: xxx-large"> Laurent Series or p(z)-adic expansion </b>
-
-<div style="text-align: left; font-size: 16pt; margin-top: 3mm; margin-bottom: -2mm;">
-     $\circ\,$ With <span style="font-size: 14pt">$p$</span>-adic numbers this would be straight forward, set <span style="font-size: 14pt">$\mathcal{D}_j\propto p$</span> and evaluate the function
-</div>
-<div style="text-align: center; font-size: 14pt; margin-top: -2mm; margin-bottom: 2mm;">
-     $$
-     r_{i\in \mathcal{B}} = \sum_{m = 1}^{\text{max}_i(q_{ik})} \frac{e^k_{im}}{p^m} + \mathcal{O}(p^0) \text{ is a number in } \mathbb{Q}_p
-     $$
-</div>
-<div style="text-align: left; font-size: 16pt; margin-top: 3mm; margin-bottom: -2mm;">
-     $\phantom{\circ}\,$ See <code style="font-size: 14pt;">Particles._singular_variety</code> or <code style="font-size: 14pt;">Ideal.point_on_variety</code> to generate the configuration
-</div>
-
-<div style="text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: -2mm;">
-     $\circ\,$ We can't do this with only finite fields. Instead, build Laurent expansions around $t_{\mathcal{D}_k}$ <span style="font-size: 12pt"> (use more slices) </span>
-</div>
-<div style="text-align: center; font-size: 14pt; margin-top: -2mm; margin-bottom: 2mm;">
-     $$
-     r_{i \in \mathcal{B}} = \sum_{m = 1}^{\text{max}_i(q_{ik})} \frac{e^k_{im}}{(t-t_{\mathcal{D}_k})^m} + \mathcal{O}((t-t_{\mathcal{D}_k})^0)
-     $$
-</div>
-<div style="text-align: left; font-size: 16pt; margin-top: 3mm; margin-bottom: -2mm;">
-     $\phantom{\circ}\,$ strictly formal over $\mathbb{F}_p$, but convergent over $\mathbb{Q}_p$ for $(t-t_{\mathcal{D}_k}) \propto p$
-</div>
-
-<div style="text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: -2mm;">
-     $\circ\,$ What if the letter does not have a factor linear in <span style="font-size: 14pt">$t$</span>? E.g.
-</div>
-<div style="text-align: center; font-size: 14pt; margin-top: -2mm; margin-bottom: 2mm;">
-     $$
-     r_{i \in \mathcal{B}} = \sum_{m = 1}^{\text{max}_i(q_{ik})} \frac{c^k_{im} t + d^k_{im}}{(t^2+a_kt+b_k)^m} + \mathcal{O}((t^2+a_kt+b_k)^0)
-     $$
-</div>
-<a style="font-size: 13pt; text-align: right; float: right; margin-top: -10mm; margin-bottom: 2mm;" href=https://arxiv.org/abs/2304.14336 >
-see also Fontana, Peraro ('23)
-</a>
-
-<div style="text-align: left; font-size: 16pt; margin-top: 3mm; margin-bottom: -2mm;">
-     $\circ\,$ From these coefficients, build null spaces used in the search for simple functions
-</div>
-<div style="text-align: center; font-size: 14pt; float: center; margin-top: -2mm; margin-bottom: 2mm;">
-     $$
-     \text{null}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m))_{ij} \text{ from } \text{ rref }  (d^k_{m})_{i,\text{slice}_j}
-     $$
-</div>
-
 </section>
 
 ---
 
 <section>
 
-{{< slide background-image="varieties-no-background.png" >}}
+{{< slide background-image="spinor_coeffs.png" >}}
 
 <br><br><br><br>
 
 # Multivariate Partial Fraction Decomposition
 
+<br>
 
 <span style="font-size: 15pt;">(Geometry beyond codimension one)</span>
 
@@ -871,46 +729,6 @@ $$
 </div>
 <div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
      $\phantom{\circ}$ This is a primary decomposition. If <span style="font-size: 14pt">$\mathcal{N}$</span> vanishes on all branches, than the partial fraction decomposition exists.
-
----
-
-<div style="margin-top: 2mm; margin-bottom: 2mm">
-     <b style="font-variant: small-caps; font-size: 32pt"> Challenges </b>
-</div>
-
-<div style="text-align: left; font-size: 16pt; margin-top: 8mm; margin-bottom: 0mm;">
-$\circ\,$ How to get ideal membership information? <span style="font-size: 14pt">$\mathbb{Q}_p$</span> points?  <span style="font-size: 14pt">$\mathbb{F}_p$</span> slice(s)?
-</div>
-
-<div style="text-align: left; font-size: 16pt; margin-top: 6mm; margin-bottom: 0mm;">
-$\circ\,$ Ideal intersection can be highly non-trivial (lcm is in general insufficient):
-</div>
-<div style="text-align: left; font-size: 13pt; margin-top: 0mm; margin-bottom: 1mm;">
-$$ 
-\mathcal{N} \in \langle q_1, q_2 \rangle \cap \langle q_3, q_4 \rangle \stackrel{?}{=} \langle q_1q_3, q_1q_4, q_2q_3, q_2 q_4\rangle 
-$$
-</div>
-<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
-$\phantom{\circ}\,$ Unfortunately not always. This is called a <i>complete intersection</i> when it holds. <br>
-$\phantom{\circ}\,$ In general, there will be additional non-trivial generators that cannot be written in terms of <span style="font-size: 14pt">$q_i$</span>'s.
-</div>
-
-<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
-$\phantom{\circ}\,$ Therefore, either: 
-</div>
-<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
-$\quad\star\,$ we compute the intersection explicitly (can be prohibitively hard)
-</div>
-<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
-$\quad\star\,$ or give up on some of the information (lose some contraining power)
-</div>
-
-<div style="text-align: left; font-size: 16pt; margin-top: 6mm; margin-bottom: 0mm;">
-$\circ\,$ Computing primary decompositions with these many variables is hard, Singular can't do it on its own.
-</div>
-<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
-$\phantom{\circ}\,$ Article with a Edinburgh masters' student (D. Tai) to appear. Can we avoid it? If so, at what cost?
-</div>
 
 ---
 
@@ -1011,7 +829,7 @@ $$
 $$
 </div>
 <div style="font-size: 17pt; text-align: left; margin-top: 4mm; margin-bottom: 1mm;">
-     $\phantom{\circ}$ and thus the (<b>tentative</b>) multivariate decomposition
+     $\phantom{\circ}$ and thus the (<b>tentative</b>) multivariate decomposition (<b>Question:</b> how to detect failures before fitting?)
 </div>
 <div style="text-align: left; font-size: 14pt; margin-top: 0mm; margin-bottom: 1mm;">
 $$
@@ -1026,21 +844,6 @@ $$
 <div style="font-size: 17pt; text-align: left; margin-top: 4mm; margin-bottom: 1mm;">
      $\circ$ Verify by fitting the ansatz. If it fails, remove some ideals from the intersection.
 </div>
-
-
-</section>
-
----
-
-<section>
-
-{{< slide background-image="spinor_coeffs.png" >}}
-
-<br><br><br><br><br><br>
-
-# Analytic Reconstruction
-
-<br><br><br><br><br><br><br>
 
 ---
 
@@ -1088,307 +891,7 @@ $$
 $$
 </div>
 <div style="font-size: 17pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}$ while <span style="font-size: 15pt;">$R_{HHH}$</span> has 20 invariants, subject to 122 constraints.
-</div>
-
----
-
-<!---
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Invariant Rings in Mathematics Literature </b>
-
-<p style="margin-top: -6mm; margin-bottom: 2mm; font-size: 15pt;">
-(taking some quotes from <a href=https://arxiv.org/abs/2509.14350>arXiv:2509.14350</a>, <i>“Some remarks on invariants”</i>)
-</p>
-
-<div style="text-align: left; font-size: 17pt; margin-top: 1mm; margin-bottom: 2mm; ">
-$\circ\,$ The authors of <a href=https://arxiv.org/abs/2509.14350>arXiv:2509.14350</a> seem to tackle a very similar problem for
-</div>
-<div style="text-align: left; font-size: 17pt; margin-top: 1mm; margin-bottom: 2mm; ">
-$\quad\small\rhd\,$ <i> “[...] finding possible terms in an action, or many other applications.” </i> <br>
-$\quad\small\rhd\,$ They say <i> “[...] the awareness in the physics community of the possible structures of the rings
-of invariants thus arising is rather low, to our knowledge. In particular, the possibility of having relations among invariants has received very little attention in physics.” </i>
-</div>
-<div style="text-align: left; font-size: 17pt; margin-top: 1mm; margin-bottom: 2mm; ">
-$\phantom{\circ}\,$ The key concept is that the ring we consider are <b><i>not freely generated</i></b>.
-</div>
-
-<div style="text-align: left; font-size: 17pt; margin-top: 5mm; margin-bottom: 2mm; ">
-$\circ\,$ With Ben in <a href=https://arxiv.org/abs/2203.04269>arXiv:2203.04269</a> we showed that these rings are “Cohen–Macaulay” (CM)
-</div>
-<div style="text-align: left; font-size: 17pt; margin-top: 1mm; margin-bottom: 2mm; ">
-$\quad\small\rhd\,$ Follows from quotienting a polynomial ring by a maximal-codimension ideal <br>
-$\quad\small\rhd\,$ Implies e.g. that symbolic powers of max-codim ideals match normal powers <br>
-$\phantom{\quad\small\rhd\,}$ that all max-codim ideals are equi-dimensional <br>
-</div>
-
-<div style="text-align: left; font-size: 17pt; margin-top: 1mm; margin-bottom: 2mm; ">
-$\circ\,$ The authors of <a href=https://arxiv.org/abs/2509.14350>arXiv:2509.14350</a> state that invariant rings are “Gorenstein”, which implies CM
-</div>
-<div style="text-align: left; font-size: 17pt; margin-top: 1mm; margin-bottom: 0mm; ">
-$\quad\small\rhd\,$ <i> “all rings of the type we are discussing are Gorenstein” </i> <br>
-$\quad\small\rhd\,$ <i> “Gorenstein is for rings what Calabi–Yau is for manifolds; 
-the spaces of invariants are in fact (non-compact) Calabi-Yau varieties” </i> $-$ Connection to Feynman integral literature?
-</div>
-
-<div style="font-size: 16pt; padding: 10px; display: inline-block; margin-top: -4mm;">
-    <u> What futher practical information can we learn from the mathematics literature? </u>
-</div>
-
----
---->
-
-<b style="font-variant: small-caps; font-size: xxx-large"> The Numerator Ansatz </b>
-
-<div style="text-align: left; font-size: x-large; margin-top: 1mm; margin-bottom: 2mm; ">
-$\circ\,$ The numerator Ansatz takes the form (massless case)
-</div>
-<a style="font-size: large; text-align: right; float: right; margin-top: -7mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1904.04067>
-   GDL, Maître ('19)
-</a>
-<div style="text-align: center; font-size: 15pt; margin-bottom: 5mm; margin-top: 1mm;">
-$\displaystyle \text{Num. poly} = \sum_{\vec \alpha, \vec \beta} c_{(\vec\alpha,\vec\beta)} \prod_{j=1}^n\prod_{i=1}^{j-1} \langle ij\rangle^{\alpha_{ij}} [ij]^{\beta_{ij}}$
-</div>
-<div style="text-align: left; font-size: x-large; float: left; margin-top: -2mm; margin-bottom: 0mm;">
-     $\phantom{\circ}$ subject to constraints on $\vec\alpha,\vec\beta$ due to: 1) mass dimension; 2) little group; 3) linear independence.
-</div>
-
-<br>
-
-<div style="text-align: left; font-size: x-large; ">
-$\circ\,$ Construct the Ansatz via the algorithm from Section 2.2 of <a href=https://arxiv.org/abs/2203.04269>GDL, Page ('22)</a>
-</div>
-<div style="text-align: center; display: inline-block; font-size: x-large;">
-Linear independence = irreducibility by the Gröbner basis of a specific ideal.
-</div>
-
-<div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 0mm;">
-$\circ\,$ Efficient implementation using open-source software only
-</div>
-<div style="display:block; width:100%; margin-left: -10mm; margin-top: 0mm;">
-	<div style="width:50%; font-size: x-large; float: left; display: inline-block;">
-	     <img src="SingularLogo.png" style="max-width:300px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;"> <br>
-	     Gröbner bases $\rightarrow$ constrain $\vec\alpha,\vec\beta$ <br>
-	     <a style="font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 5mm;"
-	     href=https://www.singular.uni-kl.de/index.php.html>
-		Decker, Greuel, Pfister, Schönemann
-	     </a>	    
-	</div>
-	<div style="width:50%; font-size: x-large; float: right; display: inline-block; ">
-	     <img src="GoogleORToolsLogo.png" style="max-width:300px; float:center; border:none; margin-top: 7mm; margin-bottom: 2mm;"> <br>
-	     Integer programming $\rightarrow$ enumerate sols. $\vec\alpha,\vec\beta$ <br>
-	     <a style="font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 5mm;"
-	     href=https://www.singular.uni-kl.de/index.php.html>
-		Perron and Furnon (Google optimization team)
-	     </a>
-	</div>
-</div>
-
-<br><br><br><br>
-
-<div style="text-align: left; font-size: x-large; margin-top: -2mm;">
-$\circ\,$ Linear systems solved w/ CUDA over $\mathbb{F}_{2^{31}-1}$ ($t_{\text{solving}} \ll t_{\text{sampling}}$) w/ <a href=https://github.com/GDeLaurentis/linac-dev> linac </a> <span style="text-align: left; font-size: 12pt;"> (coming soon) </span>
-</div>
-
----
-
-<div style="margin-top: 2mm; margin-bottom: 3mm">
-     <b style="font-variant: small-caps; font-size: 32pt"> Preview of Linac </b>
-     <p style="margin-top: -2mm; margin-bottom: -=mm; font-size: 16pt;">
-     work in collaboration with Jack Franklin, <b>avaiable now!</b> @ <a href="https://github.com/GDeLaurentis/linac">github.com/GDeLaurentis/linac</a>
-     </p>
-</div>
-
-<pre><code class="language-python" style="font-size: 11pt">cuda_row_reduce(A, field_characteristic=primes[0], verbose=False)  # A is a 2D numpy.ndarray
-</code></pre>
-
-<img src="cubic_fit.png" style="max-width:500px; float:center; border:none; margin-top: 2mm; margin-bottom: 0mm;">
-
-<div style="text-align: left; font-size: 18pt; margin-top: 0mm; margin-bottom: 2mm;">
-     $\circ\,$ Performance on a laptop GPU of approx. 60 CPU cores <br>
-     $\circ\,$ Performance on a workstation GPU of approx. 600 CPU cores <br>
-     $\circ\,$ Tested on systems up to 100k equations and unknowns (takes 45 minutes).
-</div>
-
----
-
-<div style="margin-top: 2mm; margin-bottom: -2mm">
-     <b style="font-variant: small-caps; font-size: 32pt"> Iterated Pole Subtraction </b>
-     <p style="margin-top: -2mm; margin-bottom: -=mm; font-size: 16pt;">
-     (i.e. geometry at codimension greater than one)
-     </p>
-</div>
-<a style="font-size: large; text-align: right; float: right; margin-top: -21mm; margin-bottom: -10mm;" href=https://arxiv.org/abs/1904.04067>
-   GDL, Maître ('19)
-</a>
-<a style="font-size: large; text-align: right; float: right; margin-top: -16mm; margin-bottom: -10mm;" href=https://arxiv.org/abs/2203.04269>
-   GDL, Page ('22)
-</a>
-<a style="font-size: large; text-align: right; float: right; margin-top: -11mm; margin-bottom: -10mm;" href=https://arxiv.org/abs/2312.03672>
-   Chawdhry ('23)
-</a>
-<a style="font-size: large; text-align: right; float: right; margin-top: -6mm; margin-bottom: -10mm;" href=https://arxiv.org/abs/2506.08452>
-   Xia, Yang ('25)
-</a>
-
-<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
-$\circ\,$ Iteratively reconstruct a residues at a time using <span style="text-size: 13pt">$p$</span>-adic numbers to get <span style="text-size: 13pt">$\mathbb{F}_p$</span> samples for the residues
-</div>
-<div style="text-align: left; font-size: 13pt; margin-top: 0mm; margin-bottom: 1mm;">
-$$ 
-\begin{alignedat}{2}
-& r^{(139 \text{ of } 139)}_{\bar{u}^+g^+g^-d^-(V\rightarrow \ell^+ \ell^-)} = & \qquad\qquad & {\small \text{Variety (scheme?) to isolate term(s)}} \\[2mm]
-& +\frac{7/4{\color{blue}(s_{24}-s_{13})}⟨6|1+4|5]s_{123}{\color{green}(s_{124}-s_{134})}}{⟨1|2+3|4]⟨2|1+4|3]^2 Δ_{14|23|56}} +  & \qquad\qquad & \Big\langle ⟨2|1+4|3]^2, Δ_{14|23|56} \Big\rangle \\[1mm]
-& -\frac{49/64⟨3|1+4|2]⟨6|1+4|5]s_{123}(s_{123}-s_{234})(s_{124}-s_{134})}{⟨1|2+3|4]⟨2|1+4|3]Δ^2_{14|23|56}} + \dots & \qquad\qquad & \Big\langle Δ_{14|23|56} \Big\rangle
-\end{alignedat}
-$$
-</div>
-
-<div style="text-align: left; font-size: 16pt; margin-top: -2mm; margin-bottom: 0mm;">
-$\circ\,$ We get more than just partial fraction decomposition, we can identify numerator insertions from e.g.:
-</div>
-<div style="text-align: left; font-size: 12pt; margin-top: 2mm; margin-bottom: 1mm;">
-     $$
-     \sqrt{\big\langle ⟨2|1+4|3], Δ_{14|23|56} \big\rangle} = \big\langle {\color{green}(s_{124}-s_{134})}, ⟨2|1+4|3] \big\rangle \, , \\[1mm] 
-     \big\langle ⟨1|2+3|4], ⟨2|1+4|3] \big\rangle = \big\langle ⟨1|2+3|4], ⟨2|1+4|3], {\color{blue}(s_{13}-s_{24})}\big\rangle \cap \big\langle ⟨12⟩, [34] \big\rangle
-     $$
-</div>
-
-<div style="text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: 0mm;">
-$\circ\,$ Interesting and non-trivial bevhavior also at 5-point 3-mass
-</div>
-<div style="text-align: left; font-size: 13pt; margin-top: 0mm; margin-bottom: 1mm;">
-$$ 
-\def\spa#1.#2{\left\langle#1\,#2\right\rangle}
-\def\spb#1.#2{\left[#1\,#2\right]}
-\def\spaa#1.#2.#3{\langle\mskip-1mu{#1} 
-                  | #2 | {#3}\mskip-1mu\rangle}
-\def\spbb#1.#2.#3{[\mskip-1mu{#1}
-                  | #2 | {#3}\mskip-1mu]}
-\def\spab#1.#2.#3{\langle\mskip-1mu{#1} 
-                  | #2 | {#3}\mskip-1mu]}
-\def\spba#1.#2.#3{[\mskip-1mu{#1} 
-                  | #2 | {#3}\mskip-1mu\rangle}
-\def\spaba#1.#2.#3.#4{\langle\mskip-1mu{#1} 
-                  | #2 | #3 | {#4}\mskip-1mu\rangle}
-\def\spbab#1.#2.#3.#4{[\mskip-1mu{#1} 
-                  | #2 | #3 | {#4}\mskip-1mu]}
-\def\spabab#1.#2.#3.#4.#5{\langle\mskip-1mu{#1}
-                  | #2 | #3 | {#4}| {#5} \mskip-1mu]}
-\def\spbaba#1.#2.#3.#4.#5{[\mskip-1mu{#1} 
-                  | #2 | #3 | {#4}| {#5}\mskip-1mu\rangle}
-\def\tr#1.#2{\text{tr}(#1|#2)}
-\def\qb{\bar{q}}
-\def\Qb{\bar{Q}}
-\def\cA{{\cal A}}
-\def\slsh{\rlap{$\;\!\!\not$}}     \def\three{{\bf 3}}
-\def\four{{\bf 4}}
-\def\five{{\bf 5}}
-\begin{align}\label{eq:decomp_spaba1351_spbab2542}
-\big\langle \spaba1.\three.\five.1,\, \spbab2.\five.\four.2 \big\rangle = \; &\big\langle \,  \spab1.\three.2,\, \spab1.\four.2,\, \spaba1.\three.\five.1,\, \spbab2.\five.\four.2
-\, \big\rangle\; \cap \\
-&\big\langle \, \spaba1.\three.\five.1,\, \spbab2.\five.\four.2, |\five|2]\langle1|\three| - |1+\three|2]\langle1|\five| \, \big\rangle \;, \nonumber
-\end{align} \\
-\text{because: } |\five|2]\spaba1.\three.\five.1[2| + |1\rangle\spbab2.\five.\four.2\langle1|\five| = \spab1.\five.2 \Big( |\five|2]\langle1|\three| - |1+\three|2]\langle1|\five| \Big) \, ,
-$$
-</div>
-<div style="text-align: left; font-size: 16pt; margin-top: -2mm; margin-bottom: 0mm;">
-$\phantom{\circ}\,$ or between the triangle and box Grams
-</div>
-<div style="text-align: left; font-size: 13pt; margin-top: 0mm; margin-bottom: 1mm;">
-$$ 
-\begin{gather}\label{eq:decomp_delta12_34_5_and_delta_12_3_4_5}
-  \big\langle \Delta_{12|34|5},\,\Delta_{12|3|4|5} \big\rangle =
-  \big\langle
-  s_{34},\, \tr1+2.{\three+\four}^2
-  \big\rangle \cap
-  \big\langle
-  \Delta_{12|34|5},\, \tr1+2.{\three-\four}^2 
-  \big\rangle \, .
-\end{gather}
-$$
-</div>
-
----
-
-<div style="margin-top: 2mm; margin-bottom: -2mm">
-     <b style="font-variant: small-caps; font-size: 32pt"> Iterated Pole Subtraction (another example) </b>
-</div>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 5mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Example from triple-Higgs
-</div>
-<div style="font-size: 14pt; margin-top: 4mm; margin-bottom: 3mm">
-$$ 
-\hat d^{++}_{12\times 3 \times 4}= \frac{\mathcal{N} \leftarrow 2794 \text{ free parameters }}{⟨12⟩²⟨1|𝟓|𝟒|𝟑|2]⟨2|𝟑|𝟒|𝟓|1]Δ_{12|𝟑|𝟒|𝟓}}
-$$
-</div>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 8mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ We can prove <span style="font-size: 13pt">$⟨1|𝟓|𝟒|𝟑|2], ⟨2|𝟑|𝟒|𝟓|1]$</span> can be separated, their primary decomposition reads
-</div>
-<div style="font-size: 14pt; margin-top: 3mm; margin-bottom: 4mm">
-$$ 
-\big\langle ⟨1|𝟓|𝟒|𝟑|2], ⟨2|𝟑|𝟒|𝟓|1] \big\rangle = \big\langle ⟨1|𝟓|𝟒|𝟑|2], ⟨2|𝟑|𝟒|𝟓|1], \text{tr}_5 \big\rangle \cap \big\langle ⟨1|𝟓|𝟒|𝟑|2], ⟨2|𝟑|𝟒|𝟓|1], s_{2𝟑}, s_{1𝟓} \big\rangle
-$$
-</div>
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}$ Generate two phase space points, one for each branch, and verify the numerator vanishes.
-</div>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 8mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Similarly, with four evaluations we can prove <span style="font-size: 13pt">$⟨1|𝟓|𝟒|𝟑|2], Δ_{12|𝟑|𝟒|𝟓}$</span> can be separated,
-</div>
-<div style="font-size: 14pt; margin-top: 3mm; margin-bottom: 4mm">
-$$ 
-\big\langle ⟨1|𝟓|𝟒|𝟑|2] , \, Δ_{12|𝟑|𝟒|𝟓} \big\rangle= \big\langle M_H, \; 𝟓_{\alpha\dot\alpha}𝟒^{\dot\alpha\beta} \big\rangle \cap \big\langle M_H, \; 𝟒^{\dot\alpha\alpha}𝟑_{\alpha\dot\beta} \big\rangle \cap \big\langle \langle 1 | 𝟑 | 2], \; \langle 1 | 𝟒 | 2], \; \langle 1 | 𝟑 | 𝟒 | 1 \rangle, [2 | 𝟑 | 𝟒 | 2] \big\rangle \cap \big\langle ??? \big\rangle
-$$
-</div><div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\phantom{\circ}$ Although we don't have a complete set of generators for the last branch, we can still sample it.
-</div>
-
-<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 6mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ Fit <span style="font-size: 13pt">$⟨1|𝟓|𝟒|𝟑|2]$</span> residue by sampling in limit <span style="font-size: 13pt">$⟨1|𝟓|𝟒|𝟑|2] \rightarrow 0$</span>
-</div>
-<div style="font-size: 14pt; margin-top: 4mm; margin-bottom: 10mm">
-$$ 
-\hat d^{++}_{12\times 3 \times 4} = \frac{\mathcal{N} \leftarrow 112 \text{ free parameters }}{⟨12⟩²⟨1|𝟓|𝟒|𝟑|2]} + \mathcal{O}(⟨1|𝟓|𝟒|𝟑|2]^0)
-$$
-</div>
-
----
-
-<div style="margin-top: 2mm; margin-bottom: -2mm">
-     <b style="font-variant: small-caps; font-size: 32pt"> Core Tools - Fully Open Source </b>
-</div>
-
-<div style="text-align: center; float: center; font-size: 16pt; margin-top: 0mm; margin-bottom: 0mm;">
-     For fleshed out examples see e.g. <a href=https://inspirehep.net/literature/2661970> GDL (ACAT '22)</a> or <a href="https://arxiv.org/abs/2504.19909">Appendix B of 2504.19909</a>
-</div>
-
-<div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 2mm;">
-     Install from github (<code style="font-size:14pt;">git clone</code>) or PyPI (<code style="font-size:14pt;">pip install</code>); use of Jupyter is recommended.
-</div>
-
-<div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
-     $\circ$ <a href="https://github.com/GDeLaurentis/pyadic/" style="font-size: 20pt; font-variant: small-caps;">pyadic</a><br>
-     $\quad\rightarrow$ Finite field $\mathbb{F}_p$ and $p$-adic $\mathbb{Q}_p$ number types, including field extensions <br>
-     $\quad\rightarrow$ rational number reconstruction (Wang's EEA, LGRR, MQRR) <br>
-     $\quad\rightarrow$ univariate and multivariante Newthon & univariate Thiele interpolation algorithms in $\mathbb{F}_p$
-</div>
-
-<div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
-     $\circ$ <a href="https://github.com/GDeLaurentis/syngular/" style="font-size: 20pt; font-variant: small-caps;">syngular</a> (in the backhand <a href="https://www.singular.uni-kl.de/index.php.html" style="font-size: 20pt; font-variant: small-caps;">Singular</a>  is used for many operations)<br>
-     $\quad\rightarrow$ object-oriented algebraic geometry (Field, Ring, Quotient Ring, Ideal) <br>
-     $\quad\rightarrow$ ring-agnostic monomials and polynomials (with support for unicode characters, e.g. spinor brackets)<br>
-     $\quad\rightarrow$ multivariate solver (Ideal.point_on_variety), under- and over-constrained systems OK <br>
-     $\quad\rightarrow$ a semi-numerical prime and primary ideal test (assumes equi-dimensionality of ideal)
-</div>
-
-<div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
-     $\circ$ <a href="https://github.com/GDeLaurentis/lips/" style="font-size: 20pt; font-variant: small-caps;">lips</a> (Lorentz invariant phase space)<br>
-     $\quad\rightarrow$ phase space points over any field ($\mathbb{Q}, \mathbb{Q}[i], \mathbb{R}, \mathbb{C}, \mathbb{Q}_p, \mathbb{F}_p$), including internal and external masses <br>
-     $\quad\rightarrow$ evaluate any Mandelstam or spinor expression (custom ast/regex parser) <br>
-     $\quad\rightarrow$ generation of any special kinematic configuration (wrapper around Ideal.point_on_variety)
+     $\circ$ Ansatze built via Groebner bases, and fitted with linear algebra (e.g. <span style="font-size: 14pt">$\mathbb{F}_p$</span> on GPU, see <code style="font-size: 15pt">Linac</code>)
 </div>
 
 </section>
@@ -2477,6 +1980,113 @@ $$
 <img src="plot_sigma5_threshold.png"; style="max-width:600px; float:center; border:none; margin-top: 2mm; margin-bottom: 0mm;">
 </div>
 
+---
+
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 0mm;"> <span style="font-size: 27pt;">$p\kern0.5mm$</span>-adic numbers </b>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: -2mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ You may be familiar with finite field (integers modulo a prime)
+</div>
+<span style="font-size: 14pt; margin-top: -4mm; margin-bottom: -5mm; float: right; font-align: right;"> <a href="https://arxiv.org/abs/1406.4513"> von Manteuffel, Schabinger `14</a>;$\;$<a href="https://arxiv.org/abs/1608.01902"> Peraro `16</a></span>
+<div style="font-size: 14pt; margin-top: 3mm; margin-bottom: 3mm">
+$$ 
+\displaystyle a \in \mathbb{F}_p : a \in \{0, \dots, p -1\} \; \text{ with } \; \{+, -, \times, \div\}
+$$
+</div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
+     $\phantom{\circ}$ Limits (and calculus) are not well defined in $\mathbb{F}_p$. We can make things zero, but not small:
+</div>
+<div style="font-size: 14pt; margin-top: 3mm; margin-bottom: 3mm">
+$$ 
+\displaystyle |a|_0 = 0 \; \text{if} \; a = 0 \; \text{else} \; 1 \quad \text{a.k.a. the trivial absolute value.}
+$$
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ There exists just one more absolute value on the rationals, the <span style="font-size: 15pt;">$p$</span>-adic absolute value.
+</div>
+<a style="font-size: large; text-align: right; float: right; margin-top: -4mm; margin-bottom: -10mm;" href=https://en.wikipedia.org/wiki/Ostrowski%27s_theorem>
+   Ostrowski's theorem 1916
+</a>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ Let's start from <span style="font-size: 15pt;">$p$</span>-adic integers, instead of working modulo <span style="font-size: 15pt;">$p$</span>, expand in powers of <span style="font-size: 15pt;">$p$</span>
+</div>
+<div style="font-size: 14pt; margin-top: 3mm; margin-bottom: 3mm">
+$$ 
+\displaystyle a \in \mathbb{Z}_p : a_0 p^0 + a_1 p^1 + a_2 p^2 + \dots + \mathcal{O}(p^n)
+$$
+</div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
+     $\phantom{\circ}$ In some sense we are correcting the finite field result with more (subleading) information.
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ <span style="font-size: 14pt;">$p$</span>-adic numbers <span style="font-size: 14pt;">$\mathbb{Q}_p$</span> allow for negative powers of <span style="font-size: 14pt;">$p$</span>, (would be division by zero in $\mathbb{F}_p$!)
+</div>
+<div style="font-size: 14pt; margin-top: 3mm; margin-bottom: 3mm">
+$$ 
+\displaystyle a \in \mathbb{Q}_p : a_{-\nu} p^{-\nu} + \dots + a_0 + a_1 p^1 + \dots + \mathcal{O}(p^n)
+$$
+</div>
+<a style="font-size: large; text-align: right; float: right; margin-top: -4mm; margin-bottom: -10mm;" href=https://arxiv.org/abs/2203.04269>
+   GDL, Page `22
+</a>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ The <span style="font-size: 14pt;">$p$</span>-adic absolute value is defined as <span style="font-size: 14pt;">$|a|_p = p^\nu$</span>.
+</div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 0mm; margin-left: 2mm; margin-right: 2mm;">
+     $\phantom{\circ}$ Think of <span style="font-size: 14pt;">$p$</span> as a small quantity, <span style="font-size: 14pt;">$\epsilon$</span>, (by <span style="font-size: 14pt;">$|\,|_p$</span>) even if it is a large prime (by the real abs. <span style="font-size: 14pt;">$|\,|_\infty$</span>).
+</div>
+
+---
+
+<b style="font-variant: small-caps; font-size: xxx-large"> Laurent Series or p(z)-adic expansion </b>
+
+<div style="text-align: left; font-size: 16pt; margin-top: 3mm; margin-bottom: -2mm;">
+     $\circ\,$ With <span style="font-size: 14pt">$p$</span>-adic numbers this would be straight forward, set <span style="font-size: 14pt">$\mathcal{D}_j\propto p$</span> and evaluate the function
+</div>
+<div style="text-align: center; font-size: 14pt; margin-top: -2mm; margin-bottom: 2mm;">
+     $$
+     r_{i\in \mathcal{B}} = \sum_{m = 1}^{\text{max}_i(q_{ik})} \frac{e^k_{im}}{p^m} + \mathcal{O}(p^0) \text{ is a number in } \mathbb{Q}_p
+     $$
+</div>
+<div style="text-align: left; font-size: 16pt; margin-top: 3mm; margin-bottom: -2mm;">
+     $\phantom{\circ}\,$ See <code style="font-size: 14pt;">Particles._singular_variety</code> or <code style="font-size: 14pt;">Ideal.point_on_variety</code> to generate the configuration
+</div>
+
+<div style="text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: -2mm;">
+     $\circ\,$ We can't do this with only finite fields. Instead, build Laurent expansions around $t_{\mathcal{D}_k}$ <span style="font-size: 12pt"> (use more slices) </span>
+</div>
+<div style="text-align: center; font-size: 14pt; margin-top: -2mm; margin-bottom: 2mm;">
+     $$
+     r_{i \in \mathcal{B}} = \sum_{m = 1}^{\text{max}_i(q_{ik})} \frac{e^k_{im}}{(t-t_{\mathcal{D}_k})^m} + \mathcal{O}((t-t_{\mathcal{D}_k})^0)
+     $$
+</div>
+<div style="text-align: left; font-size: 16pt; margin-top: 3mm; margin-bottom: -2mm;">
+     $\phantom{\circ}\,$ strictly formal over $\mathbb{F}_p$, but convergent over $\mathbb{Q}_p$ for $(t-t_{\mathcal{D}_k}) \propto p$
+</div>
+
+<div style="text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: -2mm;">
+     $\circ\,$ What if the letter does not have a factor linear in <span style="font-size: 14pt">$t$</span>? E.g.
+</div>
+<div style="text-align: center; font-size: 14pt; margin-top: -2mm; margin-bottom: 2mm;">
+     $$
+     r_{i \in \mathcal{B}} = \sum_{m = 1}^{\text{max}_i(q_{ik})} \frac{c^k_{im} t + d^k_{im}}{(t^2+a_kt+b_k)^m} + \mathcal{O}((t^2+a_kt+b_k)^0)
+     $$
+</div>
+<a style="font-size: 13pt; text-align: right; float: right; margin-top: -10mm; margin-bottom: 2mm;" href=https://arxiv.org/abs/2304.14336 >
+see also Fontana, Peraro ('23)
+</a>
+
+<div style="text-align: left; font-size: 16pt; margin-top: 3mm; margin-bottom: -2mm;">
+     $\circ\,$ From these coefficients, build null spaces used in the search for simple functions
+</div>
+<div style="text-align: center; font-size: 14pt; float: center; margin-top: -2mm; margin-bottom: 2mm;">
+     $$
+     \text{null}(\text{Res}(r_{i \in \mathcal{B}}, \mathcal{D}_k^m))_{ij} \text{ from } \text{ rref }  (d^k_{m})_{i,\text{slice}_j}
+     $$
+</div>
 
 ---
 
@@ -2574,6 +2184,262 @@ $$
 
 <div style="text-align: center; font-size: 18pt; margin-top: 2mm; margin-bottom: 2mm;">
      The Ansatz now has size 13$\,$532, almost a factor of 10 simpler.
+</div>
+
+---
+
+<b style="font-variant: small-caps; font-size: xxx-large"> The Numerator Ansatz </b>
+
+<div style="text-align: left; font-size: x-large; margin-top: 1mm; margin-bottom: 2mm; ">
+$\circ\,$ The numerator Ansatz takes the form (massless case)
+</div>
+<a style="font-size: large; text-align: right; float: right; margin-top: -7mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1904.04067>
+   GDL, Maître ('19)
+</a>
+<div style="text-align: center; font-size: 15pt; margin-bottom: 5mm; margin-top: 1mm;">
+$\displaystyle \text{Num. poly} = \sum_{\vec \alpha, \vec \beta} c_{(\vec\alpha,\vec\beta)} \prod_{j=1}^n\prod_{i=1}^{j-1} \langle ij\rangle^{\alpha_{ij}} [ij]^{\beta_{ij}}$
+</div>
+<div style="text-align: left; font-size: x-large; float: left; margin-top: -2mm; margin-bottom: 0mm;">
+     $\phantom{\circ}$ subject to constraints on $\vec\alpha,\vec\beta$ due to: 1) mass dimension; 2) little group; 3) linear independence.
+</div>
+
+<br>
+
+<div style="text-align: left; font-size: x-large; ">
+$\circ\,$ Construct the Ansatz via the algorithm from Section 2.2 of <a href=https://arxiv.org/abs/2203.04269>GDL, Page ('22)</a>
+</div>
+<div style="text-align: center; display: inline-block; font-size: x-large;">
+Linear independence = irreducibility by the Gröbner basis of a specific ideal.
+</div>
+
+<div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 0mm;">
+$\circ\,$ Efficient implementation using open-source software only
+</div>
+<div style="display:block; width:100%; margin-left: -10mm; margin-top: 0mm;">
+	<div style="width:50%; font-size: x-large; float: left; display: inline-block;">
+	     <img src="SingularLogo.png" style="max-width:300px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;"> <br>
+	     Gröbner bases $\rightarrow$ constrain $\vec\alpha,\vec\beta$ <br>
+	     <a style="font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 5mm;"
+	     href=https://www.singular.uni-kl.de/index.php.html>
+		Decker, Greuel, Pfister, Schönemann
+	     </a>	    
+	</div>
+	<div style="width:50%; font-size: x-large; float: right; display: inline-block; ">
+	     <img src="GoogleORToolsLogo.png" style="max-width:300px; float:center; border:none; margin-top: 7mm; margin-bottom: 2mm;"> <br>
+	     Integer programming $\rightarrow$ enumerate sols. $\vec\alpha,\vec\beta$ <br>
+	     <a style="font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 5mm;"
+	     href=https://www.singular.uni-kl.de/index.php.html>
+		Perron and Furnon (Google optimization team)
+	     </a>
+	</div>
+</div>
+
+<br><br><br><br>
+
+<div style="text-align: left; font-size: x-large; margin-top: -2mm;">
+$\circ\,$ Linear systems solved w/ CUDA over $\mathbb{F}_{2^{31}-1}$ ($t_{\text{solving}} \ll t_{\text{sampling}}$) w/ <a href=https://github.com/GDeLaurentis/linac-dev> linac </a> <span style="text-align: left; font-size: 12pt;"> (coming soon) </span>
+</div>
+
+---
+
+<div style="margin-top: 2mm; margin-bottom: 3mm">
+     <b style="font-variant: small-caps; font-size: 32pt"> Preview of Linac </b>
+     <p style="margin-top: -2mm; margin-bottom: -=mm; font-size: 16pt;">
+     work in collaboration with Jack Franklin, <b>avaiable now!</b> @ <a href="https://github.com/GDeLaurentis/linac">github.com/GDeLaurentis/linac</a>
+     </p>
+</div>
+
+<pre><code class="language-python" style="font-size: 11pt">cuda_row_reduce(A, field_characteristic=primes[0], verbose=False)  # A is a 2D numpy.ndarray
+</code></pre>
+
+<img src="cubic_fit.png" style="max-width:500px; float:center; border:none; margin-top: 2mm; margin-bottom: 0mm;">
+
+<div style="text-align: left; font-size: 18pt; margin-top: 0mm; margin-bottom: 2mm;">
+     $\circ\,$ Performance on a laptop GPU of approx. 60 CPU cores <br>
+     $\circ\,$ Performance on a workstation GPU of approx. 600 CPU cores <br>
+     $\circ\,$ Tested on systems up to 100k equations and unknowns (takes 45 minutes).
+</div>
+
+---
+
+<div style="margin-top: 2mm; margin-bottom: -2mm">
+     <b style="font-variant: small-caps; font-size: 32pt"> Iterated Pole Subtraction </b>
+     <p style="margin-top: -2mm; margin-bottom: -=mm; font-size: 16pt;">
+     (i.e. geometry at codimension greater than one)
+     </p>
+</div>
+<a style="font-size: large; text-align: right; float: right; margin-top: -21mm; margin-bottom: -10mm;" href=https://arxiv.org/abs/1904.04067>
+   GDL, Maître ('19)
+</a>
+<a style="font-size: large; text-align: right; float: right; margin-top: -16mm; margin-bottom: -10mm;" href=https://arxiv.org/abs/2203.04269>
+   GDL, Page ('22)
+</a>
+<a style="font-size: large; text-align: right; float: right; margin-top: -11mm; margin-bottom: -10mm;" href=https://arxiv.org/abs/2312.03672>
+   Chawdhry ('23)
+</a>
+<a style="font-size: large; text-align: right; float: right; margin-top: -6mm; margin-bottom: -10mm;" href=https://arxiv.org/abs/2506.08452>
+   Xia, Yang ('25)
+</a>
+
+<div style="text-align: left; font-size: 16pt; margin-top: 2mm; margin-bottom: 0mm;">
+$\circ\,$ Iteratively reconstruct a residues at a time using <span style="text-size: 13pt">$p$</span>-adic numbers to get <span style="text-size: 13pt">$\mathbb{F}_p$</span> samples for the residues
+</div>
+<div style="text-align: left; font-size: 13pt; margin-top: 0mm; margin-bottom: 1mm;">
+$$ 
+\begin{alignedat}{2}
+& r^{(139 \text{ of } 139)}_{\bar{u}^+g^+g^-d^-(V\rightarrow \ell^+ \ell^-)} = & \qquad\qquad & {\small \text{Variety (scheme?) to isolate term(s)}} \\[2mm]
+& +\frac{7/4{\color{blue}(s_{24}-s_{13})}⟨6|1+4|5]s_{123}{\color{green}(s_{124}-s_{134})}}{⟨1|2+3|4]⟨2|1+4|3]^2 Δ_{14|23|56}} +  & \qquad\qquad & \Big\langle ⟨2|1+4|3]^2, Δ_{14|23|56} \Big\rangle \\[1mm]
+& -\frac{49/64⟨3|1+4|2]⟨6|1+4|5]s_{123}(s_{123}-s_{234})(s_{124}-s_{134})}{⟨1|2+3|4]⟨2|1+4|3]Δ^2_{14|23|56}} + \dots & \qquad\qquad & \Big\langle Δ_{14|23|56} \Big\rangle
+\end{alignedat}
+$$
+</div>
+
+<div style="text-align: left; font-size: 16pt; margin-top: -2mm; margin-bottom: 0mm;">
+$\circ\,$ We get more than just partial fraction decomposition, we can identify numerator insertions from e.g.:
+</div>
+<div style="text-align: left; font-size: 12pt; margin-top: 2mm; margin-bottom: 1mm;">
+     $$
+     \sqrt{\big\langle ⟨2|1+4|3], Δ_{14|23|56} \big\rangle} = \big\langle {\color{green}(s_{124}-s_{134})}, ⟨2|1+4|3] \big\rangle \, , \\[1mm] 
+     \big\langle ⟨1|2+3|4], ⟨2|1+4|3] \big\rangle = \big\langle ⟨1|2+3|4], ⟨2|1+4|3], {\color{blue}(s_{13}-s_{24})}\big\rangle \cap \big\langle ⟨12⟩, [34] \big\rangle
+     $$
+</div>
+
+<div style="text-align: left; font-size: 16pt; margin-top: 4mm; margin-bottom: 0mm;">
+$\circ\,$ Interesting and non-trivial bevhavior also at 5-point 3-mass
+</div>
+<div style="text-align: left; font-size: 13pt; margin-top: 0mm; margin-bottom: 1mm;">
+$$ 
+\def\spa#1.#2{\left\langle#1\,#2\right\rangle}
+\def\spb#1.#2{\left[#1\,#2\right]}
+\def\spaa#1.#2.#3{\langle\mskip-1mu{#1} 
+                  | #2 | {#3}\mskip-1mu\rangle}
+\def\spbb#1.#2.#3{[\mskip-1mu{#1}
+                  | #2 | {#3}\mskip-1mu]}
+\def\spab#1.#2.#3{\langle\mskip-1mu{#1} 
+                  | #2 | {#3}\mskip-1mu]}
+\def\spba#1.#2.#3{[\mskip-1mu{#1} 
+                  | #2 | {#3}\mskip-1mu\rangle}
+\def\spaba#1.#2.#3.#4{\langle\mskip-1mu{#1} 
+                  | #2 | #3 | {#4}\mskip-1mu\rangle}
+\def\spbab#1.#2.#3.#4{[\mskip-1mu{#1} 
+                  | #2 | #3 | {#4}\mskip-1mu]}
+\def\spabab#1.#2.#3.#4.#5{\langle\mskip-1mu{#1}
+                  | #2 | #3 | {#4}| {#5} \mskip-1mu]}
+\def\spbaba#1.#2.#3.#4.#5{[\mskip-1mu{#1} 
+                  | #2 | #3 | {#4}| {#5}\mskip-1mu\rangle}
+\def\tr#1.#2{\text{tr}(#1|#2)}
+\def\qb{\bar{q}}
+\def\Qb{\bar{Q}}
+\def\cA{{\cal A}}
+\def\slsh{\rlap{$\;\!\!\not$}}     \def\three{{\bf 3}}
+\def\four{{\bf 4}}
+\def\five{{\bf 5}}
+\begin{align}\label{eq:decomp_spaba1351_spbab2542}
+\big\langle \spaba1.\three.\five.1,\, \spbab2.\five.\four.2 \big\rangle = \; &\big\langle \,  \spab1.\three.2,\, \spab1.\four.2,\, \spaba1.\three.\five.1,\, \spbab2.\five.\four.2
+\, \big\rangle\; \cap \\
+&\big\langle \, \spaba1.\three.\five.1,\, \spbab2.\five.\four.2, |\five|2]\langle1|\three| - |1+\three|2]\langle1|\five| \, \big\rangle \;, \nonumber
+\end{align} \\
+\text{because: } |\five|2]\spaba1.\three.\five.1[2| + |1\rangle\spbab2.\five.\four.2\langle1|\five| = \spab1.\five.2 \Big( |\five|2]\langle1|\three| - |1+\three|2]\langle1|\five| \Big) \, ,
+$$
+</div>
+<div style="text-align: left; font-size: 16pt; margin-top: -2mm; margin-bottom: 0mm;">
+$\phantom{\circ}\,$ or between the triangle and box Grams
+</div>
+<div style="text-align: left; font-size: 13pt; margin-top: 0mm; margin-bottom: 1mm;">
+$$ 
+\begin{gather}\label{eq:decomp_delta12_34_5_and_delta_12_3_4_5}
+  \big\langle \Delta_{12|34|5},\,\Delta_{12|3|4|5} \big\rangle =
+  \big\langle
+  s_{34},\, \tr1+2.{\three+\four}^2
+  \big\rangle \cap
+  \big\langle
+  \Delta_{12|34|5},\, \tr1+2.{\three-\four}^2 
+  \big\rangle \, .
+\end{gather}
+$$
+</div>
+
+---
+
+<div style="margin-top: 2mm; margin-bottom: -2mm">
+     <b style="font-variant: small-caps; font-size: 32pt"> Iterated Pole Subtraction (another example) </b>
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 5mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ Example from triple-Higgs
+</div>
+<div style="font-size: 14pt; margin-top: 4mm; margin-bottom: 3mm">
+$$ 
+\hat d^{++}_{12\times 3 \times 4}= \frac{\mathcal{N} \leftarrow 2794 \text{ free parameters }}{⟨12⟩²⟨1|𝟓|𝟒|𝟑|2]⟨2|𝟑|𝟒|𝟓|1]Δ_{12|𝟑|𝟒|𝟓}}
+$$
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 8mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ We can prove <span style="font-size: 13pt">$⟨1|𝟓|𝟒|𝟑|2], ⟨2|𝟑|𝟒|𝟓|1]$</span> can be separated, their primary decomposition reads
+</div>
+<div style="font-size: 14pt; margin-top: 3mm; margin-bottom: 4mm">
+$$ 
+\big\langle ⟨1|𝟓|𝟒|𝟑|2], ⟨2|𝟑|𝟒|𝟓|1] \big\rangle = \big\langle ⟨1|𝟓|𝟒|𝟑|2], ⟨2|𝟑|𝟒|𝟓|1], \text{tr}_5 \big\rangle \cap \big\langle ⟨1|𝟓|𝟒|𝟑|2], ⟨2|𝟑|𝟒|𝟓|1], s_{2𝟑}, s_{1𝟓} \big\rangle
+$$
+</div>
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 4mm; margin-left: 2mm; margin-right: 2mm;">
+     $\phantom{\circ}$ Generate two phase space points, one for each branch, and verify the numerator vanishes.
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 8mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ Similarly, with four evaluations we can prove <span style="font-size: 13pt">$⟨1|𝟓|𝟒|𝟑|2], Δ_{12|𝟑|𝟒|𝟓}$</span> can be separated,
+</div>
+<div style="font-size: 14pt; margin-top: 3mm; margin-bottom: 4mm">
+$$ 
+\big\langle ⟨1|𝟓|𝟒|𝟑|2] , \, Δ_{12|𝟑|𝟒|𝟓} \big\rangle= \big\langle M_H, \; 𝟓_{\alpha\dot\alpha}𝟒^{\dot\alpha\beta} \big\rangle \cap \big\langle M_H, \; 𝟒^{\dot\alpha\alpha}𝟑_{\alpha\dot\beta} \big\rangle \cap \big\langle \langle 1 | 𝟑 | 2], \; \langle 1 | 𝟒 | 2], \; \langle 1 | 𝟑 | 𝟒 | 1 \rangle, [2 | 𝟑 | 𝟒 | 2] \big\rangle \cap \big\langle ??? \big\rangle
+$$
+</div><div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
+     $\phantom{\circ}$ Although we don't have a complete set of generators for the last branch, we can still sample it.
+</div>
+
+<div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 6mm; margin-left: 2mm; margin-right: 2mm;">
+     $\circ$ Fit <span style="font-size: 13pt">$⟨1|𝟓|𝟒|𝟑|2]$</span> residue by sampling in limit <span style="font-size: 13pt">$⟨1|𝟓|𝟒|𝟑|2] \rightarrow 0$</span>
+</div>
+<div style="font-size: 14pt; margin-top: 4mm; margin-bottom: 10mm">
+$$ 
+\hat d^{++}_{12\times 3 \times 4} = \frac{\mathcal{N} \leftarrow 112 \text{ free parameters }}{⟨12⟩²⟨1|𝟓|𝟒|𝟑|2]} + \mathcal{O}(⟨1|𝟓|𝟒|𝟑|2]^0)
+$$
+</div>
+
+---
+
+<div style="margin-top: 2mm; margin-bottom: -2mm">
+     <b style="font-variant: small-caps; font-size: 32pt"> Core Tools - Fully Open Source </b>
+</div>
+
+<div style="text-align: center; float: center; font-size: 16pt; margin-top: 0mm; margin-bottom: 0mm;">
+     For fleshed out examples see e.g. <a href=https://inspirehep.net/literature/2661970> GDL (ACAT '22)</a> or <a href="https://arxiv.org/abs/2504.19909">Appendix B of 2504.19909</a>
+</div>
+
+<div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 2mm;">
+     Install from github (<code style="font-size:14pt;">git clone</code>) or PyPI (<code style="font-size:14pt;">pip install</code>); use of Jupyter is recommended.
+</div>
+
+<div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
+     $\circ$ <a href="https://github.com/GDeLaurentis/pyadic/" style="font-size: 20pt; font-variant: small-caps;">pyadic</a><br>
+     $\quad\rightarrow$ Finite field $\mathbb{F}_p$ and $p$-adic $\mathbb{Q}_p$ number types, including field extensions <br>
+     $\quad\rightarrow$ rational number reconstruction (Wang's EEA, LGRR, MQRR) <br>
+     $\quad\rightarrow$ univariate and multivariante Newthon & univariate Thiele interpolation algorithms in $\mathbb{F}_p$
+</div>
+
+<div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
+     $\circ$ <a href="https://github.com/GDeLaurentis/syngular/" style="font-size: 20pt; font-variant: small-caps;">syngular</a> (in the backhand <a href="https://www.singular.uni-kl.de/index.php.html" style="font-size: 20pt; font-variant: small-caps;">Singular</a>  is used for many operations)<br>
+     $\quad\rightarrow$ object-oriented algebraic geometry (Field, Ring, Quotient Ring, Ideal) <br>
+     $\quad\rightarrow$ ring-agnostic monomials and polynomials (with support for unicode characters, e.g. spinor brackets)<br>
+     $\quad\rightarrow$ multivariate solver (Ideal.point_on_variety), under- and over-constrained systems OK <br>
+     $\quad\rightarrow$ a semi-numerical prime and primary ideal test (assumes equi-dimensionality of ideal)
+</div>
+
+<div style="text-align: left; font-size:16pt; margin-top: 2mm; margin-bottom: 0mm;">
+     $\circ$ <a href="https://github.com/GDeLaurentis/lips/" style="font-size: 20pt; font-variant: small-caps;">lips</a> (Lorentz invariant phase space)<br>
+     $\quad\rightarrow$ phase space points over any field ($\mathbb{Q}, \mathbb{Q}[i], \mathbb{R}, \mathbb{C}, \mathbb{Q}_p, \mathbb{F}_p$), including internal and external masses <br>
+     $\quad\rightarrow$ evaluate any Mandelstam or spinor expression (custom ast/regex parser) <br>
+     $\quad\rightarrow$ generation of any special kinematic configuration (wrapper around Ideal.point_on_variety)
 </div>
 
 </section>
