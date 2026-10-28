@@ -212,7 +212,7 @@ $\mathbb{Q}_p$: GDL, Page ('22)
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ For <span style="font-size: 15pt;">$n$</span>-point massless scattering, the covariant quotient ring is
+     $\circ$ For <span style="font-size: 15pt;">$n$</span>-point massless scattering, the <b>covariant quotient ring</b> is
 </div>
 <div style="font-size: 14pt; margin-top: 3mm; margin-bottom: 3mm">
 $$ 
@@ -230,7 +230,7 @@ $$
 </div>
 
 <div style="font-size: 18pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
-     $\circ$ The rational functions <span style="font-size: 14pt">$r_i$</span> belong to the field of fractions of <span style="font-size: 14pt">$R_n$</span>,
+     $\circ$ The rational functions <span style="font-size: 14pt">$r_i$</span> belong to the field of fractions of <span style="font-size: 14pt">$R_n$</span> (or <span style="font-size: 14pt">$\mathcal{R}_n \cong R_n^{SL(2)_L\times SL(2)_R}$</span>),
 </div>
 <div style="font-size:14pt; text-align: center; margin-top: 2mm; margin-bottom: 2mm">
      $$
@@ -752,8 +752,9 @@ $$
 
 <div style="font-size:13.5pt; text-align:center; margin-top:1mm; margin-bottom:1mm;">
 $$
+\langle f_1, f_2\rangle = \langle f_1, \tilde f_2\rangle \quad \text{with} \quad
 f_2=\widetilde f_2+qf_1 ,
-\qquad
+\qquad \text{take} \quad
 X\in V(\langle f_1\rangle)
 \quad\Longrightarrow\quad
 f_2(X)=\widetilde f_2(X).
@@ -822,6 +823,10 @@ $$
 </div>
 
 <div style="font-size: 17pt; text-align: left; margin-top: 6mm; margin-bottom: 1mm;">
+     $\circ$ Issues: 1) get prim. dec.; 2) sample at codim. two; 3) still need to intersect ideals
+</div>
+
+<div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 1mm;">
      $\circ$ Build a bivariate slice (curve) that intersects all varieties <span style="font-size: 14pt">$V(\langle \mathcal{D}_i, \mathcal{D}_j \rangle)$</span>, e.g.
 </div>
 <div style="font-size:15pt; text-align: center; margin-top: 2mm; margin-bottom: 2mm">
@@ -835,12 +840,11 @@ $$
      $\phantom{\circ}$ Pick sol. with <code style="font-size: 14pt;">syngular.Ideal.points_on_variety</code>, impl. see <code style="font-size: 14pt;">lips.Particles.bivariate_slice</code>
 </div>
 
-<div style="font-size: 17pt; text-align: left; margin-top: 6mm; margin-bottom: 1mm;">
+<div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 1mm;">
      $\circ$ Reconstruct (Newton-interpolate) the numerators <span style="font-size: 14pt">$\mathcal{N}(t_1, t_2)$</span>; this requires <span style="font-size: 14pt">$\text{deg}(\mathcal{N}+1)^2$</span> points.
 </div>
 
-
-<div style="font-size: 17pt; text-align: left; margin-top: 6mm; margin-bottom: 1mm;">
+<div style="font-size: 17pt; text-align: left; margin-top: 2mm; margin-bottom: 1mm;">
      $\circ$ For each <span style="font-size: 14pt">$\mathcal{J}_{ij}^{a_i,a_j} = \big\langle \mathcal{D}_i(t_1, t_2)^{a_i}, \mathcal{D}_j(t_1, t_2)^{a_j} \big\rangle\;$</span> test <span style="font-size: 14pt">$\;\mathcal{N}_i(t_1, t_2) \in \mathcal{J}_{ij}^{a_i,a_j}$</span>
 </div>
 
@@ -932,7 +936,7 @@ $$
 
 ---
 
-<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Invariant Quotient Rings </b>
+<b style="font-variant: small-caps; font-size: 32pt; margin-bottom: 2mm;"> Invariant Sub-Rings for Ansätze </b>
 
 <div style="font-size: 17pt; text-align: left; margin-bottom: 2mm; margin-top: 2mm; margin-left: 2mm; margin-right: 2mm;">
      $\circ$ Helicity amplitudes are Lorentz invariant: minimal ansätze are build in the invariant sub-rings.
@@ -1180,7 +1184,7 @@ border-radius: 8px;
 padding: 5px 12px;
 font-size: 18pt;
 ">
-<span style="font-size: 14pt">$3n-1 < 4n-4 \iff n\geq4 \;\; \Longrightarrow \; R_n$</span>
+<span style="font-size: 14pt">$3n-1 < 4n-4 \iff n\geq4 \;\; \Longrightarrow \; R_{n\geq 4}$</span>
 <b>
 <span style="font-size: 16pt"> is a domain.</span>
 </b>
@@ -1250,10 +1254,11 @@ $\phantom\circ$ it follows that
 </div>
 
 <div style="font-size: 18pt; text-align: center; margin-top: 3mm;">
-<span style="font-size: 15pt">$R_n/(\langle12\rangle)$</span>
+<span style="font-size: 15pt">$R_{n\geq5}/(\langle12\rangle)$</span>
 <span style="font-size: 17pt"> is a domain</span>
 <span style="font-size: 15pt">$\;\Longrightarrow\; \langle12\rangle$</span>
-<span style="font-size: 17pt"> is prime.</span>
+<span style="font-size: 17pt"> is prime for</span>
+<span style="font-size: 15pt">$n\geq5$</span>
 </div>
 
 ---
